@@ -56,6 +56,20 @@ BASE_RUN_BY_CROP = {
     "tomato": "tomato_yield_r1.json",
 }
 
+# Crops added to extend the benchmark past its original 50-scenario grid.
+# No AgriMind pipeline run was ever captured for these two, so there is no
+# real context to clone under BASE_RUN_BY_CROP. Instead they reuse the
+# real Open-Meteo / Sentinel-2 / soil sensor context captured for RICE at
+# the same DEFAULT_LAT/DEFAULT_LON -- those readings are location-bound,
+# not crop-bound, so they are genuinely real data at this location, not
+# fabricated. The only crop-specific input is the crop_profile (optimal
+# ranges, satellite thresholds) that the perturbation and ground-truth
+# logic reads, which is loaded directly from AgriMind's own cached
+# canonical profile for that crop.
+EXTRA_CROP_TEMPLATE_RAW = "rice_yield_r1.json"
+EXTRA_CROPS = ["apple", "orange"]
+CROP_PROFILES_DIR = os.path.join(PROJECT_ROOT, "app", "knowledge", "crop_profiles")
+
 # Query-type -> the specialist agents this benchmark treats as "expected".
 # This is our own explicit, documented definition (domain-reasonable
 # query-intent -> specialist mapping), used as the routing-accuracy
@@ -79,10 +93,25 @@ VALID_DECISIONS = [
 
 
 def _load_base_context(crop):
-    path = os.path.join(RAW_BASELINE_DIR, BASE_RUN_BY_CROP[crop])
+    if crop in BASE_RUN_BY_CROP:
+        path = os.path.join(RAW_BASELINE_DIR, BASE_RUN_BY_CROP[crop])
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return copy.deepcopy(data["result"]["context"]), copy.deepcopy(data["result"]["crop_profile"])
+
+    # Extended crop (see EXTRA_CROPS docstring above): real sensor
+    # context borrowed from rice's captured run at the same location,
+    # paired with this crop's own cached canonical profile.
+    path = os.path.join(RAW_BASELINE_DIR, EXTRA_CROP_TEMPLATE_RAW)
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
-    return copy.deepcopy(data["result"]["context"]), copy.deepcopy(data["result"]["crop_profile"])
+    context = copy.deepcopy(data["result"]["context"])
+
+    profile_path = os.path.join(CROP_PROFILES_DIR, f"{crop}.json")
+    with open(profile_path, "r", encoding="utf-8") as f:
+        crop_profile = json.load(f)
+
+    return context, crop_profile
 
 
 def _fixture_from_context(context):
@@ -213,6 +242,49 @@ def _perturb_market_increasing(fixture):
 
 
 ##########################################################################
+# Compound perturbations
+#
+# Every scenario above changes exactly one field, so passing it only
+# proves the system reacts to a single signal in isolation. These
+# perturb TWO fields from different specialists' domains at once, so the
+# ground-truth decision requires infer_decision()'s actual priority
+# order (water stress > vegetation > nitrogen > organic carbon > market,
+# per app/executive/executive_engine.py) to resolve correctly -- a
+# distractor signal is present and must be correctly subordinated, not
+# just a single signal correctly detected.
+##########################################################################
+
+def _perturb_compound_water_market(fixture, crop_profile):
+    fixture = _perturb_water_stress(fixture, crop_profile)
+    fixture = _perturb_market_increasing(fixture)
+    return fixture
+
+
+def _perturb_compound_nitrogen_market(fixture, crop_profile):
+    fixture = _perturb_nitrogen_low(fixture, crop_profile)
+    fixture = _perturb_market_increasing(fixture)
+    return fixture
+
+
+def _perturb_compound_organic_market(fixture, crop_profile):
+    fixture = _perturb_organic_carbon_low(fixture, crop_profile)
+    fixture = _perturb_market_increasing(fixture)
+    return fixture
+
+
+def _perturb_compound_vegetation_nitrogen(fixture, crop_profile):
+    fixture = _perturb_vegetation_critical(fixture, crop_profile)
+    fixture = _perturb_nitrogen_low(fixture, crop_profile)
+    return fixture
+
+
+def _perturb_compound_nitrogen_organic(fixture, crop_profile):
+    fixture = _perturb_nitrogen_low(fixture, crop_profile)
+    fixture = _perturb_organic_carbon_low(fixture, crop_profile)
+    return fixture
+
+
+##########################################################################
 # Query phrasings
 #
 # Each query type carries several natural phrasings rather than one
@@ -246,7 +318,7 @@ QUERY_PHRASINGS = {
     ],
 }
 
-CROPS = ["rice", "cotton", "wheat", "mango", "tomato"]
+CROPS = ["rice", "cotton", "wheat", "mango", "tomato", "apple", "orange"]
 
 
 def _phrasing(query_type, crop, variant):
@@ -396,6 +468,51 @@ def build_scenarios():
              "soil.ph (below optimal)",
              ["SoilAgent"],
              probes_known_limitation=True)
+
+        ##############################################################
+        # Compound (two-signal) scenarios. Query type is "suitability"
+        # when a market perturbation is involved (the only query type
+        # whose expected-agent set includes MarketAgent alongside the
+        # agronomic agents), "yield" otherwise.
+        ##############################################################
+
+        make(f"compound_water_market_{crop}", crop, "suitability",
+             _phrasing("suitability", crop, i + 2),
+             _perturb_compound_water_market, "Immediate Irrigation",
+             ["water stress", "drought", "irrigation", "rainfall"],
+             ["market", "price increasing"],
+             "satellite.water.ndwi + market.assessment.trend",
+             ["SatelliteAgent", "WeatherAgent", "MarketAgent"])
+
+        make(f"compound_nitrogen_market_{crop}", crop, "suitability",
+             _phrasing("suitability", crop, (i + 1) % len(QUERY_PHRASINGS["suitability"])),
+             _perturb_compound_nitrogen_market, "Apply Nitrogen Fertilizer",
+             ["nitrogen", "fertilizer", "nutrient deficiency"],
+             ["market", "price increasing"],
+             "soil.nitrogen + market.assessment.trend",
+             ["SoilAgent", "MarketAgent"])
+
+        make(f"compound_organic_market_{crop}", crop, "suitability",
+             _phrasing("suitability", crop, i),
+             _perturb_compound_organic_market, "Apply Organic Manure",
+             ["organic carbon", "organic matter", "manure", "compost"],
+             ["market", "price increasing"],
+             "soil.organic_carbon + market.assessment.trend",
+             ["SoilAgent", "MarketAgent"])
+
+        make(f"compound_vegetation_nitrogen_{crop}", crop, "yield",
+             _phrasing("yield", crop, i),
+             _perturb_compound_vegetation_nitrogen, "Field Inspection",
+             ["vegetation", "crop health", "ndvi", "critical", "nitrogen", "nutrient deficiency"], [],
+             "satellite.vegetation.ndvi + soil.nitrogen",
+             ["SatelliteAgent", "SoilAgent"])
+
+        make(f"compound_nitrogen_organic_{crop}", crop, "yield",
+             _phrasing("yield", crop, i + 1),
+             _perturb_compound_nitrogen_organic, "Apply Nitrogen Fertilizer",
+             ["nitrogen", "fertilizer", "nutrient deficiency", "organic carbon", "organic matter"], [],
+             "soil.nitrogen + soil.organic_carbon",
+             ["SoilAgent"])
 
     return scenarios
 

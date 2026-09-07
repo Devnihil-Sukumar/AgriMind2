@@ -1,16 +1,20 @@
-# Running the full 50-scenario benchmark on a second machine
+# Running the full 105-scenario benchmark on a second machine (Ollama only)
 
-This laptop's Gemini free-tier quota (20 requests/day) and local Ollama
-inference speed make a full sweep of the 50-scenario dataset
-(`evaluation_latest/dataset/benchmark_queries.json`) impractical here --
-at ~15-20 clean scenarios/day it would take several days per condition.
-This runbook is for doing that run on a second, faster/idle machine,
-then bringing the results back.
+The benchmark dataset was expanded from 50 to **105 scenarios** to move
+past the reviewer's N>=100 requirement: 2 new crops (apple, orange,
+using AgriMind's own cached crop profiles paired with rice's real
+sensor context at the same location -- see the `EXTRA_CROPS` docstring
+in `evaluation_latest/dataset/build_dataset.py`), plus 5 new compound
+(two-signal) scenario types per crop that test whether the executive
+engine's decision priority order still resolves correctly when a
+distractor signal is present.
 
-Only 11 of 50 scenarios have clean `full_system` results banked so far
-(`evaluation_latest/results/raw/`). The other 39 -- plus the three
-non-`full_system` ablation conditions needed to refresh Table 4 -- are
-what this run is for.
+Since every agent now runs on local Ollama (no Groq/Gemini quota
+ceiling), this is a genuinely fresh run, not a resume -- do NOT copy
+`evaluation_latest/results/` over from this laptop first. Every one of
+the 105 x 4 = 420 (scenario, condition) pairs gets its own saved JSON
+file in `evaluation_latest/results/raw/`; nothing is skipped or
+overwritten across runs except a pair that has already succeeded.
 
 ---
 
@@ -24,64 +28,67 @@ venv/Scripts/activate        # venv\Scripts\activate.bat on cmd.exe
 pip install -r requirements.txt
 ```
 
-Create `.env` in the project root (NOT committed to git -- copy your
-keys over manually, do not paste them in chat):
-
-```
-GROQ_API_KEY=...
-GEMINI_API_KEY=...
-DATA_GOV_IN_API_KEY=...
-```
-
-If Ollama-backed agents are used (`app/agents/base_agent.py`
-`FORCE_PROVIDER` / default provider routing), also install Ollama and
-pull the model:
+Pull the Ollama model:
 
 ```bash
 ollama pull qwen3:4b
+```
+
+Create `.env` in the project root and force every agent onto Ollama
+(no API keys needed at all for the LLM-backed agents; `DATA_GOV_IN_API_KEY`
+is still needed if Agmarknet live market data is used):
+
+```
+AGRIMIND_FORCE_PROVIDER=ollama
+DATA_GOV_IN_API_KEY=your_key_here
+```
+
+Regenerate the dataset locally to confirm it matches (deterministic,
+no LLM calls -- should print "Wrote 105 scenarios"):
+
+```bash
+python evaluation_latest/dataset/build_dataset.py
 ```
 
 ---
 
 ## 2. Run
 
-The evaluator is checkpointed -- interrupting and re-running only
-retries pairs that have not yet succeeded, so it is safe to run in
-chunks across multiple days if the second laptop also hits Gemini's
-20/day ceiling.
+The evaluator is checkpointed -- if it's interrupted (Ctrl-C, crash,
+laptop sleep) just re-run the exact same command; it only retries
+pairs that have not yet succeeded, nothing is repeated or overwritten.
 
-**Headline metrics only** (fills in the 39 remaining `full_system`
-scenarios -- this is what Tables 1/2/3 and Figures 1-4 read):
-
-```bash
-python evaluation_latest/evaluator.py --conditions full_system
-```
-
-**Full ablation** (also refreshes Table 4 -- ~4x the LLM calls, budget
-several days of quota):
+**Full ablation, all 105 scenarios, all 4 conditions** (this is what
+you want -- refreshes Tables 1/2/3/4 and every figure):
 
 ```bash
 python evaluation_latest/evaluator.py
 ```
 
-Progress streams to `evaluation_latest/results/run_log.jsonl` and
-prints per-scenario status live. Re-run the same command to resume
-after any interruption or quota exhaustion.
+Progress streams live in the terminal and to
+`evaluation_latest/results/run_log.jsonl`. With Ollama running locally
+this will be CPU-bound rather than quota-bound -- expect it to take
+hours depending on the machine, not days.
+
+**Check progress at any time** (separate terminal):
+
+```bash
+dir evaluation_latest\results\raw
+```
+
+You should end up with up to 420 files there (105 scenarios x 4
+conditions) once it finishes.
 
 ---
 
 ## 3. Package results to bring back
-
-Once you've run as much as you want (even partial progress is useful --
-more clean scenarios narrows the confidence intervals), zip only the
-result artifacts, not the venv or the whole repo:
 
 ```bash
 cd evaluation_latest
 python -c "
 import zipfile, os
 paths = ['results/raw', 'results/run_log.jsonl']
-with zipfile.ZipFile('n50_run_results.zip', 'w', zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile('n105_run_results.zip', 'w', zipfile.ZIP_DEFLATED) as z:
     for p in paths:
         if os.path.isdir(p):
             for root, _, files in os.walk(p):
@@ -93,34 +100,19 @@ with zipfile.ZipFile('n50_run_results.zip', 'w', zipfile.ZIP_DEFLATED) as z:
 "
 ```
 
-Bring `evaluation_latest/n50_run_results.zip` back to this laptop
+Bring `evaluation_latest/n105_run_results.zip` back to this laptop
 (USB drive, cloud upload, or `git push` to a scratch branch on the
-AgriMind2 repo -- your call, results are just JSON so they're small).
+AgriMind2 repo -- results are just JSON, small either way).
 
 ---
 
 ## 4. Merge back on this laptop
 
-```bash
-cd evaluation_latest
-python -c "
-import zipfile
-zipfile.ZipFile('n50_run_results.zip').extractall('.')
-"
-```
-
-This drops new files into `results/raw/` alongside the existing 11 --
-it will NOT overwrite them since scenario IDs are unique filenames.
-Then regenerate every table, figure, and `aggregate_metrics.json`:
-
-```bash
-cd ..
-venv/Scripts/python.exe evaluation_latest/compute_and_report.py
-```
-
-Finally re-sync the manuscript's reported numbers by writing a fresh
-`sync_numbers.py`-style diff script against the new
-`aggregate_metrics.json` (the numbers will have moved again --
-narrower confidence intervals, and the vegetation-clustering defect
-found at N=11 should either persist or disappear at higher N, which is
-itself a reportable finding either way).
+Since this is a fresh Ollama-only run and the old results were mixed
+Groq/Gemini/Ollama, decide whether to replace `results/raw/` entirely
+(consistent single-provider run, recommended for a clean latency/quality
+comparison) or merge alongside the old 11 (larger N, but a provider
+confound). Tell me which when you bring the zip back and I'll do the
+regeneration -- extracting into `results/raw/` and re-running
+`compute_and_report.py`, then re-syncing every number quoted in the
+manuscript against the new `aggregate_metrics.json`.
