@@ -4,26 +4,26 @@ AgriMind
 
 Market Collector
 
-Collects market information using the dynamic crop profile.
+Responsibilities
+----------------
+1. Call MarketTool.
+2. Normalize market response.
+3. Preserve nearest market.
+4. Preserve top-5 market rankings.
+5. Return standardized market data.
 
 Author : AgriMind Team
 ==========================================================================
 """
 
+import logging
+
 from app.tools.market_tool import market_tool
+
+logger = logging.getLogger(__name__)
 
 
 class MarketCollector:
-
-    """
-    Market Collector
-
-    Responsibilities
-    ----------------
-    1. Call MarketTool.
-    2. Normalize the response.
-    3. Return standardized market data.
-    """
 
     ####################################################################
     # Collect
@@ -35,23 +35,60 @@ class MarketCollector:
 
         crop_profile,
 
-        district=None
+        district=None,
+
+        latitude=None,
+
+        longitude=None
 
     ):
 
-        result = market_tool.execute(
+        try:
 
-            crop_profile=crop_profile,
+            result = market_tool.execute(
 
-            district=district
+                crop_profile=crop_profile,
 
-        )
+                district=district,
 
-        ############################################################
-        # Failed Lookup
-        ############################################################
+                latitude=latitude,
 
-        if result.get("status") != "success":
+                longitude=longitude
+
+            )
+
+        except Exception as e:
+
+            logger.warning(
+
+                "Market collection failed: %s",
+                e
+
+            )
+
+            result = {
+
+                "status": "failed",
+
+                "assessment": {
+
+                    "trend": "Unknown",
+
+                    "notes":
+                        "Market data unavailable: "
+                        + str(e)
+
+                },
+
+                "error": str(e)
+
+            }
+
+        if result.get(
+
+            "status"
+
+        ) != "success":
 
             return {
 
@@ -61,31 +98,25 @@ class MarketCollector:
 
                 "market": None,
 
-                "raw_data": {},
+                "nearest_market": None,
 
-                "assessment": result.get(
+                "top_markets": [],
 
-                    "assessment",
+                "raw_data": None,
 
-                    {}
+                "assessment":
 
-                ),
+                    result.get(
+
+                        "assessment",
+
+                        {}
+
+                    ),
 
                 "confidence": 0
 
             }
-
-        ############################################################
-        # Successful Lookup
-        ############################################################
-
-        raw_data = result.get(
-
-            "data",
-
-            {}
-
-        ) or {}
 
         return {
 
@@ -93,25 +124,71 @@ class MarketCollector:
 
             "status": "success",
 
-            "market": raw_data.get("Market"),
+            "market":
 
-            "raw_data": raw_data,
+                result.get(
 
-            "assessment": result.get(
+                    "market"
 
-                "assessment",
+                ),
 
-                {}
+            "nearest_market":
 
-            ),
+                result.get(
 
-            "confidence": result.get(
+                    "nearest_market"
 
-                "confidence",
+                ),
 
-                0
+            "top_markets":
 
-            )
+                result.get(
+
+                    "top_markets",
+
+                    []
+
+                ),
+
+            "raw_data":
+
+                result.get(
+
+                    "data",
+
+                    {}
+
+                ),
+
+            "assessment":
+
+                result.get(
+
+                    "assessment",
+
+                    {}
+
+                ),
+
+            "confidence":
+
+                result.get(
+
+                    "confidence",
+
+                    0
+
+                ),
+
+            "metadata":
+
+                result.get(
+
+                    "metadata",
+
+                    {}
+
+                )
 
         }
 

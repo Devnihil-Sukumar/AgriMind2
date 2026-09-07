@@ -1,0 +1,22 @@
+{
+  "run_id": "cotton_WeatherAgent",
+  "crop": "cotton",
+  "agent": "WeatherAgent",
+  "prompt_chars": 5883,
+  "ollama": {
+    "elapsed_seconds": 302.066,
+    "valid_json_first_try": false,
+    "json_error": null,
+    "response_chars": 0,
+    "raw_response": null,
+    "error": "RuntimeError: Ollama request timed out after 300 seconds."
+  },
+  "groq": {
+    "elapsed_seconds": 3.392,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 1084,
+    "raw_response": "{\n    \"analysis\": \"The current conditions (28 °C, 69 % humidity, 13.4 km/h wind) align well with cotton’s optimal temperature, humidity, and wind‑speed ranges, indicating a suitable environment at this moment. The primary concern is the lack of rainfall today, which contributes to the overall low precipitation relative to the crop’s annual requirement (600‑1200 mm). Without supplemental irrigation, this could lead to water stress, especially as the crop approaches its critical flowering stage.\",\n    \"risks\": [\n        \"Current rainfall is zero, contributing to below‑optimal moisture availability.\",\n        \"Potential water stress if irrigation is not applied to meet the crop’s high water requirement.\"\n    ],\n    \"opportunities\": [\n        \"Temperature (28 °C) is comfortably within the optimal 15‑30 °C range.\",\n        \"Relative humidity (69 %) falls within the optimal 40‑80 % range, supporting healthy transpiration.\",\n        \"Wind speed (13.4 km/h) is well below the maximum 25 km/h, reducing risk of physical damage and disease spread.\"\n    ],\n    \"confidence\": 0.92\n}",
+    "error": null
+  }
+}

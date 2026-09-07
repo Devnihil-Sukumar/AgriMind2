@@ -1,0 +1,2383 @@
+{
+  "run_id": "mango_market_r1",
+  "phase": "baseline",
+  "crop": "mango",
+  "query": "Is now a good time to sell my mango harvest?",
+  "latitude": 11.0168,
+  "longitude": 76.9558,
+  "wall_time_seconds": 671.771,
+  "error": null,
+  "meta": {
+    "query_type": "market",
+    "repeat": 1
+  },
+  "result": {
+    "query": "Is now a good time to sell my mango harvest?",
+    "crop_profile": {
+      "crop": "mango",
+      "scientific_name": "Mangifera indica",
+      "family": "Anacardiaceae",
+      "type": "Perennial",
+      "category": "Fruit",
+      "growth_duration_days": 240,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 35,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 900,
+          "maximum": 1000,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 15,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 8
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Loam",
+          "Clay Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "High",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Drip irrigation",
+        "water_requirement": "High",
+        "critical_growth_stage": "Fruiting",
+        "recommended_frequency": "Every 7-10 days"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.15,
+          "high_stress": 0.05
+        },
+        "savi": {
+          "low_exposure": 0.55,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.25
+        }
+      },
+      "market": {
+        "keywords": [
+          "Tropical fruit",
+          "Juicy",
+          "Sweet"
+        ],
+        "major_states": [
+          "Andhra Pradesh",
+          "Telangana",
+          "Karnataka"
+        ],
+        "major_countries": [
+          "India",
+          "China",
+          "Brazil"
+        ],
+        "harvest_season": "May-July",
+        "storage_capability": "Moderate",
+        "perishability": "High"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Vitamin A",
+          "Vitamin C",
+          "Potassium"
+        ],
+        "commercial_products": [
+          "Juice",
+          "Pulp",
+          "Jam"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Anthracnose",
+          "symptoms": "Black spots on leaves and fruits",
+          "treatment": "Fungicides"
+        },
+        {
+          "name": "Powdery mildew",
+          "symptoms": "White powder on leaves",
+          "treatment": "Fungicides"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Fruit fly",
+          "treatment": "Insecticides"
+        },
+        {
+          "name": "Mealybug",
+          "treatment": "Insecticides"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "NPK 10:10:10",
+        "npk_ratio": "1:1:1",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 10,
+        "excellent_tonnes_per_hectare": 15
+      },
+      "recommendations": {
+        "irrigation": "Regular watering",
+        "fertilizer": "Balanced fertilizer",
+        "harvesting": "Hand-picking",
+        "storage": "Cool and dry place"
+      },
+      "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+      "references": [
+        "FAO",
+        "ICAR"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-08-31T16:04:36.375289",
+        "crop": "mango",
+        "crop_profile": {
+          "crop": "mango",
+          "scientific_name": "Mangifera indica",
+          "family": "Anacardiaceae",
+          "type": "Perennial",
+          "category": "Fruit",
+          "growth_duration_days": 240,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Fruiting",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 15,
+              "maximum": 35,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 60,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 900,
+              "maximum": 1000,
+              "unit": "mm/year"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 7.0
+            },
+            "wind_speed": {
+              "maximum": 15,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 8
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "Loam",
+              "Clay Loam"
+            ],
+            "preferred_nitrogen": "Medium",
+            "preferred_organic_carbon": "High",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "Drip irrigation",
+            "water_requirement": "High",
+            "critical_growth_stage": "Fruiting",
+            "recommended_frequency": "Every 7-10 days"
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.75,
+              "healthy": 0.6,
+              "moderate": 0.45,
+              "poor": 0.3
+            },
+            "ndwi": {
+              "low_stress": 0.25,
+              "moderate_stress": 0.15,
+              "high_stress": 0.05
+            },
+            "savi": {
+              "low_exposure": 0.55,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.25
+            }
+          },
+          "market": {
+            "keywords": [
+              "Tropical fruit",
+              "Juicy",
+              "Sweet"
+            ],
+            "major_states": [
+              "Andhra Pradesh",
+              "Telangana",
+              "Karnataka"
+            ],
+            "major_countries": [
+              "India",
+              "China",
+              "Brazil"
+            ],
+            "harvest_season": "May-July",
+            "storage_capability": "Moderate",
+            "perishability": "High"
+          },
+          "nutrition": {
+            "primary_nutrients": [
+              "Vitamin A",
+              "Vitamin C",
+              "Potassium"
+            ],
+            "commercial_products": [
+              "Juice",
+              "Pulp",
+              "Jam"
+            ]
+          },
+          "common_diseases": [
+            {
+              "name": "Anthracnose",
+              "symptoms": "Black spots on leaves and fruits",
+              "treatment": "Fungicides"
+            },
+            {
+              "name": "Powdery mildew",
+              "symptoms": "White powder on leaves",
+              "treatment": "Fungicides"
+            }
+          ],
+          "common_pests": [
+            {
+              "name": "Fruit fly",
+              "treatment": "Insecticides"
+            },
+            {
+              "name": "Mealybug",
+              "treatment": "Insecticides"
+            }
+          ],
+          "fertilizer": {
+            "recommended": "NPK 10:10:10",
+            "npk_ratio": "1:1:1",
+            "organic_options": [
+              "Compost",
+              "Manure"
+            ]
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 10,
+            "excellent_tonnes_per_hectare": 15
+          },
+          "recommendations": {
+            "irrigation": "Regular watering",
+            "fertilizer": "Balanced fertilizer",
+            "harvesting": "Hand-picking",
+            "storage": "Cool and dry place"
+          },
+          "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+          "references": [
+            "FAO",
+            "ICAR"
+          ],
+          "generated_by": "Groq",
+          "version": 2
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T21:30",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.4,
+          "humidity": 89,
+          "rainfall": 0.0,
+          "wind_speed": 13.9,
+          "pressure": 963.3,
+          "time": "2026-08-31T21:30"
+        },
+        "assessment": {
+          "crop": "mango",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (900-1000 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Kanyakumari Uzhavar Sandhai",
+        "nearest_market": {
+          "market": "Ramanathapuram Uzhavar Sandhai",
+          "district": "Ramanathapuram",
+          "price": 3838.0,
+          "trend": "Stable",
+          "distance_km": 276.18,
+          "market_score": 0.6276,
+          "rank": 3
+        },
+        "top_markets": [
+          {
+            "market": "Kanyakumari Uzhavar Sandhai",
+            "district": "Kanyakumari",
+            "price": 3807.0,
+            "trend": "Increasing",
+            "distance_km": 331.84,
+            "market_score": 0.6831,
+            "rank": 1
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 3770.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.642,
+            "rank": 2
+          },
+          {
+            "market": "Ramanathapuram Uzhavar Sandhai",
+            "district": "Ramanathapuram",
+            "price": 3838.0,
+            "trend": "Stable",
+            "distance_km": 276.18,
+            "market_score": 0.6276,
+            "rank": 3
+          },
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 3913.0,
+            "trend": "Volatile",
+            "distance_km": 281.81,
+            "market_score": 0.6207,
+            "rank": 4
+          },
+          {
+            "market": "Chengalpattu Uzhavar Sandhai",
+            "district": "Chengalpattu",
+            "price": 3824.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.6119,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "mango",
+          "TopMarkets": [
+            {
+              "market": "Kanyakumari Uzhavar Sandhai",
+              "district": "Kanyakumari",
+              "price": 3807.0,
+              "trend": "Increasing",
+              "distance_km": 331.84,
+              "market_score": 0.6831,
+              "rank": 1
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 3770.0,
+              "trend": "Increasing",
+              "distance_km": 360.83,
+              "market_score": 0.642,
+              "rank": 2
+            },
+            {
+              "market": "Ramanathapuram Uzhavar Sandhai",
+              "district": "Ramanathapuram",
+              "price": 3838.0,
+              "trend": "Stable",
+              "distance_km": 276.18,
+              "market_score": 0.6276,
+              "rank": 3
+            },
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 3913.0,
+              "trend": "Volatile",
+              "distance_km": 281.81,
+              "market_score": 0.6207,
+              "rank": 4
+            },
+            {
+              "market": "Chengalpattu Uzhavar Sandhai",
+              "district": "Chengalpattu",
+              "price": 3824.0,
+              "trend": "Stable",
+              "distance_km": 376.38,
+              "market_score": 0.6119,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Kanyakumari Uzhavar Sandhai with modal price 3807.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T16:04:36.372162",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "mango",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.4\nHumidity : 89\nRainfall : 0.0\nWind Speed : 13.9\nPressure : 963.3\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Ramanathapuram Uzhavar Sandhai\nNearest Distance : 276.18 km\nNearest Market Price : 3838.0\nNearest Market Trend : Stable\n\nBest Ranked Market : Kanyakumari Uzhavar Sandhai\nBest Market Price : 3807.0\nBest Market Distance : 331.84 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : mango\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "mango",
+      "crop_profile": {
+        "crop": "mango",
+        "scientific_name": "Mangifera indica",
+        "family": "Anacardiaceae",
+        "type": "Perennial",
+        "category": "Fruit",
+        "growth_duration_days": 240,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Fruiting",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 15,
+            "maximum": 35,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 60,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 900,
+            "maximum": 1000,
+            "unit": "mm/year"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 7.0
+          },
+          "wind_speed": {
+            "maximum": 15,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 8
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "Loam",
+            "Clay Loam"
+          ],
+          "preferred_nitrogen": "Medium",
+          "preferred_organic_carbon": "High",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "Drip irrigation",
+          "water_requirement": "High",
+          "critical_growth_stage": "Fruiting",
+          "recommended_frequency": "Every 7-10 days"
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.75,
+            "healthy": 0.6,
+            "moderate": 0.45,
+            "poor": 0.3
+          },
+          "ndwi": {
+            "low_stress": 0.25,
+            "moderate_stress": 0.15,
+            "high_stress": 0.05
+          },
+          "savi": {
+            "low_exposure": 0.55,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.25
+          }
+        },
+        "market": {
+          "keywords": [
+            "Tropical fruit",
+            "Juicy",
+            "Sweet"
+          ],
+          "major_states": [
+            "Andhra Pradesh",
+            "Telangana",
+            "Karnataka"
+          ],
+          "major_countries": [
+            "India",
+            "China",
+            "Brazil"
+          ],
+          "harvest_season": "May-July",
+          "storage_capability": "Moderate",
+          "perishability": "High"
+        },
+        "nutrition": {
+          "primary_nutrients": [
+            "Vitamin A",
+            "Vitamin C",
+            "Potassium"
+          ],
+          "commercial_products": [
+            "Juice",
+            "Pulp",
+            "Jam"
+          ]
+        },
+        "common_diseases": [
+          {
+            "name": "Anthracnose",
+            "symptoms": "Black spots on leaves and fruits",
+            "treatment": "Fungicides"
+          },
+          {
+            "name": "Powdery mildew",
+            "symptoms": "White powder on leaves",
+            "treatment": "Fungicides"
+          }
+        ],
+        "common_pests": [
+          {
+            "name": "Fruit fly",
+            "treatment": "Insecticides"
+          },
+          {
+            "name": "Mealybug",
+            "treatment": "Insecticides"
+          }
+        ],
+        "fertilizer": {
+          "recommended": "NPK 10:10:10",
+          "npk_ratio": "1:1:1",
+          "organic_options": [
+            "Compost",
+            "Manure"
+          ]
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 10,
+          "excellent_tonnes_per_hectare": 15
+        },
+        "recommendations": {
+          "irrigation": "Regular watering",
+          "fertilizer": "Balanced fertilizer",
+          "harvesting": "Hand-picking",
+          "storage": "Cool and dry place"
+        },
+        "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+        "references": [
+          "FAO",
+          "ICAR"
+        ],
+        "generated_by": "Groq",
+        "version": 2
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T21:30",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.4,
+          "humidity": 89,
+          "rainfall": 0.0,
+          "wind_speed": 13.9,
+          "pressure": 963.3,
+          "time": "2026-08-31T21:30"
+        },
+        "assessment": {
+          "crop": "mango",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (900-1000 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T16:04:36.372162",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Kanyakumari Uzhavar Sandhai",
+        "nearest_market": {
+          "market": "Ramanathapuram Uzhavar Sandhai",
+          "district": "Ramanathapuram",
+          "price": 3838.0,
+          "trend": "Stable",
+          "distance_km": 276.18,
+          "market_score": 0.6276,
+          "rank": 3
+        },
+        "top_markets": [
+          {
+            "market": "Kanyakumari Uzhavar Sandhai",
+            "district": "Kanyakumari",
+            "price": 3807.0,
+            "trend": "Increasing",
+            "distance_km": 331.84,
+            "market_score": 0.6831,
+            "rank": 1
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 3770.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.642,
+            "rank": 2
+          },
+          {
+            "market": "Ramanathapuram Uzhavar Sandhai",
+            "district": "Ramanathapuram",
+            "price": 3838.0,
+            "trend": "Stable",
+            "distance_km": 276.18,
+            "market_score": 0.6276,
+            "rank": 3
+          },
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 3913.0,
+            "trend": "Volatile",
+            "distance_km": 281.81,
+            "market_score": 0.6207,
+            "rank": 4
+          },
+          {
+            "market": "Chengalpattu Uzhavar Sandhai",
+            "district": "Chengalpattu",
+            "price": 3824.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.6119,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "mango",
+          "TopMarkets": [
+            {
+              "market": "Kanyakumari Uzhavar Sandhai",
+              "district": "Kanyakumari",
+              "price": 3807.0,
+              "trend": "Increasing",
+              "distance_km": 331.84,
+              "market_score": 0.6831,
+              "rank": 1
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 3770.0,
+              "trend": "Increasing",
+              "distance_km": 360.83,
+              "market_score": 0.642,
+              "rank": 2
+            },
+            {
+              "market": "Ramanathapuram Uzhavar Sandhai",
+              "district": "Ramanathapuram",
+              "price": 3838.0,
+              "trend": "Stable",
+              "distance_km": 276.18,
+              "market_score": 0.6276,
+              "rank": 3
+            },
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 3913.0,
+              "trend": "Volatile",
+              "distance_km": 281.81,
+              "market_score": 0.6207,
+              "rank": 4
+            },
+            {
+              "market": "Chengalpattu Uzhavar Sandhai",
+              "district": "Chengalpattu",
+              "price": 3824.0,
+              "trend": "Stable",
+              "distance_km": 376.38,
+              "market_score": 0.6119,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Kanyakumari Uzhavar Sandhai with modal price 3807.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "mango",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.4\nHumidity : 89\nRainfall : 0.0\nWind Speed : 13.9\nPressure : 963.3\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Ramanathapuram Uzhavar Sandhai\nNearest Distance : 276.18 km\nNearest Market Price : 3838.0\nNearest Market Trend : Stable\n\nBest Ranked Market : Kanyakumari Uzhavar Sandhai\nBest Market Price : 3807.0\nBest Market Distance : 331.84 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : mango\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 90,
+      "vegetation_health": "Critical",
+      "market_trend": "Increasing",
+      "risks": [
+        "Humidity above optimal (60-80%)",
+        "Rainfall below optimal (900-1000 mm/year)",
+        "Vegetation health is critical",
+        "High crop water stress",
+        "Large exposed soil area",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality",
+        "Market prices increasing"
+      ],
+      "confidence": 31.48
+    },
+    "plan": {
+      "goal": "Is now a good time to sell my mango harvest?",
+      "execution_plan": [
+        {
+          "agent": "MarketAgent",
+          "priority": 1,
+          "purpose": "Analyze market prices, trends, and selling opportunities."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 2,
+          "purpose": "Generate the final recommendation from specialist evidence."
+        }
+      ],
+      "confidence": 0.85
+    },
+    "reasoning": {
+      "summary": "1 specialist agents reached a consensus.",
+      "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+      "merged_risks": [
+        "High perishability of mangoes combined with only moderate storage capability.",
+        "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+        "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+        "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend.",
+        "Price volatility observed at Thoothukudi Market."
+      ],
+      "merged_opportunities": [
+        "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+        "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+        "Multiple nearby markets allow for price comparison and quick redistribution.",
+        "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices.",
+        "Stable price and slightly higher rate at Ramanathapuram Market."
+      ],
+      "conflicts": [],
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "agent": "MarketAgent",
+          "analysis": "1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength.",
+          "risks": [
+            "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+            "High perishability of mangoes combined with only moderate storage capability.",
+            "Price volatility observed at Thoothukudi Market.",
+            "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+            "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend."
+          ],
+          "opportunities": [
+            "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+            "Stable price and slightly higher rate at Ramanathapuram Market.",
+            "Multiple nearby markets allow for price comparison and quick redistribution.",
+            "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+            "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices."
+          ],
+          "confidence": 0.96,
+          "metadata": {
+            "nearest_market": {
+              "market": "Ramanathapuram Uzhavar Sandhai",
+              "district": "Ramanathapuram",
+              "price": 3838.0,
+              "trend": "Stable",
+              "distance_km": 276.18,
+              "market_score": 0.6276,
+              "rank": 3
+            },
+            "top_market_count": 5,
+            "top_markets": [
+              {
+                "market": "Kanyakumari Uzhavar Sandhai",
+                "district": "Kanyakumari",
+                "price": 3807.0,
+                "trend": "Increasing",
+                "distance_km": 331.84,
+                "market_score": 0.6831,
+                "rank": 1
+              },
+              {
+                "market": "Kanchipuram Market",
+                "district": "Kanchipuram",
+                "price": 3770.0,
+                "trend": "Increasing",
+                "distance_km": 360.83,
+                "market_score": 0.642,
+                "rank": 2
+              },
+              {
+                "market": "Ramanathapuram Uzhavar Sandhai",
+                "district": "Ramanathapuram",
+                "price": 3838.0,
+                "trend": "Stable",
+                "distance_km": 276.18,
+                "market_score": 0.6276,
+                "rank": 3
+              },
+              {
+                "market": "Thoothukudi Market",
+                "district": "Thoothukudi",
+                "price": 3913.0,
+                "trend": "Volatile",
+                "distance_km": 281.81,
+                "market_score": 0.6207,
+                "rank": 4
+              },
+              {
+                "market": "Chengalpattu Uzhavar Sandhai",
+                "district": "Chengalpattu",
+                "price": 3824.0,
+                "trend": "Stable",
+                "distance_km": 376.38,
+                "market_score": 0.6119,
+                "rank": 5
+              }
+            ]
+          }
+        }
+      ],
+      "metadata": {
+        "agents": [
+          "MarketAgent"
+        ],
+        "agent_count": 1,
+        "llm_provider": "gemini"
+      }
+    },
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.96,
+      "decision": "Prepare for Harvest and Selling",
+      "priority": "P4",
+      "urgency": "Monitor",
+      "risk_level": "Low",
+      "action_order": [],
+      "priorities": [],
+      "impact": {
+        "agronomic": "Excellent",
+        "economic": "Excellent",
+        "environmental": "Moderate",
+        "operational": "Good",
+        "yield_risk": "Low",
+        "profitability": "High",
+        "expected_benefit": "Current conditions provide opportunities for improved profitability."
+      },
+      "summary": {
+        "executive": "Mango cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+        "business": "Market trend is increasing with high profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+        "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: High perishability of mangoes combined with only moderate storage capability., Logistical costs and time due to distances (276‑380 km) to nearest markets., Post‑harvest period (May‑July season ended) increases risk of spoilage.."
+      },
+      "supporting_evidence": [
+        "MarketAgent: 1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9132833169983033,
+        "posterior_mean": 0.9154227929293826,
+        "evidence": {
+          "positive": true,
+          "weight": 0.72,
+          "reason": "Completed with confidence 0.96."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1406,
+          "utilities": {
+            "auto_execute": 17.344,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.14 from trust=0.92 (+/-0.06) on a medium-risk executive action => auto_execute (EU auto=17.344, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Prepare for Harvest and Selling",
+      "priority": "P4",
+      "justification": "Generated deterministically from the validated executive decision because the recommendation model was unavailable: Groq failed after 3 retries.\nError code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzg0jsa1e94a1f6bah7xkr4v` service tier `o ...[truncated]",
+      "actions": [
+        "High perishability of mangoes combined with only moderate storage capability.",
+        "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+        "Post‑harvest period (May‑July season ended) increases risk of spoilage."
+      ],
+      "expected_outcome": "Outcome not modelled. This plan restates the executive decision without model-generated analysis.",
+      "monitoring_plan": [
+        "Re-run the recommendation once the advisory model is reachable."
+      ],
+      "confidence": 0.35,
+      "generation_mode": "deterministic_fallback",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Prepare for Harvest and Selling",
+      "executive_priority": "P4",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9284171961301818,
+        "posterior_mean": 0.9284262986714987,
+        "evidence": {
+          "positive": true,
+          "weight": 0.175,
+          "reason": "Completed via deterministic fallback (weaker evidence, no live model reasoning)."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1195,
+          "utilities": {
+            "auto_execute": 20.882,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=20.882, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "Is now a good time to sell my mango harvest?",
+      "execution_plan": [
+        {
+          "agent": "MarketAgent",
+          "priority": 1,
+          "purpose": "Analyze market prices, trends, and selling opportunities."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 2,
+          "purpose": "Generate the final recommendation from specialist evidence."
+        }
+      ],
+      "specialists": {
+        "MarketAgent": {
+          "agent": "MarketAgent",
+          "status": "completed",
+          "analysis": "1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength.",
+          "summary": "Nearest market: Ramanathapuram Uzhavar Sandhai (276.18 km). Best-ranked market: Kanyakumari Uzhavar Sandhai with modal price 3807.0. 5 market(s) were evaluated. 1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength. 5 market risk(s) identified. 5 market opportunity(s) identified.",
+          "risks": [
+            "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+            "High perishability of mangoes combined with only moderate storage capability.",
+            "Price volatility observed at Thoothukudi Market.",
+            "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+            "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend."
+          ],
+          "opportunities": [
+            "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+            "Stable price and slightly higher rate at Ramanathapuram Market.",
+            "Multiple nearby markets allow for price comparison and quick redistribution.",
+            "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+            "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices."
+          ],
+          "confidence": 0.96,
+          "metadata": {
+            "nearest_market": {
+              "market": "Ramanathapuram Uzhavar Sandhai",
+              "district": "Ramanathapuram",
+              "price": 3838.0,
+              "trend": "Stable",
+              "distance_km": 276.18,
+              "market_score": 0.6276,
+              "rank": 3
+            },
+            "top_market_count": 5,
+            "top_markets": [
+              {
+                "market": "Kanyakumari Uzhavar Sandhai",
+                "district": "Kanyakumari",
+                "price": 3807.0,
+                "trend": "Increasing",
+                "distance_km": 331.84,
+                "market_score": 0.6831,
+                "rank": 1
+              },
+              {
+                "market": "Kanchipuram Market",
+                "district": "Kanchipuram",
+                "price": 3770.0,
+                "trend": "Increasing",
+                "distance_km": 360.83,
+                "market_score": 0.642,
+                "rank": 2
+              },
+              {
+                "market": "Ramanathapuram Uzhavar Sandhai",
+                "district": "Ramanathapuram",
+                "price": 3838.0,
+                "trend": "Stable",
+                "distance_km": 276.18,
+                "market_score": 0.6276,
+                "rank": 3
+              },
+              {
+                "market": "Thoothukudi Market",
+                "district": "Thoothukudi",
+                "price": 3913.0,
+                "trend": "Volatile",
+                "distance_km": 281.81,
+                "market_score": 0.6207,
+                "rank": 4
+              },
+              {
+                "market": "Chengalpattu Uzhavar Sandhai",
+                "district": "Chengalpattu",
+                "price": 3824.0,
+                "trend": "Stable",
+                "distance_km": 376.38,
+                "market_score": 0.6119,
+                "rank": 5
+              }
+            ]
+          },
+          "execution_time": 75.394,
+          "governance": {
+            "agent": "MarketAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.6020553367024901,
+            "posterior_mean": 0.6257398227891703,
+            "evidence": {
+              "positive": true,
+              "weight": 0.48,
+              "reason": "Completed with confidence 0.96."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.5248,
+              "utilities": {
+                "auto_execute": -0.992,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.52 from trust=0.63 (+/-0.15) on a low-risk data_collector action => human_review (EU auto=-0.992, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": {
+        "summary": "1 specialist agents reached a consensus.",
+        "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+        "merged_risks": [
+          "High perishability of mangoes combined with only moderate storage capability.",
+          "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+          "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+          "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend.",
+          "Price volatility observed at Thoothukudi Market."
+        ],
+        "merged_opportunities": [
+          "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+          "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+          "Multiple nearby markets allow for price comparison and quick redistribution.",
+          "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices.",
+          "Stable price and slightly higher rate at Ramanathapuram Market."
+        ],
+        "conflicts": [],
+        "confidence": 0.96,
+        "evidence": [
+          {
+            "agent": "MarketAgent",
+            "analysis": "1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength.",
+            "risks": [
+              "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+              "High perishability of mangoes combined with only moderate storage capability.",
+              "Price volatility observed at Thoothukudi Market.",
+              "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+              "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend."
+            ],
+            "opportunities": [
+              "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+              "Stable price and slightly higher rate at Ramanathapuram Market.",
+              "Multiple nearby markets allow for price comparison and quick redistribution.",
+              "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+              "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices."
+            ],
+            "confidence": 0.96,
+            "metadata": {
+              "nearest_market": {
+                "market": "Ramanathapuram Uzhavar Sandhai",
+                "district": "Ramanathapuram",
+                "price": 3838.0,
+                "trend": "Stable",
+                "distance_km": 276.18,
+                "market_score": 0.6276,
+                "rank": 3
+              },
+              "top_market_count": 5,
+              "top_markets": [
+                {
+                  "market": "Kanyakumari Uzhavar Sandhai",
+                  "district": "Kanyakumari",
+                  "price": 3807.0,
+                  "trend": "Increasing",
+                  "distance_km": 331.84,
+                  "market_score": 0.6831,
+                  "rank": 1
+                },
+                {
+                  "market": "Kanchipuram Market",
+                  "district": "Kanchipuram",
+                  "price": 3770.0,
+                  "trend": "Increasing",
+                  "distance_km": 360.83,
+                  "market_score": 0.642,
+                  "rank": 2
+                },
+                {
+                  "market": "Ramanathapuram Uzhavar Sandhai",
+                  "district": "Ramanathapuram",
+                  "price": 3838.0,
+                  "trend": "Stable",
+                  "distance_km": 276.18,
+                  "market_score": 0.6276,
+                  "rank": 3
+                },
+                {
+                  "market": "Thoothukudi Market",
+                  "district": "Thoothukudi",
+                  "price": 3913.0,
+                  "trend": "Volatile",
+                  "distance_km": 281.81,
+                  "market_score": 0.6207,
+                  "rank": 4
+                },
+                {
+                  "market": "Chengalpattu Uzhavar Sandhai",
+                  "district": "Chengalpattu",
+                  "price": 3824.0,
+                  "trend": "Stable",
+                  "distance_km": 376.38,
+                  "market_score": 0.6119,
+                  "rank": 5
+                }
+              ]
+            }
+          }
+        ],
+        "metadata": {
+          "agents": [
+            "MarketAgent"
+          ],
+          "agent_count": 1,
+          "llm_provider": "gemini"
+        }
+      },
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.96,
+        "decision": "Prepare for Harvest and Selling",
+        "priority": "P4",
+        "urgency": "Monitor",
+        "risk_level": "Low",
+        "action_order": [],
+        "priorities": [],
+        "impact": {
+          "agronomic": "Excellent",
+          "economic": "Excellent",
+          "environmental": "Moderate",
+          "operational": "Good",
+          "yield_risk": "Low",
+          "profitability": "High",
+          "expected_benefit": "Current conditions provide opportunities for improved profitability."
+        },
+        "summary": {
+          "executive": "Mango cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+          "business": "Market trend is increasing with high profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+          "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: High perishability of mangoes combined with only moderate storage capability., Logistical costs and time due to distances (276‑380 km) to nearest markets., Post‑harvest period (May‑July season ended) increases risk of spoilage.."
+        },
+        "supporting_evidence": [
+          "MarketAgent: 1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9132833169983033,
+          "posterior_mean": 0.9154227929293826,
+          "evidence": {
+            "positive": true,
+            "weight": 0.72,
+            "reason": "Completed with confidence 0.96."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.1406,
+            "utilities": {
+              "auto_execute": 17.344,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.14 from trust=0.92 (+/-0.06) on a medium-risk executive action => auto_execute (EU auto=17.344, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Prepare for Harvest and Selling",
+        "priority": "P4",
+        "justification": "Generated deterministically from the validated executive decision because the recommendation model was unavailable: Groq failed after 3 retries.\nError code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzg0jsa1e94a1f6bah7xkr4v` service tier `o ...[truncated]",
+        "actions": [
+          "High perishability of mangoes combined with only moderate storage capability.",
+          "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+          "Post‑harvest period (May‑July season ended) increases risk of spoilage."
+        ],
+        "expected_outcome": "Outcome not modelled. This plan restates the executive decision without model-generated analysis.",
+        "monitoring_plan": [
+          "Re-run the recommendation once the advisory model is reachable."
+        ],
+        "confidence": 0.35,
+        "generation_mode": "deterministic_fallback",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Prepare for Harvest and Selling",
+        "executive_priority": "P4",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9284171961301818,
+          "posterior_mean": 0.9284262986714987,
+          "evidence": {
+            "positive": true,
+            "weight": 0.175,
+            "reason": "Completed via deterministic fallback (weaker evidence, no live model reasoning)."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1195,
+            "utilities": {
+              "auto_execute": 20.882,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=20.882, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Prepare for Harvest and Selling",
+        "executive_summary": "Prepare for Harvest and Selling. Prepare for Harvest and Selling",
+        "recommendation": "Prepare for Harvest and Selling",
+        "explanation": "The recommendation is supported by specialist evidence: MarketAgent: Nearest market: Ramanathapuram Uzhavar Sandhai (276.18 km). Best-ranked market: Kanyakumari Uzhavar Sandhai with modal price 3807.0. 5 market(s) were evaluated. 1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength. 5 market risk(s) identified. 5 market opportunity(s) identified. Collaborative reasoning concluded that 1 specialist agents reached a consensus. The final decision is 'Prepare for Harvest and Selling', leading to the recommendation: Prepare for Harvest and Selling",
+        "reasoning_summary": "1 specialist agents reached a consensus.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "MarketAgent",
+              "finding": "Nearest market: Ramanathapuram Uzhavar Sandhai (276.18 km). Best-ranked market: Kanyakumari Uzhavar Sandhai with modal price 3807.0. 5 market(s) were evaluated. 1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength. 5 market risk(s) identified. 5 market opportunity(s) identified.",
+              "confidence": 0.96,
+              "key_risks": [
+                "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+                "High perishability of mangoes combined with only moderate storage capability.",
+                "Price volatility observed at Thoothukudi Market.",
+                "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+                "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend."
+              ],
+              "key_opportunities": [
+                "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+                "Stable price and slightly higher rate at Ramanathapuram Market.",
+                "Multiple nearby markets allow for price comparison and quick redistribution.",
+                "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+                "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "High perishability of mangoes combined with only moderate storage capability.",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "Price volatility observed at Thoothukudi Market.",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 3,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "High perishability of mangoes combined with only moderate storage capability.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Price volatility observed at Thoothukudi Market.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "1 specialist agents reached a consensus.",
+              "confidence": 0.96,
+              "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+              "merged_risks": [
+                "High perishability of mangoes combined with only moderate storage capability.",
+                "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+                "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+                "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend.",
+                "Price volatility observed at Thoothukudi Market."
+              ],
+              "merged_opportunities": [
+                "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+                "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+                "Multiple nearby markets allow for price comparison and quick redistribution.",
+                "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices.",
+                "Stable price and slightly higher rate at Ramanathapuram Market."
+              ],
+              "conflicts": [],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 8,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Prepare for Harvest and Selling",
+              "confidence": 0.96,
+              "priority": "P4",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 9,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Prepare for Harvest and Selling",
+              "confidence": 0.35,
+              "actions": [
+                "High perishability of mangoes combined with only moderate storage capability.",
+                "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+                "Post‑harvest period (May‑July season ended) increases risk of spoilage."
+              ],
+              "justification": "Generated deterministically from the validated executive decision because the recommendation model was unavailable: Groq failed after 3 retries.\nError code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzg0jsa1e94a1f6bah7xkr4v` service tier `o ...[truncated]",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+              "strength": 0.851
+            },
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "High perishability of mangoes combined with only moderate storage capability.",
+              "strength": 0.851
+            },
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Price volatility observed at Thoothukudi Market.",
+              "strength": 0.851
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "1 specialist agents reached a consensus.",
+              "strength": 0.96
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Prepare for Harvest and Selling",
+              "strength": 0.96
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Prepare for Harvest and Selling",
+              "strength": 0.35
+            }
+          ],
+          "summary": "1 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Prepare for Harvest and Selling'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 9,
+          "specialist_steps": 1,
+          "evidence_steps": 5,
+          "decision_step": 8,
+          "recommendation_step": 9,
+          "top_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "High perishability of mangoes combined with only moderate storage capability.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Price volatility observed at Thoothukudi Market.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "High perishability of mangoes combined with only moderate storage capability.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Price volatility observed at Thoothukudi Market.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 5
+            },
+            {
+              "source": "MarketAgent",
+              "type": "analysis",
+              "finding": "1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 6
+            },
+            {
+              "source": "MarketAgent",
+              "type": "summary",
+              "finding": "Nearest market: Ramanathapuram Uzhavar Sandhai (276.18 km). Best-ranked market: Kanyakumari Uzhavar Sandhai with modal price 3807.0. 5 market(s) were evaluated. 1. The overall market trend for mango is upward, with the top two markets (Kanyakumari Uzhavar Sandhai and Kanchipuram Market) reporting increasing prices. 2. The nearest listed market is Ramanathapuram Uzhavar Sandhai (276.18 km away) offering a price of 3838 INR and a stable trend. 3. The best‑ranked market is Kanyakumari Uzhavar Sandhai (rank 1) with a price of 3807 INR and an increasing trend, giving it the highest market_score (0.6831). 4. The top‑5 markets (Kanyakumari, Kanchipuram, Ramanathapuram, Thoothukudi, Chengalpattu) provide a price range of 3770‑3913 INR, three of which show increasing or stable trends, offering comparative pricing options. 5. Current selling opportunity is strong in Kanyakumari and Kanchipuram where prices are rising; Ramanathapuram offers a slightly higher price with stability, while Thoothukudi, though highest priced (3913 INR), is volatile. 6. Risks include post‑harvest timing (current date is 31‑Aug‑2026, past the May‑July harvest window), high perishability of mangoes, moderate storage capacity, price volatility at Thoothukudi, and logistical costs due to distances of 276‑380 km. 7. Opportunities comprise the upward price trend, multiple nearby markets for quick distribution, relatively high prices compared to previous seasons, and the ability to capture premium rates in volatile but high‑price markets if logistics allow. 8. Harvest timing has just passed; any remaining fruit is likely at the tail end of freshness, requiring rapid marketing. 9. Selling now is advisable only if the produce can be moved quickly to the increasing‑trend markets (Kanyakumari, Kanchipuram) or to the stable‑trend market (Ramanathapuram) to mitigate spoilage; otherwise, holding inventory poses higher risk. 10. Overall market assessment: favorable price environment with rising trends, but constrained by post‑harvest perishability and logistical considerations. Quick sales to the top‑ranked or stable markets are recommended to capitalize on current price strength. 5 market risk(s) identified. 5 market opportunity(s) identified.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 7
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 8
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Stable price and slightly higher rate at Ramanathapuram Market.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 9
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Multiple nearby markets allow for price comparison and quick redistribution.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 10
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 11
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 12
+            }
+          ],
+          "source_summary": {
+            "MarketAgent": {
+              "evidence_score": 0.851,
+              "finding_count": 12,
+              "highest_importance": "High"
+            }
+          },
+          "total_findings": 12,
+          "top_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "High perishability of mangoes combined with only moderate storage capability.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Price volatility observed at Thoothukudi Market.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "High perishability of mangoes combined with only moderate storage capability.",
+          "Logistical costs and time due to distances (276‑380 km) to nearest markets.",
+          "Post‑harvest period (May‑July season ended) increases risk of spoilage.",
+          "Potential oversupply if many growers are harvesting simultaneously, which could reverse the upward trend.",
+          "Price volatility observed at Thoothukudi Market."
+        ],
+        "opportunities": [
+          "Higher price point at Thoothukudi Market for sellers able to manage volatility.",
+          "Increasing price trend in Kanyakumari and Kanchipuram markets.",
+          "Multiple nearby markets allow for price comparison and quick redistribution.",
+          "Opportunity to target value‑added channels (juice, pulp) to extend shelf‑life and capture premium prices.",
+          "Stable price and slightly higher rate at Ramanathapuram Market."
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Sell at the nearest market",
+            "expected_result": "Transport cost may be lower, but the achievable price may also be lower.",
+            "why_rejected": "The selected market achieved a stronger composite score after considering price, trend, and distance.",
+            "context_signal": "Best market=Kanyakumari Uzhavar Sandhai, price=3807.0"
+          },
+          {
+            "decision": "Delay selling",
+            "expected_result": "A future price increase could improve returns, but prices may also decline.",
+            "why_rejected": "Current market conditions provide a sufficiently favorable selling opportunity.",
+            "context_signal": "Top-market count=5"
+          },
+          {
+            "decision": "Sell at the highest-price market regardless of distance",
+            "expected_result": "Higher gross revenue may be offset by transport costs and operational difficulty.",
+            "why_rejected": "AgriMind considers market price together with geographic accessibility and market trend.",
+            "context_signal": "Candidate markets=5"
+          },
+          {
+            "decision": "Delay harvest",
+            "expected_result": "Crop may gain additional maturity, but quality or yield risk may increase depending on crop condition.",
+            "why_rejected": "Current evidence does not justify delaying the recommended harvest action.",
+            "context_signal": "Vegetation health=Critical"
+          },
+          {
+            "decision": "Partial harvest",
+            "expected_result": "Some produce can be secured while the remainder continues maturing.",
+            "why_rejected": "A complete intervention is preferred under the current evidence pattern.",
+            "context_signal": "Vegetation health=Critical"
+          },
+          {
+            "decision": "Take no immediate action",
+            "expected_result": "Current risks may persist or worsen.",
+            "why_rejected": "AgriMind selected 'Prepare for Harvest and Selling' because the available evidence supports intervention.",
+            "context_signal": "No-action baseline"
+          }
+        ],
+        "limitations": [
+          {
+            "category": "Missing Evidence",
+            "limitation": "WeatherAgent did not return an output.",
+            "impact": "The final recommendation was produced without WeatherAgent evidence.",
+            "evidence": "WeatherAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "SoilAgent did not return an output.",
+            "impact": "The final recommendation was produced without SoilAgent evidence.",
+            "evidence": "SoilAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "SatelliteAgent did not return an output.",
+            "impact": "The final recommendation was produced without SatelliteAgent evidence.",
+            "evidence": "SatelliteAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "HistoricalAgent did not return an output.",
+            "impact": "The final recommendation was produced without HistoricalAgent evidence.",
+            "evidence": "HistoricalAgent"
+          },
+          {
+            "category": "Soil Data Provenance",
+            "limitation": "Soil analysis used the local synthetic/scenario-controlled dataset rather than live field measurements.",
+            "impact": "The soil assessment is suitable for controlled system evaluation but should not be interpreted as a direct measurement of the current field.",
+            "evidence": "local dataset"
+          },
+          {
+            "category": "Market Data Provenance",
+            "limitation": "Market analysis used the synthetic local market dataset.",
+            "impact": "The ranking is valid for controlled testing but should not be interpreted as real-time market intelligence.",
+            "evidence": "synthetic local dataset"
+          }
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Weather changes can affect irrigation and field operations."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Monitor environmental stress."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Ensure irrigation is effective."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Monthly",
+            "reason": "Maintain suitable soil conditions."
+          },
+          {
+            "source": "Satellite",
+            "parameter": "NDVI",
+            "frequency": "Weekly",
+            "reason": "Monitor vegetation health."
+          },
+          {
+            "source": "Satellite",
+            "parameter": "NDWI",
+            "frequency": "Weekly",
+            "reason": "Detect crop water stress."
+          },
+          {
+            "source": "Market",
+            "parameter": "Crop Price",
+            "frequency": "Daily",
+            "reason": "Identify the best selling opportunity."
+          },
+          {
+            "source": "Historical",
+            "parameter": "Seasonal Comparison",
+            "frequency": "Monthly",
+            "reason": "Compare current performance with previous seasons."
+          },
+          {
+            "source": "System",
+            "parameter": "Overall Farm Health",
+            "frequency": "Weekly",
+            "reason": "Validate AgriMind recommendations."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.96,
+          "specialist_average": 0.96,
+          "strongest_source": "MarketAgent",
+          "strongest_confidence": 0.96,
+          "weakest_source": "MarketAgent",
+          "weakest_confidence": 0.96,
+          "unavailable_sources": [],
+          "breakdown": {
+            "MarketAgent": 0.96,
+            "CollaborativeReasoning": 0.96,
+            "ExecutiveDecision": 0.96
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.96. The strongest specialist evidence came from MarketAgent (0.96), while the weakest was MarketAgent (0.96). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.96,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8473,
+            "trust_std": 0.0804
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8761,
+            "trust_std": 0.073
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.719,
+            "trust_std": 0.1184
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6257,
+            "trust_std": 0.1505
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9154,
+            "trust_std": 0.056
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9284,
+            "trust_std": 0.0479
+          }
+        },
+        "crop_learning": {
+          "crop": "mango",
+          "trust_mean": 0.8461,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.866,
+              "trust_std": 0.0854
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8461,
+              "trust_std": 0.0964
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.96,
+      "statistics": {
+        "agents_planned": 2,
+        "specialist_agents": 1,
+        "agents_completed": 1,
+        "agents_failed": 0,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.85,
+        "reasoning_confidence": 0.96,
+        "executive_confidence": 0.96,
+        "explanation_confidence": 0.96,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 6,
+        "monitoring_items": 9,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 671.771
+  }
+}

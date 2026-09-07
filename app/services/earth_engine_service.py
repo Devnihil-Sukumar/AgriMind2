@@ -8,16 +8,17 @@ class EarthEngineService:
     def __init__(self):
 
         self.project_id = ai_settings.GEE_PROJECT_ID
+        self.initialized = False
 
         try:
             ee.Initialize(project=self.project_id)
-            print("✓ Google Earth Engine initialized")
+            self.initialized = True
+            print("[OK] Google Earth Engine initialized")
 
-        except Exception:
-            print("Authenticating Google Earth Engine...")
-            ee.Authenticate()
-            ee.Initialize(project=self.project_id)
-            print("✓ Google Earth Engine initialized")
+        except Exception as e:
+            print(f"[WARNING] Google Earth Engine not available: {e}")
+            print("  Satellite features will be disabled.")
+            print("  Run 'earthengine authenticate' to set up credentials.")
 
     ####################################################################
     # Geometry

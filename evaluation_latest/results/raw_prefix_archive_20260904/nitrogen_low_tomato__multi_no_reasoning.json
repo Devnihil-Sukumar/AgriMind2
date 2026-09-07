@@ -1,0 +1,632 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "tomato",
+    "crop_profile": {
+      "crop": "tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "family": "Solanaceae",
+      "type": "Annual",
+      "category": "Fruit",
+      "growth_duration_days": 110,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 18,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 500,
+          "maximum": 1000,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Drip",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 2-3 days, 20-30 mm per week"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.65,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.3,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "Fresh",
+          "Processing",
+          "Canned",
+          "Sauce",
+          "Paste"
+        ],
+        "major_states": [
+          "California",
+          "Florida",
+          "Ohio",
+          "New York"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "United States",
+          "Turkey",
+          "Egypt"
+        ],
+        "harvest_season": "Summer to early Autumn",
+        "storage_capability": "Moderate",
+        "perishability": "High"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Vitamin C",
+          "Vitamin A",
+          "Potassium",
+          "Lycopene"
+        ],
+        "commercial_products": [
+          "Fresh fruit",
+          "Tomato paste",
+          "Ketchup",
+          "Canned tomatoes",
+          "Sauce"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Late blight",
+          "symptoms": "Water-soaked lesions on leaves and fruit, white fungal growth",
+          "treatment": "Apply copper-based fungicides and use resistant varieties"
+        },
+        {
+          "name": "Early blight",
+          "symptoms": "Target-shaped lesions on lower leaves, yellowing",
+          "treatment": "Rotate crops, apply fungicide sprays such as chlorothalonil"
+        },
+        {
+          "name": "Fusarium wilt",
+          "symptoms": "Wilting, yellowing, vascular discoloration",
+          "treatment": "Use resistant cultivars and soil solarization"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Tomato fruit worm (Helicoverpa armigera)",
+          "treatment": "Biological control with Bacillus thuringiensis, pheromone traps"
+        },
+        {
+          "name": "Whitefly (Bemisia tabaci)",
+          "treatment": "Insecticidal soap, neem oil, reflective mulches"
+        },
+        {
+          "name": "Aphids (Myzus persicae)",
+          "treatment": "Introduce lady beetles, use insecticidal soap"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "Balanced NPK fertilizer applied in split doses",
+        "npk_ratio": "10-10-10",
+        "organic_options": [
+          "Compost",
+          "Well-rotted manure",
+          "Bone meal"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 60,
+        "excellent_tonnes_per_hectare": 90
+      },
+      "recommendations": {
+        "irrigation": "Drip irrigation with mulching to conserve moisture",
+        "fertilizer": "Apply 60 kg N/ha split into 3 applications, 40 kg P2O5/ha, 60 kg K2O/ha",
+        "harvesting": "Pick fruits when fully colored; avoid mechanical damage",
+        "storage": "Store at 12-13\u00b0C with high humidity; use refrigerated transport"
+      },
+      "summary": "Tomato (Solanum lycopersicum) is an annual fruit crop thriving in warm, humid climates with 18-30\u00b0C temperatures, 60-80% humidity, and 500-1000 mm annual rainfall. It prefers loam soils, pH 5.5-7.0, good drainage, and high nitrogen. Drip irrigation, balanced NPK (10-10-10) and organic amendments boost yields of 60-90 t/ha. Major producers include China, India, USA, Turkey, and Egypt. Key challenges are late blight, early blight, Fusarium wilt, and pests like fruit worm, whitefly, and aphids. Proper irrigation, fertilization, timely harvest, and refrigerated storage ensure high-quality marketable fruit.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T22:00",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 24.0,
+        "humidity": 70.0,
+        "rainfall": 7.5,
+        "wind_speed": 10.0,
+        "pressure": 963.5,
+        "time": "2026-08-31T22:00"
+      },
+      "assessment": {
+        "crop": "tomato",
+        "status": "Good",
+        "identified_risks": [],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 84
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Low",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Low",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Low",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [
+          "Soil nitrogen level is Low, below the crop's preferred High requirement."
+        ],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T16:43:31.048117",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.8,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": 0.3,
+        "stress": "Low"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Continue normal management."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Tiruvarur Market",
+      "nearest_market": {
+        "market": "Tiruvannamalai Uzhavar Sandhai",
+        "district": "Tiruvannamalai",
+        "price": 1843.0,
+        "trend": "Increasing",
+        "distance_km": 267.05,
+        "market_score": 0.6479,
+        "rank": 4
+      },
+      "top_markets": [
+        {
+          "market": "Tiruvarur Market",
+          "district": "Tiruvarur",
+          "price": 1917.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.8007,
+          "rank": 1
+        },
+        {
+          "market": "Thoothukudi Mandi",
+          "district": "Thoothukudi",
+          "price": 1908.0,
+          "trend": "Stable",
+          "distance_km": 281.81,
+          "market_score": 0.7821,
+          "rank": 2
+        },
+        {
+          "market": "Kanchipuram Mandi",
+          "district": "Kanchipuram",
+          "price": 1908.0,
+          "trend": "Stable",
+          "distance_km": 360.83,
+          "market_score": 0.692,
+          "rank": 3
+        },
+        {
+          "market": "Tiruvannamalai Uzhavar Sandhai",
+          "district": "Tiruvannamalai",
+          "price": 1843.0,
+          "trend": "Stable",
+          "distance_km": 267.05,
+          "market_score": 0.6479,
+          "rank": 4
+        },
+        {
+          "market": "Kanyakumari Market",
+          "district": "Kanyakumari",
+          "price": 1867.0,
+          "trend": "Stable",
+          "distance_km": 331.84,
+          "market_score": 0.6073,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "tomato",
+        "TopMarkets": [
+          {
+            "market": "Tiruvarur Market",
+            "district": "Tiruvarur",
+            "price": 1917.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Thoothukudi Mandi",
+            "district": "Thoothukudi",
+            "price": 1908.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.7821,
+            "rank": 2
+          },
+          {
+            "market": "Kanchipuram Mandi",
+            "district": "Kanchipuram",
+            "price": 1908.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.692,
+            "rank": 3
+          },
+          {
+            "market": "Tiruvannamalai Uzhavar Sandhai",
+            "district": "Tiruvannamalai",
+            "price": 1843.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.6479,
+            "rank": 4
+          },
+          {
+            "market": "Kanyakumari Market",
+            "district": "Kanyakumari",
+            "price": 1867.0,
+            "trend": "Stable",
+            "distance_km": 331.84,
+            "market_score": 0.6073,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 100,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Tiruvarur Market with modal price 1917.0.",
+        "opportunities": [
+          "Market prices are increasing.",
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 1.0,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "tomato",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 24.3\nHumidity : 90\nRainfall : 0.0\nWind Speed : 13.0\nPressure : 963.5\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Tiruvannamalai Uzhavar Sandhai\nNearest Distance : 267.05 km\nNearest Market Price : 1843.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Market\nBest Market Price : 1917.0\nBest Market Distance : 293.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : tomato\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 31.48
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "Current weather conditions are within the optimal range for tomato growth. Temperature (24\u00b0C) is within 18-30\u00b0C, humidity (70%) is within 60-80%, and rainfall (7.5 mm) is below the critical threshold for this growth stage.",
+      "summary": "Current weather conditions are within the optimal range for tomato growth. Temperature (24\u00b0C) is within 18-30\u00b0C, humidity (70%) is within 60-80%, and rainfall (7.5 mm) is below the critical threshold for this growth stage. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+      "risks": [
+        "No significant weather risks identified"
+      ],
+      "opportunities": [
+        "Favorable temperature and humidity for vegetative growth"
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "The soil in Coimbatore (pH 6.25, loam texture) aligns well with the tomato crop's preferred pH range (5.5\u20117.0) and texture (loam). Organic carbon is rated medium, matching the crop's medium organic carbon preference, and the cation exchange capacity (22.38\u202fcmolc/kg) suggests adequate nutrient\u2011holding capacity. However, nitrogen is reported as low, whereas tomatoes require high nitrogen for optimal growth, representing the primary limitation to soil suitability. Water\u2011related parameters (field capacity 0.32, wilting point 0.14) indicate moderate water\u2011holding ability, compatible with the crop\u2019s medium water requirement. Overall, the soil is largely suitable except for the nitrogen deficiency, which could constrain productivity unless addressed.",
+      "summary": "The soil in Coimbatore (pH 6.25, loam texture) aligns well with the tomato crop's preferred pH range (5.5\u20117.0) and texture (loam). Organic carbon is rated medium, matching the crop's medium organic carbon preference, and the cation exchange capacity (22.38\u202fcmolc/kg) suggests adequate nutrient\u2011holding capacity. However, nitrogen is reported as low, whereas tomatoes require high nitrogen for optimal growth, representing the primary limitation to soil suitability. Water\u2011related parameters (field capacity 0.32, wilting point 0.14) indicate moderate water\u2011holding ability, compatible with the crop\u2019s medium water requirement. Overall, the soil is largely suitable except for the nitrogen deficiency, which could constrain productivity unless addressed. 2 soil risk(s) identified. 3 soil opportunity(s) identified.",
+      "risks": [
+        "Low nitrogen level, below the tomato's high nitrogen requirement, may limit vegetative growth and yield.",
+        "Potential for reduced productivity if nitrogen deficiency is not corrected."
+      ],
+      "opportunities": [
+        "Soil pH is optimal for tomato growth.",
+        "Loam texture provides good structure, aeration, and drainage.",
+        "Medium organic carbon and high CEC support nutrient retention and soil health."
+      ],
+      "confidence": 0.92,
+      "metadata": {}
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The NDVI value of 0.8 meets the crop\u2011specific 'excellent' threshold, confirming a very healthy canopy. NDWI is 0.3, which matches the 'low stress' threshold, indicating sufficient soil moisture and low water stress. SAVI, however, is 0.105\u2014well below the 'high exposure' threshold of 0.2\u2014signalling unusually high soil exposure despite the dataset labeling it as 'Low'. This discrepancy suggests potential risks of erosion, reduced nutrient retention, and increased vulnerability to certain diseases. Vegetation health is reported as 'Excellent' and the vegetation score of 90 aligns with the NDVI assessment. Water availability appears adequate, so immediate irrigation demand is minimal. Overall, vegetation condition is excellent, but the pronounced soil exposure and the modest satellite confidence (40%) introduce uncertainty that should be monitored.",
+      "summary": "The NDVI value of 0.8 meets the crop\u2011specific 'excellent' threshold, confirming a very healthy canopy. NDWI is 0.3, which matches the 'low stress' threshold, indicating sufficient soil moisture and low water stress. SAVI, however, is 0.105\u2014well below the 'high exposure' threshold of 0.2\u2014signalling unusually high soil exposure despite the dataset labeling it as 'Low'. This discrepancy suggests potential risks of erosion, reduced nutrient retention, and increased vulnerability to certain diseases. Vegetation health is reported as 'Excellent' and the vegetation score of 90 aligns with the NDVI assessment. Water availability appears adequate, so immediate irrigation demand is minimal. Overall, vegetation condition is excellent, but the pronounced soil exposure and the modest satellite confidence (40%) introduce uncertainty that should be monitored. 3 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+      "risks": [
+        "High soil exposure indicated by low SAVI may lead to erosion and reduced nutrient retention",
+        "Potential mismatch between reported soil exposure and satellite\u2011derived exposure could affect management decisions",
+        "Low satellite confidence (40%) reduces reliability of the assessment"
+      ],
+      "opportunities": [
+        "Excellent NDVI suggests potential for high tomato yield",
+        "Low water stress provides an opportunity to focus on nutrient management rather than irrigation",
+        "Adequate moisture combined with strong canopy can support optimal fruit set during the flowering stage"
+      ],
+      "confidence": 0.68,
+      "metadata": {}
+    }
+  },
+  "reasoning": {
+    "summary": "Deterministic merge of 3 specialist outputs (no collaborative reasoning).",
+    "consensus": "N/A -- collaborative reasoning stage skipped for this condition.",
+    "merged_risks": [
+      "No significant weather risks identified",
+      "Low nitrogen level, below the tomato's high nitrogen requirement, may limit vegetative growth and yield.",
+      "Potential for reduced productivity if nitrogen deficiency is not corrected.",
+      "High soil exposure indicated by low SAVI may lead to erosion and reduced nutrient retention",
+      "Potential mismatch between reported soil exposure and satellite\u2011derived exposure could affect management decisions",
+      "Low satellite confidence (40%) reduces reliability of the assessment"
+    ],
+    "merged_opportunities": [
+      "Favorable temperature and humidity for vegetative growth",
+      "Soil pH is optimal for tomato growth.",
+      "Loam texture provides good structure, aeration, and drainage.",
+      "Medium organic carbon and high CEC support nutrient retention and soil health.",
+      "Excellent NDVI suggests potential for high tomato yield",
+      "Low water stress provides an opportunity to focus on nutrient management rather than irrigation",
+      "Adequate moisture combined with strong canopy can support optimal fruit set during the flowering stage"
+    ],
+    "conflicts": [],
+    "confidence": 0.85,
+    "evidence": [],
+    "metadata": {
+      "agents": [
+        "WeatherAgent",
+        "SoilAgent",
+        "SatelliteAgent"
+      ],
+      "agent_count": 3,
+      "llm_provider": "none (deterministic merge)"
+    }
+  },
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.85,
+    "decision": "Apply Nitrogen Fertilizer",
+    "priority": "P4",
+    "urgency": "Monitor",
+    "risk_level": "Low",
+    "action_order": [
+      "Apply nitrogen fertilizer",
+      "Apply nitrogen fertilizer"
+    ],
+    "priorities": [
+      {
+        "issue": "Nitrogen",
+        "severity": "Medium",
+        "urgency": "Within 3 Days",
+        "owner": "Farmer",
+        "action": "Apply nitrogen fertilizer"
+      },
+      {
+        "issue": "Nitrogen",
+        "severity": "Medium",
+        "urgency": "Within 3 Days",
+        "owner": "Farmer",
+        "action": "Apply nitrogen fertilizer"
+      }
+    ],
+    "impact": {
+      "agronomic": "Good",
+      "economic": "Excellent",
+      "environmental": "Excellent",
+      "operational": "Good",
+      "yield_risk": "Moderate",
+      "profitability": "Moderate",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Tomato cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 0 specialist agents. Primary concerns include: No significant weather risks identified, Low nitrogen level, below the tomato's high nitrogen requirement, may limit vegetative growth and yield., Potential for reduced productivity if nitrogen deficiency is not corrected.."
+    },
+    "supporting_evidence": [],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0
+  },
+  "recommendation": {
+    "recommendation": "Apply nitrogen fertilizer to correct low soil nitrogen and support optimal tomato vegetative growth.",
+    "priority": "High",
+    "justification": "Soil analysis shows nitrogen at a low level, which is below the tomato crop's high nitrogen requirement. All other agronomic factors (temperature, humidity, pH, texture, organic carbon) are favorable, and NDVI indicates strong crop vigor. Correcting the nitrogen deficiency within the next three days will prevent yield loss and capitalize on the existing growth opportunities.",
+    "actions": [
+      "Confirm current soil nitrogen status with a quick field test (e.g., nitrate test strips) to validate the reported low level.",
+      "Select a readily available nitrogen source suitable for drip fertigation (e.g., urea 46% N or calcium nitrate 15.5% N).",
+      "Calculate the application rate: aim for 120\u2011150\u202fkg\u202fN\u202fha\u207b\u00b9 split into two doses (50\u202f% now, 50\u202f% at first fruit set). Adjust based on field test results.",
+      "Apply the first dose immediately (within 3 days) using the existing drip irrigation system, ensuring uniform distribution and avoiding runoff.",
+      "Schedule the second dose for the onset of flowering (\u224830\u202fdays after planting) to sustain fruit set.",
+      "Record the amount applied, date, and method in the farm log."
+    ],
+    "expected_outcome": "Restored nitrogen balance will enhance vegetative growth, improve leaf chlorophyll content, and increase tomato yield and marketable fruit quality, leading to higher profitability.",
+    "monitoring_plan": [
+      "Weekly leaf chlorophyll readings (SPAD meter) \u2013 target >45 for healthy tomato foliage.",
+      "Re\u2011test soil nitrogen 2 weeks after the first application; adjust the second dose if levels remain low.",
+      "Monitor NDVI via satellite or drone every 2\u20113 weeks; aim to maintain NDVI \u22650.75.",
+      "Observe plants for signs of nitrogen excess (dark green foliage, delayed fruit set) and adjust future applications accordingly."
+    ],
+    "confidence": 0.85,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Apply Nitrogen Fertilizer",
+    "executive_priority": "P4"
+  },
+  "stage_times": {
+    "context_build": 0.003,
+    "planner": 60.194,
+    "WeatherAgent": 27.198,
+    "SoilAgent": 303.699,
+    "SatelliteAgent": 61.395,
+    "reasoning": 0.0,
+    "executive": 0.0,
+    "recommendation": 59.266
+  },
+  "condition": "multi_no_reasoning",
+  "governance_used": false,
+  "scenario_id": "nitrogen_low_tomato",
+  "wall_time_seconds": 511.75
+}

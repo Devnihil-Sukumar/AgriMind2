@@ -1,0 +1,22 @@
+{
+  "run_id": "wheat_WeatherAgent",
+  "crop": "wheat",
+  "agent": "WeatherAgent",
+  "prompt_chars": 7223,
+  "ollama": {
+    "elapsed_seconds": 302.063,
+    "valid_json_first_try": false,
+    "json_error": null,
+    "response_chars": 0,
+    "raw_response": null,
+    "error": "RuntimeError: Ollama request timed out after 300 seconds."
+  },
+  "groq": {
+    "elapsed_seconds": 1.424,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 828,
+    "raw_response": "{\n    \"analysis\": \"Current conditions are marginally suitable for wheat. Humidity (67%) and wind speed (14.1 km/h) fall within optimal ranges, but temperature (28.4 °C) exceeds the crop's maximum of 25 °C, raising heat‑stress risk, especially during flowering. No rainfall is observed today, which may contribute to soil moisture deficit given the crop's medium water requirement.\",\n    \"risks\": [\n        \"Temperature above optimal maximum – potential heat stress and reduced grain set.\",\n        \"Lack of rainfall today – risk of soil moisture deficit, especially if irrigation is not applied.\"\n    ],\n    \"opportunities\": [\n        \"Humidity within optimal 50‑70 % – supports transpiration and disease suppression.\",\n        \"Wind speed well below the 30 km/h threshold – low risk of lodging.\"\n    ],\n    \"confidence\": 0.84\n}",
+    "error": null
+  }
+}

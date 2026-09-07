@@ -1,0 +1,3932 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "cotton",
+    "crop_profile": {
+      "crop": "cotton",
+      "scientific_name": "Gossypium hirsutum",
+      "family": "Malvaceae",
+      "type": "Annual",
+      "category": "Fiber",
+      "growth_duration_days": 150,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 40,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 600,
+          "maximum": 1200,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 25,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 8,
+          "maximum": 12
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Clay",
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Flood irrigation",
+        "water_requirement": "High",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 7-10 days"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.5,
+          "moderate_exposure": 0.3,
+          "high_exposure": 0.1
+        }
+      },
+      "market": {
+        "keywords": [
+          "textile",
+          "fiber"
+        ],
+        "major_states": [
+          "Texas",
+          "Louisiana",
+          "Mississippi"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "United States"
+        ],
+        "harvest_season": "September to November",
+        "storage_capability": "Good",
+        "perishability": "Low"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Nitrogen",
+          "Phosphorus",
+          "Potassium"
+        ],
+        "commercial_products": [
+          "Cottonseed oil",
+          "Cotton linters"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Fusarium wilt",
+          "symptoms": "Yellowing of leaves, wilting of plants",
+          "treatment": "Fungicides, crop rotation"
+        },
+        {
+          "name": "Verticillium wilt",
+          "symptoms": "Yellowing of leaves, premature defoliation",
+          "treatment": "Fungicides, crop rotation"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Insecticides, biological control"
+        },
+        {
+          "name": "Bollworms",
+          "treatment": "Insecticides, Bt cotton"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "NPK 10-20-10",
+        "npk_ratio": "1:2:1",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 2.5,
+        "excellent_tonnes_per_hectare": 4.0
+      },
+      "recommendations": {
+        "irrigation": "Flood irrigation during flowering stage",
+        "fertilizer": "Apply NPK 10-20-10 at planting and sidedressing",
+        "harvesting": "Hand picking or mechanical harvesting",
+        "storage": "Store in dry, well-ventilated areas"
+      },
+      "summary": "Cotton is a warm-season crop that requires adequate moisture, sunlight, and fertilization. It is susceptible to diseases like Fusarium wilt and pests like aphids and bollworms. Proper irrigation, fertilization, and pest management practices can improve yield and quality.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T17:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 22.5,
+        "humidity": 60.0,
+        "rainfall": 0.0,
+        "wind_speed": 10.0,
+        "pressure": 960.1,
+        "time": "2026-08-31T17:45"
+      },
+      "assessment": {
+        "crop": "cotton",
+        "status": "Good",
+        "identified_risks": [
+          "Rainfall below optimal, no recent precipitation."
+        ],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 92
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Optimal",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T12:17:32.951046",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.75,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": -0.35,
+        "stress": "High"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Increase irrigation immediately."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Tiruvarur Mandi",
+      "nearest_market": {
+        "market": "Thanjavur Uzhavar Sandhai",
+        "district": "Thanjavur",
+        "price": 7330.0,
+        "trend": "Increasing",
+        "distance_km": 239.62,
+        "market_score": 0.6521,
+        "rank": 3
+      },
+      "top_markets": [
+        {
+          "market": "Tiruvarur Mandi",
+          "district": "Tiruvarur",
+          "price": 7618.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.7107,
+          "rank": 1
+        },
+        {
+          "market": "Tirunelveli Market",
+          "district": "Tirunelveli",
+          "price": 7387.0,
+          "trend": "Stable",
+          "distance_km": 270.68,
+          "market_score": 0.6814,
+          "rank": 2
+        },
+        {
+          "market": "Thanjavur Uzhavar Sandhai",
+          "district": "Thanjavur",
+          "price": 7330.0,
+          "trend": "Stable",
+          "distance_km": 239.62,
+          "market_score": 0.6521,
+          "rank": 3
+        },
+        {
+          "market": "Chengalpattu Mandi",
+          "district": "Chengalpattu",
+          "price": 7529.0,
+          "trend": "Stable",
+          "distance_km": 376.38,
+          "market_score": 0.5746,
+          "rank": 4
+        },
+        {
+          "market": "Tirupattur Mandi",
+          "district": "Tirupattur",
+          "price": 7168.0,
+          "trend": "Stable",
+          "distance_km": 240.25,
+          "market_score": 0.5684,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "cotton",
+        "TopMarkets": [
+          {
+            "market": "Tiruvarur Mandi",
+            "district": "Tiruvarur",
+            "price": 7618.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7107,
+            "rank": 1
+          },
+          {
+            "market": "Tirunelveli Market",
+            "district": "Tirunelveli",
+            "price": 7387.0,
+            "trend": "Increasing",
+            "distance_km": 270.68,
+            "market_score": 0.6814,
+            "rank": 2
+          },
+          {
+            "market": "Thanjavur Uzhavar Sandhai",
+            "district": "Thanjavur",
+            "price": 7330.0,
+            "trend": "Increasing",
+            "distance_km": 239.62,
+            "market_score": 0.6521,
+            "rank": 3
+          },
+          {
+            "market": "Chengalpattu Mandi",
+            "district": "Chengalpattu",
+            "price": 7529.0,
+            "trend": "Volatile",
+            "distance_km": 376.38,
+            "market_score": 0.5746,
+            "rank": 4
+          },
+          {
+            "market": "Tirupattur Mandi",
+            "district": "Tirupattur",
+            "price": 7168.0,
+            "trend": "Increasing",
+            "distance_km": 240.25,
+            "market_score": 0.5684,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 95,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Tiruvarur Mandi with modal price 7618.0.",
+        "opportunities": [
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 0.95,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "cotton",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 27.8\nHumidity : 68\nRainfall : 0.0\nWind Speed : 20.3\nPressure : 960.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Thanjavur Uzhavar Sandhai\nNearest Distance : 239.62 km\nNearest Market Price : 7330.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Mandi\nBest Market Price : 7618.0\nBest Market Distance : 293.81 km\nBest Market Trend : Stable\n\nMarkets Evaluated : 5\nCrop : cotton\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "Rainfall below optimal, no recent precipitation.",
+      "High crop water stress",
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 33.46
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+      "summary": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+      "risks": [
+        "Rainfall below optimal (0.0 mm) for cotton growth",
+        "No recent precipitation for 7-10 days (critical growth stage)"
+      ],
+      "opportunities": [
+        "Weather conditions are favorable for cotton growth",
+        "Optimal temperature and humidity levels"
+      ],
+      "confidence": 0.95,
+      "metadata": {},
+      "execution_time": 157.712,
+      "governance": {
+        "agent": "WeatherAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.8611471285188861,
+        "posterior_mean": 0.8637015629489839,
+        "evidence": {
+          "positive": true,
+          "weight": 0.475,
+          "reason": "Completed with confidence 0.95."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.2085,
+          "utilities": {
+            "auto_execute": 11.658,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.21 from trust=0.86 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=11.658, review=7.0, reject=-4.0)."
+        }
+      }
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+      "summary": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage. 2 soil opportunity(s) identified.",
+      "risks": [],
+      "opportunities": [
+        "Maintain optimal moisture levels for cotton growth",
+        "Ensure proper drainage to prevent waterlogging"
+      ],
+      "confidence": 0.95,
+      "metadata": {},
+      "execution_time": 193.662,
+      "governance": {
+        "agent": "SoilAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.8511881136389583,
+        "posterior_mean": 0.8540161638179825,
+        "evidence": {
+          "positive": true,
+          "weight": 0.475,
+          "reason": "Completed with confidence 0.95."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.2199,
+          "utilities": {
+            "auto_execute": 11.205,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.22 from trust=0.85 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=11.205, review=7.0, reject=-4.0)."
+        }
+      }
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly.",
+      "summary": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+      "risks": [
+        "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+        "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+        "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+        "Yield reduction risk if water deficit persists despite good canopy index."
+      ],
+      "opportunities": [
+        "Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.",
+        "Early detection of water stress allows timely irrigation to preserve yield potential.",
+        "High vegetation health provides a window to apply targeted nutrients before stress worsens."
+      ],
+      "confidence": 0.62,
+      "metadata": {},
+      "execution_time": 2.826,
+      "governance": {
+        "agent": "SatelliteAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.74671700861382,
+        "posterior_mean": 0.7525594184657712,
+        "evidence": {
+          "positive": true,
+          "weight": 0.31,
+          "reason": "Completed with confidence 0.62."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.3548,
+          "utilities": {
+            "auto_execute": 5.809,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.35 from trust=0.75 (+/-0.11) on a low-risk data_collector action => human_review (EU auto=5.809, review=7.0, reject=-4.0)."
+        }
+      }
+    }
+  },
+  "reasoning": "CollaborativeReasoning(summary='3 specialist agents reached a consensus.', consensus='Deterministic consensus generated because Gemini reasoning was unavailable.', merged_risks=['High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.', 'No recent precipitation for 7-10 days (critical growth stage)', 'Potential for disease onset (e.g., Fusarium wilt) under drought conditions.', 'Rainfall below optimal (0.0 mm) for cotton growth', 'Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.', 'Yield reduction risk if water deficit persists despite good canopy index.'], merged_opportunities=['Early detection of water stress allows timely irrigation to preserve yield potential.', 'Ensure proper drainage to prevent waterlogging', 'Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.', 'High vegetation health provides a window to apply targeted nutrients before stress worsens.', 'Maintain optimal moisture levels for cotton growth', 'Optimal temperature and humidity levels', 'Weather conditions are favorable for cotton growth'], conflicts=[], confidence=0.81, evidence=[{'agent': 'WeatherAgent', 'analysis': 'Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.', 'risks': ['Rainfall below optimal (0.0 mm) for cotton growth', 'No recent precipitation for 7-10 days (critical growth stage)'], 'opportunities': ['Weather conditions are favorable for cotton growth', 'Optimal temperature and humidity levels'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': \"Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.\", 'risks': [], 'opportunities': ['Maintain optimal moisture levels for cotton growth', 'Ensure proper drainage to prevent waterlogging'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': \"The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly.\", 'risks': ['Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.', 'High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.', 'Potential for disease onset (e.g., Fusarium wilt) under drought conditions.', 'Yield reduction risk if water deficit persists despite good canopy index.'], 'opportunities': ['Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.', 'Early detection of water stress allows timely irrigation to preserve yield potential.', 'High vegetation health provides a window to apply targeted nutrients before stress worsens.'], 'confidence': 0.62, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.81,
+    "decision": "Immediate Irrigation",
+    "priority": "P3",
+    "urgency": "This Week",
+    "risk_level": "Moderate",
+    "action_order": [
+      "Increase irrigation immediately",
+      "Supplement rainfall through irrigation"
+    ],
+    "priorities": [
+      {
+        "issue": "Water Stress",
+        "severity": "Critical",
+        "urgency": "Immediate",
+        "owner": "Farmer",
+        "action": "Increase irrigation immediately"
+      },
+      {
+        "issue": "Rainfall",
+        "severity": "High",
+        "urgency": "Today",
+        "owner": "Farmer",
+        "action": "Supplement rainfall through irrigation"
+      }
+    ],
+    "impact": {
+      "agronomic": "Moderate",
+      "economic": "Excellent",
+      "environmental": "Good",
+      "operational": "Good",
+      "yield_risk": "Moderate",
+      "profitability": "Moderate",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Cotton cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: High soil exposure (SAVI) increases risk of soil erosion and nutrient loss., No recent precipitation for 7-10 days (critical growth stage), Potential for disease onset (e.g., Fusarium wilt) under drought conditions.."
+    },
+    "supporting_evidence": [
+      "WeatherAgent: Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+      "SoilAgent: Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+      "SatelliteAgent: The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly."
+    ],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0,
+    "governance": {
+      "agent": "ExecutiveAgent",
+      "category": "executive",
+      "stage": "post",
+      "prior_mean": 0.9251191874328633,
+      "posterior_mean": 0.9263504562287311,
+      "evidence": {
+        "positive": true,
+        "weight": 0.6075,
+        "reason": "Completed with confidence 0.81."
+      },
+      "risk": {
+        "category": "executive",
+        "risk_level": "Medium",
+        "benefit": 30.0,
+        "failure_cost": 60.0,
+        "review_cost": 12.0,
+        "reject_cost": 6.0
+      },
+      "decision": {
+        "action": "auto_execute",
+        "p_fail": 0.1229,
+        "utilities": {
+          "auto_execute": 18.941,
+          "human_review": 16.5,
+          "reject": -6.0
+        },
+        "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=18.941, review=16.5, reject=-6.0)."
+      }
+    }
+  },
+  "recommendation": {
+    "recommendation": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+    "priority": "Medium",
+    "justification": "Satellite NDVI shows excellent canopy health, but high NDWI and SAVI indicate severe water stress and soil exposure, compounded by 7\u201110 days without precipitation. Immediate irrigation will prevent wilting, reduce disease risk (e.g., Fusarium wilt), and protect the current yield potential while leveraging the existing strong vegetative vigor and optimal soil conditions.",
+    "actions": [
+      "Activate flood irrigation today to bring soil moisture to field capacity (\u224832% volumetric water content).",
+      "Apply an additional irrigation pulse (10\u201115\u202fmm) within the next 24\u202fhours to simulate rainfall and address the 7\u201110\u202fday deficit.",
+      "Schedule irrigation every 7\u201110\u202fdays thereafter, adjusting volume based on soil moisture sensor readings and upcoming weather forecasts.",
+      "Apply a balanced N\u2011P\u2011K fertilizer (medium nitrogen) concurrently with irrigation to support nutrient uptake under high canopy demand."
+    ],
+    "expected_outcome": "Restored soil moisture will alleviate water stress, maintain canopy photosynthesis, limit disease onset, and preserve the projected yield and profitability for the current cotton crop.",
+    "monitoring_plan": [
+      "Daily soil moisture checks (sensor or gravimetric) to ensure moisture stays above wilting point (14%).",
+      "Weekly NDVI/NDWI satellite updates to verify reduction in water stress levels.",
+      "Bi\u2011weekly visual scouting for wilt symptoms (yellowing, leaf droop) and pest presence.",
+      "Track SAVI values monthly to monitor soil exposure and adjust irrigation to prevent erosion.",
+      "Review weather forecasts each morning to anticipate natural rainfall and modify irrigation schedule accordingly."
+    ],
+    "confidence": 0.81,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Immediate Irrigation",
+    "executive_priority": "P3",
+    "governance": {
+      "agent": "RecommendationAgent",
+      "category": "recommendation",
+      "stage": "post",
+      "prior_mean": 0.9378258037833885,
+      "posterior_mean": 0.9389837368609835,
+      "evidence": {
+        "positive": true,
+        "weight": 0.81,
+        "reason": "Completed with confidence 0.81."
+      },
+      "risk": {
+        "category": "recommendation",
+        "risk_level": "High",
+        "benefit": 40.0,
+        "failure_cost": 120.0,
+        "review_cost": 12.0,
+        "reject_cost": 8.0
+      },
+      "decision": {
+        "action": "human_review",
+        "p_fail": 0.1022,
+        "utilities": {
+          "auto_execute": 23.648,
+          "human_review": 26.0,
+          "reject": -8.0
+        },
+        "rationale": "P(fail)=0.10 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=23.648, review=26.0, reject=-8.0)."
+      }
+    }
+  },
+  "explanation": {
+    "executive_decision": "Immediate Irrigation",
+    "executive_summary": "The field shows severe water stress despite an excellent canopy, and no rain has fallen for 7\u201110 days. Immediate supplemental irrigation this week is required to protect the cotton during its critical flowering stage.",
+    "recommendation": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+    "explanation": "Satellite indices (high NDWI and SAVI) indicate a strong water deficit and exposed soil, while weather data confirm zero rainfall and a 7\u201110\u2011day dry spell. Soil conditions are optimal (pH 6.25, medium nitrogen, loam texture) and the canopy health (NDVI 0.75) is excellent, meaning the crop can recover quickly if water is supplied. The combined evidence points to irrigation as the only action that can prevent wilting, disease risk, and yield loss.",
+    "reasoning_summary": "WeatherAgent reported no precipitation and rainfall below the cotton requirement, SoilAgent confirmed optimal soil chemistry and texture, and SatelliteAgent detected severe water stress and soil exposure. Collaborative reasoning merged these risks and opportunities, leading the ExecutiveAgent to order immediate irrigation with a medium priority.",
+    "decision_trace": {
+      "steps": [
+        {
+          "step": 1,
+          "stage": "Specialist",
+          "source": "WeatherAgent",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "key_risks": [
+            "Rainfall below optimal (0.0 mm) for cotton growth",
+            "No recent precipitation for 7-10 days (critical growth stage)"
+          ],
+          "key_opportunities": [
+            "Weather conditions are favorable for cotton growth",
+            "Optimal temperature and humidity levels"
+          ],
+          "ranked_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 3
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 2,
+          "stage": "Specialist",
+          "source": "SoilAgent",
+          "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage. 2 soil opportunity(s) identified.",
+          "confidence": 0.95,
+          "key_risks": [],
+          "key_opportunities": [
+            "Maintain optimal moisture levels for cotton growth",
+            "Ensure proper drainage to prevent waterlogging"
+          ],
+          "ranked_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7775,
+              "importance": "Moderate",
+              "rank": 7
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7775,
+              "importance": "Moderate",
+              "rank": 8
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Maintain optimal moisture levels for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7725,
+              "importance": "Moderate",
+              "rank": 9
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 3,
+          "stage": "Specialist",
+          "source": "SatelliteAgent",
+          "finding": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+          "confidence": 0.62,
+          "key_risks": [
+            "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+            "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+            "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+            "Yield reduction risk if water deficit persists despite good canopy index."
+          ],
+          "key_opportunities": [
+            "Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.",
+            "Early detection of water stress allows timely irrigation to preserve yield potential.",
+            "High vegetation health provides a window to apply targeted nutrients before stress worsens."
+          ],
+          "ranked_evidence": [
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7208,
+              "importance": "Moderate",
+              "rank": 11
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7208,
+              "importance": "Moderate",
+              "rank": 12
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7208,
+              "importance": "Moderate",
+              "rank": 13
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 4,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 5,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 6,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 7,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 8,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "Weather conditions are favorable for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 9,
+          "stage": "Collaborative Reasoning",
+          "source": "CollaborativeEngine",
+          "finding": "3 specialist agents reached a consensus.",
+          "confidence": 0.81,
+          "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+          "merged_risks": [
+            "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+            "No recent precipitation for 7-10 days (critical growth stage)",
+            "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+            "Rainfall below optimal (0.0 mm) for cotton growth",
+            "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+            "Yield reduction risk if water deficit persists despite good canopy index."
+          ],
+          "merged_opportunities": [
+            "Early detection of water stress allows timely irrigation to preserve yield potential.",
+            "Ensure proper drainage to prevent waterlogging",
+            "Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.",
+            "High vegetation health provides a window to apply targeted nutrients before stress worsens.",
+            "Maintain optimal moisture levels for cotton growth",
+            "Optimal temperature and humidity levels",
+            "Weather conditions are favorable for cotton growth"
+          ],
+          "conflicts": [],
+          "influence": "Converted specialist evidence into a combined decision context."
+        },
+        {
+          "step": 10,
+          "stage": "Executive Decision",
+          "source": "ExecutiveAgent",
+          "finding": "Immediate Irrigation",
+          "confidence": 0.81,
+          "priority": "P3",
+          "justification": "The executive decision was produced from collaborative reasoning.",
+          "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+        },
+        {
+          "step": 11,
+          "stage": "Recommendation",
+          "source": "RecommendationAgent",
+          "finding": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+          "confidence": 0.81,
+          "actions": [
+            "Activate flood irrigation today to bring soil moisture to field capacity (\u224832% volumetric water content).",
+            "Apply an additional irrigation pulse (10\u201115\u202fmm) within the next 24\u202fhours to simulate rainfall and address the 7\u201110\u202fday deficit.",
+            "Schedule irrigation every 7\u201110\u202fdays thereafter, adjusting volume based on soil moisture sensor readings and upcoming weather forecasts.",
+            "Apply a balanced N\u2011P\u2011K fertilizer (medium nitrogen) concurrently with irrigation to support nutrient uptake under high canopy demand."
+          ],
+          "justification": "Satellite NDVI shows excellent canopy health, but high NDWI and SAVI indicate severe water stress and soil exposure, compounded by 7\u201110 days without precipitation. Immediate irrigation will prevent wilting, reduce disease risk (e.g., Fusarium wilt), and protect the current yield potential while leveraging the existing strong vegetative vigor and optimal soil conditions.",
+          "influence": "Translated the executive decision into concrete recommended actions."
+        }
+      ],
+      "causal_chain": [
+        {
+          "from": "WeatherAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Rainfall below optimal (0.0 mm) for cotton growth",
+          "strength": 0.8213
+        },
+        {
+          "from": "WeatherAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "No recent precipitation for 7-10 days (critical growth stage)",
+          "strength": 0.8213
+        },
+        {
+          "from": "WeatherAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+          "strength": 0.8113
+        },
+        {
+          "from": "CollaborativeReasoning",
+          "to": "ExecutiveAgent",
+          "relationship": "informs",
+          "evidence": "3 specialist agents reached a consensus.",
+          "strength": 0.81
+        },
+        {
+          "from": "ExecutiveAgent",
+          "to": "RecommendationAgent",
+          "relationship": "produces",
+          "evidence": "Immediate Irrigation",
+          "strength": 0.81
+        },
+        {
+          "from": "RecommendationAgent",
+          "to": "Farmer",
+          "relationship": "recommends",
+          "evidence": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+          "strength": 0.81
+        }
+      ],
+      "summary": "3 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Immediate Irrigation'. The RecommendationAgent then translated that decision into actionable guidance.",
+      "total_steps": 11,
+      "specialist_steps": 3,
+      "evidence_steps": 5,
+      "decision_step": 10,
+      "recommendation_step": 11,
+      "top_evidence": [
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "analysis",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "summary",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Weather conditions are favorable for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "rank": 5
+        }
+      ]
+    },
+    "evidence": {
+      "ranked_evidence": [
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "analysis",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "summary",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Weather conditions are favorable for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "rank": 5
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Optimal temperature and humidity levels",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "rank": 6
+        },
+        {
+          "source": "SoilAgent",
+          "type": "analysis",
+          "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.7775,
+          "importance": "Moderate",
+          "rank": 7
+        },
+        {
+          "source": "SoilAgent",
+          "type": "summary",
+          "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage. 2 soil opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.7775,
+          "importance": "Moderate",
+          "rank": 8
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Maintain optimal moisture levels for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.7725,
+          "importance": "Moderate",
+          "rank": 9
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Ensure proper drainage to prevent waterlogging",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.7725,
+          "importance": "Moderate",
+          "rank": 10
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "risk",
+          "finding": "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7208,
+          "importance": "Moderate",
+          "rank": 11
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "risk",
+          "finding": "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7208,
+          "importance": "Moderate",
+          "rank": 12
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "risk",
+          "finding": "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7208,
+          "importance": "Moderate",
+          "rank": 13
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "risk",
+          "finding": "Yield reduction risk if water deficit persists despite good canopy index.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7208,
+          "importance": "Moderate",
+          "rank": 14
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "analysis",
+          "finding": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7107,
+          "importance": "Moderate",
+          "rank": 15
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "summary",
+          "finding": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7107,
+          "importance": "Moderate",
+          "rank": 16
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "opportunity",
+          "finding": "Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7057,
+          "importance": "Moderate",
+          "rank": 17
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "opportunity",
+          "finding": "Early detection of water stress allows timely irrigation to preserve yield potential.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7057,
+          "importance": "Moderate",
+          "rank": 18
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "opportunity",
+          "finding": "High vegetation health provides a window to apply targeted nutrients before stress worsens.",
+          "confidence": 0.62,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7057,
+          "importance": "Moderate",
+          "rank": 19
+        }
+      ],
+      "source_summary": {
+        "WeatherAgent": {
+          "evidence_score": 0.8213,
+          "finding_count": 6,
+          "highest_importance": "High"
+        },
+        "SoilAgent": {
+          "evidence_score": 0.7775,
+          "finding_count": 4,
+          "highest_importance": "Moderate"
+        },
+        "SatelliteAgent": {
+          "evidence_score": 0.7208,
+          "finding_count": 9,
+          "highest_importance": "Moderate"
+        }
+      },
+      "total_findings": 19,
+      "top_evidence": [
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "analysis",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "summary",
+          "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Weather conditions are favorable for cotton growth",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "rank": 5
+        }
+      ]
+    },
+    "risks": [
+      "Severe water stress may cause wilting and reduced photosynthesis.",
+      "High soil exposure increases risk of erosion and nutrient loss.",
+      "No rainfall for 7\u201110\u202fdays during flowering heightens disease risk (e.g., Fusarium wilt).",
+      "If water deficit persists, yield reduction is likely."
+    ],
+    "opportunities": [
+      "Excellent canopy health provides a strong base for rapid recovery once water is supplied.",
+      "Optimal soil chemistry and texture support efficient water uptake.",
+      "Favorable temperature and humidity allow irrigation to be highly effective.",
+      "Timely irrigation can preserve profitability despite moderate economic risk."
+    ],
+    "rejected_alternatives": [
+      {
+        "decision": "Delay irrigation",
+        "why_rejected": "Evidence shows insufficient water availability and high stress; delaying would worsen crop condition."
+      },
+      {
+        "decision": "Apply partial irrigation",
+        "why_rejected": "Partial water would not fully address the severe deficit indicated by NDWI and rainfall data."
+      },
+      {
+        "decision": "Wait for natural rainfall",
+        "why_rejected": "No rain forecast and a 7\u201110\u202fday dry period make waiting too risky for the flowering stage."
+      }
+    ],
+    "limitations": [
+      "MarketAgent did not return an output, so market price considerations were not included.",
+      "HistoricalAgent did not return an output, limiting context from past seasons.",
+      "SatelliteAgent confidence is moderate (0.62), so its water\u2011stress metrics carry some uncertainty."
+    ],
+    "monitoring_plan": [
+      {
+        "source": "Weather",
+        "parameter": "Rainfall Forecast",
+        "frequency": "Daily",
+        "reason": "Detect any upcoming rain that could modify irrigation needs."
+      },
+      {
+        "source": "Weather",
+        "parameter": "Temperature & Humidity",
+        "frequency": "Daily",
+        "reason": "Track environmental stress that interacts with water availability."
+      },
+      {
+        "source": "Soil",
+        "parameter": "Soil Moisture",
+        "frequency": "Every 2 Days",
+        "reason": "Confirm that irrigation is achieving field\u2011capacity moisture (~32\u202f% volumetric)."
+      },
+      {
+        "source": "Soil",
+        "parameter": "Soil pH",
+        "frequency": "Weekly",
+        "reason": "Maintain optimal pH for cotton nutrient uptake."
+      }
+    ],
+    "confidence_breakdown": {
+      "overall": 0.828,
+      "specialist_average": 0.84,
+      "strongest_source": "WeatherAgent",
+      "strongest_confidence": 0.95,
+      "weakest_source": "SatelliteAgent",
+      "weakest_confidence": 0.62,
+      "unavailable_sources": [],
+      "breakdown": {
+        "WeatherAgent": 0.95,
+        "SoilAgent": 0.95,
+        "SatelliteAgent": 0.62,
+        "CollaborativeReasoning": 0.81,
+        "ExecutiveDecision": 0.81
+      },
+      "confidence_explanation": "Overall evidence confidence is 0.83. The strongest specialist evidence came from WeatherAgent (0.95), while the weakest was SatelliteAgent (0.62). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+    },
+    "overall_confidence": 0.828,
+    "model": "Qwen",
+    "module": "Explainable Recommendation",
+    "version": "2.0",
+    "status": "completed"
+  },
+  "governance": {
+    "agent_trust": {
+      "WeatherAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.8637,
+        "trust_std": 0.0722
+      },
+      "SoilAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.854,
+        "trust_std": 0.0739
+      },
+      "SatelliteAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.7526,
+        "trust_std": 0.1073
+      },
+      "MarketAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.6657,
+        "trust_std": 0.1394
+      },
+      "HistoricalAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.5972,
+        "trust_std": 0.1433
+      },
+      "ExecutiveAgent": {
+        "category": "executive",
+        "trust_mean": 0.9264,
+        "trust_std": 0.0492
+      },
+      "RecommendationAgent": {
+        "category": "recommendation",
+        "trust_mean": 0.939,
+        "trust_std": 0.0412
+      }
+    },
+    "crop_learning": {
+      "crop": "cotton",
+      "trust_mean": 0.8186,
+      "decision": "human_review",
+      "all_crops": {
+        "cotton": {
+          "trust_mean": 0.8186,
+          "trust_std": 0.1111
+        },
+        "rice": {
+          "trust_mean": 0.866,
+          "trust_std": 0.0854
+        },
+        "wheat": {
+          "trust_mean": 0.8446,
+          "trust_std": 0.0973
+        },
+        "mango": {
+          "trust_mean": 0.8461,
+          "trust_std": 0.0964
+        },
+        "tomato": {
+          "trust_mean": 0.8733,
+          "trust_std": 0.0812
+        }
+      }
+    },
+    "recommendation_requires_review": true,
+    "recommendation_rejected": false
+  },
+  "statistics": {
+    "agents_planned": 4,
+    "specialist_agents": 3,
+    "agents_completed": 3,
+    "agents_failed": 0,
+    "agents_unavailable": 0,
+    "unavailable_agents": [],
+    "planner_confidence": 0.95,
+    "reasoning_confidence": 0.81,
+    "executive_confidence": 0.81,
+    "explanation_confidence": 0.828,
+    "decision_trace_steps": 9,
+    "evidence_sources": 4,
+    "limitations": 3,
+    "monitoring_items": 4,
+    "planner_model": "Qwen",
+    "reasoning_model": "Groq",
+    "executive_model": "Groq",
+    "recommendation_model": "Groq",
+    "explanation_model": "Qwen"
+  },
+  "plan": {
+    "goal": "Is cotton suitable to grow in this location right now, and what are the risks?",
+    "execution_plan": [
+      {
+        "agent": "WeatherAgent",
+        "priority": 1,
+        "purpose": "Assess current weather conditions (temperature, humidity, rainfall) for cotton suitability and associated risks."
+      },
+      {
+        "agent": "SoilAgent",
+        "priority": 2,
+        "purpose": "Evaluate soil properties (pH, nutrients, texture) to determine if they meet cotton requirements and identify soil\u2011related risks."
+      },
+      {
+        "agent": "SatelliteAgent",
+        "priority": 3,
+        "purpose": "Analyze satellite indicators (NDVI, NDWI, water stress) to gauge current crop health and environmental stress factors."
+      },
+      {
+        "agent": "RecommendationAgent",
+        "priority": 4,
+        "purpose": "Synthesize evidence from specialist agents to produce a final suitability assessment and risk summary."
+      }
+    ],
+    "confidence": 0.95
+  },
+  "total_time": 536.26,
+  "stage_times": {
+    "total": 536.26
+  },
+  "condition": "full_system",
+  "governance_used": true,
+  "raw_result": {
+    "query": "Is cotton suitable to grow in this location right now, and what are the risks?",
+    "crop_profile": {
+      "crop": "cotton",
+      "scientific_name": "Gossypium hirsutum",
+      "family": "Malvaceae",
+      "type": "Annual",
+      "category": "Fiber",
+      "growth_duration_days": 150,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 40,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 600,
+          "maximum": 1200,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 25,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 8,
+          "maximum": 12
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Clay",
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Flood irrigation",
+        "water_requirement": "High",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 7-10 days"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.5,
+          "moderate_exposure": 0.3,
+          "high_exposure": 0.1
+        }
+      },
+      "market": {
+        "keywords": [
+          "textile",
+          "fiber"
+        ],
+        "major_states": [
+          "Texas",
+          "Louisiana",
+          "Mississippi"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "United States"
+        ],
+        "harvest_season": "September to November",
+        "storage_capability": "Good",
+        "perishability": "Low"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Nitrogen",
+          "Phosphorus",
+          "Potassium"
+        ],
+        "commercial_products": [
+          "Cottonseed oil",
+          "Cotton linters"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Fusarium wilt",
+          "symptoms": "Yellowing of leaves, wilting of plants",
+          "treatment": "Fungicides, crop rotation"
+        },
+        {
+          "name": "Verticillium wilt",
+          "symptoms": "Yellowing of leaves, premature defoliation",
+          "treatment": "Fungicides, crop rotation"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Insecticides, biological control"
+        },
+        {
+          "name": "Bollworms",
+          "treatment": "Insecticides, Bt cotton"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "NPK 10-20-10",
+        "npk_ratio": "1:2:1",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 2.5,
+        "excellent_tonnes_per_hectare": 4.0
+      },
+      "recommendations": {
+        "irrigation": "Flood irrigation during flowering stage",
+        "fertilizer": "Apply NPK 10-20-10 at planting and sidedressing",
+        "harvesting": "Hand picking or mechanical harvesting",
+        "storage": "Store in dry, well-ventilated areas"
+      },
+      "summary": "Cotton is a warm-season crop that requires adequate moisture, sunlight, and fertilization. It is susceptible to diseases like Fusarium wilt and pests like aphids and bollworms. Proper irrigation, fertilization, and pest management practices can improve yield and quality.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-09-01T12:53:26.964642",
+        "crop": "cotton",
+        "crop_profile": {
+          "crop": "cotton",
+          "scientific_name": "Gossypium hirsutum",
+          "family": "Malvaceae",
+          "type": "Annual",
+          "category": "Fiber",
+          "growth_duration_days": 150,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Fruiting",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 15,
+              "maximum": 30,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 40,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 600,
+              "maximum": 1200,
+              "unit": "mm/year"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 7.0
+            },
+            "wind_speed": {
+              "maximum": 25,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 8,
+              "maximum": 12
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "Clay",
+              "Loam"
+            ],
+            "preferred_nitrogen": "Medium",
+            "preferred_organic_carbon": "Medium",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "Flood irrigation",
+            "water_requirement": "High",
+            "critical_growth_stage": "Flowering",
+            "recommended_frequency": "Every 7-10 days"
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.75,
+              "healthy": 0.6,
+              "moderate": 0.4,
+              "poor": 0.2
+            },
+            "ndwi": {
+              "low_stress": 0.25,
+              "moderate_stress": 0.1,
+              "high_stress": 0.0
+            },
+            "savi": {
+              "low_exposure": 0.5,
+              "moderate_exposure": 0.3,
+              "high_exposure": 0.1
+            }
+          },
+          "market": {
+            "keywords": [
+              "textile",
+              "fiber"
+            ],
+            "major_states": [
+              "Texas",
+              "Louisiana",
+              "Mississippi"
+            ],
+            "major_countries": [
+              "China",
+              "India",
+              "United States"
+            ],
+            "harvest_season": "September to November",
+            "storage_capability": "Good",
+            "perishability": "Low"
+          },
+          "nutrition": {
+            "primary_nutrients": [
+              "Nitrogen",
+              "Phosphorus",
+              "Potassium"
+            ],
+            "commercial_products": [
+              "Cottonseed oil",
+              "Cotton linters"
+            ]
+          },
+          "common_diseases": [
+            {
+              "name": "Fusarium wilt",
+              "symptoms": "Yellowing of leaves, wilting of plants",
+              "treatment": "Fungicides, crop rotation"
+            },
+            {
+              "name": "Verticillium wilt",
+              "symptoms": "Yellowing of leaves, premature defoliation",
+              "treatment": "Fungicides, crop rotation"
+            }
+          ],
+          "common_pests": [
+            {
+              "name": "Aphids",
+              "treatment": "Insecticides, biological control"
+            },
+            {
+              "name": "Bollworms",
+              "treatment": "Insecticides, Bt cotton"
+            }
+          ],
+          "fertilizer": {
+            "recommended": "NPK 10-20-10",
+            "npk_ratio": "1:2:1",
+            "organic_options": [
+              "Compost",
+              "Manure"
+            ]
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 2.5,
+            "excellent_tonnes_per_hectare": 4.0
+          },
+          "recommendations": {
+            "irrigation": "Flood irrigation during flowering stage",
+            "fertilizer": "Apply NPK 10-20-10 at planting and sidedressing",
+            "harvesting": "Hand picking or mechanical harvesting",
+            "storage": "Store in dry, well-ventilated areas"
+          },
+          "summary": "Cotton is a warm-season crop that requires adequate moisture, sunlight, and fertilization. It is susceptible to diseases like Fusarium wilt and pests like aphids and bollworms. Proper irrigation, fertilization, and pest management practices can improve yield and quality.",
+          "references": [
+            "FAO",
+            "ICAR",
+            "USDA"
+          ],
+          "generated_by": "Groq",
+          "version": 2
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T17:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 22.5,
+          "humidity": 60.0,
+          "rainfall": 0.0,
+          "wind_speed": 10.0,
+          "pressure": 960.1,
+          "time": "2026-08-31T17:45"
+        },
+        "assessment": {
+          "crop": "cotton",
+          "status": "Good",
+          "identified_risks": [
+            "Rainfall below optimal, no recent precipitation."
+          ],
+          "opportunities": [
+            "Weather conditions are favorable."
+          ]
+        },
+        "confidence": 92
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.25,
+          "nitrogen": "Medium",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.25,
+          "nitrogen": "Medium",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 92,
+          "ph_status": "Optimal",
+          "nitrogen_status": "Optimal",
+          "organic_carbon_status": "Optimal",
+          "texture": "Loam",
+          "risks": [],
+          "opportunities": [
+            "Soil pH is within the optimal range."
+          ]
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Tiruvarur Mandi",
+        "nearest_market": {
+          "market": "Thanjavur Uzhavar Sandhai",
+          "district": "Thanjavur",
+          "price": 7330.0,
+          "trend": "Increasing",
+          "distance_km": 239.62,
+          "market_score": 0.6521,
+          "rank": 3
+        },
+        "top_markets": [
+          {
+            "market": "Tiruvarur Mandi",
+            "district": "Tiruvarur",
+            "price": 7618.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7107,
+            "rank": 1
+          },
+          {
+            "market": "Tirunelveli Market",
+            "district": "Tirunelveli",
+            "price": 7387.0,
+            "trend": "Stable",
+            "distance_km": 270.68,
+            "market_score": 0.6814,
+            "rank": 2
+          },
+          {
+            "market": "Thanjavur Uzhavar Sandhai",
+            "district": "Thanjavur",
+            "price": 7330.0,
+            "trend": "Stable",
+            "distance_km": 239.62,
+            "market_score": 0.6521,
+            "rank": 3
+          },
+          {
+            "market": "Chengalpattu Mandi",
+            "district": "Chengalpattu",
+            "price": 7529.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.5746,
+            "rank": 4
+          },
+          {
+            "market": "Tirupattur Mandi",
+            "district": "Tirupattur",
+            "price": 7168.0,
+            "trend": "Stable",
+            "distance_km": 240.25,
+            "market_score": 0.5684,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "cotton",
+          "TopMarkets": [
+            {
+              "market": "Tiruvarur Mandi",
+              "district": "Tiruvarur",
+              "price": 7618.0,
+              "trend": "Stable",
+              "distance_km": 293.81,
+              "market_score": 0.7107,
+              "rank": 1
+            },
+            {
+              "market": "Tirunelveli Market",
+              "district": "Tirunelveli",
+              "price": 7387.0,
+              "trend": "Increasing",
+              "distance_km": 270.68,
+              "market_score": 0.6814,
+              "rank": 2
+            },
+            {
+              "market": "Thanjavur Uzhavar Sandhai",
+              "district": "Thanjavur",
+              "price": 7330.0,
+              "trend": "Increasing",
+              "distance_km": 239.62,
+              "market_score": 0.6521,
+              "rank": 3
+            },
+            {
+              "market": "Chengalpattu Mandi",
+              "district": "Chengalpattu",
+              "price": 7529.0,
+              "trend": "Volatile",
+              "distance_km": 376.38,
+              "market_score": 0.5746,
+              "rank": 4
+            },
+            {
+              "market": "Tirupattur Mandi",
+              "district": "Tirupattur",
+              "price": 7168.0,
+              "trend": "Increasing",
+              "distance_km": 240.25,
+              "market_score": 0.5684,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 95,
+          "trend": "Stable",
+          "recommendation": "Best ranked market is Tiruvarur Mandi with modal price 7618.0.",
+          "opportunities": [
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 0.95,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T12:17:32.951046",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.75,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Excellent"
+        },
+        "water": {
+          "ndwi": -0.35,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "Low"
+        },
+        "assessment": {
+          "vegetation_score": 90,
+          "recommendation": "Increase irrigation immediately."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "cotton",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 27.8\nHumidity : 68\nRainfall : 0.0\nWind Speed : 20.3\nPressure : 960.1\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Thanjavur Uzhavar Sandhai\nNearest Distance : 239.62 km\nNearest Market Price : 7330.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Mandi\nBest Market Price : 7618.0\nBest Market Distance : 293.81 km\nBest Market Trend : Stable\n\nMarkets Evaluated : 5\nCrop : cotton\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "cotton",
+      "crop_profile": {
+        "crop": "cotton",
+        "scientific_name": "Gossypium hirsutum",
+        "family": "Malvaceae",
+        "type": "Annual",
+        "category": "Fiber",
+        "growth_duration_days": 150,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Fruiting",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 15,
+            "maximum": 30,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 40,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 600,
+            "maximum": 1200,
+            "unit": "mm/year"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 7.0
+          },
+          "wind_speed": {
+            "maximum": 25,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 8,
+            "maximum": 12
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "Clay",
+            "Loam"
+          ],
+          "preferred_nitrogen": "Medium",
+          "preferred_organic_carbon": "Medium",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "Flood irrigation",
+          "water_requirement": "High",
+          "critical_growth_stage": "Flowering",
+          "recommended_frequency": "Every 7-10 days"
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.75,
+            "healthy": 0.6,
+            "moderate": 0.4,
+            "poor": 0.2
+          },
+          "ndwi": {
+            "low_stress": 0.25,
+            "moderate_stress": 0.1,
+            "high_stress": 0.0
+          },
+          "savi": {
+            "low_exposure": 0.5,
+            "moderate_exposure": 0.3,
+            "high_exposure": 0.1
+          }
+        },
+        "market": {
+          "keywords": [
+            "textile",
+            "fiber"
+          ],
+          "major_states": [
+            "Texas",
+            "Louisiana",
+            "Mississippi"
+          ],
+          "major_countries": [
+            "China",
+            "India",
+            "United States"
+          ],
+          "harvest_season": "September to November",
+          "storage_capability": "Good",
+          "perishability": "Low"
+        },
+        "nutrition": {
+          "primary_nutrients": [
+            "Nitrogen",
+            "Phosphorus",
+            "Potassium"
+          ],
+          "commercial_products": [
+            "Cottonseed oil",
+            "Cotton linters"
+          ]
+        },
+        "common_diseases": [
+          {
+            "name": "Fusarium wilt",
+            "symptoms": "Yellowing of leaves, wilting of plants",
+            "treatment": "Fungicides, crop rotation"
+          },
+          {
+            "name": "Verticillium wilt",
+            "symptoms": "Yellowing of leaves, premature defoliation",
+            "treatment": "Fungicides, crop rotation"
+          }
+        ],
+        "common_pests": [
+          {
+            "name": "Aphids",
+            "treatment": "Insecticides, biological control"
+          },
+          {
+            "name": "Bollworms",
+            "treatment": "Insecticides, Bt cotton"
+          }
+        ],
+        "fertilizer": {
+          "recommended": "NPK 10-20-10",
+          "npk_ratio": "1:2:1",
+          "organic_options": [
+            "Compost",
+            "Manure"
+          ]
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 2.5,
+          "excellent_tonnes_per_hectare": 4.0
+        },
+        "recommendations": {
+          "irrigation": "Flood irrigation during flowering stage",
+          "fertilizer": "Apply NPK 10-20-10 at planting and sidedressing",
+          "harvesting": "Hand picking or mechanical harvesting",
+          "storage": "Store in dry, well-ventilated areas"
+        },
+        "summary": "Cotton is a warm-season crop that requires adequate moisture, sunlight, and fertilization. It is susceptible to diseases like Fusarium wilt and pests like aphids and bollworms. Proper irrigation, fertilization, and pest management practices can improve yield and quality.",
+        "references": [
+          "FAO",
+          "ICAR",
+          "USDA"
+        ],
+        "generated_by": "Groq",
+        "version": 2
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T17:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 22.5,
+          "humidity": 60.0,
+          "rainfall": 0.0,
+          "wind_speed": 10.0,
+          "pressure": 960.1,
+          "time": "2026-08-31T17:45"
+        },
+        "assessment": {
+          "crop": "cotton",
+          "status": "Good",
+          "identified_risks": [
+            "Rainfall below optimal, no recent precipitation."
+          ],
+          "opportunities": [
+            "Weather conditions are favorable."
+          ]
+        },
+        "confidence": 92
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.25,
+          "nitrogen": "Medium",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.25,
+          "nitrogen": "Medium",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 92,
+          "ph_status": "Optimal",
+          "nitrogen_status": "Optimal",
+          "organic_carbon_status": "Optimal",
+          "texture": "Loam",
+          "risks": [],
+          "opportunities": [
+            "Soil pH is within the optimal range."
+          ]
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T12:17:32.951046",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.75,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Excellent"
+        },
+        "water": {
+          "ndwi": -0.35,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "Low"
+        },
+        "assessment": {
+          "vegetation_score": 90,
+          "recommendation": "Increase irrigation immediately."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Tiruvarur Mandi",
+        "nearest_market": {
+          "market": "Thanjavur Uzhavar Sandhai",
+          "district": "Thanjavur",
+          "price": 7330.0,
+          "trend": "Increasing",
+          "distance_km": 239.62,
+          "market_score": 0.6521,
+          "rank": 3
+        },
+        "top_markets": [
+          {
+            "market": "Tiruvarur Mandi",
+            "district": "Tiruvarur",
+            "price": 7618.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7107,
+            "rank": 1
+          },
+          {
+            "market": "Tirunelveli Market",
+            "district": "Tirunelveli",
+            "price": 7387.0,
+            "trend": "Stable",
+            "distance_km": 270.68,
+            "market_score": 0.6814,
+            "rank": 2
+          },
+          {
+            "market": "Thanjavur Uzhavar Sandhai",
+            "district": "Thanjavur",
+            "price": 7330.0,
+            "trend": "Stable",
+            "distance_km": 239.62,
+            "market_score": 0.6521,
+            "rank": 3
+          },
+          {
+            "market": "Chengalpattu Mandi",
+            "district": "Chengalpattu",
+            "price": 7529.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.5746,
+            "rank": 4
+          },
+          {
+            "market": "Tirupattur Mandi",
+            "district": "Tirupattur",
+            "price": 7168.0,
+            "trend": "Stable",
+            "distance_km": 240.25,
+            "market_score": 0.5684,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "cotton",
+          "TopMarkets": [
+            {
+              "market": "Tiruvarur Mandi",
+              "district": "Tiruvarur",
+              "price": 7618.0,
+              "trend": "Stable",
+              "distance_km": 293.81,
+              "market_score": 0.7107,
+              "rank": 1
+            },
+            {
+              "market": "Tirunelveli Market",
+              "district": "Tirunelveli",
+              "price": 7387.0,
+              "trend": "Increasing",
+              "distance_km": 270.68,
+              "market_score": 0.6814,
+              "rank": 2
+            },
+            {
+              "market": "Thanjavur Uzhavar Sandhai",
+              "district": "Thanjavur",
+              "price": 7330.0,
+              "trend": "Increasing",
+              "distance_km": 239.62,
+              "market_score": 0.6521,
+              "rank": 3
+            },
+            {
+              "market": "Chengalpattu Mandi",
+              "district": "Chengalpattu",
+              "price": 7529.0,
+              "trend": "Volatile",
+              "distance_km": 376.38,
+              "market_score": 0.5746,
+              "rank": 4
+            },
+            {
+              "market": "Tirupattur Mandi",
+              "district": "Tirupattur",
+              "price": 7168.0,
+              "trend": "Increasing",
+              "distance_km": 240.25,
+              "market_score": 0.5684,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 95,
+          "trend": "Stable",
+          "recommendation": "Best ranked market is Tiruvarur Mandi with modal price 7618.0.",
+          "opportunities": [
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 0.95,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "cotton",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 27.8\nHumidity : 68\nRainfall : 0.0\nWind Speed : 20.3\nPressure : 960.1\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Thanjavur Uzhavar Sandhai\nNearest Distance : 239.62 km\nNearest Market Price : 7330.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Mandi\nBest Market Price : 7618.0\nBest Market Distance : 293.81 km\nBest Market Trend : Stable\n\nMarkets Evaluated : 5\nCrop : cotton\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 92,
+      "vegetation_health": "Excellent",
+      "market_trend": "Stable",
+      "risks": [
+        "Rainfall below optimal, no recent precipitation.",
+        "High crop water stress",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality"
+      ],
+      "confidence": 33.46
+    },
+    "plan": {
+      "goal": "Is cotton suitable to grow in this location right now, and what are the risks?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Assess current weather conditions (temperature, humidity, rainfall) for cotton suitability and associated risks."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Evaluate soil properties (pH, nutrients, texture) to determine if they meet cotton requirements and identify soil\u2011related risks."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Analyze satellite indicators (NDVI, NDWI, water stress) to gauge current crop health and environmental stress factors."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Synthesize evidence from specialist agents to produce a final suitability assessment and risk summary."
+        }
+      ],
+      "confidence": 0.95
+    },
+    "reasoning": "CollaborativeReasoning(summary='3 specialist agents reached a consensus.', consensus='Deterministic consensus generated because Gemini reasoning was unavailable.', merged_risks=['High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.', 'No recent precipitation for 7-10 days (critical growth stage)', 'Potential for disease onset (e.g., Fusarium wilt) under drought conditions.', 'Rainfall below optimal (0.0 mm) for cotton growth', 'Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.', 'Yield reduction risk if water deficit persists despite good canopy index.'], merged_opportunities=['Early detection of water stress allows timely irrigation to preserve yield potential.', 'Ensure proper drainage to prevent waterlogging', 'Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.', 'High vegetation health provides a window to apply targeted nutrients before stress worsens.', 'Maintain optimal moisture levels for cotton growth', 'Optimal temperature and humidity levels', 'Weather conditions are favorable for cotton growth'], conflicts=[], confidence=0.81, evidence=[{'agent': 'WeatherAgent', 'analysis': 'Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.', 'risks': ['Rainfall below optimal (0.0 mm) for cotton growth', 'No recent precipitation for 7-10 days (critical growth stage)'], 'opportunities': ['Weather conditions are favorable for cotton growth', 'Optimal temperature and humidity levels'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': \"Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.\", 'risks': [], 'opportunities': ['Maintain optimal moisture levels for cotton growth', 'Ensure proper drainage to prevent waterlogging'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': \"The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly.\", 'risks': ['Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.', 'High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.', 'Potential for disease onset (e.g., Fusarium wilt) under drought conditions.', 'Yield reduction risk if water deficit persists despite good canopy index.'], 'opportunities': ['Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.', 'Early detection of water stress allows timely irrigation to preserve yield potential.', 'High vegetation health provides a window to apply targeted nutrients before stress worsens.'], 'confidence': 0.62, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.81,
+      "decision": "Immediate Irrigation",
+      "priority": "P3",
+      "urgency": "This Week",
+      "risk_level": "Moderate",
+      "action_order": [
+        "Increase irrigation immediately",
+        "Supplement rainfall through irrigation"
+      ],
+      "priorities": [
+        {
+          "issue": "Water Stress",
+          "severity": "Critical",
+          "urgency": "Immediate",
+          "owner": "Farmer",
+          "action": "Increase irrigation immediately"
+        },
+        {
+          "issue": "Rainfall",
+          "severity": "High",
+          "urgency": "Today",
+          "owner": "Farmer",
+          "action": "Supplement rainfall through irrigation"
+        }
+      ],
+      "impact": {
+        "agronomic": "Moderate",
+        "economic": "Excellent",
+        "environmental": "Good",
+        "operational": "Good",
+        "yield_risk": "Moderate",
+        "profitability": "Moderate",
+        "expected_benefit": "Current conditions provide opportunities for improved profitability."
+      },
+      "summary": {
+        "executive": "Cotton cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+        "business": "Market trend is stable with moderate profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+        "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: High soil exposure (SAVI) increases risk of soil erosion and nutrient loss., No recent precipitation for 7-10 days (critical growth stage), Potential for disease onset (e.g., Fusarium wilt) under drought conditions.."
+      },
+      "supporting_evidence": [
+        "WeatherAgent: Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+        "SoilAgent: Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+        "SatelliteAgent: The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9251191874328633,
+        "posterior_mean": 0.9263504562287311,
+        "evidence": {
+          "positive": true,
+          "weight": 0.6075,
+          "reason": "Completed with confidence 0.81."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1229,
+          "utilities": {
+            "auto_execute": 18.941,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=18.941, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+      "priority": "Medium",
+      "justification": "Satellite NDVI shows excellent canopy health, but high NDWI and SAVI indicate severe water stress and soil exposure, compounded by 7\u201110 days without precipitation. Immediate irrigation will prevent wilting, reduce disease risk (e.g., Fusarium wilt), and protect the current yield potential while leveraging the existing strong vegetative vigor and optimal soil conditions.",
+      "actions": [
+        "Activate flood irrigation today to bring soil moisture to field capacity (\u224832% volumetric water content).",
+        "Apply an additional irrigation pulse (10\u201115\u202fmm) within the next 24\u202fhours to simulate rainfall and address the 7\u201110\u202fday deficit.",
+        "Schedule irrigation every 7\u201110\u202fdays thereafter, adjusting volume based on soil moisture sensor readings and upcoming weather forecasts.",
+        "Apply a balanced N\u2011P\u2011K fertilizer (medium nitrogen) concurrently with irrigation to support nutrient uptake under high canopy demand."
+      ],
+      "expected_outcome": "Restored soil moisture will alleviate water stress, maintain canopy photosynthesis, limit disease onset, and preserve the projected yield and profitability for the current cotton crop.",
+      "monitoring_plan": [
+        "Daily soil moisture checks (sensor or gravimetric) to ensure moisture stays above wilting point (14%).",
+        "Weekly NDVI/NDWI satellite updates to verify reduction in water stress levels.",
+        "Bi\u2011weekly visual scouting for wilt symptoms (yellowing, leaf droop) and pest presence.",
+        "Track SAVI values monthly to monitor soil exposure and adjust irrigation to prevent erosion.",
+        "Review weather forecasts each morning to anticipate natural rainfall and modify irrigation schedule accordingly."
+      ],
+      "confidence": 0.81,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Immediate Irrigation",
+      "executive_priority": "P3",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9378258037833885,
+        "posterior_mean": 0.9389837368609835,
+        "evidence": {
+          "positive": true,
+          "weight": 0.81,
+          "reason": "Completed with confidence 0.81."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1022,
+          "utilities": {
+            "auto_execute": 23.648,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.10 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=23.648, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "Is cotton suitable to grow in this location right now, and what are the risks?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Assess current weather conditions (temperature, humidity, rainfall) for cotton suitability and associated risks."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Evaluate soil properties (pH, nutrients, texture) to determine if they meet cotton requirements and identify soil\u2011related risks."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Analyze satellite indicators (NDVI, NDWI, water stress) to gauge current crop health and environmental stress factors."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Synthesize evidence from specialist agents to produce a final suitability assessment and risk summary."
+        }
+      ],
+      "specialists": {
+        "WeatherAgent": {
+          "agent": "WeatherAgent",
+          "status": "completed",
+          "analysis": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+          "summary": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "risks": [
+            "Rainfall below optimal (0.0 mm) for cotton growth",
+            "No recent precipitation for 7-10 days (critical growth stage)"
+          ],
+          "opportunities": [
+            "Weather conditions are favorable for cotton growth",
+            "Optimal temperature and humidity levels"
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 157.712,
+          "governance": {
+            "agent": "WeatherAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8611471285188861,
+            "posterior_mean": 0.8637015629489839,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.2085,
+              "utilities": {
+                "auto_execute": 11.658,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.21 from trust=0.86 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=11.658, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SoilAgent": {
+          "agent": "SoilAgent",
+          "status": "completed",
+          "analysis": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+          "summary": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage. 2 soil opportunity(s) identified.",
+          "risks": [],
+          "opportunities": [
+            "Maintain optimal moisture levels for cotton growth",
+            "Ensure proper drainage to prevent waterlogging"
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 193.662,
+          "governance": {
+            "agent": "SoilAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8511881136389583,
+            "posterior_mean": 0.8540161638179825,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.2199,
+              "utilities": {
+                "auto_execute": 11.205,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.22 from trust=0.85 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=11.205, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SatelliteAgent": {
+          "agent": "SatelliteAgent",
+          "status": "completed",
+          "analysis": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly.",
+          "summary": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+          "risks": [
+            "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+            "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+            "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+            "Yield reduction risk if water deficit persists despite good canopy index."
+          ],
+          "opportunities": [
+            "Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.",
+            "Early detection of water stress allows timely irrigation to preserve yield potential.",
+            "High vegetation health provides a window to apply targeted nutrients before stress worsens."
+          ],
+          "confidence": 0.62,
+          "metadata": {},
+          "execution_time": 2.826,
+          "governance": {
+            "agent": "SatelliteAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.74671700861382,
+            "posterior_mean": 0.7525594184657712,
+            "evidence": {
+              "positive": true,
+              "weight": 0.31,
+              "reason": "Completed with confidence 0.62."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.3548,
+              "utilities": {
+                "auto_execute": 5.809,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.35 from trust=0.75 (+/-0.11) on a low-risk data_collector action => human_review (EU auto=5.809, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": "CollaborativeReasoning(summary='3 specialist agents reached a consensus.', consensus='Deterministic consensus generated because Gemini reasoning was unavailable.', merged_risks=['High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.', 'No recent precipitation for 7-10 days (critical growth stage)', 'Potential for disease onset (e.g., Fusarium wilt) under drought conditions.', 'Rainfall below optimal (0.0 mm) for cotton growth', 'Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.', 'Yield reduction risk if water deficit persists despite good canopy index.'], merged_opportunities=['Early detection of water stress allows timely irrigation to preserve yield potential.', 'Ensure proper drainage to prevent waterlogging', 'Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.', 'High vegetation health provides a window to apply targeted nutrients before stress worsens.', 'Maintain optimal moisture levels for cotton growth', 'Optimal temperature and humidity levels', 'Weather conditions are favorable for cotton growth'], conflicts=[], confidence=0.81, evidence=[{'agent': 'WeatherAgent', 'analysis': 'Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.', 'risks': ['Rainfall below optimal (0.0 mm) for cotton growth', 'No recent precipitation for 7-10 days (critical growth stage)'], 'opportunities': ['Weather conditions are favorable for cotton growth', 'Optimal temperature and humidity levels'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': \"Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.\", 'risks': [], 'opportunities': ['Maintain optimal moisture levels for cotton growth', 'Ensure proper drainage to prevent waterlogging'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': \"The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly.\", 'risks': ['Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.', 'High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.', 'Potential for disease onset (e.g., Fusarium wilt) under drought conditions.', 'Yield reduction risk if water deficit persists despite good canopy index.'], 'opportunities': ['Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.', 'Early detection of water stress allows timely irrigation to preserve yield potential.', 'High vegetation health provides a window to apply targeted nutrients before stress worsens.'], 'confidence': 0.62, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.81,
+        "decision": "Immediate Irrigation",
+        "priority": "P3",
+        "urgency": "This Week",
+        "risk_level": "Moderate",
+        "action_order": [
+          "Increase irrigation immediately",
+          "Supplement rainfall through irrigation"
+        ],
+        "priorities": [
+          {
+            "issue": "Water Stress",
+            "severity": "Critical",
+            "urgency": "Immediate",
+            "owner": "Farmer",
+            "action": "Increase irrigation immediately"
+          },
+          {
+            "issue": "Rainfall",
+            "severity": "High",
+            "urgency": "Today",
+            "owner": "Farmer",
+            "action": "Supplement rainfall through irrigation"
+          }
+        ],
+        "impact": {
+          "agronomic": "Moderate",
+          "economic": "Excellent",
+          "environmental": "Good",
+          "operational": "Good",
+          "yield_risk": "Moderate",
+          "profitability": "Moderate",
+          "expected_benefit": "Current conditions provide opportunities for improved profitability."
+        },
+        "summary": {
+          "executive": "Cotton cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+          "business": "Market trend is stable with moderate profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+          "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: High soil exposure (SAVI) increases risk of soil erosion and nutrient loss., No recent precipitation for 7-10 days (critical growth stage), Potential for disease onset (e.g., Fusarium wilt) under drought conditions.."
+        },
+        "supporting_evidence": [
+          "WeatherAgent: Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+          "SoilAgent: Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+          "SatelliteAgent: The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9251191874328633,
+          "posterior_mean": 0.9263504562287311,
+          "evidence": {
+            "positive": true,
+            "weight": 0.6075,
+            "reason": "Completed with confidence 0.81."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.1229,
+            "utilities": {
+              "auto_execute": 18.941,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=18.941, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+        "priority": "Medium",
+        "justification": "Satellite NDVI shows excellent canopy health, but high NDWI and SAVI indicate severe water stress and soil exposure, compounded by 7\u201110 days without precipitation. Immediate irrigation will prevent wilting, reduce disease risk (e.g., Fusarium wilt), and protect the current yield potential while leveraging the existing strong vegetative vigor and optimal soil conditions.",
+        "actions": [
+          "Activate flood irrigation today to bring soil moisture to field capacity (\u224832% volumetric water content).",
+          "Apply an additional irrigation pulse (10\u201115\u202fmm) within the next 24\u202fhours to simulate rainfall and address the 7\u201110\u202fday deficit.",
+          "Schedule irrigation every 7\u201110\u202fdays thereafter, adjusting volume based on soil moisture sensor readings and upcoming weather forecasts.",
+          "Apply a balanced N\u2011P\u2011K fertilizer (medium nitrogen) concurrently with irrigation to support nutrient uptake under high canopy demand."
+        ],
+        "expected_outcome": "Restored soil moisture will alleviate water stress, maintain canopy photosynthesis, limit disease onset, and preserve the projected yield and profitability for the current cotton crop.",
+        "monitoring_plan": [
+          "Daily soil moisture checks (sensor or gravimetric) to ensure moisture stays above wilting point (14%).",
+          "Weekly NDVI/NDWI satellite updates to verify reduction in water stress levels.",
+          "Bi\u2011weekly visual scouting for wilt symptoms (yellowing, leaf droop) and pest presence.",
+          "Track SAVI values monthly to monitor soil exposure and adjust irrigation to prevent erosion.",
+          "Review weather forecasts each morning to anticipate natural rainfall and modify irrigation schedule accordingly."
+        ],
+        "confidence": 0.81,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Immediate Irrigation",
+        "executive_priority": "P3",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9378258037833885,
+          "posterior_mean": 0.9389837368609835,
+          "evidence": {
+            "positive": true,
+            "weight": 0.81,
+            "reason": "Completed with confidence 0.81."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1022,
+            "utilities": {
+              "auto_execute": 23.648,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.10 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=23.648, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Immediate Irrigation",
+        "executive_summary": "The field shows severe water stress despite an excellent canopy, and no rain has fallen for 7\u201110 days. Immediate supplemental irrigation this week is required to protect the cotton during its critical flowering stage.",
+        "recommendation": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+        "explanation": "Satellite indices (high NDWI and SAVI) indicate a strong water deficit and exposed soil, while weather data confirm zero rainfall and a 7\u201110\u2011day dry spell. Soil conditions are optimal (pH 6.25, medium nitrogen, loam texture) and the canopy health (NDVI 0.75) is excellent, meaning the crop can recover quickly if water is supplied. The combined evidence points to irrigation as the only action that can prevent wilting, disease risk, and yield loss.",
+        "reasoning_summary": "WeatherAgent reported no precipitation and rainfall below the cotton requirement, SoilAgent confirmed optimal soil chemistry and texture, and SatelliteAgent detected severe water stress and soil exposure. Collaborative reasoning merged these risks and opportunities, leading the ExecutiveAgent to order immediate irrigation with a medium priority.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [
+                "Rainfall below optimal (0.0 mm) for cotton growth",
+                "No recent precipitation for 7-10 days (critical growth stage)"
+              ],
+              "key_opportunities": [
+                "Weather conditions are favorable for cotton growth",
+                "Optimal temperature and humidity levels"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8213,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8213,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "analysis",
+                  "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8113,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Specialist",
+              "source": "SoilAgent",
+              "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [],
+              "key_opportunities": [
+                "Maintain optimal moisture levels for cotton growth",
+                "Ensure proper drainage to prevent waterlogging"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SoilAgent",
+                  "type": "analysis",
+                  "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.7775,
+                  "importance": "Moderate",
+                  "rank": 7
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "summary",
+                  "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage. 2 soil opportunity(s) identified.",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.7775,
+                  "importance": "Moderate",
+                  "rank": 8
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "opportunity",
+                  "finding": "Maintain optimal moisture levels for cotton growth",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.7725,
+                  "importance": "Moderate",
+                  "rank": 9
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 3,
+              "stage": "Specialist",
+              "source": "SatelliteAgent",
+              "finding": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+              "confidence": 0.62,
+              "key_risks": [
+                "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+                "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+                "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+                "Yield reduction risk if water deficit persists despite good canopy index."
+              ],
+              "key_opportunities": [
+                "Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.",
+                "Early detection of water stress allows timely irrigation to preserve yield potential.",
+                "High vegetation health provides a window to apply targeted nutrients before stress worsens."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+                  "confidence": 0.62,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7208,
+                  "importance": "Moderate",
+                  "rank": 11
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+                  "confidence": 0.62,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7208,
+                  "importance": "Moderate",
+                  "rank": 12
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+                  "confidence": 0.62,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7208,
+                  "importance": "Moderate",
+                  "rank": 13
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 8,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Weather conditions are favorable for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 9,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "3 specialist agents reached a consensus.",
+              "confidence": 0.81,
+              "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+              "merged_risks": [
+                "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+                "No recent precipitation for 7-10 days (critical growth stage)",
+                "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+                "Rainfall below optimal (0.0 mm) for cotton growth",
+                "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+                "Yield reduction risk if water deficit persists despite good canopy index."
+              ],
+              "merged_opportunities": [
+                "Early detection of water stress allows timely irrigation to preserve yield potential.",
+                "Ensure proper drainage to prevent waterlogging",
+                "Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.",
+                "High vegetation health provides a window to apply targeted nutrients before stress worsens.",
+                "Maintain optimal moisture levels for cotton growth",
+                "Optimal temperature and humidity levels",
+                "Weather conditions are favorable for cotton growth"
+              ],
+              "conflicts": [],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 10,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Immediate Irrigation",
+              "confidence": 0.81,
+              "priority": "P3",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 11,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+              "confidence": 0.81,
+              "actions": [
+                "Activate flood irrigation today to bring soil moisture to field capacity (\u224832% volumetric water content).",
+                "Apply an additional irrigation pulse (10\u201115\u202fmm) within the next 24\u202fhours to simulate rainfall and address the 7\u201110\u202fday deficit.",
+                "Schedule irrigation every 7\u201110\u202fdays thereafter, adjusting volume based on soil moisture sensor readings and upcoming weather forecasts.",
+                "Apply a balanced N\u2011P\u2011K fertilizer (medium nitrogen) concurrently with irrigation to support nutrient uptake under high canopy demand."
+              ],
+              "justification": "Satellite NDVI shows excellent canopy health, but high NDWI and SAVI indicate severe water stress and soil exposure, compounded by 7\u201110 days without precipitation. Immediate irrigation will prevent wilting, reduce disease risk (e.g., Fusarium wilt), and protect the current yield potential while leveraging the existing strong vegetative vigor and optimal soil conditions.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Rainfall below optimal (0.0 mm) for cotton growth",
+              "strength": 0.8213
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "No recent precipitation for 7-10 days (critical growth stage)",
+              "strength": 0.8213
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+              "strength": 0.8113
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "3 specialist agents reached a consensus.",
+              "strength": 0.81
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Immediate Irrigation",
+              "strength": 0.81
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Implement immediate supplemental irrigation to relieve critical water stress during the flowering stage.",
+              "strength": 0.81
+            }
+          ],
+          "summary": "3 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Immediate Irrigation'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 11,
+          "specialist_steps": 3,
+          "evidence_steps": 5,
+          "decision_step": 10,
+          "recommendation_step": 11,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Weather conditions are favorable for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Weather conditions are favorable for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "rank": 5
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Optimal temperature and humidity levels",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "rank": 6
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7775,
+              "importance": "Moderate",
+              "rank": 7
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0) for cotton. Nitrogen levels are at 'Medium' which aligns with cotton's preferred nitrogen level. Organic carbon is 'Medium' as preferred. The soil texture is Loam, which is within the preferred range (Clay and Loam). The soil health score of 92 indicates excellent condition. No significant risks are identified. Opportunities include maintaining optimal moisture levels and ensuring proper drainage. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7775,
+              "importance": "Moderate",
+              "rank": 8
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Maintain optimal moisture levels for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7725,
+              "importance": "Moderate",
+              "rank": 9
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Ensure proper drainage to prevent waterlogging",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7725,
+              "importance": "Moderate",
+              "rank": 10
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Severe water stress (high NDWI) may lead to wilting and reduced photosynthesis.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7208,
+              "importance": "Moderate",
+              "rank": 11
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "High soil exposure (SAVI) increases risk of soil erosion and nutrient loss.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7208,
+              "importance": "Moderate",
+              "rank": 12
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Potential for disease onset (e.g., Fusarium wilt) under drought conditions.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7208,
+              "importance": "Moderate",
+              "rank": 13
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Yield reduction risk if water deficit persists despite good canopy index.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7208,
+              "importance": "Moderate",
+              "rank": 14
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "analysis",
+              "finding": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7107,
+              "importance": "Moderate",
+              "rank": 15
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "summary",
+              "finding": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy at present. However, the NDWI of -0.35 falls well below the highest stress threshold (0.0), indicating severe water deficit and high water stress. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting considerable soil exposure and limited ground cover despite the excellent NDVI. Vegetation condition is currently classified as 'Excellent', but the combination of high water stress and high soil exposure poses a risk of rapid decline in plant health if moisture is not restored. Water availability is critically low, and the satellite assessment correctly flags an immediate need for additional irrigation. Overall, the field shows a strong vegetative signal but is vulnerable to drought stress and soil exposure, which could impact yield if not addressed promptly. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7107,
+              "importance": "Moderate",
+              "rank": 16
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Excellent NDVI indicates a robust canopy that can quickly recover with adequate water.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7057,
+              "importance": "Moderate",
+              "rank": 17
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Early detection of water stress allows timely irrigation to preserve yield potential.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7057,
+              "importance": "Moderate",
+              "rank": 18
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "High vegetation health provides a window to apply targeted nutrients before stress worsens.",
+              "confidence": 0.62,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7057,
+              "importance": "Moderate",
+              "rank": 19
+            }
+          ],
+          "source_summary": {
+            "WeatherAgent": {
+              "evidence_score": 0.8213,
+              "finding_count": 6,
+              "highest_importance": "High"
+            },
+            "SoilAgent": {
+              "evidence_score": 0.7775,
+              "finding_count": 4,
+              "highest_importance": "Moderate"
+            },
+            "SatelliteAgent": {
+              "evidence_score": 0.7208,
+              "finding_count": 9,
+              "highest_importance": "Moderate"
+            }
+          },
+          "total_findings": 19,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (0.0 mm) for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "No recent precipitation for 7-10 days (critical growth stage)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and rainfall (0.0 mm) is below the annual requirement but no recent precipitation is noted. The weather is favorable for cotton growth with no immediate threats. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Weather conditions are favorable for cotton growth",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "Severe water stress may cause wilting and reduced photosynthesis.",
+          "High soil exposure increases risk of erosion and nutrient loss.",
+          "No rainfall for 7\u201110\u202fdays during flowering heightens disease risk (e.g., Fusarium wilt).",
+          "If water deficit persists, yield reduction is likely."
+        ],
+        "opportunities": [
+          "Excellent canopy health provides a strong base for rapid recovery once water is supplied.",
+          "Optimal soil chemistry and texture support efficient water uptake.",
+          "Favorable temperature and humidity allow irrigation to be highly effective.",
+          "Timely irrigation can preserve profitability despite moderate economic risk."
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Delay irrigation",
+            "why_rejected": "Evidence shows insufficient water availability and high stress; delaying would worsen crop condition."
+          },
+          {
+            "decision": "Apply partial irrigation",
+            "why_rejected": "Partial water would not fully address the severe deficit indicated by NDWI and rainfall data."
+          },
+          {
+            "decision": "Wait for natural rainfall",
+            "why_rejected": "No rain forecast and a 7\u201110\u202fday dry period make waiting too risky for the flowering stage."
+          }
+        ],
+        "limitations": [
+          "MarketAgent did not return an output, so market price considerations were not included.",
+          "HistoricalAgent did not return an output, limiting context from past seasons.",
+          "SatelliteAgent confidence is moderate (0.62), so its water\u2011stress metrics carry some uncertainty."
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Detect any upcoming rain that could modify irrigation needs."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Track environmental stress that interacts with water availability."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Confirm that irrigation is achieving field\u2011capacity moisture (~32\u202f% volumetric)."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Weekly",
+            "reason": "Maintain optimal pH for cotton nutrient uptake."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.828,
+          "specialist_average": 0.84,
+          "strongest_source": "WeatherAgent",
+          "strongest_confidence": 0.95,
+          "weakest_source": "SatelliteAgent",
+          "weakest_confidence": 0.62,
+          "unavailable_sources": [],
+          "breakdown": {
+            "WeatherAgent": 0.95,
+            "SoilAgent": 0.95,
+            "SatelliteAgent": 0.62,
+            "CollaborativeReasoning": 0.81,
+            "ExecutiveDecision": 0.81
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.83. The strongest specialist evidence came from WeatherAgent (0.95), while the weakest was SatelliteAgent (0.62). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.828,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8637,
+            "trust_std": 0.0722
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.854,
+            "trust_std": 0.0739
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7526,
+            "trust_std": 0.1073
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6657,
+            "trust_std": 0.1394
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9264,
+            "trust_std": 0.0492
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.939,
+            "trust_std": 0.0412
+          }
+        },
+        "crop_learning": {
+          "crop": "cotton",
+          "trust_mean": 0.8186,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.8186,
+              "trust_std": 0.1111
+            },
+            "rice": {
+              "trust_mean": 0.866,
+              "trust_std": 0.0854
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8461,
+              "trust_std": 0.0964
+            },
+            "tomato": {
+              "trust_mean": 0.8733,
+              "trust_std": 0.0812
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.81,
+      "statistics": {
+        "agents_planned": 4,
+        "specialist_agents": 3,
+        "agents_completed": 3,
+        "agents_failed": 0,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.95,
+        "reasoning_confidence": 0.81,
+        "executive_confidence": 0.81,
+        "explanation_confidence": 0.828,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 3,
+        "monitoring_items": 4,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 536.26
+  },
+  "scenario_id": "water_stress_cotton",
+  "wall_time_seconds": 536.29
+}

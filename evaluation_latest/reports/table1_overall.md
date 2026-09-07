@@ -1,0 +1,12 @@
+| Metric | Definition | Result |
+|---|---|---|
+| Task Success Rate | Percent of queries returning a complete, valid recommendation with no unrecovered pipeline failure | 100.0% (N=11, 95% CI [74.12, 100.0]) |
+| Decision Accuracy | Percent of executive decisions matching the rule-derived ground-truth decision | 63.64% overall (N=11, 95% CI [35.38, 84.83]); 70.0% excluding the 1 soil-pH scenarios that probe a documented gap in the decision vocabulary (N=10, 95% CI [39.68, 89.22]) |
+| Routing Accuracy | Percent of queries where the planner selected exactly the expected specialist-agent set (expected = agents whose data source actually has usable data) | 100.0% exact match (N=11, 95% CI [74.12, 100.0]); unnecessary-agent rate 0.0%, missed-agent rate 0.0%. Scoring against the availability-blind query-type mapping instead gives 54.55%. See Table 1b and reports/planner_routing_improvement.md |
+| Agent Macro F1 | Mean F1 across all 5 specialists for risk/opportunity detection (LLM-judge vs rule-derived ground truth) | 1.0 |
+| Recommendation Quality | Mean 1-5 Likert score across 5 dimensions (LLM-judge, NOT a human expert panel) | 3.636 +/- 1.101 (N=55) |
+| Hallucination / Error Rate | Percent of recommendations with an LLM-judge-flagged unsupported/contradictory claim | 18.18% (N=11, 95% CI [5.14, 47.7]) |
+| Numeric grounding (deterministic) | Percent of runs containing a measurement-cued number absent from the raw context. No LLM judge; independent cross-check on the row above | 0.0% of runs (0/19 claims ungrounded, N=11) |
+| NLI contradiction rate (discriminative model) | Percent of runs where a pre-trained entailment classifier labels any generated assertion as contradicting a context premise. No generative judge | 0.0% of runs (0/30 premise-claim pairs, N=11) |
+| Trust Calibration (MACE) | Mean absolute error between TRUSTAI trust_mean and observed specialist reliability | 0.2276 |
+| Average Response Time | Mean end-to-end pipeline latency (full_system condition) | 426.58s (median 437.53s, N=11) |

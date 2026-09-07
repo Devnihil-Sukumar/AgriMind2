@@ -15,116 +15,95 @@ class ContextAgent:
     Builds the unified farm context.
     """
 
-    ####################################################################
-    # Build Context
-    ####################################################################
-
     def analyze(self, data):
 
-        weather = data.get("weather", {})
-        soil = data.get("soil", {})
-        satellite = data.get("satellite", {})
-        market = data.get("market", {})
-        historical = data.get("historical", {})
+        weather = data["weather"]
+        soil = data["soil"]
+        satellite = data["satellite"]
+        market = data["market"]
+        historical = data["historical"]
 
         crop_profile = data["metadata"]["crop_profile"]
         crop = crop_profile["crop"]
+
+        ############################################################
+        # Resolve farm location robustly
+        #
+        # Preferred source:
+        #   soil["location"]
+        #
+        # Fallback:
+        #   soil["raw_data"]
+        #
+        # This prevents the unified context from returning
+        # Unknown when the soil collector already has district/state.
+        ############################################################
+
+        soil_location = soil.get(
+            "location",
+            {}
+        )
+
+        if not isinstance(soil_location, dict):
+            soil_location = {}
+
+        soil_raw = soil.get(
+            "raw_data",
+            {}
+        )
+
+        if not isinstance(soil_raw, dict):
+            soil_raw = {}
+
+        existing_location = data.get(
+            "location",
+            {}
+        )
+
+        if not isinstance(existing_location, dict):
+            existing_location = {}
+
+        district = (
+            soil_location.get("district")
+            or soil_raw.get("district")
+            or existing_location.get("district")
+            or "Unknown"
+        )
+
+        state = (
+            soil_location.get("state")
+            or soil_raw.get("state")
+            or existing_location.get("state")
+            or "Unknown"
+        )
 
         ############################################################
         # Risks & Opportunities
         ############################################################
 
         risks = []
-
         opportunities = []
 
         ############################################################
         # Weather
         ############################################################
 
-        weather_assessment = weather.get(
-
-            "assessment",
-
-            {}
-
-        )
-
         risks.extend(
-
-            weather_assessment.get(
-
+            weather["assessment"].get(
                 "identified_risks",
-
                 []
-
             )
-
-        )
-
-        opportunities.extend(
-
-            weather_assessment.get(
-
-                "opportunities",
-
-                []
-
-            )
-
         )
 
         ############################################################
         # Soil
         ############################################################
 
-        soil_assessment = soil.get(
-
-            "assessment",
-
-            {}
-
-        )
-
-        soil_health = soil_assessment.get(
-
-            "soil_health_score",
-
-            0
-
-        )
-
-        if soil_health >= 90:
+        if soil["assessment"]["soil_health_score"] >= 90:
 
             opportunities.append(
-
                 "Excellent soil quality"
-
             )
-
-        risks.extend(
-
-            soil_assessment.get(
-
-                "risks",
-
-                []
-
-            )
-
-        )
-
-        opportunities.extend(
-
-            soil_assessment.get(
-
-                "opportunities",
-
-                []
-
-            )
-
-        )
 
         ############################################################
         # Satellite
@@ -132,209 +111,95 @@ class ContextAgent:
 
         vegetation_health = "Unknown"
 
-        if satellite.get("status") == "success":
+        if satellite["status"] == "success":
 
-            vegetation = satellite.get(
-
-                "vegetation",
-
-                {}
-
-            )
-
-            water = satellite.get(
-
-                "water",
-
-                {}
-
-            )
-
-            soil_sat = satellite.get(
-
-                "soil",
-
-                {}
-
-            )
-
-            vegetation_health = vegetation.get(
-
-                "health",
-
-                "Unknown"
-
-            )
+            vegetation_health = satellite["vegetation"]["health"]
 
             if vegetation_health == "Critical":
 
                 risks.append(
-
                     "Vegetation health is critical"
-
                 )
 
-            if water.get("stress") == "High":
+            if satellite["water"]["stress"] == "High":
 
                 risks.append(
-
                     "High crop water stress"
-
                 )
 
-            if soil_sat.get("exposure") == "High":
+            if satellite["soil"]["exposure"] == "High":
 
                 risks.append(
-
                     "Large exposed soil area"
-
                 )
 
         else:
 
             risks.append(
-
                 "Satellite analysis unavailable"
-
             )
 
         ############################################################
         # Market
         ############################################################
 
-        market_assessment = market.get(
-
-            "assessment",
-
-            {}
-
-        )
-
-        market_trend = market_assessment.get(
-
-            "trend",
-
-            "Unknown"
-
-        )
-
         if (
-
-            market.get("status") == "success"
-
+            market["status"] == "success"
             and
-
-            market_trend == "Increasing"
-
+            market["assessment"]["trend"] == "Increasing"
         ):
 
             opportunities.append(
-
                 "Market prices increasing"
-
             )
-
-        risks.extend(
-
-            market_assessment.get(
-
-                "risks",
-
-                []
-
-            )
-
-        )
-
-        opportunities.extend(
-
-            market_assessment.get(
-
-                "opportunities",
-
-                []
-
-            )
-
-        )
 
         ############################################################
         # Historical
         ############################################################
 
         records = historical.get(
-
             "records",
-
             []
-
         )
 
         historical_similarity = historical.get(
-
             "similarity",
-
             0.0
-
         )
 
         if records:
 
             opportunities.append(
-
                 f"{len(records)} historical records available"
-
             )
 
         else:
 
             risks.append(
-
                 "No historical records available"
-
             )
 
         ############################################################
         # Confidence
         ############################################################
 
-        confidence_scores = []
+        confidence_scores = [
 
-        for source in [
+            weather.get("confidence", 0),
 
-            weather,
+            soil.get("confidence", 0),
 
-            soil,
+            market.get("confidence", 0)
 
-            market,
+        ]
 
-            satellite
+        if satellite["status"] == "success":
 
-        ]:
+            confidence_scores.append(
+                satellite.get("confidence", 0)
+            )
 
-            if source.get("status") == "success":
-
-                confidence_scores.append(
-
-                    source.get(
-
-                        "confidence",
-
-                        0
-
-                    )
-
-                )
-
-        confidence = (
-
-            sum(confidence_scores) / len(confidence_scores)
-
-            if confidence_scores
-
-            else 0
-
-        )
+        confidence = sum(confidence_scores) / len(confidence_scores)
 
         ############################################################
         # Final Context
@@ -342,57 +207,17 @@ class ContextAgent:
 
         return {
 
-            ########################################################
-            # Crop
-            ########################################################
-
             "crop": crop,
 
             "crop_profile": crop_profile,
 
-            ########################################################
-            # Location
-            ########################################################
-
             "location": {
 
-                "district":
+                "district": district,
 
-                    soil.get(
-
-                        "location",
-
-                        {}
-
-                    ).get(
-
-                        "district",
-
-                        "Unknown"
-
-                    ),
-
-                "state":
-
-                    soil.get(
-
-                        "location",
-
-                        {}
-
-                    ).get(
-
-                        "state",
-
-                        "Unknown"
-
-                    )
+                "state": state
 
             },
-
-            ########################################################
-            # Raw Sources
-            ########################################################
 
             "weather": weather,
 
@@ -404,83 +229,29 @@ class ContextAgent:
 
             "historical": historical,
 
-            ########################################################
-            # Historical
-            ########################################################
+            "historical_records": len(records),
 
-            "historical_records":
+            "historical_similarity": round(
+                historical_similarity,
+                2
+            ),
 
-                len(records),
+            "weather_status": weather["assessment"]["status"],
 
-            "historical_similarity":
+            "soil_health": soil["assessment"]["soil_health_score"],
 
-                round(
+            "vegetation_health": vegetation_health,
 
-                    historical_similarity,
+            "market_trend": market["assessment"].get(
+                "trend",
+                "Unknown"
+            ),
 
-                    2
+            "risks": list(dict.fromkeys(risks)),
 
-                ),
+            "opportunities": list(dict.fromkeys(opportunities)),
 
-            ########################################################
-            # Summary
-            ########################################################
-
-            "weather_status":
-
-                weather_assessment.get(
-
-                    "status",
-
-                    "Unknown"
-
-                ),
-
-            "soil_health":
-
-                soil_health,
-
-            "vegetation_health":
-
-                vegetation_health,
-
-            "market_trend":
-
-                market_trend,
-
-            ########################################################
-            # Insights
-            ########################################################
-
-            "risks":
-
-                list(
-
-                    dict.fromkeys(risks)
-
-                ),
-
-            "opportunities":
-
-                list(
-
-                    dict.fromkeys(opportunities)
-
-                ),
-
-            ########################################################
-            # Overall Confidence
-            ########################################################
-
-            "confidence":
-
-                round(
-
-                    confidence,
-
-                    2
-
-                )
+            "confidence": round(confidence, 2)
 
         }
 

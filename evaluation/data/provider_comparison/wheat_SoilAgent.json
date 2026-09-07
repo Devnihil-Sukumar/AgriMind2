@@ -1,0 +1,22 @@
+{
+  "run_id": "wheat_SoilAgent",
+  "crop": "wheat",
+  "agent": "SoilAgent",
+  "prompt_chars": 8115,
+  "ollama": {
+    "elapsed_seconds": 302.057,
+    "valid_json_first_try": false,
+    "json_error": null,
+    "response_chars": 0,
+    "raw_response": null,
+    "error": "RuntimeError: Ollama request timed out after 300 seconds."
+  },
+  "groq": {
+    "elapsed_seconds": 1.644,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 1210,
+    "raw_response": "{\n    \"analysis\": \"The soil in Coimbatore (pH 6.21) falls squarely within wheat's optimal pH range (6.0‑7.5) and the texture is classified as Clay Loam, matching the crop's preferred clay/loam texture. Nitrogen is reported as High, exceeding the medium level wheat typically requires; this can support vigorous growth but may increase leaching risk if not managed. Organic carbon is Low, falling short of the medium level needed for optimal soil structure, nutrient cycling, and water retention. Overall soil health score is 90, indicating generally good condition, but the deficiency in organic matter is the primary limitation. Consequently, the site is largely suitable for wheat, with the main amendment focus on building organic carbon.\",\n    \"risks\": [\n        \"Low organic carbon may limit soil structure, water‑holding capacity, and nutrient availability.\",\n        \"Excessive nitrogen could lead to leaching or lodging if not properly timed.\"\n    ],\n    \"opportunities\": [\n        \"Soil pH is optimal for wheat.\",\n        \"Clay Loam texture provides good water retention and root penetration.\",\n        \"High nitrogen level can support high yield if managed correctly.\"\n    ],\n    \"confidence\": 0.94\n}",
+    "error": null
+  }
+}

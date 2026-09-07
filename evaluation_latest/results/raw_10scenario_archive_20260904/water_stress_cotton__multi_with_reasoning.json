@@ -1,0 +1,816 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "cotton",
+    "crop_profile": {
+      "crop": "cotton",
+      "scientific_name": "Gossypium hirsutum",
+      "family": "Malvaceae",
+      "type": "Annual",
+      "category": "Fiber",
+      "growth_duration_days": 150,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 40,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 600,
+          "maximum": 1200,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 25,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 8,
+          "maximum": 12
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Clay",
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Flood irrigation",
+        "water_requirement": "High",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 7-10 days"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.5,
+          "moderate_exposure": 0.3,
+          "high_exposure": 0.1
+        }
+      },
+      "market": {
+        "keywords": [
+          "textile",
+          "fiber"
+        ],
+        "major_states": [
+          "Texas",
+          "Louisiana",
+          "Mississippi"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "United States"
+        ],
+        "harvest_season": "September to November",
+        "storage_capability": "Good",
+        "perishability": "Low"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Nitrogen",
+          "Phosphorus",
+          "Potassium"
+        ],
+        "commercial_products": [
+          "Cottonseed oil",
+          "Cotton linters"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Fusarium wilt",
+          "symptoms": "Yellowing of leaves, wilting of plants",
+          "treatment": "Fungicides, crop rotation"
+        },
+        {
+          "name": "Verticillium wilt",
+          "symptoms": "Yellowing of leaves, premature defoliation",
+          "treatment": "Fungicides, crop rotation"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Insecticides, biological control"
+        },
+        {
+          "name": "Bollworms",
+          "treatment": "Insecticides, Bt cotton"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "NPK 10-20-10",
+        "npk_ratio": "1:2:1",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 2.5,
+        "excellent_tonnes_per_hectare": 4.0
+      },
+      "recommendations": {
+        "irrigation": "Flood irrigation during flowering stage",
+        "fertilizer": "Apply NPK 10-20-10 at planting and sidedressing",
+        "harvesting": "Hand picking or mechanical harvesting",
+        "storage": "Store in dry, well-ventilated areas"
+      },
+      "summary": "Cotton is a warm-season crop that requires adequate moisture, sunlight, and fertilization. It is susceptible to diseases like Fusarium wilt and pests like aphids and bollworms. Proper irrigation, fertilization, and pest management practices can improve yield and quality.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T17:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 22.5,
+        "humidity": 60.0,
+        "rainfall": 0.0,
+        "wind_speed": 10.0,
+        "pressure": 960.1,
+        "time": "2026-08-31T17:45"
+      },
+      "assessment": {
+        "crop": "cotton",
+        "status": "Good",
+        "identified_risks": [
+          "Rainfall below optimal, no recent precipitation."
+        ],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 92
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Optimal",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T12:17:32.951046",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.75,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": -0.35,
+        "stress": "High"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Increase irrigation immediately."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Tiruvarur Mandi",
+      "nearest_market": {
+        "market": "Thanjavur Uzhavar Sandhai",
+        "district": "Thanjavur",
+        "price": 7330.0,
+        "trend": "Increasing",
+        "distance_km": 239.62,
+        "market_score": 0.6521,
+        "rank": 3
+      },
+      "top_markets": [
+        {
+          "market": "Tiruvarur Mandi",
+          "district": "Tiruvarur",
+          "price": 7618.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.7107,
+          "rank": 1
+        },
+        {
+          "market": "Tirunelveli Market",
+          "district": "Tirunelveli",
+          "price": 7387.0,
+          "trend": "Stable",
+          "distance_km": 270.68,
+          "market_score": 0.6814,
+          "rank": 2
+        },
+        {
+          "market": "Thanjavur Uzhavar Sandhai",
+          "district": "Thanjavur",
+          "price": 7330.0,
+          "trend": "Stable",
+          "distance_km": 239.62,
+          "market_score": 0.6521,
+          "rank": 3
+        },
+        {
+          "market": "Chengalpattu Mandi",
+          "district": "Chengalpattu",
+          "price": 7529.0,
+          "trend": "Stable",
+          "distance_km": 376.38,
+          "market_score": 0.5746,
+          "rank": 4
+        },
+        {
+          "market": "Tirupattur Mandi",
+          "district": "Tirupattur",
+          "price": 7168.0,
+          "trend": "Stable",
+          "distance_km": 240.25,
+          "market_score": 0.5684,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "cotton",
+        "TopMarkets": [
+          {
+            "market": "Tiruvarur Mandi",
+            "district": "Tiruvarur",
+            "price": 7618.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7107,
+            "rank": 1
+          },
+          {
+            "market": "Tirunelveli Market",
+            "district": "Tirunelveli",
+            "price": 7387.0,
+            "trend": "Increasing",
+            "distance_km": 270.68,
+            "market_score": 0.6814,
+            "rank": 2
+          },
+          {
+            "market": "Thanjavur Uzhavar Sandhai",
+            "district": "Thanjavur",
+            "price": 7330.0,
+            "trend": "Increasing",
+            "distance_km": 239.62,
+            "market_score": 0.6521,
+            "rank": 3
+          },
+          {
+            "market": "Chengalpattu Mandi",
+            "district": "Chengalpattu",
+            "price": 7529.0,
+            "trend": "Volatile",
+            "distance_km": 376.38,
+            "market_score": 0.5746,
+            "rank": 4
+          },
+          {
+            "market": "Tirupattur Mandi",
+            "district": "Tirupattur",
+            "price": 7168.0,
+            "trend": "Increasing",
+            "distance_km": 240.25,
+            "market_score": 0.5684,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 95,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Tiruvarur Mandi with modal price 7618.0.",
+        "opportunities": [
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 0.95,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "cotton",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 27.8\nHumidity : 68\nRainfall : 0.0\nWind Speed : 20.3\nPressure : 960.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Thanjavur Uzhavar Sandhai\nNearest Distance : 239.62 km\nNearest Market Price : 7330.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Mandi\nBest Market Price : 7618.0\nBest Market Distance : 293.81 km\nBest Market Trend : Stable\n\nMarkets Evaluated : 5\nCrop : cotton\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "Rainfall below optimal, no recent precipitation.",
+      "High crop water stress",
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 33.46
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and there is no rainfall (0.0 mm) which aligns with the crop's need for minimal precipitation during this stage.",
+      "summary": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and there is no rainfall (0.0 mm) which aligns with the crop's need for minimal precipitation during this stage. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+      "risks": [
+        "No recent precipitation (rainfall: 0.0 mm) which may lead to water stress in the flowering stage"
+      ],
+      "opportunities": [
+        "Favorable temperature and humidity for cotton growth"
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0). Nitrogen levels are at 'Medium', matching the preferred 'Medium' nitrogen level for cotton. Organic carbon is 'Medium', which aligns with cotton's preferred 'Medium' organic carbon. The soil texture is 'Loam', which is within the preferred 'Clay' and 'Loam' texture for cotton. The soil health score of 92 indicates excellent condition. No significant risks are identified, but opportunities exist for optimizing moisture retention and drainage.",
+      "summary": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0). Nitrogen levels are at 'Medium', matching the preferred 'Medium' nitrogen level for cotton. Organic carbon is 'Medium', which aligns with cotton's preferred 'Medium' organic carbon. The soil texture is 'Loam', which is within the preferred 'Clay' and 'Loam' texture for cotton. The soil health score of 92 indicates excellent condition. No significant risks are identified, but opportunities exist for optimizing moisture retention and drainage. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+      "risks": [
+        "Slight risk of waterlogging due to high clay content (32%) and moderate bulk density (1.56)"
+      ],
+      "opportunities": [
+        "Optimize irrigation scheduling to match cotton's critical flowering stage (high water requirement)",
+        "Enhance organic matter through compost application to improve soil structure"
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a vigorous canopy and excellent vegetation health. However, the NDWI of -0.35 falls well below the 'high stress' threshold (0.0), indicating severe water deficit despite the healthy appearance. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting a considerable amount of exposed soil that could increase erosion risk and limit moisture retention. Overall, the satellite imagery shows a currently healthy stand of cotton that is under significant water stress and has high soil exposure, which together pose a risk to sustained growth and yield if not addressed.",
+      "summary": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a vigorous canopy and excellent vegetation health. However, the NDWI of -0.35 falls well below the 'high stress' threshold (0.0), indicating severe water deficit despite the healthy appearance. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting a considerable amount of exposed soil that could increase erosion risk and limit moisture retention. Overall, the satellite imagery shows a currently healthy stand of cotton that is under significant water stress and has high soil exposure, which together pose a risk to sustained growth and yield if not addressed. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+      "risks": [
+        "Severe water stress (NDWI below high\u2011stress threshold) may limit photosynthesis and reduce boll development.",
+        "High soil exposure (SAVI near high\u2011exposure threshold) increases risk of erosion, nutrient leaching, and reduced soil moisture.",
+        "Low satellite confidence (40%) and moderate cloud cover (\u224821%) may affect the reliability of the indices.",
+        "Potential for stress\u2011related diseases such as Fusarium wilt to develop under water\u2011deficit conditions."
+      ],
+      "opportunities": [
+        "Excellent NDVI indicates the crop is currently achieving optimal canopy development, providing a strong foundation for high yields if water is supplied.",
+        "Early detection of water stress allows timely management interventions to protect the crop before yield loss occurs.",
+        "Healthy vegetation health rating suggests that the crop is responsive to inputs, offering the chance to achieve the profile's 'excellent' yield potential (4.0\u202ft/ha) with adequate moisture management."
+      ],
+      "confidence": 0.68,
+      "metadata": {}
+    },
+    "MarketAgent": {
+      "agent": "MarketAgent",
+      "status": "completed",
+      "analysis": "1. The overall market trend for cotton in the surveyed region is largely stable, with a few markets showing increasing or volatile signals. 2. The nearest market is Thanjavur Uzhavar Sandhai (239.62 km away) offering a price of 7,330 INR and an increasing trend. 3. The best\u2011ranked market is Tiruvarur Mandi (rank 1) with the highest modal price of 7,618 INR and a stable trend, supported by the highest market_score (0.7107). 4. Top\u20115 market opportunities are: Tiruvarur Mandi, Tirunelveli Market, Thanjavur Uzhavar Sandhai, Chengalpattu Mandi, and Tirupattur Mandi. 5. Current selling opportunity is strongest at Tiruvarur Mandi due to its top price, stable trend, and favorable market score. 6. Market risks include price volatility at Chengalpattu Mandi, moderate distance to the nearest market increasing transport costs, and the potential for post\u2011harvest price pressure once the September\u2011November harvest window peaks. 7. Market opportunities comprise stable high prices at Tiruvarur, rising prices at Tirunelveli, Thanjavur, and Tirupattur, the ability to choose among multiple nearby markets, low perishability of cotton allowing flexible timing, and good storage capacity. 8. Harvest timing aligns with the regional cotton harvest season (September\u2011November), meaning the crop will be ready for market now. 9. Selling now is recommended to capture the current stable/high price at Tiruvarur while the harvest is just beginning, mitigating the risk of later price declines. 10. Overall market assessment: Favorable \u2013 strong price levels, stable trends, multiple market outlets, and a timely harvest create a conducive environment for immediate sales, though attention should be paid to volatile signals at Chengalpattu and potential post\u2011harvest oversupply.",
+      "summary": "Nearest market: Thanjavur Uzhavar Sandhai (239.62 km). Best-ranked market: Tiruvarur Mandi with modal price 7618.0. 5 market(s) were evaluated. 1. The overall market trend for cotton in the surveyed region is largely stable, with a few markets showing increasing or volatile signals. 2. The nearest market is Thanjavur Uzhavar Sandhai (239.62 km away) offering a price of 7,330 INR and an increasing trend. 3. The best\u2011ranked market is Tiruvarur Mandi (rank 1) with the highest modal price of 7,618 INR and a stable trend, supported by the highest market_score (0.7107). 4. Top\u20115 market opportunities are: Tiruvarur Mandi, Tirunelveli Market, Thanjavur Uzhavar Sandhai, Chengalpattu Mandi, and Tirupattur Mandi. 5. Current selling opportunity is strongest at Tiruvarur Mandi due to its top price, stable trend, and favorable market score. 6. Market risks include price volatility at Chengalpattu Mandi, moderate distance to the nearest market increasing transport costs, and the potential for post\u2011harvest price pressure once the September\u2011November harvest window peaks. 7. Market opportunities comprise stable high prices at Tiruvarur, rising prices at Tirunelveli, Thanjavur, and Tirupattur, the ability to choose among multiple nearby markets, low perishability of cotton allowing flexible timing, and good storage capacity. 8. Harvest timing aligns with the regional cotton harvest season (September\u2011November), meaning the crop will be ready for market now. 9. Selling now is recommended to capture the current stable/high price at Tiruvarur while the harvest is just beginning, mitigating the risk of later price declines. 10. Overall market assessment: Favorable \u2013 strong price levels, stable trends, multiple market outlets, and a timely harvest create a conducive environment for immediate sales, though attention should be paid to volatile signals at Chengalpattu and potential post\u2011harvest oversupply. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+      "risks": [
+        "Price volatility at Chengalpattu Mandi (trend marked as 'Volatile').",
+        "Longer transport distance to the nearest market (239 km) may increase logistics costs.",
+        "Potential oversupply and price pressure after the peak of the September\u2011November harvest.",
+        "Moderate market scores (max 0.71) indicate room for competitive pressure."
+      ],
+      "opportunities": [
+        "Highest and stable price at Tiruvarur Mandi (7,618 INR).",
+        "Increasing price trends at Tirunelveli, Thanjavur, and Tirupattur markets.",
+        "Multiple nearby markets enable price comparison and bargaining power.",
+        "Low perishability and good storage capability allow flexible timing of sales.",
+        "Seasonal alignment with harvest period provides fresh, high\u2011quality cotton for buyers."
+      ],
+      "confidence": 0.95,
+      "metadata": {
+        "nearest_market": {
+          "market": "Thanjavur Uzhavar Sandhai",
+          "district": "Thanjavur",
+          "price": 7330.0,
+          "trend": "Increasing",
+          "distance_km": 239.62,
+          "market_score": 0.6521,
+          "rank": 3
+        },
+        "top_market_count": 5,
+        "top_markets": [
+          {
+            "market": "Tiruvarur Mandi",
+            "district": "Tiruvarur",
+            "price": 7618.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7107,
+            "rank": 1
+          },
+          {
+            "market": "Tirunelveli Market",
+            "district": "Tirunelveli",
+            "price": 7387.0,
+            "trend": "Stable",
+            "distance_km": 270.68,
+            "market_score": 0.6814,
+            "rank": 2
+          },
+          {
+            "market": "Thanjavur Uzhavar Sandhai",
+            "district": "Thanjavur",
+            "price": 7330.0,
+            "trend": "Stable",
+            "distance_km": 239.62,
+            "market_score": 0.6521,
+            "rank": 3
+          },
+          {
+            "market": "Chengalpattu Mandi",
+            "district": "Chengalpattu",
+            "price": 7529.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.5746,
+            "rank": 4
+          },
+          {
+            "market": "Tirupattur Mandi",
+            "district": "Tirupattur",
+            "price": 7168.0,
+            "trend": "Stable",
+            "distance_km": 240.25,
+            "market_score": 0.5684,
+            "rank": 5
+          }
+        ]
+      }
+    }
+  },
+  "reasoning": {
+    "summary": "Cotton crop in Coimbatore shows excellent canopy health and optimal soil conditions, but faces severe water stress that requires immediate irrigation. Market conditions are highly favorable with strong demand and peak prices at Tiruvarur Mandi.",
+    "consensus": "Immediate controlled irrigation should be applied to relieve high crop water stress while taking advantage of optimal soil health and favorable market pricing.",
+    "merged_risks": [
+      "Severe crop water stress due to prolonged dry conditions and high water deficit (NDWI -0.35)",
+      "High soil exposure leading to moisture loss and potential erosion risk",
+      "Long transport distance to primary markets (239+ km) increasing logistics expenses",
+      "Potential market price pressure and localized volatility during peak harvest"
+    ],
+    "merged_opportunities": [
+      "High crop yield potential driven by excellent vegetation vigor (NDVI 0.75)",
+      "Optimal soil conditions with ideal pH (6.25) and balanced organic carbon",
+      "Strong market demand with top prices at Tiruvarur Mandi (7,618 INR/quintal)",
+      "Low crop perishability allowing flexible harvest timing and storage options"
+    ],
+    "conflicts": [
+      {
+        "description": "WeatherAgent views zero rainfall as acceptable, whereas SatelliteAgent detects critical crop water stress (NDWI -0.35).",
+        "severity": "High",
+        "resolution": "Prioritize SatelliteAgent water stress indicators and implement scheduled irrigation immediately."
+      },
+      {
+        "description": "SoilAgent warns of potential waterlogging from soil clay content, while SatelliteAgent urgently recommends immediate heavy irrigation.",
+        "severity": "Medium",
+        "resolution": "Apply controlled, well-drained irrigation to fulfill moisture needs without causing soil stagnation."
+      }
+    ],
+    "confidence": 0.88,
+    "evidence": [
+      {
+        "agent": "WeatherAgent",
+        "analysis": "Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and there is no rainfall (0.0 mm) which aligns with the crop's need for minimal precipitation during this stage.",
+        "risks": [
+          "No recent precipitation (rainfall: 0.0 mm) which may lead to water stress in the flowering stage"
+        ],
+        "opportunities": [
+          "Favorable temperature and humidity for cotton growth"
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "SoilAgent",
+        "analysis": "Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0). Nitrogen levels are at 'Medium', matching the preferred 'Medium' nitrogen level for cotton. Organic carbon is 'Medium', which aligns with cotton's preferred 'Medium' organic carbon. The soil texture is 'Loam', which is within the preferred 'Clay' and 'Loam' texture for cotton. The soil health score of 92 indicates excellent condition. No significant risks are identified, but opportunities exist for optimizing moisture retention and drainage.",
+        "risks": [
+          "Slight risk of waterlogging due to high clay content (32%) and moderate bulk density (1.56)"
+        ],
+        "opportunities": [
+          "Optimize irrigation scheduling to match cotton's critical flowering stage (high water requirement)",
+          "Enhance organic matter through compost application to improve soil structure"
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "SatelliteAgent",
+        "analysis": "The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a vigorous canopy and excellent vegetation health. However, the NDWI of -0.35 falls well below the 'high stress' threshold (0.0), indicating severe water deficit despite the healthy appearance. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting a considerable amount of exposed soil that could increase erosion risk and limit moisture retention. Overall, the satellite imagery shows a currently healthy stand of cotton that is under significant water stress and has high soil exposure, which together pose a risk to sustained growth and yield if not addressed.",
+        "risks": [
+          "Severe water stress (NDWI below high\u2011stress threshold) may limit photosynthesis and reduce boll development.",
+          "High soil exposure (SAVI near high\u2011exposure threshold) increases risk of erosion, nutrient leaching, and reduced soil moisture.",
+          "Low satellite confidence (40%) and moderate cloud cover (\u224821%) may affect the reliability of the indices.",
+          "Potential for stress\u2011related diseases such as Fusarium wilt to develop under water\u2011deficit conditions."
+        ],
+        "opportunities": [
+          "Excellent NDVI indicates the crop is currently achieving optimal canopy development, providing a strong foundation for high yields if water is supplied.",
+          "Early detection of water stress allows timely management interventions to protect the crop before yield loss occurs.",
+          "Healthy vegetation health rating suggests that the crop is responsive to inputs, offering the chance to achieve the profile's 'excellent' yield potential (4.0\u202ft/ha) with adequate moisture management."
+        ],
+        "confidence": 0.68,
+        "metadata": {}
+      },
+      {
+        "agent": "MarketAgent",
+        "analysis": "1. The overall market trend for cotton in the surveyed region is largely stable, with a few markets showing increasing or volatile signals. 2. The nearest market is Thanjavur Uzhavar Sandhai (239.62 km away) offering a price of 7,330 INR and an increasing trend. 3. The best\u2011ranked market is Tiruvarur Mandi (rank 1) with the highest modal price of 7,618 INR and a stable trend, supported by the highest market_score (0.7107). 4. Top\u20115 market opportunities are: Tiruvarur Mandi, Tirunelveli Market, Thanjavur Uzhavar Sandhai, Chengalpattu Mandi, and Tirupattur Mandi. 5. Current selling opportunity is strongest at Tiruvarur Mandi due to its top price, stable trend, and favorable market score. 6. Market risks include price volatility at Chengalpattu Mandi, moderate distance to the nearest market increasing transport costs, and the potential for post\u2011harvest price pressure once the September\u2011November harvest window peaks. 7. Market opportunities comprise stable high prices at Tiruvarur, rising prices at Tirunelveli, Thanjavur, and Tirupattur, the ability to choose among multiple nearby markets, low perishability of cotton allowing flexible timing, and good storage capacity. 8. Harvest timing aligns with the regional cotton harvest season (September\u2011November), meaning the crop will be ready for market now. 9. Selling now is recommended to capture the current stable/high price at Tiruvarur while the harvest is just beginning, mitigating the risk of later price declines. 10. Overall market assessment: Favorable \u2013 strong price levels, stable trends, multiple market outlets, and a timely harvest create a conducive environment for immediate sales, though attention should be paid to volatile signals at Chengalpattu and potential post\u2011harvest oversupply.",
+        "risks": [
+          "Price volatility at Chengalpattu Mandi (trend marked as 'Volatile').",
+          "Longer transport distance to the nearest market (239 km) may increase logistics costs.",
+          "Potential oversupply and price pressure after the peak of the September\u2011November harvest.",
+          "Moderate market scores (max 0.71) indicate room for competitive pressure."
+        ],
+        "opportunities": [
+          "Highest and stable price at Tiruvarur Mandi (7,618 INR).",
+          "Increasing price trends at Tirunelveli, Thanjavur, and Tirupattur markets.",
+          "Multiple nearby markets enable price comparison and bargaining power.",
+          "Low perishability and good storage capability allow flexible timing of sales.",
+          "Seasonal alignment with harvest period provides fresh, high\u2011quality cotton for buyers."
+        ],
+        "confidence": 0.95,
+        "metadata": {
+          "nearest_market": {
+            "market": "Thanjavur Uzhavar Sandhai",
+            "district": "Thanjavur",
+            "price": 7330.0,
+            "trend": "Increasing",
+            "distance_km": 239.62,
+            "market_score": 0.6521,
+            "rank": 3
+          },
+          "top_market_count": 5,
+          "top_markets": [
+            {
+              "market": "Tiruvarur Mandi",
+              "district": "Tiruvarur",
+              "price": 7618.0,
+              "trend": "Stable",
+              "distance_km": 293.81,
+              "market_score": 0.7107,
+              "rank": 1
+            },
+            {
+              "market": "Tirunelveli Market",
+              "district": "Tirunelveli",
+              "price": 7387.0,
+              "trend": "Stable",
+              "distance_km": 270.68,
+              "market_score": 0.6814,
+              "rank": 2
+            },
+            {
+              "market": "Thanjavur Uzhavar Sandhai",
+              "district": "Thanjavur",
+              "price": 7330.0,
+              "trend": "Stable",
+              "distance_km": 239.62,
+              "market_score": 0.6521,
+              "rank": 3
+            },
+            {
+              "market": "Chengalpattu Mandi",
+              "district": "Chengalpattu",
+              "price": 7529.0,
+              "trend": "Stable",
+              "distance_km": 376.38,
+              "market_score": 0.5746,
+              "rank": 4
+            },
+            {
+              "market": "Tirupattur Mandi",
+              "district": "Tirupattur",
+              "price": 7168.0,
+              "trend": "Stable",
+              "distance_km": 240.25,
+              "market_score": 0.5684,
+              "rank": 5
+            }
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "agents": [
+        "WeatherAgent",
+        "SoilAgent",
+        "SatelliteAgent",
+        "MarketAgent"
+      ],
+      "agent_count": 4,
+      "llm_provider": "gemini"
+    }
+  },
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.88,
+    "decision": "Immediate Irrigation",
+    "priority": "P3",
+    "urgency": "This Week",
+    "risk_level": "Moderate",
+    "action_order": [
+      "Increase irrigation immediately"
+    ],
+    "priorities": [
+      {
+        "issue": "Water Stress",
+        "severity": "Critical",
+        "urgency": "Immediate",
+        "owner": "Farmer",
+        "action": "Increase irrigation immediately"
+      }
+    ],
+    "impact": {
+      "agronomic": "Good",
+      "economic": "Excellent",
+      "environmental": "Good",
+      "operational": "Good",
+      "yield_risk": "Moderate",
+      "profitability": "Moderate",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Cotton cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 4 specialist agents. Primary concerns include: Severe crop water stress due to prolonged dry conditions and high water deficit (NDWI -0.35), High soil exposure leading to moisture loss and potential erosion risk, Long transport distance to primary markets (239+ km) increasing logistics expenses."
+    },
+    "supporting_evidence": [
+      "WeatherAgent: Current weather conditions are within the optimal range for cotton growth. Temperature (22.5\u00b0C) is within 15-30\u00b0C, humidity (60%) is within 40-80%, and there is no rainfall (0.0 mm) which aligns with the crop's need for minimal precipitation during this stage.",
+      "SoilAgent: Soil conditions are highly suitable for cotton cultivation. The soil pH (6.25) falls within the optimal range (5.5-7.0). Nitrogen levels are at 'Medium', matching the preferred 'Medium' nitrogen level for cotton. Organic carbon is 'Medium', which aligns with cotton's preferred 'Medium' organic carbon. The soil texture is 'Loam', which is within the preferred 'Clay' and 'Loam' texture for cotton. The soil health score of 92 indicates excellent condition. No significant risks are identified, but opportunities exist for optimizing moisture retention and drainage.",
+      "SatelliteAgent: The NDVI of 0.75 meets the crop profile's 'excellent' threshold, confirming a vigorous canopy and excellent vegetation health. However, the NDWI of -0.35 falls well below the 'high stress' threshold (0.0), indicating severe water deficit despite the healthy appearance. The SAVI value of 0.105 is just above the 'high exposure' threshold (0.1), suggesting a considerable amount of exposed soil that could increase erosion risk and limit moisture retention. Overall, the satellite imagery shows a currently healthy stand of cotton that is under significant water stress and has high soil exposure, which together pose a risk to sustained growth and yield if not addressed.",
+      "MarketAgent: 1. The overall market trend for cotton in the surveyed region is largely stable, with a few markets showing increasing or volatile signals. 2. The nearest market is Thanjavur Uzhavar Sandhai (239.62 km away) offering a price of 7,330 INR and an increasing trend. 3. The best\u2011ranked market is Tiruvarur Mandi (rank 1) with the highest modal price of 7,618 INR and a stable trend, supported by the highest market_score (0.7107). 4. Top\u20115 market opportunities are: Tiruvarur Mandi, Tirunelveli Market, Thanjavur Uzhavar Sandhai, Chengalpattu Mandi, and Tirupattur Mandi. 5. Current selling opportunity is strongest at Tiruvarur Mandi due to its top price, stable trend, and favorable market score. 6. Market risks include price volatility at Chengalpattu Mandi, moderate distance to the nearest market increasing transport costs, and the potential for post\u2011harvest price pressure once the September\u2011November harvest window peaks. 7. Market opportunities comprise stable high prices at Tiruvarur, rising prices at Tirunelveli, Thanjavur, and Tirupattur, the ability to choose among multiple nearby markets, low perishability of cotton allowing flexible timing, and good storage capacity. 8. Harvest timing aligns with the regional cotton harvest season (September\u2011November), meaning the crop will be ready for market now. 9. Selling now is recommended to capture the current stable/high price at Tiruvarur while the harvest is just beginning, mitigating the risk of later price declines. 10. Overall market assessment: Favorable \u2013 strong price levels, stable trends, multiple market outlets, and a timely harvest create a conducive environment for immediate sales, though attention should be paid to volatile signals at Chengalpattu and potential post\u2011harvest oversupply."
+    ],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0
+  },
+  "recommendation": {
+    "recommendation": "Apply immediate controlled irrigation to relieve severe water stress",
+    "priority": "Medium",
+    "justification": "Satellite NDWI indicates high water deficit (\u20110.35) and the collaborative reasoning flags critical crop water stress despite excellent soil health and strong market prices. Immediate irrigation will protect yield potential and enable the farmer to capitalize on the favorable market at Tiruvarur Mandi.",
+    "actions": [
+      "Start flood irrigation today, delivering enough water to bring soil moisture to field capacity (\u22480.32\u202fm\u00b3/m\u00b3).",
+      "Maintain irrigation schedule of every 7\u201310 days during the flowering stage, adjusting based on soil moisture readings.",
+      "Use soil moisture sensors or gravimetric sampling to verify that wilting point (0.14\u202fm\u00b3/m\u00b3) is not approached.",
+      "Record water applied (volume per hectare) for future efficiency analysis."
+    ],
+    "expected_outcome": "Reduced water stress will preserve canopy vigor (NDVI \u22650.75), protect yield potential, and allow harvest timing that maximizes profit at the top market price of 7,618\u202fINR/quintal.",
+    "monitoring_plan": [
+      "Daily visual inspection of leaf turgor and wilting symptoms.",
+      "Measure soil moisture at 20\u202fcm depth each day for the first week, then every 2\u20133 days.",
+      "Weekly satellite NDWI update to confirm stress reduction (target NDWI \u22650.10).",
+      "Track irrigation volumes and compare against crop water requirement charts.",
+      "Monitor market price trends weekly leading up to harvest."
+    ],
+    "confidence": 0.88,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Immediate Irrigation",
+    "executive_priority": "P3"
+  },
+  "stage_times": {
+    "context_build": 0.0,
+    "planner": 59.477,
+    "WeatherAgent": 33.967,
+    "SoilAgent": 256.647,
+    "SatelliteAgent": 61.478,
+    "MarketAgent": 64.129,
+    "reasoning": 48.789,
+    "executive": 0.0,
+    "recommendation": 2.113
+  },
+  "condition": "multi_with_reasoning",
+  "governance_used": false,
+  "scenario_id": "water_stress_cotton",
+  "wall_time_seconds": 367.04
+}

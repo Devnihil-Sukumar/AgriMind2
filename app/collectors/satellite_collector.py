@@ -159,6 +159,17 @@ class SatelliteCollector:
 
             "confidence": result.get("confidence", 0),
 
+            ############################################################
+            # satellite_tool.execute() sets "error" on its own failure
+            # branch (e.g. an AttributeError from a missing setting, or
+            # "No Sentinel-2 images found."). Without carrying it
+            # through here, callers only ever see the generic
+            # "Satellite data unavailable." fallback and the real
+            # cause is lost.
+            ############################################################
+
+            "error": result.get("error"),
+
             "timestamp": datetime.utcnow().isoformat(),
 
             "location": {

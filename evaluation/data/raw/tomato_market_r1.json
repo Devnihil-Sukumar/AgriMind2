@@ -1,0 +1,2370 @@
+{
+  "run_id": "tomato_market_r1",
+  "phase": "baseline",
+  "crop": "tomato",
+  "query": "Is now a good time to sell my tomato harvest?",
+  "latitude": 11.0168,
+  "longitude": 76.9558,
+  "wall_time_seconds": 239.369,
+  "error": null,
+  "meta": {
+    "query_type": "market",
+    "repeat": 1
+  },
+  "result": {
+    "query": "Is now a good time to sell my tomato harvest?",
+    "crop_profile": {
+      "crop": "tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "family": "Solanaceae",
+      "type": "Annual",
+      "category": "Fruit",
+      "growth_duration_days": 110,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 18,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 500,
+          "maximum": 1000,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Drip",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 2-3 days, 20-30 mm per week"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.65,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.3,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "Fresh",
+          "Processing",
+          "Canned",
+          "Sauce",
+          "Paste"
+        ],
+        "major_states": [
+          "California",
+          "Florida",
+          "Ohio",
+          "New York"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "United States",
+          "Turkey",
+          "Egypt"
+        ],
+        "harvest_season": "Summer to early Autumn",
+        "storage_capability": "Moderate",
+        "perishability": "High"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Vitamin C",
+          "Vitamin A",
+          "Potassium",
+          "Lycopene"
+        ],
+        "commercial_products": [
+          "Fresh fruit",
+          "Tomato paste",
+          "Ketchup",
+          "Canned tomatoes",
+          "Sauce"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Late blight",
+          "symptoms": "Water-soaked lesions on leaves and fruit, white fungal growth",
+          "treatment": "Apply copper-based fungicides and use resistant varieties"
+        },
+        {
+          "name": "Early blight",
+          "symptoms": "Target-shaped lesions on lower leaves, yellowing",
+          "treatment": "Rotate crops, apply fungicide sprays such as chlorothalonil"
+        },
+        {
+          "name": "Fusarium wilt",
+          "symptoms": "Wilting, yellowing, vascular discoloration",
+          "treatment": "Use resistant cultivars and soil solarization"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Tomato fruit worm (Helicoverpa armigera)",
+          "treatment": "Biological control with Bacillus thuringiensis, pheromone traps"
+        },
+        {
+          "name": "Whitefly (Bemisia tabaci)",
+          "treatment": "Insecticidal soap, neem oil, reflective mulches"
+        },
+        {
+          "name": "Aphids (Myzus persicae)",
+          "treatment": "Introduce lady beetles, use insecticidal soap"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "Balanced NPK fertilizer applied in split doses",
+        "npk_ratio": "10-10-10",
+        "organic_options": [
+          "Compost",
+          "Well-rotted manure",
+          "Bone meal"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 60,
+        "excellent_tonnes_per_hectare": 90
+      },
+      "recommendations": {
+        "irrigation": "Drip irrigation with mulching to conserve moisture",
+        "fertilizer": "Apply 60 kg N/ha split into 3 applications, 40 kg P2O5/ha, 60 kg K2O/ha",
+        "harvesting": "Pick fruits when fully colored; avoid mechanical damage",
+        "storage": "Store at 12-13°C with high humidity; use refrigerated transport"
+      },
+      "summary": "Tomato (Solanum lycopersicum) is an annual fruit crop thriving in warm, humid climates with 18-30°C temperatures, 60-80% humidity, and 500-1000 mm annual rainfall. It prefers loam soils, pH 5.5-7.0, good drainage, and high nitrogen. Drip irrigation, balanced NPK (10-10-10) and organic amendments boost yields of 60-90 t/ha. Major producers include China, India, USA, Turkey, and Egypt. Key challenges are late blight, early blight, Fusarium wilt, and pests like fruit worm, whitefly, and aphids. Proper irrigation, fertilization, timely harvest, and refrigerated storage ensure high-quality marketable fruit.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-08-31T17:41:48.706163",
+        "crop": "tomato",
+        "crop_profile": {
+          "crop": "tomato",
+          "scientific_name": "Solanum lycopersicum",
+          "family": "Solanaceae",
+          "type": "Annual",
+          "category": "Fruit",
+          "growth_duration_days": 110,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Fruiting",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 18,
+              "maximum": 30,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 60,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 500,
+              "maximum": 1000,
+              "unit": "mm/year"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 7.0
+            },
+            "wind_speed": {
+              "maximum": 30,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 10
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "Loam"
+            ],
+            "preferred_nitrogen": "High",
+            "preferred_organic_carbon": "Medium",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "Drip",
+            "water_requirement": "Medium",
+            "critical_growth_stage": "Flowering",
+            "recommended_frequency": "Every 2-3 days, 20-30 mm per week"
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.8,
+              "healthy": 0.65,
+              "moderate": 0.45,
+              "poor": 0.3
+            },
+            "ndwi": {
+              "low_stress": 0.3,
+              "moderate_stress": 0.1,
+              "high_stress": 0.0
+            },
+            "savi": {
+              "low_exposure": 0.6,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.2
+            }
+          },
+          "market": {
+            "keywords": [
+              "Fresh",
+              "Processing",
+              "Canned",
+              "Sauce",
+              "Paste"
+            ],
+            "major_states": [
+              "California",
+              "Florida",
+              "Ohio",
+              "New York"
+            ],
+            "major_countries": [
+              "China",
+              "India",
+              "United States",
+              "Turkey",
+              "Egypt"
+            ],
+            "harvest_season": "Summer to early Autumn",
+            "storage_capability": "Moderate",
+            "perishability": "High"
+          },
+          "nutrition": {
+            "primary_nutrients": [
+              "Vitamin C",
+              "Vitamin A",
+              "Potassium",
+              "Lycopene"
+            ],
+            "commercial_products": [
+              "Fresh fruit",
+              "Tomato paste",
+              "Ketchup",
+              "Canned tomatoes",
+              "Sauce"
+            ]
+          },
+          "common_diseases": [
+            {
+              "name": "Late blight",
+              "symptoms": "Water-soaked lesions on leaves and fruit, white fungal growth",
+              "treatment": "Apply copper-based fungicides and use resistant varieties"
+            },
+            {
+              "name": "Early blight",
+              "symptoms": "Target-shaped lesions on lower leaves, yellowing",
+              "treatment": "Rotate crops, apply fungicide sprays such as chlorothalonil"
+            },
+            {
+              "name": "Fusarium wilt",
+              "symptoms": "Wilting, yellowing, vascular discoloration",
+              "treatment": "Use resistant cultivars and soil solarization"
+            }
+          ],
+          "common_pests": [
+            {
+              "name": "Tomato fruit worm (Helicoverpa armigera)",
+              "treatment": "Biological control with Bacillus thuringiensis, pheromone traps"
+            },
+            {
+              "name": "Whitefly (Bemisia tabaci)",
+              "treatment": "Insecticidal soap, neem oil, reflective mulches"
+            },
+            {
+              "name": "Aphids (Myzus persicae)",
+              "treatment": "Introduce lady beetles, use insecticidal soap"
+            }
+          ],
+          "fertilizer": {
+            "recommended": "Balanced NPK fertilizer applied in split doses",
+            "npk_ratio": "10-10-10",
+            "organic_options": [
+              "Compost",
+              "Well-rotted manure",
+              "Bone meal"
+            ]
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 60,
+            "excellent_tonnes_per_hectare": 90
+          },
+          "recommendations": {
+            "irrigation": "Drip irrigation with mulching to conserve moisture",
+            "fertilizer": "Apply 60 kg N/ha split into 3 applications, 40 kg P2O5/ha, 60 kg K2O/ha",
+            "harvesting": "Pick fruits when fully colored; avoid mechanical damage",
+            "storage": "Store at 12-13°C with high humidity; use refrigerated transport"
+          },
+          "summary": "Tomato (Solanum lycopersicum) is an annual fruit crop thriving in warm, humid climates with 18-30°C temperatures, 60-80% humidity, and 500-1000 mm annual rainfall. It prefers loam soils, pH 5.5-7.0, good drainage, and high nitrogen. Drip irrigation, balanced NPK (10-10-10) and organic amendments boost yields of 60-90 t/ha. Major producers include China, India, USA, Turkey, and Egypt. Key challenges are late blight, early blight, Fusarium wilt, and pests like fruit worm, whitefly, and aphids. Proper irrigation, fertilization, timely harvest, and refrigerated storage ensure high-quality marketable fruit.",
+          "references": [
+            "FAO",
+            "ICAR",
+            "USDA"
+          ],
+          "generated_by": "Groq",
+          "version": 2
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T23:00",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.0,
+          "humidity": 92,
+          "rainfall": 0.0,
+          "wind_speed": 12.6,
+          "pressure": 963.7,
+          "time": "2026-08-31T23:00"
+        },
+        "assessment": {
+          "crop": "tomato",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (500-1000 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Tiruvarur Market",
+        "nearest_market": {
+          "market": "Tiruvannamalai Uzhavar Sandhai",
+          "district": "Tiruvannamalai",
+          "price": 1843.0,
+          "trend": "Increasing",
+          "distance_km": 267.05,
+          "market_score": 0.6479,
+          "rank": 4
+        },
+        "top_markets": [
+          {
+            "market": "Tiruvarur Market",
+            "district": "Tiruvarur",
+            "price": 1917.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Thoothukudi Mandi",
+            "district": "Thoothukudi",
+            "price": 1908.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.7821,
+            "rank": 2
+          },
+          {
+            "market": "Kanchipuram Mandi",
+            "district": "Kanchipuram",
+            "price": 1908.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.692,
+            "rank": 3
+          },
+          {
+            "market": "Tiruvannamalai Uzhavar Sandhai",
+            "district": "Tiruvannamalai",
+            "price": 1843.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.6479,
+            "rank": 4
+          },
+          {
+            "market": "Kanyakumari Market",
+            "district": "Kanyakumari",
+            "price": 1867.0,
+            "trend": "Stable",
+            "distance_km": 331.84,
+            "market_score": 0.6073,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "tomato",
+          "TopMarkets": [
+            {
+              "market": "Tiruvarur Market",
+              "district": "Tiruvarur",
+              "price": 1917.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Thoothukudi Mandi",
+              "district": "Thoothukudi",
+              "price": 1908.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.7821,
+              "rank": 2
+            },
+            {
+              "market": "Kanchipuram Mandi",
+              "district": "Kanchipuram",
+              "price": 1908.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.692,
+              "rank": 3
+            },
+            {
+              "market": "Tiruvannamalai Uzhavar Sandhai",
+              "district": "Tiruvannamalai",
+              "price": 1843.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.6479,
+              "rank": 4
+            },
+            {
+              "market": "Kanyakumari Market",
+              "district": "Kanyakumari",
+              "price": 1867.0,
+              "trend": "Stable",
+              "distance_km": 331.84,
+              "market_score": 0.6073,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Tiruvarur Market with modal price 1917.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T17:41:48.691616",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "tomato",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.0\nHumidity : 92\nRainfall : 0.0\nWind Speed : 12.6\nPressure : 963.7\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Tiruvannamalai Uzhavar Sandhai\nNearest Distance : 267.05 km\nNearest Market Price : 1843.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Market\nBest Market Price : 1917.0\nBest Market Distance : 293.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : tomato\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "tomato",
+      "crop_profile": {
+        "crop": "tomato",
+        "scientific_name": "Solanum lycopersicum",
+        "family": "Solanaceae",
+        "type": "Annual",
+        "category": "Fruit",
+        "growth_duration_days": 110,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Fruiting",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 18,
+            "maximum": 30,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 60,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 500,
+            "maximum": 1000,
+            "unit": "mm/year"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 7.0
+          },
+          "wind_speed": {
+            "maximum": 30,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 10
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "Loam"
+          ],
+          "preferred_nitrogen": "High",
+          "preferred_organic_carbon": "Medium",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "Drip",
+          "water_requirement": "Medium",
+          "critical_growth_stage": "Flowering",
+          "recommended_frequency": "Every 2-3 days, 20-30 mm per week"
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.8,
+            "healthy": 0.65,
+            "moderate": 0.45,
+            "poor": 0.3
+          },
+          "ndwi": {
+            "low_stress": 0.3,
+            "moderate_stress": 0.1,
+            "high_stress": 0.0
+          },
+          "savi": {
+            "low_exposure": 0.6,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.2
+          }
+        },
+        "market": {
+          "keywords": [
+            "Fresh",
+            "Processing",
+            "Canned",
+            "Sauce",
+            "Paste"
+          ],
+          "major_states": [
+            "California",
+            "Florida",
+            "Ohio",
+            "New York"
+          ],
+          "major_countries": [
+            "China",
+            "India",
+            "United States",
+            "Turkey",
+            "Egypt"
+          ],
+          "harvest_season": "Summer to early Autumn",
+          "storage_capability": "Moderate",
+          "perishability": "High"
+        },
+        "nutrition": {
+          "primary_nutrients": [
+            "Vitamin C",
+            "Vitamin A",
+            "Potassium",
+            "Lycopene"
+          ],
+          "commercial_products": [
+            "Fresh fruit",
+            "Tomato paste",
+            "Ketchup",
+            "Canned tomatoes",
+            "Sauce"
+          ]
+        },
+        "common_diseases": [
+          {
+            "name": "Late blight",
+            "symptoms": "Water-soaked lesions on leaves and fruit, white fungal growth",
+            "treatment": "Apply copper-based fungicides and use resistant varieties"
+          },
+          {
+            "name": "Early blight",
+            "symptoms": "Target-shaped lesions on lower leaves, yellowing",
+            "treatment": "Rotate crops, apply fungicide sprays such as chlorothalonil"
+          },
+          {
+            "name": "Fusarium wilt",
+            "symptoms": "Wilting, yellowing, vascular discoloration",
+            "treatment": "Use resistant cultivars and soil solarization"
+          }
+        ],
+        "common_pests": [
+          {
+            "name": "Tomato fruit worm (Helicoverpa armigera)",
+            "treatment": "Biological control with Bacillus thuringiensis, pheromone traps"
+          },
+          {
+            "name": "Whitefly (Bemisia tabaci)",
+            "treatment": "Insecticidal soap, neem oil, reflective mulches"
+          },
+          {
+            "name": "Aphids (Myzus persicae)",
+            "treatment": "Introduce lady beetles, use insecticidal soap"
+          }
+        ],
+        "fertilizer": {
+          "recommended": "Balanced NPK fertilizer applied in split doses",
+          "npk_ratio": "10-10-10",
+          "organic_options": [
+            "Compost",
+            "Well-rotted manure",
+            "Bone meal"
+          ]
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 60,
+          "excellent_tonnes_per_hectare": 90
+        },
+        "recommendations": {
+          "irrigation": "Drip irrigation with mulching to conserve moisture",
+          "fertilizer": "Apply 60 kg N/ha split into 3 applications, 40 kg P2O5/ha, 60 kg K2O/ha",
+          "harvesting": "Pick fruits when fully colored; avoid mechanical damage",
+          "storage": "Store at 12-13°C with high humidity; use refrigerated transport"
+        },
+        "summary": "Tomato (Solanum lycopersicum) is an annual fruit crop thriving in warm, humid climates with 18-30°C temperatures, 60-80% humidity, and 500-1000 mm annual rainfall. It prefers loam soils, pH 5.5-7.0, good drainage, and high nitrogen. Drip irrigation, balanced NPK (10-10-10) and organic amendments boost yields of 60-90 t/ha. Major producers include China, India, USA, Turkey, and Egypt. Key challenges are late blight, early blight, Fusarium wilt, and pests like fruit worm, whitefly, and aphids. Proper irrigation, fertilization, timely harvest, and refrigerated storage ensure high-quality marketable fruit.",
+        "references": [
+          "FAO",
+          "ICAR",
+          "USDA"
+        ],
+        "generated_by": "Groq",
+        "version": 2
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T23:00",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.0,
+          "humidity": 92,
+          "rainfall": 0.0,
+          "wind_speed": 12.6,
+          "pressure": 963.7,
+          "time": "2026-08-31T23:00"
+        },
+        "assessment": {
+          "crop": "tomato",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (500-1000 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T17:41:48.691616",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Tiruvarur Market",
+        "nearest_market": {
+          "market": "Tiruvannamalai Uzhavar Sandhai",
+          "district": "Tiruvannamalai",
+          "price": 1843.0,
+          "trend": "Increasing",
+          "distance_km": 267.05,
+          "market_score": 0.6479,
+          "rank": 4
+        },
+        "top_markets": [
+          {
+            "market": "Tiruvarur Market",
+            "district": "Tiruvarur",
+            "price": 1917.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Thoothukudi Mandi",
+            "district": "Thoothukudi",
+            "price": 1908.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.7821,
+            "rank": 2
+          },
+          {
+            "market": "Kanchipuram Mandi",
+            "district": "Kanchipuram",
+            "price": 1908.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.692,
+            "rank": 3
+          },
+          {
+            "market": "Tiruvannamalai Uzhavar Sandhai",
+            "district": "Tiruvannamalai",
+            "price": 1843.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.6479,
+            "rank": 4
+          },
+          {
+            "market": "Kanyakumari Market",
+            "district": "Kanyakumari",
+            "price": 1867.0,
+            "trend": "Stable",
+            "distance_km": 331.84,
+            "market_score": 0.6073,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "tomato",
+          "TopMarkets": [
+            {
+              "market": "Tiruvarur Market",
+              "district": "Tiruvarur",
+              "price": 1917.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Thoothukudi Mandi",
+              "district": "Thoothukudi",
+              "price": 1908.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.7821,
+              "rank": 2
+            },
+            {
+              "market": "Kanchipuram Mandi",
+              "district": "Kanchipuram",
+              "price": 1908.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.692,
+              "rank": 3
+            },
+            {
+              "market": "Tiruvannamalai Uzhavar Sandhai",
+              "district": "Tiruvannamalai",
+              "price": 1843.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.6479,
+              "rank": 4
+            },
+            {
+              "market": "Kanyakumari Market",
+              "district": "Kanyakumari",
+              "price": 1867.0,
+              "trend": "Stable",
+              "distance_km": 331.84,
+              "market_score": 0.6073,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Tiruvarur Market with modal price 1917.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "tomato",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.0\nHumidity : 92\nRainfall : 0.0\nWind Speed : 12.6\nPressure : 963.7\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Tiruvannamalai Uzhavar Sandhai\nNearest Distance : 267.05 km\nNearest Market Price : 1843.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Market\nBest Market Price : 1917.0\nBest Market Distance : 293.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : tomato\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 90,
+      "vegetation_health": "Critical",
+      "market_trend": "Increasing",
+      "risks": [
+        "Humidity above optimal (60-80%)",
+        "Rainfall below optimal (500-1000 mm/year)",
+        "Vegetation health is critical",
+        "High crop water stress",
+        "Large exposed soil area",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality",
+        "Market prices increasing"
+      ],
+      "confidence": 31.48
+    },
+    "plan": {
+      "goal": "Is now a good time to sell my tomato harvest?",
+      "execution_plan": [
+        {
+          "agent": "MarketAgent",
+          "priority": 1,
+          "purpose": "Assess current market price and conditions for tomato sales."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 2,
+          "purpose": "Generate the final recommendation based on market analysis."
+        }
+      ],
+      "confidence": 0.95
+    },
+    "reasoning": {
+      "summary": "1 specialist agents reached a consensus.",
+      "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+      "merged_risks": [
+        "High perishability demanding fast refrigerated transport",
+        "Increased competition from other producers during the same season",
+        "Logistical costs to reach higher‑price but more distant markets",
+        "Potential price decline after the peak harvest season"
+      ],
+      "merged_opportunities": [
+        "Highest price and market score at Tiruvarur Market",
+        "Increasing price trend across top markets",
+        "Multiple nearby markets allow price arbitrage and risk diversification",
+        "Stable prices at Kanchipuram and Kanyakumari provide fallback options",
+        "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region"
+      ],
+      "conflicts": [],
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "agent": "MarketAgent",
+          "analysis": "1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks.",
+          "risks": [
+            "Potential price decline after the peak harvest season",
+            "High perishability demanding fast refrigerated transport",
+            "Logistical costs to reach higher‑price but more distant markets",
+            "Increased competition from other producers during the same season"
+          ],
+          "opportunities": [
+            "Increasing price trend across top markets",
+            "Highest price and market score at Tiruvarur Market",
+            "Stable prices at Kanchipuram and Kanyakumari provide fallback options",
+            "Multiple nearby markets allow price arbitrage and risk diversification",
+            "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region"
+          ],
+          "confidence": 0.96,
+          "metadata": {
+            "nearest_market": {
+              "market": "Tiruvannamalai Uzhavar Sandhai",
+              "district": "Tiruvannamalai",
+              "price": 1843.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.6479,
+              "rank": 4
+            },
+            "top_market_count": 5,
+            "top_markets": [
+              {
+                "market": "Tiruvarur Market",
+                "district": "Tiruvarur",
+                "price": 1917.0,
+                "trend": "Increasing",
+                "distance_km": 293.81,
+                "market_score": 0.8007,
+                "rank": 1
+              },
+              {
+                "market": "Thoothukudi Mandi",
+                "district": "Thoothukudi",
+                "price": 1908.0,
+                "trend": "Increasing",
+                "distance_km": 281.81,
+                "market_score": 0.7821,
+                "rank": 2
+              },
+              {
+                "market": "Kanchipuram Mandi",
+                "district": "Kanchipuram",
+                "price": 1908.0,
+                "trend": "Stable",
+                "distance_km": 360.83,
+                "market_score": 0.692,
+                "rank": 3
+              },
+              {
+                "market": "Tiruvannamalai Uzhavar Sandhai",
+                "district": "Tiruvannamalai",
+                "price": 1843.0,
+                "trend": "Increasing",
+                "distance_km": 267.05,
+                "market_score": 0.6479,
+                "rank": 4
+              },
+              {
+                "market": "Kanyakumari Market",
+                "district": "Kanyakumari",
+                "price": 1867.0,
+                "trend": "Stable",
+                "distance_km": 331.84,
+                "market_score": 0.6073,
+                "rank": 5
+              }
+            ]
+          }
+        }
+      ],
+      "metadata": {
+        "agents": [
+          "MarketAgent"
+        ],
+        "agent_count": 1,
+        "llm_provider": "gemini"
+      }
+    },
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.96,
+      "decision": "Prepare for Harvest and Selling",
+      "priority": "P4",
+      "urgency": "Monitor",
+      "risk_level": "Low",
+      "action_order": [],
+      "priorities": [],
+      "impact": {
+        "agronomic": "Excellent",
+        "economic": "Excellent",
+        "environmental": "Moderate",
+        "operational": "Good",
+        "yield_risk": "Low",
+        "profitability": "High",
+        "expected_benefit": "Current conditions provide opportunities for improved profitability."
+      },
+      "summary": {
+        "executive": "Tomato cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+        "business": "Market trend is increasing with high profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+        "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: High perishability demanding fast refrigerated transport, Increased competition from other producers during the same season, Logistical costs to reach higher‑price but more distant markets."
+      },
+      "supporting_evidence": [
+        "MarketAgent: 1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9219519206629544,
+        "posterior_mean": 0.9236396486508109,
+        "evidence": {
+          "positive": true,
+          "weight": 0.72,
+          "reason": "Completed with confidence 0.96."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1273,
+          "utilities": {
+            "auto_execute": 18.544,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.13 from trust=0.92 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=18.544, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Prepare for Harvest and Selling of tomatoes",
+      "priority": "P4",
+      "justification": "Current agronomic conditions (optimal temperature, suitable soil pH and nitrogen, and adequate wind) support a high‑quality tomato crop. Satellite imagery indicates critical vegetation health, prompting immediate irrigation and nutrient correction. Market analysis shows the highest price and market score at Tiruvarur Market with an overall increasing price trend, while perishability and competition require fast, refrigerated logistics. Acting now to complete harvest, secure cold‑chain transport, and lock in sales will capture the premium price window and mitigate the identified risks.",
+      "actions": [
+        "1. Adjust irrigation: increase drip frequency to every 2 days delivering 25 mm/week until NDVI improves; monitor soil moisture with handheld probes.",
+        "2. Amend soil organic carbon: apply 2 t/ha well‑decomposed compost or biochar within the next 5 days to raise organic carbon to medium level.",
+        "3. Conduct a rapid field scouting for late blight and early blight; apply copper‑based fungicide if symptoms appear.",
+        "4. Schedule harvest start 7‑10 days before the projected peak (mid‑September) to align with market price peak.",
+        "5. Arrange refrigerated transport contracts with a local cold‑storage facility in Coimbatore; ensure trucks maintain 2‑4 °C from field to market.",
+        "6. Prioritize sales to Tiruvarur Market (price ≈ ₹1917/kg); simultaneously place backup orders with Thoothukudi and Kanchipuram markets for price arbitrage.",
+        "7. Pack tomatoes in ventilated, insulated crates with moisture‑absorbing pads to extend shelf life.",
+        "8. Record harvest weight, quality grade, and sale price per batch for post‑season analysis."
+      ],
+      "expected_outcome": "Timely harvest of high‑quality tomatoes, secured refrigerated logistics, and sales at premium market prices, resulting in maximized profitability and low yield risk.",
+      "monitoring_plan": [
+        "Daily NDVI checks via satellite updates (target >0.45).",
+        "Soil moisture readings twice daily during the irrigation adjustment period.",
+        "Weekly disease scouting reports; immediate fungicide application if disease incidence >5%.",
+        "Temperature logs of transport trucks for each shipment (must stay within 2‑4 °C).",
+        "Market price tracking for the top five markets; adjust sales allocations if price gaps exceed 5%."
+      ],
+      "confidence": 0.96,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Prepare for Harvest and Selling",
+      "executive_priority": "P4",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9347713991093488,
+        "posterior_mean": 0.9363709727242651,
+        "evidence": {
+          "positive": true,
+          "weight": 0.96,
+          "reason": "Completed with confidence 0.96."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1065,
+          "utilities": {
+            "auto_execute": 22.962,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.11 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=22.962, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "Is now a good time to sell my tomato harvest?",
+      "execution_plan": [
+        {
+          "agent": "MarketAgent",
+          "priority": 1,
+          "purpose": "Assess current market price and conditions for tomato sales."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 2,
+          "purpose": "Generate the final recommendation based on market analysis."
+        }
+      ],
+      "specialists": {
+        "MarketAgent": {
+          "agent": "MarketAgent",
+          "status": "completed",
+          "analysis": "1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks.",
+          "summary": "Nearest market: Tiruvannamalai Uzhavar Sandhai (267.05 km). Best-ranked market: Tiruvarur Market with modal price 1917.0. 5 market(s) were evaluated. 1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+          "risks": [
+            "Potential price decline after the peak harvest season",
+            "High perishability demanding fast refrigerated transport",
+            "Logistical costs to reach higher‑price but more distant markets",
+            "Increased competition from other producers during the same season"
+          ],
+          "opportunities": [
+            "Increasing price trend across top markets",
+            "Highest price and market score at Tiruvarur Market",
+            "Stable prices at Kanchipuram and Kanyakumari provide fallback options",
+            "Multiple nearby markets allow price arbitrage and risk diversification",
+            "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region"
+          ],
+          "confidence": 0.96,
+          "metadata": {
+            "nearest_market": {
+              "market": "Tiruvannamalai Uzhavar Sandhai",
+              "district": "Tiruvannamalai",
+              "price": 1843.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.6479,
+              "rank": 4
+            },
+            "top_market_count": 5,
+            "top_markets": [
+              {
+                "market": "Tiruvarur Market",
+                "district": "Tiruvarur",
+                "price": 1917.0,
+                "trend": "Increasing",
+                "distance_km": 293.81,
+                "market_score": 0.8007,
+                "rank": 1
+              },
+              {
+                "market": "Thoothukudi Mandi",
+                "district": "Thoothukudi",
+                "price": 1908.0,
+                "trend": "Increasing",
+                "distance_km": 281.81,
+                "market_score": 0.7821,
+                "rank": 2
+              },
+              {
+                "market": "Kanchipuram Mandi",
+                "district": "Kanchipuram",
+                "price": 1908.0,
+                "trend": "Stable",
+                "distance_km": 360.83,
+                "market_score": 0.692,
+                "rank": 3
+              },
+              {
+                "market": "Tiruvannamalai Uzhavar Sandhai",
+                "district": "Tiruvannamalai",
+                "price": 1843.0,
+                "trend": "Increasing",
+                "distance_km": 267.05,
+                "market_score": 0.6479,
+                "rank": 4
+              },
+              {
+                "market": "Kanyakumari Market",
+                "district": "Kanyakumari",
+                "price": 1867.0,
+                "trend": "Stable",
+                "distance_km": 331.84,
+                "market_score": 0.6073,
+                "rank": 5
+              }
+            ]
+          },
+          "execution_time": 62.079,
+          "governance": {
+            "agent": "MarketAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.6257398227891703,
+            "posterior_mean": 0.6469378846486814,
+            "evidence": {
+              "positive": true,
+              "weight": 0.48,
+              "reason": "Completed with confidence 0.96."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.4979,
+              "utilities": {
+                "auto_execute": 0.086,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.50 from trust=0.65 (+/-0.14) on a low-risk data_collector action => human_review (EU auto=0.086, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": {
+        "summary": "1 specialist agents reached a consensus.",
+        "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+        "merged_risks": [
+          "High perishability demanding fast refrigerated transport",
+          "Increased competition from other producers during the same season",
+          "Logistical costs to reach higher‑price but more distant markets",
+          "Potential price decline after the peak harvest season"
+        ],
+        "merged_opportunities": [
+          "Highest price and market score at Tiruvarur Market",
+          "Increasing price trend across top markets",
+          "Multiple nearby markets allow price arbitrage and risk diversification",
+          "Stable prices at Kanchipuram and Kanyakumari provide fallback options",
+          "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region"
+        ],
+        "conflicts": [],
+        "confidence": 0.96,
+        "evidence": [
+          {
+            "agent": "MarketAgent",
+            "analysis": "1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks.",
+            "risks": [
+              "Potential price decline after the peak harvest season",
+              "High perishability demanding fast refrigerated transport",
+              "Logistical costs to reach higher‑price but more distant markets",
+              "Increased competition from other producers during the same season"
+            ],
+            "opportunities": [
+              "Increasing price trend across top markets",
+              "Highest price and market score at Tiruvarur Market",
+              "Stable prices at Kanchipuram and Kanyakumari provide fallback options",
+              "Multiple nearby markets allow price arbitrage and risk diversification",
+              "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region"
+            ],
+            "confidence": 0.96,
+            "metadata": {
+              "nearest_market": {
+                "market": "Tiruvannamalai Uzhavar Sandhai",
+                "district": "Tiruvannamalai",
+                "price": 1843.0,
+                "trend": "Increasing",
+                "distance_km": 267.05,
+                "market_score": 0.6479,
+                "rank": 4
+              },
+              "top_market_count": 5,
+              "top_markets": [
+                {
+                  "market": "Tiruvarur Market",
+                  "district": "Tiruvarur",
+                  "price": 1917.0,
+                  "trend": "Increasing",
+                  "distance_km": 293.81,
+                  "market_score": 0.8007,
+                  "rank": 1
+                },
+                {
+                  "market": "Thoothukudi Mandi",
+                  "district": "Thoothukudi",
+                  "price": 1908.0,
+                  "trend": "Increasing",
+                  "distance_km": 281.81,
+                  "market_score": 0.7821,
+                  "rank": 2
+                },
+                {
+                  "market": "Kanchipuram Mandi",
+                  "district": "Kanchipuram",
+                  "price": 1908.0,
+                  "trend": "Stable",
+                  "distance_km": 360.83,
+                  "market_score": 0.692,
+                  "rank": 3
+                },
+                {
+                  "market": "Tiruvannamalai Uzhavar Sandhai",
+                  "district": "Tiruvannamalai",
+                  "price": 1843.0,
+                  "trend": "Increasing",
+                  "distance_km": 267.05,
+                  "market_score": 0.6479,
+                  "rank": 4
+                },
+                {
+                  "market": "Kanyakumari Market",
+                  "district": "Kanyakumari",
+                  "price": 1867.0,
+                  "trend": "Stable",
+                  "distance_km": 331.84,
+                  "market_score": 0.6073,
+                  "rank": 5
+                }
+              ]
+            }
+          }
+        ],
+        "metadata": {
+          "agents": [
+            "MarketAgent"
+          ],
+          "agent_count": 1,
+          "llm_provider": "gemini"
+        }
+      },
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.96,
+        "decision": "Prepare for Harvest and Selling",
+        "priority": "P4",
+        "urgency": "Monitor",
+        "risk_level": "Low",
+        "action_order": [],
+        "priorities": [],
+        "impact": {
+          "agronomic": "Excellent",
+          "economic": "Excellent",
+          "environmental": "Moderate",
+          "operational": "Good",
+          "yield_risk": "Low",
+          "profitability": "High",
+          "expected_benefit": "Current conditions provide opportunities for improved profitability."
+        },
+        "summary": {
+          "executive": "Tomato cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+          "business": "Market trend is increasing with high profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+          "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: High perishability demanding fast refrigerated transport, Increased competition from other producers during the same season, Logistical costs to reach higher‑price but more distant markets."
+        },
+        "supporting_evidence": [
+          "MarketAgent: 1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9219519206629544,
+          "posterior_mean": 0.9236396486508109,
+          "evidence": {
+            "positive": true,
+            "weight": 0.72,
+            "reason": "Completed with confidence 0.96."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.1273,
+            "utilities": {
+              "auto_execute": 18.544,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.13 from trust=0.92 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=18.544, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Prepare for Harvest and Selling of tomatoes",
+        "priority": "P4",
+        "justification": "Current agronomic conditions (optimal temperature, suitable soil pH and nitrogen, and adequate wind) support a high‑quality tomato crop. Satellite imagery indicates critical vegetation health, prompting immediate irrigation and nutrient correction. Market analysis shows the highest price and market score at Tiruvarur Market with an overall increasing price trend, while perishability and competition require fast, refrigerated logistics. Acting now to complete harvest, secure cold‑chain transport, and lock in sales will capture the premium price window and mitigate the identified risks.",
+        "actions": [
+          "1. Adjust irrigation: increase drip frequency to every 2 days delivering 25 mm/week until NDVI improves; monitor soil moisture with handheld probes.",
+          "2. Amend soil organic carbon: apply 2 t/ha well‑decomposed compost or biochar within the next 5 days to raise organic carbon to medium level.",
+          "3. Conduct a rapid field scouting for late blight and early blight; apply copper‑based fungicide if symptoms appear.",
+          "4. Schedule harvest start 7‑10 days before the projected peak (mid‑September) to align with market price peak.",
+          "5. Arrange refrigerated transport contracts with a local cold‑storage facility in Coimbatore; ensure trucks maintain 2‑4 °C from field to market.",
+          "6. Prioritize sales to Tiruvarur Market (price ≈ ₹1917/kg); simultaneously place backup orders with Thoothukudi and Kanchipuram markets for price arbitrage.",
+          "7. Pack tomatoes in ventilated, insulated crates with moisture‑absorbing pads to extend shelf life.",
+          "8. Record harvest weight, quality grade, and sale price per batch for post‑season analysis."
+        ],
+        "expected_outcome": "Timely harvest of high‑quality tomatoes, secured refrigerated logistics, and sales at premium market prices, resulting in maximized profitability and low yield risk.",
+        "monitoring_plan": [
+          "Daily NDVI checks via satellite updates (target >0.45).",
+          "Soil moisture readings twice daily during the irrigation adjustment period.",
+          "Weekly disease scouting reports; immediate fungicide application if disease incidence >5%.",
+          "Temperature logs of transport trucks for each shipment (must stay within 2‑4 °C).",
+          "Market price tracking for the top five markets; adjust sales allocations if price gaps exceed 5%."
+        ],
+        "confidence": 0.96,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Prepare for Harvest and Selling",
+        "executive_priority": "P4",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9347713991093488,
+          "posterior_mean": 0.9363709727242651,
+          "evidence": {
+            "positive": true,
+            "weight": 0.96,
+            "reason": "Completed with confidence 0.96."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1065,
+            "utilities": {
+              "auto_execute": 22.962,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.11 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=22.962, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Prepare for Harvest and Selling",
+        "executive_summary": "Tomato crop in Coimbatore is ready for harvest with low operational risk and high profitability potential. Market prices are rising, especially at Tiruvarur, while agronomic conditions (temperature, pH, nitrogen) are optimal. Immediate actions are needed to address critical vegetation health and low organic carbon. Ongoing monitoring will ensure a smooth harvest and sale.",
+        "recommendation": "Prepare for Harvest and Selling of tomatoes",
+        "explanation": "The recommendation combines excellent agronomic conditions (optimal temperature, suitable pH and high nitrogen) with satellite‑detected stress that requires extra irrigation and organic carbon amendment. Market analysis shows an increasing price trend and the highest price at Tiruvarur, making prompt harvest and sale financially attractive. Risks such as perishability and logistics are manageable with the suggested actions.",
+        "reasoning_summary": "Good weather and soil health support a high‑quality crop; satellite imagery flags nutrient/irrigation deficits; market data indicates strong demand and top prices; therefore the best course is to harvest now, improve water and carbon levels, and sell to the highest‑scoring market while monitoring key risks.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "MarketAgent",
+              "finding": "Nearest market: Tiruvannamalai Uzhavar Sandhai (267.05 km). Best-ranked market: Tiruvarur Market with modal price 1917.0. 5 market(s) were evaluated. 1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+              "confidence": 0.96,
+              "key_risks": [
+                "Potential price decline after the peak harvest season",
+                "High perishability demanding fast refrigerated transport",
+                "Logistical costs to reach higher‑price but more distant markets",
+                "Increased competition from other producers during the same season"
+              ],
+              "key_opportunities": [
+                "Increasing price trend across top markets",
+                "Highest price and market score at Tiruvarur Market",
+                "Stable prices at Kanchipuram and Kanyakumari provide fallback options",
+                "Multiple nearby markets allow price arbitrage and risk diversification",
+                "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "Potential price decline after the peak harvest season",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "High perishability demanding fast refrigerated transport",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "Logistical costs to reach higher‑price but more distant markets",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Potential price decline after the peak harvest season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 3,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "High perishability demanding fast refrigerated transport",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Logistical costs to reach higher‑price but more distant markets",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Increased competition from other producers during the same season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "1 specialist agents reached a consensus.",
+              "confidence": 0.96,
+              "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+              "merged_risks": [
+                "High perishability demanding fast refrigerated transport",
+                "Increased competition from other producers during the same season",
+                "Logistical costs to reach higher‑price but more distant markets",
+                "Potential price decline after the peak harvest season"
+              ],
+              "merged_opportunities": [
+                "Highest price and market score at Tiruvarur Market",
+                "Increasing price trend across top markets",
+                "Multiple nearby markets allow price arbitrage and risk diversification",
+                "Stable prices at Kanchipuram and Kanyakumari provide fallback options",
+                "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region"
+              ],
+              "conflicts": [],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 8,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Prepare for Harvest and Selling",
+              "confidence": 0.96,
+              "priority": "P4",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 9,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Prepare for Harvest and Selling of tomatoes",
+              "confidence": 0.96,
+              "actions": [
+                "1. Adjust irrigation: increase drip frequency to every 2 days delivering 25 mm/week until NDVI improves; monitor soil moisture with handheld probes.",
+                "2. Amend soil organic carbon: apply 2 t/ha well‑decomposed compost or biochar within the next 5 days to raise organic carbon to medium level.",
+                "3. Conduct a rapid field scouting for late blight and early blight; apply copper‑based fungicide if symptoms appear.",
+                "4. Schedule harvest start 7‑10 days before the projected peak (mid‑September) to align with market price peak.",
+                "5. Arrange refrigerated transport contracts with a local cold‑storage facility in Coimbatore; ensure trucks maintain 2‑4 °C from field to market.",
+                "6. Prioritize sales to Tiruvarur Market (price ≈ ₹1917/kg); simultaneously place backup orders with Thoothukudi and Kanchipuram markets for price arbitrage.",
+                "7. Pack tomatoes in ventilated, insulated crates with moisture‑absorbing pads to extend shelf life.",
+                "8. Record harvest weight, quality grade, and sale price per batch for post‑season analysis."
+              ],
+              "justification": "Current agronomic conditions (optimal temperature, suitable soil pH and nitrogen, and adequate wind) support a high‑quality tomato crop. Satellite imagery indicates critical vegetation health, prompting immediate irrigation and nutrient correction. Market analysis shows the highest price and market score at Tiruvarur Market with an overall increasing price trend, while perishability and competition require fast, refrigerated logistics. Acting now to complete harvest, secure cold‑chain transport, and lock in sales will capture the premium price window and mitigate the identified risks.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Potential price decline after the peak harvest season",
+              "strength": 0.851
+            },
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "High perishability demanding fast refrigerated transport",
+              "strength": 0.851
+            },
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Logistical costs to reach higher‑price but more distant markets",
+              "strength": 0.851
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "1 specialist agents reached a consensus.",
+              "strength": 0.96
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Prepare for Harvest and Selling",
+              "strength": 0.96
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Prepare for Harvest and Selling of tomatoes",
+              "strength": 0.96
+            }
+          ],
+          "summary": "1 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Prepare for Harvest and Selling'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 9,
+          "specialist_steps": 1,
+          "evidence_steps": 5,
+          "decision_step": 8,
+          "recommendation_step": 9,
+          "top_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Potential price decline after the peak harvest season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "High perishability demanding fast refrigerated transport",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Logistical costs to reach higher‑price but more distant markets",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Increased competition from other producers during the same season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "analysis",
+              "finding": "1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Potential price decline after the peak harvest season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "High perishability demanding fast refrigerated transport",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Logistical costs to reach higher‑price but more distant markets",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Increased competition from other producers during the same season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "analysis",
+              "finding": "1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 5
+            },
+            {
+              "source": "MarketAgent",
+              "type": "summary",
+              "finding": "Nearest market: Tiruvannamalai Uzhavar Sandhai (267.05 km). Best-ranked market: Tiruvarur Market with modal price 1917.0. 5 market(s) were evaluated. 1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 6
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Increasing price trend across top markets",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 7
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Highest price and market score at Tiruvarur Market",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 8
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Stable prices at Kanchipuram and Kanyakumari provide fallback options",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 9
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Multiple nearby markets allow price arbitrage and risk diversification",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 10
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 11
+            }
+          ],
+          "source_summary": {
+            "MarketAgent": {
+              "evidence_score": 0.851,
+              "finding_count": 11,
+              "highest_importance": "High"
+            }
+          },
+          "total_findings": 11,
+          "top_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Potential price decline after the peak harvest season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "High perishability demanding fast refrigerated transport",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Logistical costs to reach higher‑price but more distant markets",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Increased competition from other producers during the same season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "analysis",
+              "finding": "1. Current market trend for tomato is overall *Increasing* as indicated by the assessment and by the majority of top markets reporting rising prices. 2. The nearest market is Tiruvannamalai Uzhavar Sandhai (267.05 km away) with a price of 1,843 and an increasing trend. 3. The best‑ranked market is Tiruvarur Market (rank 1) with the highest modal price of 1,917, a strong market_score of 0.8007 and an increasing trend. 4. Top‑5 market opportunities: • Tiruvarur Market – 1,917 (Increasing) • Thoothukudi Mandi – 1,908 (Increasing) • Kanchipuram Mandi – 1,908 (Stable) • Tiruvannamalai Uzhavar Sandhai – 1,843 (Increasing) • Kanyakumari Market – 1,867 (Stable). 5. Current selling opportunity is favourable: prices are near the seasonal peak and trending upward, especially at Tiruvarur and Thoothukudi. 6. Market risks include price volatility after the peak harvest period, high perishability requiring rapid cold‑chain logistics, competition from other regional producers, and the logistical cost of transporting to the higher‑price but more distant markets. 7. Market opportunities comprise the upward price trend, multiple high‑score markets within 300‑360 km, stable demand for both fresh and processing tomatoes, and the ability to choose among several markets to optimise price‑risk trade‑offs. 8. Harvest timing aligns with the summer‑to‑early‑autumn window; if the crop is at the fruiting stage, it can be harvested now to capture the current price premium. 9. Selling now is recommended given the increasing trend, top‑ranked price, and limited risk of rapid price decline before the next market cycle. 10. Overall market assessment: The tomato market in the region is currently strong, with rising prices, several high‑score buying points, and solid demand for fresh and processed products. While logistics and post‑harvest handling remain critical, the benefits of selling now outweigh the identified risks.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "High perishability demanding fast refrigerated transport.",
+          "Potential price decline after the peak harvest season.",
+          "Increased competition from other producers during the same season.",
+          "Logistical costs to reach higher‑price but more distant markets."
+        ],
+        "opportunities": [
+          "Highest price and market score at Tiruvarur Market.",
+          "Increasing price trend across top markets.",
+          "Multiple nearby markets allow price arbitrage and risk diversification.",
+          "Stable prices at Kanchipuram and Kanyakumari provide fallback options.",
+          "Strong demand for both fresh tomatoes and processing (paste, sauce) in the region."
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Sell at the nearest market",
+            "why_rejected": "The nearest market offers lower price despite lower transport cost; Tiruvarur provides a stronger composite score."
+          },
+          {
+            "decision": "Delay selling",
+            "why_rejected": "Current market conditions are already favorable; waiting could expose the crop to price decline and increased perishability."
+          },
+          {
+            "decision": "Sell at the highest‑price market regardless of distance",
+            "why_rejected": "Logistical costs and perishability risks outweigh the marginal price gain compared to the top‑scoring market."
+          }
+        ],
+        "limitations": [
+          {
+            "category": "Missing Evidence",
+            "limitation": "WeatherAgent did not return an output.",
+            "impact": "The final recommendation was produced without WeatherAgent evidence."
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "SoilAgent did not return an output.",
+            "impact": "The final recommendation was produced without SoilAgent evidence."
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "SatelliteAgent did not return an output.",
+            "impact": "The final recommendation was produced without SatelliteAgent evidence."
+          }
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Weather changes can affect irrigation and field operations."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Monitor environmental stress."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Ensure irrigation is effective."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Monthly",
+            "reason": "Confirm pH remains within optimal range."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.96,
+          "specialist_average": 0.96,
+          "strongest_source": "MarketAgent",
+          "strongest_confidence": 0.96,
+          "weakest_source": "MarketAgent",
+          "weakest_confidence": 0.96,
+          "unavailable_sources": [],
+          "breakdown": {
+            "MarketAgent": 0.96,
+            "CollaborativeReasoning": 0.96,
+            "ExecutiveDecision": 0.96
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.96. The strongest specialist evidence came from MarketAgent (0.96), while the weakest was MarketAgent (0.96). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.96,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8611,
+            "trust_std": 0.0735
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8512,
+            "trust_std": 0.0752
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7467,
+            "trust_std": 0.1093
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6469,
+            "trust_std": 0.1448
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9236,
+            "trust_std": 0.0509
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9364,
+            "trust_std": 0.0429
+          }
+        },
+        "crop_learning": {
+          "crop": "tomato",
+          "trust_mean": 0.8657,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.866,
+              "trust_std": 0.0854
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8461,
+              "trust_std": 0.0964
+            },
+            "tomato": {
+              "trust_mean": 0.8657,
+              "trust_std": 0.0855
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.96,
+      "statistics": {
+        "agents_planned": 2,
+        "specialist_agents": 1,
+        "agents_completed": 1,
+        "agents_failed": 0,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.95,
+        "reasoning_confidence": 0.96,
+        "executive_confidence": 0.96,
+        "explanation_confidence": 0.96,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 3,
+        "monitoring_items": 4,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 239.369
+  }
+}

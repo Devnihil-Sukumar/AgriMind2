@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgriMind — Precision Agriculture Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- ============================================================ -->
+  <!-- HEADER                                                        -->
+  <!-- ============================================================ -->
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">🌾</span>
+      <div>
+        <div class="brand-name">AgriMind</div>
+        <div class="brand-sub">Multi-Agent Precision Agriculture Advisor</div>
+      </div>
+    </div>
+    <div class="topbar-status" id="apiStatus">
+      <span class="dot" id="apiStatusDot"></span>
+      <span id="apiStatusText">Checking backend…</span>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ========================================================== -->
+    <!-- QUERY PANEL                                                 -->
+    <!-- ========================================================== -->
+
+    <aside class="panel query-panel">
+      <h2>Ask AgriMind</h2>
+      <p class="hint">Describe your farm question. Five specialist AI
+        agents (weather, soil, satellite, market, historical) will
+        analyze your farm and produce a governed recommendation.</p>
+
+      <form id="queryForm">
+
+        <label class="field">
+          <span>Crop</span>
+          <input type="text" id="cropInput" list="cropList" value="rice" autocomplete="off">
+          <datalist id="cropList">
+            <option value="rice">
+            <option value="wheat">
+            <option value="cotton">
+            <option value="maize">
+            <option value="sugarcane">
+            <option value="mango">
+            <option value="tomato">
+            <option value="groundnut">
+          </datalist>
+        </label>
+
+        <label class="field">
+          <span>Question</span>
+          <textarea id="queryInput" rows="4" placeholder="e.g. What should I do to maximize cotton yield this season?" required></textarea>
+        </label>
+
+        <div class="field-row">
+          <label class="field">
+            <span>Latitude</span>
+            <input type="number" id="latInput" step="0.0001" placeholder="default">
+          </label>
+          <label class="field">
+            <span>Longitude</span>
+            <input type="number" id="lonInput" step="0.0001" placeholder="default">
+          </label>
+        </div>
+
+        <button type="button" class="link-btn" id="useDefaultLocation">Use default location</button>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span id="submitBtnLabel">Run Analysis</span>
+        </button>
+      </form>
+
+      <div class="examples">
+        <div class="examples-title">Try an example</div>
+        <button class="example-chip" data-crop="cotton" data-query="What should I do to maximize cotton yield?">Maximize cotton yield</button>
+        <button class="example-chip" data-crop="rice" data-query="Is it a good time to irrigate my rice field?">Irrigation timing for rice</button>
+        <button class="example-chip" data-crop="tomato" data-query="Should I be worried about pests or disease right now?">Pest &amp; disease risk</button>
+        <button class="example-chip" data-crop="mango" data-query="Is now a good time to sell my harvest?">Best time to sell</button>
+      </div>
+    </aside>
+
+    <!-- ========================================================== -->
+    <!-- RESULTS                                                     -->
+    <!-- ========================================================== -->
+
+    <main class="panel results-panel">
+
+      <!-- Empty state -->
+      <div id="emptyState" class="empty-state">
+        <div class="empty-icon">🌱</div>
+        <h3>No analysis yet</h3>
+        <p>Fill in the form and run an analysis to see the full
+          multi-agent recommendation, reasoning trace, and governance
+          report here.</p>
+      </div>
+
+      <!-- Loading state -->
+      <div id="loadingState" class="loading-state hidden">
+        <div class="spinner"></div>
+        <h3>Running multi-agent analysis…</h3>
+        <p>Crop knowledge → data collection → context → planning →
+          specialist agents → collaborative reasoning → executive
+          decision → recommendation → explainability.</p>
+        <p class="loading-timer">Elapsed: <span id="loadingSeconds">0</span>s
+          — this can take up to a couple of minutes.</p>
+      </div>
+
+      <!-- Error state -->
+      <div id="errorState" class="error-state hidden">
+        <div class="empty-icon">⚠️</div>
+        <h3>Analysis failed</h3>
+        <p id="errorMessage"></p>
+      </div>
+
+      <!-- Results -->
+      <div id="resultsState" class="hidden">
+
+        <div class="tabs" id="tabs">
+          <button class="tab active" data-tab="overview">Overview</button>
+          <button class="tab" data-tab="specialists">Specialists</button>
+          <button class="tab" data-tab="reasoning">Reasoning &amp; Governance</button>
+          <button class="tab" data-tab="explainability">Explainability</button>
+          <button class="tab" data-tab="raw">Raw JSON</button>
+        </div>
+
+        <section id="tab-overview" class="tab-panel active"></section>
+        <section id="tab-specialists" class="tab-panel"></section>
+        <section id="tab-reasoning" class="tab-panel"></section>
+        <section id="tab-explainability" class="tab-panel"></section>
+        <section id="tab-raw" class="tab-panel">
+          <pre id="rawJson" class="raw-json"></pre>
+        </section>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <footer class="footer">
+    AgriMind &mdash; Dynamic Memory-Augmented Collaborative Multi-Agent
+    Decision Intelligence Framework for Precision Agriculture
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

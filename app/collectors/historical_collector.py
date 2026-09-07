@@ -11,9 +11,12 @@ Author : AgriMind Team
 ==========================================================================
 """
 
+import logging
 import sqlite3
 
 from app.config.settings import settings
+
+logger = logging.getLogger(__name__)
 
 
 class HistoricalCollector:
@@ -56,53 +59,66 @@ class HistoricalCollector:
 
         ############################################################
         # Database
+        #
+        # A locked file, a missing database, or a missing table must
+        # degrade historical evidence to "no records" rather than
+        # crash the whole pipeline. Zero records is itself meaningful
+        # input (HistoricalAgent can say "no prior seasons on file"),
+        # so this returns status="success" with an empty record set
+        # rather than status="failed".
         ############################################################
 
-        conn = sqlite3.connect(
+        try:
 
-            settings.SQLITE_DB_PATH
+            conn = sqlite3.connect(
 
-        )
+                settings.SQLITE_DB_PATH
 
-        conn.row_factory = sqlite3.Row
+            )
 
-        cursor = conn.cursor()
+            conn.row_factory = sqlite3.Row
 
-        ############################################################
+            cursor = conn.cursor()
 
-        cursor.execute(
+            cursor.execute(
 
-            """
+                """
 
-            SELECT *
+                SELECT *
 
-            FROM farm_history
+                FROM farm_history
 
-            WHERE LOWER(crop)=LOWER(?)
+                WHERE LOWER(crop)=LOWER(?)
 
-            ORDER BY id DESC
+                ORDER BY id DESC
 
-            LIMIT 5
+                LIMIT 5
 
-            """,
+                """,
 
-            (crop,)
+                (crop,)
 
-        )
+            )
 
-        rows = cursor.fetchall()
+            rows = cursor.fetchall()
 
-        conn.close()
+            conn.close()
 
-        ############################################################
+            records = [
+                dict(row)
+                for row in rows
+            ]
 
-        records = [
+        except Exception as e:
 
-            dict(row)
+            logger.warning(
 
-            for row in rows
+                "Historical collection failed: %s",
+                e
 
-        ]
+            )
+
+            records = []
 
         ############################################################
 

@@ -2,26 +2,50 @@
 ==========================================================================
 AgriMind
 
-Dynamic Soil Tool
+Soil Tool
 
-Uses
+Prefers LIVE measured soil from ISRIC SoilGrids, falling back to the
+synthetic Tamil Nadu dataset when SoilGrids has no data for the
+location or is unreachable.
 
-1. Soil Dataset
-2. Canonical Crop Profile
+SoilGrids masks built-up land, so a null response is a legitimate
+answer rather than an error -- Coimbatore city centre returns nothing
+while farmland 20km south returns pH 7.4. Both paths produce an
+identical output schema; only `live_source` and `metadata.source`
+differ, so downstream agents and the evaluation can tell measured data
+from synthetic without any other change.
+
+Responsibilities
+----------------
+1. Query SoilGrids for measured soil properties.
+2. Fall back to the local dataset on a coverage gap or outage.
+3. Extract soil properties.
+4. Assess soil against crop profile.
+5. Return standardized soil data.
 
 Author : AgriMind Team
 ==========================================================================
 """
 
+import logging
+import math
+import os
+
 import pandas as pd
 
-from math import radians
-from math import sin
-from math import cos
-from math import sqrt
-from math import atan2
+from app.services.soilgrids_service import soilgrids_service
 
-from app.config.settings import settings
+logger = logging.getLogger(__name__)
+
+##########################################################################
+# Set SOIL_LIVE_SOURCE=0 to force the synthetic dataset -- used when
+# reproducing a run whose soil figures came from the CSV.
+##########################################################################
+
+USE_LIVE_SOIL = os.getenv(
+    "SOIL_LIVE_SOURCE",
+    "1"
+).strip().lower() not in ("0", "false", "no")
 
 
 class SoilTool:
@@ -38,146 +62,437 @@ class SoilTool:
 
         )
 
+        self.df.columns = (
+
+            self.df.columns
+
+            .str.strip()
+
+            .str.lower()
+
+        )
+
     ####################################################################
-    # Haversine Distance
+    # Haversine
     ####################################################################
 
     def haversine(
 
         self,
 
-        lat1,
+        latitude_1,
 
-        lon1,
+        longitude_1,
 
-        lat2,
+        latitude_2,
 
-        lon2
+        longitude_2
 
     ):
 
-        R = 6371
+        radius = 6371.0
 
-        dlat = radians(lat2 - lat1)
+        lat1 = math.radians(
 
-        dlon = radians(lon2 - lon1)
+            float(latitude_1)
 
-        a = (
+        )
 
-            sin(dlat / 2) ** 2
+        lat2 = math.radians(
+
+            float(latitude_2)
+
+        )
+
+        dlat = math.radians(
+
+            float(latitude_2)
+
+            -
+
+            float(latitude_1)
+
+        )
+
+        dlon = math.radians(
+
+            float(longitude_2)
+
+            -
+
+            float(longitude_1)
+
+        )
+
+        value = (
+
+            math.sin(dlat / 2) ** 2
 
             +
 
-            cos(radians(lat1))
+            math.cos(lat1)
 
-            *
+            * math.cos(lat2)
 
-            cos(radians(lat2))
-
-            *
-
-            sin(dlon / 2) ** 2
+            * math.sin(dlon / 2) ** 2
 
         )
 
-        c = 2 * atan2(
+        return (
 
-            sqrt(a),
+            2
 
-            sqrt(1 - a)
+            * radius
 
-        )
+            * math.asin(
 
-        return R * c
-
-    ####################################################################
-    # Retrieve Nearest Soil Sample
-    ####################################################################
-
-    def get_soil(
-
-        self,
-
-        latitude=None,
-
-        longitude=None
-
-    ):
-
-        if latitude is None:
-
-            latitude = settings.DEFAULT_LATITUDE
-
-        if longitude is None:
-
-            longitude = settings.DEFAULT_LONGITUDE
-
-        nearest = None
-
-        min_distance = float("inf")
-
-        ############################################################
-
-        for _, row in self.df.iterrows():
-
-            distance = self.haversine(
-
-                latitude,
-
-                longitude,
-
-                row["Latitude"],
-
-                row["Longitude"]
+                math.sqrt(value)
 
             )
 
-            if distance < min_distance:
+        )
 
-                min_distance = distance
+    ####################################################################
+    # Classify Nitrogen
+    ####################################################################
 
-                nearest = row
+    def classify_nitrogen(
 
-        ############################################################
+        self,
+
+        nitrogen
+
+    ):
+
+        if isinstance(
+
+            nitrogen,
+
+            str
+
+        ):
+
+            return nitrogen.title()
+
+        value = float(
+
+            nitrogen
+
+        )
+
+        if value < 0.15:
+
+            return "Low"
+
+        if value < 0.30:
+
+            return "Medium"
+
+        return "High"
+
+    ####################################################################
+    # Classify Organic Carbon
+    ####################################################################
+
+    def classify_organic_carbon(
+
+        self,
+
+        organic_carbon
+
+    ):
+
+        if isinstance(
+
+            organic_carbon,
+
+            str
+
+        ):
+
+            return organic_carbon.title()
+
+        value = float(
+
+            organic_carbon
+
+        )
+
+        if value < 1.0:
+
+            return "Low"
+
+        if value < 2.0:
+
+            return "Medium"
+
+        return "High"
+
+    ####################################################################
+    # Find Nearest Soil
+    ####################################################################
+
+    def get_local_soil(
+
+        self,
+
+        latitude,
+
+        longitude
+
+    ):
+
+        df = self.df.copy()
+
+        df["distance_km"] = df.apply(
+
+            lambda row:
+
+                self.haversine(
+
+                    latitude,
+
+                    longitude,
+
+                    row["latitude"],
+
+                    row["longitude"]
+
+                ),
+
+            axis=1
+
+        )
+
+        nearest = df.sort_values(
+
+            "distance_km"
+
+        ).iloc[0]
 
         return {
 
             "state":
 
-                nearest["State"],
+                str(
+
+                    nearest["state"]
+
+                ),
 
             "district":
 
-                nearest["District"],
+                str(
 
-            "distance_km":
+                    nearest["district"]
 
-                round(min_distance, 2),
+                ),
+
+            "latitude":
+
+                float(
+
+                    nearest["latitude"]
+
+                ),
+
+            "longitude":
+
+                float(
+
+                    nearest["longitude"]
+
+                ),
 
             "ph":
 
-                float(nearest["pH"]),
+                float(
+
+                    nearest["ph"]
+
+                ),
 
             "nitrogen":
 
-                str(nearest["Nitrogen"]).title(),
+                str(
+
+                    nearest["nitrogen"]
+
+                ),
 
             "organic_carbon":
 
-                str(nearest["Organic_Carbon"]).title(),
+                str(
+
+                    nearest["organic_carbon"]
+
+                ),
 
             "sand_percent":
 
-                float(nearest["Sand"]),
+                float(
+
+                    nearest["sand"]
+
+                ),
 
             "clay_percent":
 
-                float(nearest["Clay"])
+                float(
+
+                    nearest["clay"]
+
+                ),
+
+            "silt_percent":
+
+                float(
+
+                    nearest["silt"]
+
+                ),
+
+            "cec":
+
+                float(
+
+                    nearest["cec"]
+
+                ),
+
+            "bulk_density":
+
+                float(
+
+                    nearest["bulk_density"]
+
+                ),
+
+            "field_capacity":
+
+                float(
+
+                    nearest["field_capacity"]
+
+                ),
+
+            "wilting_point":
+
+                float(
+
+                    nearest["wilting_point"]
+
+                ),
+
+            "distance_km":
+
+                float(
+
+                    round(
+
+                        nearest["distance_km"],
+
+                        2
+
+                    )
+
+                ),
+
+            "live_source":
+
+                False
 
         }
 
-        ####################################################################
-    # Dynamic Soil Assessment
+    ####################################################################
+    # Live Soil (SoilGrids)
+    ####################################################################
+
+    def get_live_soil(
+        self,
+        latitude,
+        longitude
+    ):
+        """Measured soil from SoilGrids, mapped onto the same schema
+        get_local_soil() returns. None means SoilGrids had nothing for
+        this point (coverage gap) or was unreachable, and the caller
+        should fall back.
+
+        State/district still come from the nearest local record --
+        SoilGrids is a raster with no administrative boundaries, and
+        those two fields are geography, not soil measurements.
+        """
+
+        measured = soilgrids_service.fetch(
+            latitude,
+            longitude
+        )
+
+        if not measured:
+            return None
+
+        nearest = self.get_local_soil(
+            latitude,
+            longitude
+        )
+
+        return {
+
+            "state": nearest["state"],
+
+            "district": nearest["district"],
+
+            "latitude": float(latitude),
+
+            "longitude": float(longitude),
+
+            "ph": measured["ph"],
+
+            ##########################################################
+            # SoilGrids reports continuous values; AgriMind's crop
+            # profiles compare against Low/Medium/High bands, so reuse
+            # the existing classifiers rather than inventing new ones.
+            ##########################################################
+
+            "nitrogen": self.classify_nitrogen(
+                measured["nitrogen_percent"]
+            ),
+
+            "organic_carbon": self.classify_organic_carbon(
+                measured["organic_carbon_percent"]
+            ),
+
+            "nitrogen_percent": measured["nitrogen_percent"],
+
+            "organic_carbon_percent": measured["organic_carbon_percent"],
+
+            "sand_percent": measured["sand_percent"],
+
+            "clay_percent": measured["clay_percent"],
+
+            "silt_percent": measured["silt_percent"],
+
+            "cec": measured["cec"],
+
+            "bulk_density": measured["bulk_density"],
+
+            ##########################################################
+            # Derived by pedotransfer, not measured -- see
+            # soilgrids_service.estimate_water_retention().
+            ##########################################################
+
+            "field_capacity": measured["field_capacity"],
+
+            "wilting_point": measured["wilting_point"],
+
+            "distance_km": 0.0,
+
+            "live_source": True
+
+        }
+
+    ####################################################################
+    # Assess Soil
     ####################################################################
 
     def assess_soil(
@@ -190,15 +505,13 @@ class SoilTool:
 
     ):
 
-        score = 100
+        profile = crop_profile.get(
 
-        risks = []
+            "soil",
 
-        opportunities = []
+            {}
 
-        ############################################################
-        # Canonical Crop Profile
-        ############################################################
+        )
 
         optimal = crop_profile.get(
 
@@ -208,191 +521,233 @@ class SoilTool:
 
         )
 
-        soil_profile = crop_profile.get(
+        risks = []
 
-            "soil",
+        opportunities = []
+
+        score = 100
+
+        ph = soil.get(
+
+            "ph"
+
+        )
+
+        nitrogen = str(
+
+            soil.get(
+
+                "nitrogen",
+
+                "Unknown"
+
+            )
+
+        ).title()
+
+        organic = str(
+
+            soil.get(
+
+                "organic_carbon",
+
+                "Unknown"
+
+            )
+
+        ).title()
+
+        sand = float(
+
+            soil.get(
+
+                "sand_percent",
+
+                0
+
+            )
+
+        )
+
+        clay = float(
+
+            soil.get(
+
+                "clay_percent",
+
+                0
+
+            )
+
+        )
+
+        ############################################################
+        # pH
+        ############################################################
+
+        ph_range = optimal.get(
+
+            "soil_ph",
 
             {}
 
         )
 
-        ############################################################
-        # Soil pH
-        ############################################################
+        ph_min = ph_range.get(
 
-        ph_cfg = optimal.get(
-
-            "soil_ph",
-
-            {
-
-                "minimum": 6.0,
-
-                "maximum": 7.5
-
-            }
+            "minimum"
 
         )
 
-        ph_min = ph_cfg["minimum"]
+        ph_max = ph_range.get(
 
-        ph_max = ph_cfg["maximum"]
+            "maximum"
 
-        if ph_min <= soil["ph"] <= ph_max:
+        )
 
-            ph_status = "Optimal"
+        if (
 
-            opportunities.append(
+            ph is not None
 
-                "Soil pH is within the optimal range."
+            and ph_min is not None
 
-            )
+            and ph_max is not None
 
-        elif soil["ph"] < ph_min:
+        ):
 
-            ph_status = "Acidic"
+            if ph_min <= ph <= ph_max:
 
-            score -= 15
+                opportunities.append(
 
-            risks.append(
+                    "Soil pH is within the optimal range."
 
-                f"Soil pH below optimal ({ph_min}-{ph_max})"
+                )
 
-            )
+            else:
 
-        else:
+                risks.append(
 
-            ph_status = "Alkaline"
+                    f"Soil pH ({ph}) is outside the optimal range."
 
-            score -= 15
+                )
 
-            risks.append(
-
-                f"Soil pH above optimal ({ph_min}-{ph_max})"
-
-            )
+                score -= 20
 
         ############################################################
         # Nitrogen
         ############################################################
 
-        preferred_nitrogen = (
+        preferred_nitrogen = str(
 
-            soil_profile.get(
+            profile.get(
 
                 "preferred_nitrogen",
 
-                "Medium"
+                ""
 
             )
 
-            .strip()
+        ).title()
 
-            .title()
+        levels = {
 
-        )
+            "Low": 1,
 
-        nitrogen = soil["nitrogen"].title()
+            "Medium": 2,
 
-        if nitrogen == preferred_nitrogen:
+            "High": 3
 
-            nitrogen_status = "Optimal"
+        }
 
-            opportunities.append(
+        if (
 
-                "Nitrogen level matches crop requirement."
+            preferred_nitrogen
 
-            )
+            and nitrogen in levels
 
-        elif nitrogen == "Medium":
+        ):
 
-            nitrogen_status = "Moderate"
+            if levels[nitrogen] >= levels.get(
 
-            score -= 5
+                preferred_nitrogen,
 
-            risks.append(
+                2
 
-                "Nitrogen level is acceptable but not ideal."
+            ):
 
-            )
+                opportunities.append(
 
-        else:
+                    "Nitrogen level matches crop requirement."
 
-            nitrogen_status = "Low"
+                )
 
-            score -= 20
+            else:
 
-            risks.append(
+                risks.append(
 
-                "Nitrogen level is unsuitable."
+                    "Nitrogen level is below crop requirement."
 
-            )
+                )
+
+                score -= 10
 
         ############################################################
         # Organic Carbon
         ############################################################
 
-        preferred_carbon = (
+        preferred_organic = str(
 
-            soil_profile.get(
+            profile.get(
 
                 "preferred_organic_carbon",
 
-                "High"
+                ""
 
             )
 
-            .strip()
+        ).title()
 
-            .title()
+        if (
 
-        )
+            preferred_organic
 
-        carbon = soil["organic_carbon"].title()
+            and organic in levels
 
-        if carbon == preferred_carbon:
+        ):
 
-            carbon_status = "Optimal"
+            if levels[organic] >= levels.get(
 
-            opportunities.append(
+                preferred_organic,
 
-                "Organic carbon matches crop requirement."
+                2
 
-            )
+            ):
 
-        elif carbon == "Medium":
+                opportunities.append(
 
-            carbon_status = "Moderate"
+                    "Organic carbon matches crop requirement."
 
-            score -= 5
+                )
 
-            risks.append(
+            else:
 
-                "Organic carbon is acceptable."
+                risks.append(
 
-            )
+                    "Organic carbon is below crop requirement."
 
-        else:
+                )
 
-            carbon_status = "Low"
-
-            score -= 15
-
-            risks.append(
-
-                "Organic carbon is below crop requirement."
-
-            )
+                score -= 10
 
         ############################################################
-        # Soil Texture
+        # Texture
         ############################################################
 
         preferred_texture = [
 
-            t.lower()
+            str(x).lower()
 
-            for t in soil_profile.get(
+            for x in profile.get(
 
                 "preferred_texture",
 
@@ -402,65 +757,133 @@ class SoilTool:
 
         ]
 
+        texture = self.infer_texture(
+
+            sand,
+
+            clay
+
+        )
+
         if preferred_texture:
 
-            dominant = (
+            if any(
 
-                "Clay"
+                p in texture.lower()
 
-                if soil["clay_percent"] >= soil["sand_percent"]
+                for p in preferred_texture
 
-                else "Sand"
-
-            )
-
-            if dominant.lower() in preferred_texture:
+            ):
 
                 opportunities.append(
 
-                    f"{dominant} texture suits the crop."
+                    "Soil texture is suitable."
 
                 )
 
             else:
 
-                score -= 5
-
                 risks.append(
 
-                    f"{dominant} texture differs from preferred soil."
+                    f"Soil texture ({texture}) differs from preferred soil."
 
                 )
 
-        ############################################################
+                score -= 10
 
         score = max(
 
-            score,
+            min(
+
+                score,
+
+                100
+
+            ),
 
             0
 
         )
 
-        ############################################################
-
         return {
 
-            "soil_health_score": score,
+            "soil_health_score":
 
-            "ph_status": ph_status,
+                score,
 
-            "nitrogen_status": nitrogen_status,
+            "ph_status":
 
-            "organic_carbon_status": carbon_status,
+                "Optimal"
 
-            "risks": risks,
+                if not any(
 
-            "opportunities": opportunities
+                    "pH" in risk
+
+                    for risk in risks
+
+                )
+
+                else "Suboptimal",
+
+            "nitrogen_status":
+
+                nitrogen,
+
+            "organic_carbon_status":
+
+                organic,
+
+            "texture":
+
+                texture,
+
+            "risks":
+
+                risks,
+
+            "opportunities":
+
+                opportunities,
+
+            "live_source":
+
+                False,
+
+            "live_confidence":
+
+                0
 
         }
 
-        ####################################################################
+    ####################################################################
+    # Texture
+    ####################################################################
+
+    def infer_texture(
+
+        self,
+
+        sand,
+
+        clay
+
+    ):
+
+        if clay >= 35:
+
+            return "Clay"
+
+        if sand >= 50 and clay < 25:
+
+            return "Sandy Loam"
+
+        if clay >= 27:
+
+            return "Clay Loam"
+
+        return "Loam"
+
+    ####################################################################
     # Execute
     ####################################################################
 
@@ -470,27 +893,51 @@ class SoilTool:
 
         crop_profile,
 
-        latitude=None,
+        latitude,
 
-        longitude=None
+        longitude
 
     ):
 
-        ############################################################
-        # Retrieve Soil
-        ############################################################
+        soil = None
 
-        soil = self.get_soil(
+        if USE_LIVE_SOIL:
 
-            latitude=latitude,
+            try:
 
-            longitude=longitude
+                soil = self.get_live_soil(
 
-        )
+                    latitude,
 
-        ############################################################
-        # Assess Soil
-        ############################################################
+                    longitude
+
+                )
+
+            except Exception as error:
+
+                ##################################################
+                # A live-source problem must never fail the whole
+                # soil stage -- the synthetic dataset is always
+                # available underneath.
+                ##################################################
+
+                logger.warning(
+                    "SoilGrids lookup failed, falling back to local "
+                    "dataset: %s",
+                    error
+                )
+
+                soil = None
+
+        if soil is None:
+
+            soil = self.get_local_soil(
+
+                latitude,
+
+                longitude
+
+            )
 
         assessment = self.assess_soil(
 
@@ -500,27 +947,71 @@ class SoilTool:
 
         )
 
-        ############################################################
-        # Standard Response
-        ############################################################
+        live = bool(
+            soil.get("live_source")
+        )
+
+        assessment["live_source"] = live
+
+        assessment["live_confidence"] = 1 if live else 0
 
         return {
 
-            "agent": "soil_tool",
+            "agent":
 
-            "status": "success",
+                "soil_tool",
 
-            "confidence": assessment["soil_health_score"],
+            "status":
 
-            "data": soil,
+                "success",
 
-            "assessment": assessment
+            "confidence":
+
+                round(
+
+                    assessment["soil_health_score"]
+
+                    / 100,
+
+                    2
+
+                ),
+
+            "data":
+
+                soil,
+
+            "assessment":
+
+                assessment,
+
+            "metadata": {
+
+                "source":
+
+                    "ISRIC SoilGrids v2.0 (measured)"
+                    if live
+                    else "Synthetic Local Dataset",
+
+                "distance_km":
+
+                    soil["distance_km"],
+
+                "live_source":
+
+                    live,
+
+                "water_retention":
+
+                    "derived (Saxton & Rawls 2006 pedotransfer)"
+                    if live
+                    else "dataset value"
+
+            }
 
         }
 
 
-##########################################################################
-# Singleton
 ##########################################################################
 
 soil_tool = SoilTool()

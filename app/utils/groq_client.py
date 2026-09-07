@@ -11,10 +11,14 @@ Author : AgriMind Team
 """
 
 import os
+import re
 import time
 import logging
 from dotenv import load_dotenv
 from groq import Groq
+
+from app.utils.prompt_budget import estimate_tokens
+from app.utils.rate_limiter import TokenRateLimiter
 
 load_dotenv()
 
@@ -101,9 +105,40 @@ class GroqClient:
 
         )
 
+        ################################################################
+        # Tokens-per-minute budget
+        #
+        # Groq counts prompt tokens plus the max_tokens reservation
+        # against this allowance. The Recommendation Agent and the
+        # Explanation Engine fire back to back, so without pacing the
+        # second call lands inside the first request window and fails
+        # with HTTP 429 or 413.
+        ################################################################
+
+        self.tokens_per_minute = int(
+
+            os.getenv(
+
+                "GROQ_TPM",
+
+                8000
+
+            )
+
+        )
+
+        self.limiter = TokenRateLimiter(
+
+            tokens_per_minute=self.tokens_per_minute,
+
+            name="groq"
+
+        )
+
         logger.info(
 
-            f"Groq model loaded: {self.model}"
+            f"Groq model loaded: {self.model} "
+            f"(tpm budget: {self.tokens_per_minute})"
 
         )
 
@@ -119,13 +154,33 @@ class GroqClient:
 
         system_prompt: str = "",
 
-        temperature: float | None = None
+        temperature: float | None = None,
+
+        max_tokens: int | None = None
 
     ) -> str:
 
         if temperature is None:
 
             temperature = self.temperature
+
+        ################################################################
+        # Completion reservation
+        #
+        # Groq counts prompt tokens + max_tokens against the per-minute
+        # budget, so an oversized default reservation can trigger an
+        # HTTP 413 even for a modest prompt. Callers that know how long
+        # their answer needs to be pass an explicit ceiling.
+        ################################################################
+
+        if max_tokens is None:
+
+            max_tokens = self.max_tokens
+
+        max_tokens = max(
+            1,
+            int(max_tokens)
+        )
 
         messages = []
 
@@ -158,6 +213,29 @@ class GroqClient:
         last_exception = None
 
         ################################################################
+        # Pace against the per-minute token budget
+        ################################################################
+
+        estimated_cost = estimate_tokens(
+            prompt
+        ) + estimate_tokens(
+            system_prompt
+        ) + max_tokens
+
+        waited = self.limiter.acquire(
+            estimated_cost
+        )
+
+        if waited:
+
+            logger.info(
+                "Groq request paced: waited %.1fs for token budget "
+                "(estimated cost %d tokens).",
+                waited,
+                estimated_cost
+            )
+
+        ################################################################
 
         for attempt in range(
 
@@ -177,7 +255,7 @@ class GroqClient:
 
                     temperature=temperature,
 
-                    max_tokens=self.max_tokens
+                    max_tokens=max_tokens
 
                 )
 
@@ -209,9 +287,49 @@ class GroqClient:
 
                 )
 
+                message = str(e)
+
+                ########################################################
+                # HTTP 413: the request is larger than the allowance.
+                # Retrying cannot help, so fail immediately and let the
+                # caller fall back.
+                ########################################################
+
+                if self.is_request_too_large(
+                    message
+                ):
+
+                    raise RuntimeError(
+
+                        "Groq rejected the request as too large. "
+                        "Reduce the prompt or the max_tokens budget "
+                        "for this component.\n"
+                        + message
+
+                    ) from e
+
+                if attempt >= self.retries:
+
+                    break
+
+                ########################################################
+                # HTTP 429: honour the cooldown Groq reports rather
+                # than retrying after one second and failing again.
+                ########################################################
+
+                delay = self.retry_delay(
+                    message,
+                    attempt
+                )
+
+                logger.info(
+                    "Retrying Groq in %.1fs",
+                    delay
+                )
+
                 time.sleep(
 
-                    attempt
+                    delay
 
                 )
 
@@ -223,6 +341,82 @@ class GroqClient:
 
             f"{last_exception}"
 
+        )
+
+    ####################################################################
+    # Error Classification
+    ####################################################################
+
+    @staticmethod
+    def is_request_too_large(
+        message: str
+    ) -> bool:
+        """
+        True for HTTP 413 / request-too-large responses.
+        """
+
+        text = str(message).lower()
+
+        return (
+            "413" in text
+            or "request too large" in text
+            or "request_too_large" in text
+        )
+
+    @staticmethod
+    def retry_delay(
+        message: str,
+        attempt: int
+    ) -> float:
+        """
+        Seconds to wait before retrying.
+
+        Groq reports the remaining cooldown inside rate-limit errors,
+        for example "Please try again in 12.5s". Honouring that value
+        is far more likely to succeed than a one-second backoff.
+        """
+
+        match = re.search(
+            r"try again in\s+([0-9]+(?:\.[0-9]+)?)\s*(ms|s|m)?",
+            str(message),
+            re.IGNORECASE
+        )
+
+        if match:
+
+            value = float(
+                match.group(1)
+            )
+
+            unit = (
+                match.group(2)
+                or "s"
+            ).lower()
+
+            if unit == "ms":
+
+                value = value / 1000.0
+
+            elif unit == "m":
+
+                value = value * 60.0
+
+            return min(
+                value + 0.5,
+                70.0
+            )
+
+        text = str(message).lower()
+
+        if "429" in text or "rate limit" in text:
+
+            return min(
+                15.0 * attempt,
+                70.0
+            )
+
+        return float(
+            attempt
         )
 
     ####################################################################
@@ -270,7 +464,9 @@ class GroqClient:
 
             self.generate(
 
-                "Reply with OK."
+                "Reply with OK.",
+
+                max_tokens=16
 
             )
 

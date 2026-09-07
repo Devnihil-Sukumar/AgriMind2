@@ -1,0 +1,22 @@
+{
+  "run_id": "cotton_SoilAgent",
+  "crop": "cotton",
+  "agent": "SoilAgent",
+  "prompt_chars": 6768,
+  "ollama": {
+    "elapsed_seconds": 267.369,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 910,
+    "raw_response": "{\n    \"analysis\": \"Soil conditions are generally suitable for cotton cultivation. The soil pH (6.21) falls within the optimal range (5.5-7.0). Nitrogen levels are high, which aligns with cotton's preferred nitrogen level (Medium). However, organic carbon is low, which is below the preferred medium level for cotton. The soil texture (Clay Loam) matches the preferred texture (Clay, Loam). The soil health score is 90, indicating good overall condition. The main risk is low organic carbon content, which may affect long-term soil fertility and structure. Opportunities include the optimal pH and high nitrogen levels that support current growth stages.\",\n    \"risks\": [\n        \"Low organic carbon content below crop requirement\"\n    ],\n    \"opportunities\": [\n        \"Optimal soil pH within the crop's preferred range\",\n        \"High nitrogen levels matching crop requirement\"\n    ],\n    \"confidence\": 0.95\n}",
+    "error": null
+  },
+  "groq": {
+    "elapsed_seconds": 1.457,
+    "valid_json_first_try": false,
+    "json_error": "eval response did not contain a complete valid JSON object.",
+    "response_chars": 603,
+    "raw_response": "{\n    \"analysis\": \"The soil at Coimbatore (pH 6.21, Clay Loam texture) falls within the cotton crop's preferred pH range (5.5‑7.0) and texture (Clay/Loam). Nitrogen is reported as High, exceeding the crop’s Medium requirement, which is beneficial for early growth but may require careful management to avoid excessive vegetative vigor. Organic carbon is Low, falling short of the Medium level preferred for optimal fertility and soil structure. Overall soil health score is 90, indicating a robust soil ecosystem. Drainage appears adequate given the bulk density (1.56 g cm⁻³) and field capacity (0.32),",
+    "error": null
+  }
+}

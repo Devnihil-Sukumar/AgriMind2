@@ -1,0 +1,22 @@
+{
+  "run_id": "rice_SatelliteAgent",
+  "crop": "rice",
+  "agent": "SatelliteAgent",
+  "prompt_chars": 5167,
+  "ollama": {
+    "elapsed_seconds": 146.255,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 88,
+    "raw_response": "{\n    \"analysis\": \"\",\n    \"risks\": [],\n    \"opportunities\": [],\n    \"confidence\": 0.95\n}",
+    "error": null
+  },
+  "groq": {
+    "elapsed_seconds": 1.777,
+    "valid_json_first_try": false,
+    "json_error": "eval response did not contain a complete valid JSON object.",
+    "response_chars": 549,
+    "raw_response": "{\n    \"analysis\": \"The rice field shows severely degraded conditions. NDVI (0.154) falls below the crop's poorest threshold (0.2), indicating almost no healthy vegetation. NDWI (-0.204) is below the high‑stress cutoff (0.0), confirming extreme water deficit. SAVI (0.105) is under the high‑exposure limit (0.2), revealing extensive exposed soil and minimal canopy cover. The satellite‑derived health label of \\\"Critical\\\" aligns with these metrics. Overall, the vegetation is far from viable, water availability is insufficient, and the soil surface",
+    "error": null
+  }
+}

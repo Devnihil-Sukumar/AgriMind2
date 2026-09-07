@@ -1,0 +1,854 @@
+{
+  "n_scenarios": 10,
+  "task_success_rate": {
+    "metric": "Task Success Rate",
+    "n": 10,
+    "successes": 10,
+    "value_pct": 100.0,
+    "ci_95": [
+      72.25,
+      100.0
+    ]
+  },
+  "decision_accuracy": {
+    "metric": "Decision Accuracy",
+    "n": 10,
+    "correct": 9,
+    "value_pct": 90.0,
+    "ci_95": [
+      59.58,
+      98.21
+    ],
+    "rows": [
+      {
+        "scenario_id": "baseline_normal_rice",
+        "expected": "Continue Monitoring",
+        "actual": "Continue Monitoring",
+        "correct": true
+      },
+      {
+        "scenario_id": "market_increasing_tomato",
+        "expected": "Prepare for Harvest and Selling",
+        "actual": "Prepare for Harvest and Selling",
+        "correct": true
+      },
+      {
+        "scenario_id": "nitrogen_low_tomato",
+        "expected": "Apply Nitrogen Fertilizer",
+        "actual": "Apply Nitrogen Fertilizer",
+        "correct": true
+      },
+      {
+        "scenario_id": "nitrogen_low_wheat",
+        "expected": "Apply Nitrogen Fertilizer",
+        "actual": "Apply Nitrogen Fertilizer",
+        "correct": true
+      },
+      {
+        "scenario_id": "organic_carbon_low_cotton",
+        "expected": "Apply Organic Manure",
+        "actual": "Apply Organic Manure",
+        "correct": true
+      },
+      {
+        "scenario_id": "organic_carbon_low_mango",
+        "expected": "Apply Organic Manure",
+        "actual": "Field Inspection",
+        "correct": false
+      },
+      {
+        "scenario_id": "vegetation_critical_mango",
+        "expected": "Field Inspection",
+        "actual": "Field Inspection",
+        "correct": true
+      },
+      {
+        "scenario_id": "vegetation_critical_wheat",
+        "expected": "Field Inspection",
+        "actual": "Field Inspection",
+        "correct": true
+      },
+      {
+        "scenario_id": "water_stress_cotton",
+        "expected": "Immediate Irrigation",
+        "actual": "Immediate Irrigation",
+        "correct": true
+      },
+      {
+        "scenario_id": "water_stress_rice",
+        "expected": "Immediate Irrigation",
+        "actual": "Immediate Irrigation",
+        "correct": true
+      }
+    ]
+  },
+  "routing_accuracy": {
+    "metric": "Routing Accuracy",
+    "n": 10,
+    "exact_matches": 10,
+    "exact_match_rate_pct": 100.0,
+    "ci_95": [
+      72.25,
+      100.0
+    ],
+    "ground_truth": "availability-aware (agents with no usable source data are not expected)",
+    "exact_match_rate_pct_static_ground_truth": 50.0,
+    "static_ground_truth_note": "Scoring against the raw query-type->agent mapping, which ignores whether a source has data, gives 50.0% -- the gap to 100.0% is the benchmark's own blind spot, not planner error. See _unavailable_agents().",
+    "unnecessary_agent_rate_pct": 0.0,
+    "missed_agent_rate_pct": 0.0,
+    "per_agent": {
+      "WeatherAgent": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "SoilAgent": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "SatelliteAgent": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "MarketAgent": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "HistoricalAgent": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null
+      }
+    },
+    "rows": [
+      {
+        "scenario_id": "baseline_normal_rice",
+        "expected": [
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "HistoricalAgent",
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [
+          "HistoricalAgent"
+        ],
+        "actual": [
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "market_increasing_tomato",
+        "expected": [
+          "MarketAgent"
+        ],
+        "expected_static": [
+          "HistoricalAgent",
+          "MarketAgent"
+        ],
+        "unavailable_excluded": [
+          "HistoricalAgent"
+        ],
+        "actual": [
+          "MarketAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "nitrogen_low_tomato",
+        "expected": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [],
+        "actual": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "nitrogen_low_wheat",
+        "expected": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "HistoricalAgent",
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [
+          "HistoricalAgent",
+          "MarketAgent"
+        ],
+        "actual": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "organic_carbon_low_cotton",
+        "expected": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [],
+        "actual": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "organic_carbon_low_mango",
+        "expected": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [],
+        "actual": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "vegetation_critical_mango",
+        "expected": [
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "HistoricalAgent",
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [
+          "HistoricalAgent"
+        ],
+        "actual": [
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "vegetation_critical_wheat",
+        "expected": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [],
+        "actual": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "water_stress_cotton",
+        "expected": [
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "HistoricalAgent",
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [
+          "HistoricalAgent"
+        ],
+        "actual": [
+          "MarketAgent",
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      },
+      {
+        "scenario_id": "water_stress_rice",
+        "expected": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "expected_static": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "unavailable_excluded": [],
+        "actual": [
+          "SatelliteAgent",
+          "SoilAgent",
+          "WeatherAgent"
+        ],
+        "exact_match": true,
+        "unnecessary": [],
+        "missed": []
+      }
+    ]
+  },
+  "agent_f1_scores": {
+    "metric": "Individual Agent F1-score",
+    "methodology": "LLM-judge (Groq) vs rule-derived ground truth",
+    "per_agent": {
+      "WeatherAgent": {
+        "n_judged": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "SoilAgent": {
+        "n_judged": 4,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "SatelliteAgent": {
+        "n_judged": 5,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "accuracy": 0.8,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889
+      },
+      "MarketAgent": {
+        "n_judged": 2,
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "accuracy": 0.5,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667
+      },
+      "HistoricalAgent": {
+        "n_judged": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "accuracy": null,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    "macro_f1": 0.8889,
+    "rows": [
+      {
+        "scenario_id": "baseline_normal_rice",
+        "agent": "WeatherAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent noted optimal/favorable conditions, matching the required detection."
+      },
+      {
+        "scenario_id": "baseline_normal_rice",
+        "agent": "SatelliteAgent",
+        "expects_signal": true,
+        "detected": false,
+        "judge_reason": "Agent never referenced a neutral baseline or negative\u2011control state, only described favorable indices"
+      },
+      {
+        "scenario_id": "baseline_normal_rice",
+        "agent": "MarketAgent",
+        "expects_signal": true,
+        "detected": false,
+        "judge_reason": "The output discusses market trends and does not mention a neutral baseline field condition."
+      },
+      {
+        "scenario_id": "market_increasing_tomato",
+        "agent": "MarketAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "Agent explicitly reports an upward price trend in tomato markets, indicating the market assessment trend condition."
+      },
+      {
+        "scenario_id": "nitrogen_low_tomato",
+        "agent": "SoilAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent explicitly notes low soil nitrogen as a deficiency affecting the tomato field."
+      },
+      {
+        "scenario_id": "nitrogen_low_wheat",
+        "agent": "SoilAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent explicitly notes low nitrogen in the wheat field, identifying the nitrogen condition."
+      },
+      {
+        "scenario_id": "organic_carbon_low_cotton",
+        "agent": "SoilAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent explicitly notes a low organic carbon condition in the soil."
+      },
+      {
+        "scenario_id": "organic_carbon_low_mango",
+        "agent": "SoilAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent explicitly noted low organic carbon in the mango field soil."
+      },
+      {
+        "scenario_id": "vegetation_critical_mango",
+        "agent": "SatelliteAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent explicitly reports a critical NDVI condition (0.15) indicating poor vegetation health, matching the required detection."
+      },
+      {
+        "scenario_id": "vegetation_critical_wheat",
+        "agent": "SatelliteAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent explicitly reports a low NDVI value and a 'Critical' vegetation health flag for the wheat field."
+      },
+      {
+        "scenario_id": "water_stress_cotton",
+        "agent": "WeatherAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent noted no rainfall and warned of water stress, correctly identifying the rainfall-related condition."
+      },
+      {
+        "scenario_id": "water_stress_cotton",
+        "agent": "SatelliteAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent flagged severe water stress via low NDWI, indicating the observable water condition."
+      },
+      {
+        "scenario_id": "water_stress_rice",
+        "agent": "WeatherAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "Agent noted zero rainfall and flagged it as a risk, matching the condition."
+      },
+      {
+        "scenario_id": "water_stress_rice",
+        "agent": "SatelliteAgent",
+        "expects_signal": true,
+        "detected": true,
+        "judge_reason": "The agent explicitly identified severe water stress via the NDWI reading, matching the required condition."
+      }
+    ]
+  },
+  "recommendation_quality": {
+    "metric": "Recommendation Quality",
+    "methodology": "LLM-judge (Groq) 1-5 Likert, NOT a human expert panel",
+    "dimensions": {
+      "agronomic_correctness": {
+        "n": 10,
+        "mean": 3.9,
+        "std": 0.943
+      },
+      "relevance": {
+        "n": 10,
+        "mean": 4.2,
+        "std": 1.077
+      },
+      "actionability": {
+        "n": 10,
+        "mean": 3.2,
+        "std": 0.748
+      },
+      "completeness": {
+        "n": 10,
+        "mean": 2.4,
+        "std": 0.49
+      },
+      "clarity": {
+        "n": 10,
+        "mean": 4.5,
+        "std": 0.671
+      }
+    },
+    "overall": {
+      "n": 50,
+      "mean": 3.64,
+      "std": 1.109
+    },
+    "rows": [
+      {
+        "scenario_id": "baseline_normal_rice",
+        "agronomic_correctness": 2,
+        "relevance": 2,
+        "actionability": 2,
+        "completeness": 2,
+        "clarity": 3,
+        "justification": "The advice introduces nonexistent soil exposure and logistics risks, making it only partially correct, relevant, and actionable, though it is reasonably clear."
+      },
+      {
+        "scenario_id": "market_increasing_tomato",
+        "agronomic_correctness": 4,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 2,
+        "clarity": 5,
+        "justification": "The advice is technically sound and relevant but lacks detailed market\u2011selection guidance, making it only partially complete and moderately actionable."
+      },
+      {
+        "scenario_id": "nitrogen_low_tomato",
+        "agronomic_correctness": 4,
+        "relevance": 5,
+        "actionability": 3,
+        "completeness": 2,
+        "clarity": 5,
+        "justification": "The advice correctly identifies nitrogen deficiency but lacks dosage, timing, and follow\u2011up testing details."
+      },
+      {
+        "scenario_id": "nitrogen_low_wheat",
+        "agronomic_correctness": 4,
+        "relevance": 5,
+        "actionability": 3,
+        "completeness": 2,
+        "clarity": 4,
+        "justification": "The advice correctly targets low nitrogen but lacks dosage, timing, and follow\u2011up details needed for full, actionable guidance."
+      },
+      {
+        "scenario_id": "organic_carbon_low_cotton",
+        "agronomic_correctness": 5,
+        "relevance": 5,
+        "actionability": 4,
+        "completeness": 3,
+        "clarity": 5,
+        "justification": "The advice is technically sound and directly addresses low organic carbon, but lacks details like rates, timing, and follow\u2011up testing."
+      },
+      {
+        "scenario_id": "organic_carbon_low_mango",
+        "agronomic_correctness": 3,
+        "relevance": 3,
+        "actionability": 2,
+        "completeness": 2,
+        "clarity": 4,
+        "justification": "The advice is generally correct about boosting organic matter but lacks specific, actionable steps like applying organic manure and retesting."
+      },
+      {
+        "scenario_id": "vegetation_critical_mango",
+        "agronomic_correctness": 3,
+        "relevance": 3,
+        "actionability": 3,
+        "completeness": 2,
+        "clarity": 4,
+        "justification": "The advice to inspect the field is technically sound and relevant but omits sampling, pest assessment, and direct suitability/risk information, making it only partially complete and moderately actionable."
+      },
+      {
+        "scenario_id": "vegetation_critical_wheat",
+        "agronomic_correctness": 5,
+        "relevance": 5,
+        "actionability": 4,
+        "completeness": 3,
+        "clarity": 5,
+        "justification": "The advice correctly calls for field inspection, which is relevant and clear, but it omits sampling and detailed next steps, reducing its completeness and specificity."
+      },
+      {
+        "scenario_id": "water_stress_cotton",
+        "agronomic_correctness": 4,
+        "relevance": 5,
+        "actionability": 4,
+        "completeness": 3,
+        "clarity": 5,
+        "justification": "The advice correctly calls for immediate irrigation to relieve water stress but omits follow\u2011up checks and detailed execution steps."
+      },
+      {
+        "scenario_id": "water_stress_rice",
+        "agronomic_correctness": 5,
+        "relevance": 5,
+        "actionability": 4,
+        "completeness": 3,
+        "clarity": 5,
+        "justification": "The advice correctly calls for immediate flood irrigation but omits follow\u2011up checks and scheduling details."
+      }
+    ]
+  },
+  "hallucination_rate": {
+    "metric": "Hallucination / Error Rate",
+    "methodology": "Automated LLM-judge grounding check vs raw context",
+    "n": 10,
+    "errors": 2,
+    "value_pct": 20.0,
+    "ci_95": [
+      5.67,
+      50.98
+    ],
+    "rows": [
+      {
+        "scenario_id": "baseline_normal_rice",
+        "has_error": true,
+        "error_type": "fabricated_evidence",
+        "explanation": "The text mentions 'soil exposure and logistics risks' which are not present in the provided data."
+      },
+      {
+        "scenario_id": "market_increasing_tomato",
+        "has_error": true,
+        "error_type": "fabricated_evidence",
+        "explanation": "The recommendation assumes tomatoes are ready for harvest, which is not indicated in the provided sensor and data context."
+      },
+      {
+        "scenario_id": "nitrogen_low_tomato",
+        "has_error": false,
+        "error_type": "none",
+        "explanation": "The recommendation aligns with the low nitrogen indicated in the raw data and contains no contradictory or unsupported claims."
+      },
+      {
+        "scenario_id": "nitrogen_low_wheat",
+        "has_error": false,
+        "error_type": "none",
+        "explanation": "The recommendation aligns with the observed low soil nitrogen and contains no contradictory or unsupported claims."
+      },
+      {
+        "scenario_id": "organic_carbon_low_cotton",
+        "has_error": false,
+        "error_type": "none",
+        "explanation": "The recommendation aligns with the low organic carbon observed and contains no contradictory or unsupported claims."
+      },
+      {
+        "scenario_id": "organic_carbon_low_mango",
+        "has_error": false,
+        "error_type": "none",
+        "explanation": "The recommendation contains no numeric contradictions, fabricated evidence, unsupported claims, or internal contradictions."
+      },
+      {
+        "scenario_id": "vegetation_critical_mango",
+        "has_error": false,
+        "error_type": "none",
+        "explanation": "The recommendation contains no numeric contradictions, fabricated evidence, unsupported claims, or internal contradictions."
+      },
+      {
+        "scenario_id": "vegetation_critical_wheat",
+        "has_error": false,
+        "error_type": "none",
+        "explanation": "The recommendation contains no contradictory numeric claim, fabricated evidence, unsupported claim, or internal contradiction."
+      },
+      {
+        "scenario_id": "water_stress_cotton",
+        "has_error": false,
+        "error_type": "none",
+        "explanation": "The recommendation aligns with the high water stress indicated and contains no contradictory or unsupported numeric claims."
+      },
+      {
+        "scenario_id": "water_stress_rice",
+        "has_error": false,
+        "error_type": "none",
+        "explanation": "The recommendation aligns with the high water stress indicated in the data and contains no contradictory or unsupported claims."
+      }
+    ]
+  },
+  "trust_calibration": {
+    "metric": "Trust Calibration",
+    "rows": [
+      {
+        "agent": "MarketAgent",
+        "n": 4,
+        "trust_mean": 0.694,
+        "observed_reliability": 1.0,
+        "abs_calibration_error": 0.306
+      },
+      {
+        "agent": "SatelliteAgent",
+        "n": 9,
+        "trust_mean": 0.7765,
+        "observed_reliability": 1.0,
+        "abs_calibration_error": 0.2235
+      },
+      {
+        "agent": "SoilAgent",
+        "n": 9,
+        "trust_mean": 0.861,
+        "observed_reliability": 0.8889,
+        "abs_calibration_error": 0.0279
+      },
+      {
+        "agent": "WeatherAgent",
+        "n": 9,
+        "trust_mean": 0.8761,
+        "observed_reliability": 1.0,
+        "abs_calibration_error": 0.1239
+      }
+    ],
+    "mean_abs_calibration_error": 0.1703
+  },
+  "latency": {
+    "metric": "Latency",
+    "total_pipeline": {
+      "n": 10,
+      "mean": 444.67,
+      "median": 464.16,
+      "std": 84.86,
+      "p95": 543.34,
+      "p99": 582.12
+    },
+    "per_agent": {
+      "WeatherAgent": {
+        "n": 9,
+        "mean": 224.45,
+        "median": 226.91,
+        "std": 60.71,
+        "p95": 304.54,
+        "p99": 304.95
+      },
+      "SoilAgent": {
+        "n": 9,
+        "mean": 278.12,
+        "median": 303.99,
+        "std": 101.89,
+        "p95": 385.49,
+        "p99": 428.84
+      },
+      "SatelliteAgent": {
+        "n": 9,
+        "mean": 60.46,
+        "median": 60.67,
+        "std": 1.0,
+        "p95": 61.35,
+        "p99": 61.49
+      },
+      "MarketAgent": {
+        "n": 4,
+        "mean": 60.52,
+        "median": 60.66,
+        "std": 0.53,
+        "p95": 61.05,
+        "p99": 61.08
+      },
+      "ExecutiveAgent": {
+        "n": 10,
+        "mean": 0.81,
+        "median": 0.0,
+        "std": 2.11,
+        "p95": 4.33,
+        "p99": 6.53
+      }
+    },
+    "planner": {
+      "n": 0,
+      "mean": null,
+      "median": null,
+      "std": null,
+      "p95": null,
+      "p99": null
+    },
+    "collaborative_reasoning": {
+      "n": 0,
+      "mean": null,
+      "median": null,
+      "std": null,
+      "p95": null,
+      "p99": null
+    },
+    "recommendation": {
+      "n": 0,
+      "mean": null,
+      "median": null,
+      "std": null,
+      "p95": null,
+      "p99": null
+    },
+    "unavailable_stages_note": "Planner, collaborative reasoning, and recommendation stage latency are not separately instrumented by the current AgriMind pipeline (only total_time and per-specialist/executive execution_time are recorded in the raw result object) -- reported here as unavailable (N=0) rather than omitted or fabricated."
+  }
+}

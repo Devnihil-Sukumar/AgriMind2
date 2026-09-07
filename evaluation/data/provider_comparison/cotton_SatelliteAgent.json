@@ -1,0 +1,22 @@
+{
+  "run_id": "cotton_SatelliteAgent",
+  "crop": "cotton",
+  "agent": "SatelliteAgent",
+  "prompt_chars": 6087,
+  "ollama": {
+    "elapsed_seconds": 242.398,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 726,
+    "raw_response": "{\n    \"analysis\": \"Cotton field at 11.0168°N, 76.9558°E shows critical vegetation health with NDVI 0.154 (below healthy threshold of 0.6), high water stress (NDWI -0.204 indicating severe water deficit), and high soil exposure (SAVI 0.105 below low exposure threshold of 0.5). This indicates severe stress requiring immediate intervention.\",\n    \"risks\": [\n        \"Critical vegetation health (NDVI 0.154 < 0.6 threshold)\",\n        \"High water stress (NDWI -0.204 < 0.0 threshold)\",\n        \"High soil exposure (SAVI 0.105 < 0.5 threshold)\"\n    ],\n    \"opportunities\": [\n        \"Potential for recovery with immediate irrigation\",\n        \"Opportunity to apply mulching to reduce soil exposure\"\n    ],\n    \"confidence\": 0.95\n}",
+    "error": null
+  },
+  "groq": {
+    "elapsed_seconds": 1.682,
+    "valid_json_first_try": false,
+    "json_error": "eval response did not contain a complete valid JSON object.",
+    "response_chars": 81,
+    "raw_response": "{\n    \"analysis\": \"The cotton field shows critically low vegetation vigor (NDVI 0",
+    "error": null
+  }
+}

@@ -1,0 +1,1730 @@
+{
+  "run_id": "wheat_market_r1",
+  "phase": "baseline",
+  "crop": "wheat",
+  "query": "Is now a good time to sell my wheat harvest?",
+  "latitude": 11.0168,
+  "longitude": 76.9558,
+  "wall_time_seconds": 258.954,
+  "error": null,
+  "meta": {
+    "query_type": "market",
+    "repeat": 1
+  },
+  "result": {
+    "query": "Is now a good time to sell my wheat harvest?",
+    "crop_profile": {
+      "crop": "wheat",
+      "scientific_name": "Triticum aestivum",
+      "family": "Poaceae",
+      "type": "Annual",
+      "category": "Cereal",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 10,
+          "maximum": 25,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 50,
+          "maximum": 70,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 300,
+          "maximum": 900,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 6.0,
+          "maximum": 7.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Clay",
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Surface or Sprinkler",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 7-10 days during critical stages"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.65,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.3,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "Bread",
+          "Flour",
+          "Staple food",
+          "Cereal"
+        ],
+        "major_states": [
+          "Kansas",
+          "North Dakota",
+          "Montana",
+          "Washington"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "Russia",
+          "United States",
+          "France"
+        ],
+        "harvest_season": "June-August",
+        "storage_capability": "Good",
+        "perishability": "Low"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Carbohydrates",
+          "Protein",
+          "Fiber"
+        ],
+        "commercial_products": [
+          "Flour",
+          "Bread",
+          "Pasta",
+          "Cereal",
+          "Malt"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Fusarium head blight",
+          "symptoms": "Bleached, shriveled kernels and pinkish fungal growth on heads",
+          "treatment": "Apply fungicides at flowering; use resistant varieties"
+        },
+        {
+          "name": "Powdery mildew",
+          "symptoms": "White powdery patches on leaves and stems",
+          "treatment": "Sulfur-based fungicides; ensure good air circulation"
+        },
+        {
+          "name": "Leaf rust",
+          "symptoms": "Orange-brown pustules on leaf surfaces",
+          "treatment": "Apply rust-resistant cultivars and timely fungicide sprays"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Introduce natural predators; use insecticidal soaps"
+        },
+        {
+          "name": "Hessian fly",
+          "treatment": "Plant resistant varieties; monitor and apply targeted insecticides"
+        },
+        {
+          "name": "Wheat midge",
+          "treatment": "Early sowing and insecticide applications during adult emergence"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "Apply nitrogen-rich fertilizer at tillering and booting stages",
+        "npk_ratio": "120-60-40",
+        "organic_options": [
+          "Compost",
+          "Manure",
+          "Green manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 3.0,
+        "excellent_tonnes_per_hectare": 7.0
+      },
+      "recommendations": {
+        "irrigation": "Maintain soil moisture deficit of 20-30%; avoid water stress during flowering",
+        "fertilizer": "Split nitrogen applications: 50% at sowing, rest at tillering and booting",
+        "harvesting": "Harvest when grain moisture is 12-14% using combine harvester with low grain loss settings",
+        "storage": "Store in ventilated silos at 12-15°C and 60% relative humidity"
+      },
+      "summary": "Wheat (Triticum aestivum) is a globally important annual cereal grown on loamy to clay soils with pH 6.0-7.5. Optimal temperatures are 10-25 °C, rainfall 300-900 mm/year, and sunlight 6-10 h/day. It requires medium water and nitrogen, with critical moisture needs during flowering. Major producers include China, India, Russia, the United States, and France. Typical yields are 3 t/ha, reaching up to 7 t/ha under optimal management. Key diseases are Fusarium head blight, powdery mildew, and leaf rust; main pests include aphids, Hessian fly, and wheat midge. Integrated pest management, split nitrogen fertilization, and timely harvest ensure high quality grain.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA",
+        "CGIAR"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-08-31T15:07:20.168630",
+        "crop": "wheat",
+        "crop_profile": {
+          "crop": "wheat",
+          "scientific_name": "Triticum aestivum",
+          "family": "Poaceae",
+          "type": "Annual",
+          "category": "Cereal",
+          "growth_duration_days": 120,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Fruiting",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 10,
+              "maximum": 25,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 50,
+              "maximum": 70,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 300,
+              "maximum": 900,
+              "unit": "mm/year"
+            },
+            "soil_ph": {
+              "minimum": 6.0,
+              "maximum": 7.5
+            },
+            "wind_speed": {
+              "maximum": 30,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 10
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "Clay",
+              "Loam"
+            ],
+            "preferred_nitrogen": "Medium",
+            "preferred_organic_carbon": "Medium",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "Surface or Sprinkler",
+            "water_requirement": "Medium",
+            "critical_growth_stage": "Flowering",
+            "recommended_frequency": "Every 7-10 days during critical stages"
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.8,
+              "healthy": 0.65,
+              "moderate": 0.45,
+              "poor": 0.3
+            },
+            "ndwi": {
+              "low_stress": 0.3,
+              "moderate_stress": 0.1,
+              "high_stress": 0.0
+            },
+            "savi": {
+              "low_exposure": 0.6,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.2
+            }
+          },
+          "market": {
+            "keywords": [
+              "Bread",
+              "Flour",
+              "Staple food",
+              "Cereal"
+            ],
+            "major_states": [
+              "Kansas",
+              "North Dakota",
+              "Montana",
+              "Washington"
+            ],
+            "major_countries": [
+              "China",
+              "India",
+              "Russia",
+              "United States",
+              "France"
+            ],
+            "harvest_season": "June-August",
+            "storage_capability": "Good",
+            "perishability": "Low"
+          },
+          "nutrition": {
+            "primary_nutrients": [
+              "Carbohydrates",
+              "Protein",
+              "Fiber"
+            ],
+            "commercial_products": [
+              "Flour",
+              "Bread",
+              "Pasta",
+              "Cereal",
+              "Malt"
+            ]
+          },
+          "common_diseases": [
+            {
+              "name": "Fusarium head blight",
+              "symptoms": "Bleached, shriveled kernels and pinkish fungal growth on heads",
+              "treatment": "Apply fungicides at flowering; use resistant varieties"
+            },
+            {
+              "name": "Powdery mildew",
+              "symptoms": "White powdery patches on leaves and stems",
+              "treatment": "Sulfur-based fungicides; ensure good air circulation"
+            },
+            {
+              "name": "Leaf rust",
+              "symptoms": "Orange-brown pustules on leaf surfaces",
+              "treatment": "Apply rust-resistant cultivars and timely fungicide sprays"
+            }
+          ],
+          "common_pests": [
+            {
+              "name": "Aphids",
+              "treatment": "Introduce natural predators; use insecticidal soaps"
+            },
+            {
+              "name": "Hessian fly",
+              "treatment": "Plant resistant varieties; monitor and apply targeted insecticides"
+            },
+            {
+              "name": "Wheat midge",
+              "treatment": "Early sowing and insecticide applications during adult emergence"
+            }
+          ],
+          "fertilizer": {
+            "recommended": "Apply nitrogen-rich fertilizer at tillering and booting stages",
+            "npk_ratio": "120-60-40",
+            "organic_options": [
+              "Compost",
+              "Manure",
+              "Green manure"
+            ]
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 3.0,
+            "excellent_tonnes_per_hectare": 7.0
+          },
+          "recommendations": {
+            "irrigation": "Maintain soil moisture deficit of 20-30%; avoid water stress during flowering",
+            "fertilizer": "Split nitrogen applications: 50% at sowing, rest at tillering and booting",
+            "harvesting": "Harvest when grain moisture is 12-14% using combine harvester with low grain loss settings",
+            "storage": "Store in ventilated silos at 12-15°C and 60% relative humidity"
+          },
+          "summary": "Wheat (Triticum aestivum) is a globally important annual cereal grown on loamy to clay soils with pH 6.0-7.5. Optimal temperatures are 10-25 °C, rainfall 300-900 mm/year, and sunlight 6-10 h/day. It requires medium water and nitrogen, with critical moisture needs during flowering. Major producers include China, India, Russia, the United States, and France. Typical yields are 3 t/ha, reaching up to 7 t/ha under optimal management. Key diseases are Fusarium head blight, powdery mildew, and leaf rust; main pests include aphids, Hessian fly, and wheat midge. Integrated pest management, split nitrogen fertilization, and timely harvest ensure high quality grain.",
+          "references": [
+            "FAO",
+            "ICAR",
+            "USDA",
+            "CGIAR"
+          ],
+          "generated_by": "Groq",
+          "version": 2
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T20:30",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.8,
+          "humidity": 88,
+          "rainfall": 0.0,
+          "wind_speed": 15.6,
+          "pressure": 962.4,
+          "time": "2026-08-31T20:30"
+        },
+        "assessment": {
+          "crop": "wheat",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (50-70%)",
+            "Rainfall below optimal (300-900 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "failed",
+        "market": null,
+        "nearest_market": null,
+        "top_markets": [],
+        "raw_data": null,
+        "assessment": {
+          "market_score": 0,
+          "trend": "Unknown",
+          "recommendation": "No market data available for wheat.",
+          "opportunities": [],
+          "risks": []
+        },
+        "confidence": 0
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T15:07:20.168117",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "wheat",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.8\nHumidity : 88\nRainfall : 0.0\nWind Speed : 15.6\nPressure : 962.4\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Unavailable\nNearest Distance : Unknown km\nNearest Market Price : Unknown\nNearest Market Trend : Unknown\n\nBest Ranked Market : Unavailable\nBest Market Price : Unknown\nBest Market Distance : Unknown km\nBest Market Trend : Unknown\n\nMarkets Evaluated : 0\nCrop : wheat\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "wheat",
+      "crop_profile": {
+        "crop": "wheat",
+        "scientific_name": "Triticum aestivum",
+        "family": "Poaceae",
+        "type": "Annual",
+        "category": "Cereal",
+        "growth_duration_days": 120,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Fruiting",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 10,
+            "maximum": 25,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 50,
+            "maximum": 70,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 300,
+            "maximum": 900,
+            "unit": "mm/year"
+          },
+          "soil_ph": {
+            "minimum": 6.0,
+            "maximum": 7.5
+          },
+          "wind_speed": {
+            "maximum": 30,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 10
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "Clay",
+            "Loam"
+          ],
+          "preferred_nitrogen": "Medium",
+          "preferred_organic_carbon": "Medium",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "Surface or Sprinkler",
+          "water_requirement": "Medium",
+          "critical_growth_stage": "Flowering",
+          "recommended_frequency": "Every 7-10 days during critical stages"
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.8,
+            "healthy": 0.65,
+            "moderate": 0.45,
+            "poor": 0.3
+          },
+          "ndwi": {
+            "low_stress": 0.3,
+            "moderate_stress": 0.1,
+            "high_stress": 0.0
+          },
+          "savi": {
+            "low_exposure": 0.6,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.2
+          }
+        },
+        "market": {
+          "keywords": [
+            "Bread",
+            "Flour",
+            "Staple food",
+            "Cereal"
+          ],
+          "major_states": [
+            "Kansas",
+            "North Dakota",
+            "Montana",
+            "Washington"
+          ],
+          "major_countries": [
+            "China",
+            "India",
+            "Russia",
+            "United States",
+            "France"
+          ],
+          "harvest_season": "June-August",
+          "storage_capability": "Good",
+          "perishability": "Low"
+        },
+        "nutrition": {
+          "primary_nutrients": [
+            "Carbohydrates",
+            "Protein",
+            "Fiber"
+          ],
+          "commercial_products": [
+            "Flour",
+            "Bread",
+            "Pasta",
+            "Cereal",
+            "Malt"
+          ]
+        },
+        "common_diseases": [
+          {
+            "name": "Fusarium head blight",
+            "symptoms": "Bleached, shriveled kernels and pinkish fungal growth on heads",
+            "treatment": "Apply fungicides at flowering; use resistant varieties"
+          },
+          {
+            "name": "Powdery mildew",
+            "symptoms": "White powdery patches on leaves and stems",
+            "treatment": "Sulfur-based fungicides; ensure good air circulation"
+          },
+          {
+            "name": "Leaf rust",
+            "symptoms": "Orange-brown pustules on leaf surfaces",
+            "treatment": "Apply rust-resistant cultivars and timely fungicide sprays"
+          }
+        ],
+        "common_pests": [
+          {
+            "name": "Aphids",
+            "treatment": "Introduce natural predators; use insecticidal soaps"
+          },
+          {
+            "name": "Hessian fly",
+            "treatment": "Plant resistant varieties; monitor and apply targeted insecticides"
+          },
+          {
+            "name": "Wheat midge",
+            "treatment": "Early sowing and insecticide applications during adult emergence"
+          }
+        ],
+        "fertilizer": {
+          "recommended": "Apply nitrogen-rich fertilizer at tillering and booting stages",
+          "npk_ratio": "120-60-40",
+          "organic_options": [
+            "Compost",
+            "Manure",
+            "Green manure"
+          ]
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 3.0,
+          "excellent_tonnes_per_hectare": 7.0
+        },
+        "recommendations": {
+          "irrigation": "Maintain soil moisture deficit of 20-30%; avoid water stress during flowering",
+          "fertilizer": "Split nitrogen applications: 50% at sowing, rest at tillering and booting",
+          "harvesting": "Harvest when grain moisture is 12-14% using combine harvester with low grain loss settings",
+          "storage": "Store in ventilated silos at 12-15°C and 60% relative humidity"
+        },
+        "summary": "Wheat (Triticum aestivum) is a globally important annual cereal grown on loamy to clay soils with pH 6.0-7.5. Optimal temperatures are 10-25 °C, rainfall 300-900 mm/year, and sunlight 6-10 h/day. It requires medium water and nitrogen, with critical moisture needs during flowering. Major producers include China, India, Russia, the United States, and France. Typical yields are 3 t/ha, reaching up to 7 t/ha under optimal management. Key diseases are Fusarium head blight, powdery mildew, and leaf rust; main pests include aphids, Hessian fly, and wheat midge. Integrated pest management, split nitrogen fertilization, and timely harvest ensure high quality grain.",
+        "references": [
+          "FAO",
+          "ICAR",
+          "USDA",
+          "CGIAR"
+        ],
+        "generated_by": "Groq",
+        "version": 2
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T20:30",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.8,
+          "humidity": 88,
+          "rainfall": 0.0,
+          "wind_speed": 15.6,
+          "pressure": 962.4,
+          "time": "2026-08-31T20:30"
+        },
+        "assessment": {
+          "crop": "wheat",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (50-70%)",
+            "Rainfall below optimal (300-900 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T15:07:20.168117",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "failed",
+        "market": null,
+        "nearest_market": null,
+        "top_markets": [],
+        "raw_data": null,
+        "assessment": {
+          "market_score": 0,
+          "trend": "Unknown",
+          "recommendation": "No market data available for wheat.",
+          "opportunities": [],
+          "risks": []
+        },
+        "confidence": 0
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "wheat",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.8\nHumidity : 88\nRainfall : 0.0\nWind Speed : 15.6\nPressure : 962.4\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Unavailable\nNearest Distance : Unknown km\nNearest Market Price : Unknown\nNearest Market Trend : Unknown\n\nBest Ranked Market : Unavailable\nBest Market Price : Unknown\nBest Market Distance : Unknown km\nBest Market Trend : Unknown\n\nMarkets Evaluated : 0\nCrop : wheat\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 90,
+      "vegetation_health": "Critical",
+      "market_trend": "Unknown",
+      "risks": [
+        "Humidity above optimal (50-70%)",
+        "Rainfall below optimal (300-900 mm/year)",
+        "Vegetation health is critical",
+        "High crop water stress",
+        "Large exposed soil area",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality"
+      ],
+      "confidence": 31.23
+    },
+    "plan": {
+      "goal": "Is now a good time to sell my wheat harvest?",
+      "execution_plan": [
+        {
+          "agent": "MarketAgent",
+          "priority": 1,
+          "purpose": "Assess current market prices, trends, and demand for wheat."
+        },
+        {
+          "agent": "HistoricalAgent",
+          "priority": 2,
+          "purpose": "Provide historical price and selling patterns for wheat in the region."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 3,
+          "purpose": "Generate the final recommendation based on market and historical analysis."
+        }
+      ],
+      "confidence": 0.92
+    },
+    "reasoning": {
+      "summary": "1 specialist agents reached a consensus.",
+      "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+      "merged_risks": [],
+      "merged_opportunities": [],
+      "conflicts": [],
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "agent": "HistoricalAgent",
+          "analysis": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+          "risks": [],
+          "opportunities": [],
+          "confidence": 0.85,
+          "metadata": {
+            "historical_available": false,
+            "pattern_count": 0,
+            "success_count": 0,
+            "failure_count": 0
+          }
+        }
+      ],
+      "metadata": {
+        "agents": [
+          "HistoricalAgent"
+        ],
+        "agent_count": 1,
+        "llm_provider": "gemini"
+      }
+    },
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.85,
+      "decision": "Continue Monitoring",
+      "priority": "P4",
+      "urgency": "Monitor",
+      "risk_level": "Low",
+      "action_order": [],
+      "priorities": [],
+      "impact": {
+        "agronomic": "Excellent",
+        "economic": "Good",
+        "environmental": "Moderate",
+        "operational": "Excellent",
+        "yield_risk": "Low",
+        "profitability": "Moderate",
+        "expected_benefit": "Continue monitoring crop conditions."
+      },
+      "summary": {
+        "executive": "Wheat cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+        "business": "Market trend is unknown with moderate profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+        "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: No major risks detected.."
+      },
+      "supporting_evidence": [
+        "HistoricalAgent: The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9011362577837276,
+        "posterior_mean": 0.9036151941346757,
+        "evidence": {
+          "positive": true,
+          "weight": 0.6375,
+          "reason": "Completed with confidence 0.85."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1597,
+          "utilities": {
+            "auto_execute": 15.63,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.16 from trust=0.90 (+/-0.06) on a medium-risk executive action => human_review (EU auto=15.63, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Continue monitoring the wheat crop and adjust management practices as needed.",
+      "priority": "Low",
+      "justification": "All specialist agents reached consensus that there are no major immediate risks. Soil health is excellent, but satellite imagery shows critical vegetation health and high water stress. Maintaining vigilance will allow timely corrective actions while preserving the current good agronomic conditions.",
+      "actions": [
+        "Conduct weekly field scouting for signs of nutrient deficiency, disease (e.g., Fusarium head blight, powdery mildew) and pest pressure.",
+        "Increase irrigation frequency to every 5‑7 days during the flowering stage to counter low rainfall and high humidity, using surface or sprinkler systems.",
+        "Apply a balanced foliar micronutrient spray (e.g., zinc, manganese) to address the low organic carbon indication and improve plant vigor.",
+        "Implement mulching or cover crops on exposed soil areas to reduce evaporation and improve soil organic matter.",
+        "Record soil moisture and NDVI values each week to track trends."
+      ],
+      "expected_outcome": "Stabilized vegetation health, reduced water stress, and preservation of the excellent soil conditions, leading to a normal to above‑average wheat yield.",
+      "monitoring_plan": [
+        "Weekly NDVI assessment from satellite or drone imagery (target >0.45).",
+        "Bi‑weekly soil moisture readings at 30 cm depth; maintain 60‑70% of field capacity.",
+        "Weather watch: monitor humidity and rainfall forecasts; adjust irrigation accordingly.",
+        "Disease surveillance: inspect heads at flowering for Fusarium symptoms; be ready to apply fungicide if needed.",
+        "Document all observations in a farm log and review progress every two weeks."
+      ],
+      "confidence": 0.85,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Continue Monitoring",
+      "executive_priority": "P4",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9188617495773465,
+        "posterior_mean": 0.9211048675360866,
+        "evidence": {
+          "positive": true,
+          "weight": 0.85,
+          "reason": "Completed with confidence 0.85."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1314,
+          "utilities": {
+            "auto_execute": 18.974,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.13 from trust=0.92 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=18.974, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "Is now a good time to sell my wheat harvest?",
+      "execution_plan": [
+        {
+          "agent": "MarketAgent",
+          "priority": 1,
+          "purpose": "Assess current market prices, trends, and demand for wheat."
+        },
+        {
+          "agent": "HistoricalAgent",
+          "priority": 2,
+          "purpose": "Provide historical price and selling patterns for wheat in the region."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 3,
+          "purpose": "Generate the final recommendation based on market and historical analysis."
+        }
+      ],
+      "specialists": {
+        "MarketAgent": {
+          "agent": "MarketAgent",
+          "status": "unavailable",
+          "analysis": "Market evidence is unavailable for this run. The market data source did not return usable data. No market-based assessment was produced.",
+          "summary": "",
+          "risks": [
+            "Market evidence could not be verified this run."
+          ],
+          "opportunities": [],
+          "confidence": 0.0,
+          "metadata": {
+            "source_status": "failed",
+            "source_error": "",
+            "generation_mode": "deterministic_unavailable"
+          },
+          "execution_time": 0.0,
+          "governance": {
+            "agent": "MarketAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.6061074954725583,
+            "posterior_mean": 0.6020553367024901,
+            "evidence": {
+              "positive": false,
+              "weight": 0.1,
+              "reason": "Upstream data source unavailable (mild reliability discount)."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.5545,
+              "utilities": {
+                "auto_execute": -2.178,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.55 from trust=0.60 (+/-0.16) on a low-risk data_collector action => human_review (EU auto=-2.178, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "HistoricalAgent": {
+          "agent": "HistoricalAgent",
+          "status": "completed",
+          "analysis": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+          "summary": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent. No comparable historical records are available. Historical recommendation: Because no historical evidence exists for this location, base management decisions on the current agronomic data: \n1. **Water Management** – Humidity is high (88%) and rainfall is negligible; vegetation health is critical with high water stress. Initiate supplemental irrigation (surface or sprinkler) to maintain a soil moisture deficit of 20‑30% and prioritize moisture during the flowering stage. \n2. **Soil Health** – Soil organic carbon is low; incorporate organic amendments (compost, green manure) and consider a modest split‑application of nitrogen (despite current high N) to avoid leaching. \n3. **Disease & Pest Vigilance** – High humidity favors powdery mildew and leaf rust; scout regularly and apply sulfur‑based fungicides or resistant varieties as preventive measures. Monitor for aphids and Hessian fly, especially after irrigation events. \n4. **Mulching / Ground Cover** – Increase ground cover or mulching to reduce soil exposure, lower evaporation, and improve organic carbon inputs. \n5. **Nutrient Monitoring** – Conduct leaf tissue analysis to confirm if the critical vegetation score is due to nutrient deficiency; adjust fertilization accordingly. \n6. **Market Planning** – Since market data is unavailable, establish contacts with regional grain aggregators in Karnataka and Andhra Pradesh to secure a sales outlet before harvest.",
+          "risks": [],
+          "opportunities": [],
+          "confidence": 0.85,
+          "metadata": {
+            "historical_available": false,
+            "pattern_count": 0,
+            "success_count": 0,
+            "failure_count": 0
+          },
+          "execution_time": 60.758,
+          "governance": {
+            "agent": "HistoricalAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.555712605465083,
+            "posterior_mean": 0.5772989485889976,
+            "evidence": {
+              "positive": true,
+              "weight": 0.425,
+              "reason": "Completed with confidence 0.85."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.5701,
+              "utilities": {
+                "auto_execute": -2.803,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.57 from trust=0.58 (+/-0.15) on a low-risk data_collector action => human_review (EU auto=-2.803, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": {
+        "summary": "1 specialist agents reached a consensus.",
+        "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+        "merged_risks": [],
+        "merged_opportunities": [],
+        "conflicts": [],
+        "confidence": 0.85,
+        "evidence": [
+          {
+            "agent": "HistoricalAgent",
+            "analysis": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+            "risks": [],
+            "opportunities": [],
+            "confidence": 0.85,
+            "metadata": {
+              "historical_available": false,
+              "pattern_count": 0,
+              "success_count": 0,
+              "failure_count": 0
+            }
+          }
+        ],
+        "metadata": {
+          "agents": [
+            "HistoricalAgent"
+          ],
+          "agent_count": 1,
+          "llm_provider": "gemini"
+        }
+      },
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.85,
+        "decision": "Continue Monitoring",
+        "priority": "P4",
+        "urgency": "Monitor",
+        "risk_level": "Low",
+        "action_order": [],
+        "priorities": [],
+        "impact": {
+          "agronomic": "Excellent",
+          "economic": "Good",
+          "environmental": "Moderate",
+          "operational": "Excellent",
+          "yield_risk": "Low",
+          "profitability": "Moderate",
+          "expected_benefit": "Continue monitoring crop conditions."
+        },
+        "summary": {
+          "executive": "Wheat cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+          "business": "Market trend is unknown with moderate profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+          "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: No major risks detected.."
+        },
+        "supporting_evidence": [
+          "HistoricalAgent: The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9011362577837276,
+          "posterior_mean": 0.9036151941346757,
+          "evidence": {
+            "positive": true,
+            "weight": 0.6375,
+            "reason": "Completed with confidence 0.85."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1597,
+            "utilities": {
+              "auto_execute": 15.63,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.16 from trust=0.90 (+/-0.06) on a medium-risk executive action => human_review (EU auto=15.63, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Continue monitoring the wheat crop and adjust management practices as needed.",
+        "priority": "Low",
+        "justification": "All specialist agents reached consensus that there are no major immediate risks. Soil health is excellent, but satellite imagery shows critical vegetation health and high water stress. Maintaining vigilance will allow timely corrective actions while preserving the current good agronomic conditions.",
+        "actions": [
+          "Conduct weekly field scouting for signs of nutrient deficiency, disease (e.g., Fusarium head blight, powdery mildew) and pest pressure.",
+          "Increase irrigation frequency to every 5‑7 days during the flowering stage to counter low rainfall and high humidity, using surface or sprinkler systems.",
+          "Apply a balanced foliar micronutrient spray (e.g., zinc, manganese) to address the low organic carbon indication and improve plant vigor.",
+          "Implement mulching or cover crops on exposed soil areas to reduce evaporation and improve soil organic matter.",
+          "Record soil moisture and NDVI values each week to track trends."
+        ],
+        "expected_outcome": "Stabilized vegetation health, reduced water stress, and preservation of the excellent soil conditions, leading to a normal to above‑average wheat yield.",
+        "monitoring_plan": [
+          "Weekly NDVI assessment from satellite or drone imagery (target >0.45).",
+          "Bi‑weekly soil moisture readings at 30 cm depth; maintain 60‑70% of field capacity.",
+          "Weather watch: monitor humidity and rainfall forecasts; adjust irrigation accordingly.",
+          "Disease surveillance: inspect heads at flowering for Fusarium symptoms; be ready to apply fungicide if needed.",
+          "Document all observations in a farm log and review progress every two weeks."
+        ],
+        "confidence": 0.85,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Continue Monitoring",
+        "executive_priority": "P4",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9188617495773465,
+          "posterior_mean": 0.9211048675360866,
+          "evidence": {
+            "positive": true,
+            "weight": 0.85,
+            "reason": "Completed with confidence 0.85."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1314,
+            "utilities": {
+              "auto_execute": 18.974,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.13 from trust=0.92 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=18.974, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Continue Monitoring",
+        "executive_summary": "The wheat crop in Coimbatore shows good soil health but critical vegetation condition. No major immediate risks were identified, so the plan is to keep close watch and adjust practices as needed.",
+        "recommendation": "Continue monitoring the wheat crop and adjust management practices as needed.",
+        "explanation": "Soil health is excellent (score 90, optimal pH, high nitrogen) while satellite imagery flags critical vegetation health, likely due to low organic carbon and water stress. Weather conditions are generally good but humidity is above the optimal range and rainfall is below the optimal range, creating a risk of moisture‑related stress. Because the risks are moderate and there are clear opportunities to improve water and nutrient management, the system advises ongoing monitoring rather than drastic action.",
+        "reasoning_summary": "Specialist agents (HistoricalAgent and CollaborativeReasoning) agreed that no major risks exist. The decision weighs soil strengths against vegetation stress and weather constraints, leading to a low‑risk, monitor‑focused recommendation.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "HistoricalAgent",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent. No comparable historical records are available. Historical recommendation: Because no historical evidence exists for this location, base management decisions on the current agronomic data: \n1. **Water Management** – Humidity is high (88%) and rainfall is negligible; vegetation health is critical with high water stress. Initiate supplemental irrigation (surface or sprinkler) to maintain a soil moisture deficit of 20‑30% and prioritize moisture during the flowering stage. \n2. **Soil Health** – Soil organic carbon is low; incorporate organic amendments (compost, green manure) and consider a modest split‑application of nitrogen (despite current high N) to avoid leaching. \n3. **Disease & Pest Vigilance** – High humidity favors powdery mildew and leaf rust; scout regularly and apply sulfur‑based fungicides or resistant varieties as preventive measures. Monitor for aphids and Hessian fly, especially after irrigation events. \n4. **Mulching / Ground Cover** – Increase ground cover or mulching to reduce soil exposure, lower evaporation, and improve organic carbon inputs. \n5. **Nutrient Monitoring** – Conduct leaf tissue analysis to confirm if the critical vegetation score is due to nutrient deficiency; adjust fertilization accordingly. \n6. **Market Planning** – Since market data is unavailable, establish contacts with regional grain aggregators in Karnataka and Andhra Pradesh to secure a sales outlet before harvest.",
+              "confidence": 0.85,
+              "key_risks": [],
+              "key_opportunities": [],
+              "ranked_evidence": [
+                {
+                  "source": "HistoricalAgent",
+                  "type": "analysis",
+                  "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+                  "confidence": 0.85,
+                  "reliability": 0.3,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.5775,
+                  "importance": "Low",
+                  "rank": 1
+                },
+                {
+                  "source": "HistoricalAgent",
+                  "type": "summary",
+                  "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent. No comparable historical records are available. Historical recommendation: Because no historical evidence exists for this location, base management decisions on the current agronomic data: \n1. **Water Management** – Humidity is high (88%) and rainfall is negligible; vegetation health is critical with high water stress. Initiate supplemental irrigation (surface or sprinkler) to maintain a soil moisture deficit of 20‑30% and prioritize moisture during the flowering stage. \n2. **Soil Health** – Soil organic carbon is low; incorporate organic amendments (compost, green manure) and consider a modest split‑application of nitrogen (despite current high N) to avoid leaching. \n3. **Disease & Pest Vigilance** – High humidity favors powdery mildew and leaf rust; scout regularly and apply sulfur‑based fungicides or resistant varieties as preventive measures. Monitor for aphids and Hessian fly, especially after irrigation events. \n4. **Mulching / Ground Cover** – Increase ground cover or mulching to reduce soil exposure, lower evaporation, and improve organic carbon inputs. \n5. **Nutrient Monitoring** – Conduct leaf tissue analysis to confirm if the critical vegetation score is due to nutrient deficiency; adjust fertilization accordingly. \n6. **Market Planning** – Since market data is unavailable, establish contacts with regional grain aggregators in Karnataka and Andhra Pradesh to secure a sales outlet before harvest.",
+                  "confidence": 0.85,
+                  "reliability": 0.3,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.5775,
+                  "importance": "Low",
+                  "rank": 2
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Evidence Ranking",
+              "source": "HistoricalAgent",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+              "confidence": 0.85,
+              "reliability": 0.3,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.5775,
+              "importance": "Low",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 3,
+              "stage": "Evidence Ranking",
+              "source": "HistoricalAgent",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent. No comparable historical records are available. Historical recommendation: Because no historical evidence exists for this location, base management decisions on the current agronomic data: \n1. **Water Management** – Humidity is high (88%) and rainfall is negligible; vegetation health is critical with high water stress. Initiate supplemental irrigation (surface or sprinkler) to maintain a soil moisture deficit of 20‑30% and prioritize moisture during the flowering stage. \n2. **Soil Health** – Soil organic carbon is low; incorporate organic amendments (compost, green manure) and consider a modest split‑application of nitrogen (despite current high N) to avoid leaching. \n3. **Disease & Pest Vigilance** – High humidity favors powdery mildew and leaf rust; scout regularly and apply sulfur‑based fungicides or resistant varieties as preventive measures. Monitor for aphids and Hessian fly, especially after irrigation events. \n4. **Mulching / Ground Cover** – Increase ground cover or mulching to reduce soil exposure, lower evaporation, and improve organic carbon inputs. \n5. **Nutrient Monitoring** – Conduct leaf tissue analysis to confirm if the critical vegetation score is due to nutrient deficiency; adjust fertilization accordingly. \n6. **Market Planning** – Since market data is unavailable, establish contacts with regional grain aggregators in Karnataka and Andhra Pradesh to secure a sales outlet before harvest.",
+              "confidence": 0.85,
+              "reliability": 0.3,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.5775,
+              "importance": "Low",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 4,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "1 specialist agents reached a consensus.",
+              "confidence": 0.85,
+              "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+              "merged_risks": [],
+              "merged_opportunities": [],
+              "conflicts": [],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 5,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Continue Monitoring",
+              "confidence": 0.85,
+              "priority": "P4",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 6,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Continue monitoring the wheat crop and adjust management practices as needed.",
+              "confidence": 0.85,
+              "actions": [
+                "Conduct weekly field scouting for signs of nutrient deficiency, disease (e.g., Fusarium head blight, powdery mildew) and pest pressure.",
+                "Increase irrigation frequency to every 5‑7 days during the flowering stage to counter low rainfall and high humidity, using surface or sprinkler systems.",
+                "Apply a balanced foliar micronutrient spray (e.g., zinc, manganese) to address the low organic carbon indication and improve plant vigor.",
+                "Implement mulching or cover crops on exposed soil areas to reduce evaporation and improve soil organic matter.",
+                "Record soil moisture and NDVI values each week to track trends."
+              ],
+              "justification": "All specialist agents reached consensus that there are no major immediate risks. Soil health is excellent, but satellite imagery shows critical vegetation health and high water stress. Maintaining vigilance will allow timely corrective actions while preserving the current good agronomic conditions.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "HistoricalAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+              "strength": 0.5775
+            },
+            {
+              "from": "HistoricalAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent. No comparable historical records are available. Historical recommendation: Because no historical evidence exists for this location, base management decisions on the current agronomic data: \n1. **Water Management** – Humidity is high (88%) and rainfall is negligible; vegetation health is critical with high water stress. Initiate supplemental irrigation (surface or sprinkler) to maintain a soil moisture deficit of 20‑30% and prioritize moisture during the flowering stage. \n2. **Soil Health** – Soil organic carbon is low; incorporate organic amendments (compost, green manure) and consider a modest split‑application of nitrogen (despite current high N) to avoid leaching. \n3. **Disease & Pest Vigilance** – High humidity favors powdery mildew and leaf rust; scout regularly and apply sulfur‑based fungicides or resistant varieties as preventive measures. Monitor for aphids and Hessian fly, especially after irrigation events. \n4. **Mulching / Ground Cover** – Increase ground cover or mulching to reduce soil exposure, lower evaporation, and improve organic carbon inputs. \n5. **Nutrient Monitoring** – Conduct leaf tissue analysis to confirm if the critical vegetation score is due to nutrient deficiency; adjust fertilization accordingly. \n6. **Market Planning** – Since market data is unavailable, establish contacts with regional grain aggregators in Karnataka and Andhra Pradesh to secure a sales outlet before harvest.",
+              "strength": 0.5775
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "1 specialist agents reached a consensus.",
+              "strength": 0.85
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Continue Monitoring",
+              "strength": 0.85
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Continue monitoring the wheat crop and adjust management practices as needed.",
+              "strength": 0.85
+            }
+          ],
+          "summary": "1 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Continue Monitoring'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 6,
+          "specialist_steps": 1,
+          "evidence_steps": 2,
+          "decision_step": 5,
+          "recommendation_step": 6,
+          "top_evidence": [
+            {
+              "source": "HistoricalAgent",
+              "type": "analysis",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+              "confidence": 0.85,
+              "reliability": 0.3,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.5775,
+              "importance": "Low",
+              "rank": 1
+            },
+            {
+              "source": "HistoricalAgent",
+              "type": "summary",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent. No comparable historical records are available. Historical recommendation: Because no historical evidence exists for this location, base management decisions on the current agronomic data: \n1. **Water Management** – Humidity is high (88%) and rainfall is negligible; vegetation health is critical with high water stress. Initiate supplemental irrigation (surface or sprinkler) to maintain a soil moisture deficit of 20‑30% and prioritize moisture during the flowering stage. \n2. **Soil Health** – Soil organic carbon is low; incorporate organic amendments (compost, green manure) and consider a modest split‑application of nitrogen (despite current high N) to avoid leaching. \n3. **Disease & Pest Vigilance** – High humidity favors powdery mildew and leaf rust; scout regularly and apply sulfur‑based fungicides or resistant varieties as preventive measures. Monitor for aphids and Hessian fly, especially after irrigation events. \n4. **Mulching / Ground Cover** – Increase ground cover or mulching to reduce soil exposure, lower evaporation, and improve organic carbon inputs. \n5. **Nutrient Monitoring** – Conduct leaf tissue analysis to confirm if the critical vegetation score is due to nutrient deficiency; adjust fertilization accordingly. \n6. **Market Planning** – Since market data is unavailable, establish contacts with regional grain aggregators in Karnataka and Andhra Pradesh to secure a sales outlet before harvest.",
+              "confidence": 0.85,
+              "reliability": 0.3,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.5775,
+              "importance": "Low",
+              "rank": 2
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "HistoricalAgent",
+              "type": "analysis",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+              "confidence": 0.85,
+              "reliability": 0.3,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.5775,
+              "importance": "Low",
+              "rank": 1
+            },
+            {
+              "source": "HistoricalAgent",
+              "type": "summary",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent. No comparable historical records are available. Historical recommendation: Because no historical evidence exists for this location, base management decisions on the current agronomic data: \n1. **Water Management** – Humidity is high (88%) and rainfall is negligible; vegetation health is critical with high water stress. Initiate supplemental irrigation (surface or sprinkler) to maintain a soil moisture deficit of 20‑30% and prioritize moisture during the flowering stage. \n2. **Soil Health** – Soil organic carbon is low; incorporate organic amendments (compost, green manure) and consider a modest split‑application of nitrogen (despite current high N) to avoid leaching. \n3. **Disease & Pest Vigilance** – High humidity favors powdery mildew and leaf rust; scout regularly and apply sulfur‑based fungicides or resistant varieties as preventive measures. Monitor for aphids and Hessian fly, especially after irrigation events. \n4. **Mulching / Ground Cover** – Increase ground cover or mulching to reduce soil exposure, lower evaporation, and improve organic carbon inputs. \n5. **Nutrient Monitoring** – Conduct leaf tissue analysis to confirm if the critical vegetation score is due to nutrient deficiency; adjust fertilization accordingly. \n6. **Market Planning** – Since market data is unavailable, establish contacts with regional grain aggregators in Karnataka and Andhra Pradesh to secure a sales outlet before harvest.",
+              "confidence": 0.85,
+              "reliability": 0.3,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.5775,
+              "importance": "Low",
+              "rank": 2
+            }
+          ],
+          "source_summary": {
+            "HistoricalAgent": {
+              "evidence_score": 0.5775,
+              "finding_count": 2,
+              "highest_importance": "Low"
+            }
+          },
+          "total_findings": 2,
+          "top_evidence": [
+            {
+              "source": "HistoricalAgent",
+              "type": "analysis",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent.",
+              "confidence": 0.85,
+              "reliability": 0.3,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.5775,
+              "importance": "Low",
+              "rank": 1
+            },
+            {
+              "source": "HistoricalAgent",
+              "type": "summary",
+              "finding": "The historical dataset for wheat in Coimbatore, Tamil Nadu contains zero records (record_count = 0). Consequently, there are no past seasons to compare with the current conditions, no documented successful or failed practices, and no recurring patterns that can be extracted from historical evidence. All risk and opportunity assessments must therefore rely solely on the present‑day weather, soil, and satellite observations rather than on precedent. No comparable historical records are available. Historical recommendation: Because no historical evidence exists for this location, base management decisions on the current agronomic data: \n1. **Water Management** – Humidity is high (88%) and rainfall is negligible; vegetation health is critical with high water stress. Initiate supplemental irrigation (surface or sprinkler) to maintain a soil moisture deficit of 20‑30% and prioritize moisture during the flowering stage. \n2. **Soil Health** – Soil organic carbon is low; incorporate organic amendments (compost, green manure) and consider a modest split‑application of nitrogen (despite current high N) to avoid leaching. \n3. **Disease & Pest Vigilance** – High humidity favors powdery mildew and leaf rust; scout regularly and apply sulfur‑based fungicides or resistant varieties as preventive measures. Monitor for aphids and Hessian fly, especially after irrigation events. \n4. **Mulching / Ground Cover** – Increase ground cover or mulching to reduce soil exposure, lower evaporation, and improve organic carbon inputs. \n5. **Nutrient Monitoring** – Conduct leaf tissue analysis to confirm if the critical vegetation score is due to nutrient deficiency; adjust fertilization accordingly. \n6. **Market Planning** – Since market data is unavailable, establish contacts with regional grain aggregators in Karnataka and Andhra Pradesh to secure a sales outlet before harvest.",
+              "confidence": 0.85,
+              "reliability": 0.3,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.5775,
+              "importance": "Low",
+              "rank": 2
+            }
+          ]
+        },
+        "risks": [
+          "Humidity above optimal may promote disease.",
+          "Insufficient rainfall could cause water stress.",
+          "Low organic carbon may limit nutrient availability.",
+          "Critical vegetation health indicates possible nutrient deficiency or disease."
+        ],
+        "opportunities": [
+          "Temperature is within the optimal range for wheat.",
+          "Wind conditions are suitable.",
+          "Soil pH is optimal for wheat growth.",
+          "Nitrogen level meets crop requirements.",
+          "Soil texture (clay loam) is favorable."
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Take no immediate action",
+            "expected_result": "Current risks may persist or worsen.",
+            "why_rejected": "Intervention (monitoring, irrigation, nutrient support) is recommended to address the critical vegetation health and water stress."
+          }
+        ],
+        "limitations": [
+          {
+            "category": "Missing Evidence",
+            "limitation": "WeatherAgent did not return an output.",
+            "impact": "The final recommendation was produced without WeatherAgent evidence.",
+            "evidence": "WeatherAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "SoilAgent did not return an output.",
+            "impact": "The final recommendation was produced without SoilAgent evidence.",
+            "evidence": "SoilAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "SatelliteAgent did not return an output.",
+            "impact": "The final recommendation was produced without SatelliteAgent evidence.",
+            "evidence": "SatelliteAgent"
+          }
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Weather changes can affect irrigation and field operations."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Monitor environmental stress."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Ensure irrigation is effective."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Monthly",
+            "reason": "Maintain optimal nutrient availability."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.6658,
+          "specialist_average": 0.2975,
+          "strongest_source": "HistoricalAgent",
+          "strongest_confidence": 0.2975,
+          "weakest_source": "HistoricalAgent",
+          "weakest_confidence": 0.2975,
+          "unavailable_sources": [],
+          "breakdown": {
+            "HistoricalAgent": 0.2975,
+            "CollaborativeReasoning": 0.85,
+            "ExecutiveDecision": 0.85
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.67. The strongest specialist evidence came from HistoricalAgent (0.30), while the weakest was HistoricalAgent (0.30). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.6658,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.838,
+            "trust_std": 0.0863
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8623,
+            "trust_std": 0.0809
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7426,
+            "trust_std": 0.1227
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6021,
+            "trust_std": 0.1565
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5773,
+            "trust_std": 0.1474
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9036,
+            "trust_std": 0.0633
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9211,
+            "trust_std": 0.0525
+          }
+        },
+        "crop_learning": {
+          "crop": "wheat",
+          "trust_mean": 0.8446,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.866,
+              "trust_std": 0.0854
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.85,
+      "statistics": {
+        "agents_planned": 3,
+        "specialist_agents": 1,
+        "agents_completed": 1,
+        "agents_failed": 0,
+        "agents_unavailable": 1,
+        "unavailable_agents": [
+          "MarketAgent"
+        ],
+        "planner_confidence": 0.92,
+        "reasoning_confidence": 0.85,
+        "executive_confidence": 0.85,
+        "explanation_confidence": 0.6658,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 3,
+        "monitoring_items": 4,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 258.954
+  }
+}

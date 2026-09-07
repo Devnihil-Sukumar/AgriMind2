@@ -1,0 +1,3299 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "rice",
+    "crop_profile": {
+      "crop": "rice",
+      "scientific_name": "Oryza sativa",
+      "family": "Poaceae",
+      "type": "annual",
+      "category": "",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 20,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 1000,
+          "maximum": 2000,
+          "unit": "mm"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "clay",
+          "loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "flood irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "",
+        "recommended_frequency": ""
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.4,
+          "moderate_stress": 0.2,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "food",
+          "staple",
+          "grain"
+        ],
+        "major_states": [
+          "California",
+          "Arkansas",
+          "Louisiana",
+          "Texas",
+          "Mississippi"
+        ],
+        "major_countries": [],
+        "harvest_season": "summer",
+        "storage_capability": "Moderate",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [],
+        "commercial_products": []
+      },
+      "common_diseases": [
+        "blast",
+        "sheath blight",
+        "leaf spot"
+      ],
+      "common_pests": [],
+      "fertilizer": {
+        "recommended": "balanced NPK",
+        "npk_ratio": "",
+        "organic_options": []
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 0,
+        "excellent_tonnes_per_hectare": 0
+      },
+      "recommendations": {
+        "irrigation": "",
+        "fertilizer": "",
+        "harvesting": "",
+        "storage": ""
+      },
+      "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+      "references": [],
+      "generated_by": "Groq",
+      "version": 2,
+      "recommended_irrigation": "flood irrigation",
+      "fertilizer_recommendation": "balanced NPK"
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T11:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 25.0,
+        "humidity": 70.0,
+        "rainfall": 15.0,
+        "wind_speed": 10.0,
+        "pressure": 964.1,
+        "time": "2026-08-31T11:45"
+      },
+      "assessment": {
+        "crop": "rice",
+        "status": "Good",
+        "identified_risks": [],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 74
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.0,
+        "nitrogen": "High",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.0,
+        "nitrogen": "High",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Optimal",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T06:26:00.768941",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.8,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": 0.4,
+        "stress": "Low"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Continue normal management."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Thoothukudi Market",
+      "nearest_market": {
+        "market": "Namakkal Market",
+        "district": "Namakkal",
+        "price": 2389.0,
+        "trend": "Increasing",
+        "distance_km": 134.09,
+        "market_score": 0.6433,
+        "rank": 5
+      },
+      "top_markets": [
+        {
+          "market": "Thoothukudi Market",
+          "district": "Thoothukudi",
+          "price": 2470.0,
+          "trend": "Increasing",
+          "distance_km": 281.81,
+          "market_score": 0.8007,
+          "rank": 1
+        },
+        {
+          "market": "Tiruvannamalai Mandi",
+          "district": "Tiruvannamalai",
+          "price": 2443.0,
+          "trend": "Increasing",
+          "distance_km": 267.05,
+          "market_score": 0.748,
+          "rank": 2
+        },
+        {
+          "market": "Tiruvarur Uzhavar Sandhai",
+          "district": "Tiruvarur",
+          "price": 2432.0,
+          "trend": "Increasing",
+          "distance_km": 293.81,
+          "market_score": 0.7265,
+          "rank": 3
+        },
+        {
+          "market": "Kanchipuram Market",
+          "district": "Kanchipuram",
+          "price": 2459.0,
+          "trend": "Increasing",
+          "distance_km": 360.83,
+          "market_score": 0.6891,
+          "rank": 4
+        },
+        {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "rice",
+        "TopMarkets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 100,
+        "trend": "Increasing",
+        "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+        "opportunities": [
+          "Market prices are trending upward across top markets."
+        ],
+        "risks": []
+      },
+      "confidence": 1.0,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "rice",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Increasing",
+    "risks": [
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality",
+      "Market prices increasing"
+    ],
+    "confidence": 28.98
+  },
+  "specialists": {
+    "MarketAgent": {
+      "agent": "MarketAgent",
+      "status": "completed",
+      "analysis": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+      "summary": "Nearest market: Namakkal Market (134.09 km). Best-ranked market: Thoothukudi Market with modal price 2470.0. 5 market(s) were evaluated. 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+      "risks": [
+        "Possible price correction after the summer harvest peak",
+        "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+        "Seasonal demand fluctuations, especially after major festivals",
+        "Moderate storage capacity may force rapid sale at lower prices if supply spikes"
+      ],
+      "opportunities": [
+        "Upward price trend across all top markets",
+        "Highest price and market score at Thoothukudi Market",
+        "Multiple nearby markets with increasing trends for diversified sales",
+        "Potential to secure institutional contracts during staple grain demand season",
+        "Ability to lock in premium rates before expected post\u2011harvest oversupply"
+      ],
+      "confidence": 0.96,
+      "metadata": {
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_market_count": 5,
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      },
+      "execution_time": 62.633,
+      "governance": {
+        "agent": "MarketAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.6515595633563012,
+        "posterior_mean": 0.6646554155455896,
+        "evidence": {
+          "positive": true,
+          "weight": 0.48,
+          "reason": "Completed with confidence 0.96."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.4535,
+          "utilities": {
+            "auto_execute": 1.859,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.45 from trust=0.66 (+/-0.12) on a low-risk data_collector action => human_review (EU auto=1.859, review=7.0, reject=-4.0)."
+        }
+      }
+    }
+  },
+  "reasoning": "CollaborativeReasoning(summary='Integrated assessment for rice in Coimbatore, Tamil Nadu shows optimal growing conditions, high soil health score (92/100), excellent live vegetation vigor (NDVI 0.8), and strong upward market price momentum in key regional mandis.', consensus='All active specialists agree that current agronomic and market parameters are highly favorable, recommending normal crop management alongside strategic market dispatch planning to capitalize on rising regional rice prices.', merged_risks=['Higher transportation costs to reach top-performing distant markets such as Thoothukudi', 'Potential market price correction following peak seasonal harvest supply', 'Moderate storage capacity constraining prolonged holding of harvested grain', 'Lack of verified historical field records for long-term comparative modeling'], merged_opportunities=['Optimal soil pH (6.0) and high nitrogen levels supporting robust growth', 'Excellent crop health with low moisture stress (NDVI 0.8, NDWI 0.4)', 'Favorable ambient temperature (25C) and relative humidity (70%)', 'Strong upward price trends across major markets peaking at Thoothukudi Mandi (2,470 INR/qtl)'], conflicts=[{'description': 'Discrepancy between live satellite telemetry showing Excellent vegetation (NDVI 0.8) and historical context logs indicating Critical vegetation (NDVI 0.154)', 'severity': 'Medium', 'resolution': 'Prioritized current real-time satellite telemetry (2026-08-30 acquisition) over synthetic/unmatched historical context logs'}], confidence=0.88, evidence=[{'agent': 'MarketAgent', 'analysis': \"1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.\", 'risks': ['Possible price correction after the summer harvest peak', 'Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)', 'Seasonal demand fluctuations, especially after major festivals', 'Moderate storage capacity may force rapid sale at lower prices if supply spikes'], 'opportunities': ['Upward price trend across all top markets', 'Highest price and market score at Thoothukudi Market', 'Multiple nearby markets with increasing trends for diversified sales', 'Potential to secure institutional contracts during staple grain demand season', 'Ability to lock in premium rates before expected post\u2011harvest oversupply'], 'confidence': 0.96, 'metadata': {'nearest_market': {'market': 'Namakkal Market', 'district': 'Namakkal', 'price': 2389.0, 'trend': 'Increasing', 'distance_km': 134.09, 'market_score': 0.6433, 'rank': 5}, 'top_market_count': 5, 'top_markets': [{'market': 'Thoothukudi Market', 'district': 'Thoothukudi', 'price': 2470.0, 'trend': 'Increasing', 'distance_km': 281.81, 'market_score': 0.8007, 'rank': 1}, {'market': 'Tiruvannamalai Mandi', 'district': 'Tiruvannamalai', 'price': 2443.0, 'trend': 'Increasing', 'distance_km': 267.05, 'market_score': 0.748, 'rank': 2}, {'market': 'Tiruvarur Uzhavar Sandhai', 'district': 'Tiruvarur', 'price': 2432.0, 'trend': 'Increasing', 'distance_km': 293.81, 'market_score': 0.7265, 'rank': 3}, {'market': 'Kanchipuram Market', 'district': 'Kanchipuram', 'price': 2459.0, 'trend': 'Increasing', 'distance_km': 360.83, 'market_score': 0.6891, 'rank': 4}, {'market': 'Namakkal Market', 'district': 'Namakkal', 'price': 2389.0, 'trend': 'Increasing', 'distance_km': 134.09, 'market_score': 0.6433, 'rank': 5}]}}], metadata={'agents': ['MarketAgent'], 'agent_count': 1, 'llm_provider': 'gemini'})",
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.88,
+    "decision": "Prepare for Harvest and Selling",
+    "priority": "P4",
+    "urgency": "Monitor",
+    "risk_level": "Low",
+    "action_order": [],
+    "priorities": [],
+    "impact": {
+      "agronomic": "Excellent",
+      "economic": "Excellent",
+      "environmental": "Excellent",
+      "operational": "Good",
+      "yield_risk": "Low",
+      "profitability": "High",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+      "business": "Market trend is increasing with high profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: Higher transportation costs to reach top-performing distant markets such as Thoothukudi, Potential market price correction following peak seasonal harvest supply, Moderate storage capacity constraining prolonged holding of harvested grain."
+    },
+    "supporting_evidence": [
+      "MarketAgent: 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window."
+    ],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 2.038,
+    "governance": {
+      "agent": "ExecutiveAgent",
+      "category": "executive",
+      "stage": "post",
+      "prior_mean": 0.9355291532418937,
+      "posterior_mean": 0.9364933817603717,
+      "evidence": {
+        "positive": true,
+        "weight": 0.66,
+        "reason": "Completed with confidence 0.88."
+      },
+      "risk": {
+        "category": "executive",
+        "risk_level": "Medium",
+        "benefit": 30.0,
+        "failure_cost": 60.0,
+        "review_cost": 12.0,
+        "reject_cost": 6.0
+      },
+      "decision": {
+        "action": "auto_execute",
+        "p_fail": 0.1063,
+        "utilities": {
+          "auto_execute": 20.434,
+          "human_review": 16.5,
+          "reject": -6.0
+        },
+        "rationale": "P(fail)=0.11 from trust=0.94 (+/-0.04) on a medium-risk executive action => auto_execute (EU auto=20.434, review=16.5, reject=-6.0)."
+      }
+    }
+  },
+  "recommendation": {
+    "recommendation": "Prepare for Harvest and Selling",
+    "priority": "Low",
+    "justification": "All agronomic indicators (soil pH 6.0, high nitrogen, loam texture, NDVI 0.8, NDWI 0.4) and weather (25\u202f\u00b0C, 70\u202f% humidity) are optimal for rice, and market prices are rising sharply, especially at Thoothukudi Market (\u20b92,470/qtl). The main constraints are higher transport costs to distant premium markets, limited storage capacity, and the risk of a price correction after peak seasonal supply. Acting now to harvest at peak maturity and move grain quickly to the best\u2011priced market will capture the current price premium while minimizing storage and transport risks.",
+    "actions": [
+      "1. Confirm crop maturity using NDVI (>0.75) and field scouting; schedule harvest for the next 7\u201110 days.",
+      "2. Mobilize flood\u2011irrigation drainage and prepare harvesting equipment (combine, labor) to ensure a clean, timely cut.",
+      "3. Arrange transport contracts to Thoothukudi Market; if transport cost exceeds 8\u202f% of expected revenue, consider the nearer Namakkal Market (\u20b92,389/qtl) as a secondary outlet.",
+      "4. Clean, dry, and grade harvested grain; conduct moisture testing to keep grain moisture \u226414\u202f% before storage or loading.",
+      "5. Secure forward sales or spot contracts with buyers at Thoothukudi (or alternative markets) to lock in current price levels.",
+      "6. Load grain promptly after drying to reduce storage time; if storage >5 days is unavoidable, monitor grain temperature and moisture daily.",
+      "7. Record harvest quantity, quality parameters, and logistics costs for post\u2011season analysis."
+    ],
+    "expected_outcome": "Harvested rice of high quality will be sold at premium market prices, delivering a high profit margin while keeping storage and transportation losses minimal.",
+    "monitoring_plan": [
+      "Daily NDVI/NDWI satellite checks to confirm crop readiness.",
+      "Weather forecast monitoring for rain events during the harvest window.",
+      "Real\u2011time market price tracking at Thoothukudi, Tiruvannamalai, Tiruvarur, Kanchipuram, and Namakkal markets.",
+      "Transport cost updates (fuel, distance, tolls) to evaluate profitability of each market route.",
+      "Post\u2011harvest grain moisture and temperature logs every 24\u202fh while in storage."
+    ],
+    "confidence": 0.9,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Prepare for Harvest and Selling",
+    "executive_priority": "P4",
+    "governance": {
+      "agent": "RecommendationAgent",
+      "category": "recommendation",
+      "stage": "post",
+      "prior_mean": 0.9450884657811076,
+      "posterior_mean": 0.9460858286868449,
+      "evidence": {
+        "positive": true,
+        "weight": 0.9,
+        "reason": "Completed with confidence 0.90."
+      },
+      "risk": {
+        "category": "recommendation",
+        "risk_level": "High",
+        "benefit": 40.0,
+        "failure_cost": 120.0,
+        "review_cost": 12.0,
+        "reject_cost": 8.0
+      },
+      "decision": {
+        "action": "human_review",
+        "p_fail": 0.0905,
+        "utilities": {
+          "auto_execute": 25.519,
+          "human_review": 26.0,
+          "reject": -8.0
+        },
+        "rationale": "P(fail)=0.09 from trust=0.95 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=25.519, review=26.0, reject=-8.0)."
+      }
+    }
+  },
+  "explanation": {
+    "executive_decision": "Prepare for Harvest and Selling",
+    "executive_summary": "All agronomic indicators are excellent and market prices are rising, so the farm should move to harvest and sell the grain now, while keeping an eye on transport costs and storage limits.",
+    "recommendation": "Prepare for Harvest and Selling",
+    "explanation": "The soil is healthy (score 92, pH 6.0, high nitrogen, loam texture) and the crop shows excellent vigor (NDVI 0.8, NDWI 0.4) under good weather (25\u202f\u00b0C, 70\u202f% humidity). Market analysis shows an increasing price trend with the highest price at Thoothukudi Market (\u20b92,470/qtl). The only constraints are higher transport costs to distant premium markets, limited storage capacity, and the possibility of a price correction after the peak harvest season.",
+    "reasoning_summary": "Optimal soil and weather conditions guarantee a high\u2011quality harvest. Market data indicate strong upward price momentum, making immediate sale profitable. Risks such as transport cost, storage limits, and post\u2011harvest price dip were weighed against the benefits, leading to the recommendation to harvest now and sell, prioritising the best\u2011priced market while monitoring costs.",
+    "decision_trace": {
+      "steps": [
+        {
+          "step": 1,
+          "stage": "Specialist",
+          "source": "MarketAgent",
+          "finding": "Nearest market: Namakkal Market (134.09 km). Best-ranked market: Thoothukudi Market with modal price 2470.0. 5 market(s) were evaluated. 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+          "confidence": 0.96,
+          "key_risks": [
+            "Possible price correction after the summer harvest peak",
+            "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+            "Seasonal demand fluctuations, especially after major festivals",
+            "Moderate storage capacity may force rapid sale at lower prices if supply spikes"
+          ],
+          "key_opportunities": [
+            "Upward price trend across all top markets",
+            "Highest price and market score at Thoothukudi Market",
+            "Multiple nearby markets with increasing trends for diversified sales",
+            "Potential to secure institutional contracts during staple grain demand season",
+            "Ability to lock in premium rates before expected post\u2011harvest oversupply"
+          ],
+          "ranked_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Possible price correction after the summer harvest peak",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Seasonal demand fluctuations, especially after major festivals",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 2,
+          "stage": "Evidence Ranking",
+          "source": "MarketAgent",
+          "finding": "Possible price correction after the summer harvest peak",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 3,
+          "stage": "Evidence Ranking",
+          "source": "MarketAgent",
+          "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 4,
+          "stage": "Evidence Ranking",
+          "source": "MarketAgent",
+          "finding": "Seasonal demand fluctuations, especially after major festivals",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 5,
+          "stage": "Evidence Ranking",
+          "source": "MarketAgent",
+          "finding": "Moderate storage capacity may force rapid sale at lower prices if supply spikes",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 6,
+          "stage": "Evidence Ranking",
+          "source": "MarketAgent",
+          "finding": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.841,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 7,
+          "stage": "Collaborative Reasoning",
+          "source": "CollaborativeEngine",
+          "finding": "Integrated assessment for rice in Coimbatore, Tamil Nadu shows optimal growing conditions, high soil health score (92/100), excellent live vegetation vigor (NDVI 0.8), and strong upward market price momentum in key regional mandis.",
+          "confidence": 0.88,
+          "consensus": "All active specialists agree that current agronomic and market parameters are highly favorable, recommending normal crop management alongside strategic market dispatch planning to capitalize on rising regional rice prices.",
+          "merged_risks": [
+            "Higher transportation costs to reach top-performing distant markets such as Thoothukudi",
+            "Potential market price correction following peak seasonal harvest supply",
+            "Moderate storage capacity constraining prolonged holding of harvested grain",
+            "Lack of verified historical field records for long-term comparative modeling"
+          ],
+          "merged_opportunities": [
+            "Optimal soil pH (6.0) and high nitrogen levels supporting robust growth",
+            "Excellent crop health with low moisture stress (NDVI 0.8, NDWI 0.4)",
+            "Favorable ambient temperature (25C) and relative humidity (70%)",
+            "Strong upward price trends across major markets peaking at Thoothukudi Mandi (2,470 INR/qtl)"
+          ],
+          "conflicts": [
+            {
+              "description": "Discrepancy between live satellite telemetry showing Excellent vegetation (NDVI 0.8) and historical context logs indicating Critical vegetation (NDVI 0.154)",
+              "severity": "Medium",
+              "resolution": "Prioritized current real-time satellite telemetry (2026-08-30 acquisition) over synthetic/unmatched historical context logs"
+            }
+          ],
+          "influence": "Converted specialist evidence into a combined decision context."
+        },
+        {
+          "step": 8,
+          "stage": "Executive Decision",
+          "source": "ExecutiveAgent",
+          "finding": "Prepare for Harvest and Selling",
+          "confidence": 0.88,
+          "priority": "P4",
+          "justification": "The executive decision was produced from collaborative reasoning.",
+          "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+        },
+        {
+          "step": 9,
+          "stage": "Recommendation",
+          "source": "RecommendationAgent",
+          "finding": "Prepare for Harvest and Selling",
+          "confidence": 0.9,
+          "actions": [
+            "1. Confirm crop maturity using NDVI (>0.75) and field scouting; schedule harvest for the next 7\u201110 days.",
+            "2. Mobilize flood\u2011irrigation drainage and prepare harvesting equipment (combine, labor) to ensure a clean, timely cut.",
+            "3. Arrange transport contracts to Thoothukudi Market; if transport cost exceeds 8\u202f% of expected revenue, consider the nearer Namakkal Market (\u20b92,389/qtl) as a secondary outlet.",
+            "4. Clean, dry, and grade harvested grain; conduct moisture testing to keep grain moisture \u226414\u202f% before storage or loading.",
+            "5. Secure forward sales or spot contracts with buyers at Thoothukudi (or alternative markets) to lock in current price levels.",
+            "6. Load grain promptly after drying to reduce storage time; if storage >5 days is unavoidable, monitor grain temperature and moisture daily.",
+            "7. Record harvest quantity, quality parameters, and logistics costs for post\u2011season analysis."
+          ],
+          "justification": "All agronomic indicators (soil pH 6.0, high nitrogen, loam texture, NDVI 0.8, NDWI 0.4) and weather (25\u202f\u00b0C, 70\u202f% humidity) are optimal for rice, and market prices are rising sharply, especially at Thoothukudi Market (\u20b92,470/qtl). The main constraints are higher transport costs to distant premium markets, limited storage capacity, and the risk of a price correction after peak seasonal supply. Acting now to harvest at peak maturity and move grain quickly to the best\u2011priced market will capture the current price premium while minimizing storage and transport risks.",
+          "influence": "Translated the executive decision into concrete recommended actions."
+        }
+      ],
+      "causal_chain": [
+        {
+          "from": "MarketAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Possible price correction after the summer harvest peak",
+          "strength": 0.851
+        },
+        {
+          "from": "MarketAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+          "strength": 0.851
+        },
+        {
+          "from": "MarketAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Seasonal demand fluctuations, especially after major festivals",
+          "strength": 0.851
+        },
+        {
+          "from": "CollaborativeReasoning",
+          "to": "ExecutiveAgent",
+          "relationship": "informs",
+          "evidence": "Integrated assessment for rice in Coimbatore, Tamil Nadu shows optimal growing conditions, high soil health score (92/100), excellent live vegetation vigor (NDVI 0.8), and strong upward market price momentum in key regional mandis.",
+          "strength": 0.88
+        },
+        {
+          "from": "ExecutiveAgent",
+          "to": "RecommendationAgent",
+          "relationship": "produces",
+          "evidence": "Prepare for Harvest and Selling",
+          "strength": 0.88
+        },
+        {
+          "from": "RecommendationAgent",
+          "to": "Farmer",
+          "relationship": "recommends",
+          "evidence": "Prepare for Harvest and Selling",
+          "strength": 0.9
+        }
+      ],
+      "summary": "1 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Prepare for Harvest and Selling'. The RecommendationAgent then translated that decision into actionable guidance.",
+      "total_steps": 9,
+      "specialist_steps": 1,
+      "evidence_steps": 5,
+      "decision_step": 8,
+      "recommendation_step": 9,
+      "top_evidence": [
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Possible price correction after the summer harvest peak",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Seasonal demand fluctuations, especially after major festivals",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Moderate storage capacity may force rapid sale at lower prices if supply spikes",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "MarketAgent",
+          "type": "analysis",
+          "finding": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.841,
+          "importance": "High",
+          "rank": 5
+        }
+      ]
+    },
+    "evidence": {
+      "ranked_evidence": [
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Possible price correction after the summer harvest peak",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Seasonal demand fluctuations, especially after major festivals",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Moderate storage capacity may force rapid sale at lower prices if supply spikes",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "MarketAgent",
+          "type": "analysis",
+          "finding": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.841,
+          "importance": "High",
+          "rank": 5
+        },
+        {
+          "source": "MarketAgent",
+          "type": "summary",
+          "finding": "Nearest market: Namakkal Market (134.09 km). Best-ranked market: Thoothukudi Market with modal price 2470.0. 5 market(s) were evaluated. 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.841,
+          "importance": "High",
+          "rank": 6
+        },
+        {
+          "source": "MarketAgent",
+          "type": "opportunity",
+          "finding": "Upward price trend across all top markets",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.836,
+          "importance": "High",
+          "rank": 7
+        },
+        {
+          "source": "MarketAgent",
+          "type": "opportunity",
+          "finding": "Highest price and market score at Thoothukudi Market",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.836,
+          "importance": "High",
+          "rank": 8
+        },
+        {
+          "source": "MarketAgent",
+          "type": "opportunity",
+          "finding": "Multiple nearby markets with increasing trends for diversified sales",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.836,
+          "importance": "High",
+          "rank": 9
+        },
+        {
+          "source": "MarketAgent",
+          "type": "opportunity",
+          "finding": "Potential to secure institutional contracts during staple grain demand season",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.836,
+          "importance": "High",
+          "rank": 10
+        },
+        {
+          "source": "MarketAgent",
+          "type": "opportunity",
+          "finding": "Ability to lock in premium rates before expected post\u2011harvest oversupply",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.836,
+          "importance": "High",
+          "rank": 11
+        }
+      ],
+      "source_summary": {
+        "MarketAgent": {
+          "evidence_score": 0.851,
+          "finding_count": 11,
+          "highest_importance": "High"
+        }
+      },
+      "total_findings": 11,
+      "top_evidence": [
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Possible price correction after the summer harvest peak",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Seasonal demand fluctuations, especially after major festivals",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "MarketAgent",
+          "type": "risk",
+          "finding": "Moderate storage capacity may force rapid sale at lower prices if supply spikes",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.851,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "MarketAgent",
+          "type": "analysis",
+          "finding": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+          "confidence": 0.96,
+          "reliability": 0.8,
+          "decision_relevance": 0.7,
+          "evidence_score": 0.841,
+          "importance": "High",
+          "rank": 5
+        }
+      ]
+    },
+    "risks": [
+      "Higher transportation costs to reach the premium Thoothukudi market",
+      "Possible price correction after the summer harvest peak",
+      "Seasonal demand fluctuations, especially after major festivals",
+      "Moderate storage capacity may force rapid sale at lower prices if supply spikes"
+    ],
+    "opportunities": [
+      "Optimal soil pH and high nitrogen support strong grain fill",
+      "Excellent crop health with low moisture stress",
+      "Favorable ambient temperature and humidity for rice maturity",
+      "Upward price trends across major markets, highest at Thoothukudi"
+    ],
+    "rejected_alternatives": [
+      {
+        "decision": "Sell at the nearest market",
+        "reason": "Lower transport cost but also lower price; the composite score favored Thoothukudi"
+      },
+      {
+        "decision": "Delay selling",
+        "reason": "Current market conditions already provide a favorable price; waiting could lead to price decline"
+      },
+      {
+        "decision": "Sell at the highest\u2011price market regardless of cost",
+        "reason": "Transport cost may erode profit; a balanced approach considering cost and price was preferred"
+      }
+    ],
+    "limitations": [
+      {
+        "category": "Missing Evidence",
+        "limitation": "WeatherAgent did not return an output.",
+        "impact": "Recommendation was made without additional weather forecast details."
+      },
+      {
+        "category": "Missing Evidence",
+        "limitation": "SoilAgent did not return an output.",
+        "impact": "Recommendation relied on existing soil data only."
+      },
+      {
+        "category": "Missing Evidence",
+        "limitation": "SatelliteAgent did not return an output.",
+        "impact": "Recommendation used the available NDVI/NDWI values but lacked further satellite analysis."
+      }
+    ],
+    "monitoring_plan": [
+      {
+        "source": "Weather",
+        "parameter": "Rainfall Forecast",
+        "frequency": "Daily",
+        "reason": "Rainfall affects irrigation and harvest timing"
+      },
+      {
+        "source": "Weather",
+        "parameter": "Temperature & Humidity",
+        "frequency": "Daily",
+        "reason": "Monitor for stress conditions during harvest"
+      },
+      {
+        "source": "Soil",
+        "parameter": "Soil Moisture",
+        "frequency": "Every 2 Days",
+        "reason": "Ensure fields are not too wet for combine operation"
+      },
+      {
+        "source": "Soil",
+        "parameter": "Soil pH",
+        "frequency": "Monthly",
+        "reason": "Confirm pH remains in optimal range for post\u2011harvest soil health"
+      }
+    ],
+    "confidence_breakdown": {
+      "overall": 0.9067,
+      "specialist_average": 0.96,
+      "strongest_source": "MarketAgent",
+      "strongest_confidence": 0.96,
+      "weakest_source": "MarketAgent",
+      "weakest_confidence": 0.96,
+      "unavailable_sources": [],
+      "breakdown": {
+        "MarketAgent": 0.96,
+        "CollaborativeReasoning": 0.88,
+        "ExecutiveDecision": 0.88
+      },
+      "confidence_explanation": "Overall evidence confidence is 0.91. The strongest specialist evidence came from MarketAgent (0.96), while the weakest was MarketAgent (0.96). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+    },
+    "overall_confidence": 0.9067,
+    "model": "Qwen",
+    "module": "Explainable Recommendation",
+    "version": "2.0",
+    "status": "completed"
+  },
+  "governance": {
+    "agent_trust": {
+      "WeatherAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.8845,
+        "trust_std": 0.0604
+      },
+      "SoilAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.7956,
+        "trust_std": 0.0767
+      },
+      "SatelliteAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.6958,
+        "trust_std": 0.0964
+      },
+      "MarketAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.6647,
+        "trust_std": 0.1182
+      },
+      "HistoricalAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.5972,
+        "trust_std": 0.1433
+      },
+      "ExecutiveAgent": {
+        "category": "executive",
+        "trust_mean": 0.9365,
+        "trust_std": 0.0428
+      },
+      "RecommendationAgent": {
+        "category": "recommendation",
+        "trust_mean": 0.9461,
+        "trust_std": 0.0366
+      }
+    },
+    "crop_learning": {
+      "crop": "rice",
+      "trust_mean": 0.9074,
+      "decision": "human_review",
+      "all_crops": {
+        "cotton": {
+          "trust_mean": 0.804,
+          "trust_std": 0.1186
+        },
+        "rice": {
+          "trust_mean": 0.9074,
+          "trust_std": 0.0609
+        },
+        "wheat": {
+          "trust_mean": 0.8446,
+          "trust_std": 0.0973
+        },
+        "mango": {
+          "trust_mean": 0.8461,
+          "trust_std": 0.0964
+        },
+        "tomato": {
+          "trust_mean": 0.8733,
+          "trust_std": 0.0812
+        }
+      }
+    },
+    "recommendation_requires_review": true,
+    "recommendation_rejected": false
+  },
+  "statistics": {
+    "agents_planned": 2,
+    "specialist_agents": 1,
+    "agents_completed": 1,
+    "agents_failed": 0,
+    "agents_unavailable": 0,
+    "unavailable_agents": [],
+    "planner_confidence": 0.9,
+    "reasoning_confidence": 0.88,
+    "executive_confidence": 0.88,
+    "explanation_confidence": 0.9067,
+    "decision_trace_steps": 9,
+    "evidence_sources": 4,
+    "limitations": 3,
+    "monitoring_items": 4,
+    "planner_model": "Qwen",
+    "reasoning_model": "Groq",
+    "executive_model": "Groq",
+    "recommendation_model": "Groq",
+    "explanation_model": "Qwen"
+  },
+  "plan": {
+    "goal": "Is now a good time to sell my rice harvest?",
+    "execution_plan": [
+      {
+        "agent": "MarketAgent",
+        "priority": 1,
+        "purpose": "Analyze market conditions and price trends relevant to the sale timing."
+      },
+      {
+        "agent": "RecommendationAgent",
+        "priority": 2,
+        "purpose": "Generate the final recommendation based on specialist analysis."
+      }
+    ],
+    "confidence": 0.9
+  },
+  "total_time": 205.786,
+  "stage_times": {
+    "total": 205.786
+  },
+  "condition": "full_system",
+  "governance_used": true,
+  "raw_result": {
+    "query": "Is now a good time to sell my rice harvest?",
+    "crop_profile": {
+      "crop": "rice",
+      "scientific_name": "Oryza sativa",
+      "family": "Poaceae",
+      "type": "annual",
+      "category": "",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 20,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 1000,
+          "maximum": 2000,
+          "unit": "mm"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "clay",
+          "loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "flood irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "",
+        "recommended_frequency": ""
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.4,
+          "moderate_stress": 0.2,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "food",
+          "staple",
+          "grain"
+        ],
+        "major_states": [
+          "California",
+          "Arkansas",
+          "Louisiana",
+          "Texas",
+          "Mississippi"
+        ],
+        "major_countries": [],
+        "harvest_season": "summer",
+        "storage_capability": "Moderate",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [],
+        "commercial_products": []
+      },
+      "common_diseases": [
+        "blast",
+        "sheath blight",
+        "leaf spot"
+      ],
+      "common_pests": [],
+      "fertilizer": {
+        "recommended": "balanced NPK",
+        "npk_ratio": "",
+        "organic_options": []
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 0,
+        "excellent_tonnes_per_hectare": 0
+      },
+      "recommendations": {
+        "irrigation": "",
+        "fertilizer": "",
+        "harvesting": "",
+        "storage": ""
+      },
+      "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+      "references": [],
+      "generated_by": "Groq",
+      "version": 2,
+      "recommended_irrigation": "flood irrigation",
+      "fertilizer_recommendation": "balanced NPK"
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-09-05T13:06:54.346382",
+        "crop": "rice",
+        "crop_profile": {
+          "crop": "rice",
+          "scientific_name": "Oryza sativa",
+          "family": "Poaceae",
+          "type": "annual",
+          "category": "",
+          "growth_duration_days": 120,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 20,
+              "maximum": 30,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 60,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 1000,
+              "maximum": 2000,
+              "unit": "mm"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 6.5
+            },
+            "wind_speed": {
+              "maximum": 30,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 10
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "clay",
+              "loam"
+            ],
+            "preferred_nitrogen": "High",
+            "preferred_organic_carbon": "Medium",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "flood irrigation",
+            "water_requirement": "Medium",
+            "critical_growth_stage": "",
+            "recommended_frequency": ""
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.8,
+              "healthy": 0.6,
+              "moderate": 0.4,
+              "poor": 0.2
+            },
+            "ndwi": {
+              "low_stress": 0.4,
+              "moderate_stress": 0.2,
+              "high_stress": 0.0
+            },
+            "savi": {
+              "low_exposure": 0.6,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.2
+            }
+          },
+          "market": {
+            "keywords": [
+              "food",
+              "staple",
+              "grain"
+            ],
+            "major_states": [
+              "California",
+              "Arkansas",
+              "Louisiana",
+              "Texas",
+              "Mississippi"
+            ],
+            "major_countries": [],
+            "harvest_season": "summer",
+            "storage_capability": "Moderate",
+            "perishability": "Medium"
+          },
+          "nutrition": {
+            "primary_nutrients": [],
+            "commercial_products": []
+          },
+          "common_diseases": [
+            "blast",
+            "sheath blight",
+            "leaf spot"
+          ],
+          "common_pests": [],
+          "fertilizer": {
+            "recommended": "balanced NPK",
+            "npk_ratio": "",
+            "organic_options": []
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 0,
+            "excellent_tonnes_per_hectare": 0
+          },
+          "recommendations": {
+            "irrigation": "",
+            "fertilizer": "",
+            "harvesting": "",
+            "storage": ""
+          },
+          "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+          "references": [],
+          "generated_by": "Groq",
+          "version": 2,
+          "recommended_irrigation": "flood irrigation",
+          "fertilizer_recommendation": "balanced NPK"
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T11:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 25.0,
+          "humidity": 70.0,
+          "rainfall": 15.0,
+          "wind_speed": 10.0,
+          "pressure": 964.1,
+          "time": "2026-08-31T11:45"
+        },
+        "assessment": {
+          "crop": "rice",
+          "status": "Good",
+          "identified_risks": [],
+          "opportunities": [
+            "Weather conditions are favorable."
+          ]
+        },
+        "confidence": 74
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "High",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "High",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 92,
+          "ph_status": "Optimal",
+          "nitrogen_status": "Optimal",
+          "organic_carbon_status": "Optimal",
+          "texture": "Loam",
+          "risks": [],
+          "opportunities": [
+            "Soil pH is within the optimal range."
+          ]
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Thoothukudi Market",
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "rice",
+          "TopMarkets": [
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 2470.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Tiruvannamalai Mandi",
+              "district": "Tiruvannamalai",
+              "price": 2443.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.748,
+              "rank": 2
+            },
+            {
+              "market": "Tiruvarur Uzhavar Sandhai",
+              "district": "Tiruvarur",
+              "price": 2432.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.7265,
+              "rank": 3
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 2459.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.6891,
+              "rank": 4
+            },
+            {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Increasing",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+          "opportunities": [
+            "Market prices are trending upward across top markets."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T06:26:00.768941",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.8,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Excellent"
+        },
+        "water": {
+          "ndwi": 0.4,
+          "stress": "Low"
+        },
+        "soil": {
+          "exposure": "Low"
+        },
+        "assessment": {
+          "vegetation_score": 90,
+          "recommendation": "Continue normal management."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "rice",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "rice",
+      "crop_profile": {
+        "crop": "rice",
+        "scientific_name": "Oryza sativa",
+        "family": "Poaceae",
+        "type": "annual",
+        "category": "",
+        "growth_duration_days": 120,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 20,
+            "maximum": 30,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 60,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 1000,
+            "maximum": 2000,
+            "unit": "mm"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 6.5
+          },
+          "wind_speed": {
+            "maximum": 30,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 10
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "clay",
+            "loam"
+          ],
+          "preferred_nitrogen": "High",
+          "preferred_organic_carbon": "Medium",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "flood irrigation",
+          "water_requirement": "Medium",
+          "critical_growth_stage": "",
+          "recommended_frequency": ""
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.8,
+            "healthy": 0.6,
+            "moderate": 0.4,
+            "poor": 0.2
+          },
+          "ndwi": {
+            "low_stress": 0.4,
+            "moderate_stress": 0.2,
+            "high_stress": 0.0
+          },
+          "savi": {
+            "low_exposure": 0.6,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.2
+          }
+        },
+        "market": {
+          "keywords": [
+            "food",
+            "staple",
+            "grain"
+          ],
+          "major_states": [
+            "California",
+            "Arkansas",
+            "Louisiana",
+            "Texas",
+            "Mississippi"
+          ],
+          "major_countries": [],
+          "harvest_season": "summer",
+          "storage_capability": "Moderate",
+          "perishability": "Medium"
+        },
+        "nutrition": {
+          "primary_nutrients": [],
+          "commercial_products": []
+        },
+        "common_diseases": [
+          "blast",
+          "sheath blight",
+          "leaf spot"
+        ],
+        "common_pests": [],
+        "fertilizer": {
+          "recommended": "balanced NPK",
+          "npk_ratio": "",
+          "organic_options": []
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 0,
+          "excellent_tonnes_per_hectare": 0
+        },
+        "recommendations": {
+          "irrigation": "",
+          "fertilizer": "",
+          "harvesting": "",
+          "storage": ""
+        },
+        "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+        "references": [],
+        "generated_by": "Groq",
+        "version": 2,
+        "recommended_irrigation": "flood irrigation",
+        "fertilizer_recommendation": "balanced NPK"
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T11:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 25.0,
+          "humidity": 70.0,
+          "rainfall": 15.0,
+          "wind_speed": 10.0,
+          "pressure": 964.1,
+          "time": "2026-08-31T11:45"
+        },
+        "assessment": {
+          "crop": "rice",
+          "status": "Good",
+          "identified_risks": [],
+          "opportunities": [
+            "Weather conditions are favorable."
+          ]
+        },
+        "confidence": 74
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "High",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "High",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 92,
+          "ph_status": "Optimal",
+          "nitrogen_status": "Optimal",
+          "organic_carbon_status": "Optimal",
+          "texture": "Loam",
+          "risks": [],
+          "opportunities": [
+            "Soil pH is within the optimal range."
+          ]
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T06:26:00.768941",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.8,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Excellent"
+        },
+        "water": {
+          "ndwi": 0.4,
+          "stress": "Low"
+        },
+        "soil": {
+          "exposure": "Low"
+        },
+        "assessment": {
+          "vegetation_score": 90,
+          "recommendation": "Continue normal management."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Thoothukudi Market",
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "rice",
+          "TopMarkets": [
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 2470.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Tiruvannamalai Mandi",
+              "district": "Tiruvannamalai",
+              "price": 2443.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.748,
+              "rank": 2
+            },
+            {
+              "market": "Tiruvarur Uzhavar Sandhai",
+              "district": "Tiruvarur",
+              "price": 2432.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.7265,
+              "rank": 3
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 2459.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.6891,
+              "rank": 4
+            },
+            {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Increasing",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+          "opportunities": [
+            "Market prices are trending upward across top markets."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "rice",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 92,
+      "vegetation_health": "Excellent",
+      "market_trend": "Increasing",
+      "risks": [
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality",
+        "Market prices increasing"
+      ],
+      "confidence": 28.98
+    },
+    "plan": {
+      "goal": "Is now a good time to sell my rice harvest?",
+      "execution_plan": [
+        {
+          "agent": "MarketAgent",
+          "priority": 1,
+          "purpose": "Analyze market conditions and price trends relevant to the sale timing."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 2,
+          "purpose": "Generate the final recommendation based on specialist analysis."
+        }
+      ],
+      "confidence": 0.9
+    },
+    "reasoning": "CollaborativeReasoning(summary='Integrated assessment for rice in Coimbatore, Tamil Nadu shows optimal growing conditions, high soil health score (92/100), excellent live vegetation vigor (NDVI 0.8), and strong upward market price momentum in key regional mandis.', consensus='All active specialists agree that current agronomic and market parameters are highly favorable, recommending normal crop management alongside strategic market dispatch planning to capitalize on rising regional rice prices.', merged_risks=['Higher transportation costs to reach top-performing distant markets such as Thoothukudi', 'Potential market price correction following peak seasonal harvest supply', 'Moderate storage capacity constraining prolonged holding of harvested grain', 'Lack of verified historical field records for long-term comparative modeling'], merged_opportunities=['Optimal soil pH (6.0) and high nitrogen levels supporting robust growth', 'Excellent crop health with low moisture stress (NDVI 0.8, NDWI 0.4)', 'Favorable ambient temperature (25C) and relative humidity (70%)', 'Strong upward price trends across major markets peaking at Thoothukudi Mandi (2,470 INR/qtl)'], conflicts=[{'description': 'Discrepancy between live satellite telemetry showing Excellent vegetation (NDVI 0.8) and historical context logs indicating Critical vegetation (NDVI 0.154)', 'severity': 'Medium', 'resolution': 'Prioritized current real-time satellite telemetry (2026-08-30 acquisition) over synthetic/unmatched historical context logs'}], confidence=0.88, evidence=[{'agent': 'MarketAgent', 'analysis': \"1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.\", 'risks': ['Possible price correction after the summer harvest peak', 'Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)', 'Seasonal demand fluctuations, especially after major festivals', 'Moderate storage capacity may force rapid sale at lower prices if supply spikes'], 'opportunities': ['Upward price trend across all top markets', 'Highest price and market score at Thoothukudi Market', 'Multiple nearby markets with increasing trends for diversified sales', 'Potential to secure institutional contracts during staple grain demand season', 'Ability to lock in premium rates before expected post\u2011harvest oversupply'], 'confidence': 0.96, 'metadata': {'nearest_market': {'market': 'Namakkal Market', 'district': 'Namakkal', 'price': 2389.0, 'trend': 'Increasing', 'distance_km': 134.09, 'market_score': 0.6433, 'rank': 5}, 'top_market_count': 5, 'top_markets': [{'market': 'Thoothukudi Market', 'district': 'Thoothukudi', 'price': 2470.0, 'trend': 'Increasing', 'distance_km': 281.81, 'market_score': 0.8007, 'rank': 1}, {'market': 'Tiruvannamalai Mandi', 'district': 'Tiruvannamalai', 'price': 2443.0, 'trend': 'Increasing', 'distance_km': 267.05, 'market_score': 0.748, 'rank': 2}, {'market': 'Tiruvarur Uzhavar Sandhai', 'district': 'Tiruvarur', 'price': 2432.0, 'trend': 'Increasing', 'distance_km': 293.81, 'market_score': 0.7265, 'rank': 3}, {'market': 'Kanchipuram Market', 'district': 'Kanchipuram', 'price': 2459.0, 'trend': 'Increasing', 'distance_km': 360.83, 'market_score': 0.6891, 'rank': 4}, {'market': 'Namakkal Market', 'district': 'Namakkal', 'price': 2389.0, 'trend': 'Increasing', 'distance_km': 134.09, 'market_score': 0.6433, 'rank': 5}]}}], metadata={'agents': ['MarketAgent'], 'agent_count': 1, 'llm_provider': 'gemini'})",
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.88,
+      "decision": "Prepare for Harvest and Selling",
+      "priority": "P4",
+      "urgency": "Monitor",
+      "risk_level": "Low",
+      "action_order": [],
+      "priorities": [],
+      "impact": {
+        "agronomic": "Excellent",
+        "economic": "Excellent",
+        "environmental": "Excellent",
+        "operational": "Good",
+        "yield_risk": "Low",
+        "profitability": "High",
+        "expected_benefit": "Current conditions provide opportunities for improved profitability."
+      },
+      "summary": {
+        "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+        "business": "Market trend is increasing with high profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+        "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: Higher transportation costs to reach top-performing distant markets such as Thoothukudi, Potential market price correction following peak seasonal harvest supply, Moderate storage capacity constraining prolonged holding of harvested grain."
+      },
+      "supporting_evidence": [
+        "MarketAgent: 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 2.038,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9355291532418937,
+        "posterior_mean": 0.9364933817603717,
+        "evidence": {
+          "positive": true,
+          "weight": 0.66,
+          "reason": "Completed with confidence 0.88."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1063,
+          "utilities": {
+            "auto_execute": 20.434,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.11 from trust=0.94 (+/-0.04) on a medium-risk executive action => auto_execute (EU auto=20.434, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Prepare for Harvest and Selling",
+      "priority": "Low",
+      "justification": "All agronomic indicators (soil pH 6.0, high nitrogen, loam texture, NDVI 0.8, NDWI 0.4) and weather (25\u202f\u00b0C, 70\u202f% humidity) are optimal for rice, and market prices are rising sharply, especially at Thoothukudi Market (\u20b92,470/qtl). The main constraints are higher transport costs to distant premium markets, limited storage capacity, and the risk of a price correction after peak seasonal supply. Acting now to harvest at peak maturity and move grain quickly to the best\u2011priced market will capture the current price premium while minimizing storage and transport risks.",
+      "actions": [
+        "1. Confirm crop maturity using NDVI (>0.75) and field scouting; schedule harvest for the next 7\u201110 days.",
+        "2. Mobilize flood\u2011irrigation drainage and prepare harvesting equipment (combine, labor) to ensure a clean, timely cut.",
+        "3. Arrange transport contracts to Thoothukudi Market; if transport cost exceeds 8\u202f% of expected revenue, consider the nearer Namakkal Market (\u20b92,389/qtl) as a secondary outlet.",
+        "4. Clean, dry, and grade harvested grain; conduct moisture testing to keep grain moisture \u226414\u202f% before storage or loading.",
+        "5. Secure forward sales or spot contracts with buyers at Thoothukudi (or alternative markets) to lock in current price levels.",
+        "6. Load grain promptly after drying to reduce storage time; if storage >5 days is unavoidable, monitor grain temperature and moisture daily.",
+        "7. Record harvest quantity, quality parameters, and logistics costs for post\u2011season analysis."
+      ],
+      "expected_outcome": "Harvested rice of high quality will be sold at premium market prices, delivering a high profit margin while keeping storage and transportation losses minimal.",
+      "monitoring_plan": [
+        "Daily NDVI/NDWI satellite checks to confirm crop readiness.",
+        "Weather forecast monitoring for rain events during the harvest window.",
+        "Real\u2011time market price tracking at Thoothukudi, Tiruvannamalai, Tiruvarur, Kanchipuram, and Namakkal markets.",
+        "Transport cost updates (fuel, distance, tolls) to evaluate profitability of each market route.",
+        "Post\u2011harvest grain moisture and temperature logs every 24\u202fh while in storage."
+      ],
+      "confidence": 0.9,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Prepare for Harvest and Selling",
+      "executive_priority": "P4",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9450884657811076,
+        "posterior_mean": 0.9460858286868449,
+        "evidence": {
+          "positive": true,
+          "weight": 0.9,
+          "reason": "Completed with confidence 0.90."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.0905,
+          "utilities": {
+            "auto_execute": 25.519,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.09 from trust=0.95 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=25.519, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "Is now a good time to sell my rice harvest?",
+      "execution_plan": [
+        {
+          "agent": "MarketAgent",
+          "priority": 1,
+          "purpose": "Analyze market conditions and price trends relevant to the sale timing."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 2,
+          "purpose": "Generate the final recommendation based on specialist analysis."
+        }
+      ],
+      "specialists": {
+        "MarketAgent": {
+          "agent": "MarketAgent",
+          "status": "completed",
+          "analysis": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+          "summary": "Nearest market: Namakkal Market (134.09 km). Best-ranked market: Thoothukudi Market with modal price 2470.0. 5 market(s) were evaluated. 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+          "risks": [
+            "Possible price correction after the summer harvest peak",
+            "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+            "Seasonal demand fluctuations, especially after major festivals",
+            "Moderate storage capacity may force rapid sale at lower prices if supply spikes"
+          ],
+          "opportunities": [
+            "Upward price trend across all top markets",
+            "Highest price and market score at Thoothukudi Market",
+            "Multiple nearby markets with increasing trends for diversified sales",
+            "Potential to secure institutional contracts during staple grain demand season",
+            "Ability to lock in premium rates before expected post\u2011harvest oversupply"
+          ],
+          "confidence": 0.96,
+          "metadata": {
+            "nearest_market": {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Increasing",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            },
+            "top_market_count": 5,
+            "top_markets": [
+              {
+                "market": "Thoothukudi Market",
+                "district": "Thoothukudi",
+                "price": 2470.0,
+                "trend": "Increasing",
+                "distance_km": 281.81,
+                "market_score": 0.8007,
+                "rank": 1
+              },
+              {
+                "market": "Tiruvannamalai Mandi",
+                "district": "Tiruvannamalai",
+                "price": 2443.0,
+                "trend": "Increasing",
+                "distance_km": 267.05,
+                "market_score": 0.748,
+                "rank": 2
+              },
+              {
+                "market": "Tiruvarur Uzhavar Sandhai",
+                "district": "Tiruvarur",
+                "price": 2432.0,
+                "trend": "Increasing",
+                "distance_km": 293.81,
+                "market_score": 0.7265,
+                "rank": 3
+              },
+              {
+                "market": "Kanchipuram Market",
+                "district": "Kanchipuram",
+                "price": 2459.0,
+                "trend": "Increasing",
+                "distance_km": 360.83,
+                "market_score": 0.6891,
+                "rank": 4
+              },
+              {
+                "market": "Namakkal Market",
+                "district": "Namakkal",
+                "price": 2389.0,
+                "trend": "Increasing",
+                "distance_km": 134.09,
+                "market_score": 0.6433,
+                "rank": 5
+              }
+            ]
+          },
+          "execution_time": 62.633,
+          "governance": {
+            "agent": "MarketAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.6515595633563012,
+            "posterior_mean": 0.6646554155455896,
+            "evidence": {
+              "positive": true,
+              "weight": 0.48,
+              "reason": "Completed with confidence 0.96."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.4535,
+              "utilities": {
+                "auto_execute": 1.859,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.45 from trust=0.66 (+/-0.12) on a low-risk data_collector action => human_review (EU auto=1.859, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": "CollaborativeReasoning(summary='Integrated assessment for rice in Coimbatore, Tamil Nadu shows optimal growing conditions, high soil health score (92/100), excellent live vegetation vigor (NDVI 0.8), and strong upward market price momentum in key regional mandis.', consensus='All active specialists agree that current agronomic and market parameters are highly favorable, recommending normal crop management alongside strategic market dispatch planning to capitalize on rising regional rice prices.', merged_risks=['Higher transportation costs to reach top-performing distant markets such as Thoothukudi', 'Potential market price correction following peak seasonal harvest supply', 'Moderate storage capacity constraining prolonged holding of harvested grain', 'Lack of verified historical field records for long-term comparative modeling'], merged_opportunities=['Optimal soil pH (6.0) and high nitrogen levels supporting robust growth', 'Excellent crop health with low moisture stress (NDVI 0.8, NDWI 0.4)', 'Favorable ambient temperature (25C) and relative humidity (70%)', 'Strong upward price trends across major markets peaking at Thoothukudi Mandi (2,470 INR/qtl)'], conflicts=[{'description': 'Discrepancy between live satellite telemetry showing Excellent vegetation (NDVI 0.8) and historical context logs indicating Critical vegetation (NDVI 0.154)', 'severity': 'Medium', 'resolution': 'Prioritized current real-time satellite telemetry (2026-08-30 acquisition) over synthetic/unmatched historical context logs'}], confidence=0.88, evidence=[{'agent': 'MarketAgent', 'analysis': \"1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.\", 'risks': ['Possible price correction after the summer harvest peak', 'Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)', 'Seasonal demand fluctuations, especially after major festivals', 'Moderate storage capacity may force rapid sale at lower prices if supply spikes'], 'opportunities': ['Upward price trend across all top markets', 'Highest price and market score at Thoothukudi Market', 'Multiple nearby markets with increasing trends for diversified sales', 'Potential to secure institutional contracts during staple grain demand season', 'Ability to lock in premium rates before expected post\u2011harvest oversupply'], 'confidence': 0.96, 'metadata': {'nearest_market': {'market': 'Namakkal Market', 'district': 'Namakkal', 'price': 2389.0, 'trend': 'Increasing', 'distance_km': 134.09, 'market_score': 0.6433, 'rank': 5}, 'top_market_count': 5, 'top_markets': [{'market': 'Thoothukudi Market', 'district': 'Thoothukudi', 'price': 2470.0, 'trend': 'Increasing', 'distance_km': 281.81, 'market_score': 0.8007, 'rank': 1}, {'market': 'Tiruvannamalai Mandi', 'district': 'Tiruvannamalai', 'price': 2443.0, 'trend': 'Increasing', 'distance_km': 267.05, 'market_score': 0.748, 'rank': 2}, {'market': 'Tiruvarur Uzhavar Sandhai', 'district': 'Tiruvarur', 'price': 2432.0, 'trend': 'Increasing', 'distance_km': 293.81, 'market_score': 0.7265, 'rank': 3}, {'market': 'Kanchipuram Market', 'district': 'Kanchipuram', 'price': 2459.0, 'trend': 'Increasing', 'distance_km': 360.83, 'market_score': 0.6891, 'rank': 4}, {'market': 'Namakkal Market', 'district': 'Namakkal', 'price': 2389.0, 'trend': 'Increasing', 'distance_km': 134.09, 'market_score': 0.6433, 'rank': 5}]}}], metadata={'agents': ['MarketAgent'], 'agent_count': 1, 'llm_provider': 'gemini'})",
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.88,
+        "decision": "Prepare for Harvest and Selling",
+        "priority": "P4",
+        "urgency": "Monitor",
+        "risk_level": "Low",
+        "action_order": [],
+        "priorities": [],
+        "impact": {
+          "agronomic": "Excellent",
+          "economic": "Excellent",
+          "environmental": "Excellent",
+          "operational": "Good",
+          "yield_risk": "Low",
+          "profitability": "High",
+          "expected_benefit": "Current conditions provide opportunities for improved profitability."
+        },
+        "summary": {
+          "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+          "business": "Market trend is increasing with high profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+          "justification": "The executive decision is based on 1 specialist agents. Primary concerns include: Higher transportation costs to reach top-performing distant markets such as Thoothukudi, Potential market price correction following peak seasonal harvest supply, Moderate storage capacity constraining prolonged holding of harvested grain."
+        },
+        "supporting_evidence": [
+          "MarketAgent: 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 2.038,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9355291532418937,
+          "posterior_mean": 0.9364933817603717,
+          "evidence": {
+            "positive": true,
+            "weight": 0.66,
+            "reason": "Completed with confidence 0.88."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.1063,
+            "utilities": {
+              "auto_execute": 20.434,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.11 from trust=0.94 (+/-0.04) on a medium-risk executive action => auto_execute (EU auto=20.434, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Prepare for Harvest and Selling",
+        "priority": "Low",
+        "justification": "All agronomic indicators (soil pH 6.0, high nitrogen, loam texture, NDVI 0.8, NDWI 0.4) and weather (25\u202f\u00b0C, 70\u202f% humidity) are optimal for rice, and market prices are rising sharply, especially at Thoothukudi Market (\u20b92,470/qtl). The main constraints are higher transport costs to distant premium markets, limited storage capacity, and the risk of a price correction after peak seasonal supply. Acting now to harvest at peak maturity and move grain quickly to the best\u2011priced market will capture the current price premium while minimizing storage and transport risks.",
+        "actions": [
+          "1. Confirm crop maturity using NDVI (>0.75) and field scouting; schedule harvest for the next 7\u201110 days.",
+          "2. Mobilize flood\u2011irrigation drainage and prepare harvesting equipment (combine, labor) to ensure a clean, timely cut.",
+          "3. Arrange transport contracts to Thoothukudi Market; if transport cost exceeds 8\u202f% of expected revenue, consider the nearer Namakkal Market (\u20b92,389/qtl) as a secondary outlet.",
+          "4. Clean, dry, and grade harvested grain; conduct moisture testing to keep grain moisture \u226414\u202f% before storage or loading.",
+          "5. Secure forward sales or spot contracts with buyers at Thoothukudi (or alternative markets) to lock in current price levels.",
+          "6. Load grain promptly after drying to reduce storage time; if storage >5 days is unavoidable, monitor grain temperature and moisture daily.",
+          "7. Record harvest quantity, quality parameters, and logistics costs for post\u2011season analysis."
+        ],
+        "expected_outcome": "Harvested rice of high quality will be sold at premium market prices, delivering a high profit margin while keeping storage and transportation losses minimal.",
+        "monitoring_plan": [
+          "Daily NDVI/NDWI satellite checks to confirm crop readiness.",
+          "Weather forecast monitoring for rain events during the harvest window.",
+          "Real\u2011time market price tracking at Thoothukudi, Tiruvannamalai, Tiruvarur, Kanchipuram, and Namakkal markets.",
+          "Transport cost updates (fuel, distance, tolls) to evaluate profitability of each market route.",
+          "Post\u2011harvest grain moisture and temperature logs every 24\u202fh while in storage."
+        ],
+        "confidence": 0.9,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Prepare for Harvest and Selling",
+        "executive_priority": "P4",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9450884657811076,
+          "posterior_mean": 0.9460858286868449,
+          "evidence": {
+            "positive": true,
+            "weight": 0.9,
+            "reason": "Completed with confidence 0.90."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.0905,
+            "utilities": {
+              "auto_execute": 25.519,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.09 from trust=0.95 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=25.519, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Prepare for Harvest and Selling",
+        "executive_summary": "All agronomic indicators are excellent and market prices are rising, so the farm should move to harvest and sell the grain now, while keeping an eye on transport costs and storage limits.",
+        "recommendation": "Prepare for Harvest and Selling",
+        "explanation": "The soil is healthy (score 92, pH 6.0, high nitrogen, loam texture) and the crop shows excellent vigor (NDVI 0.8, NDWI 0.4) under good weather (25\u202f\u00b0C, 70\u202f% humidity). Market analysis shows an increasing price trend with the highest price at Thoothukudi Market (\u20b92,470/qtl). The only constraints are higher transport costs to distant premium markets, limited storage capacity, and the possibility of a price correction after the peak harvest season.",
+        "reasoning_summary": "Optimal soil and weather conditions guarantee a high\u2011quality harvest. Market data indicate strong upward price momentum, making immediate sale profitable. Risks such as transport cost, storage limits, and post\u2011harvest price dip were weighed against the benefits, leading to the recommendation to harvest now and sell, prioritising the best\u2011priced market while monitoring costs.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "MarketAgent",
+              "finding": "Nearest market: Namakkal Market (134.09 km). Best-ranked market: Thoothukudi Market with modal price 2470.0. 5 market(s) were evaluated. 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+              "confidence": 0.96,
+              "key_risks": [
+                "Possible price correction after the summer harvest peak",
+                "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+                "Seasonal demand fluctuations, especially after major festivals",
+                "Moderate storage capacity may force rapid sale at lower prices if supply spikes"
+              ],
+              "key_opportunities": [
+                "Upward price trend across all top markets",
+                "Highest price and market score at Thoothukudi Market",
+                "Multiple nearby markets with increasing trends for diversified sales",
+                "Potential to secure institutional contracts during staple grain demand season",
+                "Ability to lock in premium rates before expected post\u2011harvest oversupply"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "Possible price correction after the summer harvest peak",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "MarketAgent",
+                  "type": "risk",
+                  "finding": "Seasonal demand fluctuations, especially after major festivals",
+                  "confidence": 0.96,
+                  "reliability": 0.8,
+                  "decision_relevance": 0.7,
+                  "evidence_score": 0.851,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Possible price correction after the summer harvest peak",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 3,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Seasonal demand fluctuations, especially after major festivals",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "Moderate storage capacity may force rapid sale at lower prices if supply spikes",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "MarketAgent",
+              "finding": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "Integrated assessment for rice in Coimbatore, Tamil Nadu shows optimal growing conditions, high soil health score (92/100), excellent live vegetation vigor (NDVI 0.8), and strong upward market price momentum in key regional mandis.",
+              "confidence": 0.88,
+              "consensus": "All active specialists agree that current agronomic and market parameters are highly favorable, recommending normal crop management alongside strategic market dispatch planning to capitalize on rising regional rice prices.",
+              "merged_risks": [
+                "Higher transportation costs to reach top-performing distant markets such as Thoothukudi",
+                "Potential market price correction following peak seasonal harvest supply",
+                "Moderate storage capacity constraining prolonged holding of harvested grain",
+                "Lack of verified historical field records for long-term comparative modeling"
+              ],
+              "merged_opportunities": [
+                "Optimal soil pH (6.0) and high nitrogen levels supporting robust growth",
+                "Excellent crop health with low moisture stress (NDVI 0.8, NDWI 0.4)",
+                "Favorable ambient temperature (25C) and relative humidity (70%)",
+                "Strong upward price trends across major markets peaking at Thoothukudi Mandi (2,470 INR/qtl)"
+              ],
+              "conflicts": [
+                {
+                  "description": "Discrepancy between live satellite telemetry showing Excellent vegetation (NDVI 0.8) and historical context logs indicating Critical vegetation (NDVI 0.154)",
+                  "severity": "Medium",
+                  "resolution": "Prioritized current real-time satellite telemetry (2026-08-30 acquisition) over synthetic/unmatched historical context logs"
+                }
+              ],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 8,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Prepare for Harvest and Selling",
+              "confidence": 0.88,
+              "priority": "P4",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 9,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Prepare for Harvest and Selling",
+              "confidence": 0.9,
+              "actions": [
+                "1. Confirm crop maturity using NDVI (>0.75) and field scouting; schedule harvest for the next 7\u201110 days.",
+                "2. Mobilize flood\u2011irrigation drainage and prepare harvesting equipment (combine, labor) to ensure a clean, timely cut.",
+                "3. Arrange transport contracts to Thoothukudi Market; if transport cost exceeds 8\u202f% of expected revenue, consider the nearer Namakkal Market (\u20b92,389/qtl) as a secondary outlet.",
+                "4. Clean, dry, and grade harvested grain; conduct moisture testing to keep grain moisture \u226414\u202f% before storage or loading.",
+                "5. Secure forward sales or spot contracts with buyers at Thoothukudi (or alternative markets) to lock in current price levels.",
+                "6. Load grain promptly after drying to reduce storage time; if storage >5 days is unavoidable, monitor grain temperature and moisture daily.",
+                "7. Record harvest quantity, quality parameters, and logistics costs for post\u2011season analysis."
+              ],
+              "justification": "All agronomic indicators (soil pH 6.0, high nitrogen, loam texture, NDVI 0.8, NDWI 0.4) and weather (25\u202f\u00b0C, 70\u202f% humidity) are optimal for rice, and market prices are rising sharply, especially at Thoothukudi Market (\u20b92,470/qtl). The main constraints are higher transport costs to distant premium markets, limited storage capacity, and the risk of a price correction after peak seasonal supply. Acting now to harvest at peak maturity and move grain quickly to the best\u2011priced market will capture the current price premium while minimizing storage and transport risks.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Possible price correction after the summer harvest peak",
+              "strength": 0.851
+            },
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+              "strength": 0.851
+            },
+            {
+              "from": "MarketAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Seasonal demand fluctuations, especially after major festivals",
+              "strength": 0.851
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "Integrated assessment for rice in Coimbatore, Tamil Nadu shows optimal growing conditions, high soil health score (92/100), excellent live vegetation vigor (NDVI 0.8), and strong upward market price momentum in key regional mandis.",
+              "strength": 0.88
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Prepare for Harvest and Selling",
+              "strength": 0.88
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Prepare for Harvest and Selling",
+              "strength": 0.9
+            }
+          ],
+          "summary": "1 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Prepare for Harvest and Selling'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 9,
+          "specialist_steps": 1,
+          "evidence_steps": 5,
+          "decision_step": 8,
+          "recommendation_step": 9,
+          "top_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Possible price correction after the summer harvest peak",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Seasonal demand fluctuations, especially after major festivals",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Moderate storage capacity may force rapid sale at lower prices if supply spikes",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "analysis",
+              "finding": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Possible price correction after the summer harvest peak",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Seasonal demand fluctuations, especially after major festivals",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Moderate storage capacity may force rapid sale at lower prices if supply spikes",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "analysis",
+              "finding": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 5
+            },
+            {
+              "source": "MarketAgent",
+              "type": "summary",
+              "finding": "Nearest market: Namakkal Market (134.09 km). Best-ranked market: Thoothukudi Market with modal price 2470.0. 5 market(s) were evaluated. 1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window. 4 market risk(s) identified. 5 market opportunity(s) identified.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 6
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Upward price trend across all top markets",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 7
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Highest price and market score at Thoothukudi Market",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 8
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Multiple nearby markets with increasing trends for diversified sales",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 9
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Potential to secure institutional contracts during staple grain demand season",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 10
+            },
+            {
+              "source": "MarketAgent",
+              "type": "opportunity",
+              "finding": "Ability to lock in premium rates before expected post\u2011harvest oversupply",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.836,
+              "importance": "High",
+              "rank": 11
+            }
+          ],
+          "source_summary": {
+            "MarketAgent": {
+              "evidence_score": 0.851,
+              "finding_count": 11,
+              "highest_importance": "High"
+            }
+          },
+          "total_findings": 11,
+          "top_evidence": [
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Possible price correction after the summer harvest peak",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Higher transportation costs to distant high\u2011price markets (e.g., Thoothukudi)",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Seasonal demand fluctuations, especially after major festivals",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "MarketAgent",
+              "type": "risk",
+              "finding": "Moderate storage capacity may force rapid sale at lower prices if supply spikes",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.851,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "MarketAgent",
+              "type": "analysis",
+              "finding": "1. Market trend: All top markets show an 'Increasing' price trend except Kanchipuram (Stable), indicating overall upward momentum for rice. 2. Nearest market: Namakkal Market (134 km away) offers a price of 2,389 INR with an increasing trend. 3. Best\u2011ranked market: Thoothukudi Market (rank 1) provides the highest modal price of 2,470 INR, a strong market_score (0.8007) and an increasing trend. 4. Top\u20115 market opportunities: Thoothukudi (2,470 INR, \u2191), Tiruvannamalai Mandi (2,443 INR, \u2191), Tiruvarur Uzhavar Sandhai (2,432 INR, \u2191), Kanchipuram (2,459 INR, Stable), Namakkal (2,389 INR, \u2191). 5. Current selling opportunity: Prices are near seasonal peaks and trending upward, especially in Thoothukudi and Tiruvannamalai, offering immediate premium sales. 6. Market risks: \u2022 Potential price correction after the summer harvest surge \u2022 Transportation cost and time due to distances (especially to Thoothukudi) \u2022 Seasonal demand fluctuations (e.g., post\u2011festival demand dip) \u2022 Limited storage capacity (moderate) could force rapid sale at lower prices. 7. Market opportunities: \u2022 Capitalise on the current upward price trend across multiple districts \u2022 Leverage higher market_score venues (Thoothukudi, Tiruvannamalai) for better negotiating power \u2022 Diversify sales across nearby markets to mitigate transport risk \u2022 Exploit the staple nature of rice to secure contracts with institutional buyers (schools, hospitals) during the summer season. 8. Harvest timing: The crop\u2019s harvest season is summer; selling now aligns with the pre\u2011harvest period when supply is still building, allowing capture of rising prices before peak post\u2011harvest oversupply. 9. Selling now recommendation: Yes \u2013 the combination of increasing trends, highest prices at Thoothukudi, and moderate storage suggests that immediate sales can lock in premium rates before the expected post\u2011harvest price dip. 10. Overall market assessment: The rice market in the surveyed region is robust, with clear upward price momentum and several high\u2011score markets offering attractive prices. While logistics and future supply\u2011driven price volatility pose risks, the current environment presents a strong selling window.",
+              "confidence": 0.96,
+              "reliability": 0.8,
+              "decision_relevance": 0.7,
+              "evidence_score": 0.841,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "Higher transportation costs to reach the premium Thoothukudi market",
+          "Possible price correction after the summer harvest peak",
+          "Seasonal demand fluctuations, especially after major festivals",
+          "Moderate storage capacity may force rapid sale at lower prices if supply spikes"
+        ],
+        "opportunities": [
+          "Optimal soil pH and high nitrogen support strong grain fill",
+          "Excellent crop health with low moisture stress",
+          "Favorable ambient temperature and humidity for rice maturity",
+          "Upward price trends across major markets, highest at Thoothukudi"
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Sell at the nearest market",
+            "reason": "Lower transport cost but also lower price; the composite score favored Thoothukudi"
+          },
+          {
+            "decision": "Delay selling",
+            "reason": "Current market conditions already provide a favorable price; waiting could lead to price decline"
+          },
+          {
+            "decision": "Sell at the highest\u2011price market regardless of cost",
+            "reason": "Transport cost may erode profit; a balanced approach considering cost and price was preferred"
+          }
+        ],
+        "limitations": [
+          {
+            "category": "Missing Evidence",
+            "limitation": "WeatherAgent did not return an output.",
+            "impact": "Recommendation was made without additional weather forecast details."
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "SoilAgent did not return an output.",
+            "impact": "Recommendation relied on existing soil data only."
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "SatelliteAgent did not return an output.",
+            "impact": "Recommendation used the available NDVI/NDWI values but lacked further satellite analysis."
+          }
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Rainfall affects irrigation and harvest timing"
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Monitor for stress conditions during harvest"
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Ensure fields are not too wet for combine operation"
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Monthly",
+            "reason": "Confirm pH remains in optimal range for post\u2011harvest soil health"
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.9067,
+          "specialist_average": 0.96,
+          "strongest_source": "MarketAgent",
+          "strongest_confidence": 0.96,
+          "weakest_source": "MarketAgent",
+          "weakest_confidence": 0.96,
+          "unavailable_sources": [],
+          "breakdown": {
+            "MarketAgent": 0.96,
+            "CollaborativeReasoning": 0.88,
+            "ExecutiveDecision": 0.88
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.91. The strongest specialist evidence came from MarketAgent (0.96), while the weakest was MarketAgent (0.96). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.9067,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8845,
+            "trust_std": 0.0604
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7956,
+            "trust_std": 0.0767
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6958,
+            "trust_std": 0.0964
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6647,
+            "trust_std": 0.1182
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9365,
+            "trust_std": 0.0428
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9461,
+            "trust_std": 0.0366
+          }
+        },
+        "crop_learning": {
+          "crop": "rice",
+          "trust_mean": 0.9074,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.9074,
+              "trust_std": 0.0609
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8461,
+              "trust_std": 0.0964
+            },
+            "tomato": {
+              "trust_mean": 0.8733,
+              "trust_std": 0.0812
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.88,
+      "statistics": {
+        "agents_planned": 2,
+        "specialist_agents": 1,
+        "agents_completed": 1,
+        "agents_failed": 0,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.9,
+        "reasoning_confidence": 0.88,
+        "executive_confidence": 0.88,
+        "explanation_confidence": 0.9067,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 3,
+        "monitoring_items": 4,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 205.786
+  },
+  "scenario_id": "market_increasing_rice",
+  "wall_time_seconds": 205.8
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "wheat_SatelliteAgent",
+  "crop": "wheat",
+  "agent": "SatelliteAgent",
+  "prompt_chars": 7434,
+  "ollama": {
+    "elapsed_seconds": 302.064,
+    "valid_json_first_try": false,
+    "json_error": null,
+    "response_chars": 0,
+    "raw_response": null,
+    "error": "RuntimeError: Ollama request timed out after 300 seconds."
+  },
+  "groq": {
+    "elapsed_seconds": 1.651,
+    "valid_json_first_try": false,
+    "json_error": "eval response did not contain a complete valid JSON object.",
+    "response_chars": 431,
+    "raw_response": "{\n    \"analysis\": \"1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating critically low canopy greenness and photosynthetic activity. 2. NDWI (‑0.204) is below the high‑stress threshold (0.0), confirming severe water deficit. 3. SAVI (0.105) falls under the high‑exposure category (≤0.20), showing extensive exposed soil and limited vegetation cover. 4. Overall vegetation condition is labeled \\\"Critical",
+    "error": null
+  }
+}

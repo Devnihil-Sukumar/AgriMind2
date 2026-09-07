@@ -1,0 +1,3876 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "rice",
+    "crop_profile": {
+      "crop": "rice",
+      "scientific_name": "Oryza sativa",
+      "family": "Poaceae",
+      "type": "annual",
+      "category": "",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 20,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 1000,
+          "maximum": 2000,
+          "unit": "mm"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "clay",
+          "loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "flood irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "",
+        "recommended_frequency": ""
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.4,
+          "moderate_stress": 0.2,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "food",
+          "staple",
+          "grain"
+        ],
+        "major_states": [
+          "California",
+          "Arkansas",
+          "Louisiana",
+          "Texas",
+          "Mississippi"
+        ],
+        "major_countries": [],
+        "harvest_season": "summer",
+        "storage_capability": "Moderate",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [],
+        "commercial_products": []
+      },
+      "common_diseases": [
+        "blast",
+        "sheath blight",
+        "leaf spot"
+      ],
+      "common_pests": [],
+      "fertilizer": {
+        "recommended": "balanced NPK",
+        "npk_ratio": "",
+        "organic_options": []
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 0,
+        "excellent_tonnes_per_hectare": 0
+      },
+      "recommendations": {
+        "irrigation": "",
+        "fertilizer": "",
+        "harvesting": "",
+        "storage": ""
+      },
+      "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+      "references": [],
+      "generated_by": "Groq",
+      "version": 2,
+      "recommended_irrigation": "flood irrigation",
+      "fertilizer_recommendation": "balanced NPK"
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T11:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 25.0,
+        "humidity": 70.0,
+        "rainfall": 0.0,
+        "wind_speed": 10.0,
+        "pressure": 964.1,
+        "time": "2026-08-31T11:45"
+      },
+      "assessment": {
+        "crop": "rice",
+        "status": "Good",
+        "identified_risks": [
+          "Rainfall below optimal, no recent precipitation."
+        ],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 74
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.0,
+        "nitrogen": "High",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.0,
+        "nitrogen": "High",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Optimal",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T06:26:00.768941",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.8,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": -0.35,
+        "stress": "High"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Increase irrigation immediately."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Thoothukudi Market",
+      "nearest_market": {
+        "market": "Namakkal Market",
+        "district": "Namakkal",
+        "price": 2389.0,
+        "trend": "Increasing",
+        "distance_km": 134.09,
+        "market_score": 0.6433,
+        "rank": 5
+      },
+      "top_markets": [
+        {
+          "market": "Thoothukudi Market",
+          "district": "Thoothukudi",
+          "price": 2470.0,
+          "trend": "Stable",
+          "distance_km": 281.81,
+          "market_score": 0.8007,
+          "rank": 1
+        },
+        {
+          "market": "Tiruvannamalai Mandi",
+          "district": "Tiruvannamalai",
+          "price": 2443.0,
+          "trend": "Stable",
+          "distance_km": 267.05,
+          "market_score": 0.748,
+          "rank": 2
+        },
+        {
+          "market": "Tiruvarur Uzhavar Sandhai",
+          "district": "Tiruvarur",
+          "price": 2432.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.7265,
+          "rank": 3
+        },
+        {
+          "market": "Kanchipuram Market",
+          "district": "Kanchipuram",
+          "price": 2459.0,
+          "trend": "Stable",
+          "distance_km": 360.83,
+          "market_score": 0.6891,
+          "rank": 4
+        },
+        {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Stable",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "rice",
+        "TopMarkets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 100,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+        "opportunities": [
+          "Market prices are increasing.",
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 1.0,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "rice",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "Rainfall below optimal, no recent precipitation.",
+      "High crop water stress",
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 28.98
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+      "summary": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+      "risks": [
+        "Rainfall below optimal, no recent precipitation"
+      ],
+      "opportunities": [
+        "Weather conditions are favorable for temperature and humidity"
+      ],
+      "confidence": 0.95,
+      "metadata": {},
+      "execution_time": 178.887,
+      "governance": {
+        "agent": "WeatherAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.8722235927891379,
+        "posterior_mean": 0.8743191181228878,
+        "evidence": {
+          "positive": true,
+          "weight": 0.475,
+          "reason": "Completed with confidence 0.95."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1925,
+          "utilities": {
+            "auto_execute": 12.3,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.19 from trust=0.87 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=12.3, review=7.0, reject=-4.0)."
+        }
+      }
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+      "summary": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation. 1 soil risk(s) identified. 5 soil opportunity(s) identified.",
+      "risks": [
+        "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation."
+      ],
+      "opportunities": [
+        "Soil pH is within the optimal range for rice.",
+        "Nitrogen level is high, meeting the crop's preference.",
+        "Organic carbon is at the medium level, matching the crop's requirement.",
+        "Soil texture is loam, ideal for rice growth.",
+        "High soil health score (92) indicates robust biological activity."
+      ],
+      "confidence": 0.94,
+      "metadata": {},
+      "execution_time": 304.06,
+      "governance": {
+        "agent": "SoilAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.8566554657208775,
+        "posterior_mean": 0.8592687030775183,
+        "evidence": {
+          "positive": true,
+          "weight": 0.47,
+          "reason": "Completed with confidence 0.94."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.2122,
+          "utilities": {
+            "auto_execute": 11.513,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.21 from trust=0.86 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=11.513, review=7.0, reject=-4.0)."
+        }
+      }
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest.",
+      "summary": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+      "risks": [
+        "Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.",
+        "High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.",
+        "Potential for disease outbreaks (e.g., blast) under stressed conditions.",
+        "Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors."
+      ],
+      "opportunities": [
+        "Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.",
+        "If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.",
+        "Low pest pressure is likely given the healthy canopy, allowing focus on water management."
+      ],
+      "confidence": 0.6,
+      "metadata": {},
+      "execution_time": 60.889,
+      "governance": {
+        "agent": "SatelliteAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.7692414271154496,
+        "posterior_mean": 0.7739245247320379,
+        "evidence": {
+          "positive": true,
+          "weight": 0.3,
+          "reason": "Completed with confidence 0.60."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.3259,
+          "utilities": {
+            "auto_execute": 6.964,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.33 from trust=0.77 (+/-0.10) on a low-risk data_collector action => human_review (EU auto=6.964, review=7.0, reject=-4.0)."
+        }
+      }
+    }
+  },
+  "reasoning": "CollaborativeReasoning(summary='The overall assessment for the rice crop in Coimbatore indicates excellent soil health and strong vegetative vigor, but immediate supplemental irrigation is required due to severe water stress and lack of recent rainfall. Market conditions are favorable with stable to increasing prices.', consensus='There is consensus across agents that soil conditions (pH 6.0, high nitrogen, loam texture) and atmospheric parameters (temperature 25\u00b0C, humidity 70%) are ideal for rice growth, and vegetation vigor (NDVI 0.8) is excellent. However, precipitation deficit and severe satellite-detected water stress (NDWI -0.35) urgently necessitate flood irrigation.', merged_risks=['Severe crop water stress (NDWI -0.35) and lack of recent rainfall, risking wilting and lower grain fill.', 'Relatively high sand content (46%) in the soil, which may reduce moisture retention during irrigation.', 'Increased susceptibility to fungal diseases such as blast under moisture stress conditions.', 'Potential satellite sensor or processing inconsistencies between high NDVI canopy health and severe NDWI water stress.'], merged_opportunities=['High NDVI (0.8) and optimal soil health score (92/100) provide high yield potential if irrigation is applied promptly.', 'Favorable atmospheric temperature and humidity ranges supporting ongoing crop development.', 'Strong regional market demand with increasing price trends in nearby major markets.'], conflicts=[{'description': 'Satellite metadata indicates low soil exposure and excellent vegetation health, whereas calculated SAVI (0.105) and NDWI (-0.35) indicate severe moisture deficit and high ground exposure.', 'severity': 'Medium', 'resolution': 'Prioritize immediate field inspection and ground-truth soil moisture measurements before adjusting long-term management plans.'}], confidence=0.83, evidence=[{'agent': 'WeatherAgent', 'analysis': \"Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.\", 'risks': ['Rainfall below optimal, no recent precipitation'], 'opportunities': ['Weather conditions are favorable for temperature and humidity'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': \"The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.\", 'risks': ['Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.'], 'opportunities': ['Soil pH is within the optimal range for rice.', \"Nitrogen level is high, meeting the crop's preference.\", \"Organic carbon is at the medium level, matching the crop's requirement.\", 'Soil texture is loam, ideal for rice growth.', 'High soil health score (92) indicates robust biological activity.'], 'confidence': 0.94, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': \"The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest.\", 'risks': ['Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.', 'High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.', 'Potential for disease outbreaks (e.g., blast) under stressed conditions.', 'Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors.'], 'opportunities': ['Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.', 'If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.', 'Low pest pressure is likely given the healthy canopy, allowing focus on water management.'], 'confidence': 0.6, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.83,
+    "decision": "Immediate Irrigation",
+    "priority": "P2",
+    "urgency": "Today",
+    "risk_level": "High",
+    "action_order": [
+      "Increase irrigation immediately",
+      "Increase irrigation immediately"
+    ],
+    "priorities": [
+      {
+        "issue": "Water Stress",
+        "severity": "Critical",
+        "urgency": "Immediate",
+        "owner": "Farmer",
+        "action": "Increase irrigation immediately"
+      },
+      {
+        "issue": "Water Stress",
+        "severity": "Critical",
+        "urgency": "Immediate",
+        "owner": "Farmer",
+        "action": "Increase irrigation immediately"
+      }
+    ],
+    "impact": {
+      "agronomic": "Moderate",
+      "economic": "Excellent",
+      "environmental": "Good",
+      "operational": "Good",
+      "yield_risk": "High",
+      "profitability": "Moderate",
+      "expected_benefit": "Timely corrective action will improve productivity."
+    },
+    "summary": {
+      "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a high operational risk requiring today attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Severe crop water stress (NDWI -0.35) and lack of recent rainfall, risking wilting and lower grain fill., Relatively high sand content (46%) in the soil, which may reduce moisture retention during irrigation., Increased susceptibility to fungal diseases such as blast under moisture stress conditions.."
+    },
+    "supporting_evidence": [
+      "WeatherAgent: Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+      "SoilAgent: The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+      "SatelliteAgent: The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest."
+    ],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0,
+    "governance": {
+      "agent": "ExecutiveAgent",
+      "category": "executive",
+      "stage": "post",
+      "prior_mean": 0.9274960773774896,
+      "posterior_mean": 0.9286745442351115,
+      "evidence": {
+        "positive": true,
+        "weight": 0.6224999999999999,
+        "reason": "Completed with confidence 0.83."
+      },
+      "risk": {
+        "category": "executive",
+        "risk_level": "Medium",
+        "benefit": 30.0,
+        "failure_cost": 60.0,
+        "review_cost": 12.0,
+        "reject_cost": 6.0
+      },
+      "decision": {
+        "action": "auto_execute",
+        "p_fail": 0.1191,
+        "utilities": {
+          "auto_execute": 19.282,
+          "human_review": 16.5,
+          "reject": -6.0
+        },
+        "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=19.282, review=16.5, reject=-6.0)."
+      }
+    }
+  },
+  "recommendation": {
+    "recommendation": "Implement immediate flood irrigation to alleviate severe water stress.",
+    "priority": "High",
+    "justification": "Satellite NDWI indicates critical water deficit (\u20110.35) while recent rainfall is below the crop\u2019s optimal requirement. Soil health is excellent, and temperature/humidity are within optimal ranges, offering high yield potential if water stress is corrected promptly. Market prices are stable to increasing, making timely yield preservation economically important. The risk of wilting, reduced grain fill, and heightened disease susceptibility outweighs the moderate irrigation effort required.",
+    "actions": [
+      "1. Verify availability of sufficient water for flood irrigation (e.g., canal, reservoir, or pumped source).",
+      "2. Schedule a continuous flood irrigation event today, delivering at least 5\u202fcm of water across the field to raise soil moisture above field capacity.",
+      "3. Adjust irrigation depth to account for the relatively high sand content (46\u202f%) to ensure adequate infiltration and reduce runoff.",
+      "4. After irrigation, apply a foliar fungicide spray targeting blast and sheath blight, following label rates, to mitigate disease risk under residual moisture.",
+      "5. Record irrigation volume, timing, and field observations in the farm log."
+    ],
+    "expected_outcome": "Restored soil moisture will eliminate critical water stress, sustain vegetative vigor (NDVI ~0.8), promote normal grain filling, and protect expected yield, positioning the farmer to capture favorable market prices.",
+    "monitoring_plan": [
+      "\u2022 Daily visual inspection for wilting, leaf discoloration, or disease symptoms.",
+      "\u2022 Measure soil moisture at 15\u202fcm depth using a handheld probe 24\u202fh after irrigation and then every 2\u202fdays.",
+      "\u2022 Request updated NDWI satellite imagery within 7\u202fdays to confirm water stress reduction.",
+      "\u2022 Track temperature and humidity forecasts to anticipate any further stress.",
+      "\u2022 Review market price updates weekly to plan optimal harvest timing."
+    ],
+    "confidence": 0.83,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Immediate Irrigation",
+    "executive_priority": "P2",
+    "governance": {
+      "agent": "RecommendationAgent",
+      "category": "recommendation",
+      "stage": "post",
+      "prior_mean": 0.9400573094191544,
+      "posterior_mean": 0.9411551615153961,
+      "evidence": {
+        "positive": true,
+        "weight": 0.83,
+        "reason": "Completed with confidence 0.83."
+      },
+      "risk": {
+        "category": "recommendation",
+        "risk_level": "High",
+        "benefit": 40.0,
+        "failure_cost": 120.0,
+        "review_cost": 12.0,
+        "reject_cost": 8.0
+      },
+      "decision": {
+        "action": "human_review",
+        "p_fail": 0.0986,
+        "utilities": {
+          "auto_execute": 24.219,
+          "human_review": 26.0,
+          "reject": -8.0
+        },
+        "rationale": "P(fail)=0.10 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=24.219, review=26.0, reject=-8.0)."
+      }
+    }
+  },
+  "explanation": {
+    "executive_decision": "Immediate Irrigation",
+    "executive_summary": "The rice field in Coimbatore is experiencing severe water stress despite excellent soil health and favorable temperature and humidity. Satellite data shows a critical NDWI of -0.35 and there has been no recent rainfall. Immediate flood irrigation is required to prevent wilting and protect yield, while market conditions remain stable.",
+    "recommendation": "Implement immediate flood irrigation to alleviate severe water stress.",
+    "explanation": "Rainfall is currently zero, which is far below the crop\u2019s requirement, and the satellite NDWI of -0.35 signals a critical water deficit. Soil health is high (score 92) with optimal pH, high nitrogen, and a loam texture, meaning the field can efficiently use added water. Weather observations confirm optimal temperature (25\u202f\u00b0C) and humidity (70\u202f%), supporting rapid recovery once water is supplied. Timely irrigation therefore protects the healthy canopy (NDVI 0.8) and preserves economic value in a stable market.",
+    "reasoning_summary": "The decision integrates three specialist analyses: WeatherAgent (high confidence) confirming optimal atmospheric conditions but no rain; SoilAgent (high confidence) confirming a fertile, well\u2011structured soil ready to receive water; and SatelliteAgent (moderate confidence) detecting acute water stress via NDWI. Consensus across agents identified water stress as the overriding risk, leading to the recommendation for immediate flood irrigation.",
+    "decision_trace": {
+      "steps": [
+        {
+          "step": 1,
+          "stage": "Specialist",
+          "source": "WeatherAgent",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "key_risks": [
+            "Rainfall below optimal, no recent precipitation"
+          ],
+          "key_opportunities": [
+            "Weather conditions are favorable for temperature and humidity"
+          ],
+          "ranked_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal, no recent precipitation",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 3
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 2,
+          "stage": "Specialist",
+          "source": "SoilAgent",
+          "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation. 1 soil risk(s) identified. 5 soil opportunity(s) identified.",
+          "confidence": 0.94,
+          "key_risks": [
+            "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation."
+          ],
+          "key_opportunities": [
+            "Soil pH is within the optimal range for rice.",
+            "Nitrogen level is high, meeting the crop's preference.",
+            "Organic carbon is at the medium level, matching the crop's requirement.",
+            "Soil texture is loam, ideal for rice growth.",
+            "High soil health score (92) indicates robust biological activity."
+          ],
+          "ranked_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.784,
+              "importance": "Moderate",
+              "rank": 5
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.774,
+              "importance": "Moderate",
+              "rank": 6
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation. 1 soil risk(s) identified. 5 soil opportunity(s) identified.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.774,
+              "importance": "Moderate",
+              "rank": 7
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 3,
+          "stage": "Specialist",
+          "source": "SatelliteAgent",
+          "finding": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+          "confidence": 0.6,
+          "key_risks": [
+            "Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.",
+            "High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.",
+            "Potential for disease outbreaks (e.g., blast) under stressed conditions.",
+            "Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors."
+          ],
+          "key_opportunities": [
+            "Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.",
+            "If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.",
+            "Low pest pressure is likely given the healthy canopy, allowing focus on water management."
+          ],
+          "ranked_evidence": [
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7137,
+              "importance": "Moderate",
+              "rank": 13
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7137,
+              "importance": "Moderate",
+              "rank": 14
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Potential for disease outbreaks (e.g., blast) under stressed conditions.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7137,
+              "importance": "Moderate",
+              "rank": 15
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 4,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "Rainfall below optimal, no recent precipitation",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 5,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 6,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 7,
+          "stage": "Evidence Ranking",
+          "source": "WeatherAgent",
+          "finding": "Weather conditions are favorable for temperature and humidity",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 8,
+          "stage": "Evidence Ranking",
+          "source": "SoilAgent",
+          "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.784,
+          "importance": "Moderate",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 9,
+          "stage": "Collaborative Reasoning",
+          "source": "CollaborativeEngine",
+          "finding": "The overall assessment for the rice crop in Coimbatore indicates excellent soil health and strong vegetative vigor, but immediate supplemental irrigation is required due to severe water stress and lack of recent rainfall. Market conditions are favorable with stable to increasing prices.",
+          "confidence": 0.83,
+          "consensus": "There is consensus across agents that soil conditions (pH 6.0, high nitrogen, loam texture) and atmospheric parameters (temperature 25\u00b0C, humidity 70%) are ideal for rice growth, and vegetation vigor (NDVI 0.8) is excellent. However, precipitation deficit and severe satellite-detected water stress (NDWI -0.35) urgently necessitate flood irrigation.",
+          "merged_risks": [
+            "Severe crop water stress (NDWI -0.35) and lack of recent rainfall, risking wilting and lower grain fill.",
+            "Relatively high sand content (46%) in the soil, which may reduce moisture retention during irrigation.",
+            "Increased susceptibility to fungal diseases such as blast under moisture stress conditions.",
+            "Potential satellite sensor or processing inconsistencies between high NDVI canopy health and severe NDWI water stress."
+          ],
+          "merged_opportunities": [
+            "High NDVI (0.8) and optimal soil health score (92/100) provide high yield potential if irrigation is applied promptly.",
+            "Favorable atmospheric temperature and humidity ranges supporting ongoing crop development.",
+            "Strong regional market demand with increasing price trends in nearby major markets."
+          ],
+          "conflicts": [
+            {
+              "description": "Satellite metadata indicates low soil exposure and excellent vegetation health, whereas calculated SAVI (0.105) and NDWI (-0.35) indicate severe moisture deficit and high ground exposure.",
+              "severity": "Medium",
+              "resolution": "Prioritize immediate field inspection and ground-truth soil moisture measurements before adjusting long-term management plans."
+            }
+          ],
+          "influence": "Converted specialist evidence into a combined decision context."
+        },
+        {
+          "step": 10,
+          "stage": "Executive Decision",
+          "source": "ExecutiveAgent",
+          "finding": "Immediate Irrigation",
+          "confidence": 0.83,
+          "priority": "P2",
+          "justification": "The executive decision was produced from collaborative reasoning.",
+          "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+        },
+        {
+          "step": 11,
+          "stage": "Recommendation",
+          "source": "RecommendationAgent",
+          "finding": "Implement immediate flood irrigation to alleviate severe water stress.",
+          "confidence": 0.83,
+          "actions": [
+            "1. Verify availability of sufficient water for flood irrigation (e.g., canal, reservoir, or pumped source).",
+            "2. Schedule a continuous flood irrigation event today, delivering at least 5\u202fcm of water across the field to raise soil moisture above field capacity.",
+            "3. Adjust irrigation depth to account for the relatively high sand content (46\u202f%) to ensure adequate infiltration and reduce runoff.",
+            "4. After irrigation, apply a foliar fungicide spray targeting blast and sheath blight, following label rates, to mitigate disease risk under residual moisture.",
+            "5. Record irrigation volume, timing, and field observations in the farm log."
+          ],
+          "justification": "Satellite NDWI indicates critical water deficit (\u20110.35) while recent rainfall is below the crop\u2019s optimal requirement. Soil health is excellent, and temperature/humidity are within optimal ranges, offering high yield potential if water stress is corrected promptly. Market prices are stable to increasing, making timely yield preservation economically important. The risk of wilting, reduced grain fill, and heightened disease susceptibility outweighs the moderate irrigation effort required.",
+          "influence": "Translated the executive decision into concrete recommended actions."
+        }
+      ],
+      "causal_chain": [
+        {
+          "from": "WeatherAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Rainfall below optimal, no recent precipitation",
+          "strength": 0.8213
+        },
+        {
+          "from": "WeatherAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+          "strength": 0.8113
+        },
+        {
+          "from": "WeatherAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+          "strength": 0.8113
+        },
+        {
+          "from": "CollaborativeReasoning",
+          "to": "ExecutiveAgent",
+          "relationship": "informs",
+          "evidence": "The overall assessment for the rice crop in Coimbatore indicates excellent soil health and strong vegetative vigor, but immediate supplemental irrigation is required due to severe water stress and lack of recent rainfall. Market conditions are favorable with stable to increasing prices.",
+          "strength": 0.83
+        },
+        {
+          "from": "ExecutiveAgent",
+          "to": "RecommendationAgent",
+          "relationship": "produces",
+          "evidence": "Immediate Irrigation",
+          "strength": 0.83
+        },
+        {
+          "from": "RecommendationAgent",
+          "to": "Farmer",
+          "relationship": "recommends",
+          "evidence": "Implement immediate flood irrigation to alleviate severe water stress.",
+          "strength": 0.83
+        }
+      ],
+      "summary": "3 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Immediate Irrigation'. The RecommendationAgent then translated that decision into actionable guidance.",
+      "total_steps": 11,
+      "specialist_steps": 3,
+      "evidence_steps": 5,
+      "decision_step": 10,
+      "recommendation_step": 11,
+      "top_evidence": [
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "Rainfall below optimal, no recent precipitation",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "analysis",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "summary",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Weather conditions are favorable for temperature and humidity",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "SoilAgent",
+          "type": "risk",
+          "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.784,
+          "importance": "Moderate",
+          "rank": 5
+        }
+      ]
+    },
+    "evidence": {
+      "ranked_evidence": [
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "Rainfall below optimal, no recent precipitation",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "analysis",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "summary",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Weather conditions are favorable for temperature and humidity",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "SoilAgent",
+          "type": "risk",
+          "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.784,
+          "importance": "Moderate",
+          "rank": 5
+        },
+        {
+          "source": "SoilAgent",
+          "type": "analysis",
+          "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.774,
+          "importance": "Moderate",
+          "rank": 6
+        },
+        {
+          "source": "SoilAgent",
+          "type": "summary",
+          "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation. 1 soil risk(s) identified. 5 soil opportunity(s) identified.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.774,
+          "importance": "Moderate",
+          "rank": 7
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Soil pH is within the optimal range for rice.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.769,
+          "importance": "Moderate",
+          "rank": 8
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Nitrogen level is high, meeting the crop's preference.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.769,
+          "importance": "Moderate",
+          "rank": 9
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Organic carbon is at the medium level, matching the crop's requirement.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.769,
+          "importance": "Moderate",
+          "rank": 10
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Soil texture is loam, ideal for rice growth.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.769,
+          "importance": "Moderate",
+          "rank": 11
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "High soil health score (92) indicates robust biological activity.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.769,
+          "importance": "Moderate",
+          "rank": 12
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "risk",
+          "finding": "Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7137,
+          "importance": "Moderate",
+          "rank": 13
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "risk",
+          "finding": "High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7137,
+          "importance": "Moderate",
+          "rank": 14
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "risk",
+          "finding": "Potential for disease outbreaks (e.g., blast) under stressed conditions.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7137,
+          "importance": "Moderate",
+          "rank": 15
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "risk",
+          "finding": "Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7137,
+          "importance": "Moderate",
+          "rank": 16
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "analysis",
+          "finding": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7037,
+          "importance": "Moderate",
+          "rank": 17
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "summary",
+          "finding": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.7037,
+          "importance": "Moderate",
+          "rank": 18
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "opportunity",
+          "finding": "Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.6987,
+          "importance": "Moderate",
+          "rank": 19
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "opportunity",
+          "finding": "If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.6987,
+          "importance": "Moderate",
+          "rank": 20
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "opportunity",
+          "finding": "Low pest pressure is likely given the healthy canopy, allowing focus on water management.",
+          "confidence": 0.6,
+          "reliability": 0.95,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.6987,
+          "importance": "Moderate",
+          "rank": 21
+        }
+      ],
+      "source_summary": {
+        "WeatherAgent": {
+          "evidence_score": 0.8213,
+          "finding_count": 4,
+          "highest_importance": "High"
+        },
+        "SoilAgent": {
+          "evidence_score": 0.784,
+          "finding_count": 8,
+          "highest_importance": "Moderate"
+        },
+        "SatelliteAgent": {
+          "evidence_score": 0.7137,
+          "finding_count": 9,
+          "highest_importance": "Moderate"
+        }
+      },
+      "total_findings": 21,
+      "top_evidence": [
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "Rainfall below optimal, no recent precipitation",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8213,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "analysis",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "summary",
+          "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8113,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Weather conditions are favorable for temperature and humidity",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.475,
+          "evidence_score": 0.8063,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "SoilAgent",
+          "type": "risk",
+          "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+          "confidence": 0.94,
+          "reliability": 0.85,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.784,
+          "importance": "Moderate",
+          "rank": 5
+        }
+      ]
+    },
+    "risks": [
+      "Severe water stress could cause wilting and reduced grain fill.",
+      "High sand proportion may lead to faster drainage after irrigation.",
+      "Increased susceptibility to fungal diseases under moisture stress.",
+      "Potential inconsistency between healthy NDVI and low NDWI readings."
+    ],
+    "opportunities": [
+      "Excellent canopy health (NDVI 0.8) offers high yield potential if water is supplied.",
+      "Optimal soil chemistry and texture support rapid recovery.",
+      "Favorable temperature and humidity will aid growth post\u2011irrigation.",
+      "Stable to rising market prices provide economic incentive to protect the crop."
+    ],
+    "rejected_alternatives": [
+      {
+        "decision": "Delay irrigation",
+        "why_rejected": "Water stress is already critical; waiting would increase the risk of crop loss."
+      },
+      {
+        "decision": "Apply partial irrigation",
+        "why_rejected": "Partial water application may be insufficient given the severe NDWI\u2011indicated deficit."
+      },
+      {
+        "decision": "Wait for natural rainfall",
+        "why_rejected": "Forecast shows no imminent rain, and the field is already under stress."
+      }
+    ],
+    "limitations": [
+      "MarketAgent data missing; market analysis relies on available market assessment only.",
+      "HistoricalAgent data missing; no historical comparison could be made.",
+      "SatelliteAgent confidence is moderate (0.60), so its water\u2011stress reading carries some uncertainty."
+    ],
+    "monitoring_plan": [
+      {
+        "source": "Weather",
+        "parameter": "Rainfall Forecast",
+        "frequency": "Daily",
+        "reason": "Detect any incoming rain that could reduce irrigation needs."
+      },
+      {
+        "source": "Weather",
+        "parameter": "Temperature & Humidity",
+        "frequency": "Daily",
+        "reason": "Ensure environmental conditions remain within optimal ranges."
+      },
+      {
+        "source": "Soil",
+        "parameter": "Soil Moisture",
+        "frequency": "Every 2 Days",
+        "reason": "Confirm that irrigation has raised moisture above field capacity."
+      },
+      {
+        "source": "Soil",
+        "parameter": "Soil pH",
+        "frequency": "Weekly",
+        "reason": "Maintain optimal pH for rice."
+      }
+    ],
+    "confidence_breakdown": {
+      "overall": 0.83,
+      "specialist_average": 0.83,
+      "strongest_source": "WeatherAgent",
+      "strongest_confidence": 0.95,
+      "weakest_source": "SatelliteAgent",
+      "weakest_confidence": 0.6,
+      "unavailable_sources": [],
+      "breakdown": {
+        "WeatherAgent": 0.95,
+        "SoilAgent": 0.94,
+        "SatelliteAgent": 0.6,
+        "CollaborativeReasoning": 0.83,
+        "ExecutiveDecision": 0.83
+      },
+      "confidence_explanation": "Overall evidence confidence is 0.83. The strongest specialist evidence came from WeatherAgent (0.95), while the weakest was SatelliteAgent (0.60). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+    },
+    "overall_confidence": 0.83,
+    "model": "Qwen",
+    "module": "Explainable Recommendation",
+    "version": "2.0",
+    "status": "completed"
+  },
+  "governance": {
+    "agent_trust": {
+      "WeatherAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.8743,
+        "trust_std": 0.0668
+      },
+      "SoilAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.8593,
+        "trust_std": 0.0714
+      },
+      "SatelliteAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.7739,
+        "trust_std": 0.0998
+      },
+      "MarketAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.6827,
+        "trust_std": 0.1343
+      },
+      "HistoricalAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.5972,
+        "trust_std": 0.1433
+      },
+      "ExecutiveAgent": {
+        "category": "executive",
+        "trust_mean": 0.9287,
+        "trust_std": 0.0478
+      },
+      "RecommendationAgent": {
+        "category": "recommendation",
+        "trust_mean": 0.9412,
+        "trust_std": 0.0398
+      }
+    },
+    "crop_learning": {
+      "crop": "rice",
+      "trust_mean": 0.884,
+      "decision": "human_review",
+      "all_crops": {
+        "cotton": {
+          "trust_mean": 0.804,
+          "trust_std": 0.1186
+        },
+        "rice": {
+          "trust_mean": 0.884,
+          "trust_std": 0.075
+        },
+        "wheat": {
+          "trust_mean": 0.8446,
+          "trust_std": 0.0973
+        },
+        "mango": {
+          "trust_mean": 0.8461,
+          "trust_std": 0.0964
+        },
+        "tomato": {
+          "trust_mean": 0.8733,
+          "trust_std": 0.0812
+        }
+      }
+    },
+    "recommendation_requires_review": true,
+    "recommendation_rejected": false
+  },
+  "statistics": {
+    "agents_planned": 4,
+    "specialist_agents": 3,
+    "agents_completed": 3,
+    "agents_failed": 0,
+    "agents_unavailable": 0,
+    "unavailable_agents": [],
+    "planner_confidence": 0.95,
+    "reasoning_confidence": 0.83,
+    "executive_confidence": 0.83,
+    "explanation_confidence": 0.83,
+    "decision_trace_steps": 9,
+    "evidence_sources": 4,
+    "limitations": 3,
+    "monitoring_items": 4,
+    "planner_model": "Qwen",
+    "reasoning_model": "Groq",
+    "executive_model": "Groq",
+    "recommendation_model": "Groq",
+    "explanation_model": "Qwen"
+  },
+  "plan": {
+    "goal": "Is it a good time to irrigate my rice field?",
+    "execution_plan": [
+      {
+        "agent": "WeatherAgent",
+        "priority": 1,
+        "purpose": "Analyze weather conditions relevant to irrigation timing."
+      },
+      {
+        "agent": "SoilAgent",
+        "priority": 2,
+        "purpose": "Assess soil moisture, water-holding capacity, and related factors."
+      },
+      {
+        "agent": "SatelliteAgent",
+        "priority": 3,
+        "purpose": "Evaluate crop water stress and canopy conditions via satellite data."
+      },
+      {
+        "agent": "RecommendationAgent",
+        "priority": 4,
+        "purpose": "Generate the final recommendation based on specialist analyses."
+      }
+    ],
+    "confidence": 0.95
+  },
+  "total_time": 438.111,
+  "stage_times": {
+    "total": 438.111
+  },
+  "condition": "full_system",
+  "governance_used": true,
+  "raw_result": {
+    "query": "Is it a good time to irrigate my rice field?",
+    "crop_profile": {
+      "crop": "rice",
+      "scientific_name": "Oryza sativa",
+      "family": "Poaceae",
+      "type": "annual",
+      "category": "",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 20,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 1000,
+          "maximum": 2000,
+          "unit": "mm"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "clay",
+          "loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "flood irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "",
+        "recommended_frequency": ""
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.4,
+          "moderate_stress": 0.2,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "food",
+          "staple",
+          "grain"
+        ],
+        "major_states": [
+          "California",
+          "Arkansas",
+          "Louisiana",
+          "Texas",
+          "Mississippi"
+        ],
+        "major_countries": [],
+        "harvest_season": "summer",
+        "storage_capability": "Moderate",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [],
+        "commercial_products": []
+      },
+      "common_diseases": [
+        "blast",
+        "sheath blight",
+        "leaf spot"
+      ],
+      "common_pests": [],
+      "fertilizer": {
+        "recommended": "balanced NPK",
+        "npk_ratio": "",
+        "organic_options": []
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 0,
+        "excellent_tonnes_per_hectare": 0
+      },
+      "recommendations": {
+        "irrigation": "",
+        "fertilizer": "",
+        "harvesting": "",
+        "storage": ""
+      },
+      "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+      "references": [],
+      "generated_by": "Groq",
+      "version": 2,
+      "recommended_irrigation": "flood irrigation",
+      "fertilizer_recommendation": "balanced NPK"
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-09-04T12:29:12.432047",
+        "crop": "rice",
+        "crop_profile": {
+          "crop": "rice",
+          "scientific_name": "Oryza sativa",
+          "family": "Poaceae",
+          "type": "annual",
+          "category": "",
+          "growth_duration_days": 120,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 20,
+              "maximum": 30,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 60,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 1000,
+              "maximum": 2000,
+              "unit": "mm"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 6.5
+            },
+            "wind_speed": {
+              "maximum": 30,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 10
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "clay",
+              "loam"
+            ],
+            "preferred_nitrogen": "High",
+            "preferred_organic_carbon": "Medium",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "flood irrigation",
+            "water_requirement": "Medium",
+            "critical_growth_stage": "",
+            "recommended_frequency": ""
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.8,
+              "healthy": 0.6,
+              "moderate": 0.4,
+              "poor": 0.2
+            },
+            "ndwi": {
+              "low_stress": 0.4,
+              "moderate_stress": 0.2,
+              "high_stress": 0.0
+            },
+            "savi": {
+              "low_exposure": 0.6,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.2
+            }
+          },
+          "market": {
+            "keywords": [
+              "food",
+              "staple",
+              "grain"
+            ],
+            "major_states": [
+              "California",
+              "Arkansas",
+              "Louisiana",
+              "Texas",
+              "Mississippi"
+            ],
+            "major_countries": [],
+            "harvest_season": "summer",
+            "storage_capability": "Moderate",
+            "perishability": "Medium"
+          },
+          "nutrition": {
+            "primary_nutrients": [],
+            "commercial_products": []
+          },
+          "common_diseases": [
+            "blast",
+            "sheath blight",
+            "leaf spot"
+          ],
+          "common_pests": [],
+          "fertilizer": {
+            "recommended": "balanced NPK",
+            "npk_ratio": "",
+            "organic_options": []
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 0,
+            "excellent_tonnes_per_hectare": 0
+          },
+          "recommendations": {
+            "irrigation": "",
+            "fertilizer": "",
+            "harvesting": "",
+            "storage": ""
+          },
+          "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+          "references": [],
+          "generated_by": "Groq",
+          "version": 2,
+          "recommended_irrigation": "flood irrigation",
+          "fertilizer_recommendation": "balanced NPK"
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T11:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 25.0,
+          "humidity": 70.0,
+          "rainfall": 0.0,
+          "wind_speed": 10.0,
+          "pressure": 964.1,
+          "time": "2026-08-31T11:45"
+        },
+        "assessment": {
+          "crop": "rice",
+          "status": "Good",
+          "identified_risks": [
+            "Rainfall below optimal, no recent precipitation."
+          ],
+          "opportunities": [
+            "Weather conditions are favorable."
+          ]
+        },
+        "confidence": 74
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "High",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "High",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 92,
+          "ph_status": "Optimal",
+          "nitrogen_status": "Optimal",
+          "organic_carbon_status": "Optimal",
+          "texture": "Loam",
+          "risks": [],
+          "opportunities": [
+            "Soil pH is within the optimal range."
+          ]
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Thoothukudi Market",
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Stable",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Stable",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Stable",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "rice",
+          "TopMarkets": [
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 2470.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Tiruvannamalai Mandi",
+              "district": "Tiruvannamalai",
+              "price": 2443.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.748,
+              "rank": 2
+            },
+            {
+              "market": "Tiruvarur Uzhavar Sandhai",
+              "district": "Tiruvarur",
+              "price": 2432.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.7265,
+              "rank": 3
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 2459.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.6891,
+              "rank": 4
+            },
+            {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Increasing",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Stable",
+          "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T06:26:00.768941",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.8,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Excellent"
+        },
+        "water": {
+          "ndwi": -0.35,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "Low"
+        },
+        "assessment": {
+          "vegetation_score": 90,
+          "recommendation": "Increase irrigation immediately."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "rice",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "rice",
+      "crop_profile": {
+        "crop": "rice",
+        "scientific_name": "Oryza sativa",
+        "family": "Poaceae",
+        "type": "annual",
+        "category": "",
+        "growth_duration_days": 120,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 20,
+            "maximum": 30,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 60,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 1000,
+            "maximum": 2000,
+            "unit": "mm"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 6.5
+          },
+          "wind_speed": {
+            "maximum": 30,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 10
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "clay",
+            "loam"
+          ],
+          "preferred_nitrogen": "High",
+          "preferred_organic_carbon": "Medium",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "flood irrigation",
+          "water_requirement": "Medium",
+          "critical_growth_stage": "",
+          "recommended_frequency": ""
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.8,
+            "healthy": 0.6,
+            "moderate": 0.4,
+            "poor": 0.2
+          },
+          "ndwi": {
+            "low_stress": 0.4,
+            "moderate_stress": 0.2,
+            "high_stress": 0.0
+          },
+          "savi": {
+            "low_exposure": 0.6,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.2
+          }
+        },
+        "market": {
+          "keywords": [
+            "food",
+            "staple",
+            "grain"
+          ],
+          "major_states": [
+            "California",
+            "Arkansas",
+            "Louisiana",
+            "Texas",
+            "Mississippi"
+          ],
+          "major_countries": [],
+          "harvest_season": "summer",
+          "storage_capability": "Moderate",
+          "perishability": "Medium"
+        },
+        "nutrition": {
+          "primary_nutrients": [],
+          "commercial_products": []
+        },
+        "common_diseases": [
+          "blast",
+          "sheath blight",
+          "leaf spot"
+        ],
+        "common_pests": [],
+        "fertilizer": {
+          "recommended": "balanced NPK",
+          "npk_ratio": "",
+          "organic_options": []
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 0,
+          "excellent_tonnes_per_hectare": 0
+        },
+        "recommendations": {
+          "irrigation": "",
+          "fertilizer": "",
+          "harvesting": "",
+          "storage": ""
+        },
+        "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+        "references": [],
+        "generated_by": "Groq",
+        "version": 2,
+        "recommended_irrigation": "flood irrigation",
+        "fertilizer_recommendation": "balanced NPK"
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T11:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 25.0,
+          "humidity": 70.0,
+          "rainfall": 0.0,
+          "wind_speed": 10.0,
+          "pressure": 964.1,
+          "time": "2026-08-31T11:45"
+        },
+        "assessment": {
+          "crop": "rice",
+          "status": "Good",
+          "identified_risks": [
+            "Rainfall below optimal, no recent precipitation."
+          ],
+          "opportunities": [
+            "Weather conditions are favorable."
+          ]
+        },
+        "confidence": 74
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "High",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "High",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 92,
+          "ph_status": "Optimal",
+          "nitrogen_status": "Optimal",
+          "organic_carbon_status": "Optimal",
+          "texture": "Loam",
+          "risks": [],
+          "opportunities": [
+            "Soil pH is within the optimal range."
+          ]
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T06:26:00.768941",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.8,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Excellent"
+        },
+        "water": {
+          "ndwi": -0.35,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "Low"
+        },
+        "assessment": {
+          "vegetation_score": 90,
+          "recommendation": "Increase irrigation immediately."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Thoothukudi Market",
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Stable",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Stable",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Stable",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "rice",
+          "TopMarkets": [
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 2470.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Tiruvannamalai Mandi",
+              "district": "Tiruvannamalai",
+              "price": 2443.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.748,
+              "rank": 2
+            },
+            {
+              "market": "Tiruvarur Uzhavar Sandhai",
+              "district": "Tiruvarur",
+              "price": 2432.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.7265,
+              "rank": 3
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 2459.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.6891,
+              "rank": 4
+            },
+            {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Increasing",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Stable",
+          "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "rice",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 92,
+      "vegetation_health": "Excellent",
+      "market_trend": "Stable",
+      "risks": [
+        "Rainfall below optimal, no recent precipitation.",
+        "High crop water stress",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality"
+      ],
+      "confidence": 28.98
+    },
+    "plan": {
+      "goal": "Is it a good time to irrigate my rice field?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to irrigation timing."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Assess soil moisture, water-holding capacity, and related factors."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Evaluate crop water stress and canopy conditions via satellite data."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation based on specialist analyses."
+        }
+      ],
+      "confidence": 0.95
+    },
+    "reasoning": "CollaborativeReasoning(summary='The overall assessment for the rice crop in Coimbatore indicates excellent soil health and strong vegetative vigor, but immediate supplemental irrigation is required due to severe water stress and lack of recent rainfall. Market conditions are favorable with stable to increasing prices.', consensus='There is consensus across agents that soil conditions (pH 6.0, high nitrogen, loam texture) and atmospheric parameters (temperature 25\u00b0C, humidity 70%) are ideal for rice growth, and vegetation vigor (NDVI 0.8) is excellent. However, precipitation deficit and severe satellite-detected water stress (NDWI -0.35) urgently necessitate flood irrigation.', merged_risks=['Severe crop water stress (NDWI -0.35) and lack of recent rainfall, risking wilting and lower grain fill.', 'Relatively high sand content (46%) in the soil, which may reduce moisture retention during irrigation.', 'Increased susceptibility to fungal diseases such as blast under moisture stress conditions.', 'Potential satellite sensor or processing inconsistencies between high NDVI canopy health and severe NDWI water stress.'], merged_opportunities=['High NDVI (0.8) and optimal soil health score (92/100) provide high yield potential if irrigation is applied promptly.', 'Favorable atmospheric temperature and humidity ranges supporting ongoing crop development.', 'Strong regional market demand with increasing price trends in nearby major markets.'], conflicts=[{'description': 'Satellite metadata indicates low soil exposure and excellent vegetation health, whereas calculated SAVI (0.105) and NDWI (-0.35) indicate severe moisture deficit and high ground exposure.', 'severity': 'Medium', 'resolution': 'Prioritize immediate field inspection and ground-truth soil moisture measurements before adjusting long-term management plans.'}], confidence=0.83, evidence=[{'agent': 'WeatherAgent', 'analysis': \"Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.\", 'risks': ['Rainfall below optimal, no recent precipitation'], 'opportunities': ['Weather conditions are favorable for temperature and humidity'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': \"The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.\", 'risks': ['Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.'], 'opportunities': ['Soil pH is within the optimal range for rice.', \"Nitrogen level is high, meeting the crop's preference.\", \"Organic carbon is at the medium level, matching the crop's requirement.\", 'Soil texture is loam, ideal for rice growth.', 'High soil health score (92) indicates robust biological activity.'], 'confidence': 0.94, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': \"The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest.\", 'risks': ['Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.', 'High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.', 'Potential for disease outbreaks (e.g., blast) under stressed conditions.', 'Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors.'], 'opportunities': ['Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.', 'If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.', 'Low pest pressure is likely given the healthy canopy, allowing focus on water management.'], 'confidence': 0.6, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.83,
+      "decision": "Immediate Irrigation",
+      "priority": "P2",
+      "urgency": "Today",
+      "risk_level": "High",
+      "action_order": [
+        "Increase irrigation immediately",
+        "Increase irrigation immediately"
+      ],
+      "priorities": [
+        {
+          "issue": "Water Stress",
+          "severity": "Critical",
+          "urgency": "Immediate",
+          "owner": "Farmer",
+          "action": "Increase irrigation immediately"
+        },
+        {
+          "issue": "Water Stress",
+          "severity": "Critical",
+          "urgency": "Immediate",
+          "owner": "Farmer",
+          "action": "Increase irrigation immediately"
+        }
+      ],
+      "impact": {
+        "agronomic": "Moderate",
+        "economic": "Excellent",
+        "environmental": "Good",
+        "operational": "Good",
+        "yield_risk": "High",
+        "profitability": "Moderate",
+        "expected_benefit": "Timely corrective action will improve productivity."
+      },
+      "summary": {
+        "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a high operational risk requiring today attention.",
+        "business": "Market trend is stable with moderate profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+        "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Severe crop water stress (NDWI -0.35) and lack of recent rainfall, risking wilting and lower grain fill., Relatively high sand content (46%) in the soil, which may reduce moisture retention during irrigation., Increased susceptibility to fungal diseases such as blast under moisture stress conditions.."
+      },
+      "supporting_evidence": [
+        "WeatherAgent: Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+        "SoilAgent: The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+        "SatelliteAgent: The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9274960773774896,
+        "posterior_mean": 0.9286745442351115,
+        "evidence": {
+          "positive": true,
+          "weight": 0.6224999999999999,
+          "reason": "Completed with confidence 0.83."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1191,
+          "utilities": {
+            "auto_execute": 19.282,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=19.282, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Implement immediate flood irrigation to alleviate severe water stress.",
+      "priority": "High",
+      "justification": "Satellite NDWI indicates critical water deficit (\u20110.35) while recent rainfall is below the crop\u2019s optimal requirement. Soil health is excellent, and temperature/humidity are within optimal ranges, offering high yield potential if water stress is corrected promptly. Market prices are stable to increasing, making timely yield preservation economically important. The risk of wilting, reduced grain fill, and heightened disease susceptibility outweighs the moderate irrigation effort required.",
+      "actions": [
+        "1. Verify availability of sufficient water for flood irrigation (e.g., canal, reservoir, or pumped source).",
+        "2. Schedule a continuous flood irrigation event today, delivering at least 5\u202fcm of water across the field to raise soil moisture above field capacity.",
+        "3. Adjust irrigation depth to account for the relatively high sand content (46\u202f%) to ensure adequate infiltration and reduce runoff.",
+        "4. After irrigation, apply a foliar fungicide spray targeting blast and sheath blight, following label rates, to mitigate disease risk under residual moisture.",
+        "5. Record irrigation volume, timing, and field observations in the farm log."
+      ],
+      "expected_outcome": "Restored soil moisture will eliminate critical water stress, sustain vegetative vigor (NDVI ~0.8), promote normal grain filling, and protect expected yield, positioning the farmer to capture favorable market prices.",
+      "monitoring_plan": [
+        "\u2022 Daily visual inspection for wilting, leaf discoloration, or disease symptoms.",
+        "\u2022 Measure soil moisture at 15\u202fcm depth using a handheld probe 24\u202fh after irrigation and then every 2\u202fdays.",
+        "\u2022 Request updated NDWI satellite imagery within 7\u202fdays to confirm water stress reduction.",
+        "\u2022 Track temperature and humidity forecasts to anticipate any further stress.",
+        "\u2022 Review market price updates weekly to plan optimal harvest timing."
+      ],
+      "confidence": 0.83,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Immediate Irrigation",
+      "executive_priority": "P2",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9400573094191544,
+        "posterior_mean": 0.9411551615153961,
+        "evidence": {
+          "positive": true,
+          "weight": 0.83,
+          "reason": "Completed with confidence 0.83."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.0986,
+          "utilities": {
+            "auto_execute": 24.219,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.10 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=24.219, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "Is it a good time to irrigate my rice field?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to irrigation timing."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Assess soil moisture, water-holding capacity, and related factors."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Evaluate crop water stress and canopy conditions via satellite data."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation based on specialist analyses."
+        }
+      ],
+      "specialists": {
+        "WeatherAgent": {
+          "agent": "WeatherAgent",
+          "status": "completed",
+          "analysis": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+          "summary": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+          "risks": [
+            "Rainfall below optimal, no recent precipitation"
+          ],
+          "opportunities": [
+            "Weather conditions are favorable for temperature and humidity"
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 178.887,
+          "governance": {
+            "agent": "WeatherAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8722235927891379,
+            "posterior_mean": 0.8743191181228878,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.1925,
+              "utilities": {
+                "auto_execute": 12.3,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.19 from trust=0.87 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=12.3, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SoilAgent": {
+          "agent": "SoilAgent",
+          "status": "completed",
+          "analysis": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+          "summary": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation. 1 soil risk(s) identified. 5 soil opportunity(s) identified.",
+          "risks": [
+            "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range for rice.",
+            "Nitrogen level is high, meeting the crop's preference.",
+            "Organic carbon is at the medium level, matching the crop's requirement.",
+            "Soil texture is loam, ideal for rice growth.",
+            "High soil health score (92) indicates robust biological activity."
+          ],
+          "confidence": 0.94,
+          "metadata": {},
+          "execution_time": 304.06,
+          "governance": {
+            "agent": "SoilAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8566554657208775,
+            "posterior_mean": 0.8592687030775183,
+            "evidence": {
+              "positive": true,
+              "weight": 0.47,
+              "reason": "Completed with confidence 0.94."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.2122,
+              "utilities": {
+                "auto_execute": 11.513,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.21 from trust=0.86 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=11.513, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SatelliteAgent": {
+          "agent": "SatelliteAgent",
+          "status": "completed",
+          "analysis": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest.",
+          "summary": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+          "risks": [
+            "Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.",
+            "High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.",
+            "Potential for disease outbreaks (e.g., blast) under stressed conditions.",
+            "Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors."
+          ],
+          "opportunities": [
+            "Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.",
+            "If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.",
+            "Low pest pressure is likely given the healthy canopy, allowing focus on water management."
+          ],
+          "confidence": 0.6,
+          "metadata": {},
+          "execution_time": 60.889,
+          "governance": {
+            "agent": "SatelliteAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.7692414271154496,
+            "posterior_mean": 0.7739245247320379,
+            "evidence": {
+              "positive": true,
+              "weight": 0.3,
+              "reason": "Completed with confidence 0.60."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.3259,
+              "utilities": {
+                "auto_execute": 6.964,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.33 from trust=0.77 (+/-0.10) on a low-risk data_collector action => human_review (EU auto=6.964, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": "CollaborativeReasoning(summary='The overall assessment for the rice crop in Coimbatore indicates excellent soil health and strong vegetative vigor, but immediate supplemental irrigation is required due to severe water stress and lack of recent rainfall. Market conditions are favorable with stable to increasing prices.', consensus='There is consensus across agents that soil conditions (pH 6.0, high nitrogen, loam texture) and atmospheric parameters (temperature 25\u00b0C, humidity 70%) are ideal for rice growth, and vegetation vigor (NDVI 0.8) is excellent. However, precipitation deficit and severe satellite-detected water stress (NDWI -0.35) urgently necessitate flood irrigation.', merged_risks=['Severe crop water stress (NDWI -0.35) and lack of recent rainfall, risking wilting and lower grain fill.', 'Relatively high sand content (46%) in the soil, which may reduce moisture retention during irrigation.', 'Increased susceptibility to fungal diseases such as blast under moisture stress conditions.', 'Potential satellite sensor or processing inconsistencies between high NDVI canopy health and severe NDWI water stress.'], merged_opportunities=['High NDVI (0.8) and optimal soil health score (92/100) provide high yield potential if irrigation is applied promptly.', 'Favorable atmospheric temperature and humidity ranges supporting ongoing crop development.', 'Strong regional market demand with increasing price trends in nearby major markets.'], conflicts=[{'description': 'Satellite metadata indicates low soil exposure and excellent vegetation health, whereas calculated SAVI (0.105) and NDWI (-0.35) indicate severe moisture deficit and high ground exposure.', 'severity': 'Medium', 'resolution': 'Prioritize immediate field inspection and ground-truth soil moisture measurements before adjusting long-term management plans.'}], confidence=0.83, evidence=[{'agent': 'WeatherAgent', 'analysis': \"Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.\", 'risks': ['Rainfall below optimal, no recent precipitation'], 'opportunities': ['Weather conditions are favorable for temperature and humidity'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': \"The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.\", 'risks': ['Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.'], 'opportunities': ['Soil pH is within the optimal range for rice.', \"Nitrogen level is high, meeting the crop's preference.\", \"Organic carbon is at the medium level, matching the crop's requirement.\", 'Soil texture is loam, ideal for rice growth.', 'High soil health score (92) indicates robust biological activity.'], 'confidence': 0.94, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': \"The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest.\", 'risks': ['Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.', 'High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.', 'Potential for disease outbreaks (e.g., blast) under stressed conditions.', 'Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors.'], 'opportunities': ['Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.', 'If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.', 'Low pest pressure is likely given the healthy canopy, allowing focus on water management.'], 'confidence': 0.6, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.83,
+        "decision": "Immediate Irrigation",
+        "priority": "P2",
+        "urgency": "Today",
+        "risk_level": "High",
+        "action_order": [
+          "Increase irrigation immediately",
+          "Increase irrigation immediately"
+        ],
+        "priorities": [
+          {
+            "issue": "Water Stress",
+            "severity": "Critical",
+            "urgency": "Immediate",
+            "owner": "Farmer",
+            "action": "Increase irrigation immediately"
+          },
+          {
+            "issue": "Water Stress",
+            "severity": "Critical",
+            "urgency": "Immediate",
+            "owner": "Farmer",
+            "action": "Increase irrigation immediately"
+          }
+        ],
+        "impact": {
+          "agronomic": "Moderate",
+          "economic": "Excellent",
+          "environmental": "Good",
+          "operational": "Good",
+          "yield_risk": "High",
+          "profitability": "Moderate",
+          "expected_benefit": "Timely corrective action will improve productivity."
+        },
+        "summary": {
+          "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a high operational risk requiring today attention.",
+          "business": "Market trend is stable with moderate profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+          "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Severe crop water stress (NDWI -0.35) and lack of recent rainfall, risking wilting and lower grain fill., Relatively high sand content (46%) in the soil, which may reduce moisture retention during irrigation., Increased susceptibility to fungal diseases such as blast under moisture stress conditions.."
+        },
+        "supporting_evidence": [
+          "WeatherAgent: Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+          "SoilAgent: The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+          "SatelliteAgent: The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9274960773774896,
+          "posterior_mean": 0.9286745442351115,
+          "evidence": {
+            "positive": true,
+            "weight": 0.6224999999999999,
+            "reason": "Completed with confidence 0.83."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.1191,
+            "utilities": {
+              "auto_execute": 19.282,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=19.282, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Implement immediate flood irrigation to alleviate severe water stress.",
+        "priority": "High",
+        "justification": "Satellite NDWI indicates critical water deficit (\u20110.35) while recent rainfall is below the crop\u2019s optimal requirement. Soil health is excellent, and temperature/humidity are within optimal ranges, offering high yield potential if water stress is corrected promptly. Market prices are stable to increasing, making timely yield preservation economically important. The risk of wilting, reduced grain fill, and heightened disease susceptibility outweighs the moderate irrigation effort required.",
+        "actions": [
+          "1. Verify availability of sufficient water for flood irrigation (e.g., canal, reservoir, or pumped source).",
+          "2. Schedule a continuous flood irrigation event today, delivering at least 5\u202fcm of water across the field to raise soil moisture above field capacity.",
+          "3. Adjust irrigation depth to account for the relatively high sand content (46\u202f%) to ensure adequate infiltration and reduce runoff.",
+          "4. After irrigation, apply a foliar fungicide spray targeting blast and sheath blight, following label rates, to mitigate disease risk under residual moisture.",
+          "5. Record irrigation volume, timing, and field observations in the farm log."
+        ],
+        "expected_outcome": "Restored soil moisture will eliminate critical water stress, sustain vegetative vigor (NDVI ~0.8), promote normal grain filling, and protect expected yield, positioning the farmer to capture favorable market prices.",
+        "monitoring_plan": [
+          "\u2022 Daily visual inspection for wilting, leaf discoloration, or disease symptoms.",
+          "\u2022 Measure soil moisture at 15\u202fcm depth using a handheld probe 24\u202fh after irrigation and then every 2\u202fdays.",
+          "\u2022 Request updated NDWI satellite imagery within 7\u202fdays to confirm water stress reduction.",
+          "\u2022 Track temperature and humidity forecasts to anticipate any further stress.",
+          "\u2022 Review market price updates weekly to plan optimal harvest timing."
+        ],
+        "confidence": 0.83,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Immediate Irrigation",
+        "executive_priority": "P2",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9400573094191544,
+          "posterior_mean": 0.9411551615153961,
+          "evidence": {
+            "positive": true,
+            "weight": 0.83,
+            "reason": "Completed with confidence 0.83."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.0986,
+            "utilities": {
+              "auto_execute": 24.219,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.10 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=24.219, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Immediate Irrigation",
+        "executive_summary": "The rice field in Coimbatore is experiencing severe water stress despite excellent soil health and favorable temperature and humidity. Satellite data shows a critical NDWI of -0.35 and there has been no recent rainfall. Immediate flood irrigation is required to prevent wilting and protect yield, while market conditions remain stable.",
+        "recommendation": "Implement immediate flood irrigation to alleviate severe water stress.",
+        "explanation": "Rainfall is currently zero, which is far below the crop\u2019s requirement, and the satellite NDWI of -0.35 signals a critical water deficit. Soil health is high (score 92) with optimal pH, high nitrogen, and a loam texture, meaning the field can efficiently use added water. Weather observations confirm optimal temperature (25\u202f\u00b0C) and humidity (70\u202f%), supporting rapid recovery once water is supplied. Timely irrigation therefore protects the healthy canopy (NDVI 0.8) and preserves economic value in a stable market.",
+        "reasoning_summary": "The decision integrates three specialist analyses: WeatherAgent (high confidence) confirming optimal atmospheric conditions but no rain; SoilAgent (high confidence) confirming a fertile, well\u2011structured soil ready to receive water; and SatelliteAgent (moderate confidence) detecting acute water stress via NDWI. Consensus across agents identified water stress as the overriding risk, leading to the recommendation for immediate flood irrigation.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [
+                "Rainfall below optimal, no recent precipitation"
+              ],
+              "key_opportunities": [
+                "Weather conditions are favorable for temperature and humidity"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Rainfall below optimal, no recent precipitation",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8213,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "analysis",
+                  "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8113,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "summary",
+                  "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8113,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Specialist",
+              "source": "SoilAgent",
+              "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation. 1 soil risk(s) identified. 5 soil opportunity(s) identified.",
+              "confidence": 0.94,
+              "key_risks": [
+                "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation."
+              ],
+              "key_opportunities": [
+                "Soil pH is within the optimal range for rice.",
+                "Nitrogen level is high, meeting the crop's preference.",
+                "Organic carbon is at the medium level, matching the crop's requirement.",
+                "Soil texture is loam, ideal for rice growth.",
+                "High soil health score (92) indicates robust biological activity."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SoilAgent",
+                  "type": "risk",
+                  "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+                  "confidence": 0.94,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.784,
+                  "importance": "Moderate",
+                  "rank": 5
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "analysis",
+                  "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+                  "confidence": 0.94,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.774,
+                  "importance": "Moderate",
+                  "rank": 6
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "summary",
+                  "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation. 1 soil risk(s) identified. 5 soil opportunity(s) identified.",
+                  "confidence": 0.94,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.774,
+                  "importance": "Moderate",
+                  "rank": 7
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 3,
+              "stage": "Specialist",
+              "source": "SatelliteAgent",
+              "finding": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+              "confidence": 0.6,
+              "key_risks": [
+                "Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.",
+                "High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.",
+                "Potential for disease outbreaks (e.g., blast) under stressed conditions.",
+                "Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors."
+              ],
+              "key_opportunities": [
+                "Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.",
+                "If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.",
+                "Low pest pressure is likely given the healthy canopy, allowing focus on water management."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.",
+                  "confidence": 0.6,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7137,
+                  "importance": "Moderate",
+                  "rank": 13
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.",
+                  "confidence": 0.6,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7137,
+                  "importance": "Moderate",
+                  "rank": 14
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Potential for disease outbreaks (e.g., blast) under stressed conditions.",
+                  "confidence": 0.6,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7137,
+                  "importance": "Moderate",
+                  "rank": 15
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Rainfall below optimal, no recent precipitation",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Weather conditions are favorable for temperature and humidity",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 8,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.784,
+              "importance": "Moderate",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 9,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "The overall assessment for the rice crop in Coimbatore indicates excellent soil health and strong vegetative vigor, but immediate supplemental irrigation is required due to severe water stress and lack of recent rainfall. Market conditions are favorable with stable to increasing prices.",
+              "confidence": 0.83,
+              "consensus": "There is consensus across agents that soil conditions (pH 6.0, high nitrogen, loam texture) and atmospheric parameters (temperature 25\u00b0C, humidity 70%) are ideal for rice growth, and vegetation vigor (NDVI 0.8) is excellent. However, precipitation deficit and severe satellite-detected water stress (NDWI -0.35) urgently necessitate flood irrigation.",
+              "merged_risks": [
+                "Severe crop water stress (NDWI -0.35) and lack of recent rainfall, risking wilting and lower grain fill.",
+                "Relatively high sand content (46%) in the soil, which may reduce moisture retention during irrigation.",
+                "Increased susceptibility to fungal diseases such as blast under moisture stress conditions.",
+                "Potential satellite sensor or processing inconsistencies between high NDVI canopy health and severe NDWI water stress."
+              ],
+              "merged_opportunities": [
+                "High NDVI (0.8) and optimal soil health score (92/100) provide high yield potential if irrigation is applied promptly.",
+                "Favorable atmospheric temperature and humidity ranges supporting ongoing crop development.",
+                "Strong regional market demand with increasing price trends in nearby major markets."
+              ],
+              "conflicts": [
+                {
+                  "description": "Satellite metadata indicates low soil exposure and excellent vegetation health, whereas calculated SAVI (0.105) and NDWI (-0.35) indicate severe moisture deficit and high ground exposure.",
+                  "severity": "Medium",
+                  "resolution": "Prioritize immediate field inspection and ground-truth soil moisture measurements before adjusting long-term management plans."
+                }
+              ],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 10,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Immediate Irrigation",
+              "confidence": 0.83,
+              "priority": "P2",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 11,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Implement immediate flood irrigation to alleviate severe water stress.",
+              "confidence": 0.83,
+              "actions": [
+                "1. Verify availability of sufficient water for flood irrigation (e.g., canal, reservoir, or pumped source).",
+                "2. Schedule a continuous flood irrigation event today, delivering at least 5\u202fcm of water across the field to raise soil moisture above field capacity.",
+                "3. Adjust irrigation depth to account for the relatively high sand content (46\u202f%) to ensure adequate infiltration and reduce runoff.",
+                "4. After irrigation, apply a foliar fungicide spray targeting blast and sheath blight, following label rates, to mitigate disease risk under residual moisture.",
+                "5. Record irrigation volume, timing, and field observations in the farm log."
+              ],
+              "justification": "Satellite NDWI indicates critical water deficit (\u20110.35) while recent rainfall is below the crop\u2019s optimal requirement. Soil health is excellent, and temperature/humidity are within optimal ranges, offering high yield potential if water stress is corrected promptly. Market prices are stable to increasing, making timely yield preservation economically important. The risk of wilting, reduced grain fill, and heightened disease susceptibility outweighs the moderate irrigation effort required.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Rainfall below optimal, no recent precipitation",
+              "strength": 0.8213
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+              "strength": 0.8113
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "strength": 0.8113
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "The overall assessment for the rice crop in Coimbatore indicates excellent soil health and strong vegetative vigor, but immediate supplemental irrigation is required due to severe water stress and lack of recent rainfall. Market conditions are favorable with stable to increasing prices.",
+              "strength": 0.83
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Immediate Irrigation",
+              "strength": 0.83
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Implement immediate flood irrigation to alleviate severe water stress.",
+              "strength": 0.83
+            }
+          ],
+          "summary": "3 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Immediate Irrigation'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 11,
+          "specialist_steps": 3,
+          "evidence_steps": 5,
+          "decision_step": 10,
+          "recommendation_step": 11,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal, no recent precipitation",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Weather conditions are favorable for temperature and humidity",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.784,
+              "importance": "Moderate",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal, no recent precipitation",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Weather conditions are favorable for temperature and humidity",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.784,
+              "importance": "Moderate",
+              "rank": 5
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.774,
+              "importance": "Moderate",
+              "rank": 6
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "The soil in Coimbatore (pH 6.0, high nitrogen, medium organic carbon) matches the rice crop's preferred pH range (5.5\u20116.5) and nutrient levels (high N, medium C). The texture, calculated from 46% sand, 32% clay and 22% silt, classifies as loam, which aligns with the crop's preference for clay/loam soils. Soil health score is 92, indicating excellent overall condition. Field capacity (0.32) and wilting point (0.14) suggest adequate water\u2011holding capacity for flood irrigation, though the relatively high sand fraction could modestly reduce water retention. Overall, the soil is highly suitable for rice cultivation. 1 soil risk(s) identified. 5 soil opportunity(s) identified.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.774,
+              "importance": "Moderate",
+              "rank": 7
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Soil pH is within the optimal range for rice.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.769,
+              "importance": "Moderate",
+              "rank": 8
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Nitrogen level is high, meeting the crop's preference.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.769,
+              "importance": "Moderate",
+              "rank": 9
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Organic carbon is at the medium level, matching the crop's requirement.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.769,
+              "importance": "Moderate",
+              "rank": 10
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Soil texture is loam, ideal for rice growth.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.769,
+              "importance": "Moderate",
+              "rank": 11
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "High soil health score (92) indicates robust biological activity.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.769,
+              "importance": "Moderate",
+              "rank": 12
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Severe water stress (NDWI -0.35) may lead to wilting and reduced grain fill.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7137,
+              "importance": "Moderate",
+              "rank": 13
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "High soil exposure (SAVI 0.105) increases risk of erosion and nutrient loss.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7137,
+              "importance": "Moderate",
+              "rank": 14
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Potential for disease outbreaks (e.g., blast) under stressed conditions.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7137,
+              "importance": "Moderate",
+              "rank": 15
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Discrepancy between reported vegetation health and water/soil metrics could indicate sensor or processing errors.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7137,
+              "importance": "Moderate",
+              "rank": 16
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "analysis",
+              "finding": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7037,
+              "importance": "Moderate",
+              "rank": 17
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "summary",
+              "finding": "The NDVI of 0.8 meets the crop profile's 'excellent' threshold, confirming a very healthy canopy. However, the NDWI of -0.35 falls below the high\u2011stress threshold (0.0), indicating severe water deficit. The SAVI of 0.105 is below the 'high exposure' threshold (0.2), revealing extensive exposed soil despite the metadata stating low exposure. Vegetation health is reported as 'Excellent', consistent with the NDVI, but the water stress and soil exposure contradict this, suggesting that the crop is currently experiencing significant moisture limitation and potential soil erosion risk. Consequently, while the photosynthetic vigor is high, the lack of water and exposed soil pose notable risks to yield and increase susceptibility to diseases such as blast. If water availability can be restored, the existing canopy health offers a strong opportunity for a high\u2011quality harvest. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7037,
+              "importance": "Moderate",
+              "rank": 18
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Excellent NDVI (0.8) shows a robust canopy capable of high photosynthetic rates.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6987,
+              "importance": "Moderate",
+              "rank": 19
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "If water deficit is alleviated, the crop can capitalize on its strong vegetative health for high yields.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6987,
+              "importance": "Moderate",
+              "rank": 20
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Low pest pressure is likely given the healthy canopy, allowing focus on water management.",
+              "confidence": 0.6,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6987,
+              "importance": "Moderate",
+              "rank": 21
+            }
+          ],
+          "source_summary": {
+            "WeatherAgent": {
+              "evidence_score": 0.8213,
+              "finding_count": 4,
+              "highest_importance": "High"
+            },
+            "SoilAgent": {
+              "evidence_score": 0.784,
+              "finding_count": 8,
+              "highest_importance": "Moderate"
+            },
+            "SatelliteAgent": {
+              "evidence_score": 0.7137,
+              "finding_count": 9,
+              "highest_importance": "Moderate"
+            }
+          },
+          "total_findings": 21,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal, no recent precipitation",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal range for rice growth. Temperature (25\u00b0C) is within the optimal range of 20-30\u00b0C. Humidity (70%) is within the optimal range of 60-80%. Rainfall is 0.0 mm, which is below the minimum requirement of 1000 mm for the crop's growth period. However, the assessment indicates 'Rainfall below optimal, no recent precipitation.' as a risk. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Weather conditions are favorable for temperature and humidity",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Relatively high sand content (46%) may slightly reduce water retention during flood irrigation.",
+              "confidence": 0.94,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.784,
+              "importance": "Moderate",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "Severe water stress could cause wilting and reduced grain fill.",
+          "High sand proportion may lead to faster drainage after irrigation.",
+          "Increased susceptibility to fungal diseases under moisture stress.",
+          "Potential inconsistency between healthy NDVI and low NDWI readings."
+        ],
+        "opportunities": [
+          "Excellent canopy health (NDVI 0.8) offers high yield potential if water is supplied.",
+          "Optimal soil chemistry and texture support rapid recovery.",
+          "Favorable temperature and humidity will aid growth post\u2011irrigation.",
+          "Stable to rising market prices provide economic incentive to protect the crop."
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Delay irrigation",
+            "why_rejected": "Water stress is already critical; waiting would increase the risk of crop loss."
+          },
+          {
+            "decision": "Apply partial irrigation",
+            "why_rejected": "Partial water application may be insufficient given the severe NDWI\u2011indicated deficit."
+          },
+          {
+            "decision": "Wait for natural rainfall",
+            "why_rejected": "Forecast shows no imminent rain, and the field is already under stress."
+          }
+        ],
+        "limitations": [
+          "MarketAgent data missing; market analysis relies on available market assessment only.",
+          "HistoricalAgent data missing; no historical comparison could be made.",
+          "SatelliteAgent confidence is moderate (0.60), so its water\u2011stress reading carries some uncertainty."
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Detect any incoming rain that could reduce irrigation needs."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Ensure environmental conditions remain within optimal ranges."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Confirm that irrigation has raised moisture above field capacity."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Weekly",
+            "reason": "Maintain optimal pH for rice."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.83,
+          "specialist_average": 0.83,
+          "strongest_source": "WeatherAgent",
+          "strongest_confidence": 0.95,
+          "weakest_source": "SatelliteAgent",
+          "weakest_confidence": 0.6,
+          "unavailable_sources": [],
+          "breakdown": {
+            "WeatherAgent": 0.95,
+            "SoilAgent": 0.94,
+            "SatelliteAgent": 0.6,
+            "CollaborativeReasoning": 0.83,
+            "ExecutiveDecision": 0.83
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.83. The strongest specialist evidence came from WeatherAgent (0.95), while the weakest was SatelliteAgent (0.60). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.83,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8743,
+            "trust_std": 0.0668
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8593,
+            "trust_std": 0.0714
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7739,
+            "trust_std": 0.0998
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6827,
+            "trust_std": 0.1343
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9287,
+            "trust_std": 0.0478
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9412,
+            "trust_std": 0.0398
+          }
+        },
+        "crop_learning": {
+          "crop": "rice",
+          "trust_mean": 0.884,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.884,
+              "trust_std": 0.075
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8461,
+              "trust_std": 0.0964
+            },
+            "tomato": {
+              "trust_mean": 0.8733,
+              "trust_std": 0.0812
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.83,
+      "statistics": {
+        "agents_planned": 4,
+        "specialist_agents": 3,
+        "agents_completed": 3,
+        "agents_failed": 0,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.95,
+        "reasoning_confidence": 0.83,
+        "executive_confidence": 0.83,
+        "explanation_confidence": 0.83,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 3,
+        "monitoring_items": 4,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 438.111
+  },
+  "scenario_id": "water_stress_irrigation_rice",
+  "wall_time_seconds": 450.02
+}

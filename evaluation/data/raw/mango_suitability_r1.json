@@ -1,0 +1,2410 @@
+{
+  "run_id": "mango_suitability_r1",
+  "phase": "baseline",
+  "crop": "mango",
+  "query": "Is mango suitable to grow in this location right now, and what are the risks?",
+  "latitude": 11.0168,
+  "longitude": 76.9558,
+  "wall_time_seconds": 1220.841,
+  "error": null,
+  "meta": {
+    "query_type": "suitability",
+    "repeat": 1
+  },
+  "result": {
+    "query": "Is mango suitable to grow in this location right now, and what are the risks?",
+    "crop_profile": {
+      "crop": "mango",
+      "scientific_name": "Mangifera indica",
+      "family": "Anacardiaceae",
+      "type": "Perennial",
+      "category": "Fruit",
+      "growth_duration_days": 240,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 35,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 900,
+          "maximum": 1000,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 15,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 8
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Loam",
+          "Clay Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "High",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Drip irrigation",
+        "water_requirement": "High",
+        "critical_growth_stage": "Fruiting",
+        "recommended_frequency": "Every 7-10 days"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.15,
+          "high_stress": 0.05
+        },
+        "savi": {
+          "low_exposure": 0.55,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.25
+        }
+      },
+      "market": {
+        "keywords": [
+          "Tropical fruit",
+          "Juicy",
+          "Sweet"
+        ],
+        "major_states": [
+          "Andhra Pradesh",
+          "Telangana",
+          "Karnataka"
+        ],
+        "major_countries": [
+          "India",
+          "China",
+          "Brazil"
+        ],
+        "harvest_season": "May-July",
+        "storage_capability": "Moderate",
+        "perishability": "High"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Vitamin A",
+          "Vitamin C",
+          "Potassium"
+        ],
+        "commercial_products": [
+          "Juice",
+          "Pulp",
+          "Jam"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Anthracnose",
+          "symptoms": "Black spots on leaves and fruits",
+          "treatment": "Fungicides"
+        },
+        {
+          "name": "Powdery mildew",
+          "symptoms": "White powder on leaves",
+          "treatment": "Fungicides"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Fruit fly",
+          "treatment": "Insecticides"
+        },
+        {
+          "name": "Mealybug",
+          "treatment": "Insecticides"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "NPK 10:10:10",
+        "npk_ratio": "1:1:1",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 10,
+        "excellent_tonnes_per_hectare": 15
+      },
+      "recommendations": {
+        "irrigation": "Regular watering",
+        "fertilizer": "Balanced fertilizer",
+        "harvesting": "Hand-picking",
+        "storage": "Cool and dry place"
+      },
+      "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+      "references": [
+        "FAO",
+        "ICAR"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-08-31T15:44:04.398804",
+        "crop": "mango",
+        "crop_profile": {
+          "crop": "mango",
+          "scientific_name": "Mangifera indica",
+          "family": "Anacardiaceae",
+          "type": "Perennial",
+          "category": "Fruit",
+          "growth_duration_days": 240,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Fruiting",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 15,
+              "maximum": 35,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 60,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 900,
+              "maximum": 1000,
+              "unit": "mm/year"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 7.0
+            },
+            "wind_speed": {
+              "maximum": 15,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 8
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "Loam",
+              "Clay Loam"
+            ],
+            "preferred_nitrogen": "Medium",
+            "preferred_organic_carbon": "High",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "Drip irrigation",
+            "water_requirement": "High",
+            "critical_growth_stage": "Fruiting",
+            "recommended_frequency": "Every 7-10 days"
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.75,
+              "healthy": 0.6,
+              "moderate": 0.45,
+              "poor": 0.3
+            },
+            "ndwi": {
+              "low_stress": 0.25,
+              "moderate_stress": 0.15,
+              "high_stress": 0.05
+            },
+            "savi": {
+              "low_exposure": 0.55,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.25
+            }
+          },
+          "market": {
+            "keywords": [
+              "Tropical fruit",
+              "Juicy",
+              "Sweet"
+            ],
+            "major_states": [
+              "Andhra Pradesh",
+              "Telangana",
+              "Karnataka"
+            ],
+            "major_countries": [
+              "India",
+              "China",
+              "Brazil"
+            ],
+            "harvest_season": "May-July",
+            "storage_capability": "Moderate",
+            "perishability": "High"
+          },
+          "nutrition": {
+            "primary_nutrients": [
+              "Vitamin A",
+              "Vitamin C",
+              "Potassium"
+            ],
+            "commercial_products": [
+              "Juice",
+              "Pulp",
+              "Jam"
+            ]
+          },
+          "common_diseases": [
+            {
+              "name": "Anthracnose",
+              "symptoms": "Black spots on leaves and fruits",
+              "treatment": "Fungicides"
+            },
+            {
+              "name": "Powdery mildew",
+              "symptoms": "White powder on leaves",
+              "treatment": "Fungicides"
+            }
+          ],
+          "common_pests": [
+            {
+              "name": "Fruit fly",
+              "treatment": "Insecticides"
+            },
+            {
+              "name": "Mealybug",
+              "treatment": "Insecticides"
+            }
+          ],
+          "fertilizer": {
+            "recommended": "NPK 10:10:10",
+            "npk_ratio": "1:1:1",
+            "organic_options": [
+              "Compost",
+              "Manure"
+            ]
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 10,
+            "excellent_tonnes_per_hectare": 15
+          },
+          "recommendations": {
+            "irrigation": "Regular watering",
+            "fertilizer": "Balanced fertilizer",
+            "harvesting": "Hand-picking",
+            "storage": "Cool and dry place"
+          },
+          "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+          "references": [
+            "FAO",
+            "ICAR"
+          ],
+          "generated_by": "Groq",
+          "version": 2
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T21:00",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.6,
+          "humidity": 89,
+          "rainfall": 0.0,
+          "wind_speed": 14.8,
+          "pressure": 962.8,
+          "time": "2026-08-31T21:00"
+        },
+        "assessment": {
+          "crop": "mango",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (900-1000 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Kanyakumari Uzhavar Sandhai",
+        "nearest_market": {
+          "market": "Ramanathapuram Uzhavar Sandhai",
+          "district": "Ramanathapuram",
+          "price": 3838.0,
+          "trend": "Stable",
+          "distance_km": 276.18,
+          "market_score": 0.6276,
+          "rank": 3
+        },
+        "top_markets": [
+          {
+            "market": "Kanyakumari Uzhavar Sandhai",
+            "district": "Kanyakumari",
+            "price": 3807.0,
+            "trend": "Increasing",
+            "distance_km": 331.84,
+            "market_score": 0.6831,
+            "rank": 1
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 3770.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.642,
+            "rank": 2
+          },
+          {
+            "market": "Ramanathapuram Uzhavar Sandhai",
+            "district": "Ramanathapuram",
+            "price": 3838.0,
+            "trend": "Stable",
+            "distance_km": 276.18,
+            "market_score": 0.6276,
+            "rank": 3
+          },
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 3913.0,
+            "trend": "Volatile",
+            "distance_km": 281.81,
+            "market_score": 0.6207,
+            "rank": 4
+          },
+          {
+            "market": "Chengalpattu Uzhavar Sandhai",
+            "district": "Chengalpattu",
+            "price": 3824.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.6119,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "mango",
+          "TopMarkets": [
+            {
+              "market": "Kanyakumari Uzhavar Sandhai",
+              "district": "Kanyakumari",
+              "price": 3807.0,
+              "trend": "Increasing",
+              "distance_km": 331.84,
+              "market_score": 0.6831,
+              "rank": 1
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 3770.0,
+              "trend": "Increasing",
+              "distance_km": 360.83,
+              "market_score": 0.642,
+              "rank": 2
+            },
+            {
+              "market": "Ramanathapuram Uzhavar Sandhai",
+              "district": "Ramanathapuram",
+              "price": 3838.0,
+              "trend": "Stable",
+              "distance_km": 276.18,
+              "market_score": 0.6276,
+              "rank": 3
+            },
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 3913.0,
+              "trend": "Volatile",
+              "distance_km": 281.81,
+              "market_score": 0.6207,
+              "rank": 4
+            },
+            {
+              "market": "Chengalpattu Uzhavar Sandhai",
+              "district": "Chengalpattu",
+              "price": 3824.0,
+              "trend": "Stable",
+              "distance_km": 376.38,
+              "market_score": 0.6119,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Kanyakumari Uzhavar Sandhai with modal price 3807.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T15:44:04.396806",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "mango",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.6\nHumidity : 89\nRainfall : 0.0\nWind Speed : 14.8\nPressure : 962.8\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Ramanathapuram Uzhavar Sandhai\nNearest Distance : 276.18 km\nNearest Market Price : 3838.0\nNearest Market Trend : Stable\n\nBest Ranked Market : Kanyakumari Uzhavar Sandhai\nBest Market Price : 3807.0\nBest Market Distance : 331.84 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : mango\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "mango",
+      "crop_profile": {
+        "crop": "mango",
+        "scientific_name": "Mangifera indica",
+        "family": "Anacardiaceae",
+        "type": "Perennial",
+        "category": "Fruit",
+        "growth_duration_days": 240,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Fruiting",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 15,
+            "maximum": 35,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 60,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 900,
+            "maximum": 1000,
+            "unit": "mm/year"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 7.0
+          },
+          "wind_speed": {
+            "maximum": 15,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 8
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "Loam",
+            "Clay Loam"
+          ],
+          "preferred_nitrogen": "Medium",
+          "preferred_organic_carbon": "High",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "Drip irrigation",
+          "water_requirement": "High",
+          "critical_growth_stage": "Fruiting",
+          "recommended_frequency": "Every 7-10 days"
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.75,
+            "healthy": 0.6,
+            "moderate": 0.45,
+            "poor": 0.3
+          },
+          "ndwi": {
+            "low_stress": 0.25,
+            "moderate_stress": 0.15,
+            "high_stress": 0.05
+          },
+          "savi": {
+            "low_exposure": 0.55,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.25
+          }
+        },
+        "market": {
+          "keywords": [
+            "Tropical fruit",
+            "Juicy",
+            "Sweet"
+          ],
+          "major_states": [
+            "Andhra Pradesh",
+            "Telangana",
+            "Karnataka"
+          ],
+          "major_countries": [
+            "India",
+            "China",
+            "Brazil"
+          ],
+          "harvest_season": "May-July",
+          "storage_capability": "Moderate",
+          "perishability": "High"
+        },
+        "nutrition": {
+          "primary_nutrients": [
+            "Vitamin A",
+            "Vitamin C",
+            "Potassium"
+          ],
+          "commercial_products": [
+            "Juice",
+            "Pulp",
+            "Jam"
+          ]
+        },
+        "common_diseases": [
+          {
+            "name": "Anthracnose",
+            "symptoms": "Black spots on leaves and fruits",
+            "treatment": "Fungicides"
+          },
+          {
+            "name": "Powdery mildew",
+            "symptoms": "White powder on leaves",
+            "treatment": "Fungicides"
+          }
+        ],
+        "common_pests": [
+          {
+            "name": "Fruit fly",
+            "treatment": "Insecticides"
+          },
+          {
+            "name": "Mealybug",
+            "treatment": "Insecticides"
+          }
+        ],
+        "fertilizer": {
+          "recommended": "NPK 10:10:10",
+          "npk_ratio": "1:1:1",
+          "organic_options": [
+            "Compost",
+            "Manure"
+          ]
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 10,
+          "excellent_tonnes_per_hectare": 15
+        },
+        "recommendations": {
+          "irrigation": "Regular watering",
+          "fertilizer": "Balanced fertilizer",
+          "harvesting": "Hand-picking",
+          "storage": "Cool and dry place"
+        },
+        "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+        "references": [
+          "FAO",
+          "ICAR"
+        ],
+        "generated_by": "Groq",
+        "version": 2
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T21:00",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.6,
+          "humidity": 89,
+          "rainfall": 0.0,
+          "wind_speed": 14.8,
+          "pressure": 962.8,
+          "time": "2026-08-31T21:00"
+        },
+        "assessment": {
+          "crop": "mango",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (900-1000 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T15:44:04.396806",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Kanyakumari Uzhavar Sandhai",
+        "nearest_market": {
+          "market": "Ramanathapuram Uzhavar Sandhai",
+          "district": "Ramanathapuram",
+          "price": 3838.0,
+          "trend": "Stable",
+          "distance_km": 276.18,
+          "market_score": 0.6276,
+          "rank": 3
+        },
+        "top_markets": [
+          {
+            "market": "Kanyakumari Uzhavar Sandhai",
+            "district": "Kanyakumari",
+            "price": 3807.0,
+            "trend": "Increasing",
+            "distance_km": 331.84,
+            "market_score": 0.6831,
+            "rank": 1
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 3770.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.642,
+            "rank": 2
+          },
+          {
+            "market": "Ramanathapuram Uzhavar Sandhai",
+            "district": "Ramanathapuram",
+            "price": 3838.0,
+            "trend": "Stable",
+            "distance_km": 276.18,
+            "market_score": 0.6276,
+            "rank": 3
+          },
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 3913.0,
+            "trend": "Volatile",
+            "distance_km": 281.81,
+            "market_score": 0.6207,
+            "rank": 4
+          },
+          {
+            "market": "Chengalpattu Uzhavar Sandhai",
+            "district": "Chengalpattu",
+            "price": 3824.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.6119,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "mango",
+          "TopMarkets": [
+            {
+              "market": "Kanyakumari Uzhavar Sandhai",
+              "district": "Kanyakumari",
+              "price": 3807.0,
+              "trend": "Increasing",
+              "distance_km": 331.84,
+              "market_score": 0.6831,
+              "rank": 1
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 3770.0,
+              "trend": "Increasing",
+              "distance_km": 360.83,
+              "market_score": 0.642,
+              "rank": 2
+            },
+            {
+              "market": "Ramanathapuram Uzhavar Sandhai",
+              "district": "Ramanathapuram",
+              "price": 3838.0,
+              "trend": "Stable",
+              "distance_km": 276.18,
+              "market_score": 0.6276,
+              "rank": 3
+            },
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 3913.0,
+              "trend": "Volatile",
+              "distance_km": 281.81,
+              "market_score": 0.6207,
+              "rank": 4
+            },
+            {
+              "market": "Chengalpattu Uzhavar Sandhai",
+              "district": "Chengalpattu",
+              "price": 3824.0,
+              "trend": "Stable",
+              "distance_km": 376.38,
+              "market_score": 0.6119,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Kanyakumari Uzhavar Sandhai with modal price 3807.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "mango",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.6\nHumidity : 89\nRainfall : 0.0\nWind Speed : 14.8\nPressure : 962.8\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Ramanathapuram Uzhavar Sandhai\nNearest Distance : 276.18 km\nNearest Market Price : 3838.0\nNearest Market Trend : Stable\n\nBest Ranked Market : Kanyakumari Uzhavar Sandhai\nBest Market Price : 3807.0\nBest Market Distance : 331.84 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : mango\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 90,
+      "vegetation_health": "Critical",
+      "market_trend": "Increasing",
+      "risks": [
+        "Humidity above optimal (60-80%)",
+        "Rainfall below optimal (900-1000 mm/year)",
+        "Vegetation health is critical",
+        "High crop water stress",
+        "Large exposed soil area",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality",
+        "Market prices increasing"
+      ],
+      "confidence": 31.48
+    },
+    "plan": {
+      "goal": "Is mango suitable to grow in this location right now, and what are the risks?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to the request."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Analyze soil conditions relevant to the request."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Analyze vegetation health, crop condition, and water stress."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation from specialist evidence."
+        }
+      ],
+      "confidence": 0.85
+    },
+    "reasoning": {
+      "summary": "2 specialist agents reached a consensus.",
+      "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+      "merged_risks": [
+        "Humidity is above optimal range (89% vs 60-80%)",
+        "Low organic carbon content below mango's requirement for high fertility",
+        "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+        "Reduced water retention capacity affecting drought resilience during fruiting stage"
+      ],
+      "merged_opportunities": [
+        "Clay loam texture provides good drainage and water retention for mango roots",
+        "High nitrogen levels matching mango's preferred nitrogen requirement",
+        "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+        "Temperature is within optimal range (24.6°C vs 15-35°C)",
+        "Wind speed is below threshold (14.8 km/h vs max 15 km/h)"
+      ],
+      "conflicts": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "agent": "WeatherAgent",
+          "analysis": "Current weather is suitable for mango cultivation with minor humidity concerns.",
+          "risks": [
+            "Humidity is above optimal range (89% vs 60-80%)"
+          ],
+          "opportunities": [
+            "Temperature is within optimal range (24.6°C vs 15-35°C)",
+            "Wind speed is below threshold (14.8 km/h vs max 15 km/h)"
+          ],
+          "confidence": 0.84,
+          "metadata": {}
+        },
+        {
+          "agent": "SoilAgent",
+          "analysis": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages.",
+          "risks": [
+            "Low organic carbon content below mango's requirement for high fertility",
+            "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+            "Reduced water retention capacity affecting drought resilience during fruiting stage"
+          ],
+          "opportunities": [
+            "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+            "High nitrogen levels matching mango's preferred nitrogen requirement",
+            "Clay loam texture provides good drainage and water retention for mango roots"
+          ],
+          "confidence": 0.95,
+          "metadata": {}
+        }
+      ],
+      "metadata": {
+        "agents": [
+          "WeatherAgent",
+          "SoilAgent"
+        ],
+        "agent_count": 2,
+        "llm_provider": "gemini"
+      }
+    },
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.9,
+      "decision": "Apply Nitrogen Fertilizer",
+      "priority": "P4",
+      "urgency": "Monitor",
+      "risk_level": "Low",
+      "action_order": [
+        "Apply compost or organic manure",
+        "Apply nitrogen fertilizer"
+      ],
+      "priorities": [
+        {
+          "issue": "Organic Carbon",
+          "severity": "Medium",
+          "urgency": "Within 1 Week",
+          "owner": "Farmer",
+          "action": "Apply compost or organic manure"
+        },
+        {
+          "issue": "Nitrogen",
+          "severity": "Medium",
+          "urgency": "Within 3 Days",
+          "owner": "Farmer",
+          "action": "Apply nitrogen fertilizer"
+        }
+      ],
+      "impact": {
+        "agronomic": "Good",
+        "economic": "Excellent",
+        "environmental": "Moderate",
+        "operational": "Good",
+        "yield_risk": "Moderate",
+        "profitability": "High",
+        "expected_benefit": "Current conditions provide opportunities for improved profitability."
+      },
+      "summary": {
+        "executive": "Mango cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+        "business": "Market trend is increasing with high profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+        "justification": "The executive decision is based on 2 specialist agents. Primary concerns include: Humidity is above optimal range (89% vs 60-80%), Low organic carbon content below mango's requirement for high fertility, Potential nutrient leaching due to high nitrogen levels without sufficient organic matter."
+      },
+      "supporting_evidence": [
+        "WeatherAgent: Current weather is suitable for mango cultivation with minor humidity concerns.",
+        "SoilAgent: Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9111958051942514,
+        "posterior_mean": 0.9132833169983033,
+        "evidence": {
+          "positive": true,
+          "weight": 0.675,
+          "reason": "Completed with confidence 0.90."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1441,
+          "utilities": {
+            "auto_execute": 17.032,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.14 from trust=0.91 (+/-0.06) on a medium-risk executive action => auto_execute (EU auto=17.032, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Apply Nitrogen Fertilizer",
+      "priority": "P4",
+      "justification": "Generated deterministically from the validated executive decision because the recommendation model was unavailable: Groq failed after 3 retries.\nError code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzg0jsa1e94a1f6bah7xkr4v` service tier `o ...[truncated]",
+      "actions": [
+        "Apply compost or organic manure",
+        "Apply nitrogen fertilizer"
+      ],
+      "expected_outcome": "Outcome not modelled. This plan restates the executive decision without model-generated analysis.",
+      "monitoring_plan": [
+        "Re-run the recommendation once the advisory model is reachable."
+      ],
+      "confidence": 0.35,
+      "generation_mode": "deterministic_fallback",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Apply Nitrogen Fertilizer",
+      "executive_priority": "P4",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9284091317848487,
+        "posterior_mean": 0.9284171961301818,
+        "evidence": {
+          "positive": true,
+          "weight": 0.175,
+          "reason": "Completed via deterministic fallback (weaker evidence, no live model reasoning)."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1195,
+          "utilities": {
+            "auto_execute": 20.879,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=20.879, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "Is mango suitable to grow in this location right now, and what are the risks?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to the request."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Analyze soil conditions relevant to the request."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Analyze vegetation health, crop condition, and water stress."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation from specialist evidence."
+        }
+      ],
+      "specialists": {
+        "WeatherAgent": {
+          "agent": "WeatherAgent",
+          "status": "completed",
+          "analysis": "Current weather is suitable for mango cultivation with minor humidity concerns.",
+          "summary": "Current weather is suitable for mango cultivation with minor humidity concerns. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "risks": [
+            "Humidity is above optimal range (89% vs 60-80%)"
+          ],
+          "opportunities": [
+            "Temperature is within optimal range (24.6°C vs 15-35°C)",
+            "Wind speed is below threshold (14.8 km/h vs max 15 km/h)"
+          ],
+          "confidence": 0.84,
+          "metadata": {},
+          "execution_time": 190.08,
+          "governance": {
+            "agent": "WeatherAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8442229175567943,
+            "posterior_mean": 0.847266560812972,
+            "evidence": {
+              "positive": true,
+              "weight": 0.42,
+              "reason": "Completed with confidence 0.84."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.2331,
+              "utilities": {
+                "auto_execute": 10.674,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.23 from trust=0.85 (+/-0.08) on a low-risk data_collector action => auto_execute (EU auto=10.674, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SoilAgent": {
+          "agent": "SoilAgent",
+          "status": "completed",
+          "analysis": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages.",
+          "summary": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages. 3 soil risk(s) identified. 3 soil opportunity(s) identified.",
+          "risks": [
+            "Low organic carbon content below mango's requirement for high fertility",
+            "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+            "Reduced water retention capacity affecting drought resilience during fruiting stage"
+          ],
+          "opportunities": [
+            "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+            "High nitrogen levels matching mango's preferred nitrogen requirement",
+            "Clay loam texture provides good drainage and water retention for mango roots"
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 271.157,
+          "governance": {
+            "agent": "SoilAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8735917539505192,
+            "posterior_mean": 0.8760723588571936,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.1969,
+              "utilities": {
+                "auto_execute": 12.122,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.20 from trust=0.88 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=12.122, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SatelliteAgent": {
+          "agent": "SatelliteAgent",
+          "status": "failed",
+          "confidence": 0,
+          "error": "Groq failed after 3 retries.\nError code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzg0jsa1e94a1f6bah7xkr4v` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197829, Requested 5687. Please try again in 25m18.911999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "execution_time": 140.502,
+          "governance": {
+            "agent": "SatelliteAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.7610982358651293,
+            "posterior_mean": 0.7189667868212818,
+            "evidence": {
+              "positive": false,
+              "weight": 0.75,
+              "reason": "Execution outcome 'failed' treated as a failure."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.3995,
+              "utilities": {
+                "auto_execute": 4.022,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.40 from trust=0.72 (+/-0.12) on a low-risk data_collector action => human_review (EU auto=4.022, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": {
+        "summary": "2 specialist agents reached a consensus.",
+        "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+        "merged_risks": [
+          "Humidity is above optimal range (89% vs 60-80%)",
+          "Low organic carbon content below mango's requirement for high fertility",
+          "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+          "Reduced water retention capacity affecting drought resilience during fruiting stage"
+        ],
+        "merged_opportunities": [
+          "Clay loam texture provides good drainage and water retention for mango roots",
+          "High nitrogen levels matching mango's preferred nitrogen requirement",
+          "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+          "Temperature is within optimal range (24.6°C vs 15-35°C)",
+          "Wind speed is below threshold (14.8 km/h vs max 15 km/h)"
+        ],
+        "conflicts": [],
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "agent": "WeatherAgent",
+            "analysis": "Current weather is suitable for mango cultivation with minor humidity concerns.",
+            "risks": [
+              "Humidity is above optimal range (89% vs 60-80%)"
+            ],
+            "opportunities": [
+              "Temperature is within optimal range (24.6°C vs 15-35°C)",
+              "Wind speed is below threshold (14.8 km/h vs max 15 km/h)"
+            ],
+            "confidence": 0.84,
+            "metadata": {}
+          },
+          {
+            "agent": "SoilAgent",
+            "analysis": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages.",
+            "risks": [
+              "Low organic carbon content below mango's requirement for high fertility",
+              "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+              "Reduced water retention capacity affecting drought resilience during fruiting stage"
+            ],
+            "opportunities": [
+              "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+              "High nitrogen levels matching mango's preferred nitrogen requirement",
+              "Clay loam texture provides good drainage and water retention for mango roots"
+            ],
+            "confidence": 0.95,
+            "metadata": {}
+          }
+        ],
+        "metadata": {
+          "agents": [
+            "WeatherAgent",
+            "SoilAgent"
+          ],
+          "agent_count": 2,
+          "llm_provider": "gemini"
+        }
+      },
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.9,
+        "decision": "Apply Nitrogen Fertilizer",
+        "priority": "P4",
+        "urgency": "Monitor",
+        "risk_level": "Low",
+        "action_order": [
+          "Apply compost or organic manure",
+          "Apply nitrogen fertilizer"
+        ],
+        "priorities": [
+          {
+            "issue": "Organic Carbon",
+            "severity": "Medium",
+            "urgency": "Within 1 Week",
+            "owner": "Farmer",
+            "action": "Apply compost or organic manure"
+          },
+          {
+            "issue": "Nitrogen",
+            "severity": "Medium",
+            "urgency": "Within 3 Days",
+            "owner": "Farmer",
+            "action": "Apply nitrogen fertilizer"
+          }
+        ],
+        "impact": {
+          "agronomic": "Good",
+          "economic": "Excellent",
+          "environmental": "Moderate",
+          "operational": "Good",
+          "yield_risk": "Moderate",
+          "profitability": "High",
+          "expected_benefit": "Current conditions provide opportunities for improved profitability."
+        },
+        "summary": {
+          "executive": "Mango cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+          "business": "Market trend is increasing with high profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+          "justification": "The executive decision is based on 2 specialist agents. Primary concerns include: Humidity is above optimal range (89% vs 60-80%), Low organic carbon content below mango's requirement for high fertility, Potential nutrient leaching due to high nitrogen levels without sufficient organic matter."
+        },
+        "supporting_evidence": [
+          "WeatherAgent: Current weather is suitable for mango cultivation with minor humidity concerns.",
+          "SoilAgent: Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9111958051942514,
+          "posterior_mean": 0.9132833169983033,
+          "evidence": {
+            "positive": true,
+            "weight": 0.675,
+            "reason": "Completed with confidence 0.90."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.1441,
+            "utilities": {
+              "auto_execute": 17.032,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.14 from trust=0.91 (+/-0.06) on a medium-risk executive action => auto_execute (EU auto=17.032, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Apply Nitrogen Fertilizer",
+        "priority": "P4",
+        "justification": "Generated deterministically from the validated executive decision because the recommendation model was unavailable: Groq failed after 3 retries.\nError code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzg0jsa1e94a1f6bah7xkr4v` service tier `o ...[truncated]",
+        "actions": [
+          "Apply compost or organic manure",
+          "Apply nitrogen fertilizer"
+        ],
+        "expected_outcome": "Outcome not modelled. This plan restates the executive decision without model-generated analysis.",
+        "monitoring_plan": [
+          "Re-run the recommendation once the advisory model is reachable."
+        ],
+        "confidence": 0.35,
+        "generation_mode": "deterministic_fallback",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Apply Nitrogen Fertilizer",
+        "executive_priority": "P4",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9284091317848487,
+          "posterior_mean": 0.9284171961301818,
+          "evidence": {
+            "positive": true,
+            "weight": 0.175,
+            "reason": "Completed via deterministic fallback (weaker evidence, no live model reasoning)."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1195,
+            "utilities": {
+              "auto_execute": 20.879,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=20.879, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Apply Nitrogen Fertilizer",
+        "executive_summary": "Apply Nitrogen Fertilizer. Apply Nitrogen Fertilizer",
+        "recommendation": "Apply Nitrogen Fertilizer",
+        "explanation": "The recommendation is supported by specialist evidence: WeatherAgent: Current weather is suitable for mango cultivation with minor humidity concerns. 1 weather risk(s) identified. 2 weather opportunity(s) identified. SoilAgent: Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages. 3 soil risk(s) identified. 3 soil opportunity(s) identified. Collaborative reasoning concluded that 2 specialist agents reached a consensus. The final decision is 'Apply Nitrogen Fertilizer', leading to the recommendation: Apply Nitrogen Fertilizer",
+        "reasoning_summary": "2 specialist agents reached a consensus.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "WeatherAgent",
+              "finding": "Current weather is suitable for mango cultivation with minor humidity concerns. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.84,
+              "key_risks": [
+                "Humidity is above optimal range (89% vs 60-80%)"
+              ],
+              "key_opportunities": [
+                "Temperature is within optimal range (24.6°C vs 15-35°C)",
+                "Wind speed is below threshold (14.8 km/h vs max 15 km/h)"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Humidity is above optimal range (89% vs 60-80%)",
+                  "confidence": 0.84,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.764,
+                  "importance": "Moderate",
+                  "rank": 9
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "analysis",
+                  "finding": "Current weather is suitable for mango cultivation with minor humidity concerns.",
+                  "confidence": 0.84,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.754,
+                  "importance": "Moderate",
+                  "rank": 10
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "summary",
+                  "finding": "Current weather is suitable for mango cultivation with minor humidity concerns. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+                  "confidence": 0.84,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.754,
+                  "importance": "Moderate",
+                  "rank": 11
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Specialist",
+              "source": "SoilAgent",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages. 3 soil risk(s) identified. 3 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [
+                "Low organic carbon content below mango's requirement for high fertility",
+                "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+                "Reduced water retention capacity affecting drought resilience during fruiting stage"
+              ],
+              "key_opportunities": [
+                "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+                "High nitrogen levels matching mango's preferred nitrogen requirement",
+                "Clay loam texture provides good drainage and water retention for mango roots"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SoilAgent",
+                  "type": "risk",
+                  "finding": "Low organic carbon content below mango's requirement for high fertility",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.5714,
+                  "evidence_score": 0.8304,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "risk",
+                  "finding": "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.5714,
+                  "evidence_score": 0.8304,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "risk",
+                  "finding": "Reduced water retention capacity affecting drought resilience during fruiting stage",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.5714,
+                  "evidence_score": 0.8304,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 3,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Low organic carbon content below mango's requirement for high fertility",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Reduced water retention capacity affecting drought resilience during fruiting stage",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages. 3 soil risk(s) identified. 3 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 8,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "2 specialist agents reached a consensus.",
+              "confidence": 0.9,
+              "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+              "merged_risks": [
+                "Humidity is above optimal range (89% vs 60-80%)",
+                "Low organic carbon content below mango's requirement for high fertility",
+                "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+                "Reduced water retention capacity affecting drought resilience during fruiting stage"
+              ],
+              "merged_opportunities": [
+                "Clay loam texture provides good drainage and water retention for mango roots",
+                "High nitrogen levels matching mango's preferred nitrogen requirement",
+                "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+                "Temperature is within optimal range (24.6°C vs 15-35°C)",
+                "Wind speed is below threshold (14.8 km/h vs max 15 km/h)"
+              ],
+              "conflicts": [],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 9,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Apply Nitrogen Fertilizer",
+              "confidence": 0.9,
+              "priority": "P4",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 10,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Apply Nitrogen Fertilizer",
+              "confidence": 0.35,
+              "actions": [
+                "Apply compost or organic manure",
+                "Apply nitrogen fertilizer"
+              ],
+              "justification": "Generated deterministically from the validated executive decision because the recommendation model was unavailable: Groq failed after 3 retries.\nError code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kzg0jsa1e94a1f6bah7xkr4v` service tier `o ...[truncated]",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "SoilAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Low organic carbon content below mango's requirement for high fertility",
+              "strength": 0.8304
+            },
+            {
+              "from": "SoilAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+              "strength": 0.8304
+            },
+            {
+              "from": "SoilAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Reduced water retention capacity affecting drought resilience during fruiting stage",
+              "strength": 0.8304
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "2 specialist agents reached a consensus.",
+              "strength": 0.9
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Apply Nitrogen Fertilizer",
+              "strength": 0.9
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Apply Nitrogen Fertilizer",
+              "strength": 0.35
+            }
+          ],
+          "summary": "2 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Apply Nitrogen Fertilizer'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 10,
+          "specialist_steps": 2,
+          "evidence_steps": 5,
+          "decision_step": 9,
+          "recommendation_step": 10,
+          "top_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Low organic carbon content below mango's requirement for high fertility",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Reduced water retention capacity affecting drought resilience during fruiting stage",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages. 3 soil risk(s) identified. 3 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Low organic carbon content below mango's requirement for high fertility",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Reduced water retention capacity affecting drought resilience during fruiting stage",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages. 3 soil risk(s) identified. 3 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 5
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 6
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "High nitrogen levels matching mango's preferred nitrogen requirement",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 7
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Clay loam texture provides good drainage and water retention for mango roots",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 8
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Humidity is above optimal range (89% vs 60-80%)",
+              "confidence": 0.84,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.764,
+              "importance": "Moderate",
+              "rank": 9
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather is suitable for mango cultivation with minor humidity concerns.",
+              "confidence": 0.84,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.754,
+              "importance": "Moderate",
+              "rank": 10
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather is suitable for mango cultivation with minor humidity concerns. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.84,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.754,
+              "importance": "Moderate",
+              "rank": 11
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Temperature is within optimal range (24.6°C vs 15-35°C)",
+              "confidence": 0.84,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.749,
+              "importance": "Moderate",
+              "rank": 12
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Wind speed is below threshold (14.8 km/h vs max 15 km/h)",
+              "confidence": 0.84,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.749,
+              "importance": "Moderate",
+              "rank": 13
+            }
+          ],
+          "source_summary": {
+            "SoilAgent": {
+              "evidence_score": 0.8304,
+              "finding_count": 8,
+              "highest_importance": "High"
+            },
+            "WeatherAgent": {
+              "evidence_score": 0.764,
+              "finding_count": 5,
+              "highest_importance": "Moderate"
+            }
+          },
+          "total_findings": 13,
+          "top_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Low organic carbon content below mango's requirement for high fertility",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Reduced water retention capacity affecting drought resilience during fruiting stage",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon poses a significant risk. The soil texture (clay loam) aligns with mango's preferred texture, and drainage is adequate. However, the low organic carbon indicates poor soil structure and reduced water retention, which may affect root development and nutrient uptake during critical growth stages. 3 soil risk(s) identified. 3 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "Humidity is above optimal range (89% vs 60-80%)",
+          "Low organic carbon content below mango's requirement for high fertility",
+          "Potential nutrient leaching due to high nitrogen levels without sufficient organic matter",
+          "Reduced water retention capacity affecting drought resilience during fruiting stage"
+        ],
+        "opportunities": [
+          "Clay loam texture provides good drainage and water retention for mango roots",
+          "High nitrogen levels matching mango's preferred nitrogen requirement",
+          "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+          "Temperature is within optimal range (24.6°C vs 15-35°C)",
+          "Wind speed is below threshold (14.8 km/h vs max 15 km/h)"
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Delay fertilizer application",
+            "expected_result": "Nutrient deficiency may persist or worsen.",
+            "why_rejected": "Current soil evidence indicates that nutrient management should not be unnecessarily delayed.",
+            "context_signal": "Nitrogen=High, organic_carbon=Low"
+          },
+          {
+            "decision": "Apply a reduced fertilizer dose",
+            "expected_result": "Lower cost and lower nutrient loading, but crop response may be weaker.",
+            "why_rejected": "The selected recommendation provides stronger correction for the identified nutrient condition.",
+            "context_signal": "Nitrogen=High"
+          },
+          {
+            "decision": "Take no nutrient action",
+            "expected_result": "Existing nutrient limitations would remain unresolved.",
+            "why_rejected": "Soil evidence identifies a nutrient-related limitation.",
+            "context_signal": "Nitrogen=High"
+          },
+          {
+            "decision": "Take no immediate action",
+            "expected_result": "Current risks may persist or worsen.",
+            "why_rejected": "AgriMind selected 'Apply Nitrogen Fertilizer' because the available evidence supports intervention.",
+            "context_signal": "No-action baseline"
+          }
+        ],
+        "limitations": [
+          {
+            "category": "Missing Evidence",
+            "limitation": "SatelliteAgent did not return an output.",
+            "impact": "The final recommendation was produced without SatelliteAgent evidence.",
+            "evidence": "SatelliteAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "MarketAgent did not return an output.",
+            "impact": "The final recommendation was produced without MarketAgent evidence.",
+            "evidence": "MarketAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "HistoricalAgent did not return an output.",
+            "impact": "The final recommendation was produced without HistoricalAgent evidence.",
+            "evidence": "HistoricalAgent"
+          },
+          {
+            "category": "Soil Data Provenance",
+            "limitation": "Soil analysis used the local synthetic/scenario-controlled dataset rather than live field measurements.",
+            "impact": "The soil assessment is suitable for controlled system evaluation but should not be interpreted as a direct measurement of the current field.",
+            "evidence": "local dataset"
+          },
+          {
+            "category": "Market Data Provenance",
+            "limitation": "Market analysis used the synthetic local market dataset.",
+            "impact": "The ranking is valid for controlled testing but should not be interpreted as real-time market intelligence.",
+            "evidence": "synthetic local dataset"
+          }
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Weather changes can affect irrigation and field operations."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Monitor environmental stress."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Ensure irrigation is effective."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Monthly",
+            "reason": "Maintain suitable soil conditions."
+          },
+          {
+            "source": "Satellite",
+            "parameter": "NDVI",
+            "frequency": "Weekly",
+            "reason": "Monitor vegetation health."
+          },
+          {
+            "source": "Satellite",
+            "parameter": "NDWI",
+            "frequency": "Weekly",
+            "reason": "Detect crop water stress."
+          },
+          {
+            "source": "Market",
+            "parameter": "Crop Price",
+            "frequency": "Daily",
+            "reason": "Identify the best selling opportunity."
+          },
+          {
+            "source": "Historical",
+            "parameter": "Seasonal Comparison",
+            "frequency": "Monthly",
+            "reason": "Compare current performance with previous seasons."
+          },
+          {
+            "source": "Recommendation",
+            "parameter": "Leaf Nutrient Status",
+            "frequency": "Weekly",
+            "reason": "Evaluate fertilizer response."
+          },
+          {
+            "source": "System",
+            "parameter": "Overall Farm Health",
+            "frequency": "Weekly",
+            "reason": "Validate AgriMind recommendations."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.8975,
+          "specialist_average": 0.895,
+          "strongest_source": "SoilAgent",
+          "strongest_confidence": 0.95,
+          "weakest_source": "WeatherAgent",
+          "weakest_confidence": 0.84,
+          "unavailable_sources": [],
+          "breakdown": {
+            "WeatherAgent": 0.84,
+            "SoilAgent": 0.95,
+            "CollaborativeReasoning": 0.9,
+            "ExecutiveDecision": 0.9
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.90. The strongest specialist evidence came from SoilAgent (0.95), while the weakest was WeatherAgent (0.84). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.8975,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8473,
+            "trust_std": 0.0804
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8761,
+            "trust_std": 0.073
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.719,
+            "trust_std": 0.1184
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6021,
+            "trust_std": 0.1565
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9133,
+            "trust_std": 0.0574
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9284,
+            "trust_std": 0.0479
+          }
+        },
+        "crop_learning": {
+          "crop": "mango",
+          "trust_mean": 0.8443,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.866,
+              "trust_std": 0.0854
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8443,
+              "trust_std": 0.0974
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.9,
+      "statistics": {
+        "agents_planned": 4,
+        "specialist_agents": 2,
+        "agents_completed": 2,
+        "agents_failed": 1,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.85,
+        "reasoning_confidence": 0.9,
+        "executive_confidence": 0.9,
+        "explanation_confidence": 0.8975,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 5,
+        "monitoring_items": 10,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 1220.841
+  }
+}

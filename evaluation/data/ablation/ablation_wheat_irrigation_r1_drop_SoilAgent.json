@@ -1,0 +1,2252 @@
+{
+  "run_id": "ablation_wheat_irrigation_r1_drop_SoilAgent",
+  "baseline_run_id": "wheat_irrigation_r1",
+  "crop": "wheat",
+  "query": "Is it a good time to irrigate my wheat field?",
+  "dropped_agent": "SoilAgent",
+  "wall_time_seconds": 459.361,
+  "error": null,
+  "result": {
+    "query": "Is it a good time to irrigate my wheat field?",
+    "crop_profile": {
+      "crop": "wheat",
+      "scientific_name": "Triticum aestivum",
+      "family": "Poaceae",
+      "type": "Annual",
+      "category": "Cereal",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 10,
+          "maximum": 25,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 50,
+          "maximum": 70,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 300,
+          "maximum": 900,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 6.0,
+          "maximum": 7.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Clay",
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Surface or Sprinkler",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 7-10 days during critical stages"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.65,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.3,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "Bread",
+          "Flour",
+          "Staple food",
+          "Cereal"
+        ],
+        "major_states": [
+          "Kansas",
+          "North Dakota",
+          "Montana",
+          "Washington"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "Russia",
+          "United States",
+          "France"
+        ],
+        "harvest_season": "June-August",
+        "storage_capability": "Good",
+        "perishability": "Low"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Carbohydrates",
+          "Protein",
+          "Fiber"
+        ],
+        "commercial_products": [
+          "Flour",
+          "Bread",
+          "Pasta",
+          "Cereal",
+          "Malt"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Fusarium head blight",
+          "symptoms": "Bleached, shriveled kernels and pinkish fungal growth on heads",
+          "treatment": "Apply fungicides at flowering; use resistant varieties"
+        },
+        {
+          "name": "Powdery mildew",
+          "symptoms": "White powdery patches on leaves and stems",
+          "treatment": "Sulfur-based fungicides; ensure good air circulation"
+        },
+        {
+          "name": "Leaf rust",
+          "symptoms": "Orange-brown pustules on leaf surfaces",
+          "treatment": "Apply rust-resistant cultivars and timely fungicide sprays"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Introduce natural predators; use insecticidal soaps"
+        },
+        {
+          "name": "Hessian fly",
+          "treatment": "Plant resistant varieties; monitor and apply targeted insecticides"
+        },
+        {
+          "name": "Wheat midge",
+          "treatment": "Early sowing and insecticide applications during adult emergence"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "Apply nitrogen-rich fertilizer at tillering and booting stages",
+        "npk_ratio": "120-60-40",
+        "organic_options": [
+          "Compost",
+          "Manure",
+          "Green manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 3.0,
+        "excellent_tonnes_per_hectare": 7.0
+      },
+      "recommendations": {
+        "irrigation": "Maintain soil moisture deficit of 20-30%; avoid water stress during flowering",
+        "fertilizer": "Split nitrogen applications: 50% at sowing, rest at tillering and booting",
+        "harvesting": "Harvest when grain moisture is 12-14% using combine harvester with low grain loss settings",
+        "storage": "Store in ventilated silos at 12-15°C and 60% relative humidity"
+      },
+      "summary": "Wheat (Triticum aestivum) is a globally important annual cereal grown on loamy to clay soils with pH 6.0-7.5. Optimal temperatures are 10-25 °C, rainfall 300-900 mm/year, and sunlight 6-10 h/day. It requires medium water and nitrogen, with critical moisture needs during flowering. Major producers include China, India, Russia, the United States, and France. Typical yields are 3 t/ha, reaching up to 7 t/ha under optimal management. Key diseases are Fusarium head blight, powdery mildew, and leaf rust; main pests include aphids, Hessian fly, and wheat midge. Integrated pest management, split nitrogen fertilization, and timely harvest ensure high quality grain.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA",
+        "CGIAR"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-09-01T08:45:51.166647",
+        "crop": "wheat",
+        "crop_profile": {
+          "crop": "wheat",
+          "scientific_name": "Triticum aestivum",
+          "family": "Poaceae",
+          "type": "Annual",
+          "category": "Cereal",
+          "growth_duration_days": 120,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Fruiting",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 10,
+              "maximum": 25,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 50,
+              "maximum": 70,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 300,
+              "maximum": 900,
+              "unit": "mm/year"
+            },
+            "soil_ph": {
+              "minimum": 6.0,
+              "maximum": 7.5
+            },
+            "wind_speed": {
+              "maximum": 30,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 10
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "Clay",
+              "Loam"
+            ],
+            "preferred_nitrogen": "Medium",
+            "preferred_organic_carbon": "Medium",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "Surface or Sprinkler",
+            "water_requirement": "Medium",
+            "critical_growth_stage": "Flowering",
+            "recommended_frequency": "Every 7-10 days during critical stages"
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.8,
+              "healthy": 0.65,
+              "moderate": 0.45,
+              "poor": 0.3
+            },
+            "ndwi": {
+              "low_stress": 0.3,
+              "moderate_stress": 0.1,
+              "high_stress": 0.0
+            },
+            "savi": {
+              "low_exposure": 0.6,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.2
+            }
+          },
+          "market": {
+            "keywords": [
+              "Bread",
+              "Flour",
+              "Staple food",
+              "Cereal"
+            ],
+            "major_states": [
+              "Kansas",
+              "North Dakota",
+              "Montana",
+              "Washington"
+            ],
+            "major_countries": [
+              "China",
+              "India",
+              "Russia",
+              "United States",
+              "France"
+            ],
+            "harvest_season": "June-August",
+            "storage_capability": "Good",
+            "perishability": "Low"
+          },
+          "nutrition": {
+            "primary_nutrients": [
+              "Carbohydrates",
+              "Protein",
+              "Fiber"
+            ],
+            "commercial_products": [
+              "Flour",
+              "Bread",
+              "Pasta",
+              "Cereal",
+              "Malt"
+            ]
+          },
+          "common_diseases": [
+            {
+              "name": "Fusarium head blight",
+              "symptoms": "Bleached, shriveled kernels and pinkish fungal growth on heads",
+              "treatment": "Apply fungicides at flowering; use resistant varieties"
+            },
+            {
+              "name": "Powdery mildew",
+              "symptoms": "White powdery patches on leaves and stems",
+              "treatment": "Sulfur-based fungicides; ensure good air circulation"
+            },
+            {
+              "name": "Leaf rust",
+              "symptoms": "Orange-brown pustules on leaf surfaces",
+              "treatment": "Apply rust-resistant cultivars and timely fungicide sprays"
+            }
+          ],
+          "common_pests": [
+            {
+              "name": "Aphids",
+              "treatment": "Introduce natural predators; use insecticidal soaps"
+            },
+            {
+              "name": "Hessian fly",
+              "treatment": "Plant resistant varieties; monitor and apply targeted insecticides"
+            },
+            {
+              "name": "Wheat midge",
+              "treatment": "Early sowing and insecticide applications during adult emergence"
+            }
+          ],
+          "fertilizer": {
+            "recommended": "Apply nitrogen-rich fertilizer at tillering and booting stages",
+            "npk_ratio": "120-60-40",
+            "organic_options": [
+              "Compost",
+              "Manure",
+              "Green manure"
+            ]
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 3.0,
+            "excellent_tonnes_per_hectare": 7.0
+          },
+          "recommendations": {
+            "irrigation": "Maintain soil moisture deficit of 20-30%; avoid water stress during flowering",
+            "fertilizer": "Split nitrogen applications: 50% at sowing, rest at tillering and booting",
+            "harvesting": "Harvest when grain moisture is 12-14% using combine harvester with low grain loss settings",
+            "storage": "Store in ventilated silos at 12-15°C and 60% relative humidity"
+          },
+          "summary": "Wheat (Triticum aestivum) is a globally important annual cereal grown on loamy to clay soils with pH 6.0-7.5. Optimal temperatures are 10-25 °C, rainfall 300-900 mm/year, and sunlight 6-10 h/day. It requires medium water and nitrogen, with critical moisture needs during flowering. Major producers include China, India, Russia, the United States, and France. Typical yields are 3 t/ha, reaching up to 7 t/ha under optimal management. Key diseases are Fusarium head blight, powdery mildew, and leaf rust; main pests include aphids, Hessian fly, and wheat midge. Integrated pest management, split nitrogen fertilization, and timely harvest ensure high quality grain.",
+          "references": [
+            "FAO",
+            "ICAR",
+            "USDA",
+            "CGIAR"
+          ],
+          "generated_by": "Groq",
+          "version": 2
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-09-01T14:15",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 30.2,
+          "humidity": 61,
+          "rainfall": 0.2,
+          "wind_speed": 15.8,
+          "pressure": 961.2,
+          "time": "2026-09-01T14:15"
+        },
+        "assessment": {
+          "crop": "wheat",
+          "status": "Good",
+          "identified_risks": [
+            "Temperature above optimal (10-25°C)",
+            "Rainfall below optimal (300-900 mm/year)"
+          ],
+          "opportunities": [
+            "Humidity is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 82
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "failed",
+        "market": null,
+        "nearest_market": null,
+        "top_markets": [],
+        "raw_data": null,
+        "assessment": {
+          "market_score": 0,
+          "trend": "Unknown",
+          "recommendation": "No market data available for wheat.",
+          "opportunities": [],
+          "risks": []
+        },
+        "confidence": 0
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-09-01T08:45:51.157060",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "wheat",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 30.2\nHumidity : 61\nRainfall : 0.2\nWind Speed : 15.8\nPressure : 961.2\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Unavailable\nNearest Distance : Unknown km\nNearest Market Price : Unknown\nNearest Market Trend : Unknown\n\nBest Ranked Market : Unavailable\nBest Market Price : Unknown\nBest Market Distance : Unknown km\nBest Market Trend : Unknown\n\nMarkets Evaluated : 0\nCrop : wheat\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "wheat",
+      "crop_profile": {
+        "crop": "wheat",
+        "scientific_name": "Triticum aestivum",
+        "family": "Poaceae",
+        "type": "Annual",
+        "category": "Cereal",
+        "growth_duration_days": 120,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Fruiting",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 10,
+            "maximum": 25,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 50,
+            "maximum": 70,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 300,
+            "maximum": 900,
+            "unit": "mm/year"
+          },
+          "soil_ph": {
+            "minimum": 6.0,
+            "maximum": 7.5
+          },
+          "wind_speed": {
+            "maximum": 30,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 10
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "Clay",
+            "Loam"
+          ],
+          "preferred_nitrogen": "Medium",
+          "preferred_organic_carbon": "Medium",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "Surface or Sprinkler",
+          "water_requirement": "Medium",
+          "critical_growth_stage": "Flowering",
+          "recommended_frequency": "Every 7-10 days during critical stages"
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.8,
+            "healthy": 0.65,
+            "moderate": 0.45,
+            "poor": 0.3
+          },
+          "ndwi": {
+            "low_stress": 0.3,
+            "moderate_stress": 0.1,
+            "high_stress": 0.0
+          },
+          "savi": {
+            "low_exposure": 0.6,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.2
+          }
+        },
+        "market": {
+          "keywords": [
+            "Bread",
+            "Flour",
+            "Staple food",
+            "Cereal"
+          ],
+          "major_states": [
+            "Kansas",
+            "North Dakota",
+            "Montana",
+            "Washington"
+          ],
+          "major_countries": [
+            "China",
+            "India",
+            "Russia",
+            "United States",
+            "France"
+          ],
+          "harvest_season": "June-August",
+          "storage_capability": "Good",
+          "perishability": "Low"
+        },
+        "nutrition": {
+          "primary_nutrients": [
+            "Carbohydrates",
+            "Protein",
+            "Fiber"
+          ],
+          "commercial_products": [
+            "Flour",
+            "Bread",
+            "Pasta",
+            "Cereal",
+            "Malt"
+          ]
+        },
+        "common_diseases": [
+          {
+            "name": "Fusarium head blight",
+            "symptoms": "Bleached, shriveled kernels and pinkish fungal growth on heads",
+            "treatment": "Apply fungicides at flowering; use resistant varieties"
+          },
+          {
+            "name": "Powdery mildew",
+            "symptoms": "White powdery patches on leaves and stems",
+            "treatment": "Sulfur-based fungicides; ensure good air circulation"
+          },
+          {
+            "name": "Leaf rust",
+            "symptoms": "Orange-brown pustules on leaf surfaces",
+            "treatment": "Apply rust-resistant cultivars and timely fungicide sprays"
+          }
+        ],
+        "common_pests": [
+          {
+            "name": "Aphids",
+            "treatment": "Introduce natural predators; use insecticidal soaps"
+          },
+          {
+            "name": "Hessian fly",
+            "treatment": "Plant resistant varieties; monitor and apply targeted insecticides"
+          },
+          {
+            "name": "Wheat midge",
+            "treatment": "Early sowing and insecticide applications during adult emergence"
+          }
+        ],
+        "fertilizer": {
+          "recommended": "Apply nitrogen-rich fertilizer at tillering and booting stages",
+          "npk_ratio": "120-60-40",
+          "organic_options": [
+            "Compost",
+            "Manure",
+            "Green manure"
+          ]
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 3.0,
+          "excellent_tonnes_per_hectare": 7.0
+        },
+        "recommendations": {
+          "irrigation": "Maintain soil moisture deficit of 20-30%; avoid water stress during flowering",
+          "fertilizer": "Split nitrogen applications: 50% at sowing, rest at tillering and booting",
+          "harvesting": "Harvest when grain moisture is 12-14% using combine harvester with low grain loss settings",
+          "storage": "Store in ventilated silos at 12-15°C and 60% relative humidity"
+        },
+        "summary": "Wheat (Triticum aestivum) is a globally important annual cereal grown on loamy to clay soils with pH 6.0-7.5. Optimal temperatures are 10-25 °C, rainfall 300-900 mm/year, and sunlight 6-10 h/day. It requires medium water and nitrogen, with critical moisture needs during flowering. Major producers include China, India, Russia, the United States, and France. Typical yields are 3 t/ha, reaching up to 7 t/ha under optimal management. Key diseases are Fusarium head blight, powdery mildew, and leaf rust; main pests include aphids, Hessian fly, and wheat midge. Integrated pest management, split nitrogen fertilization, and timely harvest ensure high quality grain.",
+        "references": [
+          "FAO",
+          "ICAR",
+          "USDA",
+          "CGIAR"
+        ],
+        "generated_by": "Groq",
+        "version": 2
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-09-01T14:15",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 30.2,
+          "humidity": 61,
+          "rainfall": 0.2,
+          "wind_speed": 15.8,
+          "pressure": 961.2,
+          "time": "2026-09-01T14:15"
+        },
+        "assessment": {
+          "crop": "wheat",
+          "status": "Good",
+          "identified_risks": [
+            "Temperature above optimal (10-25°C)",
+            "Rainfall below optimal (300-900 mm/year)"
+          ],
+          "opportunities": [
+            "Humidity is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 82
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-09-01T08:45:51.157060",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "failed",
+        "market": null,
+        "nearest_market": null,
+        "top_markets": [],
+        "raw_data": null,
+        "assessment": {
+          "market_score": 0,
+          "trend": "Unknown",
+          "recommendation": "No market data available for wheat.",
+          "opportunities": [],
+          "risks": []
+        },
+        "confidence": 0
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "wheat",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 30.2\nHumidity : 61\nRainfall : 0.2\nWind Speed : 15.8\nPressure : 961.2\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Unavailable\nNearest Distance : Unknown km\nNearest Market Price : Unknown\nNearest Market Trend : Unknown\n\nBest Ranked Market : Unavailable\nBest Market Price : Unknown\nBest Market Distance : Unknown km\nBest Market Trend : Unknown\n\nMarkets Evaluated : 0\nCrop : wheat\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 90,
+      "vegetation_health": "Critical",
+      "market_trend": "Unknown",
+      "risks": [
+        "Temperature above optimal (10-25°C)",
+        "Rainfall below optimal (300-900 mm/year)",
+        "Vegetation health is critical",
+        "High crop water stress",
+        "Large exposed soil area",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality"
+      ],
+      "confidence": 30.73
+    },
+    "plan": {
+      "goal": "Is it a good time to irrigate my wheat field?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze current weather conditions (rainfall, temperature, humidity) relevant to irrigation timing."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 2,
+          "purpose": "Assess crop water stress and moisture status using satellite indices."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 3,
+          "purpose": "Generate the final recommendation based on weather and satellite analysis."
+        }
+      ],
+      "confidence": 0.95
+    },
+    "reasoning": {
+      "summary": "Wheat crop in Coimbatore is under critical vegetation and thermal stress due to high temperatures (30.2°C) and severe water deficit (NDWI -0.204, NDVI 0.154), despite favorable soil pH and high soil nitrogen content.",
+      "consensus": "Specialists agree that acute water deficit and high ambient temperatures pose an immediate threat to crop survival and yield, requiring urgent irrigation and stress management.",
+      "merged_risks": [
+        "Ambient temperature exceeding optimal threshold (30.2°C vs 10-25°C optimal)",
+        "Severe water stress and negligible rainfall causing low canopy vigor and high crop exposure",
+        "Critical reduction in vegetation health (NDVI 0.154) threatening major yield loss",
+        "Low organic carbon content in the soil",
+        "Heightened vulnerability to disease and soil degradation under extreme moisture stress"
+      ],
+      "merged_opportunities": [
+        "Optimal soil pH (6.21) and high nitrogen levels provide strong base fertility",
+        "Humidity (61%) and wind speed (15.8 km/h) are within safe agronomic limits",
+        "Early satellite detection of water stress allows rapid management response before permanent crop loss"
+      ],
+      "conflicts": [
+        {
+          "description": "SoilAgent reports excellent soil health (90) and high nitrogen, whereas SatelliteAgent indicates critical vegetation health and suspected nutrient deficiency.",
+          "severity": "High",
+          "resolution": "Water deficit impairs nutrient uptake; high soil nitrogen cannot be utilized by plants without adequate soil moisture."
+        },
+        {
+          "description": "Weather context evaluates weather status as Good while WeatherAgent and Crop Profile show temperature exceeding optimal bounds for wheat.",
+          "severity": "Medium",
+          "resolution": "Treat temperature as a significant risk factor as wheat is sensitive to heat stress."
+        }
+      ],
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "agent": "WeatherAgent",
+          "analysis": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+          "risks": [
+            "Temperature above optimal (10-25°C)",
+            "Rainfall below optimal (300-900 mm/year)"
+          ],
+          "opportunities": [
+            "Humidity is within the optimal range (50-70%)",
+            "Wind conditions are suitable (15.8 km/h < 30 km/h)"
+          ],
+          "confidence": 0.82,
+          "metadata": {}
+        },
+        {
+          "agent": "SatelliteAgent",
+          "analysis": "1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes.",
+          "risks": [
+            "Severe yield loss due to low biomass",
+            "Increased vulnerability to Fusarium head blight, powdery mildew, and leaf rust",
+            "Soil erosion from high exposed soil",
+            "Potential nutrient deficiencies and root stress",
+            "Reduced plant vigor leading to poor grain fill"
+          ],
+          "opportunities": [
+            "Early stress detection enables focused monitoring",
+            "Potential to improve water management before irreversible damage",
+            "Scope for soil‑conservation measures to reduce exposure",
+            "Opportunity to assess and adjust nutrient status based on observed deficiency"
+          ],
+          "confidence": 0.55,
+          "metadata": {}
+        }
+      ],
+      "metadata": {
+        "agents": [
+          "WeatherAgent",
+          "SatelliteAgent"
+        ],
+        "agent_count": 2,
+        "llm_provider": "gemini"
+      }
+    },
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.68,
+      "decision": "Immediate Irrigation",
+      "priority": "P1",
+      "urgency": "Immediate",
+      "risk_level": "Critical",
+      "action_order": [
+        "Increase irrigation immediately",
+        "Inspect crop for disease and nutrient deficiency",
+        "Apply compost or organic manure"
+      ],
+      "priorities": [
+        {
+          "issue": "Water Stress",
+          "severity": "Critical",
+          "urgency": "Immediate",
+          "owner": "Farmer",
+          "action": "Increase irrigation immediately"
+        },
+        {
+          "issue": "Vegetation Health",
+          "severity": "Critical",
+          "urgency": "Immediate",
+          "owner": "Agronomist",
+          "action": "Inspect crop for disease and nutrient deficiency"
+        },
+        {
+          "issue": "Organic Carbon",
+          "severity": "Medium",
+          "urgency": "Within 1 Week",
+          "owner": "Farmer",
+          "action": "Apply compost or organic manure"
+        }
+      ],
+      "impact": {
+        "agronomic": "Poor",
+        "economic": "Moderate",
+        "environmental": "Moderate",
+        "operational": "Good",
+        "yield_risk": "Severe",
+        "profitability": "Moderate",
+        "expected_benefit": "Immediate intervention can significantly reduce crop loss."
+      },
+      "summary": {
+        "executive": "Wheat cultivation in Coimbatore, Tamil Nadu currently has a critical operational risk requiring immediate attention.",
+        "business": "Market trend is unknown with moderate profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+        "justification": "The executive decision is based on 2 specialist agents. Primary concerns include: Ambient temperature exceeding optimal threshold (30.2°C vs 10-25°C optimal), Severe water stress and negligible rainfall causing low canopy vigor and high crop exposure, Critical reduction in vegetation health (NDVI 0.154) threatening major yield loss."
+      },
+      "supporting_evidence": [
+        "WeatherAgent: Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+        "SatelliteAgent: 1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.92465372322247,
+        "posterior_mean": 0.9256349955806527,
+        "evidence": {
+          "positive": true,
+          "weight": 0.51,
+          "reason": "Completed with confidence 0.68."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.124,
+          "utilities": {
+            "auto_execute": 18.836,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=18.836, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Implement immediate irrigation to relieve severe water stress, followed by rapid disease/nutrient scouting and organic matter amendment.",
+      "priority": "Critical",
+      "justification": "Satellite NDVI (0.154) and NDWI (-0.204) indicate critical canopy vigor loss and extreme water deficit, while ambient temperature (30.2 °C) exceeds wheat's optimal range. Soil pH and nitrogen are optimal, but low organic carbon and high temperature threaten yield and increase disease risk. Prompt irrigation is the only viable mitigation to prevent catastrophic yield loss.",
+      "actions": [
+        "Activate surface or sprinkler irrigation today; apply enough water to raise soil moisture to field capacity (≈30 % volumetric) and maintain it with 7‑10 day intervals during the flowering stage.",
+        "Within 24 hours, conduct a field walk to inspect for Fusarium head blight, powdery mildew, or other stress symptoms; record observations and apply appropriate fungicides (e.g., triazole at flowering) if disease is detected.",
+        "Apply 5‑7 t ha⁻¹ of well‑composted organic manure to raise organic carbon levels; incorporate into the top 15 cm to improve soil structure and water‑holding capacity.",
+        "Establish a light mulching layer (straw or biodegradable mulch) on exposed soil to reduce evaporation and temperature fluctuations.",
+        "Log irrigation volumes and timing in a farm notebook or mobile app for traceability."
+      ],
+      "expected_outcome": "Restored soil moisture will improve NDVI to ≥0.45 within 2 weeks, reduce heat‑induced stress, limit disease incidence, and preserve yield potential, allowing the wheat crop to reach normal maturity and marketable quality.",
+      "monitoring_plan": [
+        "Daily: Measure soil moisture at 15 cm depth with a handheld probe; adjust irrigation if moisture falls below 25 % volumetric.",
+        "Weekly: Capture NDVI via drone or low‑cloud‑cover satellite imagery; target NDVI >0.45 before flowering.",
+        "Bi‑weekly: Record canopy temperature and humidity; ensure temperature stays below 28 °C during peak daylight hours where possible (e.g., by timing irrigation in early morning).",
+        "Weekly: Scout for disease symptoms on 10 % of plants; document and treat immediately if symptoms appear.",
+        "Post‑irrigation: Verify that organic manure has been incorporated and mulch remains intact; re‑apply mulch if erosion occurs."
+      ],
+      "confidence": 0.68,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Immediate Irrigation",
+      "executive_priority": "P1",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9373388151833946,
+        "posterior_mean": 0.9382716455236334,
+        "evidence": {
+          "positive": true,
+          "weight": 0.68,
+          "reason": "Completed with confidence 0.68."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1034,
+          "utilities": {
+            "auto_execute": 23.461,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.10 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=23.461, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "Is it a good time to irrigate my wheat field?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze current weather conditions (rainfall, temperature, humidity) relevant to irrigation timing."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 2,
+          "purpose": "Assess crop water stress and moisture status using satellite indices."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 3,
+          "purpose": "Generate the final recommendation based on weather and satellite analysis."
+        }
+      ],
+      "specialists": {
+        "WeatherAgent": {
+          "agent": "WeatherAgent",
+          "status": "completed",
+          "analysis": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+          "summary": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "risks": [
+            "Temperature above optimal (10-25°C)",
+            "Rainfall below optimal (300-900 mm/year)"
+          ],
+          "opportunities": [
+            "Humidity is within the optimal range (50-70%)",
+            "Wind conditions are suitable (15.8 km/h < 30 km/h)"
+          ],
+          "confidence": 0.82,
+          "metadata": {},
+          "execution_time": 276.252,
+          "governance": {
+            "agent": "WeatherAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8611471285188861,
+            "posterior_mean": 0.8632925994978938,
+            "evidence": {
+              "positive": true,
+              "weight": 0.41,
+              "reason": "Completed with confidence 0.82."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.2092,
+              "utilities": {
+                "auto_execute": 11.634,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.21 from trust=0.86 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=11.634, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SatelliteAgent": {
+          "agent": "SatelliteAgent",
+          "status": "completed",
+          "analysis": "1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes.",
+          "summary": "1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes. 5 satellite risk(s) identified. 4 satellite opportunity(s) identified.",
+          "risks": [
+            "Severe yield loss due to low biomass",
+            "Increased vulnerability to Fusarium head blight, powdery mildew, and leaf rust",
+            "Soil erosion from high exposed soil",
+            "Potential nutrient deficiencies and root stress",
+            "Reduced plant vigor leading to poor grain fill"
+          ],
+          "opportunities": [
+            "Early stress detection enables focused monitoring",
+            "Potential to improve water management before irreversible damage",
+            "Scope for soil‑conservation measures to reduce exposure",
+            "Opportunity to assess and adjust nutrient status based on observed deficiency"
+          ],
+          "confidence": 0.55,
+          "metadata": {},
+          "execution_time": 2.569,
+          "governance": {
+            "agent": "SatelliteAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.7511247863194725,
+            "posterior_mean": 0.7561647373228038,
+            "evidence": {
+              "positive": true,
+              "weight": 0.275,
+              "reason": "Completed with confidence 0.55."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.3499,
+              "utilities": {
+                "auto_execute": 6.003,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.35 from trust=0.76 (+/-0.11) on a low-risk data_collector action => human_review (EU auto=6.003, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": {
+        "summary": "Wheat crop in Coimbatore is under critical vegetation and thermal stress due to high temperatures (30.2°C) and severe water deficit (NDWI -0.204, NDVI 0.154), despite favorable soil pH and high soil nitrogen content.",
+        "consensus": "Specialists agree that acute water deficit and high ambient temperatures pose an immediate threat to crop survival and yield, requiring urgent irrigation and stress management.",
+        "merged_risks": [
+          "Ambient temperature exceeding optimal threshold (30.2°C vs 10-25°C optimal)",
+          "Severe water stress and negligible rainfall causing low canopy vigor and high crop exposure",
+          "Critical reduction in vegetation health (NDVI 0.154) threatening major yield loss",
+          "Low organic carbon content in the soil",
+          "Heightened vulnerability to disease and soil degradation under extreme moisture stress"
+        ],
+        "merged_opportunities": [
+          "Optimal soil pH (6.21) and high nitrogen levels provide strong base fertility",
+          "Humidity (61%) and wind speed (15.8 km/h) are within safe agronomic limits",
+          "Early satellite detection of water stress allows rapid management response before permanent crop loss"
+        ],
+        "conflicts": [
+          {
+            "description": "SoilAgent reports excellent soil health (90) and high nitrogen, whereas SatelliteAgent indicates critical vegetation health and suspected nutrient deficiency.",
+            "severity": "High",
+            "resolution": "Water deficit impairs nutrient uptake; high soil nitrogen cannot be utilized by plants without adequate soil moisture."
+          },
+          {
+            "description": "Weather context evaluates weather status as Good while WeatherAgent and Crop Profile show temperature exceeding optimal bounds for wheat.",
+            "severity": "Medium",
+            "resolution": "Treat temperature as a significant risk factor as wheat is sensitive to heat stress."
+          }
+        ],
+        "confidence": 0.68,
+        "evidence": [
+          {
+            "agent": "WeatherAgent",
+            "analysis": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+            "risks": [
+              "Temperature above optimal (10-25°C)",
+              "Rainfall below optimal (300-900 mm/year)"
+            ],
+            "opportunities": [
+              "Humidity is within the optimal range (50-70%)",
+              "Wind conditions are suitable (15.8 km/h < 30 km/h)"
+            ],
+            "confidence": 0.82,
+            "metadata": {}
+          },
+          {
+            "agent": "SatelliteAgent",
+            "analysis": "1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes.",
+            "risks": [
+              "Severe yield loss due to low biomass",
+              "Increased vulnerability to Fusarium head blight, powdery mildew, and leaf rust",
+              "Soil erosion from high exposed soil",
+              "Potential nutrient deficiencies and root stress",
+              "Reduced plant vigor leading to poor grain fill"
+            ],
+            "opportunities": [
+              "Early stress detection enables focused monitoring",
+              "Potential to improve water management before irreversible damage",
+              "Scope for soil‑conservation measures to reduce exposure",
+              "Opportunity to assess and adjust nutrient status based on observed deficiency"
+            ],
+            "confidence": 0.55,
+            "metadata": {}
+          }
+        ],
+        "metadata": {
+          "agents": [
+            "WeatherAgent",
+            "SatelliteAgent"
+          ],
+          "agent_count": 2,
+          "llm_provider": "gemini"
+        }
+      },
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.68,
+        "decision": "Immediate Irrigation",
+        "priority": "P1",
+        "urgency": "Immediate",
+        "risk_level": "Critical",
+        "action_order": [
+          "Increase irrigation immediately",
+          "Inspect crop for disease and nutrient deficiency",
+          "Apply compost or organic manure"
+        ],
+        "priorities": [
+          {
+            "issue": "Water Stress",
+            "severity": "Critical",
+            "urgency": "Immediate",
+            "owner": "Farmer",
+            "action": "Increase irrigation immediately"
+          },
+          {
+            "issue": "Vegetation Health",
+            "severity": "Critical",
+            "urgency": "Immediate",
+            "owner": "Agronomist",
+            "action": "Inspect crop for disease and nutrient deficiency"
+          },
+          {
+            "issue": "Organic Carbon",
+            "severity": "Medium",
+            "urgency": "Within 1 Week",
+            "owner": "Farmer",
+            "action": "Apply compost or organic manure"
+          }
+        ],
+        "impact": {
+          "agronomic": "Poor",
+          "economic": "Moderate",
+          "environmental": "Moderate",
+          "operational": "Good",
+          "yield_risk": "Severe",
+          "profitability": "Moderate",
+          "expected_benefit": "Immediate intervention can significantly reduce crop loss."
+        },
+        "summary": {
+          "executive": "Wheat cultivation in Coimbatore, Tamil Nadu currently has a critical operational risk requiring immediate attention.",
+          "business": "Market trend is unknown with moderate profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+          "justification": "The executive decision is based on 2 specialist agents. Primary concerns include: Ambient temperature exceeding optimal threshold (30.2°C vs 10-25°C optimal), Severe water stress and negligible rainfall causing low canopy vigor and high crop exposure, Critical reduction in vegetation health (NDVI 0.154) threatening major yield loss."
+        },
+        "supporting_evidence": [
+          "WeatherAgent: Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+          "SatelliteAgent: 1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.92465372322247,
+          "posterior_mean": 0.9256349955806527,
+          "evidence": {
+            "positive": true,
+            "weight": 0.51,
+            "reason": "Completed with confidence 0.68."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.124,
+            "utilities": {
+              "auto_execute": 18.836,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=18.836, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Implement immediate irrigation to relieve severe water stress, followed by rapid disease/nutrient scouting and organic matter amendment.",
+        "priority": "Critical",
+        "justification": "Satellite NDVI (0.154) and NDWI (-0.204) indicate critical canopy vigor loss and extreme water deficit, while ambient temperature (30.2 °C) exceeds wheat's optimal range. Soil pH and nitrogen are optimal, but low organic carbon and high temperature threaten yield and increase disease risk. Prompt irrigation is the only viable mitigation to prevent catastrophic yield loss.",
+        "actions": [
+          "Activate surface or sprinkler irrigation today; apply enough water to raise soil moisture to field capacity (≈30 % volumetric) and maintain it with 7‑10 day intervals during the flowering stage.",
+          "Within 24 hours, conduct a field walk to inspect for Fusarium head blight, powdery mildew, or other stress symptoms; record observations and apply appropriate fungicides (e.g., triazole at flowering) if disease is detected.",
+          "Apply 5‑7 t ha⁻¹ of well‑composted organic manure to raise organic carbon levels; incorporate into the top 15 cm to improve soil structure and water‑holding capacity.",
+          "Establish a light mulching layer (straw or biodegradable mulch) on exposed soil to reduce evaporation and temperature fluctuations.",
+          "Log irrigation volumes and timing in a farm notebook or mobile app for traceability."
+        ],
+        "expected_outcome": "Restored soil moisture will improve NDVI to ≥0.45 within 2 weeks, reduce heat‑induced stress, limit disease incidence, and preserve yield potential, allowing the wheat crop to reach normal maturity and marketable quality.",
+        "monitoring_plan": [
+          "Daily: Measure soil moisture at 15 cm depth with a handheld probe; adjust irrigation if moisture falls below 25 % volumetric.",
+          "Weekly: Capture NDVI via drone or low‑cloud‑cover satellite imagery; target NDVI >0.45 before flowering.",
+          "Bi‑weekly: Record canopy temperature and humidity; ensure temperature stays below 28 °C during peak daylight hours where possible (e.g., by timing irrigation in early morning).",
+          "Weekly: Scout for disease symptoms on 10 % of plants; document and treat immediately if symptoms appear.",
+          "Post‑irrigation: Verify that organic manure has been incorporated and mulch remains intact; re‑apply mulch if erosion occurs."
+        ],
+        "confidence": 0.68,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Immediate Irrigation",
+        "executive_priority": "P1",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9373388151833946,
+          "posterior_mean": 0.9382716455236334,
+          "evidence": {
+            "positive": true,
+            "weight": 0.68,
+            "reason": "Completed with confidence 0.68."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1034,
+            "utilities": {
+              "auto_execute": 23.461,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.10 from trust=0.94 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=23.461, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Immediate Irrigation",
+        "executive_summary": "Because wheat in Coimbatore is experiencing critical water stress, high temperature, and very low canopy vigor, the system orders immediate irrigation, a rapid field inspection for disease or nutrient deficiency, and the addition of organic matter to improve soil health.",
+        "recommendation": "Implement immediate irrigation to relieve severe water stress, followed by rapid disease/nutrient scouting and organic matter amendment.",
+        "explanation": "Satellite imagery shows NDVI (0.154) far below the healthy threshold and NDWI (-0.204) indicating acute water deficit, while the weather report records a temperature of 30.2 °C, well above wheat's optimal range and rainfall of only 0.2 mm, far below the required 300‑900 mm/year. Soil tests reveal optimal pH and high nitrogen but low organic carbon, which together with the heat and dryness raise the risk of disease and yield loss. Immediate irrigation is the only action that can quickly restore soil moisture and prevent catastrophic yield reduction.",
+        "reasoning_summary": "The WeatherAgent identified temperature above optimal and insufficient rainfall; the SatelliteAgent detected severe canopy stress and water deficit; collaborative reasoning combined these signals, highlighted the critical risk to yield, and prioritized irrigation as the most effective mitigation. Subsequent specialist consensus reinforced the urgency, leading the ExecutiveAgent to issue the final action plan.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.82,
+              "key_risks": [
+                "Temperature above optimal (10-25°C)",
+                "Rainfall below optimal (300-900 mm/year)"
+              ],
+              "key_opportunities": [
+                "Humidity is within the optimal range (50-70%)",
+                "Wind conditions are suitable (15.8 km/h < 30 km/h)"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Temperature above optimal (10-25°C)",
+                  "confidence": 0.82,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7757,
+                  "importance": "Moderate",
+                  "rank": 1
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Rainfall below optimal (300-900 mm/year)",
+                  "confidence": 0.82,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7757,
+                  "importance": "Moderate",
+                  "rank": 2
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "analysis",
+                  "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+                  "confidence": 0.82,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.7657,
+                  "importance": "Moderate",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Specialist",
+              "source": "SatelliteAgent",
+              "finding": "1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes. 5 satellite risk(s) identified. 4 satellite opportunity(s) identified.",
+              "confidence": 0.55,
+              "key_risks": [
+                "Severe yield loss due to low biomass",
+                "Increased vulnerability to Fusarium head blight, powdery mildew, and leaf rust",
+                "Soil erosion from high exposed soil",
+                "Potential nutrient deficiencies and root stress",
+                "Reduced plant vigor leading to poor grain fill"
+              ],
+              "key_opportunities": [
+                "Early stress detection enables focused monitoring",
+                "Potential to improve water management before irreversible damage",
+                "Scope for soil‑conservation measures to reduce exposure",
+                "Opportunity to assess and adjust nutrient status based on observed deficiency"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Severe yield loss due to low biomass",
+                  "confidence": 0.55,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6962,
+                  "importance": "Moderate",
+                  "rank": 7
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Increased vulnerability to Fusarium head blight, powdery mildew, and leaf rust",
+                  "confidence": 0.55,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6962,
+                  "importance": "Moderate",
+                  "rank": 8
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Soil erosion from high exposed soil",
+                  "confidence": 0.55,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6962,
+                  "importance": "Moderate",
+                  "rank": 9
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 3,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Temperature above optimal (10-25°C)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7757,
+              "importance": "Moderate",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Rainfall below optimal (300-900 mm/year)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7757,
+              "importance": "Moderate",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7657,
+              "importance": "Moderate",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7657,
+              "importance": "Moderate",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Humidity is within the optimal range (50-70%)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7607,
+              "importance": "Moderate",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 8,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "Wheat crop in Coimbatore is under critical vegetation and thermal stress due to high temperatures (30.2°C) and severe water deficit (NDWI -0.204, NDVI 0.154), despite favorable soil pH and high soil nitrogen content.",
+              "confidence": 0.68,
+              "consensus": "Specialists agree that acute water deficit and high ambient temperatures pose an immediate threat to crop survival and yield, requiring urgent irrigation and stress management.",
+              "merged_risks": [
+                "Ambient temperature exceeding optimal threshold (30.2°C vs 10-25°C optimal)",
+                "Severe water stress and negligible rainfall causing low canopy vigor and high crop exposure",
+                "Critical reduction in vegetation health (NDVI 0.154) threatening major yield loss",
+                "Low organic carbon content in the soil",
+                "Heightened vulnerability to disease and soil degradation under extreme moisture stress"
+              ],
+              "merged_opportunities": [
+                "Optimal soil pH (6.21) and high nitrogen levels provide strong base fertility",
+                "Humidity (61%) and wind speed (15.8 km/h) are within safe agronomic limits",
+                "Early satellite detection of water stress allows rapid management response before permanent crop loss"
+              ],
+              "conflicts": [
+                {
+                  "description": "SoilAgent reports excellent soil health (90) and high nitrogen, whereas SatelliteAgent indicates critical vegetation health and suspected nutrient deficiency.",
+                  "severity": "High",
+                  "resolution": "Water deficit impairs nutrient uptake; high soil nitrogen cannot be utilized by plants without adequate soil moisture."
+                },
+                {
+                  "description": "Weather context evaluates weather status as Good while WeatherAgent and Crop Profile show temperature exceeding optimal bounds for wheat.",
+                  "severity": "Medium",
+                  "resolution": "Treat temperature as a significant risk factor as wheat is sensitive to heat stress."
+                }
+              ],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 9,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Immediate Irrigation",
+              "confidence": 0.68,
+              "priority": "P1",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 10,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Implement immediate irrigation to relieve severe water stress, followed by rapid disease/nutrient scouting and organic matter amendment.",
+              "confidence": 0.68,
+              "actions": [
+                "Activate surface or sprinkler irrigation today; apply enough water to raise soil moisture to field capacity (≈30 % volumetric) and maintain it with 7‑10 day intervals during the flowering stage.",
+                "Within 24 hours, conduct a field walk to inspect for Fusarium head blight, powdery mildew, or other stress symptoms; record observations and apply appropriate fungicides (e.g., triazole at flowering) if disease is detected.",
+                "Apply 5‑7 t ha⁻¹ of well‑composted organic manure to raise organic carbon levels; incorporate into the top 15 cm to improve soil structure and water‑holding capacity.",
+                "Establish a light mulching layer (straw or biodegradable mulch) on exposed soil to reduce evaporation and temperature fluctuations.",
+                "Log irrigation volumes and timing in a farm notebook or mobile app for traceability."
+              ],
+              "justification": "Satellite NDVI (0.154) and NDWI (-0.204) indicate critical canopy vigor loss and extreme water deficit, while ambient temperature (30.2 °C) exceeds wheat's optimal range. Soil pH and nitrogen are optimal, but low organic carbon and high temperature threaten yield and increase disease risk. Prompt irrigation is the only viable mitigation to prevent catastrophic yield loss.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Temperature above optimal (10-25°C)",
+              "strength": 0.7757
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Rainfall below optimal (300-900 mm/year)",
+              "strength": 0.7757
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+              "strength": 0.7657
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "Wheat crop in Coimbatore is under critical vegetation and thermal stress due to high temperatures (30.2°C) and severe water deficit (NDWI -0.204, NDVI 0.154), despite favorable soil pH and high soil nitrogen content.",
+              "strength": 0.68
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Immediate Irrigation",
+              "strength": 0.68
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Implement immediate irrigation to relieve severe water stress, followed by rapid disease/nutrient scouting and organic matter amendment.",
+              "strength": 0.68
+            }
+          ],
+          "summary": "2 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Immediate Irrigation'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 10,
+          "specialist_steps": 2,
+          "evidence_steps": 5,
+          "decision_step": 9,
+          "recommendation_step": 10,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Temperature above optimal (10-25°C)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7757,
+              "importance": "Moderate",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (300-900 mm/year)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7757,
+              "importance": "Moderate",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7657,
+              "importance": "Moderate",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7657,
+              "importance": "Moderate",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Humidity is within the optimal range (50-70%)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7607,
+              "importance": "Moderate",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Temperature above optimal (10-25°C)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7757,
+              "importance": "Moderate",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (300-900 mm/year)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7757,
+              "importance": "Moderate",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7657,
+              "importance": "Moderate",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7657,
+              "importance": "Moderate",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Humidity is within the optimal range (50-70%)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7607,
+              "importance": "Moderate",
+              "rank": 5
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Wind conditions are suitable (15.8 km/h < 30 km/h)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7607,
+              "importance": "Moderate",
+              "rank": 6
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Severe yield loss due to low biomass",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6962,
+              "importance": "Moderate",
+              "rank": 7
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Increased vulnerability to Fusarium head blight, powdery mildew, and leaf rust",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6962,
+              "importance": "Moderate",
+              "rank": 8
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Soil erosion from high exposed soil",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6962,
+              "importance": "Moderate",
+              "rank": 9
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Potential nutrient deficiencies and root stress",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6962,
+              "importance": "Moderate",
+              "rank": 10
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Reduced plant vigor leading to poor grain fill",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6962,
+              "importance": "Moderate",
+              "rank": 11
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "analysis",
+              "finding": "1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes.",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6862,
+              "importance": "Moderate",
+              "rank": 12
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "summary",
+              "finding": "1. NDVI (0.154) is far below the crop‑specific poor threshold (0.30), indicating extremely low canopy vigor and likely severe biomass loss. 2. NDWI (‑0.204) is below the high‑stress threshold (0.00), confirming acute water deficit. 3. SAVI (0.105) is beneath the high‑exposure threshold (0.20), showing extensive exposed soil and poor vegetation cover. 4. The satellite‑derived vegetation health label \"Critical\" aligns with the index values, confirming a dire vegetation condition. 5. Water availability is insufficient, as reflected by the negative NDWI and high water‑stress classification. 6. The indices collectively signal a strong need for additional moisture to avoid further decline, though specific irrigation prescriptions are omitted per policy. 7. Risks include rapid yield reduction, heightened susceptibility to Fusarium head blight, powdery mildew, and leaf rust, increased soil erosion, and potential nutrient leaching. 8. Opportunities lie in the early detection of stress, allowing timely monitoring, potential adjustment of water management strategies, and implementation of soil‑conservation practices to mitigate exposure. 9. Overall, the vegetation assessment is critical, with the crop experiencing severe water stress, poor canopy development, and high soil exposure, all of which threaten productive outcomes. 5 satellite risk(s) identified. 4 satellite opportunity(s) identified.",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6862,
+              "importance": "Moderate",
+              "rank": 13
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Early stress detection enables focused monitoring",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6812,
+              "importance": "Moderate",
+              "rank": 14
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Potential to improve water management before irreversible damage",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6812,
+              "importance": "Moderate",
+              "rank": 15
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Scope for soil‑conservation measures to reduce exposure",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6812,
+              "importance": "Moderate",
+              "rank": 16
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Opportunity to assess and adjust nutrient status based on observed deficiency",
+              "confidence": 0.55,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6812,
+              "importance": "Moderate",
+              "rank": 17
+            }
+          ],
+          "source_summary": {
+            "WeatherAgent": {
+              "evidence_score": 0.7757,
+              "finding_count": 6,
+              "highest_importance": "Moderate"
+            },
+            "SatelliteAgent": {
+              "evidence_score": 0.6962,
+              "finding_count": 11,
+              "highest_importance": "Moderate"
+            }
+          },
+          "total_findings": 17,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Temperature above optimal (10-25°C)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7757,
+              "importance": "Moderate",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (300-900 mm/year)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7757,
+              "importance": "Moderate",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm.",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7657,
+              "importance": "Moderate",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are above optimal temperature range for wheat (30.2°C vs optimal 10-25°C), but humidity (61%) and wind speed (15.8 km/h) are within acceptable limits. Rainfall (0.2 mm) is below the annual requirement of 300-900 mm. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7657,
+              "importance": "Moderate",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Humidity is within the optimal range (50-70%)",
+              "confidence": 0.82,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7607,
+              "importance": "Moderate",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "Severe yield loss due to water stress and high temperature",
+          "Increased vulnerability to Fusarium head blight, powdery mildew, and leaf rust",
+          "Soil erosion from exposed soil",
+          "Low organic carbon may limit long‑term soil fertility"
+        ],
+        "opportunities": [
+          "Optimal soil pH and high nitrogen provide a strong fertility base",
+          "Humidity and wind conditions are favorable for wheat growth",
+          "Early detection of stress allows rapid corrective irrigation",
+          "Potential to improve soil structure by adding organic matter"
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Delay irrigation",
+            "why_rejected": "Immediate irrigation was preferred because current evidence indicates insufficient water availability."
+          },
+          {
+            "decision": "Apply partial irrigation",
+            "why_rejected": "The evidence supports stronger intervention than a partial irrigation strategy."
+          },
+          {
+            "decision": "Wait for natural rainfall",
+            "why_rejected": "Irrigation cost could be avoided if sufficient rain occurred, but rainfall is currently negligible."
+          }
+        ],
+        "limitations": [
+          {
+            "category": "Missing Evidence",
+            "limitation": "SoilAgent did not return an output.",
+            "impact": "The final recommendation was produced without SoilAgent evidence."
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "MarketAgent did not return an output.",
+            "impact": "The final recommendation was produced without MarketAgent evidence."
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "HistoricalAgent did not return an output.",
+            "impact": "The final recommendation was produced without HistoricalAgent evidence."
+          }
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Weather changes can affect irrigation and field operations."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Monitor environmental stress."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Ensure irrigation is effective."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Monthly",
+            "reason": "Confirm pH remains within optimal range."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.6825,
+          "specialist_average": 0.685,
+          "strongest_source": "WeatherAgent",
+          "strongest_confidence": 0.82,
+          "weakest_source": "SatelliteAgent",
+          "weakest_confidence": 0.55,
+          "unavailable_sources": [],
+          "breakdown": {
+            "WeatherAgent": 0.82,
+            "SatelliteAgent": 0.55,
+            "CollaborativeReasoning": 0.68,
+            "ExecutiveDecision": 0.68
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.68. The strongest specialist evidence came from WeatherAgent (0.82), while the weakest was SatelliteAgent (0.55). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.6825,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8633,
+            "trust_std": 0.0724
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8539,
+            "trust_std": 0.0739
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7562,
+            "trust_std": 0.1061
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6469,
+            "trust_std": 0.1448
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9256,
+            "trust_std": 0.0497
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9383,
+            "trust_std": 0.0416
+          }
+        },
+        "crop_learning": {
+          "crop": "wheat",
+          "trust_mean": 0.8591,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.866,
+              "trust_std": 0.0854
+            },
+            "wheat": {
+              "trust_mean": 0.8591,
+              "trust_std": 0.0892
+            },
+            "mango": {
+              "trust_mean": 0.8461,
+              "trust_std": 0.0964
+            },
+            "tomato": {
+              "trust_mean": 0.8657,
+              "trust_std": 0.0855
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.68,
+      "statistics": {
+        "agents_planned": 3,
+        "specialist_agents": 2,
+        "agents_completed": 2,
+        "agents_failed": 0,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.95,
+        "reasoning_confidence": 0.68,
+        "executive_confidence": 0.68,
+        "explanation_confidence": 0.6825,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 3,
+        "monitoring_items": 4,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 459.361
+  }
+}

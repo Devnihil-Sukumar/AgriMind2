@@ -1,0 +1,22 @@
+{
+  "run_id": "rice_WeatherAgent",
+  "crop": "rice",
+  "agent": "WeatherAgent",
+  "prompt_chars": 4957,
+  "ollama": {
+    "elapsed_seconds": 151.776,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 376,
+    "raw_response": "{\n    \"analysis\": \"Current weather is suitable for rice growth with minor risks related to rainfall deficit.\",\n    \"risks\": [\n        \"Rainfall below optimal (1000-2000 mm)\"\n    ],\n    \"opportunities\": [\n        \"Temperature is within the optimal range.\",\n        \"Humidity is within the optimal range.\",\n        \"Wind conditions are suitable.\"\n    ],\n    \"confidence\": 0.92\n}",
+    "error": null
+  },
+  "groq": {
+    "elapsed_seconds": 4.392,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 648,
+    "raw_response": "{\n    \"analysis\": \"Current conditions align well with rice's optimal temperature (27.6 °C), humidity (70 %) and wind speed (12.7 km/h). However, the lack of rainfall (0 mm) highlights a water availability risk, as the crop requires 1000‑2000 mm over its growth cycle.\",\n    \"risks\": [\n        \"Insufficient rainfall leading to potential water stress\",\n        \"Risk of inadequate soil moisture for flood irrigation\"\n    ],\n    \"opportunities\": [\n        \"Temperature is within the optimal 20‑30 °C range\",\n        \"Humidity is within the optimal 60‑80 % range\",\n        \"Wind speed is well below the 30 km/h maximum\"\n    ],\n    \"confidence\": 0.92\n}",
+    "error": null
+  }
+}

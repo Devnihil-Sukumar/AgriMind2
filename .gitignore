@@ -19,6 +19,10 @@ vector_db/
 
 # Logs
 *.log
+logs/*.jsonl
+
+# TRUSTAI governance runtime state
+app/governance/state/
 
 # Environment
 .env
@@ -29,3 +33,15 @@ Thumbs.db
 
 # Model cache
 .cache/
+# Generated live-data-source caches (regenerate themselves)
+data/soilgrids_cache.json
+data/market_price_history.json
+
+# Claude Code local session/worktree state
+.claude/
+
+# Runtime logs
+logs/
+
+# Large binary bundles (share directly, not via git history)
+*.zip

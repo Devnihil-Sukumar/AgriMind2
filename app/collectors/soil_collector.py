@@ -4,26 +4,24 @@ AgriMind
 
 Soil Collector
 
-Collects soil information using the dynamic crop profile.
+Responsibilities
+----------------
+1. Call SoilTool.
+2. Normalize soil response.
+3. Return standardized soil data.
 
 Author : AgriMind Team
 ==========================================================================
 """
 
+import logging
+
 from app.tools.soil_tool import soil_tool
+
+logger = logging.getLogger(__name__)
 
 
 class SoilCollector:
-
-    """
-    Soil Collector
-
-    Responsibilities
-    ----------------
-    1. Call SoilTool.
-    2. Normalize the response.
-    3. Return standardized soil data.
-    """
 
     ####################################################################
     # Collect
@@ -35,43 +33,153 @@ class SoilCollector:
 
         crop_profile,
 
-        latitude=None,
+        latitude,
 
-        longitude=None
+        longitude
 
     ):
 
-        result = soil_tool.execute(
+        try:
 
-            crop_profile=crop_profile,
+            result = soil_tool.execute(
 
-            latitude=latitude,
+                crop_profile=crop_profile,
 
-            longitude=longitude
+                latitude=latitude,
 
-        )
+                longitude=longitude
 
-        ############################################################
+            )
+
+        except Exception as e:
+
+            logger.warning(
+
+                "Soil collection failed: %s",
+                e
+
+            )
+
+            result = {
+
+                "status": "failed",
+
+                "assessment": {
+
+                    "soil_health_score": 0,
+
+                    "ph_status": "Unknown",
+
+                    "notes":
+                        "Soil data unavailable: "
+                        + str(e)
+
+                },
+
+                "error": str(e)
+
+            }
+
+        if result.get(
+
+            "status"
+
+        ) != "success":
+
+            assessment = result.get(
+
+                "assessment",
+
+                {}
+
+            ) or {}
+
+            ############################################################
+            # context_agent.py and executive/summary_generator.py index
+            # soil["assessment"]["soil_health_score"] directly, so this
+            # key must survive every failure path, not just the tool's
+            # own status!=success branch.
+            ############################################################
+
+            if "soil_health_score" not in assessment:
+
+                assessment["soil_health_score"] = 0
+
+            return {
+
+                "source": "soil",
+
+                "status": "failed",
+
+                "soil": None,
+
+                "raw_data": None,
+
+                "assessment": assessment,
+
+                "confidence": 0
+
+            }
 
         return {
 
             "source": "soil",
 
-            "status": result["status"],
+            "status": "success",
 
-            "location": {
+            "soil":
 
-                "district": result["data"].get("district"),
+                result.get(
 
-                "state": result["data"].get("state")
+                    "data",
 
-            },
+                    result.get(
 
-            "raw_data": result["data"],
+                        "soil"
 
-            "assessment": result["assessment"],
+                    )
 
-            "confidence": result["confidence"]
+                ),
+
+            "raw_data":
+
+                result.get(
+
+                    "data",
+
+                    {}
+
+                ),
+
+            "assessment":
+
+                result.get(
+
+                    "assessment",
+
+                    {}
+
+                ),
+
+            "confidence":
+
+                result.get(
+
+                    "confidence",
+
+                    0
+
+                ),
+
+            "metadata":
+
+                result.get(
+
+                    "metadata",
+
+                    {}
+
+                )
 
         }
 

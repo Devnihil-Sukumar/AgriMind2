@@ -1,0 +1,2649 @@
+{
+  "run_id": "mango_yield_r3",
+  "phase": "baseline",
+  "crop": "mango",
+  "query": "What should I do to maximize mango yield this season?",
+  "latitude": 11.0168,
+  "longitude": 76.9558,
+  "wall_time_seconds": 505.813,
+  "error": null,
+  "meta": {
+    "query_type": "yield",
+    "repeat": 3
+  },
+  "result": {
+    "query": "What should I do to maximize mango yield this season?",
+    "crop_profile": {
+      "crop": "mango",
+      "scientific_name": "Mangifera indica",
+      "family": "Anacardiaceae",
+      "type": "Perennial",
+      "category": "Fruit",
+      "growth_duration_days": 240,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 35,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 900,
+          "maximum": 1000,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 15,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 8
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Loam",
+          "Clay Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "High",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Drip irrigation",
+        "water_requirement": "High",
+        "critical_growth_stage": "Fruiting",
+        "recommended_frequency": "Every 7-10 days"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.15,
+          "high_stress": 0.05
+        },
+        "savi": {
+          "low_exposure": 0.55,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.25
+        }
+      },
+      "market": {
+        "keywords": [
+          "Tropical fruit",
+          "Juicy",
+          "Sweet"
+        ],
+        "major_states": [
+          "Andhra Pradesh",
+          "Telangana",
+          "Karnataka"
+        ],
+        "major_countries": [
+          "India",
+          "China",
+          "Brazil"
+        ],
+        "harvest_season": "May-July",
+        "storage_capability": "Moderate",
+        "perishability": "High"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Vitamin A",
+          "Vitamin C",
+          "Potassium"
+        ],
+        "commercial_products": [
+          "Juice",
+          "Pulp",
+          "Jam"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Anthracnose",
+          "symptoms": "Black spots on leaves and fruits",
+          "treatment": "Fungicides"
+        },
+        {
+          "name": "Powdery mildew",
+          "symptoms": "White powder on leaves",
+          "treatment": "Fungicides"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Fruit fly",
+          "treatment": "Insecticides"
+        },
+        {
+          "name": "Mealybug",
+          "treatment": "Insecticides"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "NPK 10:10:10",
+        "npk_ratio": "1:1:1",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 10,
+        "excellent_tonnes_per_hectare": 15
+      },
+      "recommendations": {
+        "irrigation": "Regular watering",
+        "fertilizer": "Balanced fertilizer",
+        "harvesting": "Hand-picking",
+        "storage": "Cool and dry place"
+      },
+      "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+      "references": [
+        "FAO",
+        "ICAR"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-08-31T15:25:26.506336",
+        "crop": "mango",
+        "crop_profile": {
+          "crop": "mango",
+          "scientific_name": "Mangifera indica",
+          "family": "Anacardiaceae",
+          "type": "Perennial",
+          "category": "Fruit",
+          "growth_duration_days": 240,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Fruiting",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 15,
+              "maximum": 35,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 60,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 900,
+              "maximum": 1000,
+              "unit": "mm/year"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 7.0
+            },
+            "wind_speed": {
+              "maximum": 15,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 8
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "Loam",
+              "Clay Loam"
+            ],
+            "preferred_nitrogen": "Medium",
+            "preferred_organic_carbon": "High",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "Drip irrigation",
+            "water_requirement": "High",
+            "critical_growth_stage": "Fruiting",
+            "recommended_frequency": "Every 7-10 days"
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.75,
+              "healthy": 0.6,
+              "moderate": 0.45,
+              "poor": 0.3
+            },
+            "ndwi": {
+              "low_stress": 0.25,
+              "moderate_stress": 0.15,
+              "high_stress": 0.05
+            },
+            "savi": {
+              "low_exposure": 0.55,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.25
+            }
+          },
+          "market": {
+            "keywords": [
+              "Tropical fruit",
+              "Juicy",
+              "Sweet"
+            ],
+            "major_states": [
+              "Andhra Pradesh",
+              "Telangana",
+              "Karnataka"
+            ],
+            "major_countries": [
+              "India",
+              "China",
+              "Brazil"
+            ],
+            "harvest_season": "May-July",
+            "storage_capability": "Moderate",
+            "perishability": "High"
+          },
+          "nutrition": {
+            "primary_nutrients": [
+              "Vitamin A",
+              "Vitamin C",
+              "Potassium"
+            ],
+            "commercial_products": [
+              "Juice",
+              "Pulp",
+              "Jam"
+            ]
+          },
+          "common_diseases": [
+            {
+              "name": "Anthracnose",
+              "symptoms": "Black spots on leaves and fruits",
+              "treatment": "Fungicides"
+            },
+            {
+              "name": "Powdery mildew",
+              "symptoms": "White powder on leaves",
+              "treatment": "Fungicides"
+            }
+          ],
+          "common_pests": [
+            {
+              "name": "Fruit fly",
+              "treatment": "Insecticides"
+            },
+            {
+              "name": "Mealybug",
+              "treatment": "Insecticides"
+            }
+          ],
+          "fertilizer": {
+            "recommended": "NPK 10:10:10",
+            "npk_ratio": "1:1:1",
+            "organic_options": [
+              "Compost",
+              "Manure"
+            ]
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 10,
+            "excellent_tonnes_per_hectare": 15
+          },
+          "recommendations": {
+            "irrigation": "Regular watering",
+            "fertilizer": "Balanced fertilizer",
+            "harvesting": "Hand-picking",
+            "storage": "Cool and dry place"
+          },
+          "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+          "references": [
+            "FAO",
+            "ICAR"
+          ],
+          "generated_by": "Groq",
+          "version": 2
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T20:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.7,
+          "humidity": 88,
+          "rainfall": 0.0,
+          "wind_speed": 15.2,
+          "pressure": 962.6,
+          "time": "2026-08-31T20:45"
+        },
+        "assessment": {
+          "crop": "mango",
+          "status": "Moderate",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (900-1000 mm/year)",
+            "Wind speed exceeds safe limit (15 km/h)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range."
+          ]
+        },
+        "confidence": 74
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Kanyakumari Uzhavar Sandhai",
+        "nearest_market": {
+          "market": "Ramanathapuram Uzhavar Sandhai",
+          "district": "Ramanathapuram",
+          "price": 3838.0,
+          "trend": "Stable",
+          "distance_km": 276.18,
+          "market_score": 0.6276,
+          "rank": 3
+        },
+        "top_markets": [
+          {
+            "market": "Kanyakumari Uzhavar Sandhai",
+            "district": "Kanyakumari",
+            "price": 3807.0,
+            "trend": "Increasing",
+            "distance_km": 331.84,
+            "market_score": 0.6831,
+            "rank": 1
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 3770.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.642,
+            "rank": 2
+          },
+          {
+            "market": "Ramanathapuram Uzhavar Sandhai",
+            "district": "Ramanathapuram",
+            "price": 3838.0,
+            "trend": "Stable",
+            "distance_km": 276.18,
+            "market_score": 0.6276,
+            "rank": 3
+          },
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 3913.0,
+            "trend": "Volatile",
+            "distance_km": 281.81,
+            "market_score": 0.6207,
+            "rank": 4
+          },
+          {
+            "market": "Chengalpattu Uzhavar Sandhai",
+            "district": "Chengalpattu",
+            "price": 3824.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.6119,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "mango",
+          "TopMarkets": [
+            {
+              "market": "Kanyakumari Uzhavar Sandhai",
+              "district": "Kanyakumari",
+              "price": 3807.0,
+              "trend": "Increasing",
+              "distance_km": 331.84,
+              "market_score": 0.6831,
+              "rank": 1
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 3770.0,
+              "trend": "Increasing",
+              "distance_km": 360.83,
+              "market_score": 0.642,
+              "rank": 2
+            },
+            {
+              "market": "Ramanathapuram Uzhavar Sandhai",
+              "district": "Ramanathapuram",
+              "price": 3838.0,
+              "trend": "Stable",
+              "distance_km": 276.18,
+              "market_score": 0.6276,
+              "rank": 3
+            },
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 3913.0,
+              "trend": "Volatile",
+              "distance_km": 281.81,
+              "market_score": 0.6207,
+              "rank": 4
+            },
+            {
+              "market": "Chengalpattu Uzhavar Sandhai",
+              "district": "Chengalpattu",
+              "price": 3824.0,
+              "trend": "Stable",
+              "distance_km": 376.38,
+              "market_score": 0.6119,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Kanyakumari Uzhavar Sandhai with modal price 3807.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T15:25:26.490593",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "mango",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.7\nHumidity : 88\nRainfall : 0.0\nWind Speed : 15.2\nPressure : 962.6\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Ramanathapuram Uzhavar Sandhai\nNearest Distance : 276.18 km\nNearest Market Price : 3838.0\nNearest Market Trend : Stable\n\nBest Ranked Market : Kanyakumari Uzhavar Sandhai\nBest Market Price : 3807.0\nBest Market Distance : 331.84 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : mango\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "mango",
+      "crop_profile": {
+        "crop": "mango",
+        "scientific_name": "Mangifera indica",
+        "family": "Anacardiaceae",
+        "type": "Perennial",
+        "category": "Fruit",
+        "growth_duration_days": 240,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Fruiting",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 15,
+            "maximum": 35,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 60,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 900,
+            "maximum": 1000,
+            "unit": "mm/year"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 7.0
+          },
+          "wind_speed": {
+            "maximum": 15,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 8
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "Loam",
+            "Clay Loam"
+          ],
+          "preferred_nitrogen": "Medium",
+          "preferred_organic_carbon": "High",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "Drip irrigation",
+          "water_requirement": "High",
+          "critical_growth_stage": "Fruiting",
+          "recommended_frequency": "Every 7-10 days"
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.75,
+            "healthy": 0.6,
+            "moderate": 0.45,
+            "poor": 0.3
+          },
+          "ndwi": {
+            "low_stress": 0.25,
+            "moderate_stress": 0.15,
+            "high_stress": 0.05
+          },
+          "savi": {
+            "low_exposure": 0.55,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.25
+          }
+        },
+        "market": {
+          "keywords": [
+            "Tropical fruit",
+            "Juicy",
+            "Sweet"
+          ],
+          "major_states": [
+            "Andhra Pradesh",
+            "Telangana",
+            "Karnataka"
+          ],
+          "major_countries": [
+            "India",
+            "China",
+            "Brazil"
+          ],
+          "harvest_season": "May-July",
+          "storage_capability": "Moderate",
+          "perishability": "High"
+        },
+        "nutrition": {
+          "primary_nutrients": [
+            "Vitamin A",
+            "Vitamin C",
+            "Potassium"
+          ],
+          "commercial_products": [
+            "Juice",
+            "Pulp",
+            "Jam"
+          ]
+        },
+        "common_diseases": [
+          {
+            "name": "Anthracnose",
+            "symptoms": "Black spots on leaves and fruits",
+            "treatment": "Fungicides"
+          },
+          {
+            "name": "Powdery mildew",
+            "symptoms": "White powder on leaves",
+            "treatment": "Fungicides"
+          }
+        ],
+        "common_pests": [
+          {
+            "name": "Fruit fly",
+            "treatment": "Insecticides"
+          },
+          {
+            "name": "Mealybug",
+            "treatment": "Insecticides"
+          }
+        ],
+        "fertilizer": {
+          "recommended": "NPK 10:10:10",
+          "npk_ratio": "1:1:1",
+          "organic_options": [
+            "Compost",
+            "Manure"
+          ]
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 10,
+          "excellent_tonnes_per_hectare": 15
+        },
+        "recommendations": {
+          "irrigation": "Regular watering",
+          "fertilizer": "Balanced fertilizer",
+          "harvesting": "Hand-picking",
+          "storage": "Cool and dry place"
+        },
+        "summary": "Mango is a tropical fruit crop that requires warm and humid climate. It is a perennial crop with a growth duration of 240 days. The optimal temperature for mango cultivation is between 15-35°C. Mango is a high-value crop with a average yield of 10 tonnes per hectare.",
+        "references": [
+          "FAO",
+          "ICAR"
+        ],
+        "generated_by": "Groq",
+        "version": 2
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T20:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.7,
+          "humidity": 88,
+          "rainfall": 0.0,
+          "wind_speed": 15.2,
+          "pressure": 962.6,
+          "time": "2026-08-31T20:45"
+        },
+        "assessment": {
+          "crop": "mango",
+          "status": "Moderate",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (900-1000 mm/year)",
+            "Wind speed exceeds safe limit (15 km/h)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range."
+          ]
+        },
+        "confidence": 74
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T15:25:26.490593",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Kanyakumari Uzhavar Sandhai",
+        "nearest_market": {
+          "market": "Ramanathapuram Uzhavar Sandhai",
+          "district": "Ramanathapuram",
+          "price": 3838.0,
+          "trend": "Stable",
+          "distance_km": 276.18,
+          "market_score": 0.6276,
+          "rank": 3
+        },
+        "top_markets": [
+          {
+            "market": "Kanyakumari Uzhavar Sandhai",
+            "district": "Kanyakumari",
+            "price": 3807.0,
+            "trend": "Increasing",
+            "distance_km": 331.84,
+            "market_score": 0.6831,
+            "rank": 1
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 3770.0,
+            "trend": "Increasing",
+            "distance_km": 360.83,
+            "market_score": 0.642,
+            "rank": 2
+          },
+          {
+            "market": "Ramanathapuram Uzhavar Sandhai",
+            "district": "Ramanathapuram",
+            "price": 3838.0,
+            "trend": "Stable",
+            "distance_km": 276.18,
+            "market_score": 0.6276,
+            "rank": 3
+          },
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 3913.0,
+            "trend": "Volatile",
+            "distance_km": 281.81,
+            "market_score": 0.6207,
+            "rank": 4
+          },
+          {
+            "market": "Chengalpattu Uzhavar Sandhai",
+            "district": "Chengalpattu",
+            "price": 3824.0,
+            "trend": "Stable",
+            "distance_km": 376.38,
+            "market_score": 0.6119,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "mango",
+          "TopMarkets": [
+            {
+              "market": "Kanyakumari Uzhavar Sandhai",
+              "district": "Kanyakumari",
+              "price": 3807.0,
+              "trend": "Increasing",
+              "distance_km": 331.84,
+              "market_score": 0.6831,
+              "rank": 1
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 3770.0,
+              "trend": "Increasing",
+              "distance_km": 360.83,
+              "market_score": 0.642,
+              "rank": 2
+            },
+            {
+              "market": "Ramanathapuram Uzhavar Sandhai",
+              "district": "Ramanathapuram",
+              "price": 3838.0,
+              "trend": "Stable",
+              "distance_km": 276.18,
+              "market_score": 0.6276,
+              "rank": 3
+            },
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 3913.0,
+              "trend": "Volatile",
+              "distance_km": 281.81,
+              "market_score": 0.6207,
+              "rank": 4
+            },
+            {
+              "market": "Chengalpattu Uzhavar Sandhai",
+              "district": "Chengalpattu",
+              "price": 3824.0,
+              "trend": "Stable",
+              "distance_km": 376.38,
+              "market_score": 0.6119,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Kanyakumari Uzhavar Sandhai with modal price 3807.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "mango",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.7\nHumidity : 88\nRainfall : 0.0\nWind Speed : 15.2\nPressure : 962.6\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Ramanathapuram Uzhavar Sandhai\nNearest Distance : 276.18 km\nNearest Market Price : 3838.0\nNearest Market Trend : Stable\n\nBest Ranked Market : Kanyakumari Uzhavar Sandhai\nBest Market Price : 3807.0\nBest Market Distance : 331.84 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : mango\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Moderate",
+      "soil_health": 90,
+      "vegetation_health": "Critical",
+      "market_trend": "Increasing",
+      "risks": [
+        "Humidity above optimal (60-80%)",
+        "Rainfall below optimal (900-1000 mm/year)",
+        "Wind speed exceeds safe limit (15 km/h)",
+        "Vegetation health is critical",
+        "High crop water stress",
+        "Large exposed soil area",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality",
+        "Market prices increasing"
+      ],
+      "confidence": 28.98
+    },
+    "plan": {
+      "goal": "What should I do to maximize mango yield this season?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to mango yield."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Assess soil properties and fertility for optimal mango production."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Evaluate crop health and stress indicators via satellite data."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation based on specialist analyses."
+        }
+      ],
+      "confidence": 0.95
+    },
+    "reasoning": {
+      "summary": "The mango crop in Coimbatore faces severe moisture stress and critical canopy decline as detected by satellite imagery, despite favorable ambient temperatures and suitable soil pH and texture. Immediate targeted irrigation, organic carbon supplementation, and pest/disease scouting are required to prevent significant yield loss while leveraging favorable market price trends.",
+      "consensus": "Soil pH, texture, and nitrogen levels are suitable for mango cultivation, and market price trends are favorable. However, critical water stress and canopy vigor decline present an immediate threat requiring urgent field intervention.",
+      "merged_risks": [
+        "Severe canopy vigor decline and critical crop water stress (NDVI 0.154, NDWI -0.204) leading to high risk of yield loss",
+        "Low soil organic carbon content causing potential nutrient imbalances despite high nitrogen",
+        "Sub-optimal annual rainfall and excessive relative humidity increasing disease susceptibility",
+        "Elevated wind speeds exceeding safe operational thresholds (15.2 km/h)",
+        "High soil exposure increasing potential for soil erosion and surface evaporation"
+      ],
+      "merged_opportunities": [
+        "Favorable soil pH (6.21) and clay loam texture suitable for long-term mango root development",
+        "Optimal ambient temperature range for crop growth",
+        "Early satellite detection enables targeted variable-rate irrigation and localized mulching",
+        "Increasing market price trends across regional commodity hubs"
+      ],
+      "conflicts": [
+        {
+          "description": "Soil assessment indicates high soil health (score 90) and high nitrogen, whereas satellite metrics report critical crop stress and low canopy vigor.",
+          "severity": "High",
+          "resolution": "Conduct physical ground-truthing to verify if low NDVI stems from young canopy architecture, pruning, or localized disease/water deficit despite adequate ground soil nutrient stock."
+        },
+        {
+          "description": "Weather agent indicates favorable temperatures with moderate risk, while satellite data reflects severe crop stress.",
+          "severity": "Medium",
+          "resolution": "Prioritize immediate satellite-guided drip irrigation as cumulative rainfall deficits are causing physiological water stress despite suitable current temperatures."
+        }
+      ],
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "agent": "WeatherAgent",
+          "analysis": "Current weather is suitable for mango cultivation with minor risks.",
+          "risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (900-1000 mm/year)",
+            "Wind speed exceeds safe limit (15 km/h)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range."
+          ],
+          "confidence": 0.95,
+          "metadata": {}
+        },
+        {
+          "agent": "SoilAgent",
+          "analysis": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility.",
+          "risks": [
+            "Low organic carbon content below mango's requirement for high organic carbon",
+            "Potential nutrient imbalance due to high nitrogen and low organic carbon"
+          ],
+          "opportunities": [
+            "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+            "High nitrogen levels match mango's preferred nitrogen requirement",
+            "Clay loam texture is suitable for mango cultivation"
+          ],
+          "confidence": 0.95,
+          "metadata": {}
+        },
+        {
+          "agent": "SatelliteAgent",
+          "analysis": "The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation.",
+          "risks": [
+            "Severe canopy decline (NDVI far below poor threshold)",
+            "Critical water stress (NDWI well below high‑stress threshold)",
+            "High soil exposure and potential erosion (SAVI below high‑exposure threshold)",
+            "Elevated risk of disease outbreak due to plant stress",
+            "Potential nutrient deficiencies reflected by low vegetation scores",
+            "Significant expected yield reduction if conditions persist"
+          ],
+          "opportunities": [
+            "Clear satellite signal enables early detection and close monitoring",
+            "Opportunity to prioritize water allocation to the most stressed zones",
+            "Potential to apply targeted soil‑cover or mulching to reduce exposure",
+            "Ability to schedule disease scouting based on stress hotspots"
+          ],
+          "confidence": 0.4,
+          "metadata": {}
+        }
+      ],
+      "metadata": {
+        "agents": [
+          "WeatherAgent",
+          "SoilAgent",
+          "SatelliteAgent"
+        ],
+        "agent_count": 3,
+        "llm_provider": "gemini"
+      }
+    },
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.78,
+      "decision": "Immediate Irrigation",
+      "priority": "P2",
+      "urgency": "Today",
+      "risk_level": "High",
+      "action_order": [
+        "Increase irrigation immediately",
+        "Supplement rainfall through irrigation",
+        "Apply nitrogen fertilizer"
+      ],
+      "priorities": [
+        {
+          "issue": "Water Stress",
+          "severity": "Critical",
+          "urgency": "Immediate",
+          "owner": "Farmer",
+          "action": "Increase irrigation immediately"
+        },
+        {
+          "issue": "Rainfall",
+          "severity": "High",
+          "urgency": "Today",
+          "owner": "Farmer",
+          "action": "Supplement rainfall through irrigation"
+        },
+        {
+          "issue": "Nitrogen",
+          "severity": "Medium",
+          "urgency": "Within 3 Days",
+          "owner": "Farmer",
+          "action": "Apply nitrogen fertilizer"
+        }
+      ],
+      "impact": {
+        "agronomic": "Moderate",
+        "economic": "Excellent",
+        "environmental": "Moderate",
+        "operational": "Good",
+        "yield_risk": "High",
+        "profitability": "High",
+        "expected_benefit": "Timely corrective action will improve productivity."
+      },
+      "summary": {
+        "executive": "Mango cultivation in Coimbatore, Tamil Nadu currently has a high operational risk requiring today attention.",
+        "business": "Market trend is increasing with high profitability potential.",
+        "technical": "Weather status: Moderate. Soil health score: 90. Vegetation health: Critical.",
+        "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Severe canopy vigor decline and critical crop water stress (NDVI 0.154, NDWI -0.204) leading to high risk of yield loss, Low soil organic carbon content causing potential nutrient imbalances despite high nitrogen, Sub-optimal annual rainfall and excessive relative humidity increasing disease susceptibility."
+      },
+      "supporting_evidence": [
+        "WeatherAgent: Current weather is suitable for mango cultivation with minor risks.",
+        "SoilAgent: Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility.",
+        "SatelliteAgent: The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9074736472122658,
+        "posterior_mean": 0.9093947305897343,
+        "evidence": {
+          "positive": true,
+          "weight": 0.585,
+          "reason": "Completed with confidence 0.78."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1504,
+          "utilities": {
+            "auto_execute": 16.467,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.15 from trust=0.91 (+/-0.06) on a medium-risk executive action => human_review (EU auto=16.467, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Implement immediate targeted irrigation and apply nitrogen fertilizer to alleviate critical water stress and support canopy recovery.",
+      "priority": "High",
+      "justification": "Satellite imagery shows severe canopy vigor decline (NDVI 0.154) and critical water stress (NDWI -0.204). Soil pH and texture are optimal, but low organic carbon and insufficient rainfall increase risk of yield loss. Immediate irrigation will restore soil moisture, while nitrogen application will boost vegetative growth, leveraging the current favorable market price trend.",
+      "actions": [
+        "Increase irrigation immediately using drip system to raise soil moisture to field capacity.",
+        "Supplement rainfall deficit by applying additional irrigation water (≈7‑10 days interval) until the fruiting stage.",
+        "Apply a balanced NPK 10:10:10 fertilizer at the recommended rate (e.g., 200 kg ha⁻¹) to support vegetative growth."
+      ],
+      "expected_outcome": "Restored soil moisture levels, improved canopy vigor, reduced risk of yield loss, and enhanced profitability due to rising market prices.",
+      "monitoring_plan": [
+        "Measure soil moisture daily with tensiometers or moisture sensors; adjust irrigation as needed.",
+        "Conduct weekly visual scouting for disease (anthracnose, powdery mildew) and pest (fruit fly, mealybug) symptoms.",
+        "Re‑capture satellite or drone NDVI/NDWI imagery every 7‑10 days to track canopy health trends."
+      ],
+      "confidence": 0.78,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Immediate Irrigation",
+      "executive_priority": "P2",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.925143592959766,
+        "posterior_mean": 0.926831800213149,
+        "evidence": {
+          "positive": true,
+          "weight": 0.78,
+          "reason": "Completed with confidence 0.78."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1221,
+          "utilities": {
+            "auto_execute": 20.466,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=20.466, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "What should I do to maximize mango yield this season?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to mango yield."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Assess soil properties and fertility for optimal mango production."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Evaluate crop health and stress indicators via satellite data."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation based on specialist analyses."
+        }
+      ],
+      "specialists": {
+        "WeatherAgent": {
+          "agent": "WeatherAgent",
+          "status": "completed",
+          "analysis": "Current weather is suitable for mango cultivation with minor risks.",
+          "summary": "Current weather is suitable for mango cultivation with minor risks. 3 weather risk(s) identified. 1 weather opportunity(s) identified.",
+          "risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (900-1000 mm/year)",
+            "Wind speed exceeds safe limit (15 km/h)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range."
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 134.901,
+          "governance": {
+            "agent": "WeatherAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8366911750630432,
+            "posterior_mean": 0.8405559454016474,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.243,
+              "utilities": {
+                "auto_execute": 10.279,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.24 from trust=0.84 (+/-0.08) on a low-risk data_collector action => auto_execute (EU auto=10.279, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SoilAgent": {
+          "agent": "SoilAgent",
+          "status": "completed",
+          "analysis": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility.",
+          "summary": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility. 2 soil risk(s) identified. 3 soil opportunity(s) identified.",
+          "risks": [
+            "Low organic carbon content below mango's requirement for high organic carbon",
+            "Potential nutrient imbalance due to high nitrogen and low organic carbon"
+          ],
+          "opportunities": [
+            "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+            "High nitrogen levels match mango's preferred nitrogen requirement",
+            "Clay loam texture is suitable for mango cultivation"
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 192.309,
+          "governance": {
+            "agent": "SoilAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8682418812402193,
+            "posterior_mean": 0.8709846499939843,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.205,
+              "utilities": {
+                "auto_execute": 11.801,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.20 from trust=0.87 (+/-0.08) on a low-risk data_collector action => auto_execute (EU auto=11.801, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SatelliteAgent": {
+          "agent": "SatelliteAgent",
+          "status": "completed",
+          "analysis": "The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation.",
+          "summary": "The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation. 6 satellite risk(s) identified. 4 satellite opportunity(s) identified.",
+          "risks": [
+            "Severe canopy decline (NDVI far below poor threshold)",
+            "Critical water stress (NDWI well below high‑stress threshold)",
+            "High soil exposure and potential erosion (SAVI below high‑exposure threshold)",
+            "Elevated risk of disease outbreak due to plant stress",
+            "Potential nutrient deficiencies reflected by low vegetation scores",
+            "Significant expected yield reduction if conditions persist"
+          ],
+          "opportunities": [
+            "Clear satellite signal enables early detection and close monitoring",
+            "Opportunity to prioritize water allocation to the most stressed zones",
+            "Potential to apply targeted soil‑cover or mulching to reduce exposure",
+            "Ability to schedule disease scouting based on stress hotspots"
+          ],
+          "confidence": 0.4,
+          "metadata": {},
+          "execution_time": 2.533,
+          "governance": {
+            "agent": "SatelliteAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.752290905498099,
+            "posterior_mean": 0.7567705834467975,
+            "evidence": {
+              "positive": true,
+              "weight": 0.2,
+              "reason": "Completed with confidence 0.40."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.3605,
+              "utilities": {
+                "auto_execute": 5.581,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.36 from trust=0.76 (+/-0.12) on a low-risk data_collector action => human_review (EU auto=5.581, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": {
+        "summary": "The mango crop in Coimbatore faces severe moisture stress and critical canopy decline as detected by satellite imagery, despite favorable ambient temperatures and suitable soil pH and texture. Immediate targeted irrigation, organic carbon supplementation, and pest/disease scouting are required to prevent significant yield loss while leveraging favorable market price trends.",
+        "consensus": "Soil pH, texture, and nitrogen levels are suitable for mango cultivation, and market price trends are favorable. However, critical water stress and canopy vigor decline present an immediate threat requiring urgent field intervention.",
+        "merged_risks": [
+          "Severe canopy vigor decline and critical crop water stress (NDVI 0.154, NDWI -0.204) leading to high risk of yield loss",
+          "Low soil organic carbon content causing potential nutrient imbalances despite high nitrogen",
+          "Sub-optimal annual rainfall and excessive relative humidity increasing disease susceptibility",
+          "Elevated wind speeds exceeding safe operational thresholds (15.2 km/h)",
+          "High soil exposure increasing potential for soil erosion and surface evaporation"
+        ],
+        "merged_opportunities": [
+          "Favorable soil pH (6.21) and clay loam texture suitable for long-term mango root development",
+          "Optimal ambient temperature range for crop growth",
+          "Early satellite detection enables targeted variable-rate irrigation and localized mulching",
+          "Increasing market price trends across regional commodity hubs"
+        ],
+        "conflicts": [
+          {
+            "description": "Soil assessment indicates high soil health (score 90) and high nitrogen, whereas satellite metrics report critical crop stress and low canopy vigor.",
+            "severity": "High",
+            "resolution": "Conduct physical ground-truthing to verify if low NDVI stems from young canopy architecture, pruning, or localized disease/water deficit despite adequate ground soil nutrient stock."
+          },
+          {
+            "description": "Weather agent indicates favorable temperatures with moderate risk, while satellite data reflects severe crop stress.",
+            "severity": "Medium",
+            "resolution": "Prioritize immediate satellite-guided drip irrigation as cumulative rainfall deficits are causing physiological water stress despite suitable current temperatures."
+          }
+        ],
+        "confidence": 0.78,
+        "evidence": [
+          {
+            "agent": "WeatherAgent",
+            "analysis": "Current weather is suitable for mango cultivation with minor risks.",
+            "risks": [
+              "Humidity above optimal (60-80%)",
+              "Rainfall below optimal (900-1000 mm/year)",
+              "Wind speed exceeds safe limit (15 km/h)"
+            ],
+            "opportunities": [
+              "Temperature is within the optimal range."
+            ],
+            "confidence": 0.95,
+            "metadata": {}
+          },
+          {
+            "agent": "SoilAgent",
+            "analysis": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility.",
+            "risks": [
+              "Low organic carbon content below mango's requirement for high organic carbon",
+              "Potential nutrient imbalance due to high nitrogen and low organic carbon"
+            ],
+            "opportunities": [
+              "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+              "High nitrogen levels match mango's preferred nitrogen requirement",
+              "Clay loam texture is suitable for mango cultivation"
+            ],
+            "confidence": 0.95,
+            "metadata": {}
+          },
+          {
+            "agent": "SatelliteAgent",
+            "analysis": "The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation.",
+            "risks": [
+              "Severe canopy decline (NDVI far below poor threshold)",
+              "Critical water stress (NDWI well below high‑stress threshold)",
+              "High soil exposure and potential erosion (SAVI below high‑exposure threshold)",
+              "Elevated risk of disease outbreak due to plant stress",
+              "Potential nutrient deficiencies reflected by low vegetation scores",
+              "Significant expected yield reduction if conditions persist"
+            ],
+            "opportunities": [
+              "Clear satellite signal enables early detection and close monitoring",
+              "Opportunity to prioritize water allocation to the most stressed zones",
+              "Potential to apply targeted soil‑cover or mulching to reduce exposure",
+              "Ability to schedule disease scouting based on stress hotspots"
+            ],
+            "confidence": 0.4,
+            "metadata": {}
+          }
+        ],
+        "metadata": {
+          "agents": [
+            "WeatherAgent",
+            "SoilAgent",
+            "SatelliteAgent"
+          ],
+          "agent_count": 3,
+          "llm_provider": "gemini"
+        }
+      },
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.78,
+        "decision": "Immediate Irrigation",
+        "priority": "P2",
+        "urgency": "Today",
+        "risk_level": "High",
+        "action_order": [
+          "Increase irrigation immediately",
+          "Supplement rainfall through irrigation",
+          "Apply nitrogen fertilizer"
+        ],
+        "priorities": [
+          {
+            "issue": "Water Stress",
+            "severity": "Critical",
+            "urgency": "Immediate",
+            "owner": "Farmer",
+            "action": "Increase irrigation immediately"
+          },
+          {
+            "issue": "Rainfall",
+            "severity": "High",
+            "urgency": "Today",
+            "owner": "Farmer",
+            "action": "Supplement rainfall through irrigation"
+          },
+          {
+            "issue": "Nitrogen",
+            "severity": "Medium",
+            "urgency": "Within 3 Days",
+            "owner": "Farmer",
+            "action": "Apply nitrogen fertilizer"
+          }
+        ],
+        "impact": {
+          "agronomic": "Moderate",
+          "economic": "Excellent",
+          "environmental": "Moderate",
+          "operational": "Good",
+          "yield_risk": "High",
+          "profitability": "High",
+          "expected_benefit": "Timely corrective action will improve productivity."
+        },
+        "summary": {
+          "executive": "Mango cultivation in Coimbatore, Tamil Nadu currently has a high operational risk requiring today attention.",
+          "business": "Market trend is increasing with high profitability potential.",
+          "technical": "Weather status: Moderate. Soil health score: 90. Vegetation health: Critical.",
+          "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Severe canopy vigor decline and critical crop water stress (NDVI 0.154, NDWI -0.204) leading to high risk of yield loss, Low soil organic carbon content causing potential nutrient imbalances despite high nitrogen, Sub-optimal annual rainfall and excessive relative humidity increasing disease susceptibility."
+        },
+        "supporting_evidence": [
+          "WeatherAgent: Current weather is suitable for mango cultivation with minor risks.",
+          "SoilAgent: Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility.",
+          "SatelliteAgent: The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9074736472122658,
+          "posterior_mean": 0.9093947305897343,
+          "evidence": {
+            "positive": true,
+            "weight": 0.585,
+            "reason": "Completed with confidence 0.78."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1504,
+            "utilities": {
+              "auto_execute": 16.467,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.15 from trust=0.91 (+/-0.06) on a medium-risk executive action => human_review (EU auto=16.467, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Implement immediate targeted irrigation and apply nitrogen fertilizer to alleviate critical water stress and support canopy recovery.",
+        "priority": "High",
+        "justification": "Satellite imagery shows severe canopy vigor decline (NDVI 0.154) and critical water stress (NDWI -0.204). Soil pH and texture are optimal, but low organic carbon and insufficient rainfall increase risk of yield loss. Immediate irrigation will restore soil moisture, while nitrogen application will boost vegetative growth, leveraging the current favorable market price trend.",
+        "actions": [
+          "Increase irrigation immediately using drip system to raise soil moisture to field capacity.",
+          "Supplement rainfall deficit by applying additional irrigation water (≈7‑10 days interval) until the fruiting stage.",
+          "Apply a balanced NPK 10:10:10 fertilizer at the recommended rate (e.g., 200 kg ha⁻¹) to support vegetative growth."
+        ],
+        "expected_outcome": "Restored soil moisture levels, improved canopy vigor, reduced risk of yield loss, and enhanced profitability due to rising market prices.",
+        "monitoring_plan": [
+          "Measure soil moisture daily with tensiometers or moisture sensors; adjust irrigation as needed.",
+          "Conduct weekly visual scouting for disease (anthracnose, powdery mildew) and pest (fruit fly, mealybug) symptoms.",
+          "Re‑capture satellite or drone NDVI/NDWI imagery every 7‑10 days to track canopy health trends."
+        ],
+        "confidence": 0.78,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Immediate Irrigation",
+        "executive_priority": "P2",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.925143592959766,
+          "posterior_mean": 0.926831800213149,
+          "evidence": {
+            "positive": true,
+            "weight": 0.78,
+            "reason": "Completed with confidence 0.78."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1221,
+            "utilities": {
+              "auto_execute": 20.466,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.12 from trust=0.93 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=20.466, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Immediate Irrigation",
+        "executive_summary": "Mango trees in Coimbatore are experiencing critical water stress and a sharp drop in canopy vigor, while soil pH, texture, and nitrogen are suitable. Immediate irrigation and a nitrogen application are required today to prevent yield loss and take advantage of the rising market price.",
+        "recommendation": "Implement immediate targeted irrigation and apply nitrogen fertilizer to alleviate critical water stress and support canopy recovery.",
+        "explanation": "Satellite imagery shows NDVI at 0.154 and NDWI at -0.204, indicating severe canopy decline and water deficit. Soil analysis confirms optimal pH (6.21) and high nitrogen but low organic carbon, which alone cannot offset the moisture shortage. Weather data reports below‑optimal rainfall and humidity above the ideal range, further stressing the crop. Together, these factors drive the need for urgent irrigation and nitrogen fertilisation.",
+        "reasoning_summary": "The decision combined high‑confidence weather risks (humidity, rainfall deficit, wind) with soil suitability and low‑confidence satellite signs of stress. Because water stress was identified as the most immediate threat, the system prioritized irrigation over less urgent actions. Nitrogen was added to support vegetative recovery given the already high nitrogen status and low organic carbon.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "WeatherAgent",
+              "finding": "Current weather is suitable for mango cultivation with minor risks. 3 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [
+                "Humidity above optimal (60-80%)",
+                "Rainfall below optimal (900-1000 mm/year)",
+                "Wind speed exceeds safe limit (15 km/h)"
+              ],
+              "key_opportunities": [
+                "Temperature is within the optimal range."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Humidity above optimal (60-80%)",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8213,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Rainfall below optimal (900-1000 mm/year)",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8213,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Wind speed exceeds safe limit (15 km/h)",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8213,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Specialist",
+              "source": "SoilAgent",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility. 2 soil risk(s) identified. 3 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [
+                "Low organic carbon content below mango's requirement for high organic carbon",
+                "Potential nutrient imbalance due to high nitrogen and low organic carbon"
+              ],
+              "key_opportunities": [
+                "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+                "High nitrogen levels match mango's preferred nitrogen requirement",
+                "Clay loam texture is suitable for mango cultivation"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SoilAgent",
+                  "type": "risk",
+                  "finding": "Low organic carbon content below mango's requirement for high organic carbon",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.7875,
+                  "importance": "Moderate",
+                  "rank": 7
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "risk",
+                  "finding": "Potential nutrient imbalance due to high nitrogen and low organic carbon",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.7875,
+                  "importance": "Moderate",
+                  "rank": 8
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "analysis",
+                  "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility.",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.7775,
+                  "importance": "Moderate",
+                  "rank": 9
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 3,
+              "stage": "Specialist",
+              "source": "SatelliteAgent",
+              "finding": "The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation. 6 satellite risk(s) identified. 4 satellite opportunity(s) identified.",
+              "confidence": 0.4,
+              "key_risks": [
+                "Severe canopy decline (NDVI far below poor threshold)",
+                "Critical water stress (NDWI well below high‑stress threshold)",
+                "High soil exposure and potential erosion (SAVI below high‑exposure threshold)",
+                "Elevated risk of disease outbreak due to plant stress",
+                "Potential nutrient deficiencies reflected by low vegetation scores",
+                "Significant expected yield reduction if conditions persist"
+              ],
+              "key_opportunities": [
+                "Clear satellite signal enables early detection and close monitoring",
+                "Opportunity to prioritize water allocation to the most stressed zones",
+                "Potential to apply targeted soil‑cover or mulching to reduce exposure",
+                "Ability to schedule disease scouting based on stress hotspots"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Severe canopy decline (NDVI far below poor threshold)",
+                  "confidence": 0.4,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6437,
+                  "importance": "Low",
+                  "rank": 14
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Critical water stress (NDWI well below high‑stress threshold)",
+                  "confidence": 0.4,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6437,
+                  "importance": "Low",
+                  "rank": 15
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "High soil exposure and potential erosion (SAVI below high‑exposure threshold)",
+                  "confidence": 0.4,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6437,
+                  "importance": "Low",
+                  "rank": 16
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Humidity above optimal (60-80%)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Rainfall below optimal (900-1000 mm/year)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Wind speed exceeds safe limit (15 km/h)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather is suitable for mango cultivation with minor risks.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 8,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather is suitable for mango cultivation with minor risks. 3 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 9,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "The mango crop in Coimbatore faces severe moisture stress and critical canopy decline as detected by satellite imagery, despite favorable ambient temperatures and suitable soil pH and texture. Immediate targeted irrigation, organic carbon supplementation, and pest/disease scouting are required to prevent significant yield loss while leveraging favorable market price trends.",
+              "confidence": 0.78,
+              "consensus": "Soil pH, texture, and nitrogen levels are suitable for mango cultivation, and market price trends are favorable. However, critical water stress and canopy vigor decline present an immediate threat requiring urgent field intervention.",
+              "merged_risks": [
+                "Severe canopy vigor decline and critical crop water stress (NDVI 0.154, NDWI -0.204) leading to high risk of yield loss",
+                "Low soil organic carbon content causing potential nutrient imbalances despite high nitrogen",
+                "Sub-optimal annual rainfall and excessive relative humidity increasing disease susceptibility",
+                "Elevated wind speeds exceeding safe operational thresholds (15.2 km/h)",
+                "High soil exposure increasing potential for soil erosion and surface evaporation"
+              ],
+              "merged_opportunities": [
+                "Favorable soil pH (6.21) and clay loam texture suitable for long-term mango root development",
+                "Optimal ambient temperature range for crop growth",
+                "Early satellite detection enables targeted variable-rate irrigation and localized mulching",
+                "Increasing market price trends across regional commodity hubs"
+              ],
+              "conflicts": [
+                {
+                  "description": "Soil assessment indicates high soil health (score 90) and high nitrogen, whereas satellite metrics report critical crop stress and low canopy vigor.",
+                  "severity": "High",
+                  "resolution": "Conduct physical ground-truthing to verify if low NDVI stems from young canopy architecture, pruning, or localized disease/water deficit despite adequate ground soil nutrient stock."
+                },
+                {
+                  "description": "Weather agent indicates favorable temperatures with moderate risk, while satellite data reflects severe crop stress.",
+                  "severity": "Medium",
+                  "resolution": "Prioritize immediate satellite-guided drip irrigation as cumulative rainfall deficits are causing physiological water stress despite suitable current temperatures."
+                }
+              ],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 10,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Immediate Irrigation",
+              "confidence": 0.78,
+              "priority": "P2",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 11,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Implement immediate targeted irrigation and apply nitrogen fertilizer to alleviate critical water stress and support canopy recovery.",
+              "confidence": 0.78,
+              "actions": [
+                "Increase irrigation immediately using drip system to raise soil moisture to field capacity.",
+                "Supplement rainfall deficit by applying additional irrigation water (≈7‑10 days interval) until the fruiting stage.",
+                "Apply a balanced NPK 10:10:10 fertilizer at the recommended rate (e.g., 200 kg ha⁻¹) to support vegetative growth."
+              ],
+              "justification": "Satellite imagery shows severe canopy vigor decline (NDVI 0.154) and critical water stress (NDWI -0.204). Soil pH and texture are optimal, but low organic carbon and insufficient rainfall increase risk of yield loss. Immediate irrigation will restore soil moisture, while nitrogen application will boost vegetative growth, leveraging the current favorable market price trend.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Humidity above optimal (60-80%)",
+              "strength": 0.8213
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Rainfall below optimal (900-1000 mm/year)",
+              "strength": 0.8213
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Wind speed exceeds safe limit (15 km/h)",
+              "strength": 0.8213
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "The mango crop in Coimbatore faces severe moisture stress and critical canopy decline as detected by satellite imagery, despite favorable ambient temperatures and suitable soil pH and texture. Immediate targeted irrigation, organic carbon supplementation, and pest/disease scouting are required to prevent significant yield loss while leveraging favorable market price trends.",
+              "strength": 0.78
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Immediate Irrigation",
+              "strength": 0.78
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Implement immediate targeted irrigation and apply nitrogen fertilizer to alleviate critical water stress and support canopy recovery.",
+              "strength": 0.78
+            }
+          ],
+          "summary": "3 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Immediate Irrigation'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 11,
+          "specialist_steps": 3,
+          "evidence_steps": 5,
+          "decision_step": 10,
+          "recommendation_step": 11,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Humidity above optimal (60-80%)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (900-1000 mm/year)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Wind speed exceeds safe limit (15 km/h)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather is suitable for mango cultivation with minor risks.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather is suitable for mango cultivation with minor risks. 3 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Humidity above optimal (60-80%)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (900-1000 mm/year)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Wind speed exceeds safe limit (15 km/h)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather is suitable for mango cultivation with minor risks.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather is suitable for mango cultivation with minor risks. 3 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 5
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Temperature is within the optimal range.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8063,
+              "importance": "High",
+              "rank": 6
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Low organic carbon content below mango's requirement for high organic carbon",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7875,
+              "importance": "Moderate",
+              "rank": 7
+            },
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Potential nutrient imbalance due to high nitrogen and low organic carbon",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7875,
+              "importance": "Moderate",
+              "rank": 8
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7775,
+              "importance": "Moderate",
+              "rank": 9
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "Soil conditions are generally suitable for mango cultivation with optimal pH and high nitrogen levels, but low organic carbon is a concern. The soil texture (clay loam) aligns with mango's preferred texture. The soil health score of 90 indicates good condition, though organic carbon deficiency may impact long-term fertility. 2 soil risk(s) identified. 3 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7775,
+              "importance": "Moderate",
+              "rank": 10
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Optimal soil pH (6.21) within mango's preferred range (5.5-7.0)",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7725,
+              "importance": "Moderate",
+              "rank": 11
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "High nitrogen levels match mango's preferred nitrogen requirement",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7725,
+              "importance": "Moderate",
+              "rank": 12
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Clay loam texture is suitable for mango cultivation",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7725,
+              "importance": "Moderate",
+              "rank": 13
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Severe canopy decline (NDVI far below poor threshold)",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 14
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Critical water stress (NDWI well below high‑stress threshold)",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 15
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "High soil exposure and potential erosion (SAVI below high‑exposure threshold)",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 16
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Elevated risk of disease outbreak due to plant stress",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 17
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Potential nutrient deficiencies reflected by low vegetation scores",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 18
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Significant expected yield reduction if conditions persist",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 19
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "analysis",
+              "finding": "The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6337,
+              "importance": "Low",
+              "rank": 20
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "summary",
+              "finding": "The current NDVI of 0.154 is far below the crop‑specific poor threshold (0.30), indicating very poor canopy vigor. NDWI of -0.204 is well under the high‑stress threshold (0.05), showing severe water deficit. SAVI of 0.105 falls below the high‑exposure threshold (0.25), revealing extensive exposed soil. The vegetation health flag of \"Critical\" is consistent with these indices. Water availability is critically low and the crop’s irrigation need is therefore extremely high. Together, these metrics point to a high risk of yield loss, increased susceptibility to diseases such as anthracnose and powdery mildew, and accelerated soil degradation. 6 satellite risk(s) identified. 4 satellite opportunity(s) identified.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6337,
+              "importance": "Low",
+              "rank": 21
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Clear satellite signal enables early detection and close monitoring",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6287,
+              "importance": "Low",
+              "rank": 22
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Opportunity to prioritize water allocation to the most stressed zones",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6287,
+              "importance": "Low",
+              "rank": 23
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Potential to apply targeted soil‑cover or mulching to reduce exposure",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6287,
+              "importance": "Low",
+              "rank": 24
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Ability to schedule disease scouting based on stress hotspots",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6287,
+              "importance": "Low",
+              "rank": 25
+            }
+          ],
+          "source_summary": {
+            "WeatherAgent": {
+              "evidence_score": 0.8213,
+              "finding_count": 6,
+              "highest_importance": "High"
+            },
+            "SoilAgent": {
+              "evidence_score": 0.7875,
+              "finding_count": 7,
+              "highest_importance": "Moderate"
+            },
+            "SatelliteAgent": {
+              "evidence_score": 0.6437,
+              "finding_count": 12,
+              "highest_importance": "Low"
+            }
+          },
+          "total_findings": 25,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Humidity above optimal (60-80%)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Rainfall below optimal (900-1000 mm/year)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Wind speed exceeds safe limit (15 km/h)",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8213,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather is suitable for mango cultivation with minor risks.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather is suitable for mango cultivation with minor risks. 3 weather risk(s) identified. 1 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8113,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "Severe canopy vigor decline leading to high yield risk",
+          "Critical water stress causing possible fruit drop",
+          "Low organic carbon may affect long‑term soil fertility",
+          "Below‑optimal rainfall and high humidity increasing disease pressure",
+          "Wind speeds above safe limit risking fruit damage",
+          "High soil exposure raising erosion risk"
+        ],
+        "opportunities": [
+          "Optimal soil pH and texture support root development",
+          "High nitrogen level can be leveraged for rapid vegetative recovery",
+          "Temperature is within the ideal range for mango growth",
+          "Increasing market price offers high profitability if yield is protected",
+          "Early satellite detection enables targeted variable‑rate irrigation"
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Delay irrigation",
+            "why_rejected": "Water stress is already critical; postponing would increase yield loss."
+          },
+          {
+            "decision": "Apply partial irrigation",
+            "why_rejected": "Partial water addition may be insufficient to reverse severe stress indicated by NDWI."
+          },
+          {
+            "decision": "Wait for natural rainfall",
+            "why_rejected": "Forecast shows insufficient rainfall; waiting would not meet crop water needs."
+          }
+        ],
+        "limitations": [
+          "MarketAgent did not provide data, so market price specifics are missing.",
+          "HistoricalAgent output was unavailable, limiting context from past seasons.",
+          "SatelliteAgent confidence is low (0.40), so its stress indicators should be interpreted cautiously."
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Adjust irrigation schedule as new rain is expected."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Track environmental stress that can affect disease risk."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Confirm irrigation is achieving field‑capacity levels."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Weekly",
+            "reason": "Ensure pH remains within optimal range after fertilisation."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.772,
+          "specialist_average": 0.7667,
+          "strongest_source": "WeatherAgent",
+          "strongest_confidence": 0.95,
+          "weakest_source": "SatelliteAgent",
+          "weakest_confidence": 0.4,
+          "unavailable_sources": [],
+          "breakdown": {
+            "WeatherAgent": 0.95,
+            "SoilAgent": 0.95,
+            "SatelliteAgent": 0.4,
+            "CollaborativeReasoning": 0.78,
+            "ExecutiveDecision": 0.78
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.77. The strongest specialist evidence came from WeatherAgent (0.95), while the weakest was SatelliteAgent (0.40). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.772,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8406,
+            "trust_std": 0.0836
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.871,
+            "trust_std": 0.076
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7568,
+            "trust_std": 0.1172
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6021,
+            "trust_std": 0.1565
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9094,
+            "trust_std": 0.0598
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9268,
+            "trust_std": 0.0489
+          }
+        },
+        "crop_learning": {
+          "crop": "mango",
+          "trust_mean": 0.8326,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.866,
+              "trust_std": 0.0854
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8326,
+              "trust_std": 0.1038
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.78,
+      "statistics": {
+        "agents_planned": 4,
+        "specialist_agents": 3,
+        "agents_completed": 3,
+        "agents_failed": 0,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.95,
+        "reasoning_confidence": 0.78,
+        "executive_confidence": 0.78,
+        "explanation_confidence": 0.772,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 3,
+        "monitoring_items": 4,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 505.813
+  }
+}

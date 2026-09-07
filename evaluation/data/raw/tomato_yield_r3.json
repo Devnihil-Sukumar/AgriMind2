@@ -1,0 +1,2519 @@
+{
+  "run_id": "tomato_yield_r3",
+  "phase": "baseline",
+  "crop": "tomato",
+  "query": "What should I do to maximize tomato yield this season?",
+  "latitude": 11.0168,
+  "longitude": 76.9558,
+  "wall_time_seconds": 809.825,
+  "error": null,
+  "meta": {
+    "query_type": "yield",
+    "repeat": 3
+  },
+  "result": {
+    "query": "What should I do to maximize tomato yield this season?",
+    "crop_profile": {
+      "crop": "tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "family": "Solanaceae",
+      "type": "Annual",
+      "category": "Fruit",
+      "growth_duration_days": 110,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 18,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 500,
+          "maximum": 1000,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Drip",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 2-3 days, 20-30 mm per week"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.65,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.3,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "Fresh",
+          "Processing",
+          "Canned",
+          "Sauce",
+          "Paste"
+        ],
+        "major_states": [
+          "California",
+          "Florida",
+          "Ohio",
+          "New York"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "United States",
+          "Turkey",
+          "Egypt"
+        ],
+        "harvest_season": "Summer to early Autumn",
+        "storage_capability": "Moderate",
+        "perishability": "High"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Vitamin C",
+          "Vitamin A",
+          "Potassium",
+          "Lycopene"
+        ],
+        "commercial_products": [
+          "Fresh fruit",
+          "Tomato paste",
+          "Ketchup",
+          "Canned tomatoes",
+          "Sauce"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Late blight",
+          "symptoms": "Water-soaked lesions on leaves and fruit, white fungal growth",
+          "treatment": "Apply copper-based fungicides and use resistant varieties"
+        },
+        {
+          "name": "Early blight",
+          "symptoms": "Target-shaped lesions on lower leaves, yellowing",
+          "treatment": "Rotate crops, apply fungicide sprays such as chlorothalonil"
+        },
+        {
+          "name": "Fusarium wilt",
+          "symptoms": "Wilting, yellowing, vascular discoloration",
+          "treatment": "Use resistant cultivars and soil solarization"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Tomato fruit worm (Helicoverpa armigera)",
+          "treatment": "Biological control with Bacillus thuringiensis, pheromone traps"
+        },
+        {
+          "name": "Whitefly (Bemisia tabaci)",
+          "treatment": "Insecticidal soap, neem oil, reflective mulches"
+        },
+        {
+          "name": "Aphids (Myzus persicae)",
+          "treatment": "Introduce lady beetles, use insecticidal soap"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "Balanced NPK fertilizer applied in split doses",
+        "npk_ratio": "10-10-10",
+        "organic_options": [
+          "Compost",
+          "Well-rotted manure",
+          "Bone meal"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 60,
+        "excellent_tonnes_per_hectare": 90
+      },
+      "recommendations": {
+        "irrigation": "Drip irrigation with mulching to conserve moisture",
+        "fertilizer": "Apply 60 kg N/ha split into 3 applications, 40 kg P2O5/ha, 60 kg K2O/ha",
+        "harvesting": "Pick fruits when fully colored; avoid mechanical damage",
+        "storage": "Store at 12-13°C with high humidity; use refrigerated transport"
+      },
+      "summary": "Tomato (Solanum lycopersicum) is an annual fruit crop thriving in warm, humid climates with 18-30°C temperatures, 60-80% humidity, and 500-1000 mm annual rainfall. It prefers loam soils, pH 5.5-7.0, good drainage, and high nitrogen. Drip irrigation, balanced NPK (10-10-10) and organic amendments boost yields of 60-90 t/ha. Major producers include China, India, USA, Turkey, and Egypt. Key challenges are late blight, early blight, Fusarium wilt, and pests like fruit worm, whitefly, and aphids. Proper irrigation, fertilization, timely harvest, and refrigerated storage ensure high-quality marketable fruit.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-08-31T17:10:27.162722",
+        "crop": "tomato",
+        "crop_profile": {
+          "crop": "tomato",
+          "scientific_name": "Solanum lycopersicum",
+          "family": "Solanaceae",
+          "type": "Annual",
+          "category": "Fruit",
+          "growth_duration_days": 110,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Fruiting",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 18,
+              "maximum": 30,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 60,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 500,
+              "maximum": 1000,
+              "unit": "mm/year"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 7.0
+            },
+            "wind_speed": {
+              "maximum": 30,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 10
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "Loam"
+            ],
+            "preferred_nitrogen": "High",
+            "preferred_organic_carbon": "Medium",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "Drip",
+            "water_requirement": "Medium",
+            "critical_growth_stage": "Flowering",
+            "recommended_frequency": "Every 2-3 days, 20-30 mm per week"
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.8,
+              "healthy": 0.65,
+              "moderate": 0.45,
+              "poor": 0.3
+            },
+            "ndwi": {
+              "low_stress": 0.3,
+              "moderate_stress": 0.1,
+              "high_stress": 0.0
+            },
+            "savi": {
+              "low_exposure": 0.6,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.2
+            }
+          },
+          "market": {
+            "keywords": [
+              "Fresh",
+              "Processing",
+              "Canned",
+              "Sauce",
+              "Paste"
+            ],
+            "major_states": [
+              "California",
+              "Florida",
+              "Ohio",
+              "New York"
+            ],
+            "major_countries": [
+              "China",
+              "India",
+              "United States",
+              "Turkey",
+              "Egypt"
+            ],
+            "harvest_season": "Summer to early Autumn",
+            "storage_capability": "Moderate",
+            "perishability": "High"
+          },
+          "nutrition": {
+            "primary_nutrients": [
+              "Vitamin C",
+              "Vitamin A",
+              "Potassium",
+              "Lycopene"
+            ],
+            "commercial_products": [
+              "Fresh fruit",
+              "Tomato paste",
+              "Ketchup",
+              "Canned tomatoes",
+              "Sauce"
+            ]
+          },
+          "common_diseases": [
+            {
+              "name": "Late blight",
+              "symptoms": "Water-soaked lesions on leaves and fruit, white fungal growth",
+              "treatment": "Apply copper-based fungicides and use resistant varieties"
+            },
+            {
+              "name": "Early blight",
+              "symptoms": "Target-shaped lesions on lower leaves, yellowing",
+              "treatment": "Rotate crops, apply fungicide sprays such as chlorothalonil"
+            },
+            {
+              "name": "Fusarium wilt",
+              "symptoms": "Wilting, yellowing, vascular discoloration",
+              "treatment": "Use resistant cultivars and soil solarization"
+            }
+          ],
+          "common_pests": [
+            {
+              "name": "Tomato fruit worm (Helicoverpa armigera)",
+              "treatment": "Biological control with Bacillus thuringiensis, pheromone traps"
+            },
+            {
+              "name": "Whitefly (Bemisia tabaci)",
+              "treatment": "Insecticidal soap, neem oil, reflective mulches"
+            },
+            {
+              "name": "Aphids (Myzus persicae)",
+              "treatment": "Introduce lady beetles, use insecticidal soap"
+            }
+          ],
+          "fertilizer": {
+            "recommended": "Balanced NPK fertilizer applied in split doses",
+            "npk_ratio": "10-10-10",
+            "organic_options": [
+              "Compost",
+              "Well-rotted manure",
+              "Bone meal"
+            ]
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 60,
+            "excellent_tonnes_per_hectare": 90
+          },
+          "recommendations": {
+            "irrigation": "Drip irrigation with mulching to conserve moisture",
+            "fertilizer": "Apply 60 kg N/ha split into 3 applications, 40 kg P2O5/ha, 60 kg K2O/ha",
+            "harvesting": "Pick fruits when fully colored; avoid mechanical damage",
+            "storage": "Store at 12-13°C with high humidity; use refrigerated transport"
+          },
+          "summary": "Tomato (Solanum lycopersicum) is an annual fruit crop thriving in warm, humid climates with 18-30°C temperatures, 60-80% humidity, and 500-1000 mm annual rainfall. It prefers loam soils, pH 5.5-7.0, good drainage, and high nitrogen. Drip irrigation, balanced NPK (10-10-10) and organic amendments boost yields of 60-90 t/ha. Major producers include China, India, USA, Turkey, and Egypt. Key challenges are late blight, early blight, Fusarium wilt, and pests like fruit worm, whitefly, and aphids. Proper irrigation, fertilization, timely harvest, and refrigerated storage ensure high-quality marketable fruit.",
+          "references": [
+            "FAO",
+            "ICAR",
+            "USDA"
+          ],
+          "generated_by": "Groq",
+          "version": 2
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T22:30",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.2,
+          "humidity": 91,
+          "rainfall": 0.0,
+          "wind_speed": 12.5,
+          "pressure": 963.7,
+          "time": "2026-08-31T22:30"
+        },
+        "assessment": {
+          "crop": "tomato",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (500-1000 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Tiruvarur Market",
+        "nearest_market": {
+          "market": "Tiruvannamalai Uzhavar Sandhai",
+          "district": "Tiruvannamalai",
+          "price": 1843.0,
+          "trend": "Increasing",
+          "distance_km": 267.05,
+          "market_score": 0.6479,
+          "rank": 4
+        },
+        "top_markets": [
+          {
+            "market": "Tiruvarur Market",
+            "district": "Tiruvarur",
+            "price": 1917.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Thoothukudi Mandi",
+            "district": "Thoothukudi",
+            "price": 1908.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.7821,
+            "rank": 2
+          },
+          {
+            "market": "Kanchipuram Mandi",
+            "district": "Kanchipuram",
+            "price": 1908.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.692,
+            "rank": 3
+          },
+          {
+            "market": "Tiruvannamalai Uzhavar Sandhai",
+            "district": "Tiruvannamalai",
+            "price": 1843.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.6479,
+            "rank": 4
+          },
+          {
+            "market": "Kanyakumari Market",
+            "district": "Kanyakumari",
+            "price": 1867.0,
+            "trend": "Stable",
+            "distance_km": 331.84,
+            "market_score": 0.6073,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "tomato",
+          "TopMarkets": [
+            {
+              "market": "Tiruvarur Market",
+              "district": "Tiruvarur",
+              "price": 1917.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Thoothukudi Mandi",
+              "district": "Thoothukudi",
+              "price": 1908.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.7821,
+              "rank": 2
+            },
+            {
+              "market": "Kanchipuram Mandi",
+              "district": "Kanchipuram",
+              "price": 1908.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.692,
+              "rank": 3
+            },
+            {
+              "market": "Tiruvannamalai Uzhavar Sandhai",
+              "district": "Tiruvannamalai",
+              "price": 1843.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.6479,
+              "rank": 4
+            },
+            {
+              "market": "Kanyakumari Market",
+              "district": "Kanyakumari",
+              "price": 1867.0,
+              "trend": "Stable",
+              "distance_km": 331.84,
+              "market_score": 0.6073,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Tiruvarur Market with modal price 1917.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T17:10:27.162722",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "tomato",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.2\nHumidity : 91\nRainfall : 0.0\nWind Speed : 12.5\nPressure : 963.7\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Tiruvannamalai Uzhavar Sandhai\nNearest Distance : 267.05 km\nNearest Market Price : 1843.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Market\nBest Market Price : 1917.0\nBest Market Distance : 293.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : tomato\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "tomato",
+      "crop_profile": {
+        "crop": "tomato",
+        "scientific_name": "Solanum lycopersicum",
+        "family": "Solanaceae",
+        "type": "Annual",
+        "category": "Fruit",
+        "growth_duration_days": 110,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Fruiting",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 18,
+            "maximum": 30,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 60,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 500,
+            "maximum": 1000,
+            "unit": "mm/year"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 7.0
+          },
+          "wind_speed": {
+            "maximum": 30,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 10
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "Loam"
+          ],
+          "preferred_nitrogen": "High",
+          "preferred_organic_carbon": "Medium",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "Drip",
+          "water_requirement": "Medium",
+          "critical_growth_stage": "Flowering",
+          "recommended_frequency": "Every 2-3 days, 20-30 mm per week"
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.8,
+            "healthy": 0.65,
+            "moderate": 0.45,
+            "poor": 0.3
+          },
+          "ndwi": {
+            "low_stress": 0.3,
+            "moderate_stress": 0.1,
+            "high_stress": 0.0
+          },
+          "savi": {
+            "low_exposure": 0.6,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.2
+          }
+        },
+        "market": {
+          "keywords": [
+            "Fresh",
+            "Processing",
+            "Canned",
+            "Sauce",
+            "Paste"
+          ],
+          "major_states": [
+            "California",
+            "Florida",
+            "Ohio",
+            "New York"
+          ],
+          "major_countries": [
+            "China",
+            "India",
+            "United States",
+            "Turkey",
+            "Egypt"
+          ],
+          "harvest_season": "Summer to early Autumn",
+          "storage_capability": "Moderate",
+          "perishability": "High"
+        },
+        "nutrition": {
+          "primary_nutrients": [
+            "Vitamin C",
+            "Vitamin A",
+            "Potassium",
+            "Lycopene"
+          ],
+          "commercial_products": [
+            "Fresh fruit",
+            "Tomato paste",
+            "Ketchup",
+            "Canned tomatoes",
+            "Sauce"
+          ]
+        },
+        "common_diseases": [
+          {
+            "name": "Late blight",
+            "symptoms": "Water-soaked lesions on leaves and fruit, white fungal growth",
+            "treatment": "Apply copper-based fungicides and use resistant varieties"
+          },
+          {
+            "name": "Early blight",
+            "symptoms": "Target-shaped lesions on lower leaves, yellowing",
+            "treatment": "Rotate crops, apply fungicide sprays such as chlorothalonil"
+          },
+          {
+            "name": "Fusarium wilt",
+            "symptoms": "Wilting, yellowing, vascular discoloration",
+            "treatment": "Use resistant cultivars and soil solarization"
+          }
+        ],
+        "common_pests": [
+          {
+            "name": "Tomato fruit worm (Helicoverpa armigera)",
+            "treatment": "Biological control with Bacillus thuringiensis, pheromone traps"
+          },
+          {
+            "name": "Whitefly (Bemisia tabaci)",
+            "treatment": "Insecticidal soap, neem oil, reflective mulches"
+          },
+          {
+            "name": "Aphids (Myzus persicae)",
+            "treatment": "Introduce lady beetles, use insecticidal soap"
+          }
+        ],
+        "fertilizer": {
+          "recommended": "Balanced NPK fertilizer applied in split doses",
+          "npk_ratio": "10-10-10",
+          "organic_options": [
+            "Compost",
+            "Well-rotted manure",
+            "Bone meal"
+          ]
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 60,
+          "excellent_tonnes_per_hectare": 90
+        },
+        "recommendations": {
+          "irrigation": "Drip irrigation with mulching to conserve moisture",
+          "fertilizer": "Apply 60 kg N/ha split into 3 applications, 40 kg P2O5/ha, 60 kg K2O/ha",
+          "harvesting": "Pick fruits when fully colored; avoid mechanical damage",
+          "storage": "Store at 12-13°C with high humidity; use refrigerated transport"
+        },
+        "summary": "Tomato (Solanum lycopersicum) is an annual fruit crop thriving in warm, humid climates with 18-30°C temperatures, 60-80% humidity, and 500-1000 mm annual rainfall. It prefers loam soils, pH 5.5-7.0, good drainage, and high nitrogen. Drip irrigation, balanced NPK (10-10-10) and organic amendments boost yields of 60-90 t/ha. Major producers include China, India, USA, Turkey, and Egypt. Key challenges are late blight, early blight, Fusarium wilt, and pests like fruit worm, whitefly, and aphids. Proper irrigation, fertilization, timely harvest, and refrigerated storage ensure high-quality marketable fruit.",
+        "references": [
+          "FAO",
+          "ICAR",
+          "USDA"
+        ],
+        "generated_by": "Groq",
+        "version": 2
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T22:30",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 24.2,
+          "humidity": 91,
+          "rainfall": 0.0,
+          "wind_speed": 12.5,
+          "pressure": 963.7,
+          "time": "2026-08-31T22:30"
+        },
+        "assessment": {
+          "crop": "tomato",
+          "status": "Good",
+          "identified_risks": [
+            "Humidity above optimal (60-80%)",
+            "Rainfall below optimal (500-1000 mm/year)"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range.",
+            "Wind conditions are suitable."
+          ]
+        },
+        "confidence": 84
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.21,
+          "nitrogen": "High",
+          "organic_carbon": "Low",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 90,
+          "ph_status": "Optimal",
+          "nitrogen_status": "High",
+          "organic_carbon_status": "Low",
+          "texture": "Clay Loam",
+          "risks": [
+            "Organic carbon is below crop requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Nitrogen level matches crop requirement.",
+            "Soil texture is suitable."
+          ],
+          "live_source": false,
+          "live_confidence": 0
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T17:10:27.162722",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.154,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Critical"
+        },
+        "water": {
+          "ndwi": -0.204,
+          "stress": "High"
+        },
+        "soil": {
+          "exposure": "High"
+        },
+        "assessment": {
+          "vegetation_score": 12.97,
+          "recommendation": "Inspect crop for nutrient deficiency or disease. Increase irrigation immediately. Increase ground cover or mulching."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Tiruvarur Market",
+        "nearest_market": {
+          "market": "Tiruvannamalai Uzhavar Sandhai",
+          "district": "Tiruvannamalai",
+          "price": 1843.0,
+          "trend": "Increasing",
+          "distance_km": 267.05,
+          "market_score": 0.6479,
+          "rank": 4
+        },
+        "top_markets": [
+          {
+            "market": "Tiruvarur Market",
+            "district": "Tiruvarur",
+            "price": 1917.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Thoothukudi Mandi",
+            "district": "Thoothukudi",
+            "price": 1908.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.7821,
+            "rank": 2
+          },
+          {
+            "market": "Kanchipuram Mandi",
+            "district": "Kanchipuram",
+            "price": 1908.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.692,
+            "rank": 3
+          },
+          {
+            "market": "Tiruvannamalai Uzhavar Sandhai",
+            "district": "Tiruvannamalai",
+            "price": 1843.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.6479,
+            "rank": 4
+          },
+          {
+            "market": "Kanyakumari Market",
+            "district": "Kanyakumari",
+            "price": 1867.0,
+            "trend": "Stable",
+            "distance_km": 331.84,
+            "market_score": 0.6073,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "tomato",
+          "TopMarkets": [
+            {
+              "market": "Tiruvarur Market",
+              "district": "Tiruvarur",
+              "price": 1917.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Thoothukudi Mandi",
+              "district": "Thoothukudi",
+              "price": 1908.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.7821,
+              "rank": 2
+            },
+            {
+              "market": "Kanchipuram Mandi",
+              "district": "Kanchipuram",
+              "price": 1908.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.692,
+              "rank": 3
+            },
+            {
+              "market": "Tiruvannamalai Uzhavar Sandhai",
+              "district": "Tiruvannamalai",
+              "price": 1843.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.6479,
+              "rank": 4
+            },
+            {
+              "market": "Kanyakumari Market",
+              "district": "Kanyakumari",
+              "price": 1867.0,
+              "trend": "Stable",
+              "distance_km": 331.84,
+              "market_score": 0.6073,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Increasing",
+          "recommendation": "Best ranked market is Tiruvarur Market with modal price 1917.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "tomato",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 24.2\nHumidity : 91\nRainfall : 0.0\nWind Speed : 12.5\nPressure : 963.7\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Tiruvannamalai Uzhavar Sandhai\nNearest Distance : 267.05 km\nNearest Market Price : 1843.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Market\nBest Market Price : 1917.0\nBest Market Distance : 293.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : tomato\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 90,
+      "vegetation_health": "Critical",
+      "market_trend": "Increasing",
+      "risks": [
+        "Humidity above optimal (60-80%)",
+        "Rainfall below optimal (500-1000 mm/year)",
+        "Vegetation health is critical",
+        "High crop water stress",
+        "Large exposed soil area",
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality",
+        "Market prices increasing"
+      ],
+      "confidence": 31.48
+    },
+    "plan": {
+      "goal": "What should I do to maximize tomato yield this season?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to maximizing tomato yield."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Assess soil properties and nutrient status for optimal tomato production."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Evaluate crop health and stress indicators via satellite imagery."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation based on specialist analyses."
+        }
+      ],
+      "confidence": 0.95
+    },
+    "reasoning": {
+      "summary": "2 specialist agents reached a consensus.",
+      "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+      "merged_risks": [
+        "Combined stress factors may lead to reduced fruit set and lower yields.",
+        "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+        "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+        "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+        "Humidity above optimal (60-80%)",
+        "Risk of fungal diseases due to high humidity"
+      ],
+      "merged_opportunities": [
+        "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks.",
+        "Early detection of stress provides a window for corrective management before irreversible damage.",
+        "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+        "Temperature is within the optimal range (18-30°C)",
+        "Wind conditions are suitable for pollination"
+      ],
+      "conflicts": [],
+      "confidence": 0.62,
+      "evidence": [
+        {
+          "agent": "WeatherAgent",
+          "analysis": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+          "risks": [
+            "Humidity above optimal (60-80%)",
+            "Risk of fungal diseases due to high humidity"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range (18-30°C)",
+            "Wind conditions are suitable for pollination"
+          ],
+          "confidence": 0.92,
+          "metadata": {}
+        },
+        {
+          "agent": "SatelliteAgent",
+          "analysis": "The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield.",
+          "risks": [
+            "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+            "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+            "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+            "Combined stress factors may lead to reduced fruit set and lower yields."
+          ],
+          "opportunities": [
+            "Early detection of stress provides a window for corrective management before irreversible damage.",
+            "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+            "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks."
+          ],
+          "confidence": 0.4,
+          "metadata": {}
+        }
+      ],
+      "metadata": {
+        "agents": [
+          "WeatherAgent",
+          "SatelliteAgent"
+        ],
+        "agent_count": 2,
+        "llm_provider": "gemini"
+      }
+    },
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.62,
+      "decision": "Immediate Irrigation",
+      "priority": "P3",
+      "urgency": "This Week",
+      "risk_level": "Moderate",
+      "action_order": [
+        "Increase irrigation immediately"
+      ],
+      "priorities": [
+        {
+          "issue": "Water Stress",
+          "severity": "Critical",
+          "urgency": "Immediate",
+          "owner": "Farmer",
+          "action": "Increase irrigation immediately"
+        }
+      ],
+      "impact": {
+        "agronomic": "Good",
+        "economic": "Excellent",
+        "environmental": "Moderate",
+        "operational": "Good",
+        "yield_risk": "Moderate",
+        "profitability": "High",
+        "expected_benefit": "Current conditions provide opportunities for improved profitability."
+      },
+      "summary": {
+        "executive": "Tomato cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+        "business": "Market trend is increasing with high profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+        "justification": "The executive decision is based on 2 specialist agents. Primary concerns include: Combined stress factors may lead to reduced fruit set and lower yields., Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency., High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.."
+      },
+      "supporting_evidence": [
+        "WeatherAgent: Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+        "SatelliteAgent: The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.64,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9183284434554486,
+        "posterior_mean": 0.9193779691288481,
+        "evidence": {
+          "positive": true,
+          "weight": 0.46499999999999997,
+          "reason": "Completed with confidence 0.62."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1342,
+          "utilities": {
+            "auto_execute": 17.921,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.13 from trust=0.92 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=17.921, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Implement immediate drip irrigation to alleviate water stress and improve vegetation health.",
+      "priority": "Medium",
+      "justification": "Satellite imagery shows critically low NDVI and high NDWI, indicating severe water stress and poor photosynthetic activity. Soil assessment reports adequate nitrogen but low organic carbon, increasing the need for moisture to support nutrient uptake. High humidity raises disease risk, so prompt irrigation will also help reduce leaf wetness duration. Temperature and wind are optimal, providing a window to recover yield potential before fruit set is compromised.",
+      "actions": [
+        "Measure current soil moisture at 20‑30 cm depth using a moisture probe.",
+        "Activate drip irrigation to deliver 20‑30 mm of water per week, applying in 2‑3 day intervals.",
+        "Apply a thin layer of organic mulch (e.g., straw or compost) around the tomato rows to conserve moisture and reduce soil exposure.",
+        "Inspect plants for early signs of fungal disease (blight, wilt) during irrigation cycles.",
+        "Record irrigation volumes and timing in a farm log."
+      ],
+      "expected_outcome": "Restored soil moisture will raise NDVI to at least 0.45 within two weeks, improve fruit set, and mitigate disease pressure, leading to higher yields and increased profitability in the upcoming harvest window.",
+      "monitoring_plan": [
+        "Daily visual scouting for leaf wetness, lesions, or wilting.",
+        "Soil moisture readings before each irrigation event.",
+        "Weekly NDVI assessment via satellite or handheld sensor to track vegetation recovery.",
+        "Record ambient humidity and temperature; if humidity remains >80 %, consider canopy ventilation.",
+        "Adjust irrigation frequency based on moisture readings and NDVI trends."
+      ],
+      "confidence": 0.62,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Immediate Irrigation",
+      "executive_priority": "P3",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9312659751516094,
+        "posterior_mean": 0.9322925139784414,
+        "evidence": {
+          "positive": true,
+          "weight": 0.62,
+          "reason": "Completed with confidence 0.62."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.1132,
+          "utilities": {
+            "auto_execute": 21.893,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.11 from trust=0.93 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=21.893, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "What should I do to maximize tomato yield this season?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to maximizing tomato yield."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Assess soil properties and nutrient status for optimal tomato production."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Evaluate crop health and stress indicators via satellite imagery."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation based on specialist analyses."
+        }
+      ],
+      "specialists": {
+        "WeatherAgent": {
+          "agent": "WeatherAgent",
+          "status": "completed",
+          "analysis": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+          "summary": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "risks": [
+            "Humidity above optimal (60-80%)",
+            "Risk of fungal diseases due to high humidity"
+          ],
+          "opportunities": [
+            "Temperature is within the optimal range (18-30°C)",
+            "Wind conditions are suitable for pollination"
+          ],
+          "confidence": 0.92,
+          "metadata": {},
+          "execution_time": 264.462,
+          "governance": {
+            "agent": "WeatherAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8532299183655014,
+            "posterior_mean": 0.8561056933258304,
+            "evidence": {
+              "positive": true,
+              "weight": 0.46,
+              "reason": "Completed with confidence 0.92."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.22,
+              "utilities": {
+                "auto_execute": 11.201,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.22 from trust=0.86 (+/-0.08) on a low-risk data_collector action => auto_execute (EU auto=11.201, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SoilAgent": {
+          "agent": "SoilAgent",
+          "status": "failed",
+          "confidence": 0,
+          "error": "SoilAgent response did not contain a complete valid JSON object.",
+          "execution_time": 305.963,
+          "governance": {
+            "agent": "SoilAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8804779532690553,
+            "posterior_mean": 0.8483227811515557,
+            "evidence": {
+              "positive": false,
+              "weight": 0.75,
+              "reason": "Execution outcome 'failed' treated as a failure."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.2282,
+              "utilities": {
+                "auto_execute": 10.871,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.23 from trust=0.85 (+/-0.08) on a low-risk data_collector action => auto_execute (EU auto=10.871, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SatelliteAgent": {
+          "agent": "SatelliteAgent",
+          "status": "completed",
+          "analysis": "The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield.",
+          "summary": "The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+          "risks": [
+            "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+            "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+            "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+            "Combined stress factors may lead to reduced fruit set and lower yields."
+          ],
+          "opportunities": [
+            "Early detection of stress provides a window for corrective management before irreversible damage.",
+            "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+            "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks."
+          ],
+          "confidence": 0.4,
+          "metadata": {},
+          "execution_time": 58.588,
+          "governance": {
+            "agent": "SatelliteAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.7309841427497822,
+            "posterior_mean": 0.7354896657515604,
+            "evidence": {
+              "positive": true,
+              "weight": 0.2,
+              "reason": "Completed with confidence 0.40."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.3776,
+              "utilities": {
+                "auto_execute": 4.895,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.38 from trust=0.74 (+/-0.11) on a low-risk data_collector action => human_review (EU auto=4.895, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": {
+        "summary": "2 specialist agents reached a consensus.",
+        "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+        "merged_risks": [
+          "Combined stress factors may lead to reduced fruit set and lower yields.",
+          "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+          "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+          "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+          "Humidity above optimal (60-80%)",
+          "Risk of fungal diseases due to high humidity"
+        ],
+        "merged_opportunities": [
+          "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks.",
+          "Early detection of stress provides a window for corrective management before irreversible damage.",
+          "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+          "Temperature is within the optimal range (18-30°C)",
+          "Wind conditions are suitable for pollination"
+        ],
+        "conflicts": [],
+        "confidence": 0.62,
+        "evidence": [
+          {
+            "agent": "WeatherAgent",
+            "analysis": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+            "risks": [
+              "Humidity above optimal (60-80%)",
+              "Risk of fungal diseases due to high humidity"
+            ],
+            "opportunities": [
+              "Temperature is within the optimal range (18-30°C)",
+              "Wind conditions are suitable for pollination"
+            ],
+            "confidence": 0.92,
+            "metadata": {}
+          },
+          {
+            "agent": "SatelliteAgent",
+            "analysis": "The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield.",
+            "risks": [
+              "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+              "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+              "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+              "Combined stress factors may lead to reduced fruit set and lower yields."
+            ],
+            "opportunities": [
+              "Early detection of stress provides a window for corrective management before irreversible damage.",
+              "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+              "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks."
+            ],
+            "confidence": 0.4,
+            "metadata": {}
+          }
+        ],
+        "metadata": {
+          "agents": [
+            "WeatherAgent",
+            "SatelliteAgent"
+          ],
+          "agent_count": 2,
+          "llm_provider": "gemini"
+        }
+      },
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.62,
+        "decision": "Immediate Irrigation",
+        "priority": "P3",
+        "urgency": "This Week",
+        "risk_level": "Moderate",
+        "action_order": [
+          "Increase irrigation immediately"
+        ],
+        "priorities": [
+          {
+            "issue": "Water Stress",
+            "severity": "Critical",
+            "urgency": "Immediate",
+            "owner": "Farmer",
+            "action": "Increase irrigation immediately"
+          }
+        ],
+        "impact": {
+          "agronomic": "Good",
+          "economic": "Excellent",
+          "environmental": "Moderate",
+          "operational": "Good",
+          "yield_risk": "Moderate",
+          "profitability": "High",
+          "expected_benefit": "Current conditions provide opportunities for improved profitability."
+        },
+        "summary": {
+          "executive": "Tomato cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+          "business": "Market trend is increasing with high profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 90. Vegetation health: Critical.",
+          "justification": "The executive decision is based on 2 specialist agents. Primary concerns include: Combined stress factors may lead to reduced fruit set and lower yields., Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency., High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.."
+        },
+        "supporting_evidence": [
+          "WeatherAgent: Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+          "SatelliteAgent: The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.64,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9183284434554486,
+          "posterior_mean": 0.9193779691288481,
+          "evidence": {
+            "positive": true,
+            "weight": 0.46499999999999997,
+            "reason": "Completed with confidence 0.62."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.1342,
+            "utilities": {
+              "auto_execute": 17.921,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.13 from trust=0.92 (+/-0.05) on a medium-risk executive action => auto_execute (EU auto=17.921, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Implement immediate drip irrigation to alleviate water stress and improve vegetation health.",
+        "priority": "Medium",
+        "justification": "Satellite imagery shows critically low NDVI and high NDWI, indicating severe water stress and poor photosynthetic activity. Soil assessment reports adequate nitrogen but low organic carbon, increasing the need for moisture to support nutrient uptake. High humidity raises disease risk, so prompt irrigation will also help reduce leaf wetness duration. Temperature and wind are optimal, providing a window to recover yield potential before fruit set is compromised.",
+        "actions": [
+          "Measure current soil moisture at 20‑30 cm depth using a moisture probe.",
+          "Activate drip irrigation to deliver 20‑30 mm of water per week, applying in 2‑3 day intervals.",
+          "Apply a thin layer of organic mulch (e.g., straw or compost) around the tomato rows to conserve moisture and reduce soil exposure.",
+          "Inspect plants for early signs of fungal disease (blight, wilt) during irrigation cycles.",
+          "Record irrigation volumes and timing in a farm log."
+        ],
+        "expected_outcome": "Restored soil moisture will raise NDVI to at least 0.45 within two weeks, improve fruit set, and mitigate disease pressure, leading to higher yields and increased profitability in the upcoming harvest window.",
+        "monitoring_plan": [
+          "Daily visual scouting for leaf wetness, lesions, or wilting.",
+          "Soil moisture readings before each irrigation event.",
+          "Weekly NDVI assessment via satellite or handheld sensor to track vegetation recovery.",
+          "Record ambient humidity and temperature; if humidity remains >80 %, consider canopy ventilation.",
+          "Adjust irrigation frequency based on moisture readings and NDVI trends."
+        ],
+        "confidence": 0.62,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Immediate Irrigation",
+        "executive_priority": "P3",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9312659751516094,
+          "posterior_mean": 0.9322925139784414,
+          "evidence": {
+            "positive": true,
+            "weight": 0.62,
+            "reason": "Completed with confidence 0.62."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.1132,
+            "utilities": {
+              "auto_execute": 21.893,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.11 from trust=0.93 (+/-0.05) on a high-risk recommendation action => human_review (EU auto=21.893, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Immediate Irrigation",
+        "executive_summary": "Immediate Irrigation. Implement immediate drip irrigation to alleviate water stress and improve vegetation health.",
+        "recommendation": "Implement immediate drip irrigation to alleviate water stress and improve vegetation health.",
+        "explanation": "The recommendation is supported by specialist evidence: WeatherAgent: Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits. 2 weather risk(s) identified. 2 weather opportunity(s) identified. SatelliteAgent: The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified. Collaborative reasoning concluded that 2 specialist agents reached a consensus. The final decision is 'Immediate Irrigation', leading to the recommendation: Implement immediate drip irrigation to alleviate water stress and improve vegetation health.",
+        "reasoning_summary": "2 specialist agents reached a consensus.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.92,
+              "key_risks": [
+                "Humidity above optimal (60-80%)",
+                "Risk of fungal diseases due to high humidity"
+              ],
+              "key_opportunities": [
+                "Temperature is within the optimal range (18-30°C)",
+                "Wind conditions are suitable for pollination"
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Humidity above optimal (60-80%)",
+                  "confidence": 0.92,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8108,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Risk of fungal diseases due to high humidity",
+                  "confidence": 0.92,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8108,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "analysis",
+                  "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+                  "confidence": 0.92,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.8008,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Specialist",
+              "source": "SatelliteAgent",
+              "finding": "The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+              "confidence": 0.4,
+              "key_risks": [
+                "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+                "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+                "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+                "Combined stress factors may lead to reduced fruit set and lower yields."
+              ],
+              "key_opportunities": [
+                "Early detection of stress provides a window for corrective management before irreversible damage.",
+                "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+                "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+                  "confidence": 0.4,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6437,
+                  "importance": "Low",
+                  "rank": 7
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+                  "confidence": 0.4,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6437,
+                  "importance": "Low",
+                  "rank": 8
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "risk",
+                  "finding": "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+                  "confidence": 0.4,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.475,
+                  "evidence_score": 0.6437,
+                  "importance": "Low",
+                  "rank": 9
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 3,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Humidity above optimal (60-80%)",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8108,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Risk of fungal diseases due to high humidity",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8108,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8008,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8008,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Evidence Ranking",
+              "source": "WeatherAgent",
+              "finding": "Temperature is within the optimal range (18-30°C)",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7958,
+              "importance": "Moderate",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 8,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "2 specialist agents reached a consensus.",
+              "confidence": 0.62,
+              "consensus": "Deterministic consensus generated because Gemini reasoning was unavailable.",
+              "merged_risks": [
+                "Combined stress factors may lead to reduced fruit set and lower yields.",
+                "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+                "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+                "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+                "Humidity above optimal (60-80%)",
+                "Risk of fungal diseases due to high humidity"
+              ],
+              "merged_opportunities": [
+                "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks.",
+                "Early detection of stress provides a window for corrective management before irreversible damage.",
+                "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+                "Temperature is within the optimal range (18-30°C)",
+                "Wind conditions are suitable for pollination"
+              ],
+              "conflicts": [],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 9,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Immediate Irrigation",
+              "confidence": 0.62,
+              "priority": "P3",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 10,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Implement immediate drip irrigation to alleviate water stress and improve vegetation health.",
+              "confidence": 0.62,
+              "actions": [
+                "Measure current soil moisture at 20‑30 cm depth using a moisture probe.",
+                "Activate drip irrigation to deliver 20‑30 mm of water per week, applying in 2‑3 day intervals.",
+                "Apply a thin layer of organic mulch (e.g., straw or compost) around the tomato rows to conserve moisture and reduce soil exposure.",
+                "Inspect plants for early signs of fungal disease (blight, wilt) during irrigation cycles.",
+                "Record irrigation volumes and timing in a farm log."
+              ],
+              "justification": "Satellite imagery shows critically low NDVI and high NDWI, indicating severe water stress and poor photosynthetic activity. Soil assessment reports adequate nitrogen but low organic carbon, increasing the need for moisture to support nutrient uptake. High humidity raises disease risk, so prompt irrigation will also help reduce leaf wetness duration. Temperature and wind are optimal, providing a window to recover yield potential before fruit set is compromised.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Humidity above optimal (60-80%)",
+              "strength": 0.8108
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Risk of fungal diseases due to high humidity",
+              "strength": 0.8108
+            },
+            {
+              "from": "WeatherAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+              "strength": 0.8008
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "2 specialist agents reached a consensus.",
+              "strength": 0.62
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Immediate Irrigation",
+              "strength": 0.62
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Implement immediate drip irrigation to alleviate water stress and improve vegetation health.",
+              "strength": 0.62
+            }
+          ],
+          "summary": "2 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Immediate Irrigation'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 10,
+          "specialist_steps": 2,
+          "evidence_steps": 5,
+          "decision_step": 9,
+          "recommendation_step": 10,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Humidity above optimal (60-80%)",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8108,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Risk of fungal diseases due to high humidity",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8108,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8008,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8008,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Temperature is within the optimal range (18-30°C)",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7958,
+              "importance": "Moderate",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Humidity above optimal (60-80%)",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8108,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Risk of fungal diseases due to high humidity",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8108,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8008,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8008,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Temperature is within the optimal range (18-30°C)",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7958,
+              "importance": "Moderate",
+              "rank": 5
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Wind conditions are suitable for pollination",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7958,
+              "importance": "Moderate",
+              "rank": 6
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 7
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 8
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 9
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "risk",
+              "finding": "Combined stress factors may lead to reduced fruit set and lower yields.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6437,
+              "importance": "Low",
+              "rank": 10
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "analysis",
+              "finding": "The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6337,
+              "importance": "Low",
+              "rank": 11
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "summary",
+              "finding": "The current NDVI (0.154) is far below the crop's poorest threshold (0.30), indicating critically low vegetation vigor. NDWI (-0.204) is below the high‑stress threshold (0.0), signifying severe water deficit. SAVI (0.105) is under the high‑exposure limit (0.20), showing extensive exposed soil and likely poor canopy cover. The vegetation health flag is 'Critical', matching the index assessments. Overall, the tomato crop is experiencing extreme water stress, insufficient green biomass, and high soil exposure, which together point to a critical condition that jeopardizes growth and yield. 4 satellite risk(s) identified. 3 satellite opportunity(s) identified.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6337,
+              "importance": "Low",
+              "rank": 12
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Early detection of stress provides a window for corrective management before irreversible damage.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6287,
+              "importance": "Low",
+              "rank": 13
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6287,
+              "importance": "Low",
+              "rank": 14
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks.",
+              "confidence": 0.4,
+              "reliability": 0.95,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.6287,
+              "importance": "Low",
+              "rank": 15
+            }
+          ],
+          "source_summary": {
+            "WeatherAgent": {
+              "evidence_score": 0.8108,
+              "finding_count": 6,
+              "highest_importance": "High"
+            },
+            "SatelliteAgent": {
+              "evidence_score": 0.6437,
+              "finding_count": 9,
+              "highest_importance": "Low"
+            }
+          },
+          "total_findings": 15,
+          "top_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Humidity above optimal (60-80%)",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8108,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Risk of fungal diseases due to high humidity",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8108,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits.",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8008,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "Current weather conditions are within the optimal temperature range but humidity is significantly above the optimal threshold for tomatoes. Rainfall is currently zero, which is below the annual requirement but not a direct weather risk as it's a short-term condition. Wind speed is within acceptable limits. 2 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.8008,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Temperature is within the optimal range (18-30°C)",
+              "confidence": 0.92,
+              "reliability": 0.9,
+              "decision_relevance": 0.475,
+              "evidence_score": 0.7958,
+              "importance": "Moderate",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "Combined stress factors may lead to reduced fruit set and lower yields.",
+          "Critically low NDVI suggests poor photosynthetic activity and potential nutrient deficiency.",
+          "High soil exposure (low SAVI) raises risk of soil erosion and further moisture loss.",
+          "High water stress (NDWI) increases susceptibility to diseases such as Fusarium wilt and blight.",
+          "Humidity above optimal (60-80%)",
+          "Risk of fungal diseases due to high humidity"
+        ],
+        "opportunities": [
+          "Critical vegetation status can trigger targeted scouting for disease or pest outbreaks.",
+          "Early detection of stress provides a window for corrective management before irreversible damage.",
+          "Identifying high soil exposure highlights the potential benefit of ground cover or mulching to conserve moisture.",
+          "Temperature is within the optimal range (18-30°C)",
+          "Wind conditions are suitable for pollination"
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Delay irrigation",
+            "expected_result": "The crop may remain under water stress for longer.",
+            "why_rejected": "Immediate irrigation was preferred because current evidence indicates insufficient water availability.",
+            "context_signal": "Rainfall=0.0, water_stress=High"
+          },
+          {
+            "decision": "Apply partial irrigation",
+            "expected_result": "Water demand may be reduced, but crop recovery may be slower.",
+            "why_rejected": "The evidence supports stronger intervention than a partial irrigation strategy.",
+            "context_signal": "Water stress=High"
+          },
+          {
+            "decision": "Wait for natural rainfall",
+            "expected_result": "Irrigation cost could be avoided if sufficient rainfall occurs.",
+            "why_rejected": "Current rainfall evidence does not provide enough support for waiting.",
+            "context_signal": "Current rainfall=0.0"
+          },
+          {
+            "decision": "Take no immediate action",
+            "expected_result": "Current risks may persist or worsen.",
+            "why_rejected": "AgriMind selected 'Immediate Irrigation' because the available evidence supports intervention.",
+            "context_signal": "No-action baseline"
+          }
+        ],
+        "limitations": [
+          {
+            "category": "Missing Evidence",
+            "limitation": "SoilAgent did not return an output.",
+            "impact": "The final recommendation was produced without SoilAgent evidence.",
+            "evidence": "SoilAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "MarketAgent did not return an output.",
+            "impact": "The final recommendation was produced without MarketAgent evidence.",
+            "evidence": "MarketAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "HistoricalAgent did not return an output.",
+            "impact": "The final recommendation was produced without HistoricalAgent evidence.",
+            "evidence": "HistoricalAgent"
+          },
+          {
+            "category": "Low Confidence",
+            "limitation": "SatelliteAgent reported low confidence (0.40).",
+            "impact": "Its evidence should be treated cautiously when interpreting the final recommendation.",
+            "evidence": "confidence=0.40"
+          },
+          {
+            "category": "Soil Data Provenance",
+            "limitation": "Soil analysis used the local synthetic/scenario-controlled dataset rather than live field measurements.",
+            "impact": "The soil assessment is suitable for controlled system evaluation but should not be interpreted as a direct measurement of the current field.",
+            "evidence": "local dataset"
+          },
+          {
+            "category": "Market Data Provenance",
+            "limitation": "Market analysis used the synthetic local market dataset.",
+            "impact": "The ranking is valid for controlled testing but should not be interpreted as real-time market intelligence.",
+            "evidence": "synthetic local dataset"
+          },
+          {
+            "category": "Evidence Conflict",
+            "limitation": "Conflicting evidence was detected for condition status.",
+            "impact": "The final decision may be sensitive to how conflicting evidence was weighted.",
+            "evidence": "condition status"
+          }
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Weather changes can affect irrigation and field operations."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Monitor environmental stress."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Ensure irrigation is effective."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Monthly",
+            "reason": "Maintain suitable soil conditions."
+          },
+          {
+            "source": "Satellite",
+            "parameter": "NDVI",
+            "frequency": "Weekly",
+            "reason": "Monitor vegetation health."
+          },
+          {
+            "source": "Satellite",
+            "parameter": "NDWI",
+            "frequency": "Weekly",
+            "reason": "Detect crop water stress."
+          },
+          {
+            "source": "Market",
+            "parameter": "Crop Price",
+            "frequency": "Daily",
+            "reason": "Identify the best selling opportunity."
+          },
+          {
+            "source": "Historical",
+            "parameter": "Seasonal Comparison",
+            "frequency": "Monthly",
+            "reason": "Compare current performance with previous seasons."
+          },
+          {
+            "source": "Recommendation",
+            "parameter": "Irrigation Effectiveness",
+            "frequency": "After Every Irrigation",
+            "reason": "Confirm reduction in crop water stress."
+          },
+          {
+            "source": "System",
+            "parameter": "Overall Farm Health",
+            "frequency": "Weekly",
+            "reason": "Validate AgriMind recommendations."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.64,
+          "specialist_average": 0.66,
+          "strongest_source": "WeatherAgent",
+          "strongest_confidence": 0.92,
+          "weakest_source": "SatelliteAgent",
+          "weakest_confidence": 0.4,
+          "unavailable_sources": [],
+          "breakdown": {
+            "WeatherAgent": 0.92,
+            "SatelliteAgent": 0.4,
+            "CollaborativeReasoning": 0.62,
+            "ExecutiveDecision": 0.62
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.64. The strongest specialist evidence came from WeatherAgent (0.92), while the weakest was SatelliteAgent (0.40). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.64,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8561,
+            "trust_std": 0.0761
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8483,
+            "trust_std": 0.0765
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7355,
+            "trust_std": 0.1131
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6257,
+            "trust_std": 0.1505
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9194,
+            "trust_std": 0.0536
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9323,
+            "trust_std": 0.0455
+          }
+        },
+        "crop_learning": {
+          "crop": "tomato",
+          "trust_mean": 0.84,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.866,
+              "trust_std": 0.0854
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8461,
+              "trust_std": 0.0964
+            },
+            "tomato": {
+              "trust_mean": 0.84,
+              "trust_std": 0.0998
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.62,
+      "statistics": {
+        "agents_planned": 4,
+        "specialist_agents": 2,
+        "agents_completed": 2,
+        "agents_failed": 1,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.95,
+        "reasoning_confidence": 0.62,
+        "executive_confidence": 0.62,
+        "explanation_confidence": 0.64,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 7,
+        "monitoring_items": 10,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 809.825
+  }
+}

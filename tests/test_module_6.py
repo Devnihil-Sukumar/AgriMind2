@@ -92,6 +92,15 @@ def run_test(crop, query):
     pprint(result["execution"]["recommendation"])
 
     ####################################################################
+    # TRUSTAI Governance
+    ####################################################################
+
+    print("\nTRUSTAI GOVERNANCE")
+    print("-" * 80)
+
+    pprint(result["execution"]["governance"])
+
+    ####################################################################
 
     print("\nExecution Time:", result["total_time"], "seconds")
 
@@ -100,28 +109,6 @@ def run_test(crop, query):
 
 
 def main():
-
-    # Existing crop (should load from cache if already learned)
-    run_test(
-
-        crop="rice",
-
-        query="Should I irrigate my rice crop today?"
-
-    )
-
-    print("\n\n")
-
-    # New crop (should trigger Groq profile generation once)
-    run_test(
-
-        crop="banana",
-
-        query="How healthy is my banana plantation?"
-
-    )
-
-    print("\n\n")
 
     # Another unseen crop
     run_test(

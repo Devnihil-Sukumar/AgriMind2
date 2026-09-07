@@ -1,0 +1,22 @@
+{
+  "run_id": "rice_SoilAgent",
+  "crop": "rice",
+  "agent": "SoilAgent",
+  "prompt_chars": 5848,
+  "ollama": {
+    "elapsed_seconds": 179.189,
+    "valid_json_first_try": true,
+    "json_error": null,
+    "response_chars": 88,
+    "raw_response": "{\n    \"analysis\": \"\",\n    \"risks\": [],\n    \"opportunities\": [],\n    \"confidence\": 0.95\n}",
+    "error": null
+  },
+  "groq": {
+    "elapsed_seconds": 1.558,
+    "valid_json_first_try": false,
+    "json_error": "eval response did not contain a complete valid JSON object.",
+    "response_chars": 1269,
+    "raw_response": "{\n    \"analysis\": \"The soil in Coimbatore (pH 6.21) falls squarely within rice's optimal pH range (5.5‑6.5). Nitrogen is reported as 'High', matching the crop's preference for high nitrogen. Organic carbon is classified as 'Low', whereas rice prefers a medium level, representing a shortfall. The texture is a clay loam (32% clay, 46% sand, 22% silt), which aligns with the preferred clay/loam texture and provides good water‑holding capacity for flood irrigation. Overall, the soil is largely suitable for rice, with the principal limitation being insufficient organic matter that could affect nutrient availability and water retention over the season.\",\n    \"risks\": [\n        \"Low organic carbon may limit nutrient supply and water‑holding capacity, potentially reducing yield.\",\n        \"Potential for reduced soil structure stability due to low organic matter, increasing erosion risk under heavy irrigation.\"\n    ],\n    \"opportunities\": [\n        \"Soil pH is optimal for rice nutrient uptake.\",\n        \"High nitrogen status meets the crop's demand.\",\n        \"Clay loam texture offers adequate drainage and water retention for flood irrigation.\",\n        \"High cation exchange capacity (22.38 cmolc/kg) supports nutrient retention.\"\n    ],\n    \"confidence\": 0.94",
+    "error": null
+  }
+}

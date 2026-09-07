@@ -120,7 +120,18 @@ Return ONLY valid JSON.
 
         ############################################################
         # Metadata
+        #
+        # Force the requested crop name onto the profile rather than
+        # trusting whatever string the LLM chose to echo back (e.g.
+        # "Common Wheat" instead of "wheat"). The repository caches
+        # by crop["crop"].lower(), so any drift here means every
+        # future lookup for the actual crop name misses the cache and
+        # silently regenerates -- and re-pays for -- the whole profile
+        # via Groq. This was confirmed happening for "wheat": 4+
+        # successful runs, never once cached.
         ############################################################
+
+        profile["crop"] = crop.lower().strip()
 
         profile["generated_by"] = "Groq"
 
@@ -130,7 +141,7 @@ Return ONLY valid JSON.
 
         profile = crop_profile_validator.validate(profile)
 
-        print("✓ Crop profile validated.")
+        print("[OK] Crop profile validated.")
 
         return profile
 
