@@ -44,7 +44,7 @@ class OllamaClient:
 
         self.model = os.getenv(
             "OLLAMA_MODEL",
-            "qwen3:4b"
+            "gpt-oss:20b"
         )
 
         self.temperature = float(
