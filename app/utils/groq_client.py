@@ -43,21 +43,16 @@ class GroqClient:
 
     def __init__(self):
 
+        # Not raising here on a missing key lets this module import
+        # cleanly on an Ollama-only setup with no Groq key at all --
+        # the module-level singleton below is constructed unconditionally
+        # by llm_client.py regardless of which provider is actually
+        # configured. The key is only required once generate() is
+        # actually called.
+
         api_key = os.getenv("GROQ_API_KEY")
 
-        if not api_key:
-
-            raise ValueError(
-
-                "GROQ_API_KEY environment variable not found."
-
-            )
-
-        self.client = Groq(
-
-            api_key=api_key
-
-        )
+        self.client = Groq(api_key=api_key) if api_key else None
 
         ################################################################
 
@@ -159,6 +154,13 @@ class GroqClient:
         max_tokens: int | None = None
 
     ) -> str:
+
+        if self.client is None:
+
+            raise ValueError(
+                "GROQ_API_KEY environment variable not found -- "
+                "cannot call Groq's generate()."
+            )
 
         if temperature is None:
 

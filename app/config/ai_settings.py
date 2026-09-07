@@ -171,6 +171,67 @@ SATELLITE_MAX_CLOUD_PERCENT = 20
 
 
 ##########################################################################
+# TRUSTAI GOVERNANCE LAYER
+#
+# Runtime Bayesian trust + risk-aware decision settings for the
+# governance layer sitting between the executor and every agent it
+# calls (see app/governance/). Concept source: bayesian.txt.
+##########################################################################
+
+# Population-level Beta(alpha, beta) prior for a brand-new category.
+GOVERNANCE_PRIOR_ALPHA = float(os.getenv("GOVERNANCE_PRIOR_ALPHA", "2.0"))
+GOVERNANCE_PRIOR_BETA = float(os.getenv("GOVERNANCE_PRIOR_BETA", "2.0"))
+
+# Fraction of an agent's posterior retained across updates before new
+# evidence is folded in (sequential trust decay, bayesian.txt sec. 11).
+GOVERNANCE_TRUST_DECAY = float(os.getenv("GOVERNANCE_TRUST_DECAY", "0.99"))
+
+# Fraction of each evidence weight also absorbed by the category-level
+# pooled posterior (hierarchical partial pooling, bayesian.txt sec. 10).
+GOVERNANCE_POOLING_STRENGTH = float(
+    os.getenv("GOVERNANCE_POOLING_STRENGTH", "0.25")
+)
+
+# Evidence weighting (bayesian.txt sec. 8: evidence-aware updating).
+GOVERNANCE_BASE_EVIDENCE_WEIGHT = float(
+    os.getenv("GOVERNANCE_BASE_EVIDENCE_WEIGHT", "0.5")
+)
+GOVERNANCE_FALLBACK_DISCOUNT = float(
+    os.getenv("GOVERNANCE_FALLBACK_DISCOUNT", "0.5")
+)
+GOVERNANCE_FAILURE_PENALTY = float(
+    os.getenv("GOVERNANCE_FAILURE_PENALTY", "1.5")
+)
+GOVERNANCE_UNAVAILABLE_PENALTY = float(
+    os.getenv("GOVERNANCE_UNAVAILABLE_PENALTY", "0.2")
+)
+
+# Expected-utility cost table (bayesian.txt sec. 13).
+GOVERNANCE_BASE_BENEFIT = float(
+    os.getenv("GOVERNANCE_BASE_BENEFIT", "20.0")
+)
+GOVERNANCE_BASE_FAILURE_COST = float(
+    os.getenv("GOVERNANCE_BASE_FAILURE_COST", "20.0")
+)
+GOVERNANCE_REVIEW_COST = float(
+    os.getenv("GOVERNANCE_REVIEW_COST", "12.0")
+)
+GOVERNANCE_REJECT_COST_RATIO = float(
+    os.getenv("GOVERNANCE_REJECT_COST_RATIO", "0.2")
+)
+GOVERNANCE_REVIEW_CATCH_RATE = float(
+    os.getenv("GOVERNANCE_REVIEW_CATCH_RATE", "0.95")
+)
+
+# Extra P(fail) caution added per std-dev of posterior uncertainty, so
+# a new agent (wide posterior) is treated more cautiously than a
+# proven one at the same mean trust.
+GOVERNANCE_UNCERTAINTY_MARGIN = float(
+    os.getenv("GOVERNANCE_UNCERTAINTY_MARGIN", "1.0")
+)
+
+
+##########################################################################
 # LEGACY / MEMORY SUBSYSTEM DEFAULTS
 #
 # Referenced by app/memory/chroma_store.py and app/agents/reasoning_agent.py

@@ -31,15 +31,16 @@ class GeminiClient:
 
     def __init__(self):
 
+        # Not raising here on a missing key lets this module import
+        # cleanly on an Ollama-only setup with no Gemini key at all --
+        # the module-level singleton below is constructed unconditionally
+        # by llm_client.py regardless of which provider is actually
+        # configured. The key is only required once generate() is
+        # actually called.
+
         self.api_key = os.getenv(
             "GEMINI_API_KEY"
         )
-
-        if not self.api_key:
-
-            raise ValueError(
-                "GEMINI_API_KEY environment variable not found."
-            )
 
         self.model = os.getenv(
             "GEMINI_MODEL",
@@ -60,12 +61,9 @@ class GeminiClient:
             )
         )
 
-        self.client = genai.Client(
-            api_key=self.api_key
-        )
-
-        print(
-            f"✓ Gemini model: {self.model}"
+        self.client = (
+            genai.Client(api_key=self.api_key)
+            if self.api_key else None
         )
 
     ####################################################################
@@ -86,6 +84,13 @@ class GeminiClient:
         When response_schema is supplied, Gemini is instructed to return
         JSON conforming to that schema.
         """
+
+        if self.client is None:
+
+            raise ValueError(
+                "GEMINI_API_KEY environment variable not found -- "
+                "cannot call Gemini's generate()."
+            )
 
         if not prompt or not str(prompt).strip():
 

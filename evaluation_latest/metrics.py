@@ -7,8 +7,8 @@ Every function states its own N and, for proportions, a Wilson score
 confidence interval (behaves reasonably at small N, unlike a naive
 normal-approximation interval). Nothing here invents a number it cannot
 compute from the raw data: LLM-judge-based metrics (agent F1,
-recommendation quality, hallucination rate) call Groq explicitly and
-are labeled as such everywhere they're reported.
+recommendation quality, hallucination rate) call a local Ollama model
+explicitly and are labeled as such everywhere they're reported.
 ==========================================================================
 """
 
@@ -292,14 +292,14 @@ Answer with ONLY a single JSON object: {{"detected": true or false, "reason": "o
 
 
 def _llm_judge_detected(condition_description, keywords, analysis, risks, opportunities):
-    from app.utils.groq_client import groq_client
+    from app.utils.ollama_client import ollama_client
     from app.utils.json_extract import extract_json_object
 
     prompt = JUDGE_RISK_PROMPT.format(
         condition_description=condition_description, keywords=", ".join(keywords) or "(none -- absence expected)",
         analysis=(analysis or "")[:800], risks=risks or [], opportunities=opportunities or [])
     try:
-        raw = groq_client.generate(prompt=prompt, temperature=0.0, max_tokens=700)
+        raw = ollama_client.generate(prompt=prompt, temperature=0.0, max_tokens=700)
         result = extract_json_object(raw, error_label="agent_f1_judge")
         return bool(result.get("detected")), result.get("reason", "")
     except Exception as e:
@@ -309,7 +309,7 @@ def _llm_judge_detected(condition_description, keywords, analysis, risks, opport
 def agent_f1_scores(all_condition_results, scenarios_by_id, use_llm_judge=True):
     """Uses condition 4 (full_system) specialist outputs, scored against
     each scenario's ground-truth risk/opportunity keywords via an LLM
-    judge (Groq) -- disclosed here and in every report table as an
+    judge (local Ollama model) -- disclosed here and in every report table as an
     LLM-judge proxy, not a human-verified label.
 
     Only judges an agent when the scenario's perturbed condition is
@@ -413,7 +413,7 @@ def agent_f1_scores(all_condition_results, scenarios_by_id, use_llm_judge=True):
             f1_values.append(f1)
 
     macro_f1 = round(sum(f1_values) / len(f1_values), 4) if f1_values else None
-    return {"metric": "Individual Agent F1-score", "methodology": "LLM-judge (Groq) vs rule-derived ground truth",
+    return {"metric": "Individual Agent F1-score", "methodology": "LLM-judge (local Ollama model) vs rule-derived ground truth",
             "per_agent": scores, "macro_f1": macro_f1, "rows": rows}
 
 
@@ -447,7 +447,7 @@ QUALITY_DIMENSIONS = ["agronomic_correctness", "relevance", "actionability", "co
 
 
 def recommendation_quality(full_system_results, scenarios_by_id):
-    from app.utils.groq_client import groq_client
+    from app.utils.ollama_client import ollama_client
     from app.utils.json_extract import extract_json_object
 
     per_scenario = []
@@ -462,7 +462,7 @@ def recommendation_quality(full_system_results, scenarios_by_id):
             ground_truth_decision=scenario["ground_truth_decision"],
             reference_recommendation=scenario["reference_recommendation"], recommendation_text=rec_text)
         try:
-            raw = groq_client.generate(prompt=prompt, temperature=0.0, max_tokens=700)
+            raw = ollama_client.generate(prompt=prompt, temperature=0.0, max_tokens=700)
             scores = extract_json_object(raw, error_label="quality_judge")
             per_scenario.append({"scenario_id": sid, **{d: scores.get(d) for d in QUALITY_DIMENSIONS},
                                  "justification": scores.get("justification")})
@@ -486,7 +486,7 @@ def recommendation_quality(full_system_results, scenarios_by_id):
         "std": round(statistics.pstdev(all_scores), 3) if len(all_scores) > 1 else 0.0 if all_scores else None,
     }
 
-    return {"metric": "Recommendation Quality", "methodology": "LLM-judge (Groq) 1-5 Likert, NOT a human expert panel",
+    return {"metric": "Recommendation Quality", "methodology": "LLM-judge (local Ollama model) 1-5 Likert, NOT a human expert panel",
             "dimensions": dimension_stats, "overall": overall, "rows": per_scenario}
 
 
@@ -514,7 +514,7 @@ Return ONLY a JSON object:
 
 
 def hallucination_rate(full_system_results, scenarios_by_id):
-    from app.utils.groq_client import groq_client
+    from app.utils.ollama_client import ollama_client
     from app.utils.json_extract import extract_json_object
 
     rows = []
@@ -537,7 +537,7 @@ def hallucination_rate(full_system_results, scenarios_by_id):
         prompt = HALLUCINATION_JUDGE_PROMPT.format(
             raw_context_json=json.dumps(raw_context, default=str), generated_text=generated_text[:1500])
         try:
-            raw = groq_client.generate(prompt=prompt, temperature=0.0, max_tokens=700)
+            raw = ollama_client.generate(prompt=prompt, temperature=0.0, max_tokens=700)
             result = extract_json_object(raw, error_label="hallucination_judge")
             rows.append({"scenario_id": sid, "has_error": bool(result.get("has_error")),
                         "error_type": result.get("error_type"), "explanation": result.get("explanation")})

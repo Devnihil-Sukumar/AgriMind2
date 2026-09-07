@@ -19,7 +19,7 @@ from app.prompts.collaborative_prompt import (
     build_prompt
 )
 
-from app.utils.gemini_client import gemini_client
+from app.utils.llm_client import llm_client
 
 
 class CollaborativeEngine:
@@ -182,7 +182,7 @@ class CollaborativeEngine:
 
             "consensus":
                 "Deterministic consensus generated "
-                "because Gemini reasoning was unavailable.",
+                "because LLM-backed reasoning was unavailable.",
 
             "merged_risks":
                 consensus.get(
@@ -269,7 +269,7 @@ class CollaborativeEngine:
 
         try:
 
-            reasoning = gemini_client.generate_json(
+            reasoning = llm_client.generate_json(
 
                 system_prompt=SYSTEM_PROMPT,
 
@@ -277,20 +277,22 @@ class CollaborativeEngine:
 
                 schema=self.get_response_schema(),
 
+                component="collaborative",
+
                 temperature=0.2
 
             )
 
             print()
             print(
-                "✓ Collaborative reasoning: Gemini"
+                "✓ Collaborative reasoning"
             )
 
         except Exception as error:
 
             print()
             print(
-                "⚠ Gemini collaborative reasoning failed:"
+                "⚠ Collaborative reasoning failed:"
             )
 
             print(

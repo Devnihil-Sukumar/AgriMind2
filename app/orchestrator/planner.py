@@ -385,13 +385,15 @@ REQUIRED FORMAT:
         prompt
     ):
         """
-        Call the centralized LLM client.
-
-        This routes through Groq instead of directly calling Ollama.
+        Call the centralized LLM client, routed through whichever
+        provider PLANNER_LLM_PROVIDER configures (see
+        app/utils/provider_config.py) rather than llm_client's own
+        Groq-default fallback.
         """
 
         return llm_client.generate(
             prompt=prompt,
+            component="planner",
             system_prompt=(
                 "You are the AgriMind Dynamic Planner. "
                 "Your only task is to select relevant specialist agents. "

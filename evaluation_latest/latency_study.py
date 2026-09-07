@@ -15,8 +15,8 @@ versus hosted inference, not any property of those agents.
 This script measures each specialist twice on an identical fixture:
 
   condition MIXED    -- production routing (Weather/Soil local CPU)
-  condition UNIFORM  -- AGRIMIND_FORCE_PROVIDER=groq, every agent on the
-                        same hosted tier
+  condition UNIFORM  -- AGRIMIND_FORCE_PROVIDER=ollama, every agent on the
+                        same local tier
 
 The UNIFORM column is the one that can be read architecturally. The
 difference between the columns quantifies the hardware artefact that
@@ -24,9 +24,15 @@ must be subtracted from the production figures before any structural
 claim is made.
 
 It deliberately does NOT run the full pipeline: collaborative reasoning
-(the only Gemini consumer) contributes nothing to per-agent specialist
-latency, and excluding it keeps the study inside a single provider's
-quota.
+contributes nothing to per-agent specialist latency, and excluding it
+keeps this script scoped to the specialists.
+
+NOTE: the project has since moved to an Ollama-only deployment (see
+app/utils/provider_config.py DEFAULT_PROVIDERS), so MIXED and UNIFORM
+now both route through the same local model and the "artefact" this
+script measures is expected to be ~0 by construction. It is kept for
+the historical mixed-provider comparison and as a regression check
+that routing is in fact now uniform.
 
 Usage
 -----
@@ -151,8 +157,8 @@ def main():
     print(f"Repeats : {args.repeats} per agent per condition")
     print()
 
-    print("Condition UNIFORM (all agents forced to groq)")
-    uniform_t, uniform_s = run_condition("groq", scenario, args.repeats)
+    print("Condition UNIFORM (all agents forced to ollama)")
+    uniform_t, uniform_s = run_condition("ollama", scenario, args.repeats)
 
     print()
     print("Condition MIXED (production routing)")
@@ -161,7 +167,7 @@ def main():
     result = {
         "scenario_id": scenario["scenario_id"],
         "repeats": args.repeats,
-        "uniform_groq": summarise(uniform_t),
+        "uniform_ollama": summarise(uniform_t),
         "mixed_production": summarise(mixed_t),
         "note":
             "UNIFORM holds hardware constant and is the column that may be "
@@ -178,10 +184,10 @@ def main():
 
     print()
     print("=" * 62)
-    print(f"{'agent':17s} {'uniform(groq)':>15s} {'mixed(prod)':>13s} {'artefact':>10s}")
+    print(f"{'agent':17s} {'uniform(ollama)':>15s} {'mixed(prod)':>13s} {'artefact':>10s}")
     print("=" * 62)
     for name in AGENTS:
-        u = result["uniform_groq"][name]["mean"]
+        u = result["uniform_ollama"][name]["mean"]
         m = result["mixed_production"][name]["mean"]
         art = f"{m - u:+.2f}s" if (u is not None and m is not None) else "--"
         print(f"{name:17s} {str(u) + 's':>15s} {str(m) + 's':>13s} {art:>10s}")
