@@ -31,6 +31,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 
 from app.governance.trustai import trustai
+from app.utils.provider_config import get_provider
 from app.learning.continuous_learning_engine import continuous_learning_engine
 
 from app.reasoning.collaborative_engine import collaborative_engine
@@ -1053,23 +1054,27 @@ class DynamicExecutor:
 
                 "planner_model":
 
-                    "Qwen",
+                    get_provider("planner"),
 
                 "reasoning_model":
 
-                    "Groq",
+                    get_provider("collaborative"),
 
+                # The executive decision is a deterministic rule engine
+                # (app/executive/executive_engine.py infer_decision) --
+                # no LLM is ever called for this stage, so there is no
+                # provider to report.
                 "executive_model":
 
-                    "Groq",
+                    "deterministic (rule-based, no LLM)",
 
                 "recommendation_model":
 
-                    "Groq",
+                    get_provider("recommendation"),
 
                 "explanation_model":
 
-                    "Qwen"
+                    get_provider("explanation")
 
             }
 
