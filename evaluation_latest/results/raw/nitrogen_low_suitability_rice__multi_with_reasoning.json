@@ -1,0 +1,771 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "rice",
+    "crop_profile": {
+      "crop": "rice",
+      "scientific_name": "Oryza sativa",
+      "family": "Poaceae",
+      "type": "annual",
+      "category": "",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 20,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 1000,
+          "maximum": 2000,
+          "unit": "mm"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "clay",
+          "loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "flood irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "",
+        "recommended_frequency": ""
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.4,
+          "moderate_stress": 0.2,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "food",
+          "staple",
+          "grain"
+        ],
+        "major_states": [
+          "California",
+          "Arkansas",
+          "Louisiana",
+          "Texas",
+          "Mississippi"
+        ],
+        "major_countries": [],
+        "harvest_season": "summer",
+        "storage_capability": "Moderate",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [],
+        "commercial_products": []
+      },
+      "common_diseases": [
+        "blast",
+        "sheath blight",
+        "leaf spot"
+      ],
+      "common_pests": [],
+      "fertilizer": {
+        "recommended": "balanced NPK",
+        "npk_ratio": "",
+        "organic_options": []
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 0,
+        "excellent_tonnes_per_hectare": 0
+      },
+      "recommendations": {
+        "irrigation": "",
+        "fertilizer": "",
+        "harvesting": "",
+        "storage": ""
+      },
+      "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+      "references": [],
+      "generated_by": "Groq",
+      "version": 2,
+      "recommended_irrigation": "flood irrigation",
+      "fertilizer_recommendation": "balanced NPK"
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T11:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 25.0,
+        "humidity": 70.0,
+        "rainfall": 15.0,
+        "wind_speed": 10.0,
+        "pressure": 964.1,
+        "time": "2026-08-31T11:45"
+      },
+      "assessment": {
+        "crop": "rice",
+        "status": "Good",
+        "identified_risks": [],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 74
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.0,
+        "nitrogen": "Low",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.0,
+        "nitrogen": "Low",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Low",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [
+          "Soil nitrogen level is Low, below the crop's preferred High requirement."
+        ],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T06:26:00.768941",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.8,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": 0.4,
+        "stress": "Low"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Continue normal management."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Thoothukudi Market",
+      "nearest_market": {
+        "market": "Namakkal Market",
+        "district": "Namakkal",
+        "price": 2389.0,
+        "trend": "Increasing",
+        "distance_km": 134.09,
+        "market_score": 0.6433,
+        "rank": 5
+      },
+      "top_markets": [
+        {
+          "market": "Thoothukudi Market",
+          "district": "Thoothukudi",
+          "price": 2470.0,
+          "trend": "Stable",
+          "distance_km": 281.81,
+          "market_score": 0.8007,
+          "rank": 1
+        },
+        {
+          "market": "Tiruvannamalai Mandi",
+          "district": "Tiruvannamalai",
+          "price": 2443.0,
+          "trend": "Stable",
+          "distance_km": 267.05,
+          "market_score": 0.748,
+          "rank": 2
+        },
+        {
+          "market": "Tiruvarur Uzhavar Sandhai",
+          "district": "Tiruvarur",
+          "price": 2432.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.7265,
+          "rank": 3
+        },
+        {
+          "market": "Kanchipuram Market",
+          "district": "Kanchipuram",
+          "price": 2459.0,
+          "trend": "Stable",
+          "distance_km": 360.83,
+          "market_score": 0.6891,
+          "rank": 4
+        },
+        {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Stable",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "rice",
+        "TopMarkets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 100,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+        "opportunities": [
+          "Market prices are increasing.",
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 1.0,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "rice",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 28.98
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "The current weather conditions are within the optimal range for rice cultivation. The temperature, humidity, and rainfall are all within the preferred thresholds for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+      "summary": "The current weather conditions are within the optimal range for rice cultivation. The temperature, humidity, and rainfall are all within the preferred thresholds for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+      "risks": [
+        "Potential for excessive rainfall leading to waterlogging."
+      ],
+      "opportunities": [
+        "Current weather conditions are favorable for rice growth."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "The soil in Coimbatore, Tamil Nadu, is generally suitable for rice cultivation. The pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen level is low, which may affect productivity. The soil texture is loam, which is preferred for rice. Despite these conditions, there are opportunities to improve nitrogen levels to meet the crop's high nitrogen requirement.",
+      "summary": "The soil in Coimbatore, Tamil Nadu, is generally suitable for rice cultivation. The pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen level is low, which may affect productivity. The soil texture is loam, which is preferred for rice. Despite these conditions, there are opportunities to improve nitrogen levels to meet the crop's high nitrogen requirement. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+      "risks": [
+        "Soil nitrogen level is Low, below the crop's preferred High requirement."
+      ],
+      "opportunities": [
+        "Soil pH is within the optimal range.",
+        "Soil texture is Loam, which is preferred for rice."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The satellite data indicates excellent vegetation health with an NDVI of 0.8, which is above the excellent threshold of 0.8 for rice. The EVI and SAVI values are lower than the thresholds, but the vegetation condition is still rated as excellent. The NDWI value of 0.4 indicates low water stress, which is within the low stress threshold for rice. The soil exposure is rated as low, which is favorable for rice growth. Overall, the vegetation assessment is positive, and the crop appears to be in good condition.",
+      "summary": "The satellite data indicates excellent vegetation health with an NDVI of 0.8, which is above the excellent threshold of 0.8 for rice. The EVI and SAVI values are lower than the thresholds, but the vegetation condition is still rated as excellent. The NDWI value of 0.4 indicates low water stress, which is within the low stress threshold for rice. The soil exposure is rated as low, which is favorable for rice growth. Overall, the vegetation assessment is positive, and the crop appears to be in good condition. 1 satellite risk(s) identified. 1 satellite opportunity(s) identified.",
+      "risks": [
+        "Low EVI and SAVI values may indicate potential issues with vegetation structure or soil conditions that require further investigation."
+      ],
+      "opportunities": [
+        "The excellent vegetation health and low water stress suggest that the crop is performing well and may yield high productivity if conditions remain favorable."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "MarketAgent": {
+      "agent": "MarketAgent",
+      "status": "completed",
+      "analysis": "The current market for rice shows a stable trend with increasing prices in several key markets. Thoothukudi Market is the best-ranked market with a price of 2470.0, indicating strong demand and potential for higher returns. The nearest market is Namakkal Market, which has a lower price but is closer, offering a viable alternative for quicker sales. The top 5 markets are experiencing stable or increasing prices, suggesting a favorable market environment. However, the market is not showing significant volatility, and there are limited risks identified. Selling opportunities are present due to the increasing prices and the availability of multiple markets for comparison. Harvest timing should align with the summer season, which is the optimal harvest period for rice. Overall, the market assessment is positive, and selling now is recommended based on current conditions.",
+      "summary": "Nearest market: Namakkal Market (134.09 km). Best-ranked market: Thoothukudi Market with modal price 2470.0. 5 market(s) were evaluated. The current market for rice shows a stable trend with increasing prices in several key markets. Thoothukudi Market is the best-ranked market with a price of 2470.0, indicating strong demand and potential for higher returns. The nearest market is Namakkal Market, which has a lower price but is closer, offering a viable alternative for quicker sales. The top 5 markets are experiencing stable or increasing prices, suggesting a favorable market environment. However, the market is not showing significant volatility, and there are limited risks identified. Selling opportunities are present due to the increasing prices and the availability of multiple markets for comparison. Harvest timing should align with the summer season, which is the optimal harvest period for rice. Overall, the market assessment is positive, and selling now is recommended based on current conditions. 5 market opportunity(s) identified.",
+      "risks": [],
+      "opportunities": [
+        "Market prices are increasing.",
+        "Multiple nearby markets are available for comparison.",
+        "Thoothukudi Market offers the highest price and best rank.",
+        "Stable prices in top markets indicate consistent demand.",
+        "Potential for higher returns due to increasing prices."
+      ],
+      "confidence": 0.95,
+      "metadata": {
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_market_count": 5,
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Stable",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Stable",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Stable",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      }
+    }
+  },
+  "reasoning": {
+    "summary": "4 specialist agents reached a consensus.",
+    "consensus": "",
+    "merged_risks": [
+      "Low EVI and SAVI values may indicate potential issues with vegetation structure or soil conditions that require further investigation.",
+      "Potential for excessive rainfall leading to waterlogging.",
+      "Soil nitrogen level is Low, below the crop's preferred High requirement."
+    ],
+    "merged_opportunities": [
+      "Current weather conditions are favorable for rice growth.",
+      "Market prices are increasing.",
+      "Multiple nearby markets are available for comparison.",
+      "Potential for higher returns due to increasing prices.",
+      "Soil pH is within the optimal range.",
+      "Soil texture is Loam, which is preferred for rice.",
+      "Stable prices in top markets indicate consistent demand.",
+      "The excellent vegetation health and low water stress suggest that the crop is performing well and may yield high productivity if conditions remain favorable.",
+      "Thoothukudi Market offers the highest price and best rank."
+    ],
+    "conflicts": [],
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "agent": "WeatherAgent",
+        "analysis": "The current weather conditions are within the optimal range for rice cultivation. The temperature, humidity, and rainfall are all within the preferred thresholds for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+        "risks": [
+          "Potential for excessive rainfall leading to waterlogging."
+        ],
+        "opportunities": [
+          "Current weather conditions are favorable for rice growth."
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "SoilAgent",
+        "analysis": "The soil in Coimbatore, Tamil Nadu, is generally suitable for rice cultivation. The pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen level is low, which may affect productivity. The soil texture is loam, which is preferred for rice. Despite these conditions, there are opportunities to improve nitrogen levels to meet the crop's high nitrogen requirement.",
+        "risks": [
+          "Soil nitrogen level is Low, below the crop's preferred High requirement."
+        ],
+        "opportunities": [
+          "Soil pH is within the optimal range.",
+          "Soil texture is Loam, which is preferred for rice."
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "SatelliteAgent",
+        "analysis": "The satellite data indicates excellent vegetation health with an NDVI of 0.8, which is above the excellent threshold of 0.8 for rice. The EVI and SAVI values are lower than the thresholds, but the vegetation condition is still rated as excellent. The NDWI value of 0.4 indicates low water stress, which is within the low stress threshold for rice. The soil exposure is rated as low, which is favorable for rice growth. Overall, the vegetation assessment is positive, and the crop appears to be in good condition.",
+        "risks": [
+          "Low EVI and SAVI values may indicate potential issues with vegetation structure or soil conditions that require further investigation."
+        ],
+        "opportunities": [
+          "The excellent vegetation health and low water stress suggest that the crop is performing well and may yield high productivity if conditions remain favorable."
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "MarketAgent",
+        "analysis": "The current market for rice shows a stable trend with increasing prices in several key markets. Thoothukudi Market is the best-ranked market with a price of 2470.0, indicating strong demand and potential for higher returns. The nearest market is Namakkal Market, which has a lower price but is closer, offering a viable alternative for quicker sales. The top 5 markets are experiencing stable or increasing prices, suggesting a favorable market environment. However, the market is not showing significant volatility, and there are limited risks identified. Selling opportunities are present due to the increasing prices and the availability of multiple markets for comparison. Harvest timing should align with the summer season, which is the optimal harvest period for rice. Overall, the market assessment is positive, and selling now is recommended based on current conditions.",
+        "risks": [],
+        "opportunities": [
+          "Market prices are increasing.",
+          "Multiple nearby markets are available for comparison.",
+          "Thoothukudi Market offers the highest price and best rank.",
+          "Stable prices in top markets indicate consistent demand.",
+          "Potential for higher returns due to increasing prices."
+        ],
+        "confidence": 0.95,
+        "metadata": {
+          "nearest_market": {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          },
+          "top_market_count": 5,
+          "top_markets": [
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 2470.0,
+              "trend": "Stable",
+              "distance_km": 281.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Tiruvannamalai Mandi",
+              "district": "Tiruvannamalai",
+              "price": 2443.0,
+              "trend": "Stable",
+              "distance_km": 267.05,
+              "market_score": 0.748,
+              "rank": 2
+            },
+            {
+              "market": "Tiruvarur Uzhavar Sandhai",
+              "district": "Tiruvarur",
+              "price": 2432.0,
+              "trend": "Stable",
+              "distance_km": 293.81,
+              "market_score": 0.7265,
+              "rank": 3
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 2459.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.6891,
+              "rank": 4
+            },
+            {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Stable",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            }
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "agents": [
+        "WeatherAgent",
+        "SoilAgent",
+        "SatelliteAgent",
+        "MarketAgent"
+      ],
+      "agent_count": 4,
+      "llm_provider": "gemini"
+    }
+  },
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.95,
+    "decision": "Field Inspection",
+    "priority": "P2",
+    "urgency": "Today",
+    "risk_level": "High",
+    "action_order": [
+      "Inspect crop for disease and nutrient deficiency",
+      "Supplement rainfall through irrigation",
+      "Apply nitrogen fertilizer"
+    ],
+    "priorities": [
+      {
+        "issue": "Vegetation Health",
+        "severity": "Critical",
+        "urgency": "Immediate",
+        "owner": "Agronomist",
+        "action": "Inspect crop for disease and nutrient deficiency"
+      },
+      {
+        "issue": "Rainfall",
+        "severity": "High",
+        "urgency": "Today",
+        "owner": "Farmer",
+        "action": "Supplement rainfall through irrigation"
+      },
+      {
+        "issue": "Nitrogen",
+        "severity": "Medium",
+        "urgency": "Within 3 Days",
+        "owner": "Farmer",
+        "action": "Apply nitrogen fertilizer"
+      }
+    ],
+    "impact": {
+      "agronomic": "Poor",
+      "economic": "Excellent",
+      "environmental": "Excellent",
+      "operational": "Excellent",
+      "yield_risk": "High",
+      "profitability": "Moderate",
+      "expected_benefit": "Timely corrective action will improve productivity."
+    },
+    "summary": {
+      "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a high operational risk requiring today attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 4 specialist agents. Primary concerns include: Low EVI and SAVI values may indicate potential issues with vegetation structure or soil conditions that require further investigation., Potential for excessive rainfall leading to waterlogging., Soil nitrogen level is Low, below the crop's preferred High requirement.."
+    },
+    "supporting_evidence": [
+      "WeatherAgent: The current weather conditions are within the optimal range for rice cultivation. The temperature, humidity, and rainfall are all within the preferred thresholds for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+      "SoilAgent: The soil in Coimbatore, Tamil Nadu, is generally suitable for rice cultivation. The pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen level is low, which may affect productivity. The soil texture is loam, which is preferred for rice. Despite these conditions, there are opportunities to improve nitrogen levels to meet the crop's high nitrogen requirement.",
+      "SatelliteAgent: The satellite data indicates excellent vegetation health with an NDVI of 0.8, which is above the excellent threshold of 0.8 for rice. The EVI and SAVI values are lower than the thresholds, but the vegetation condition is still rated as excellent. The NDWI value of 0.4 indicates low water stress, which is within the low stress threshold for rice. The soil exposure is rated as low, which is favorable for rice growth. Overall, the vegetation assessment is positive, and the crop appears to be in good condition.",
+      "MarketAgent: The current market for rice shows a stable trend with increasing prices in several key markets. Thoothukudi Market is the best-ranked market with a price of 2470.0, indicating strong demand and potential for higher returns. The nearest market is Namakkal Market, which has a lower price but is closer, offering a viable alternative for quicker sales. The top 5 markets are experiencing stable or increasing prices, suggesting a favorable market environment. However, the market is not showing significant volatility, and there are limited risks identified. Selling opportunities are present due to the increasing prices and the availability of multiple markets for comparison. Harvest timing should align with the summer season, which is the optimal harvest period for rice. Overall, the market assessment is positive, and selling now is recommended based on current conditions."
+    ],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0
+  },
+  "recommendation": {
+    "recommendation": "Conduct field inspection and implement corrective measures for vegetation health, nitrogen supplementation, and water management.",
+    "priority": "High",
+    "justification": "The recommendation is based on the consensus from the specialist agents, which highlights the need for immediate action to address vegetation health, nitrogen deficiency, and the risk of waterlogging due to potential excessive rainfall. These actions will ensure optimal crop growth and maximize profitability.",
+    "actions": [
+      "Inspect the crop for disease and nutrient deficiency, with a focus on nitrogen levels.",
+      "Supplement rainfall through irrigation to prevent waterlogging and maintain optimal soil moisture.",
+      "Apply nitrogen fertilizer to address the low nitrogen levels in the soil."
+    ],
+    "expected_outcome": "Improved vegetation health, enhanced nitrogen levels, and reduced risk of waterlogging will lead to better crop productivity and higher market returns.",
+    "monitoring_plan": [
+      "Monitor soil moisture levels and adjust irrigation frequency as needed.",
+      "Track crop health using satellite imagery and ground inspections.",
+      "Monitor market prices and adjust harvesting and selling strategies accordingly."
+    ],
+    "confidence": 0.95,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Field Inspection",
+    "executive_priority": "P2"
+  },
+  "stage_times": {
+    "context_build": 0.002,
+    "planner": 19.436,
+    "WeatherAgent": 11.528,
+    "SoilAgent": 43.273,
+    "SatelliteAgent": 29.082,
+    "MarketAgent": 67.303,
+    "reasoning": 88.579,
+    "executive": 0.0,
+    "recommendation": 26.958
+  },
+  "condition": "multi_with_reasoning",
+  "governance_used": false,
+  "scenario_id": "nitrogen_low_suitability_rice",
+  "wall_time_seconds": 202.29
+}

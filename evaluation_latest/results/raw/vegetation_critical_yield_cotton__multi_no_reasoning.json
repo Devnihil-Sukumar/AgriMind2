@@ -1,0 +1,588 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "cotton",
+    "crop_profile": {
+      "crop": "cotton",
+      "scientific_name": "Gossypium hirsutum",
+      "family": "Malvaceae",
+      "type": "Annual",
+      "category": "Fiber",
+      "growth_duration_days": 150,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 40,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 600,
+          "maximum": 1200,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 7.0
+        },
+        "wind_speed": {
+          "maximum": 25,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 8,
+          "maximum": 12
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Clay",
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Flood irrigation",
+        "water_requirement": "High",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 7-10 days"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.5,
+          "moderate_exposure": 0.3,
+          "high_exposure": 0.1
+        }
+      },
+      "market": {
+        "keywords": [
+          "textile",
+          "fiber"
+        ],
+        "major_states": [
+          "Texas",
+          "Louisiana",
+          "Mississippi"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "United States"
+        ],
+        "harvest_season": "September to November",
+        "storage_capability": "Good",
+        "perishability": "Low"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Nitrogen",
+          "Phosphorus",
+          "Potassium"
+        ],
+        "commercial_products": [
+          "Cottonseed oil",
+          "Cotton linters"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Fusarium wilt",
+          "symptoms": "Yellowing of leaves, wilting of plants",
+          "treatment": "Fungicides, crop rotation"
+        },
+        {
+          "name": "Verticillium wilt",
+          "symptoms": "Yellowing of leaves, premature defoliation",
+          "treatment": "Fungicides, crop rotation"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Insecticides, biological control"
+        },
+        {
+          "name": "Bollworms",
+          "treatment": "Insecticides, Bt cotton"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "NPK 10-20-10",
+        "npk_ratio": "1:2:1",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 2.5,
+        "excellent_tonnes_per_hectare": 4.0
+      },
+      "recommendations": {
+        "irrigation": "Flood irrigation during flowering stage",
+        "fertilizer": "Apply NPK 10-20-10 at planting and sidedressing",
+        "harvesting": "Hand picking or mechanical harvesting",
+        "storage": "Store in dry, well-ventilated areas"
+      },
+      "summary": "Cotton is a warm-season crop that requires adequate moisture, sunlight, and fertilization. It is susceptible to diseases like Fusarium wilt and pests like aphids and bollworms. Proper irrigation, fertilization, and pest management practices can improve yield and quality.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T17:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 22.5,
+        "humidity": 60.0,
+        "rainfall": 9.0,
+        "wind_speed": 10.0,
+        "pressure": 960.1,
+        "time": "2026-08-31T17:45"
+      },
+      "assessment": {
+        "crop": "cotton",
+        "status": "Good",
+        "identified_risks": [],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 92
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Optimal",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T12:17:32.951046",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.05,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Critical"
+      },
+      "water": {
+        "ndwi": 0.25,
+        "stress": "Low"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Inspect crop for disease or nutrient deficiency."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Tiruvarur Mandi",
+      "nearest_market": {
+        "market": "Thanjavur Uzhavar Sandhai",
+        "district": "Thanjavur",
+        "price": 7330.0,
+        "trend": "Increasing",
+        "distance_km": 239.62,
+        "market_score": 0.6521,
+        "rank": 3
+      },
+      "top_markets": [
+        {
+          "market": "Tiruvarur Mandi",
+          "district": "Tiruvarur",
+          "price": 7618.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.7107,
+          "rank": 1
+        },
+        {
+          "market": "Tirunelveli Market",
+          "district": "Tirunelveli",
+          "price": 7387.0,
+          "trend": "Stable",
+          "distance_km": 270.68,
+          "market_score": 0.6814,
+          "rank": 2
+        },
+        {
+          "market": "Thanjavur Uzhavar Sandhai",
+          "district": "Thanjavur",
+          "price": 7330.0,
+          "trend": "Stable",
+          "distance_km": 239.62,
+          "market_score": 0.6521,
+          "rank": 3
+        },
+        {
+          "market": "Chengalpattu Mandi",
+          "district": "Chengalpattu",
+          "price": 7529.0,
+          "trend": "Stable",
+          "distance_km": 376.38,
+          "market_score": 0.5746,
+          "rank": 4
+        },
+        {
+          "market": "Tirupattur Mandi",
+          "district": "Tirupattur",
+          "price": 7168.0,
+          "trend": "Stable",
+          "distance_km": 240.25,
+          "market_score": 0.5684,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "cotton",
+        "TopMarkets": [
+          {
+            "market": "Tiruvarur Mandi",
+            "district": "Tiruvarur",
+            "price": 7618.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7107,
+            "rank": 1
+          },
+          {
+            "market": "Tirunelveli Market",
+            "district": "Tirunelveli",
+            "price": 7387.0,
+            "trend": "Increasing",
+            "distance_km": 270.68,
+            "market_score": 0.6814,
+            "rank": 2
+          },
+          {
+            "market": "Thanjavur Uzhavar Sandhai",
+            "district": "Thanjavur",
+            "price": 7330.0,
+            "trend": "Increasing",
+            "distance_km": 239.62,
+            "market_score": 0.6521,
+            "rank": 3
+          },
+          {
+            "market": "Chengalpattu Mandi",
+            "district": "Chengalpattu",
+            "price": 7529.0,
+            "trend": "Volatile",
+            "distance_km": 376.38,
+            "market_score": 0.5746,
+            "rank": 4
+          },
+          {
+            "market": "Tirupattur Mandi",
+            "district": "Tirupattur",
+            "price": 7168.0,
+            "trend": "Increasing",
+            "distance_km": 240.25,
+            "market_score": 0.5684,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 95,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Tiruvarur Mandi with modal price 7618.0.",
+        "opportunities": [
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 0.95,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "cotton",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 27.8\nHumidity : 68\nRainfall : 0.0\nWind Speed : 20.3\nPressure : 960.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Thanjavur Uzhavar Sandhai\nNearest Distance : 239.62 km\nNearest Market Price : 7330.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Tiruvarur Mandi\nBest Market Price : 7618.0\nBest Market Distance : 293.81 km\nBest Market Trend : Stable\n\nMarkets Evaluated : 5\nCrop : cotton\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Critical",
+    "market_trend": "Stable",
+    "risks": [
+      "Vegetation health is critical",
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 33.46
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "The current weather conditions are suitable for cotton growth. The temperature, humidity, and rainfall are within the optimal ranges for the crop. Wind speed is also within acceptable limits.",
+      "summary": "The current weather conditions are suitable for cotton growth. The temperature, humidity, and rainfall are within the optimal ranges for the crop. Wind speed is also within acceptable limits. 1 weather opportunity(s) identified.",
+      "risks": [],
+      "opportunities": [
+        "Weather conditions are favorable for cotton growth."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "The soil conditions in Coimbatore, Tamil Nadu, are highly suitable for cotton cultivation. The soil pH is optimal (6.25), nitrogen and organic carbon levels are medium, and the soil texture is loam, which aligns with the preferred conditions for cotton. The soil health score is excellent, indicating a low risk of soil-related issues and a strong foundation for productivity.",
+      "summary": "The soil conditions in Coimbatore, Tamil Nadu, are highly suitable for cotton cultivation. The soil pH is optimal (6.25), nitrogen and organic carbon levels are medium, and the soil texture is loam, which aligns with the preferred conditions for cotton. The soil health score is excellent, indicating a low risk of soil-related issues and a strong foundation for productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+      "risks": [
+        "Although the soil pH is optimal, continuous cropping may lead to gradual nutrient depletion over time."
+      ],
+      "opportunities": [
+        "The soil's medium nitrogen and organic carbon levels provide a good base for cotton growth, with potential for improvement through organic amendments.",
+        "The loam texture ensures good drainage and water retention, which is ideal for cotton's high water requirements."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The satellite data indicates critical vegetation health with an NDVI of 0.05, which is far below the crop profile's threshold for healthy vegetation (0.6). The NDWI suggests low water stress (0.25), which is above the moderate stress threshold (0.1), indicating sufficient water availability. The SAVI value of 0.105 is within the low exposure range (0.5 to 0.1), suggesting minimal exposed soil. The vegetation condition is rated as 'Critical,' which aligns with the low NDVI. While water stress is low, the overall vegetation health is severely compromised, likely due to factors such as disease, nutrient deficiency, or environmental stress. The satellite data highlights the need for further ground inspection to identify the root cause of the poor vegetation condition.",
+      "summary": "The satellite data indicates critical vegetation health with an NDVI of 0.05, which is far below the crop profile's threshold for healthy vegetation (0.6). The NDWI suggests low water stress (0.25), which is above the moderate stress threshold (0.1), indicating sufficient water availability. The SAVI value of 0.105 is within the low exposure range (0.5 to 0.1), suggesting minimal exposed soil. The vegetation condition is rated as 'Critical,' which aligns with the low NDVI. While water stress is low, the overall vegetation health is severely compromised, likely due to factors such as disease, nutrient deficiency, or environmental stress. The satellite data highlights the need for further ground inspection to identify the root cause of the poor vegetation condition. 2 satellite risk(s) identified. 2 satellite opportunity(s) identified.",
+      "risks": [
+        "Critical vegetation health indicating potential disease or nutrient deficiency",
+        "Low NDVI suggests poor plant vigor and possible yield reduction"
+      ],
+      "opportunities": [
+        "Low water stress indicates adequate water availability for crop recovery",
+        "Minimal soil exposure suggests good soil cover and potential for improved conditions"
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    }
+  },
+  "reasoning": {
+    "summary": "Deterministic merge of 3 specialist outputs (no collaborative reasoning).",
+    "consensus": "N/A -- collaborative reasoning stage skipped for this condition.",
+    "merged_risks": [
+      "Although the soil pH is optimal, continuous cropping may lead to gradual nutrient depletion over time.",
+      "Critical vegetation health indicating potential disease or nutrient deficiency",
+      "Low NDVI suggests poor plant vigor and possible yield reduction"
+    ],
+    "merged_opportunities": [
+      "Weather conditions are favorable for cotton growth.",
+      "The soil's medium nitrogen and organic carbon levels provide a good base for cotton growth, with potential for improvement through organic amendments.",
+      "The loam texture ensures good drainage and water retention, which is ideal for cotton's high water requirements.",
+      "Low water stress indicates adequate water availability for crop recovery",
+      "Minimal soil exposure suggests good soil cover and potential for improved conditions"
+    ],
+    "conflicts": [],
+    "confidence": 0.95,
+    "evidence": [],
+    "metadata": {
+      "agents": [
+        "WeatherAgent",
+        "SoilAgent",
+        "SatelliteAgent"
+      ],
+      "agent_count": 3,
+      "llm_provider": "none (deterministic merge)"
+    }
+  },
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.95,
+    "decision": "Field Inspection",
+    "priority": "P4",
+    "urgency": "Monitor",
+    "risk_level": "Low",
+    "action_order": [
+      "Inspect crop for disease and nutrient deficiency"
+    ],
+    "priorities": [
+      {
+        "issue": "Vegetation Health",
+        "severity": "Critical",
+        "urgency": "Immediate",
+        "owner": "Agronomist",
+        "action": "Inspect crop for disease and nutrient deficiency"
+      }
+    ],
+    "impact": {
+      "agronomic": "Good",
+      "economic": "Excellent",
+      "environmental": "Excellent",
+      "operational": "Excellent",
+      "yield_risk": "Moderate",
+      "profitability": "Moderate",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Cotton cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Critical.",
+      "justification": "The executive decision is based on 0 specialist agents. Primary concerns include: Although the soil pH is optimal, continuous cropping may lead to gradual nutrient depletion over time., Critical vegetation health indicating potential disease or nutrient deficiency, Low NDVI suggests poor plant vigor and possible yield reduction."
+    },
+    "supporting_evidence": [],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0
+  },
+  "recommendation": {
+    "recommendation": "Conduct a field inspection to assess vegetation health and identify potential disease or nutrient deficiencies.",
+    "priority": "High",
+    "justification": "The vegetation health is critical, with low NDVI indicating poor plant vigor and potential yield reduction. The inspection is necessary to determine the cause of the poor health and to implement corrective actions such as nutrient application or disease control.",
+    "actions": [
+      "Inspect the crop for signs of disease or nutrient deficiency.",
+      "Collect soil and leaf samples for laboratory analysis.",
+      "Evaluate irrigation practices and adjust if necessary."
+    ],
+    "expected_outcome": "Early identification of disease or nutrient issues will allow for timely intervention, improving plant health and potentially increasing yield and profitability.",
+    "monitoring_plan": [
+      "Monitor vegetation health using satellite imagery and ground observations over the next two weeks.",
+      "Track soil moisture levels and adjust irrigation frequency based on crop needs.",
+      "Reassess crop health after applying corrective measures and document changes."
+    ],
+    "confidence": 0.95,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Field Inspection",
+    "executive_priority": "P4"
+  },
+  "stage_times": {
+    "context_build": 0.002,
+    "planner": 17.481,
+    "WeatherAgent": 9.499,
+    "SoilAgent": 26.628,
+    "SatelliteAgent": 51.522,
+    "reasoning": 0.0,
+    "executive": 0.0,
+    "recommendation": 24.403
+  },
+  "condition": "multi_no_reasoning",
+  "governance_used": false,
+  "scenario_id": "vegetation_critical_yield_cotton",
+  "wall_time_seconds": 93.42
+}

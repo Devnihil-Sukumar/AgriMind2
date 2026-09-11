@@ -1,0 +1,794 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "apple",
+    "crop_profile": {
+      "crop": "apple",
+      "scientific_name": "Malus domestica",
+      "family": "Rosaceae",
+      "type": "Perennial",
+      "category": "Fruit",
+      "growth_duration_days": 180,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 25,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 600,
+          "maximum": 1000,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 6.0,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 15,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 8
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Drip irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "Fruiting",
+        "recommended_frequency": "Weekly"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.5,
+          "moderate_exposure": 0.3,
+          "high_exposure": 0.1
+        }
+      },
+      "market": {
+        "keywords": [
+          "fresh fruit",
+          "juice",
+          "cider"
+        ],
+        "major_states": [
+          "Washington",
+          "New York"
+        ],
+        "major_countries": [
+          "United States",
+          "China"
+        ],
+        "harvest_season": "September to November",
+        "storage_capability": "Good",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Carbohydrates",
+          "Fiber",
+          "Vitamin C"
+        ],
+        "commercial_products": [
+          "Apple juice",
+          "Apple sauce",
+          "Dried apples"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Powdery mildew",
+          "symptoms": "White powdery patches on leaves",
+          "treatment": "Fungicides"
+        },
+        {
+          "name": "Fire blight",
+          "symptoms": "Blackened leaves and stems",
+          "treatment": "Antibiotics"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Insecticides"
+        },
+        {
+          "name": "Codling moths",
+          "treatment": "Insecticides"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "Balanced fertilizer",
+        "npk_ratio": "10-10-10",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 20,
+        "excellent_tonnes_per_hectare": 30
+      },
+      "recommendations": {
+        "irrigation": "Regular watering",
+        "fertilizer": "Fertilize during growing season",
+        "harvesting": "Hand-picking",
+        "storage": "Cool and dry storage"
+      },
+      "summary": "Apple is a perennial fruit crop that requires well-drained soil, moderate temperatures, and adequate moisture. It is susceptible to diseases like powdery mildew and fire blight, and pests like aphids and codling moths. Regular irrigation, fertilization, and pruning are essential for optimal growth and yield.",
+      "references": [
+        "FAO",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T11:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 20.0,
+        "humidity": 70.0,
+        "rainfall": 0.0,
+        "wind_speed": 10.0,
+        "pressure": 964.1,
+        "time": "2026-08-31T11:45"
+      },
+      "assessment": {
+        "crop": "apple",
+        "status": "Good",
+        "identified_risks": [
+          "Rainfall below optimal, no recent precipitation."
+        ],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 74
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Optimal",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T06:26:00.768941",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.75,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": -0.35,
+        "stress": "High"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Increase irrigation immediately."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Thoothukudi Market",
+      "nearest_market": {
+        "market": "Namakkal Market",
+        "district": "Namakkal",
+        "price": 2389.0,
+        "trend": "Increasing",
+        "distance_km": 134.09,
+        "market_score": 0.6433,
+        "rank": 5
+      },
+      "top_markets": [
+        {
+          "market": "Thoothukudi Market",
+          "district": "Thoothukudi",
+          "price": 2470.0,
+          "trend": "Stable",
+          "distance_km": 281.81,
+          "market_score": 0.8007,
+          "rank": 1
+        },
+        {
+          "market": "Tiruvannamalai Mandi",
+          "district": "Tiruvannamalai",
+          "price": 2443.0,
+          "trend": "Stable",
+          "distance_km": 267.05,
+          "market_score": 0.748,
+          "rank": 2
+        },
+        {
+          "market": "Tiruvarur Uzhavar Sandhai",
+          "district": "Tiruvarur",
+          "price": 2432.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.7265,
+          "rank": 3
+        },
+        {
+          "market": "Kanchipuram Market",
+          "district": "Kanchipuram",
+          "price": 2459.0,
+          "trend": "Stable",
+          "distance_km": 360.83,
+          "market_score": 0.6891,
+          "rank": 4
+        },
+        {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Stable",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "rice",
+        "TopMarkets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 100,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+        "opportunities": [
+          "Market prices are increasing.",
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 1.0,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "rice",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "Rainfall below optimal, no recent precipitation.",
+      "High crop water stress",
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 28.98
+  },
+  "specialists": {
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "The soil conditions in Coimbatore, Tamil Nadu, are highly suitable for apple cultivation. The soil pH is within the optimal range (6.0-6.5), and the nitrogen and organic carbon levels are at medium levels, which align with the crop's requirements. The soil texture is loam, which is ideal for apple trees. The soil health score is excellent, indicating good fertility and productivity. However, there are no specific soil-related risks identified, and the opportunities include maintaining the current soil conditions to ensure continued productivity.",
+      "summary": "The soil conditions in Coimbatore, Tamil Nadu, are highly suitable for apple cultivation. The soil pH is within the optimal range (6.0-6.5), and the nitrogen and organic carbon levels are at medium levels, which align with the crop's requirements. The soil texture is loam, which is ideal for apple trees. The soil health score is excellent, indicating good fertility and productivity. However, there are no specific soil-related risks identified, and the opportunities include maintaining the current soil conditions to ensure continued productivity. 1 soil opportunity(s) identified.",
+      "risks": [],
+      "opportunities": [
+        "Maintain the current soil pH and nutrient levels to ensure sustained productivity."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "The current weather conditions are generally favorable for apple cultivation, but there is a risk due to the lack of recent rainfall.",
+      "summary": "The current weather conditions are generally favorable for apple cultivation, but there is a risk due to the lack of recent rainfall. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+      "risks": [
+        "Rainfall below optimal, no recent precipitation."
+      ],
+      "opportunities": [
+        "Weather conditions are favorable for growth."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The satellite data indicates that the apple crop is in excellent vegetation health based on the NDVI value of 0.75, which meets the 'excellent' threshold. However, the NDWI value of -0.35 indicates high water stress, which is a significant risk. The SAVI value of 0.105 falls under 'high exposure' for soil, suggesting potential issues with soil moisture or exposure. The vegetation condition is rated as excellent, but the high water stress and high soil exposure are critical concerns. The satellite assessment recommends immediate irrigation, which aligns with the high water stress observed. Overall, the crop is in good condition, but water stress is a major risk that needs attention.",
+      "summary": "The satellite data indicates that the apple crop is in excellent vegetation health based on the NDVI value of 0.75, which meets the 'excellent' threshold. However, the NDWI value of -0.35 indicates high water stress, which is a significant risk. The SAVI value of 0.105 falls under 'high exposure' for soil, suggesting potential issues with soil moisture or exposure. The vegetation condition is rated as excellent, but the high water stress and high soil exposure are critical concerns. The satellite assessment recommends immediate irrigation, which aligns with the high water stress observed. Overall, the crop is in good condition, but water stress is a major risk that needs attention. 3 satellite risk(s) identified. 2 satellite opportunity(s) identified.",
+      "risks": [
+        "High water stress due to NDWI value of -0.35",
+        "High soil exposure due to SAVI value of 0.105",
+        "Potential for water deficit during critical growth stages"
+      ],
+      "opportunities": [
+        "Excellent vegetation health can be maintained with proper water management",
+        "High vegetation score indicates strong potential for yield if water stress is mitigated"
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "MarketAgent": {
+      "agent": "MarketAgent",
+      "status": "completed",
+      "analysis": "The current market data for rice in Thoothukudi and surrounding areas shows a stable trend with increasing prices in several markets. Thoothukudi Market is the best-ranked market with a price of 2470.0, indicating strong demand and potential for higher returns. The nearest market is Namakkal Market, which has a stable price but lower market score. Opportunities include the increasing prices in multiple markets and the availability of nearby markets for comparison. However, there are no identified market risks. Selling now is recommended due to the stable trend and rising prices. Harvest timing should align with the market season to maximize profitability.",
+      "summary": "Nearest market: Namakkal Market (134.09 km). Best-ranked market: Thoothukudi Market with modal price 2470.0. 5 market(s) were evaluated. The current market data for rice in Thoothukudi and surrounding areas shows a stable trend with increasing prices in several markets. Thoothukudi Market is the best-ranked market with a price of 2470.0, indicating strong demand and potential for higher returns. The nearest market is Namakkal Market, which has a stable price but lower market score. Opportunities include the increasing prices in multiple markets and the availability of nearby markets for comparison. However, there are no identified market risks. Selling now is recommended due to the stable trend and rising prices. Harvest timing should align with the market season to maximize profitability. 5 market opportunity(s) identified.",
+      "risks": [],
+      "opportunities": [
+        "Market prices are increasing in several markets.",
+        "Multiple nearby markets are available for comparison.",
+        "Thoothukudi Market is the best-ranked market with high price and market score.",
+        "Stable market trend indicates consistent demand.",
+        "Potential for higher returns due to increasing prices."
+      ],
+      "confidence": 0.95,
+      "metadata": {
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_market_count": 5,
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Stable",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Stable",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Stable",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      }
+    }
+  },
+  "reasoning": {
+    "summary": "4 specialist agents reached a consensus.",
+    "consensus": "",
+    "merged_risks": [
+      "High soil exposure due to SAVI value of 0.105",
+      "High water stress due to NDWI value of -0.35",
+      "Potential for water deficit during critical growth stages",
+      "Rainfall below optimal, no recent precipitation."
+    ],
+    "merged_opportunities": [
+      "Excellent vegetation health can be maintained with proper water management",
+      "High vegetation score indicates strong potential for yield if water stress is mitigated",
+      "Maintain the current soil pH and nutrient levels to ensure sustained productivity.",
+      "Market prices are increasing in several markets.",
+      "Multiple nearby markets are available for comparison.",
+      "Potential for higher returns due to increasing prices.",
+      "Stable market trend indicates consistent demand.",
+      "Thoothukudi Market is the best-ranked market with high price and market score.",
+      "Weather conditions are favorable for growth."
+    ],
+    "conflicts": [],
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "agent": "SoilAgent",
+        "analysis": "The soil conditions in Coimbatore, Tamil Nadu, are highly suitable for apple cultivation. The soil pH is within the optimal range (6.0-6.5), and the nitrogen and organic carbon levels are at medium levels, which align with the crop's requirements. The soil texture is loam, which is ideal for apple trees. The soil health score is excellent, indicating good fertility and productivity. However, there are no specific soil-related risks identified, and the opportunities include maintaining the current soil conditions to ensure continued productivity.",
+        "risks": [],
+        "opportunities": [
+          "Maintain the current soil pH and nutrient levels to ensure sustained productivity."
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "WeatherAgent",
+        "analysis": "The current weather conditions are generally favorable for apple cultivation, but there is a risk due to the lack of recent rainfall.",
+        "risks": [
+          "Rainfall below optimal, no recent precipitation."
+        ],
+        "opportunities": [
+          "Weather conditions are favorable for growth."
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "SatelliteAgent",
+        "analysis": "The satellite data indicates that the apple crop is in excellent vegetation health based on the NDVI value of 0.75, which meets the 'excellent' threshold. However, the NDWI value of -0.35 indicates high water stress, which is a significant risk. The SAVI value of 0.105 falls under 'high exposure' for soil, suggesting potential issues with soil moisture or exposure. The vegetation condition is rated as excellent, but the high water stress and high soil exposure are critical concerns. The satellite assessment recommends immediate irrigation, which aligns with the high water stress observed. Overall, the crop is in good condition, but water stress is a major risk that needs attention.",
+        "risks": [
+          "High water stress due to NDWI value of -0.35",
+          "High soil exposure due to SAVI value of 0.105",
+          "Potential for water deficit during critical growth stages"
+        ],
+        "opportunities": [
+          "Excellent vegetation health can be maintained with proper water management",
+          "High vegetation score indicates strong potential for yield if water stress is mitigated"
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "MarketAgent",
+        "analysis": "The current market data for rice in Thoothukudi and surrounding areas shows a stable trend with increasing prices in several markets. Thoothukudi Market is the best-ranked market with a price of 2470.0, indicating strong demand and potential for higher returns. The nearest market is Namakkal Market, which has a stable price but lower market score. Opportunities include the increasing prices in multiple markets and the availability of nearby markets for comparison. However, there are no identified market risks. Selling now is recommended due to the stable trend and rising prices. Harvest timing should align with the market season to maximize profitability.",
+        "risks": [],
+        "opportunities": [
+          "Market prices are increasing in several markets.",
+          "Multiple nearby markets are available for comparison.",
+          "Thoothukudi Market is the best-ranked market with high price and market score.",
+          "Stable market trend indicates consistent demand.",
+          "Potential for higher returns due to increasing prices."
+        ],
+        "confidence": 0.95,
+        "metadata": {
+          "nearest_market": {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          },
+          "top_market_count": 5,
+          "top_markets": [
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 2470.0,
+              "trend": "Stable",
+              "distance_km": 281.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Tiruvannamalai Mandi",
+              "district": "Tiruvannamalai",
+              "price": 2443.0,
+              "trend": "Stable",
+              "distance_km": 267.05,
+              "market_score": 0.748,
+              "rank": 2
+            },
+            {
+              "market": "Tiruvarur Uzhavar Sandhai",
+              "district": "Tiruvarur",
+              "price": 2432.0,
+              "trend": "Stable",
+              "distance_km": 293.81,
+              "market_score": 0.7265,
+              "rank": 3
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 2459.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.6891,
+              "rank": 4
+            },
+            {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Stable",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            }
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "agents": [
+        "SoilAgent",
+        "WeatherAgent",
+        "SatelliteAgent",
+        "MarketAgent"
+      ],
+      "agent_count": 4,
+      "llm_provider": "gemini"
+    }
+  },
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.95,
+    "decision": "Immediate Irrigation",
+    "priority": "P3",
+    "urgency": "This Week",
+    "risk_level": "Moderate",
+    "action_order": [
+      "Increase irrigation immediately",
+      "Supplement rainfall through irrigation"
+    ],
+    "priorities": [
+      {
+        "issue": "Water Stress",
+        "severity": "Critical",
+        "urgency": "Immediate",
+        "owner": "Farmer",
+        "action": "Increase irrigation immediately"
+      },
+      {
+        "issue": "Rainfall",
+        "severity": "High",
+        "urgency": "Today",
+        "owner": "Farmer",
+        "action": "Supplement rainfall through irrigation"
+      }
+    ],
+    "impact": {
+      "agronomic": "Moderate",
+      "economic": "Excellent",
+      "environmental": "Good",
+      "operational": "Good",
+      "yield_risk": "Moderate",
+      "profitability": "Moderate",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Apple cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 4 specialist agents. Primary concerns include: High soil exposure due to SAVI value of 0.105, High water stress due to NDWI value of -0.35, Potential for water deficit during critical growth stages."
+    },
+    "supporting_evidence": [
+      "SoilAgent: The soil conditions in Coimbatore, Tamil Nadu, are highly suitable for apple cultivation. The soil pH is within the optimal range (6.0-6.5), and the nitrogen and organic carbon levels are at medium levels, which align with the crop's requirements. The soil texture is loam, which is ideal for apple trees. The soil health score is excellent, indicating good fertility and productivity. However, there are no specific soil-related risks identified, and the opportunities include maintaining the current soil conditions to ensure continued productivity.",
+      "WeatherAgent: The current weather conditions are generally favorable for apple cultivation, but there is a risk due to the lack of recent rainfall.",
+      "SatelliteAgent: The satellite data indicates that the apple crop is in excellent vegetation health based on the NDVI value of 0.75, which meets the 'excellent' threshold. However, the NDWI value of -0.35 indicates high water stress, which is a significant risk. The SAVI value of 0.105 falls under 'high exposure' for soil, suggesting potential issues with soil moisture or exposure. The vegetation condition is rated as excellent, but the high water stress and high soil exposure are critical concerns. The satellite assessment recommends immediate irrigation, which aligns with the high water stress observed. Overall, the crop is in good condition, but water stress is a major risk that needs attention.",
+      "MarketAgent: The current market data for rice in Thoothukudi and surrounding areas shows a stable trend with increasing prices in several markets. Thoothukudi Market is the best-ranked market with a price of 2470.0, indicating strong demand and potential for higher returns. The nearest market is Namakkal Market, which has a stable price but lower market score. Opportunities include the increasing prices in multiple markets and the availability of nearby markets for comparison. However, there are no identified market risks. Selling now is recommended due to the stable trend and rising prices. Harvest timing should align with the market season to maximize profitability."
+    ],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0
+  },
+  "recommendation": {
+    "recommendation": "Implement immediate irrigation to address water stress and soil exposure.",
+    "priority": "High",
+    "justification": "The decision is based on high water stress (NDWI value of -0.35), high soil exposure (SAVI value of 0.105), and the risk of water deficit during the critical fruiting stage. These factors, combined with low rainfall and no recent precipitation, require urgent action to maintain vegetation health and prevent yield loss.",
+    "actions": [
+      "Increase irrigation frequency to weekly, with a focus on the fruiting stage.",
+      "Use drip irrigation to ensure efficient water delivery and minimize waste.",
+      "Monitor soil moisture levels regularly to adjust irrigation as needed."
+    ],
+    "expected_outcome": "Improved vegetation health, reduced water stress, and sustained productivity during the critical fruiting stage, which will help maximize yield and profitability.",
+    "monitoring_plan": [
+      "Check NDWI and SAVI values weekly to assess stress levels.",
+      "Monitor soil moisture levels using sensors or manual checks.",
+      "Track market prices and adjust harvest timing if necessary to capitalize on increasing prices."
+    ],
+    "confidence": 0.95,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Immediate Irrigation",
+    "executive_priority": "P3"
+  },
+  "stage_times": {
+    "context_build": 0.004,
+    "planner": 18.752,
+    "SoilAgent": 14.541,
+    "WeatherAgent": 40.036,
+    "SatelliteAgent": 34.214,
+    "MarketAgent": 57.764,
+    "reasoning": 79.063,
+    "executive": 0.0,
+    "recommendation": 24.042
+  },
+  "condition": "multi_with_reasoning",
+  "governance_used": false,
+  "scenario_id": "water_stress_suitability_apple",
+  "wall_time_seconds": 179.65
+}

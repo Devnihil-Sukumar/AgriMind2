@@ -1,0 +1,3814 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "rice",
+    "crop_profile": {
+      "crop": "rice",
+      "scientific_name": "Oryza sativa",
+      "family": "Poaceae",
+      "type": "annual",
+      "category": "",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 20,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 1000,
+          "maximum": 2000,
+          "unit": "mm"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "clay",
+          "loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "flood irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "",
+        "recommended_frequency": ""
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.4,
+          "moderate_stress": 0.2,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "food",
+          "staple",
+          "grain"
+        ],
+        "major_states": [
+          "California",
+          "Arkansas",
+          "Louisiana",
+          "Texas",
+          "Mississippi"
+        ],
+        "major_countries": [],
+        "harvest_season": "summer",
+        "storage_capability": "Moderate",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [],
+        "commercial_products": []
+      },
+      "common_diseases": [
+        "blast",
+        "sheath blight",
+        "leaf spot"
+      ],
+      "common_pests": [],
+      "fertilizer": {
+        "recommended": "balanced NPK",
+        "npk_ratio": "",
+        "organic_options": []
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 0,
+        "excellent_tonnes_per_hectare": 0
+      },
+      "recommendations": {
+        "irrigation": "",
+        "fertilizer": "",
+        "harvesting": "",
+        "storage": ""
+      },
+      "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+      "references": [],
+      "generated_by": "Groq",
+      "version": 2,
+      "recommended_irrigation": "flood irrigation",
+      "fertilizer_recommendation": "balanced NPK"
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T11:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 25.0,
+        "humidity": 70.0,
+        "rainfall": 15.0,
+        "wind_speed": 10.0,
+        "pressure": 964.1,
+        "time": "2026-08-31T11:45"
+      },
+      "assessment": {
+        "crop": "rice",
+        "status": "Good",
+        "identified_risks": [],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 74
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.0,
+        "nitrogen": "Low",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.0,
+        "nitrogen": "Low",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Low",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [
+          "Soil nitrogen level is Low, below the crop's preferred High requirement."
+        ],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T06:26:00.768941",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.8,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": 0.4,
+        "stress": "Low"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Continue normal management."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Thoothukudi Market",
+      "nearest_market": {
+        "market": "Namakkal Market",
+        "district": "Namakkal",
+        "price": 2389.0,
+        "trend": "Increasing",
+        "distance_km": 134.09,
+        "market_score": 0.6433,
+        "rank": 5
+      },
+      "top_markets": [
+        {
+          "market": "Thoothukudi Market",
+          "district": "Thoothukudi",
+          "price": 2470.0,
+          "trend": "Stable",
+          "distance_km": 281.81,
+          "market_score": 0.8007,
+          "rank": 1
+        },
+        {
+          "market": "Tiruvannamalai Mandi",
+          "district": "Tiruvannamalai",
+          "price": 2443.0,
+          "trend": "Stable",
+          "distance_km": 267.05,
+          "market_score": 0.748,
+          "rank": 2
+        },
+        {
+          "market": "Tiruvarur Uzhavar Sandhai",
+          "district": "Tiruvarur",
+          "price": 2432.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.7265,
+          "rank": 3
+        },
+        {
+          "market": "Kanchipuram Market",
+          "district": "Kanchipuram",
+          "price": 2459.0,
+          "trend": "Stable",
+          "distance_km": 360.83,
+          "market_score": 0.6891,
+          "rank": 4
+        },
+        {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Stable",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "rice",
+        "TopMarkets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 100,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+        "opportunities": [
+          "Market prices are increasing.",
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 1.0,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "rice",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 28.98
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+      "summary": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+      "risks": [
+        "Potential for excessive rainfall leading to waterlogging."
+      ],
+      "opportunities": [
+        "Current temperature and humidity levels are ideal for rice growth.",
+        "Rainfall is sufficient to support crop development without over-saturation."
+      ],
+      "confidence": 0.95,
+      "metadata": {},
+      "execution_time": 13.058,
+      "governance": {
+        "agent": "WeatherAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.8344876154588071,
+        "posterior_mean": 0.8364010485016367,
+        "evidence": {
+          "positive": true,
+          "weight": 0.475,
+          "reason": "Completed with confidence 0.95."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.2317,
+          "utilities": {
+            "auto_execute": 10.73,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.23 from trust=0.84 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=10.73, review=7.0, reject=-4.0)."
+        }
+      }
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+      "summary": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+      "risks": [
+        "Soil nitrogen level is Low, below the crop's preferred High requirement."
+      ],
+      "opportunities": [
+        "Soil pH is within the optimal range.",
+        "Soil texture is Loam, which is preferred for rice."
+      ],
+      "confidence": 0.95,
+      "metadata": {},
+      "execution_time": 28.827,
+      "governance": {
+        "agent": "SoilAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.7490144868119792,
+        "posterior_mean": 0.7531414792875727,
+        "evidence": {
+          "positive": true,
+          "weight": 0.475,
+          "reason": "Completed with confidence 0.95."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.3268,
+          "utilities": {
+            "auto_execute": 6.926,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.33 from trust=0.75 (+/-0.08) on a low-risk data_collector action => human_review (EU auto=6.926, review=7.0, reject=-4.0)."
+        }
+      }
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.",
+      "summary": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored. 2 satellite opportunity(s) identified.",
+      "risks": [],
+      "opportunities": [
+        "Monitor water usage for optimal irrigation scheduling.",
+        "Leverage the excellent vegetation health for yield prediction."
+      ],
+      "confidence": 0.95,
+      "metadata": {},
+      "execution_time": 44.802,
+      "governance": {
+        "agent": "SatelliteAgent",
+        "category": "data_collector",
+        "stage": "post",
+        "prior_mean": 0.6225998471289607,
+        "posterior_mean": 0.6312488493438579,
+        "evidence": {
+          "positive": true,
+          "weight": 0.475,
+          "reason": "Completed with confidence 0.95."
+        },
+        "risk": {
+          "category": "data_collector",
+          "risk_level": "Low",
+          "benefit": 20.0,
+          "failure_cost": 20.0,
+          "review_cost": 12.0,
+          "reject_cost": 4.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.4654,
+          "utilities": {
+            "auto_execute": 1.382,
+            "human_review": 7.0,
+            "reject": -4.0
+          },
+          "rationale": "P(fail)=0.47 from trust=0.63 (+/-0.10) on a low-risk data_collector action => human_review (EU auto=1.382, review=7.0, reject=-4.0)."
+        }
+      }
+    }
+  },
+  "reasoning": "CollaborativeReasoning(summary='Rice cultivation in Coimbatore, Tamil Nadu, is currently in a favorable condition with suitable weather, soil, and satellite data. However, there are risks related to soil nitrogen levels and potential weather fluctuations. Opportunities exist to improve nitrogen levels and optimize irrigation.', consensus='The current conditions are favorable for rice cultivation, with no major risks identified. The main concern is the low nitrogen content in the soil, which can be addressed through proper fertilization. The market conditions are stable, and the vegetation health is excellent.', merged_risks=['Potential for excessive rainfall leading to waterlogging.', \"Soil nitrogen level is Low, below the crop's preferred High requirement.\"], merged_opportunities=['Current temperature and humidity levels are ideal for rice growth.', 'Soil pH is within the optimal range.', 'Soil texture is Loam, which is preferred for rice.', 'Monitor water usage for optimal irrigation scheduling.', 'Leverage the excellent vegetation health for yield prediction.', 'Market prices are increasing.', 'Multiple nearby markets are available for comparison.'], conflicts=[], confidence=0.95, evidence=[{'agent': 'WeatherAgent', 'analysis': 'The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.', 'risks': ['Potential for excessive rainfall leading to waterlogging.'], 'opportunities': ['Current temperature and humidity levels are ideal for rice growth.', 'Rainfall is sufficient to support crop development without over-saturation.'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': 'The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.', 'risks': [\"Soil nitrogen level is Low, below the crop's preferred High requirement.\"], 'opportunities': ['Soil pH is within the optimal range.', 'Soil texture is Loam, which is preferred for rice.'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': 'The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.', 'risks': [], 'opportunities': ['Monitor water usage for optimal irrigation scheduling.', 'Leverage the excellent vegetation health for yield prediction.'], 'confidence': 0.95, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.95,
+    "decision": "Apply Nitrogen Fertilizer",
+    "priority": "P3",
+    "urgency": "This Week",
+    "risk_level": "Moderate",
+    "action_order": [
+      "Supplement rainfall through irrigation",
+      "Apply nitrogen fertilizer"
+    ],
+    "priorities": [
+      {
+        "issue": "Rainfall",
+        "severity": "High",
+        "urgency": "Today",
+        "owner": "Farmer",
+        "action": "Supplement rainfall through irrigation"
+      },
+      {
+        "issue": "Nitrogen",
+        "severity": "Medium",
+        "urgency": "Within 3 Days",
+        "owner": "Farmer",
+        "action": "Apply nitrogen fertilizer"
+      }
+    ],
+    "impact": {
+      "agronomic": "Good",
+      "economic": "Excellent",
+      "environmental": "Excellent",
+      "operational": "Excellent",
+      "yield_risk": "Moderate",
+      "profitability": "Moderate",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Potential for excessive rainfall leading to waterlogging., Soil nitrogen level is Low, below the crop's preferred High requirement.."
+    },
+    "supporting_evidence": [
+      "WeatherAgent: The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+      "SoilAgent: The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+      "SatelliteAgent: The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored."
+    ],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0,
+    "governance": {
+      "agent": "ExecutiveAgent",
+      "category": "executive",
+      "stage": "post",
+      "prior_mean": 0.9343970246475621,
+      "posterior_mean": 0.9355137513264576,
+      "evidence": {
+        "positive": true,
+        "weight": 0.7124999999999999,
+        "reason": "Completed with confidence 0.95."
+      },
+      "risk": {
+        "category": "executive",
+        "risk_level": "Medium",
+        "benefit": 30.0,
+        "failure_cost": 60.0,
+        "review_cost": 12.0,
+        "reject_cost": 6.0
+      },
+      "decision": {
+        "action": "auto_execute",
+        "p_fail": 0.1079,
+        "utilities": {
+          "auto_execute": 20.289,
+          "human_review": 16.5,
+          "reject": -6.0
+        },
+        "rationale": "P(fail)=0.11 from trust=0.94 (+/-0.04) on a medium-risk executive action => auto_execute (EU auto=20.289, review=16.5, reject=-6.0)."
+      }
+    }
+  },
+  "recommendation": {
+    "recommendation": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+    "priority": "High",
+    "justification": "The soil nitrogen level is low, which can negatively impact rice growth and yield. Supplementing irrigation will prevent waterlogging due to potential excessive rainfall, while applying nitrogen fertilizer will address the nutrient deficiency. These actions align with the current favorable conditions and market opportunities for improved profitability.",
+    "actions": [
+      "Apply nitrogen fertilizer at the recommended rate to boost soil nitrogen levels.",
+      "Implement flood irrigation to manage water supply and prevent waterlogging.",
+      "Monitor weather forecasts for rainfall patterns to adjust irrigation schedules."
+    ],
+    "expected_outcome": "Improved nitrogen levels in the soil will enhance rice growth, while proper irrigation will prevent waterlogging, leading to higher yields and better market competitiveness.",
+    "monitoring_plan": [
+      "Track soil nitrogen levels after fertilizer application.",
+      "Monitor satellite imagery for vegetation health and water stress indicators.",
+      "Review market price trends and adjust harvesting schedules accordingly."
+    ],
+    "confidence": 0.95,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Apply Nitrogen Fertilizer",
+    "executive_priority": "P3",
+    "governance": {
+      "agent": "RecommendationAgent",
+      "category": "recommendation",
+      "stage": "post",
+      "prior_mean": 0.9442608096914484,
+      "posterior_mean": 0.9453697186535603,
+      "evidence": {
+        "positive": true,
+        "weight": 0.95,
+        "reason": "Completed with confidence 0.95."
+      },
+      "risk": {
+        "category": "recommendation",
+        "risk_level": "High",
+        "benefit": 40.0,
+        "failure_cost": 120.0,
+        "review_cost": 12.0,
+        "reject_cost": 8.0
+      },
+      "decision": {
+        "action": "human_review",
+        "p_fail": 0.0917,
+        "utilities": {
+          "auto_execute": 25.33,
+          "human_review": 26.0,
+          "reject": -8.0
+        },
+        "rationale": "P(fail)=0.09 from trust=0.95 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=25.33, review=26.0, reject=-8.0)."
+      }
+    }
+  },
+  "explanation": {
+    "executive_decision": "Apply Nitrogen Fertilizer",
+    "executive_summary": "The recommendation to apply nitrogen fertilizer and supplement irrigation is based on the current soil nitrogen levels being low and the potential for excessive rainfall. These actions aim to optimize yield and mitigate risks.",
+    "recommendation": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+    "explanation": "The soil nitrogen level is below the crop's preferred level, which can impact rice growth and yield. Supplementing irrigation will help manage water supply and prevent waterlogging due to potential rainfall. These actions align with the current favorable conditions and market opportunities for improved profitability.",
+    "reasoning_summary": "The decision was made to address the low nitrogen levels in the soil and the risk of excessive rainfall. Applying nitrogen fertilizer will correct the nutrient deficiency, while irrigation will manage water supply and prevent waterlogging. These actions are supported by the current favorable weather and market conditions.",
+    "decision_trace": {
+      "steps": [
+        {
+          "step": 1,
+          "stage": "Specialist",
+          "source": "WeatherAgent",
+          "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "key_risks": [
+            "Potential for excessive rainfall leading to waterlogging."
+          ],
+          "key_opportunities": [
+            "Current temperature and humidity levels are ideal for rice growth.",
+            "Rainfall is sufficient to support crop development without over-saturation."
+          ],
+          "ranked_evidence": [
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Potential for excessive rainfall leading to waterlogging.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8025,
+              "importance": "High",
+              "rank": 8
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7925,
+              "importance": "Moderate",
+              "rank": 11
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7925,
+              "importance": "Moderate",
+              "rank": 12
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 2,
+          "stage": "Specialist",
+          "source": "SoilAgent",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+          "confidence": 0.95,
+          "key_risks": [
+            "Soil nitrogen level is Low, below the crop's preferred High requirement."
+          ],
+          "key_opportunities": [
+            "Soil pH is within the optimal range.",
+            "Soil texture is Loam, which is preferred for rice."
+          ],
+          "ranked_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 3
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 3,
+          "stage": "Specialist",
+          "source": "SatelliteAgent",
+          "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored. 2 satellite opportunity(s) identified.",
+          "confidence": 0.95,
+          "key_risks": [],
+          "key_opportunities": [
+            "Monitor water usage for optimal irrigation scheduling.",
+            "Leverage the excellent vegetation health for yield prediction."
+          ],
+          "ranked_evidence": [
+            {
+              "source": "SatelliteAgent",
+              "type": "analysis",
+              "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.",
+              "confidence": 0.95,
+              "reliability": 0.95,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8075,
+              "importance": "High",
+              "rank": 6
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "summary",
+              "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored. 2 satellite opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.95,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8075,
+              "importance": "High",
+              "rank": 7
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Monitor water usage for optimal irrigation scheduling.",
+              "confidence": 0.95,
+              "reliability": 0.95,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8025,
+              "importance": "High",
+              "rank": 9
+            }
+          ],
+          "influence": "Contributed evidence to the collaborative reasoning stage."
+        },
+        {
+          "step": 4,
+          "stage": "Evidence Ranking",
+          "source": "SoilAgent",
+          "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8304,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 5,
+          "stage": "Evidence Ranking",
+          "source": "SoilAgent",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8204,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 6,
+          "stage": "Evidence Ranking",
+          "source": "SoilAgent",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8204,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 7,
+          "stage": "Evidence Ranking",
+          "source": "SoilAgent",
+          "finding": "Soil pH is within the optimal range.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8154,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 8,
+          "stage": "Evidence Ranking",
+          "source": "SoilAgent",
+          "finding": "Soil texture is Loam, which is preferred for rice.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8154,
+          "importance": "High",
+          "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+        },
+        {
+          "step": 9,
+          "stage": "Collaborative Reasoning",
+          "source": "CollaborativeEngine",
+          "finding": "Rice cultivation in Coimbatore, Tamil Nadu, is currently in a favorable condition with suitable weather, soil, and satellite data. However, there are risks related to soil nitrogen levels and potential weather fluctuations. Opportunities exist to improve nitrogen levels and optimize irrigation.",
+          "confidence": 0.95,
+          "consensus": "The current conditions are favorable for rice cultivation, with no major risks identified. The main concern is the low nitrogen content in the soil, which can be addressed through proper fertilization. The market conditions are stable, and the vegetation health is excellent.",
+          "merged_risks": [
+            "Potential for excessive rainfall leading to waterlogging.",
+            "Soil nitrogen level is Low, below the crop's preferred High requirement."
+          ],
+          "merged_opportunities": [
+            "Current temperature and humidity levels are ideal for rice growth.",
+            "Soil pH is within the optimal range.",
+            "Soil texture is Loam, which is preferred for rice.",
+            "Monitor water usage for optimal irrigation scheduling.",
+            "Leverage the excellent vegetation health for yield prediction.",
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "conflicts": [],
+          "influence": "Converted specialist evidence into a combined decision context."
+        },
+        {
+          "step": 10,
+          "stage": "Executive Decision",
+          "source": "ExecutiveAgent",
+          "finding": "Apply Nitrogen Fertilizer",
+          "confidence": 0.95,
+          "priority": "P3",
+          "justification": "The executive decision was produced from collaborative reasoning.",
+          "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+        },
+        {
+          "step": 11,
+          "stage": "Recommendation",
+          "source": "RecommendationAgent",
+          "finding": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+          "confidence": 0.95,
+          "actions": [
+            "Apply nitrogen fertilizer at the recommended rate to boost soil nitrogen levels.",
+            "Implement flood irrigation to manage water supply and prevent waterlogging.",
+            "Monitor weather forecasts for rainfall patterns to adjust irrigation schedules."
+          ],
+          "justification": "The soil nitrogen level is low, which can negatively impact rice growth and yield. Supplementing irrigation will prevent waterlogging due to potential excessive rainfall, while applying nitrogen fertilizer will address the nutrient deficiency. These actions align with the current favorable conditions and market opportunities for improved profitability.",
+          "influence": "Translated the executive decision into concrete recommended actions."
+        }
+      ],
+      "causal_chain": [
+        {
+          "from": "SoilAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+          "strength": 0.8304
+        },
+        {
+          "from": "SoilAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+          "strength": 0.8204
+        },
+        {
+          "from": "SoilAgent",
+          "to": "CollaborativeReasoning",
+          "relationship": "supports",
+          "evidence": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+          "strength": 0.8204
+        },
+        {
+          "from": "CollaborativeReasoning",
+          "to": "ExecutiveAgent",
+          "relationship": "informs",
+          "evidence": "Rice cultivation in Coimbatore, Tamil Nadu, is currently in a favorable condition with suitable weather, soil, and satellite data. However, there are risks related to soil nitrogen levels and potential weather fluctuations. Opportunities exist to improve nitrogen levels and optimize irrigation.",
+          "strength": 0.95
+        },
+        {
+          "from": "ExecutiveAgent",
+          "to": "RecommendationAgent",
+          "relationship": "produces",
+          "evidence": "Apply Nitrogen Fertilizer",
+          "strength": 0.95
+        },
+        {
+          "from": "RecommendationAgent",
+          "to": "Farmer",
+          "relationship": "recommends",
+          "evidence": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+          "strength": 0.95
+        }
+      ],
+      "summary": "3 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Apply Nitrogen Fertilizer'. The RecommendationAgent then translated that decision into actionable guidance.",
+      "total_steps": 11,
+      "specialist_steps": 3,
+      "evidence_steps": 5,
+      "decision_step": 10,
+      "recommendation_step": 11,
+      "top_evidence": [
+        {
+          "source": "SoilAgent",
+          "type": "risk",
+          "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8304,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "SoilAgent",
+          "type": "analysis",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8204,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "SoilAgent",
+          "type": "summary",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8204,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Soil pH is within the optimal range.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8154,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Soil texture is Loam, which is preferred for rice.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8154,
+          "importance": "High",
+          "rank": 5
+        }
+      ]
+    },
+    "evidence": {
+      "ranked_evidence": [
+        {
+          "source": "SoilAgent",
+          "type": "risk",
+          "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8304,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "SoilAgent",
+          "type": "analysis",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8204,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "SoilAgent",
+          "type": "summary",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8204,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Soil pH is within the optimal range.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8154,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Soil texture is Loam, which is preferred for rice.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8154,
+          "importance": "High",
+          "rank": 5
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "analysis",
+          "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.",
+          "confidence": 0.95,
+          "reliability": 0.95,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.8075,
+          "importance": "High",
+          "rank": 6
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "summary",
+          "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored. 2 satellite opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.95,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.8075,
+          "importance": "High",
+          "rank": 7
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "risk",
+          "finding": "Potential for excessive rainfall leading to waterlogging.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.8025,
+          "importance": "High",
+          "rank": 8
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "opportunity",
+          "finding": "Monitor water usage for optimal irrigation scheduling.",
+          "confidence": 0.95,
+          "reliability": 0.95,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.8025,
+          "importance": "High",
+          "rank": 9
+        },
+        {
+          "source": "SatelliteAgent",
+          "type": "opportunity",
+          "finding": "Leverage the excellent vegetation health for yield prediction.",
+          "confidence": 0.95,
+          "reliability": 0.95,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.8025,
+          "importance": "High",
+          "rank": 10
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "analysis",
+          "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.7925,
+          "importance": "Moderate",
+          "rank": 11
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "summary",
+          "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.7925,
+          "importance": "Moderate",
+          "rank": 12
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Current temperature and humidity levels are ideal for rice growth.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.7875,
+          "importance": "Moderate",
+          "rank": 13
+        },
+        {
+          "source": "WeatherAgent",
+          "type": "opportunity",
+          "finding": "Rainfall is sufficient to support crop development without over-saturation.",
+          "confidence": 0.95,
+          "reliability": 0.9,
+          "decision_relevance": 0.4,
+          "evidence_score": 0.7875,
+          "importance": "Moderate",
+          "rank": 14
+        }
+      ],
+      "source_summary": {
+        "SoilAgent": {
+          "evidence_score": 0.8304,
+          "finding_count": 5,
+          "highest_importance": "High"
+        },
+        "SatelliteAgent": {
+          "evidence_score": 0.8075,
+          "finding_count": 4,
+          "highest_importance": "High"
+        },
+        "WeatherAgent": {
+          "evidence_score": 0.8025,
+          "finding_count": 5,
+          "highest_importance": "High"
+        }
+      },
+      "total_findings": 14,
+      "top_evidence": [
+        {
+          "source": "SoilAgent",
+          "type": "risk",
+          "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8304,
+          "importance": "High",
+          "rank": 1
+        },
+        {
+          "source": "SoilAgent",
+          "type": "analysis",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8204,
+          "importance": "High",
+          "rank": 2
+        },
+        {
+          "source": "SoilAgent",
+          "type": "summary",
+          "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8204,
+          "importance": "High",
+          "rank": 3
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Soil pH is within the optimal range.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8154,
+          "importance": "High",
+          "rank": 4
+        },
+        {
+          "source": "SoilAgent",
+          "type": "opportunity",
+          "finding": "Soil texture is Loam, which is preferred for rice.",
+          "confidence": 0.95,
+          "reliability": 0.85,
+          "decision_relevance": 0.5714,
+          "evidence_score": 0.8154,
+          "importance": "High",
+          "rank": 5
+        }
+      ]
+    },
+    "risks": [
+      "Potential for excessive rainfall leading to waterlogging.",
+      "Soil nitrogen level is Low, below the crop's preferred High requirement."
+    ],
+    "opportunities": [
+      "Current temperature and humidity levels are ideal for rice growth.",
+      "Soil pH is within the optimal range.",
+      "Soil texture is Loam, which is preferred for rice.",
+      "Monitor water usage for optimal irrigation scheduling.",
+      "Leverage the excellent vegetation health for yield prediction.",
+      "Market prices are increasing.",
+      "Multiple nearby markets are available for comparison."
+    ],
+    "rejected_alternatives": [
+      {
+        "decision": "Delay fertilizer application",
+        "expected_result": "Nutrient deficiency may persist or worsen.",
+        "why_rejected": "Current soil evidence indicates that nutrient management should not be unnecessarily delayed.",
+        "context_signal": "Nitrogen=Low, organic_carbon=Medium"
+      },
+      {
+        "decision": "Apply a reduced fertilizer dose",
+        "expected_result": "Lower cost and lower nutrient loading, but crop response may be weaker.",
+        "why_rejected": "The selected recommendation provides stronger correction for the identified nutrient condition.",
+        "context_signal": "Nitrogen=Low"
+      },
+      {
+        "decision": "Take no nutrient action",
+        "expected_result": "Existing nutrient limitations would remain unresolved.",
+        "why_rejected": "Soil evidence identifies a nutrient-related limitation.",
+        "context_signal": "Nitrogen=Low"
+      },
+      {
+        "decision": "Take no immediate action",
+        "expected_result": "Current risks may persist or worsen.",
+        "why_rejected": "AgriMind selected 'Apply Nitrogen Fertilizer' because the available evidence supports intervention.",
+        "context_signal": "No-action baseline"
+      }
+    ],
+    "limitations": [
+      {
+        "category": "Missing Evidence",
+        "limitation": "MarketAgent did not return an output.",
+        "impact": "The final recommendation was produced without MarketAgent evidence.",
+        "evidence": "MarketAgent"
+      },
+      {
+        "category": "Missing Evidence",
+        "limitation": "HistoricalAgent did not return an output.",
+        "impact": "The final recommendation was produced without HistoricalAgent evidence.",
+        "evidence": "HistoricalAgent"
+      },
+      {
+        "category": "Soil Data Provenance",
+        "limitation": "Soil analysis used the local synthetic/scenario-controlled dataset rather than live field measurements.",
+        "impact": "The soil assessment is suitable for controlled system evaluation but should not be interpreted as a direct measurement of the current field.",
+        "evidence": "local dataset"
+      },
+      {
+        "category": "Market Data Provenance",
+        "limitation": "Market analysis used the synthetic local market dataset.",
+        "impact": "The ranking is valid for controlled testing but should not be interpreted as real-time market intelligence.",
+        "evidence": "synthetic local dataset"
+      }
+    ],
+    "monitoring_plan": [
+      {
+        "source": "Weather",
+        "parameter": "Rainfall Forecast",
+        "frequency": "Daily",
+        "reason": "Weather changes can affect irrigation and field operations."
+      },
+      {
+        "source": "Weather",
+        "parameter": "Temperature & Humidity",
+        "frequency": "Daily",
+        "reason": "Monitor environmental stress."
+      },
+      {
+        "source": "Soil",
+        "parameter": "Soil Moisture",
+        "frequency": "Every 2 Days",
+        "reason": "Ensure irrigation is effective."
+      },
+      {
+        "source": "Soil",
+        "parameter": "Soil pH",
+        "frequency": "Monthly",
+        "reason": "Maintain suitable soil conditions."
+      },
+      {
+        "source": "Satellite",
+        "parameter": "NDVI",
+        "frequency": "Weekly",
+        "reason": "Monitor vegetation health."
+      },
+      {
+        "source": "Satellite",
+        "parameter": "NDWI",
+        "frequency": "Weekly",
+        "reason": "Detect crop water stress."
+      },
+      {
+        "source": "Market",
+        "parameter": "Crop Price",
+        "frequency": "Daily",
+        "reason": "Identify the best selling opportunity."
+      },
+      {
+        "source": "Historical",
+        "parameter": "Seasonal Comparison",
+        "frequency": "Monthly",
+        "reason": "Compare current performance with previous seasons."
+      },
+      {
+        "source": "Recommendation",
+        "parameter": "Irrigation Effectiveness",
+        "frequency": "After Every Irrigation",
+        "reason": "Confirm reduction in crop water stress."
+      },
+      {
+        "source": "Recommendation",
+        "parameter": "Leaf Nutrient Status",
+        "frequency": "Weekly",
+        "reason": "Evaluate fertilizer response."
+      },
+      {
+        "source": "System",
+        "parameter": "Overall Farm Health",
+        "frequency": "Weekly",
+        "reason": "Validate AgriMind recommendations."
+      }
+    ],
+    "confidence_breakdown": {
+      "overall": 0.95,
+      "specialist_average": 0.95,
+      "strongest_source": "WeatherAgent",
+      "strongest_confidence": 0.95,
+      "weakest_source": "WeatherAgent",
+      "weakest_confidence": 0.95,
+      "unavailable_sources": [],
+      "breakdown": {
+        "WeatherAgent": 0.95,
+        "SoilAgent": 0.95,
+        "SatelliteAgent": 0.95,
+        "CollaborativeReasoning": 0.95,
+        "ExecutiveDecision": 0.95
+      },
+      "confidence_explanation": "Overall evidence confidence is 0.95. The strongest specialist evidence came from WeatherAgent (0.95), while the weakest was WeatherAgent (0.95). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+    },
+    "overall_confidence": 0.95,
+    "model": "Qwen",
+    "module": "Explainable Recommendation",
+    "version": "2.0",
+    "status": "completed"
+  },
+  "governance": {
+    "agent_trust": {
+      "WeatherAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.8364,
+        "trust_std": 0.0682
+      },
+      "SoilAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.7531,
+        "trust_std": 0.08
+      },
+      "SatelliteAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.6312,
+        "trust_std": 0.0967
+      },
+      "MarketAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.6374,
+        "trust_std": 0.1249
+      },
+      "HistoricalAgent": {
+        "category": "data_collector",
+        "trust_mean": 0.5972,
+        "trust_std": 0.1433
+      },
+      "ExecutiveAgent": {
+        "category": "executive",
+        "trust_mean": 0.9355,
+        "trust_std": 0.0434
+      },
+      "RecommendationAgent": {
+        "category": "recommendation",
+        "trust_mean": 0.9454,
+        "trust_std": 0.0371
+      }
+    },
+    "crop_learning": {
+      "crop": "rice",
+      "trust_mean": 0.906,
+      "decision": "human_review",
+      "all_crops": {
+        "cotton": {
+          "trust_mean": 0.804,
+          "trust_std": 0.1186
+        },
+        "rice": {
+          "trust_mean": 0.906,
+          "trust_std": 0.0618
+        },
+        "wheat": {
+          "trust_mean": 0.8446,
+          "trust_std": 0.0973
+        },
+        "mango": {
+          "trust_mean": 0.8461,
+          "trust_std": 0.0964
+        },
+        "tomato": {
+          "trust_mean": 0.8733,
+          "trust_std": 0.0812
+        }
+      }
+    },
+    "recommendation_requires_review": true,
+    "recommendation_rejected": false
+  },
+  "statistics": {
+    "agents_planned": 4,
+    "specialist_agents": 3,
+    "agents_completed": 3,
+    "agents_failed": 0,
+    "agents_unavailable": 0,
+    "unavailable_agents": [],
+    "planner_confidence": 0.9,
+    "reasoning_confidence": 0.95,
+    "executive_confidence": 0.95,
+    "explanation_confidence": 0.95,
+    "decision_trace_steps": 9,
+    "evidence_sources": 4,
+    "limitations": 4,
+    "monitoring_items": 11,
+    "planner_model": "Qwen",
+    "reasoning_model": "Groq",
+    "executive_model": "Groq",
+    "recommendation_model": "Groq",
+    "explanation_model": "Qwen"
+  },
+  "plan": {
+    "goal": "How can I get a better harvest from my rice crop?",
+    "execution_plan": [
+      {
+        "agent": "WeatherAgent",
+        "priority": 1,
+        "purpose": "Analyze weather conditions relevant to the request."
+      },
+      {
+        "agent": "SoilAgent",
+        "priority": 2,
+        "purpose": "Assess soil conditions to identify potential yield-limiting factors."
+      },
+      {
+        "agent": "SatelliteAgent",
+        "priority": 3,
+        "purpose": "Evaluate crop health and water stress for yield optimization."
+      },
+      {
+        "agent": "RecommendationAgent",
+        "priority": 4,
+        "purpose": "Generate the final recommendation from specialist evidence."
+      }
+    ],
+    "confidence": 0.9
+  },
+  "total_time": 156.227,
+  "stage_times": {
+    "total": 156.227
+  },
+  "condition": "full_system",
+  "governance_used": true,
+  "raw_result": {
+    "query": "How can I get a better harvest from my rice crop?",
+    "crop_profile": {
+      "crop": "rice",
+      "scientific_name": "Oryza sativa",
+      "family": "Poaceae",
+      "type": "annual",
+      "category": "",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 20,
+          "maximum": 30,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 1000,
+          "maximum": 2000,
+          "unit": "mm"
+        },
+        "soil_ph": {
+          "minimum": 5.5,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "clay",
+          "loam"
+        ],
+        "preferred_nitrogen": "High",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "flood irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "",
+        "recommended_frequency": ""
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.4,
+          "moderate_stress": 0.2,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "food",
+          "staple",
+          "grain"
+        ],
+        "major_states": [
+          "California",
+          "Arkansas",
+          "Louisiana",
+          "Texas",
+          "Mississippi"
+        ],
+        "major_countries": [],
+        "harvest_season": "summer",
+        "storage_capability": "Moderate",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [],
+        "commercial_products": []
+      },
+      "common_diseases": [
+        "blast",
+        "sheath blight",
+        "leaf spot"
+      ],
+      "common_pests": [],
+      "fertilizer": {
+        "recommended": "balanced NPK",
+        "npk_ratio": "",
+        "organic_options": []
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 0,
+        "excellent_tonnes_per_hectare": 0
+      },
+      "recommendations": {
+        "irrigation": "",
+        "fertilizer": "",
+        "harvesting": "",
+        "storage": ""
+      },
+      "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+      "references": [],
+      "generated_by": "Groq",
+      "version": 2,
+      "recommended_irrigation": "flood irrigation",
+      "fertilizer_recommendation": "balanced NPK"
+    },
+    "raw_data": {
+      "metadata": {
+        "collection_time": "2026-09-08T08:30:38.391894",
+        "crop": "rice",
+        "crop_profile": {
+          "crop": "rice",
+          "scientific_name": "Oryza sativa",
+          "family": "Poaceae",
+          "type": "annual",
+          "category": "",
+          "growth_duration_days": 120,
+          "growth_stages": [
+            "Germination",
+            "Vegetative",
+            "Flowering",
+            "Harvest"
+          ],
+          "optimal_conditions": {
+            "temperature": {
+              "minimum": 20,
+              "maximum": 30,
+              "unit": "C"
+            },
+            "humidity": {
+              "minimum": 60,
+              "maximum": 80,
+              "unit": "%"
+            },
+            "rainfall": {
+              "minimum": 1000,
+              "maximum": 2000,
+              "unit": "mm"
+            },
+            "soil_ph": {
+              "minimum": 5.5,
+              "maximum": 6.5
+            },
+            "wind_speed": {
+              "maximum": 30,
+              "unit": "km/h"
+            },
+            "sunlight_hours": {
+              "minimum": 6,
+              "maximum": 10
+            }
+          },
+          "soil": {
+            "preferred_texture": [
+              "clay",
+              "loam"
+            ],
+            "preferred_nitrogen": "High",
+            "preferred_organic_carbon": "Medium",
+            "preferred_drainage": "Good"
+          },
+          "water": {
+            "irrigation_type": "flood irrigation",
+            "water_requirement": "Medium",
+            "critical_growth_stage": "",
+            "recommended_frequency": ""
+          },
+          "satellite_thresholds": {
+            "ndvi": {
+              "excellent": 0.8,
+              "healthy": 0.6,
+              "moderate": 0.4,
+              "poor": 0.2
+            },
+            "ndwi": {
+              "low_stress": 0.4,
+              "moderate_stress": 0.2,
+              "high_stress": 0.0
+            },
+            "savi": {
+              "low_exposure": 0.6,
+              "moderate_exposure": 0.4,
+              "high_exposure": 0.2
+            }
+          },
+          "market": {
+            "keywords": [
+              "food",
+              "staple",
+              "grain"
+            ],
+            "major_states": [
+              "California",
+              "Arkansas",
+              "Louisiana",
+              "Texas",
+              "Mississippi"
+            ],
+            "major_countries": [],
+            "harvest_season": "summer",
+            "storage_capability": "Moderate",
+            "perishability": "Medium"
+          },
+          "nutrition": {
+            "primary_nutrients": [],
+            "commercial_products": []
+          },
+          "common_diseases": [
+            "blast",
+            "sheath blight",
+            "leaf spot"
+          ],
+          "common_pests": [],
+          "fertilizer": {
+            "recommended": "balanced NPK",
+            "npk_ratio": "",
+            "organic_options": []
+          },
+          "yield": {
+            "average_tonnes_per_hectare": 0,
+            "excellent_tonnes_per_hectare": 0
+          },
+          "recommendations": {
+            "irrigation": "",
+            "fertilizer": "",
+            "harvesting": "",
+            "storage": ""
+          },
+          "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+          "references": [],
+          "generated_by": "Groq",
+          "version": 2,
+          "recommended_irrigation": "flood irrigation",
+          "fertilizer_recommendation": "balanced NPK"
+        },
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        }
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T11:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 25.0,
+          "humidity": 70.0,
+          "rainfall": 15.0,
+          "wind_speed": 10.0,
+          "pressure": 964.1,
+          "time": "2026-08-31T11:45"
+        },
+        "assessment": {
+          "crop": "rice",
+          "status": "Good",
+          "identified_risks": [],
+          "opportunities": [
+            "Weather conditions are favorable."
+          ]
+        },
+        "confidence": 74
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "Low",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "Low",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 92,
+          "ph_status": "Optimal",
+          "nitrogen_status": "Low",
+          "organic_carbon_status": "Optimal",
+          "texture": "Loam",
+          "risks": [
+            "Soil nitrogen level is Low, below the crop's preferred High requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range."
+          ]
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Thoothukudi Market",
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Stable",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Stable",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Stable",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "rice",
+          "TopMarkets": [
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 2470.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Tiruvannamalai Mandi",
+              "district": "Tiruvannamalai",
+              "price": 2443.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.748,
+              "rank": 2
+            },
+            {
+              "market": "Tiruvarur Uzhavar Sandhai",
+              "district": "Tiruvarur",
+              "price": 2432.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.7265,
+              "rank": 3
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 2459.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.6891,
+              "rank": 4
+            },
+            {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Increasing",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Stable",
+          "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T06:26:00.768941",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.8,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Excellent"
+        },
+        "water": {
+          "ndwi": 0.4,
+          "stress": "Low"
+        },
+        "soil": {
+          "exposure": "Low"
+        },
+        "assessment": {
+          "vegetation_score": 90,
+          "recommendation": "Continue normal management."
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "rice",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+        },
+        "records": []
+      }
+    },
+    "context": {
+      "crop": "rice",
+      "crop_profile": {
+        "crop": "rice",
+        "scientific_name": "Oryza sativa",
+        "family": "Poaceae",
+        "type": "annual",
+        "category": "",
+        "growth_duration_days": 120,
+        "growth_stages": [
+          "Germination",
+          "Vegetative",
+          "Flowering",
+          "Harvest"
+        ],
+        "optimal_conditions": {
+          "temperature": {
+            "minimum": 20,
+            "maximum": 30,
+            "unit": "C"
+          },
+          "humidity": {
+            "minimum": 60,
+            "maximum": 80,
+            "unit": "%"
+          },
+          "rainfall": {
+            "minimum": 1000,
+            "maximum": 2000,
+            "unit": "mm"
+          },
+          "soil_ph": {
+            "minimum": 5.5,
+            "maximum": 6.5
+          },
+          "wind_speed": {
+            "maximum": 30,
+            "unit": "km/h"
+          },
+          "sunlight_hours": {
+            "minimum": 6,
+            "maximum": 10
+          }
+        },
+        "soil": {
+          "preferred_texture": [
+            "clay",
+            "loam"
+          ],
+          "preferred_nitrogen": "High",
+          "preferred_organic_carbon": "Medium",
+          "preferred_drainage": "Good"
+        },
+        "water": {
+          "irrigation_type": "flood irrigation",
+          "water_requirement": "Medium",
+          "critical_growth_stage": "",
+          "recommended_frequency": ""
+        },
+        "satellite_thresholds": {
+          "ndvi": {
+            "excellent": 0.8,
+            "healthy": 0.6,
+            "moderate": 0.4,
+            "poor": 0.2
+          },
+          "ndwi": {
+            "low_stress": 0.4,
+            "moderate_stress": 0.2,
+            "high_stress": 0.0
+          },
+          "savi": {
+            "low_exposure": 0.6,
+            "moderate_exposure": 0.4,
+            "high_exposure": 0.2
+          }
+        },
+        "market": {
+          "keywords": [
+            "food",
+            "staple",
+            "grain"
+          ],
+          "major_states": [
+            "California",
+            "Arkansas",
+            "Louisiana",
+            "Texas",
+            "Mississippi"
+          ],
+          "major_countries": [],
+          "harvest_season": "summer",
+          "storage_capability": "Moderate",
+          "perishability": "Medium"
+        },
+        "nutrition": {
+          "primary_nutrients": [],
+          "commercial_products": []
+        },
+        "common_diseases": [
+          "blast",
+          "sheath blight",
+          "leaf spot"
+        ],
+        "common_pests": [],
+        "fertilizer": {
+          "recommended": "balanced NPK",
+          "npk_ratio": "",
+          "organic_options": []
+        },
+        "yield": {
+          "average_tonnes_per_hectare": 0,
+          "excellent_tonnes_per_hectare": 0
+        },
+        "recommendations": {
+          "irrigation": "",
+          "fertilizer": "",
+          "harvesting": "",
+          "storage": ""
+        },
+        "summary": "Rice is a staple food crop that requires specific optimal conditions to grow. It prefers warm temperatures, high humidity, and well-drained soil with a pH between 5.5 and 6.5. Rice is susceptible to various diseases and requires proper irrigation and fertilization management.",
+        "references": [],
+        "generated_by": "Groq",
+        "version": 2,
+        "recommended_irrigation": "flood irrigation",
+        "fertilizer_recommendation": "balanced NPK"
+      },
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "weather": {
+        "source": "weather",
+        "status": "success",
+        "timestamp": "2026-08-31T11:45",
+        "raw_data": {
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "temperature": 25.0,
+          "humidity": 70.0,
+          "rainfall": 15.0,
+          "wind_speed": 10.0,
+          "pressure": 964.1,
+          "time": "2026-08-31T11:45"
+        },
+        "assessment": {
+          "crop": "rice",
+          "status": "Good",
+          "identified_risks": [],
+          "opportunities": [
+            "Weather conditions are favorable."
+          ]
+        },
+        "confidence": 74
+      },
+      "soil": {
+        "source": "soil",
+        "status": "success",
+        "soil": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "Low",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "raw_data": {
+          "state": "Tamil Nadu",
+          "district": "Coimbatore",
+          "latitude": 11.0168,
+          "longitude": 76.9558,
+          "ph": 6.0,
+          "nitrogen": "Low",
+          "organic_carbon": "Medium",
+          "sand_percent": 46.0,
+          "clay_percent": 32.0,
+          "silt_percent": 22.0,
+          "cec": 22.38,
+          "bulk_density": 1.56,
+          "field_capacity": 0.32,
+          "wilting_point": 0.14,
+          "distance_km": 0.0,
+          "live_source": false
+        },
+        "assessment": {
+          "soil_health_score": 92,
+          "ph_status": "Optimal",
+          "nitrogen_status": "Low",
+          "organic_carbon_status": "Optimal",
+          "texture": "Loam",
+          "risks": [
+            "Soil nitrogen level is Low, below the crop's preferred High requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range."
+          ]
+        },
+        "confidence": 0.9,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "distance_km": 0.0,
+          "live_source": false
+        }
+      },
+      "satellite": {
+        "source": "satellite",
+        "status": "success",
+        "confidence": 40,
+        "error": null,
+        "timestamp": "2026-08-31T06:26:00.768941",
+        "location": {
+          "latitude": 11.0168,
+          "longitude": 76.9558
+        },
+        "imagery": {
+          "acquisition_date": "2026-08-30",
+          "cloud_cover": 20.921202,
+          "valid_pixels": 100
+        },
+        "vegetation": {
+          "ndvi": 0.8,
+          "evi": 0.13,
+          "savi": 0.105,
+          "health": "Excellent"
+        },
+        "water": {
+          "ndwi": 0.4,
+          "stress": "Low"
+        },
+        "soil": {
+          "exposure": "Low"
+        },
+        "assessment": {
+          "vegetation_score": 90,
+          "recommendation": "Continue normal management."
+        }
+      },
+      "market": {
+        "source": "market",
+        "status": "success",
+        "market": "Thoothukudi Market",
+        "nearest_market": {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Increasing",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        },
+        "top_markets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Stable",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Stable",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Stable",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Stable",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ],
+        "raw_data": {
+          "Crop": "rice",
+          "TopMarkets": [
+            {
+              "market": "Thoothukudi Market",
+              "district": "Thoothukudi",
+              "price": 2470.0,
+              "trend": "Increasing",
+              "distance_km": 281.81,
+              "market_score": 0.8007,
+              "rank": 1
+            },
+            {
+              "market": "Tiruvannamalai Mandi",
+              "district": "Tiruvannamalai",
+              "price": 2443.0,
+              "trend": "Increasing",
+              "distance_km": 267.05,
+              "market_score": 0.748,
+              "rank": 2
+            },
+            {
+              "market": "Tiruvarur Uzhavar Sandhai",
+              "district": "Tiruvarur",
+              "price": 2432.0,
+              "trend": "Increasing",
+              "distance_km": 293.81,
+              "market_score": 0.7265,
+              "rank": 3
+            },
+            {
+              "market": "Kanchipuram Market",
+              "district": "Kanchipuram",
+              "price": 2459.0,
+              "trend": "Stable",
+              "distance_km": 360.83,
+              "market_score": 0.6891,
+              "rank": 4
+            },
+            {
+              "market": "Namakkal Market",
+              "district": "Namakkal",
+              "price": 2389.0,
+              "trend": "Increasing",
+              "distance_km": 134.09,
+              "market_score": 0.6433,
+              "rank": 5
+            }
+          ]
+        },
+        "assessment": {
+          "market_score": 100,
+          "trend": "Stable",
+          "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+          "opportunities": [
+            "Market prices are increasing.",
+            "Multiple nearby markets are available for comparison."
+          ],
+          "risks": []
+        },
+        "confidence": 1.0,
+        "metadata": {
+          "source": "Synthetic Local Dataset",
+          "market_count": 30,
+          "top_market_count": 5
+        }
+      },
+      "historical": {
+        "source": "historical",
+        "status": "success",
+        "crop": "rice",
+        "record_count": 0,
+        "current_context": {
+          "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+          "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+          "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+          "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+        },
+        "records": []
+      },
+      "historical_records": 0,
+      "historical_similarity": 0.0,
+      "weather_status": "Good",
+      "soil_health": 92,
+      "vegetation_health": "Excellent",
+      "market_trend": "Stable",
+      "risks": [
+        "No historical records available"
+      ],
+      "opportunities": [
+        "Excellent soil quality"
+      ],
+      "confidence": 28.98
+    },
+    "plan": {
+      "goal": "How can I get a better harvest from my rice crop?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to the request."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Assess soil conditions to identify potential yield-limiting factors."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Evaluate crop health and water stress for yield optimization."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation from specialist evidence."
+        }
+      ],
+      "confidence": 0.9
+    },
+    "reasoning": "CollaborativeReasoning(summary='Rice cultivation in Coimbatore, Tamil Nadu, is currently in a favorable condition with suitable weather, soil, and satellite data. However, there are risks related to soil nitrogen levels and potential weather fluctuations. Opportunities exist to improve nitrogen levels and optimize irrigation.', consensus='The current conditions are favorable for rice cultivation, with no major risks identified. The main concern is the low nitrogen content in the soil, which can be addressed through proper fertilization. The market conditions are stable, and the vegetation health is excellent.', merged_risks=['Potential for excessive rainfall leading to waterlogging.', \"Soil nitrogen level is Low, below the crop's preferred High requirement.\"], merged_opportunities=['Current temperature and humidity levels are ideal for rice growth.', 'Soil pH is within the optimal range.', 'Soil texture is Loam, which is preferred for rice.', 'Monitor water usage for optimal irrigation scheduling.', 'Leverage the excellent vegetation health for yield prediction.', 'Market prices are increasing.', 'Multiple nearby markets are available for comparison.'], conflicts=[], confidence=0.95, evidence=[{'agent': 'WeatherAgent', 'analysis': 'The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.', 'risks': ['Potential for excessive rainfall leading to waterlogging.'], 'opportunities': ['Current temperature and humidity levels are ideal for rice growth.', 'Rainfall is sufficient to support crop development without over-saturation.'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': 'The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.', 'risks': [\"Soil nitrogen level is Low, below the crop's preferred High requirement.\"], 'opportunities': ['Soil pH is within the optimal range.', 'Soil texture is Loam, which is preferred for rice.'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': 'The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.', 'risks': [], 'opportunities': ['Monitor water usage for optimal irrigation scheduling.', 'Leverage the excellent vegetation health for yield prediction.'], 'confidence': 0.95, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+    "executive": {
+      "agent": "ExecutiveAgent",
+      "status": "completed",
+      "confidence": 0.95,
+      "decision": "Apply Nitrogen Fertilizer",
+      "priority": "P3",
+      "urgency": "This Week",
+      "risk_level": "Moderate",
+      "action_order": [
+        "Supplement rainfall through irrigation",
+        "Apply nitrogen fertilizer"
+      ],
+      "priorities": [
+        {
+          "issue": "Rainfall",
+          "severity": "High",
+          "urgency": "Today",
+          "owner": "Farmer",
+          "action": "Supplement rainfall through irrigation"
+        },
+        {
+          "issue": "Nitrogen",
+          "severity": "Medium",
+          "urgency": "Within 3 Days",
+          "owner": "Farmer",
+          "action": "Apply nitrogen fertilizer"
+        }
+      ],
+      "impact": {
+        "agronomic": "Good",
+        "economic": "Excellent",
+        "environmental": "Excellent",
+        "operational": "Excellent",
+        "yield_risk": "Moderate",
+        "profitability": "Moderate",
+        "expected_benefit": "Current conditions provide opportunities for improved profitability."
+      },
+      "summary": {
+        "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+        "business": "Market trend is stable with moderate profitability potential.",
+        "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+        "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Potential for excessive rainfall leading to waterlogging., Soil nitrogen level is Low, below the crop's preferred High requirement.."
+      },
+      "supporting_evidence": [
+        "WeatherAgent: The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+        "SoilAgent: The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+        "SatelliteAgent: The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored."
+      ],
+      "metadata": {
+        "location": {
+          "district": "Coimbatore",
+          "state": "Tamil Nadu"
+        },
+        "historical_records": 0,
+        "generated_from": "Collaborative Reasoning"
+      },
+      "execution_time": 0.0,
+      "governance": {
+        "agent": "ExecutiveAgent",
+        "category": "executive",
+        "stage": "post",
+        "prior_mean": 0.9343970246475621,
+        "posterior_mean": 0.9355137513264576,
+        "evidence": {
+          "positive": true,
+          "weight": 0.7124999999999999,
+          "reason": "Completed with confidence 0.95."
+        },
+        "risk": {
+          "category": "executive",
+          "risk_level": "Medium",
+          "benefit": 30.0,
+          "failure_cost": 60.0,
+          "review_cost": 12.0,
+          "reject_cost": 6.0
+        },
+        "decision": {
+          "action": "auto_execute",
+          "p_fail": 0.1079,
+          "utilities": {
+            "auto_execute": 20.289,
+            "human_review": 16.5,
+            "reject": -6.0
+          },
+          "rationale": "P(fail)=0.11 from trust=0.94 (+/-0.04) on a medium-risk executive action => auto_execute (EU auto=20.289, review=16.5, reject=-6.0)."
+        }
+      }
+    },
+    "recommendation": {
+      "recommendation": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+      "priority": "High",
+      "justification": "The soil nitrogen level is low, which can negatively impact rice growth and yield. Supplementing irrigation will prevent waterlogging due to potential excessive rainfall, while applying nitrogen fertilizer will address the nutrient deficiency. These actions align with the current favorable conditions and market opportunities for improved profitability.",
+      "actions": [
+        "Apply nitrogen fertilizer at the recommended rate to boost soil nitrogen levels.",
+        "Implement flood irrigation to manage water supply and prevent waterlogging.",
+        "Monitor weather forecasts for rainfall patterns to adjust irrigation schedules."
+      ],
+      "expected_outcome": "Improved nitrogen levels in the soil will enhance rice growth, while proper irrigation will prevent waterlogging, leading to higher yields and better market competitiveness.",
+      "monitoring_plan": [
+        "Track soil nitrogen levels after fertilizer application.",
+        "Monitor satellite imagery for vegetation health and water stress indicators.",
+        "Review market price trends and adjust harvesting schedules accordingly."
+      ],
+      "confidence": 0.95,
+      "generation_mode": "llm",
+      "agent": "RecommendationAgent",
+      "status": "completed",
+      "executive_decision": "Apply Nitrogen Fertilizer",
+      "executive_priority": "P3",
+      "governance": {
+        "agent": "RecommendationAgent",
+        "category": "recommendation",
+        "stage": "post",
+        "prior_mean": 0.9442608096914484,
+        "posterior_mean": 0.9453697186535603,
+        "evidence": {
+          "positive": true,
+          "weight": 0.95,
+          "reason": "Completed with confidence 0.95."
+        },
+        "risk": {
+          "category": "recommendation",
+          "risk_level": "High",
+          "benefit": 40.0,
+          "failure_cost": 120.0,
+          "review_cost": 12.0,
+          "reject_cost": 8.0
+        },
+        "decision": {
+          "action": "human_review",
+          "p_fail": 0.0917,
+          "utilities": {
+            "auto_execute": 25.33,
+            "human_review": 26.0,
+            "reject": -8.0
+          },
+          "rationale": "P(fail)=0.09 from trust=0.95 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=25.33, review=26.0, reject=-8.0)."
+        }
+      }
+    },
+    "execution": {
+      "goal": "How can I get a better harvest from my rice crop?",
+      "execution_plan": [
+        {
+          "agent": "WeatherAgent",
+          "priority": 1,
+          "purpose": "Analyze weather conditions relevant to the request."
+        },
+        {
+          "agent": "SoilAgent",
+          "priority": 2,
+          "purpose": "Assess soil conditions to identify potential yield-limiting factors."
+        },
+        {
+          "agent": "SatelliteAgent",
+          "priority": 3,
+          "purpose": "Evaluate crop health and water stress for yield optimization."
+        },
+        {
+          "agent": "RecommendationAgent",
+          "priority": 4,
+          "purpose": "Generate the final recommendation from specialist evidence."
+        }
+      ],
+      "specialists": {
+        "WeatherAgent": {
+          "agent": "WeatherAgent",
+          "status": "completed",
+          "analysis": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+          "summary": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+          "risks": [
+            "Potential for excessive rainfall leading to waterlogging."
+          ],
+          "opportunities": [
+            "Current temperature and humidity levels are ideal for rice growth.",
+            "Rainfall is sufficient to support crop development without over-saturation."
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 13.058,
+          "governance": {
+            "agent": "WeatherAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.8344876154588071,
+            "posterior_mean": 0.8364010485016367,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "auto_execute",
+              "p_fail": 0.2317,
+              "utilities": {
+                "auto_execute": 10.73,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.23 from trust=0.84 (+/-0.07) on a low-risk data_collector action => auto_execute (EU auto=10.73, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SoilAgent": {
+          "agent": "SoilAgent",
+          "status": "completed",
+          "analysis": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+          "summary": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+          "risks": [
+            "Soil nitrogen level is Low, below the crop's preferred High requirement."
+          ],
+          "opportunities": [
+            "Soil pH is within the optimal range.",
+            "Soil texture is Loam, which is preferred for rice."
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 28.827,
+          "governance": {
+            "agent": "SoilAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.7490144868119792,
+            "posterior_mean": 0.7531414792875727,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.3268,
+              "utilities": {
+                "auto_execute": 6.926,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.33 from trust=0.75 (+/-0.08) on a low-risk data_collector action => human_review (EU auto=6.926, review=7.0, reject=-4.0)."
+            }
+          }
+        },
+        "SatelliteAgent": {
+          "agent": "SatelliteAgent",
+          "status": "completed",
+          "analysis": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.",
+          "summary": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored. 2 satellite opportunity(s) identified.",
+          "risks": [],
+          "opportunities": [
+            "Monitor water usage for optimal irrigation scheduling.",
+            "Leverage the excellent vegetation health for yield prediction."
+          ],
+          "confidence": 0.95,
+          "metadata": {},
+          "execution_time": 44.802,
+          "governance": {
+            "agent": "SatelliteAgent",
+            "category": "data_collector",
+            "stage": "post",
+            "prior_mean": 0.6225998471289607,
+            "posterior_mean": 0.6312488493438579,
+            "evidence": {
+              "positive": true,
+              "weight": 0.475,
+              "reason": "Completed with confidence 0.95."
+            },
+            "risk": {
+              "category": "data_collector",
+              "risk_level": "Low",
+              "benefit": 20.0,
+              "failure_cost": 20.0,
+              "review_cost": 12.0,
+              "reject_cost": 4.0
+            },
+            "decision": {
+              "action": "human_review",
+              "p_fail": 0.4654,
+              "utilities": {
+                "auto_execute": 1.382,
+                "human_review": 7.0,
+                "reject": -4.0
+              },
+              "rationale": "P(fail)=0.47 from trust=0.63 (+/-0.10) on a low-risk data_collector action => human_review (EU auto=1.382, review=7.0, reject=-4.0)."
+            }
+          }
+        }
+      },
+      "reasoning": "CollaborativeReasoning(summary='Rice cultivation in Coimbatore, Tamil Nadu, is currently in a favorable condition with suitable weather, soil, and satellite data. However, there are risks related to soil nitrogen levels and potential weather fluctuations. Opportunities exist to improve nitrogen levels and optimize irrigation.', consensus='The current conditions are favorable for rice cultivation, with no major risks identified. The main concern is the low nitrogen content in the soil, which can be addressed through proper fertilization. The market conditions are stable, and the vegetation health is excellent.', merged_risks=['Potential for excessive rainfall leading to waterlogging.', \"Soil nitrogen level is Low, below the crop's preferred High requirement.\"], merged_opportunities=['Current temperature and humidity levels are ideal for rice growth.', 'Soil pH is within the optimal range.', 'Soil texture is Loam, which is preferred for rice.', 'Monitor water usage for optimal irrigation scheduling.', 'Leverage the excellent vegetation health for yield prediction.', 'Market prices are increasing.', 'Multiple nearby markets are available for comparison.'], conflicts=[], confidence=0.95, evidence=[{'agent': 'WeatherAgent', 'analysis': 'The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.', 'risks': ['Potential for excessive rainfall leading to waterlogging.'], 'opportunities': ['Current temperature and humidity levels are ideal for rice growth.', 'Rainfall is sufficient to support crop development without over-saturation.'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SoilAgent', 'analysis': 'The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.', 'risks': [\"Soil nitrogen level is Low, below the crop's preferred High requirement.\"], 'opportunities': ['Soil pH is within the optimal range.', 'Soil texture is Loam, which is preferred for rice.'], 'confidence': 0.95, 'metadata': {}}, {'agent': 'SatelliteAgent', 'analysis': 'The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.', 'risks': [], 'opportunities': ['Monitor water usage for optimal irrigation scheduling.', 'Leverage the excellent vegetation health for yield prediction.'], 'confidence': 0.95, 'metadata': {}}], metadata={'agents': ['WeatherAgent', 'SoilAgent', 'SatelliteAgent'], 'agent_count': 3, 'llm_provider': 'gemini'})",
+      "executive": {
+        "agent": "ExecutiveAgent",
+        "status": "completed",
+        "confidence": 0.95,
+        "decision": "Apply Nitrogen Fertilizer",
+        "priority": "P3",
+        "urgency": "This Week",
+        "risk_level": "Moderate",
+        "action_order": [
+          "Supplement rainfall through irrigation",
+          "Apply nitrogen fertilizer"
+        ],
+        "priorities": [
+          {
+            "issue": "Rainfall",
+            "severity": "High",
+            "urgency": "Today",
+            "owner": "Farmer",
+            "action": "Supplement rainfall through irrigation"
+          },
+          {
+            "issue": "Nitrogen",
+            "severity": "Medium",
+            "urgency": "Within 3 Days",
+            "owner": "Farmer",
+            "action": "Apply nitrogen fertilizer"
+          }
+        ],
+        "impact": {
+          "agronomic": "Good",
+          "economic": "Excellent",
+          "environmental": "Excellent",
+          "operational": "Excellent",
+          "yield_risk": "Moderate",
+          "profitability": "Moderate",
+          "expected_benefit": "Current conditions provide opportunities for improved profitability."
+        },
+        "summary": {
+          "executive": "Rice cultivation in Coimbatore, Tamil Nadu currently has a moderate operational risk requiring this week attention.",
+          "business": "Market trend is stable with moderate profitability potential.",
+          "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+          "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Potential for excessive rainfall leading to waterlogging., Soil nitrogen level is Low, below the crop's preferred High requirement.."
+        },
+        "supporting_evidence": [
+          "WeatherAgent: The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+          "SoilAgent: The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+          "SatelliteAgent: The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored."
+        ],
+        "metadata": {
+          "location": {
+            "district": "Coimbatore",
+            "state": "Tamil Nadu"
+          },
+          "historical_records": 0,
+          "generated_from": "Collaborative Reasoning"
+        },
+        "execution_time": 0.0,
+        "governance": {
+          "agent": "ExecutiveAgent",
+          "category": "executive",
+          "stage": "post",
+          "prior_mean": 0.9343970246475621,
+          "posterior_mean": 0.9355137513264576,
+          "evidence": {
+            "positive": true,
+            "weight": 0.7124999999999999,
+            "reason": "Completed with confidence 0.95."
+          },
+          "risk": {
+            "category": "executive",
+            "risk_level": "Medium",
+            "benefit": 30.0,
+            "failure_cost": 60.0,
+            "review_cost": 12.0,
+            "reject_cost": 6.0
+          },
+          "decision": {
+            "action": "auto_execute",
+            "p_fail": 0.1079,
+            "utilities": {
+              "auto_execute": 20.289,
+              "human_review": 16.5,
+              "reject": -6.0
+            },
+            "rationale": "P(fail)=0.11 from trust=0.94 (+/-0.04) on a medium-risk executive action => auto_execute (EU auto=20.289, review=16.5, reject=-6.0)."
+          }
+        }
+      },
+      "recommendation": {
+        "recommendation": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+        "priority": "High",
+        "justification": "The soil nitrogen level is low, which can negatively impact rice growth and yield. Supplementing irrigation will prevent waterlogging due to potential excessive rainfall, while applying nitrogen fertilizer will address the nutrient deficiency. These actions align with the current favorable conditions and market opportunities for improved profitability.",
+        "actions": [
+          "Apply nitrogen fertilizer at the recommended rate to boost soil nitrogen levels.",
+          "Implement flood irrigation to manage water supply and prevent waterlogging.",
+          "Monitor weather forecasts for rainfall patterns to adjust irrigation schedules."
+        ],
+        "expected_outcome": "Improved nitrogen levels in the soil will enhance rice growth, while proper irrigation will prevent waterlogging, leading to higher yields and better market competitiveness.",
+        "monitoring_plan": [
+          "Track soil nitrogen levels after fertilizer application.",
+          "Monitor satellite imagery for vegetation health and water stress indicators.",
+          "Review market price trends and adjust harvesting schedules accordingly."
+        ],
+        "confidence": 0.95,
+        "generation_mode": "llm",
+        "agent": "RecommendationAgent",
+        "status": "completed",
+        "executive_decision": "Apply Nitrogen Fertilizer",
+        "executive_priority": "P3",
+        "governance": {
+          "agent": "RecommendationAgent",
+          "category": "recommendation",
+          "stage": "post",
+          "prior_mean": 0.9442608096914484,
+          "posterior_mean": 0.9453697186535603,
+          "evidence": {
+            "positive": true,
+            "weight": 0.95,
+            "reason": "Completed with confidence 0.95."
+          },
+          "risk": {
+            "category": "recommendation",
+            "risk_level": "High",
+            "benefit": 40.0,
+            "failure_cost": 120.0,
+            "review_cost": 12.0,
+            "reject_cost": 8.0
+          },
+          "decision": {
+            "action": "human_review",
+            "p_fail": 0.0917,
+            "utilities": {
+              "auto_execute": 25.33,
+              "human_review": 26.0,
+              "reject": -8.0
+            },
+            "rationale": "P(fail)=0.09 from trust=0.95 (+/-0.04) on a high-risk recommendation action => human_review (EU auto=25.33, review=26.0, reject=-8.0)."
+          }
+        }
+      },
+      "explanation": {
+        "executive_decision": "Apply Nitrogen Fertilizer",
+        "executive_summary": "The recommendation to apply nitrogen fertilizer and supplement irrigation is based on the current soil nitrogen levels being low and the potential for excessive rainfall. These actions aim to optimize yield and mitigate risks.",
+        "recommendation": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+        "explanation": "The soil nitrogen level is below the crop's preferred level, which can impact rice growth and yield. Supplementing irrigation will help manage water supply and prevent waterlogging due to potential rainfall. These actions align with the current favorable conditions and market opportunities for improved profitability.",
+        "reasoning_summary": "The decision was made to address the low nitrogen levels in the soil and the risk of excessive rainfall. Applying nitrogen fertilizer will correct the nutrient deficiency, while irrigation will manage water supply and prevent waterlogging. These actions are supported by the current favorable weather and market conditions.",
+        "decision_trace": {
+          "steps": [
+            {
+              "step": 1,
+              "stage": "Specialist",
+              "source": "WeatherAgent",
+              "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [
+                "Potential for excessive rainfall leading to waterlogging."
+              ],
+              "key_opportunities": [
+                "Current temperature and humidity levels are ideal for rice growth.",
+                "Rainfall is sufficient to support crop development without over-saturation."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "WeatherAgent",
+                  "type": "risk",
+                  "finding": "Potential for excessive rainfall leading to waterlogging.",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.8025,
+                  "importance": "High",
+                  "rank": 8
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "analysis",
+                  "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.7925,
+                  "importance": "Moderate",
+                  "rank": 11
+                },
+                {
+                  "source": "WeatherAgent",
+                  "type": "summary",
+                  "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+                  "confidence": 0.95,
+                  "reliability": 0.9,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.7925,
+                  "importance": "Moderate",
+                  "rank": 12
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 2,
+              "stage": "Specialist",
+              "source": "SoilAgent",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [
+                "Soil nitrogen level is Low, below the crop's preferred High requirement."
+              ],
+              "key_opportunities": [
+                "Soil pH is within the optimal range.",
+                "Soil texture is Loam, which is preferred for rice."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SoilAgent",
+                  "type": "risk",
+                  "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.5714,
+                  "evidence_score": 0.8304,
+                  "importance": "High",
+                  "rank": 1
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "analysis",
+                  "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.5714,
+                  "evidence_score": 0.8204,
+                  "importance": "High",
+                  "rank": 2
+                },
+                {
+                  "source": "SoilAgent",
+                  "type": "summary",
+                  "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+                  "confidence": 0.95,
+                  "reliability": 0.85,
+                  "decision_relevance": 0.5714,
+                  "evidence_score": 0.8204,
+                  "importance": "High",
+                  "rank": 3
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 3,
+              "stage": "Specialist",
+              "source": "SatelliteAgent",
+              "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored. 2 satellite opportunity(s) identified.",
+              "confidence": 0.95,
+              "key_risks": [],
+              "key_opportunities": [
+                "Monitor water usage for optimal irrigation scheduling.",
+                "Leverage the excellent vegetation health for yield prediction."
+              ],
+              "ranked_evidence": [
+                {
+                  "source": "SatelliteAgent",
+                  "type": "analysis",
+                  "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.",
+                  "confidence": 0.95,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.8075,
+                  "importance": "High",
+                  "rank": 6
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "summary",
+                  "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored. 2 satellite opportunity(s) identified.",
+                  "confidence": 0.95,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.8075,
+                  "importance": "High",
+                  "rank": 7
+                },
+                {
+                  "source": "SatelliteAgent",
+                  "type": "opportunity",
+                  "finding": "Monitor water usage for optimal irrigation scheduling.",
+                  "confidence": 0.95,
+                  "reliability": 0.95,
+                  "decision_relevance": 0.4,
+                  "evidence_score": 0.8025,
+                  "importance": "High",
+                  "rank": 9
+                }
+              ],
+              "influence": "Contributed evidence to the collaborative reasoning stage."
+            },
+            {
+              "step": 4,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 5,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 6,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 7,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Soil pH is within the optimal range.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 8,
+              "stage": "Evidence Ranking",
+              "source": "SoilAgent",
+              "finding": "Soil texture is Loam, which is preferred for rice.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "influence": "Ranked according to confidence, source reliability, evidence type, and relevance to the final decision."
+            },
+            {
+              "step": 9,
+              "stage": "Collaborative Reasoning",
+              "source": "CollaborativeEngine",
+              "finding": "Rice cultivation in Coimbatore, Tamil Nadu, is currently in a favorable condition with suitable weather, soil, and satellite data. However, there are risks related to soil nitrogen levels and potential weather fluctuations. Opportunities exist to improve nitrogen levels and optimize irrigation.",
+              "confidence": 0.95,
+              "consensus": "The current conditions are favorable for rice cultivation, with no major risks identified. The main concern is the low nitrogen content in the soil, which can be addressed through proper fertilization. The market conditions are stable, and the vegetation health is excellent.",
+              "merged_risks": [
+                "Potential for excessive rainfall leading to waterlogging.",
+                "Soil nitrogen level is Low, below the crop's preferred High requirement."
+              ],
+              "merged_opportunities": [
+                "Current temperature and humidity levels are ideal for rice growth.",
+                "Soil pH is within the optimal range.",
+                "Soil texture is Loam, which is preferred for rice.",
+                "Monitor water usage for optimal irrigation scheduling.",
+                "Leverage the excellent vegetation health for yield prediction.",
+                "Market prices are increasing.",
+                "Multiple nearby markets are available for comparison."
+              ],
+              "conflicts": [],
+              "influence": "Converted specialist evidence into a combined decision context."
+            },
+            {
+              "step": 10,
+              "stage": "Executive Decision",
+              "source": "ExecutiveAgent",
+              "finding": "Apply Nitrogen Fertilizer",
+              "confidence": 0.95,
+              "priority": "P3",
+              "justification": "The executive decision was produced from collaborative reasoning.",
+              "influence": "Converted the collaborative reasoning result into an actionable executive decision."
+            },
+            {
+              "step": 11,
+              "stage": "Recommendation",
+              "source": "RecommendationAgent",
+              "finding": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+              "confidence": 0.95,
+              "actions": [
+                "Apply nitrogen fertilizer at the recommended rate to boost soil nitrogen levels.",
+                "Implement flood irrigation to manage water supply and prevent waterlogging.",
+                "Monitor weather forecasts for rainfall patterns to adjust irrigation schedules."
+              ],
+              "justification": "The soil nitrogen level is low, which can negatively impact rice growth and yield. Supplementing irrigation will prevent waterlogging due to potential excessive rainfall, while applying nitrogen fertilizer will address the nutrient deficiency. These actions align with the current favorable conditions and market opportunities for improved profitability.",
+              "influence": "Translated the executive decision into concrete recommended actions."
+            }
+          ],
+          "causal_chain": [
+            {
+              "from": "SoilAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+              "strength": 0.8304
+            },
+            {
+              "from": "SoilAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+              "strength": 0.8204
+            },
+            {
+              "from": "SoilAgent",
+              "to": "CollaborativeReasoning",
+              "relationship": "supports",
+              "evidence": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+              "strength": 0.8204
+            },
+            {
+              "from": "CollaborativeReasoning",
+              "to": "ExecutiveAgent",
+              "relationship": "informs",
+              "evidence": "Rice cultivation in Coimbatore, Tamil Nadu, is currently in a favorable condition with suitable weather, soil, and satellite data. However, there are risks related to soil nitrogen levels and potential weather fluctuations. Opportunities exist to improve nitrogen levels and optimize irrigation.",
+              "strength": 0.95
+            },
+            {
+              "from": "ExecutiveAgent",
+              "to": "RecommendationAgent",
+              "relationship": "produces",
+              "evidence": "Apply Nitrogen Fertilizer",
+              "strength": 0.95
+            },
+            {
+              "from": "RecommendationAgent",
+              "to": "Farmer",
+              "relationship": "recommends",
+              "evidence": "Apply nitrogen fertilizer and supplement irrigation to mitigate risks and optimize yield.",
+              "strength": 0.95
+            }
+          ],
+          "summary": "3 specialist agents produced evidence. The strongest evidence was ranked before collaborative reasoning converted the findings into the executive decision 'Apply Nitrogen Fertilizer'. The RecommendationAgent then translated that decision into actionable guidance.",
+          "total_steps": 11,
+          "specialist_steps": 3,
+          "evidence_steps": 5,
+          "decision_step": 10,
+          "recommendation_step": 11,
+          "top_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Soil pH is within the optimal range.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Soil texture is Loam, which is preferred for rice.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "evidence": {
+          "ranked_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Soil pH is within the optimal range.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Soil texture is Loam, which is preferred for rice.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 5
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "analysis",
+              "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored.",
+              "confidence": 0.95,
+              "reliability": 0.95,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8075,
+              "importance": "High",
+              "rank": 6
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "summary",
+              "finding": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for rice. The NDWI of 0.4 suggests low water stress, which is within the low stress threshold. SAVI at 0.105 corresponds to high exposure, which is above the high exposure threshold of 0.2, indicating minimal soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. There are no immediate irrigation needs. The satellite data shows no significant risks, but opportunities for further monitoring and optimization of water management could be explored. 2 satellite opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.95,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8075,
+              "importance": "High",
+              "rank": 7
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "risk",
+              "finding": "Potential for excessive rainfall leading to waterlogging.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8025,
+              "importance": "High",
+              "rank": 8
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Monitor water usage for optimal irrigation scheduling.",
+              "confidence": 0.95,
+              "reliability": 0.95,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8025,
+              "importance": "High",
+              "rank": 9
+            },
+            {
+              "source": "SatelliteAgent",
+              "type": "opportunity",
+              "finding": "Leverage the excellent vegetation health for yield prediction.",
+              "confidence": 0.95,
+              "reliability": 0.95,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.8025,
+              "importance": "High",
+              "rank": 10
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "analysis",
+              "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7925,
+              "importance": "Moderate",
+              "rank": 11
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "summary",
+              "finding": "The current weather conditions are suitable for rice cultivation. The temperature, humidity, and rainfall are within the optimal ranges for rice growth. However, there is a need to monitor for potential weather risks such as excessive rainfall or sudden temperature fluctuations. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7925,
+              "importance": "Moderate",
+              "rank": 12
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Current temperature and humidity levels are ideal for rice growth.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7875,
+              "importance": "Moderate",
+              "rank": 13
+            },
+            {
+              "source": "WeatherAgent",
+              "type": "opportunity",
+              "finding": "Rainfall is sufficient to support crop development without over-saturation.",
+              "confidence": 0.95,
+              "reliability": 0.9,
+              "decision_relevance": 0.4,
+              "evidence_score": 0.7875,
+              "importance": "Moderate",
+              "rank": 14
+            }
+          ],
+          "source_summary": {
+            "SoilAgent": {
+              "evidence_score": 0.8304,
+              "finding_count": 5,
+              "highest_importance": "High"
+            },
+            "SatelliteAgent": {
+              "evidence_score": 0.8075,
+              "finding_count": 4,
+              "highest_importance": "High"
+            },
+            "WeatherAgent": {
+              "evidence_score": 0.8025,
+              "finding_count": 5,
+              "highest_importance": "High"
+            }
+          },
+          "total_findings": 14,
+          "top_evidence": [
+            {
+              "source": "SoilAgent",
+              "type": "risk",
+              "finding": "Soil nitrogen level is Low, below the crop's preferred High requirement.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8304,
+              "importance": "High",
+              "rank": 1
+            },
+            {
+              "source": "SoilAgent",
+              "type": "analysis",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 2
+            },
+            {
+              "source": "SoilAgent",
+              "type": "summary",
+              "finding": "The soil conditions in Coimbatore, Tamil Nadu, are generally suitable for rice cultivation. The soil pH is optimal for rice, and the organic carbon content is at a medium level, which is favorable. However, the nitrogen content is low, which may affect productivity. The soil texture is loam, which is preferred for rice, and the drainage is adequate. Despite these factors, there are some risks related to nitrogen deficiency, and opportunities to improve nitrogen levels could enhance productivity. 1 soil risk(s) identified. 2 soil opportunity(s) identified.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8204,
+              "importance": "High",
+              "rank": 3
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Soil pH is within the optimal range.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 4
+            },
+            {
+              "source": "SoilAgent",
+              "type": "opportunity",
+              "finding": "Soil texture is Loam, which is preferred for rice.",
+              "confidence": 0.95,
+              "reliability": 0.85,
+              "decision_relevance": 0.5714,
+              "evidence_score": 0.8154,
+              "importance": "High",
+              "rank": 5
+            }
+          ]
+        },
+        "risks": [
+          "Potential for excessive rainfall leading to waterlogging.",
+          "Soil nitrogen level is Low, below the crop's preferred High requirement."
+        ],
+        "opportunities": [
+          "Current temperature and humidity levels are ideal for rice growth.",
+          "Soil pH is within the optimal range.",
+          "Soil texture is Loam, which is preferred for rice.",
+          "Monitor water usage for optimal irrigation scheduling.",
+          "Leverage the excellent vegetation health for yield prediction.",
+          "Market prices are increasing.",
+          "Multiple nearby markets are available for comparison."
+        ],
+        "rejected_alternatives": [
+          {
+            "decision": "Delay fertilizer application",
+            "expected_result": "Nutrient deficiency may persist or worsen.",
+            "why_rejected": "Current soil evidence indicates that nutrient management should not be unnecessarily delayed.",
+            "context_signal": "Nitrogen=Low, organic_carbon=Medium"
+          },
+          {
+            "decision": "Apply a reduced fertilizer dose",
+            "expected_result": "Lower cost and lower nutrient loading, but crop response may be weaker.",
+            "why_rejected": "The selected recommendation provides stronger correction for the identified nutrient condition.",
+            "context_signal": "Nitrogen=Low"
+          },
+          {
+            "decision": "Take no nutrient action",
+            "expected_result": "Existing nutrient limitations would remain unresolved.",
+            "why_rejected": "Soil evidence identifies a nutrient-related limitation.",
+            "context_signal": "Nitrogen=Low"
+          },
+          {
+            "decision": "Take no immediate action",
+            "expected_result": "Current risks may persist or worsen.",
+            "why_rejected": "AgriMind selected 'Apply Nitrogen Fertilizer' because the available evidence supports intervention.",
+            "context_signal": "No-action baseline"
+          }
+        ],
+        "limitations": [
+          {
+            "category": "Missing Evidence",
+            "limitation": "MarketAgent did not return an output.",
+            "impact": "The final recommendation was produced without MarketAgent evidence.",
+            "evidence": "MarketAgent"
+          },
+          {
+            "category": "Missing Evidence",
+            "limitation": "HistoricalAgent did not return an output.",
+            "impact": "The final recommendation was produced without HistoricalAgent evidence.",
+            "evidence": "HistoricalAgent"
+          },
+          {
+            "category": "Soil Data Provenance",
+            "limitation": "Soil analysis used the local synthetic/scenario-controlled dataset rather than live field measurements.",
+            "impact": "The soil assessment is suitable for controlled system evaluation but should not be interpreted as a direct measurement of the current field.",
+            "evidence": "local dataset"
+          },
+          {
+            "category": "Market Data Provenance",
+            "limitation": "Market analysis used the synthetic local market dataset.",
+            "impact": "The ranking is valid for controlled testing but should not be interpreted as real-time market intelligence.",
+            "evidence": "synthetic local dataset"
+          }
+        ],
+        "monitoring_plan": [
+          {
+            "source": "Weather",
+            "parameter": "Rainfall Forecast",
+            "frequency": "Daily",
+            "reason": "Weather changes can affect irrigation and field operations."
+          },
+          {
+            "source": "Weather",
+            "parameter": "Temperature & Humidity",
+            "frequency": "Daily",
+            "reason": "Monitor environmental stress."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil Moisture",
+            "frequency": "Every 2 Days",
+            "reason": "Ensure irrigation is effective."
+          },
+          {
+            "source": "Soil",
+            "parameter": "Soil pH",
+            "frequency": "Monthly",
+            "reason": "Maintain suitable soil conditions."
+          },
+          {
+            "source": "Satellite",
+            "parameter": "NDVI",
+            "frequency": "Weekly",
+            "reason": "Monitor vegetation health."
+          },
+          {
+            "source": "Satellite",
+            "parameter": "NDWI",
+            "frequency": "Weekly",
+            "reason": "Detect crop water stress."
+          },
+          {
+            "source": "Market",
+            "parameter": "Crop Price",
+            "frequency": "Daily",
+            "reason": "Identify the best selling opportunity."
+          },
+          {
+            "source": "Historical",
+            "parameter": "Seasonal Comparison",
+            "frequency": "Monthly",
+            "reason": "Compare current performance with previous seasons."
+          },
+          {
+            "source": "Recommendation",
+            "parameter": "Irrigation Effectiveness",
+            "frequency": "After Every Irrigation",
+            "reason": "Confirm reduction in crop water stress."
+          },
+          {
+            "source": "Recommendation",
+            "parameter": "Leaf Nutrient Status",
+            "frequency": "Weekly",
+            "reason": "Evaluate fertilizer response."
+          },
+          {
+            "source": "System",
+            "parameter": "Overall Farm Health",
+            "frequency": "Weekly",
+            "reason": "Validate AgriMind recommendations."
+          }
+        ],
+        "confidence_breakdown": {
+          "overall": 0.95,
+          "specialist_average": 0.95,
+          "strongest_source": "WeatherAgent",
+          "strongest_confidence": 0.95,
+          "weakest_source": "WeatherAgent",
+          "weakest_confidence": 0.95,
+          "unavailable_sources": [],
+          "breakdown": {
+            "WeatherAgent": 0.95,
+            "SoilAgent": 0.95,
+            "SatelliteAgent": 0.95,
+            "CollaborativeReasoning": 0.95,
+            "ExecutiveDecision": 0.95
+          },
+          "confidence_explanation": "Overall evidence confidence is 0.95. The strongest specialist evidence came from WeatherAgent (0.95), while the weakest was WeatherAgent (0.95). Source reliability and evidence provenance were considered alongside raw specialist confidence."
+        },
+        "overall_confidence": 0.95,
+        "model": "Qwen",
+        "module": "Explainable Recommendation",
+        "version": "2.0",
+        "status": "completed"
+      },
+      "governance": {
+        "agent_trust": {
+          "WeatherAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.8364,
+            "trust_std": 0.0682
+          },
+          "SoilAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.7531,
+            "trust_std": 0.08
+          },
+          "SatelliteAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6312,
+            "trust_std": 0.0967
+          },
+          "MarketAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.6374,
+            "trust_std": 0.1249
+          },
+          "HistoricalAgent": {
+            "category": "data_collector",
+            "trust_mean": 0.5972,
+            "trust_std": 0.1433
+          },
+          "ExecutiveAgent": {
+            "category": "executive",
+            "trust_mean": 0.9355,
+            "trust_std": 0.0434
+          },
+          "RecommendationAgent": {
+            "category": "recommendation",
+            "trust_mean": 0.9454,
+            "trust_std": 0.0371
+          }
+        },
+        "crop_learning": {
+          "crop": "rice",
+          "trust_mean": 0.906,
+          "decision": "human_review",
+          "all_crops": {
+            "cotton": {
+              "trust_mean": 0.804,
+              "trust_std": 0.1186
+            },
+            "rice": {
+              "trust_mean": 0.906,
+              "trust_std": 0.0618
+            },
+            "wheat": {
+              "trust_mean": 0.8446,
+              "trust_std": 0.0973
+            },
+            "mango": {
+              "trust_mean": 0.8461,
+              "trust_std": 0.0964
+            },
+            "tomato": {
+              "trust_mean": 0.8733,
+              "trust_std": 0.0812
+            }
+          }
+        },
+        "recommendation_requires_review": true,
+        "recommendation_rejected": false
+      },
+      "confidence": 0.95,
+      "statistics": {
+        "agents_planned": 4,
+        "specialist_agents": 3,
+        "agents_completed": 3,
+        "agents_failed": 0,
+        "agents_unavailable": 0,
+        "unavailable_agents": [],
+        "planner_confidence": 0.9,
+        "reasoning_confidence": 0.95,
+        "executive_confidence": 0.95,
+        "explanation_confidence": 0.95,
+        "decision_trace_steps": 9,
+        "evidence_sources": 4,
+        "limitations": 4,
+        "monitoring_items": 11,
+        "planner_model": "Qwen",
+        "reasoning_model": "Groq",
+        "executive_model": "Groq",
+        "recommendation_model": "Groq",
+        "explanation_model": "Qwen"
+      }
+    },
+    "status": "success",
+    "total_time": 156.227
+  },
+  "scenario_id": "nitrogen_low_yield_rice",
+  "wall_time_seconds": 156.33
+}

@@ -1,6 +1,7 @@
 | Agent | TRUSTAI Trust Mean | Observed Reliability | Calibration Error |
 |---|---|---|---|
-| MarketAgent | 0.6773 | 1.0 | 0.3227 |
-| SatelliteAgent | 0.7158 | 1.0 | 0.2842 |
-| SoilAgent | 0.8125 | 1.0 | 0.1875 |
-| WeatherAgent | 0.8839 | 1.0 | 0.1161 |
+| HistoricalAgent | 0.6202 | 1.0 | 0.3798 |
+| MarketAgent | 0.7635 | 0.8571 | 0.0936 |
+| SatelliteAgent | 0.7767 | 1.0 | 0.2233 |
+| SoilAgent | 0.8424 | 1.0 | 0.1576 |
+| WeatherAgent | 0.8817 | 1.0 | 0.1183 |

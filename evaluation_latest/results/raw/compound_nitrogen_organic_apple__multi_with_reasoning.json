@@ -1,0 +1,632 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "apple",
+    "crop_profile": {
+      "crop": "apple",
+      "scientific_name": "Malus domestica",
+      "family": "Rosaceae",
+      "type": "Perennial",
+      "category": "Fruit",
+      "growth_duration_days": 180,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 15,
+          "maximum": 25,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 60,
+          "maximum": 80,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 600,
+          "maximum": 1000,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 6.0,
+          "maximum": 6.5
+        },
+        "wind_speed": {
+          "maximum": 15,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 8
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Drip irrigation",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "Fruiting",
+        "recommended_frequency": "Weekly"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.75,
+          "healthy": 0.6,
+          "moderate": 0.4,
+          "poor": 0.2
+        },
+        "ndwi": {
+          "low_stress": 0.25,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.5,
+          "moderate_exposure": 0.3,
+          "high_exposure": 0.1
+        }
+      },
+      "market": {
+        "keywords": [
+          "fresh fruit",
+          "juice",
+          "cider"
+        ],
+        "major_states": [
+          "Washington",
+          "New York"
+        ],
+        "major_countries": [
+          "United States",
+          "China"
+        ],
+        "harvest_season": "September to November",
+        "storage_capability": "Good",
+        "perishability": "Medium"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Carbohydrates",
+          "Fiber",
+          "Vitamin C"
+        ],
+        "commercial_products": [
+          "Apple juice",
+          "Apple sauce",
+          "Dried apples"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Powdery mildew",
+          "symptoms": "White powdery patches on leaves",
+          "treatment": "Fungicides"
+        },
+        {
+          "name": "Fire blight",
+          "symptoms": "Blackened leaves and stems",
+          "treatment": "Antibiotics"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Insecticides"
+        },
+        {
+          "name": "Codling moths",
+          "treatment": "Insecticides"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "Balanced fertilizer",
+        "npk_ratio": "10-10-10",
+        "organic_options": [
+          "Compost",
+          "Manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 20,
+        "excellent_tonnes_per_hectare": 30
+      },
+      "recommendations": {
+        "irrigation": "Regular watering",
+        "fertilizer": "Fertilize during growing season",
+        "harvesting": "Hand-picking",
+        "storage": "Cool and dry storage"
+      },
+      "summary": "Apple is a perennial fruit crop that requires well-drained soil, moderate temperatures, and adequate moisture. It is susceptible to diseases like powdery mildew and fire blight, and pests like aphids and codling moths. Regular irrigation, fertilization, and pruning are essential for optimal growth and yield.",
+      "references": [
+        "FAO",
+        "USDA"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T11:45",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 20.0,
+        "humidity": 70.0,
+        "rainfall": 8.0,
+        "wind_speed": 10.0,
+        "pressure": 964.1,
+        "time": "2026-08-31T11:45"
+      },
+      "assessment": {
+        "crop": "apple",
+        "status": "Good",
+        "identified_risks": [],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 74
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Low",
+        "organic_carbon": "Low",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 6.25,
+        "nitrogen": "Low",
+        "organic_carbon": "Low",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Optimal",
+        "nitrogen_status": "Low",
+        "organic_carbon_status": "Low",
+        "texture": "Loam",
+        "risks": [
+          "Organic carbon is below crop requirement."
+        ],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T06:26:00.768941",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.75,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": 0.25,
+        "stress": "Low"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Continue normal management."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "success",
+      "market": "Thoothukudi Market",
+      "nearest_market": {
+        "market": "Namakkal Market",
+        "district": "Namakkal",
+        "price": 2389.0,
+        "trend": "Increasing",
+        "distance_km": 134.09,
+        "market_score": 0.6433,
+        "rank": 5
+      },
+      "top_markets": [
+        {
+          "market": "Thoothukudi Market",
+          "district": "Thoothukudi",
+          "price": 2470.0,
+          "trend": "Stable",
+          "distance_km": 281.81,
+          "market_score": 0.8007,
+          "rank": 1
+        },
+        {
+          "market": "Tiruvannamalai Mandi",
+          "district": "Tiruvannamalai",
+          "price": 2443.0,
+          "trend": "Stable",
+          "distance_km": 267.05,
+          "market_score": 0.748,
+          "rank": 2
+        },
+        {
+          "market": "Tiruvarur Uzhavar Sandhai",
+          "district": "Tiruvarur",
+          "price": 2432.0,
+          "trend": "Stable",
+          "distance_km": 293.81,
+          "market_score": 0.7265,
+          "rank": 3
+        },
+        {
+          "market": "Kanchipuram Market",
+          "district": "Kanchipuram",
+          "price": 2459.0,
+          "trend": "Stable",
+          "distance_km": 360.83,
+          "market_score": 0.6891,
+          "rank": 4
+        },
+        {
+          "market": "Namakkal Market",
+          "district": "Namakkal",
+          "price": 2389.0,
+          "trend": "Stable",
+          "distance_km": 134.09,
+          "market_score": 0.6433,
+          "rank": 5
+        }
+      ],
+      "raw_data": {
+        "Crop": "rice",
+        "TopMarkets": [
+          {
+            "market": "Thoothukudi Market",
+            "district": "Thoothukudi",
+            "price": 2470.0,
+            "trend": "Increasing",
+            "distance_km": 281.81,
+            "market_score": 0.8007,
+            "rank": 1
+          },
+          {
+            "market": "Tiruvannamalai Mandi",
+            "district": "Tiruvannamalai",
+            "price": 2443.0,
+            "trend": "Increasing",
+            "distance_km": 267.05,
+            "market_score": 0.748,
+            "rank": 2
+          },
+          {
+            "market": "Tiruvarur Uzhavar Sandhai",
+            "district": "Tiruvarur",
+            "price": 2432.0,
+            "trend": "Increasing",
+            "distance_km": 293.81,
+            "market_score": 0.7265,
+            "rank": 3
+          },
+          {
+            "market": "Kanchipuram Market",
+            "district": "Kanchipuram",
+            "price": 2459.0,
+            "trend": "Stable",
+            "distance_km": 360.83,
+            "market_score": 0.6891,
+            "rank": 4
+          },
+          {
+            "market": "Namakkal Market",
+            "district": "Namakkal",
+            "price": 2389.0,
+            "trend": "Increasing",
+            "distance_km": 134.09,
+            "market_score": 0.6433,
+            "rank": 5
+          }
+        ]
+      },
+      "assessment": {
+        "market_score": 100,
+        "trend": "Stable",
+        "recommendation": "Best ranked market is Thoothukudi Market with modal price 2470.0.",
+        "opportunities": [
+          "Market prices are increasing.",
+          "Multiple nearby markets are available for comparison."
+        ],
+        "risks": []
+      },
+      "confidence": 1.0,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "market_count": 30,
+        "top_market_count": 5
+      }
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "rice",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 31.1\nHumidity : 53\nRainfall : 0.1\nWind Speed : 14.6\nPressure : 964.1\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Namakkal Market\nNearest Distance : 134.09 km\nNearest Market Price : 2389.0\nNearest Market Trend : Increasing\n\nBest Ranked Market : Thoothukudi Market\nBest Market Price : 2470.0\nBest Market Distance : 281.81 km\nBest Market Trend : Increasing\n\nMarkets Evaluated : 5\nCrop : rice\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 28.98
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "The current weather conditions are within the optimal range for apple cultivation. The temperature, humidity, and rainfall are all within the preferred thresholds for apple growth. However, the confidence in these conditions is moderate, and further monitoring is recommended.",
+      "summary": "The current weather conditions are within the optimal range for apple cultivation. The temperature, humidity, and rainfall are all within the preferred thresholds for apple growth. However, the confidence in these conditions is moderate, and further monitoring is recommended. 1 weather risk(s) identified. 1 weather opportunity(s) identified.",
+      "risks": [
+        "Potential for increased disease risk due to moderate humidity."
+      ],
+      "opportunities": [
+        "Current weather supports healthy growth and fruit development."
+      ],
+      "confidence": 0.74,
+      "metadata": {}
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "The soil in Coimbatore, Tamil Nadu, is generally suitable for apple cultivation, with a pH within the optimal range. However, the nitrogen and organic carbon levels are low, which may impact soil fertility and productivity. The soil texture is loam, which aligns with the crop's preference. Despite these deficiencies, the soil health score is high, indicating good overall condition.",
+      "summary": "The soil in Coimbatore, Tamil Nadu, is generally suitable for apple cultivation, with a pH within the optimal range. However, the nitrogen and organic carbon levels are low, which may impact soil fertility and productivity. The soil texture is loam, which aligns with the crop's preference. Despite these deficiencies, the soil health score is high, indicating good overall condition. 2 soil risk(s) identified. 2 soil opportunity(s) identified.",
+      "risks": [
+        "Low nitrogen levels may limit plant growth and yield.",
+        "Low organic carbon content reduces soil fertility and water-holding capacity."
+      ],
+      "opportunities": [
+        "Soil pH is within the optimal range for apple growth.",
+        "The loamy texture supports good drainage and root development."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The satellite data indicates that the apple crop is in excellent vegetation health, with NDVI at 0.75, which is within the excellent range. The NDWI value of 0.25 suggests low water stress, and the SAVI value of 0.105 corresponds to low soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. The satellite data does not indicate any immediate risks or opportunities for the crop based on the current thresholds.",
+      "summary": "The satellite data indicates that the apple crop is in excellent vegetation health, with NDVI at 0.75, which is within the excellent range. The NDWI value of 0.25 suggests low water stress, and the SAVI value of 0.105 corresponds to low soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. The satellite data does not indicate any immediate risks or opportunities for the crop based on the current thresholds.",
+      "risks": [],
+      "opportunities": [],
+      "confidence": 0.95,
+      "metadata": {}
+    }
+  },
+  "reasoning": {
+    "summary": "Apple cultivation in Coimbatore, Tamil Nadu, is currently in a favorable condition with optimal weather, soil pH, and vegetation health. However, low nitrogen and organic carbon levels in the soil may affect productivity. The market conditions are stable with increasing prices, presenting good opportunities for sales.",
+    "consensus": "The crop is in a good condition with favorable weather, soil pH, and vegetation health. The market is stable with increasing prices, and the soil, while suitable, requires amendments to improve nitrogen and organic carbon levels.",
+    "merged_risks": [
+      "Potential for increased disease risk due to moderate humidity.",
+      "Low nitrogen levels may limit plant growth and yield.",
+      "Low organic carbon content reduces soil fertility and water-holding capacity."
+    ],
+    "merged_opportunities": [
+      "Current weather supports healthy growth and fruit development.",
+      "Soil pH is within the optimal range for apple growth.",
+      "The loamy texture supports good drainage and root development.",
+      "Market prices are increasing.",
+      "Multiple nearby markets are available for comparison."
+    ],
+    "conflicts": [],
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "agent": "WeatherAgent",
+        "analysis": "The current weather conditions are within the optimal range for apple cultivation. The temperature, humidity, and rainfall are all within the preferred thresholds for apple growth. However, the confidence in these conditions is moderate, and further monitoring is recommended.",
+        "risks": [
+          "Potential for increased disease risk due to moderate humidity."
+        ],
+        "opportunities": [
+          "Current weather supports healthy growth and fruit development."
+        ],
+        "confidence": 0.74,
+        "metadata": {}
+      },
+      {
+        "agent": "SoilAgent",
+        "analysis": "The soil in Coimbatore, Tamil Nadu, is generally suitable for apple cultivation, with a pH within the optimal range. However, the nitrogen and organic carbon levels are low, which may impact soil fertility and productivity. The soil texture is loam, which aligns with the crop's preference. Despite these deficiencies, the soil health score is high, indicating good overall condition.",
+        "risks": [
+          "Low nitrogen levels may limit plant growth and yield.",
+          "Low organic carbon content reduces soil fertility and water-holding capacity."
+        ],
+        "opportunities": [
+          "Soil pH is within the optimal range for apple growth.",
+          "The loamy texture supports good drainage and root development."
+        ],
+        "confidence": 0.95,
+        "metadata": {}
+      },
+      {
+        "agent": "SatelliteAgent",
+        "analysis": "The satellite data indicates that the apple crop is in excellent vegetation health, with NDVI at 0.75, which is within the excellent range. The NDWI value of 0.25 suggests low water stress, and the SAVI value of 0.105 corresponds to low soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. The satellite data does not indicate any immediate risks or opportunities for the crop based on the current thresholds.",
+        "risks": [],
+        "opportunities": [],
+        "confidence": 0.95,
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "agents": [
+        "WeatherAgent",
+        "SoilAgent",
+        "SatelliteAgent"
+      ],
+      "agent_count": 3,
+      "llm_provider": "gemini"
+    }
+  },
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.95,
+    "decision": "Apply Nitrogen Fertilizer",
+    "priority": "P4",
+    "urgency": "Monitor",
+    "risk_level": "Low",
+    "action_order": [
+      "Apply nitrogen fertilizer",
+      "Apply compost or organic manure"
+    ],
+    "priorities": [
+      {
+        "issue": "Nitrogen",
+        "severity": "Medium",
+        "urgency": "Within 3 Days",
+        "owner": "Farmer",
+        "action": "Apply nitrogen fertilizer"
+      },
+      {
+        "issue": "Organic Carbon",
+        "severity": "Medium",
+        "urgency": "Within 1 Week",
+        "owner": "Farmer",
+        "action": "Apply compost or organic manure"
+      }
+    ],
+    "impact": {
+      "agronomic": "Good",
+      "economic": "Excellent",
+      "environmental": "Excellent",
+      "operational": "Excellent",
+      "yield_risk": "Moderate",
+      "profitability": "Moderate",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Apple cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 3 specialist agents. Primary concerns include: Potential for increased disease risk due to moderate humidity., Low nitrogen levels may limit plant growth and yield., Low organic carbon content reduces soil fertility and water-holding capacity.."
+    },
+    "supporting_evidence": [
+      "WeatherAgent: The current weather conditions are within the optimal range for apple cultivation. The temperature, humidity, and rainfall are all within the preferred thresholds for apple growth. However, the confidence in these conditions is moderate, and further monitoring is recommended.",
+      "SoilAgent: The soil in Coimbatore, Tamil Nadu, is generally suitable for apple cultivation, with a pH within the optimal range. However, the nitrogen and organic carbon levels are low, which may impact soil fertility and productivity. The soil texture is loam, which aligns with the crop's preference. Despite these deficiencies, the soil health score is high, indicating good overall condition.",
+      "SatelliteAgent: The satellite data indicates that the apple crop is in excellent vegetation health, with NDVI at 0.75, which is within the excellent range. The NDWI value of 0.25 suggests low water stress, and the SAVI value of 0.105 corresponds to low soil exposure. The vegetation condition is rated as excellent, and water availability is sufficient. The satellite data does not indicate any immediate risks or opportunities for the crop based on the current thresholds."
+    ],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0
+  },
+  "recommendation": {
+    "recommendation": "Apply nitrogen fertilizer and organic amendments to improve soil fertility and support plant growth.",
+    "priority": "High",
+    "justification": "The soil has low nitrogen and organic carbon levels, which can limit plant growth and reduce yield. Applying nitrogen fertilizer and organic amendments will address these deficiencies, improve soil fertility, and enhance water-holding capacity. This will also support the crop's optimal growth conditions and align with the stable market conditions and increasing prices.",
+    "actions": [
+      "Apply nitrogen fertilizer with an NPK ratio of 10-10-10 to address low nitrogen levels.",
+      "Apply compost or organic manure to increase organic carbon content and improve soil structure.",
+      "Monitor soil health and nutrient levels after application to assess effectiveness."
+    ],
+    "expected_outcome": "Improved soil fertility, enhanced plant growth, and increased yield potential, which will support higher profitability in the upcoming harvest season.",
+    "monitoring_plan": [
+      "Check soil nitrogen and organic carbon levels after 1 week to evaluate the impact of amendments.",
+      "Monitor plant health and growth stages to ensure optimal development.",
+      "Track market prices and adjust sales strategies as needed based on the harvest season."
+    ],
+    "confidence": 0.95,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Apply Nitrogen Fertilizer",
+    "executive_priority": "P4"
+  },
+  "stage_times": {
+    "context_build": 0.003,
+    "planner": 14.347,
+    "WeatherAgent": 31.995,
+    "SoilAgent": 14.882,
+    "SatelliteAgent": 24.479,
+    "reasoning": 31.335,
+    "executive": 0.0,
+    "recommendation": 24.517
+  },
+  "condition": "multi_with_reasoning",
+  "governance_used": false,
+  "scenario_id": "compound_nitrogen_organic_apple",
+  "wall_time_seconds": 102.2
+}

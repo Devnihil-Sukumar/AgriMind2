@@ -1,0 +1,498 @@
+{
+  "status": "success",
+  "error": null,
+  "context": {
+    "crop": "wheat",
+    "crop_profile": {
+      "crop": "wheat",
+      "scientific_name": "Triticum aestivum",
+      "family": "Poaceae",
+      "type": "Annual",
+      "category": "Cereal",
+      "growth_duration_days": 120,
+      "growth_stages": [
+        "Germination",
+        "Vegetative",
+        "Flowering",
+        "Fruiting",
+        "Harvest"
+      ],
+      "optimal_conditions": {
+        "temperature": {
+          "minimum": 10,
+          "maximum": 25,
+          "unit": "C"
+        },
+        "humidity": {
+          "minimum": 50,
+          "maximum": 70,
+          "unit": "%"
+        },
+        "rainfall": {
+          "minimum": 300,
+          "maximum": 900,
+          "unit": "mm/year"
+        },
+        "soil_ph": {
+          "minimum": 6.0,
+          "maximum": 7.5
+        },
+        "wind_speed": {
+          "maximum": 30,
+          "unit": "km/h"
+        },
+        "sunlight_hours": {
+          "minimum": 6,
+          "maximum": 10
+        }
+      },
+      "soil": {
+        "preferred_texture": [
+          "Clay",
+          "Loam"
+        ],
+        "preferred_nitrogen": "Medium",
+        "preferred_organic_carbon": "Medium",
+        "preferred_drainage": "Good"
+      },
+      "water": {
+        "irrigation_type": "Surface or Sprinkler",
+        "water_requirement": "Medium",
+        "critical_growth_stage": "Flowering",
+        "recommended_frequency": "Every 7-10 days during critical stages"
+      },
+      "satellite_thresholds": {
+        "ndvi": {
+          "excellent": 0.8,
+          "healthy": 0.65,
+          "moderate": 0.45,
+          "poor": 0.3
+        },
+        "ndwi": {
+          "low_stress": 0.3,
+          "moderate_stress": 0.1,
+          "high_stress": 0.0
+        },
+        "savi": {
+          "low_exposure": 0.6,
+          "moderate_exposure": 0.4,
+          "high_exposure": 0.2
+        }
+      },
+      "market": {
+        "keywords": [
+          "Bread",
+          "Flour",
+          "Staple food",
+          "Cereal"
+        ],
+        "major_states": [
+          "Kansas",
+          "North Dakota",
+          "Montana",
+          "Washington"
+        ],
+        "major_countries": [
+          "China",
+          "India",
+          "Russia",
+          "United States",
+          "France"
+        ],
+        "harvest_season": "June-August",
+        "storage_capability": "Good",
+        "perishability": "Low"
+      },
+      "nutrition": {
+        "primary_nutrients": [
+          "Carbohydrates",
+          "Protein",
+          "Fiber"
+        ],
+        "commercial_products": [
+          "Flour",
+          "Bread",
+          "Pasta",
+          "Cereal",
+          "Malt"
+        ]
+      },
+      "common_diseases": [
+        {
+          "name": "Fusarium head blight",
+          "symptoms": "Bleached, shriveled kernels and pinkish fungal growth on heads",
+          "treatment": "Apply fungicides at flowering; use resistant varieties"
+        },
+        {
+          "name": "Powdery mildew",
+          "symptoms": "White powdery patches on leaves and stems",
+          "treatment": "Sulfur-based fungicides; ensure good air circulation"
+        },
+        {
+          "name": "Leaf rust",
+          "symptoms": "Orange-brown pustules on leaf surfaces",
+          "treatment": "Apply rust-resistant cultivars and timely fungicide sprays"
+        }
+      ],
+      "common_pests": [
+        {
+          "name": "Aphids",
+          "treatment": "Introduce natural predators; use insecticidal soaps"
+        },
+        {
+          "name": "Hessian fly",
+          "treatment": "Plant resistant varieties; monitor and apply targeted insecticides"
+        },
+        {
+          "name": "Wheat midge",
+          "treatment": "Early sowing and insecticide applications during adult emergence"
+        }
+      ],
+      "fertilizer": {
+        "recommended": "Apply nitrogen-rich fertilizer at tillering and booting stages",
+        "npk_ratio": "120-60-40",
+        "organic_options": [
+          "Compost",
+          "Manure",
+          "Green manure"
+        ]
+      },
+      "yield": {
+        "average_tonnes_per_hectare": 3.0,
+        "excellent_tonnes_per_hectare": 7.0
+      },
+      "recommendations": {
+        "irrigation": "Maintain soil moisture deficit of 20-30%; avoid water stress during flowering",
+        "fertilizer": "Split nitrogen applications: 50% at sowing, rest at tillering and booting",
+        "harvesting": "Harvest when grain moisture is 12-14% using combine harvester with low grain loss settings",
+        "storage": "Store in ventilated silos at 12-15\u00b0C and 60% relative humidity"
+      },
+      "summary": "Wheat (Triticum aestivum) is a globally important annual cereal grown on loamy to clay soils with pH 6.0-7.5. Optimal temperatures are 10-25\u202f\u00b0C, rainfall 300-900\u202fmm/year, and sunlight 6-10\u202fh/day. It requires medium water and nitrogen, with critical moisture needs during flowering. Major producers include China, India, Russia, the United States, and France. Typical yields are 3\u202ft/ha, reaching up to 7\u202ft/ha under optimal management. Key diseases are Fusarium head blight, powdery mildew, and leaf rust; main pests include aphids, Hessian fly, and wheat midge. Integrated pest management, split nitrogen fertilization, and timely harvest ensure high quality grain.",
+      "references": [
+        "FAO",
+        "ICAR",
+        "USDA",
+        "CGIAR"
+      ],
+      "generated_by": "Groq",
+      "version": 2
+    },
+    "location": {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu"
+    },
+    "weather": {
+      "source": "weather",
+      "status": "success",
+      "timestamp": "2026-08-31T19:30",
+      "raw_data": {
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "temperature": 17.5,
+        "humidity": 60.0,
+        "rainfall": 6.0,
+        "wind_speed": 10.0,
+        "pressure": 961.5,
+        "time": "2026-08-31T19:30"
+      },
+      "assessment": {
+        "crop": "wheat",
+        "status": "Good",
+        "identified_risks": [],
+        "opportunities": [
+          "Weather conditions are favorable."
+        ]
+      },
+      "confidence": 74
+    },
+    "soil": {
+      "source": "soil",
+      "status": "success",
+      "soil": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 3.7,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "raw_data": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "ph": 3.7,
+        "nitrogen": "Medium",
+        "organic_carbon": "Medium",
+        "sand_percent": 46.0,
+        "clay_percent": 32.0,
+        "silt_percent": 22.0,
+        "cec": 22.38,
+        "bulk_density": 1.56,
+        "field_capacity": 0.32,
+        "wilting_point": 0.14,
+        "distance_km": 0.0,
+        "live_source": false
+      },
+      "assessment": {
+        "soil_health_score": 92,
+        "ph_status": "Below optimal",
+        "nitrogen_status": "Optimal",
+        "organic_carbon_status": "Optimal",
+        "texture": "Loam",
+        "risks": [
+          "Soil pH (3.70) is below the optimal range (6.0-7.5)."
+        ],
+        "opportunities": [
+          "Soil pH is within the optimal range."
+        ]
+      },
+      "confidence": 0.9,
+      "metadata": {
+        "source": "Synthetic Local Dataset",
+        "distance_km": 0.0,
+        "live_source": false
+      }
+    },
+    "satellite": {
+      "source": "satellite",
+      "status": "success",
+      "confidence": 40,
+      "error": null,
+      "timestamp": "2026-08-31T14:12:26.393114",
+      "location": {
+        "latitude": 11.0168,
+        "longitude": 76.9558
+      },
+      "imagery": {
+        "acquisition_date": "2026-08-30",
+        "cloud_cover": 20.921202,
+        "valid_pixels": 100
+      },
+      "vegetation": {
+        "ndvi": 0.8,
+        "evi": 0.13,
+        "savi": 0.105,
+        "health": "Excellent"
+      },
+      "water": {
+        "ndwi": 0.3,
+        "stress": "Low"
+      },
+      "soil": {
+        "exposure": "Low"
+      },
+      "assessment": {
+        "vegetation_score": 90,
+        "recommendation": "Continue normal management."
+      }
+    },
+    "market": {
+      "source": "market",
+      "status": "failed",
+      "market": null,
+      "nearest_market": null,
+      "top_markets": [],
+      "raw_data": null,
+      "assessment": {
+        "market_score": 0,
+        "trend": "Stable",
+        "recommendation": "No market data available for wheat.",
+        "opportunities": [],
+        "risks": []
+      },
+      "confidence": 0
+    },
+    "historical": {
+      "source": "historical",
+      "status": "success",
+      "crop": "wheat",
+      "record_count": 0,
+      "current_context": {
+        "weather": "\nTemperature : 25.2\nHumidity : 85\nRainfall : 0.0\nWind Speed : 17.4\nPressure : 961.5\n",
+        "soil": "\nState : Tamil Nadu\nDistrict : Coimbatore\npH : 6.21\nNitrogen : High\nOrganic Carbon : Low\nSand : 46.0\nClay : 32.0\nSilt : 22.0\nCEC : 22.38\nDistance : 0.0 km\n",
+        "satellite": "\nNDVI : 0.154\nEVI : 0.13\nSAVI : 0.105\nVegetation Health : Critical\nNDWI : -0.204\nWater Stress : High\nSoil Exposure : High\nCloud Cover : 20.921202%\n",
+        "market": "\nNearest Market : Unavailable\nNearest Distance : Unknown km\nNearest Market Price : Unknown\nNearest Market Trend : Unknown\n\nBest Ranked Market : Unavailable\nBest Market Price : Unknown\nBest Market Distance : Unknown km\nBest Market Trend : Unknown\n\nMarkets Evaluated : 0\nCrop : wheat\n"
+      },
+      "records": []
+    },
+    "historical_records": 0,
+    "historical_similarity": 0.0,
+    "weather_status": "Good",
+    "soil_health": 92,
+    "vegetation_health": "Excellent",
+    "market_trend": "Stable",
+    "risks": [
+      "No historical records available"
+    ],
+    "opportunities": [
+      "Excellent soil quality"
+    ],
+    "confidence": 28.73
+  },
+  "specialists": {
+    "WeatherAgent": {
+      "agent": "WeatherAgent",
+      "status": "completed",
+      "analysis": "The current weather conditions are generally suitable for wheat growth, with temperatures and humidity within optimal ranges. However, the rainfall is slightly above the minimum requirement, which may increase the risk of fungal diseases if not managed properly.",
+      "summary": "The current weather conditions are generally suitable for wheat growth, with temperatures and humidity within optimal ranges. However, the rainfall is slightly above the minimum requirement, which may increase the risk of fungal diseases if not managed properly. 1 weather risk(s) identified. 2 weather opportunity(s) identified.",
+      "risks": [
+        "Potential for fungal disease outbreaks due to moderate humidity and rainfall."
+      ],
+      "opportunities": [
+        "Favorable temperature and humidity levels support healthy growth.",
+        "Moderate rainfall can supplement natural moisture needs."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SoilAgent": {
+      "agent": "SoilAgent",
+      "status": "completed",
+      "analysis": "The soil in Coimbatore, Tamil Nadu, is generally suitable for wheat cultivation, with a loamy texture, medium nitrogen, and medium organic carbon levels. However, the soil pH is significantly below the optimal range for wheat, which could limit nutrient availability and crop productivity. While the soil health score is high, the low pH presents a major risk that needs to be addressed for long-term sustainability.",
+      "summary": "The soil in Coimbatore, Tamil Nadu, is generally suitable for wheat cultivation, with a loamy texture, medium nitrogen, and medium organic carbon levels. However, the soil pH is significantly below the optimal range for wheat, which could limit nutrient availability and crop productivity. While the soil health score is high, the low pH presents a major risk that needs to be addressed for long-term sustainability. 2 soil risk(s) identified. 2 soil opportunity(s) identified.",
+      "risks": [
+        "Soil pH (3.70) is far below the optimal range (6.0-7.5) for wheat, which can reduce nutrient availability and hinder plant growth.",
+        "Low pH may lead to aluminum toxicity and reduced microbial activity, affecting soil fertility and crop health."
+      ],
+      "opportunities": [
+        "The soil has a loamy texture, which is preferred for wheat cultivation, offering good water retention and drainage.",
+        "Medium nitrogen and organic carbon levels indicate a balanced nutrient base, which can support wheat growth with proper management."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    },
+    "SatelliteAgent": {
+      "agent": "SatelliteAgent",
+      "status": "completed",
+      "analysis": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for wheat. The NDWI of 0.3 falls within the low stress category, suggesting minimal water stress. SAVI at 0.105 is below the low exposure threshold of 0.6, indicating high soil exposure. Vegetation condition is rated as excellent, and water availability is low stress. There is no immediate irrigation need based on the current data. The satellite data shows no significant risks, but there is an opportunity to monitor soil exposure for potential erosion or nutrient loss.",
+      "summary": "The satellite data indicates excellent vegetation health with NDVI at 0.8, which is above the excellent threshold of 0.8 for wheat. The NDWI of 0.3 falls within the low stress category, suggesting minimal water stress. SAVI at 0.105 is below the low exposure threshold of 0.6, indicating high soil exposure. Vegetation condition is rated as excellent, and water availability is low stress. There is no immediate irrigation need based on the current data. The satellite data shows no significant risks, but there is an opportunity to monitor soil exposure for potential erosion or nutrient loss. 1 satellite opportunity(s) identified.",
+      "risks": [],
+      "opportunities": [
+        "Monitor soil exposure for potential erosion or nutrient loss."
+      ],
+      "confidence": 0.95,
+      "metadata": {}
+    }
+  },
+  "reasoning": {
+    "summary": "Deterministic merge of 3 specialist outputs (no collaborative reasoning).",
+    "consensus": "N/A -- collaborative reasoning stage skipped for this condition.",
+    "merged_risks": [
+      "Potential for fungal disease outbreaks due to moderate humidity and rainfall.",
+      "Soil pH (3.70) is far below the optimal range (6.0-7.5) for wheat, which can reduce nutrient availability and hinder plant growth.",
+      "Low pH may lead to aluminum toxicity and reduced microbial activity, affecting soil fertility and crop health."
+    ],
+    "merged_opportunities": [
+      "Favorable temperature and humidity levels support healthy growth.",
+      "Moderate rainfall can supplement natural moisture needs.",
+      "The soil has a loamy texture, which is preferred for wheat cultivation, offering good water retention and drainage.",
+      "Medium nitrogen and organic carbon levels indicate a balanced nutrient base, which can support wheat growth with proper management.",
+      "Monitor soil exposure for potential erosion or nutrient loss."
+    ],
+    "conflicts": [],
+    "confidence": 0.95,
+    "evidence": [],
+    "metadata": {
+      "agents": [
+        "WeatherAgent",
+        "SoilAgent",
+        "SatelliteAgent"
+      ],
+      "agent_count": 3,
+      "llm_provider": "none (deterministic merge)"
+    }
+  },
+  "executive": {
+    "agent": "ExecutiveAgent",
+    "status": "completed",
+    "confidence": 0.95,
+    "decision": "Continue Monitoring",
+    "priority": "P4",
+    "urgency": "Monitor",
+    "risk_level": "Low",
+    "action_order": [
+      "Supplement rainfall through irrigation"
+    ],
+    "priorities": [
+      {
+        "issue": "Rainfall",
+        "severity": "High",
+        "urgency": "Today",
+        "owner": "Farmer",
+        "action": "Supplement rainfall through irrigation"
+      }
+    ],
+    "impact": {
+      "agronomic": "Excellent",
+      "economic": "Excellent",
+      "environmental": "Excellent",
+      "operational": "Excellent",
+      "yield_risk": "Low",
+      "profitability": "Moderate",
+      "expected_benefit": "Current conditions provide opportunities for improved profitability."
+    },
+    "summary": {
+      "executive": "Wheat cultivation in Coimbatore, Tamil Nadu currently has a low operational risk requiring monitor attention.",
+      "business": "Market trend is stable with moderate profitability potential.",
+      "technical": "Weather status: Good. Soil health score: 92. Vegetation health: Excellent.",
+      "justification": "The executive decision is based on 0 specialist agents. Primary concerns include: Potential for fungal disease outbreaks due to moderate humidity and rainfall., Soil pH (3.70) is far below the optimal range (6.0-7.5) for wheat, which can reduce nutrient availability and hinder plant growth., Low pH may lead to aluminum toxicity and reduced microbial activity, affecting soil fertility and crop health.."
+    },
+    "supporting_evidence": [],
+    "metadata": {
+      "location": {
+        "district": "Coimbatore",
+        "state": "Tamil Nadu"
+      },
+      "historical_records": 0,
+      "generated_from": "Collaborative Reasoning"
+    },
+    "execution_time": 0.0
+  },
+  "recommendation": {
+    "recommendation": "Continue Monitoring with targeted soil pH correction and disease prevention measures",
+    "priority": "High",
+    "justification": "The current conditions present both opportunities and risks. While the soil quality is excellent and the temperature and humidity are favorable, the soil pH is far below the optimal range, which can hinder nutrient availability and plant growth. Additionally, the moderate humidity and rainfall increase the risk of fungal disease outbreaks. Immediate action is required to correct the soil pH and prevent disease, while ongoing monitoring is essential to track progress and adjust strategies as needed.",
+    "actions": [
+      "Apply lime to raise soil pH to the optimal range (6.0-7.5).",
+      "Implement a fungicide spray program during the flowering stage to prevent fungal diseases.",
+      "Monitor soil moisture levels and adjust irrigation to ensure adequate water supply without over-saturation."
+    ],
+    "expected_outcome": "Improved soil pH will enhance nutrient availability and plant growth, while the fungicide program will reduce the risk of disease outbreaks. Monitoring will ensure that the crop remains healthy and that any changes in conditions are addressed promptly.",
+    "monitoring_plan": [
+      "Daily monitoring of soil moisture levels and weather conditions.",
+      "Weekly inspection of crops for signs of fungal disease or nutrient deficiency.",
+      "Monthly assessment of soil pH and nutrient levels to ensure they remain within optimal ranges."
+    ],
+    "confidence": 0.95,
+    "generation_mode": "llm",
+    "agent": "RecommendationAgent",
+    "status": "completed",
+    "executive_decision": "Continue Monitoring",
+    "executive_priority": "P4"
+  },
+  "stage_times": {
+    "context_build": 0.004,
+    "planner": 16.182,
+    "WeatherAgent": 12.159,
+    "SoilAgent": 32.221,
+    "SatelliteAgent": 47.033,
+    "reasoning": 0.0,
+    "executive": 0.0,
+    "recommendation": 30.219
+  },
+  "condition": "multi_no_reasoning",
+  "governance_used": false,
+  "scenario_id": "soil_ph_low_wheat",
+  "wall_time_seconds": 93.44
+}
