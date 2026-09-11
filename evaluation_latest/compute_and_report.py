@@ -284,7 +284,7 @@ def fig_agent_f1(agent_f1):
     values = [agent_f1["per_agent"][a]["f1"] for a in agents]
     fig, ax = plt.subplots(figsize=(7, 4.5))
     ax.bar(agents, values, color="#2f9e5b")
-    ax.set_ylabel("F1-score")
+    ax.set_ylabel("F1 Score (0.0 - 1.0)")
     ax.set_ylim(0, 1.05)
     ax.set_title("Figure 1: Specialist Agent F1-score (risk/opportunity detection)")
     ax.tick_params(axis="x", rotation=30)

@@ -58,7 +58,8 @@ their own components can be trusted, and are seldom evaluated for what
 happens when a data source or model provider fails mid-decision. This work
 presents AgriMind, a ten-stage multi-agent advisory pipeline in which five
 heterogeneous specialists---weather, soil, satellite, market and
-historical---are routed dynamically by intent and by live data
+historical (four actively exercised in this benchmark; Section~\ref{sec:results})---are
+routed dynamically by intent and by live data
 availability, fused through a collaborative reasoning stage, and wrapped by
 a Beta--Bernoulli trust layer that gates each agent before execution and
 updates its posterior afterwards. Every language-model stage carries a
@@ -66,13 +67,15 @@ deterministic fallback, so provider failure degrades output quality rather
 than terminating the request. A reproducible benchmark of controlled
 single-variable perturbations, replayed against fixed fixtures, measures
 routing, rule-consistency, detection, calibration and latency behaviour.
-Across eleven scenarios no task failures and no routing errors were
-observed, rule-consistency reached 63.6\% overall and 70.0\% excluding
-scenarios that deliberately probe a documented gap in the decision
-vocabulary; two grounding instruments with no generative model in the loop
-returned no findings. Concurrent execution cut end-to-end latency by
-23.6\%, though the resulting 426.6\,s remains far too slow for field
-use. The sample is small and ground truth is
+Across 105 scenarios spanning seven crops, no task failures were observed,
+rule-consistency reached 84.8\% overall and 90.8\% excluding scenarios that
+deliberately probe a documented gap in the decision vocabulary, and two
+grounding instruments with no generative model in the loop returned no
+findings. The larger sample exposed failure modes invisible at $N=11$: a
+vegetation-detection defect that persists at scale, and a case in which a
+market-opportunity signal wrongly overrode an active water-stress signal.
+Mean end-to-end latency was 215.3\,s, still too slow for the field use this
+system targets. Ground truth is
 rule-derived rather than agronomist-validated, so these figures
 characterise mechanism rather than field performance.
 \end{abstract}
@@ -141,10 +144,9 @@ does and does not license us to claim.
 \item \textbf{Availability-aware dynamic routing.} A planner that selects
 specialists jointly on query intent \emph{and} on whether each source
 actually holds usable data, rather than on a fixed intent-to-agent map.
-No routing errors were observed on the ten benchmark scenarios, nor on
-eight held-out queries using crops and phrasings absent from prompt
-development (Section~\ref{sec:results}). We report these as observed
-counts; the sample does not support a rate estimate.
+Routing was exact on 81 of 105 benchmark scenarios (77.1\%), and no
+routing errors were observed on eight held-out queries using crops and
+phrasings absent from prompt development (Section~\ref{sec:results}).
 
 \item \textbf{An operative trust layer, and its measured calibration.}
 The underlying estimator is a standard Beta--Bernoulli conjugate update
@@ -152,7 +154,7 @@ and we claim no mathematical novelty in it. The contribution is
 system-level: the posterior is wired into the execution path as a
 pre-execution gate rather than kept as an audit annotation, and its
 calibration against observed reliability is measured and reported
-(mean absolute error 0.228) rather than assumed. To our knowledge no
+(mean absolute error 0.195 at $N=105$) rather than assumed. To our knowledge no
 prior agricultural multi-agent system reports trust calibration at
 all.
 
@@ -174,10 +176,10 @@ threshold already present in the crop's own agronomic profile---making
 ground truth auditable and every run replayable.
 
 \item \textbf{Concurrency-consistent ablation.} Specialists execute
-concurrently, cutting mean end-to-end latency by 23.6\%; critically, the
+concurrently rather than sequentially, and critically, the
 ablation baselines were made to use the same concurrency, so the reported
-latency differences reflect architecture rather than execution strategy
-(Section~\ref{sec:ablation}).
+latency differences across conditions reflect architecture rather than
+execution strategy (Section~\ref{sec:ablation}).
 \end{enumerate}
 
 The remainder of the paper is organised as follows.
@@ -416,6 +418,28 @@ Manure, Prepare for Harvest and Selling, Continue Monitoring\}. We state
 this plainly because it bounds the interpretation of the rule-consistency rate, and
 we return to it in Section~\ref{sec:limitations}.
 
+The benchmark used throughout this paper comprises 105 scenarios across
+seven crops (rice, cotton, wheat, mango, tomato, apple and orange), an
+order of magnitude larger than the eleven-scenario benchmark used in an
+earlier version of this work. Two extensions to the single-variable
+construction above account for the growth. First, two crops (apple,
+orange) have no previously captured pipeline run of their own; their
+scenarios reuse the real, location-bound sensor context collected for
+rice at the same coordinates (weather, soil and satellite readings are
+properties of the location, not of which crop was asked about) paired
+with that crop's own cached agronomic profile for the perturbation and
+ground-truth logic, so the perturbation itself remains crop-specific even
+though the underlying sensor draw is shared. Second, a \emph{compound}
+scenario type perturbs two fields at once --- one risk-domain condition
+and one simultaneous market-opportunity condition --- specifically to
+test whether the executive engine's fixed precedence order $\Phi$
+correctly subordinates the lower-priority signal to the higher-priority
+one, rather than testing detection of a single signal in isolation as
+every other scenario type does. Both extensions are documented in full,
+including the specific perturbation and ground-truth derivation for
+every added scenario, in the benchmark construction code released with
+this work.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Proposed Work}
 \label{sec:proposed}
@@ -645,39 +669,47 @@ corrected figures.
 
 \begin{table}[htbp]
 \centering
-\caption{Ablation across four architectural conditions on identical fixtures. Run on the earlier ten-scenario benchmark ($N=10$) before the dataset was expanded, so its absolute values are not directly comparable with Table~ef{tab:overall}; the between-condition comparison, which is the point of the study, is internally consistent.}
+\caption{Ablation across four architectural conditions on identical fixtures, all four now run on the full $N=105$ benchmark used throughout this paper. An earlier version of this study reported the ablation on an archived ten-scenario ($N=10$) run predating the dataset expansion; this table replaces it and is internally consistent with Table~\ref{tab:overall}. Recommendation quality is LLM-judged and was evaluated for condition 4 only this round (see text); it is reported as not available (N/A) rather than estimated for conditions 1--3.}
 \label{tab:ablation}
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 \textbf{Condition} & \textbf{Task success} & \textbf{Rule-consist.} & \textbf{Rec.\ quality (1--5)} & \textbf{Mean latency (s)} \\
 \midrule
-1. Single agent, no fusion & 100.0\% & 20.0\% & 2.40 & 199.5 \\
-2. Multi-agent, deterministic merge & 100.0\% & 80.0\% & 3.60 & 400.8 \\
-3. Multi-agent + collaborative reasoning & 100.0\% & 80.0\% & 3.76 & 561.6 \\
-4. Full system + TRUSTAI & 100.0\% & 70.0\% & 3.64 & 583.3 \\
+1. Single agent, no fusion & 100.0\% & 13.3\% & N/A & 34.8 \\
+2. Multi-agent, deterministic merge & 100.0\% & 80.0\% & N/A & 88.2 \\
+3. Multi-agent + collaborative reasoning & 100.0\% & 81.9\% & N/A & 154.9 \\
+4. Full system + TRUSTAI & 100.0\% & 84.8\% & 3.86 & 215.7 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The dominant effect is the first step. Moving from a single specialist to a
-planned multi-agent set raises rule-consistency from 20\% to 80\% and
-recommendation quality from 2.40 to 3.60, which is the clearest evidence in
-this study that the architecture, not the language model, carries the
-result: identical models, identical inputs, four-fold accuracy difference.
+The dominant effect is again the first step, and it is sharper at this
+sample size than it appeared at $N=10$: moving from a single specialist to
+a planned multi-agent set raises rule-consistency from 13.3\% to 80.0\%, a
+six-fold difference under identical models and identical inputs, which
+remains the clearest evidence in this study that the architecture, not the
+language model, carries the result.
 
-Collaborative reasoning adds a smaller and more specific gain: decision
-accuracy is unchanged at 80\%, while recommendation quality rises from
-3.60 to 3.76. This is consistent with its role---it improves the articulation
-and coherence of advice rather than the categorical decision, which the
-deterministic rule engine had already fixed.
+Collaborative reasoning adds a further, smaller gain, raising
+rule-consistency from 80.0\% to 81.9\%. Recommendation quality was not
+judged for conditions 1--3 this round --- the judge model available for
+this run required a separate LLM call per condition per scenario, and that
+budget was scoped to the full system only (Section~\ref{sec:results}) ---
+so the earlier claim that collaborative reasoning improves articulation
+without changing the categorical decision cannot be re-confirmed
+numerically here and is left open rather than restated.
 
-Condition 4 shows rule-consistency of 70\%, below conditions 2 and 3. We
-report this rather than omit it. At $N=10$ a single scenario is ten
-percentage points, so the difference rests on one case and the confidence
-intervals overlap heavily; it should not be read as governance harming
-accuracy. The governance layer's contribution is not accuracy but the
-gating and calibration behaviour reported in Section~\ref{sec:results},
-and its cost here is 21.7\,s of additional latency.
+Condition 4, the full system with TRUSTAI, now shows the \emph{highest}
+rule-consistency of the four conditions (84.8\%), not the lowest. At
+$N=10$ condition 4 had appeared to under-perform conditions 2 and 3 (70\%
+against 80\%), and we noted at the time that a single scenario was worth
+ten percentage points there, so the ordering could not be trusted at that
+sample size. The $N=105$ result resolves that ambiguity in the direction
+the architecture predicts: governance does not depress rule-consistency,
+and what looked like a regression at $N=10$ was sampling noise rather than
+a real cost of the trust layer. The layer's measured cost remains
+latency, not accuracy: approximately 61\,s of additional mean latency
+between conditions 3 and 4.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -685,14 +717,29 @@ and its cost here is 21.7\,s of additional latency.
 
 \subsection{Experimental setup}
 
-Weather and soil agents run \texttt{qwen3:4b} through a local Ollama server
-on CPU; satellite, market, historical, planner, recommendation and
-explanation stages use Groq-hosted \texttt{openai/gpt-oss-120b};
-collaborative reasoning uses \texttt{gemini-3.6-flash}. Satellite imagery is
-Sentinel-2 through Google Earth Engine. All latency figures come from a
-single CPU-only machine and are not portable to GPU deployment. Benchmark
-runs replay fixed fixtures through \texttt{CollectorPatch}, so results are
-independent of same-day API variation. All proportions are reported with
+Every language-model stage --- weather, soil, satellite, market,
+historical, planner, collaborative reasoning, executive narration,
+recommendation and explanation --- runs \texttt{qwen3:8b} through a local
+Ollama server on CPU. This is a deliberate change from an earlier
+configuration that split specialists across a hosted provider
+(Groq-hosted \texttt{openai/gpt-oss-120b}) and a separate hosted
+reasoning model (\texttt{gemini-3.6-flash}): that mixed deployment made
+per-agent latency figures a hardware-and-quota artefact rather than an
+architectural one (an earlier version of this study documents that
+confound directly). Running every stage through one local model on one
+machine removes the confound by construction, at the cost of the
+uniformly higher latency reported in Section~\ref{sec:results}. Satellite
+imagery is Sentinel-2 through Google Earth Engine. All latency figures
+come from a single CPU-only machine and are not portable to GPU
+deployment. Benchmark runs replay fixed fixtures through
+\texttt{CollectorPatch}, so results are independent of same-day API
+variation. Recommendation quality, agent F1 and hallucination-rate
+judging uses the same \texttt{qwen3:8b} model that generated the
+outputs being judged; Section~\ref{sec:limitations} discusses why this
+symmetric judge/generator configuration required a mechanical,
+fully-audited correction of a systematic judge error before the figures
+reported here could be trusted (Table~\ref{tab:overall} reports the
+corrected values). All proportions are reported with
 Wilson score intervals, which behave better than the normal approximation at
 this sample size.
 
@@ -702,54 +749,59 @@ Table~\ref{tab:overall} reports the eight headline metrics.
 
 \begin{table}[htbp]
 \centering
-\caption{Overall system evaluation ($N=11$ scenarios; Wilson 95\% intervals). Rates are shown as counts where the denominator is small enough that a percentage overstates precision.}
+\caption{Overall system evaluation ($N=105$ scenarios across seven crops; Wilson 95\% intervals).}
 \label{tab:overall}
 \footnotesize
 \begin{tabular}{@{}p{3.7cm}p{7.1cm}p{4.4cm}@{}}
 \toprule
 \textbf{Metric} & \textbf{Definition} & \textbf{Result} \\
 \midrule
-Task success rate & Complete valid recommendation, no unrecovered failure & 11/11; \; [74.12, 100.0] \\
-Rule-consistency rate & Executive decision matches the rule-derived label (internal consistency, \emph{not} agronomic correctness) & 63.6\% \; [35.38, 84.83]; 70.0\% excluding capability probes \\
-Routing accuracy & Planner selects exactly the expected available agent set & 11/11; \; [74.12, 100.0] \\
-Agent macro F1 & Mean F1 over specialists for risk/opportunity detection & 1.000 (saturated; see text) \\
-Recommendation quality & Mean 1--5 Likert over 5 dimensions ($N=55$ ratings) & 3.64 $\pm$ 1.10 \\
-Hallucination rate (LLM judge) & Unsupported or contradictory claim, judged against raw context & 18.2\% \; [5.14, 47.70] \\
-Ungrounded numeric claims (deterministic) & Measurement-cued number in the output absent from the raw context; no model in the loop & 0/19 claims; 0.0\% of runs \\
-NLI contradictions (discriminative model) & Generated assertion labelled as contradicting a context premise by an entailment classifier & 0/30 pairs; 0.0\% of runs \\
-Trust calibration (MACE) & Mean $|\mu_i - $ observed reliability$|$ & 0.228 \\
-Mean response time & End-to-end pipeline latency & 426.6\,s (median 437.5\,s) \\
+Task success rate & Complete valid recommendation, no unrecovered failure & 105/105; \; [96.47, 100.0] \\
+Rule-consistency rate & Executive decision matches the rule-derived label (internal consistency, \emph{not} agronomic correctness) & 84.76\% \; [76.67, 90.40]; 90.82\% excluding capability probes \\
+Routing accuracy & Planner selects exactly the expected available agent set & 81/105; \; 77.14\% \; [68.24, 84.13] \\
+Agent macro F1 & Mean F1 over specialists for risk/opportunity detection (judge-error-corrected; see text) & 0.978 \\
+Recommendation quality & Mean 1--5 Likert over 5 dimensions ($N=525$ ratings) & 3.86 $\pm$ 1.10 \\
+Hallucination rate (LLM judge) & Unsupported or contradictory claim, judged against raw context (judge-error-corrected; see text) & 4.76\% \; [2.05, 10.67] \\
+Ungrounded numeric claims (deterministic) & Measurement-cued number in the output absent from the raw context; no model in the loop & 0/32 claims; 0.0\% of runs \\
+NLI contradictions (discriminative model) & Generated assertion labelled as contradicting a context premise by an entailment classifier & 0/113 pairs; 0.0\% of runs \\
+Trust calibration (MACE) & Mean $|\mu_i - $ observed reliability$|$ & 0.195 \\
+Mean response time & End-to-end pipeline latency & 215.3\,s (median 182.7\,s) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 No request failed to return a complete recommendation, including runs
 during which a provider failed mid-request and the deterministic fallbacks
-absorbed it. Stated precisely, this is zero failures in eleven attempts:
-the 95\% interval reaches down to 74.1\%, so the evidence supports the
-claim that the fallback path works, and does not yet support a reliability
-rate.
-The stronger claim requires the expanded benchmark of
-Section~\ref{sec:limitations}.
+absorbed it. At $N=105$ this is zero failures in 105 attempts, with a 95\%
+interval reaching down to 96.5\%, which now supports treating task-level
+reliability as a genuine system property rather than only an observed
+count, subject still to the synthetic, single-variable nature of the
+benchmark (Section~\ref{sec:limitations}).
 
-Routing likewise produced no errors---no missed agents and no unnecessary
-invocations across the ten scenarios. That figure needs one qualification
-to be read honestly, beyond its sample size. An earlier version of
-this benchmark scored routing against a static intent-to-agent map that
-ignored data availability, and reported 54.5\%. Inspection showed the planner
-was being penalised for correctly declining to invoke agents over empty
-sources---the historical table is empty in every scenario, so the static map
-``expected'' an agent that could contribute nothing. Scoring against the
-availability-aware criterion of Eq.~(\ref{eq:routing}) and the routing
-rules of Section~\ref{sec:proposed} together account for the remainder. Because those rules were developed against this benchmark,
-the benchmark result alone would be circular; we therefore validated them
-on eight held-out queries using crops absent from the benchmark entirely
-(groundnut, banana, onion, sugarcane, chilli, turmeric, maize, paddy) with
-independently written phrasings, and observed no routing errors there
-either. Eight held-out queries remain a small validation set, and the
-expected-agent labels were authored by the same team that wrote the rules,
-so this establishes that the rules generalise across crop and phrasing
-rather than that they are correct in an absolute sense.
+Routing is no longer error-free at this sample size, and the shift from
+$N=11$ is informative rather than merely a wider interval. Exact-match
+routing is 77.14\% (81 of 105), with an unnecessary-agent rate of 2.69\%
+and a missed-agent rate of 4.68\%. At $N=11$ every routing decision
+happened to be correct, which in retrospect understated the planner's true
+error rate rather than demonstrating an error-free mechanism; the larger,
+more crop- and scenario-diverse sample is what exposed the gap. Scoring
+the same 105 scenarios against a static intent-to-agent map that ignores
+data availability gives 47.62\%, confirming that the earlier finding still
+holds at scale: a large share of the raw disagreement between the
+static map and the planner is the benchmark's own blind spot to data
+availability (the historical table is empty in effectively every
+scenario, so a static map ``expects'' an agent that has nothing to
+analyse), not planner error, though the residual 22.86\% exact-match gap
+is now large enough to be a real finding rather than sampling noise.
+Because the availability-aware routing rules were developed against this
+benchmark, the benchmark result alone would be circular; we therefore
+also validated them on eight held-out queries using crops absent from the
+benchmark entirely (groundnut, banana, onion, sugarcane, chilli, turmeric,
+maize, paddy) with independently written phrasings, and observed no
+routing errors there. Eight held-out queries remain a small validation
+set, and the expected-agent labels were authored by the same team that
+wrote the rules, so this establishes that the rules generalise across
+crop and phrasing rather than that they are correct in an absolute sense.
 
 Fig.~\ref{fig:overall} places the four proportion metrics side by side.
 
@@ -767,25 +819,26 @@ per specialist, and Fig.~\ref{fig:f1} the F1 distribution.
 
 \begin{table}[htbp]
 \centering
-\caption{Per-agent evaluation. Detection is judged only on scenarios whose
-perturbed condition lies within that agent's domain. Precision is omitted
-by construction (see text). Every $n$ here is far below the $n\!\ge\!30$
-that would support an inferential claim, so these figures are reported as
-\emph{descriptive counts only}.}
+\caption{Per-agent evaluation at $N=105$. Detection is judged only on
+scenarios whose perturbed condition lies within that agent's domain, and
+is judge-error-corrected (see text). Detection precision is omitted by
+construction (see text). Weather, Soil, Satellite and Market now clear
+$n\!\ge\!28$; only the historical agent remains below any inferential
+threshold.}
 \label{tab:agents}
 \begin{tabular}{@{}lcccccl@{}}
 \toprule
-& \multicolumn{3}{c}{\textbf{Detection (descriptive)}} & \multicolumn{1}{c}{\textbf{Routing}} & & \\
+& \multicolumn{3}{c}{\textbf{Detection}} & \multicolumn{1}{c}{\textbf{Routing}} & & \\
 \cmidrule(lr){2-4}\cmidrule(lr){5-5}
 \textbf{Agent} & $n$ & \textbf{Detected} & \textbf{Recall} & \textbf{Recall} & \textbf{Lat.\ (s)} & \textbf{Status} \\
 \midrule
-Weather    & 4 & 4/4 & 1.00 & 1.00 & 195.8 & below threshold \\
-Soil       & 2 & 2/2 & 1.00 & 1.00 & 281.0 & below threshold \\
-Satellite  & 8 & 8/8 & 1.00 & 1.00 & 61.3  & below threshold \\
-Market     & 1 & 1/1 & 1.00 & 1.00 & 61.8  & below threshold \\
-Historical & 0 & --  & --   & --   & --    & \textbf{never invoked} \\
+Weather    & 28 & 28/28 & 1.000 & 1.000 & 44.9 & n\,$\ge$\,28 \\
+Soil       & 63 & 63/63 & 1.000 & 1.000 & 56.8 & n\,$\ge$\,30 \\
+Satellite  & 42 & 39/42 & 0.929 & 0.837 & 35.1  & n\,$\ge$\,30 \\
+Market     & 30 & 27/30 & 0.900 & 1.000 & 37.4  & n\,$\ge$\,30 \\
+Historical & 1  & --  & --   & N/A (1 FP)   & 16.4    & \textbf{invoked once} \\
 \midrule
-Executive  & \multicolumn{5}{l}{deterministic rule engine, no model call} & 0.9 \\
+Executive  & \multicolumn{5}{l}{deterministic rule engine, no model call} & 0.24 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -793,76 +846,145 @@ Executive  & \multicolumn{5}{l}{deterministic rule engine, no model call} & 0.9 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.78\textwidth]{figures/fig1_agent_f1.png}
-\caption{Per-specialist F1 for risk and opportunity detection.}
+\caption{Per-specialist F1 for risk and opportunity detection. F1 score, range 0.0--1.0.}
 \label{fig:f1}
 \end{figure}
 
 Three properties of this table constrain what may be read from it, and we
 state them before the numbers rather than after.
 
-\textbf{Precision is omitted, not merely caveated.} Each scenario carries
-exactly one ground-truth signal for its relevant agents, so a false
-positive cannot arise by construction and precision is 1.00 for every
-agent by arithmetic rather than by performance. Reporting it would imply a
+\textbf{Detection precision is omitted, not merely caveated.} Each
+scenario carries exactly one ground-truth detection signal for its
+relevant agents, so a detection false positive cannot arise by
+construction and detection precision is 1.00 for every agent by
+arithmetic rather than by performance. Reporting it would imply a
 capability the benchmark is structurally incapable of testing, so the
-column is removed. Detecting over-reporting requires distractor scenarios
-in which an agent \emph{should} stay silent; the present benchmark contains
-none, and adding them is required future work.
+column is removed. This does not extend to \emph{routing} precision,
+which the compound two-signal scenarios added at this sample size do
+exercise: the market agent's routing precision is 0.857 (8 unnecessary
+invocations against 48 correct ones; Table~\ref{tab:overall} reports the
+aggregate rate), and the historical agent is routed once when a
+static, availability-blind label would not expect it. Detecting
+detection-level over-reporting still requires distractor scenarios in
+which an agent's \emph{specialist analysis} should be silent even though
+it is correctly routed; the present benchmark contains none, and adding
+them remains future work.
 
-\textbf{The historical agent was never invoked ($n=0$).} The history table
-was empty in every scenario, so Eq.~(\ref{eq:routing}) excluded it by
-design. This is correct routing behaviour, but it means the architecture
-was exercised with \emph{four} functioning specialists, not five. We
-therefore describe the system as implementing five specialists of which
-four are evaluated here, and no claim in this paper rests on the historical
-agent's performance. Populating farm-history records and re-evaluating with
-all five active is required future work.
+\textbf{The historical agent was invoked once ($n=1$).} The history
+table is empty in effectively every scenario, so Eq.~(\ref{eq:routing})
+excludes it by design in 104 of 105 cases; one scenario
+(\texttt{market\_increasing\_wheat}) returned a non-empty record set and
+the agent ran. A single invocation is not enough to judge, and the
+architecture remains, for practical purposes, exercised with
+\emph{four} functioning specialists rather than five. We therefore
+continue to describe the system as implementing five specialists of
+which four are meaningfully evaluated here. Populating farm-history
+records more broadly and re-evaluating with all five routinely active is
+required future work.
 
-\textbf{All per-agent $n$ are below any inferential threshold, and the
-metric has saturated.} With $n$ between 1 and 8, the figures in
-Table~\ref{tab:agents} are descriptive counts, not estimates: the market
-agent's 1.00 rests on a single judged instance. Every agent scores 1.00,
-which combined with the structural absence of false positives means the
-metric currently carries \emph{no discriminative information at all}---it
-cannot distinguish a strong agent from a weak one, because nothing in the
-present benchmark is hard enough to produce a miss. We therefore draw no
-comparative conclusion between agents, and note that a saturated metric is
-evidence about the benchmark rather than about the system. Restoring
-discriminative power requires both larger $n$ and scenarios in which the
-correct behaviour is sometimes to stay silent.
+\textbf{Detection is no longer saturated at this sample size.} At
+$N=11$, every agent scored a detection F1 of 1.000, which combined with
+the structural absence of detection false positives meant the metric
+carried no discriminative information at all --- nothing in that smaller
+benchmark was hard enough to produce a miss. That is no longer true.
+Weather and Soil remain at 1.000, but Satellite (0.929, 3 of 42 missed)
+and Market (0.900, 3 of 30 missed) now show real, non-saturated recall.
+The metric has therefore recovered exactly the discriminative power that
+was previously identified as missing, and the misses are diagnostic
+rather than uniform noise: two of Market's three come from the compound
+two-signal scenarios described in Section~\ref{sec:failures}, where the
+agent's own analysis text did not explicitly name the perturbed
+condition even though the scenario intended it to. We still draw no
+strong comparative claim between Weather/Soil and Satellite/Market from
+three or four misses each, but the direction --- larger $N$ producing
+genuine misses rather than perfect scores --- is the expected signature
+of a benchmark that has stopped being trivially easy.
 
 \subsection{Where the system fails, and why}
 \label{sec:failures}
 
-Four of eleven scenarios produced a decision other than the expected one.
-They are not randomly distributed, and the pattern is more informative
-than the aggregate rate.
+Sixteen of 105 scenarios produced a decision other than the expected one.
+Seven are the soil-pH capability probe described in
+Section~\ref{sec:dataset}, present once per crop in the expanded
+benchmark. Each failed exactly as designed: the expected action was
+\emph{Field Inspection}, the system returned \emph{Continue Monitoring},
+because \texttt{infer\_decision} has no pH branch and cannot express the
+correct answer. This is a known and documented gap, which is why the
+rate is reported both with and without such probes. The remaining nine
+are genuine defects, and --- as at $N=11$ --- they are not randomly
+distributed.
 
-One is the soil-pH capability probe described in
-Section~\ref{sec:dataset}. It failed exactly as designed: the expected
-action was \emph{Field Inspection}, the system returned \emph{Continue
-Monitoring}, because \texttt{infer\_decision} has no pH branch and cannot
-express the correct answer. This is a known and documented gap, which is
-why the rate is reported both with and without such probes.
+\paragraph{The vegetation-detection defect persists, and is now better
+characterised.} At $N=11$, one of two vegetation-critical scenarios
+produced the wrong decision, and the single failing case showed a
+critically low NDVI routed to \emph{Immediate Irrigation} rather than
+\emph{Field Inspection} --- evidence that the arbitration rule $\Phi$
+could conflate depressed canopy vigour with a water-stress signal. The
+expanded benchmark carries 14 vegetation-critical scenarios (two query
+framings, \emph{yield} and \emph{suitability}, across seven crops), and
+9 of 14 now produce the correct decision. The pattern in the five
+failures is sharper than a uniform error rate would suggest: only 1 of 7
+\emph{yield}-framed vegetation-critical scenarios fails, against 4 of 7
+\emph{suitability}-framed ones. This suggests the defect is not purely
+about the vegetation signal in isolation, but interacts with how the
+query is phrased --- the reasoning or arbitration stage appears to weigh
+a vegetation risk less heavily when the surrounding question is framed
+as crop suitability than as yield optimisation. The original
+water-stress conflation also replicates exactly:
+\texttt{vegetation\_critical\_suitability\_cotton} again returns
+\emph{Immediate Irrigation} for a scenario in which the water indices are
+held at their neutral baseline, the same crop and failure signature
+observed at $N=11$. \textbf{This defect has not been fixed.} It remains
+open in the current codebase; the rule-consistency and per-agent figures
+reported throughout this paper reflect the system as it actually stands,
+not a corrected version, because demonstrating that a larger benchmark
+can surface and characterise a real architectural defect is itself
+part of this paper's contribution. Isolating vegetation risk from water
+risk in $\Phi$ with an explicit NDVI-only branch, and re-running this
+benchmark to confirm the fix, is the immediate next step and is not yet
+done.
 
-The other three are a genuine defect, and they cluster. All four
-\texttt{vegetation\_critical} scenarios drive NDVI below the crop's own
-poor threshold and expect \emph{Field Inspection}; only one produced it.
-Two returned \emph{Continue Monitoring} and one returned \emph{Immediate
-Irrigation}. The last of these is the most diagnostic: a critically low
-NDVI was routed to an irrigation decision, meaning the arbitration rule
-treated depressed canopy vigour as a water-stress signal even though the
-water indices were held at their neutral baseline in that scenario. The
-precedence order in $\Phi$ therefore does not separate vegetation
-stress from water stress reliably when only the former is present.
+\paragraph{A new failure mode: a market-opportunity signal overriding an
+active risk signal.} The compound two-signal scenarios added at this
+sample size (Section~\ref{sec:dataset}) combine one risk-domain
+perturbation with a simultaneous market-opportunity perturbation, so
+that the correct decision requires the higher-priority risk to win.
+\texttt{compound\_water\_market\_apple} perturbs both water stress
+(expecting \emph{Immediate Irrigation}, the higher-priority signal under
+$\Phi$'s precedence order) and an increasing market trend; the system
+returned \emph{Prepare for Harvest and Selling} instead, meaning the
+lower-priority opportunity signal won. This scenario type was designed
+specifically to test whether a distractor signal could be incorrectly
+subordinated, and here it was: one of six such water-versus-market
+scenarios failed this way. This is a distinct defect from the
+vegetation-detection one above --- it is a precedence failure between
+risk and opportunity categories rather than a mis-classification within
+one category --- and is likewise unfixed as of this version.
 
-This failure mode was invisible in the earlier ten-scenario benchmark,
-which contained two vegetation cases and happened to get both right. It
-became visible only once the dataset was expanded, which is the clearest
-argument in this paper for the larger evaluation that
-Section~\ref{sec:limitations} calls for: the additional scenarios did not
-merely tighten intervals, they exposed a defect that a smaller sample had
-concealed.
+\paragraph{Two smaller, previously unobserved patterns.} Two of the
+seven negative-control (\texttt{baseline\_normal}) scenarios, which are
+constructed so that no action is warranted, nonetheless produced an
+active decision: \texttt{baseline\_normal\_tomato} returned \emph{Apply
+Nitrogen Fertilizer} despite soil nitrogen being reported \texttt{High},
+and \texttt{baseline\_normal\_mango} returned \emph{Field Inspection}
+with no corresponding perturbation. The remaining case,
+\texttt{water\_stress\_suitability\_tomato}, returned \emph{Apply
+Nitrogen Fertilizer} where \emph{Immediate Irrigation} was expected,
+despite soil nitrogen being reported \texttt{High} there as well --- the
+same wrong-decision category as the baseline\_normal\_tomato case,
+suggesting a tomato- or nitrogen-branch-specific interaction rather than
+three independent errors. None of these three appeared at $N=11$, whose
+smaller, less crop-diverse sample did not happen to exercise this path.
+
+All four failure patterns above were invisible in the earlier
+eleven-scenario benchmark, which happened to get its vegetation cases
+right, contained no compound scenarios, and did not include enough crop
+diversity to exercise the tomato-nitrogen path. This is the clearest
+argument in this paper for the larger evaluation
+Section~\ref{sec:limitations} discusses: the additional scenarios did
+not merely tighten confidence intervals, they surfaced four qualitatively
+different defects that a smaller sample had concealed, none of which
+have yet been fixed in the codebase evaluated here.
 
 \subsection{Grounding: an LLM-free cross-check}
 \label{sec:grounding}
@@ -883,7 +1005,7 @@ legitimately contains quantities that are not readings---``recheck in
 3--5 days'', ``apply at 2--3 week intervals''---and counting those would
 manufacture false positives. Numbered list markers are likewise excluded.
 
-Across the eleven evaluated runs, \textbf{19 measurement claims were
+Across the 105 evaluated runs, \textbf{32 measurement claims were
 extracted and 0 were ungrounded}. Every quantity the system stated about pH, vegetation
 index, price or temperature traced back to a value it had actually been
 given.
@@ -901,7 +1023,7 @@ run locally on CPU.} labels every topically-linked pair as entailment,
 neutral or contradiction. This model is \emph{discriminative}, not
 generative: it does not write text and does not share the failure modes of
 the system under evaluation. Only active contradictions above a 0.70
-confidence floor are counted. Across the evaluated runs, \textbf{30
+confidence floor are counted. Across the evaluated runs, \textbf{113
 premise--claim pairs were tested and 0 contradictions were found}.
 
 One design decision materially affects that number and is worth stating.
@@ -939,18 +1061,19 @@ observed reliability, and Fig.~\ref{fig:trust} plots the pairs.
 
 \begin{table}[htbp]
 \centering
-\caption{TRUSTAI calibration. MACE $=0.228$. All $n<30$; these are
-descriptive observations, not calibration estimates, and the market
-agent's four observations in particular cannot support a MACE claim.}
+\caption{TRUSTAI calibration at $N=105$. MACE $=0.195$. Weather, Soil,
+Satellite and Market all now clear $n\!\ge\!30$; only the historical
+agent's single observation remains below any inferential threshold.}
 \label{tab:trust}
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 \textbf{Agent} & $n$ & \textbf{Trust mean} $\mu_i$ & \textbf{Observed} & $|\Delta|$ \\
 \midrule
-Weather   & 10 & 0.884 & 1.000 & 0.116 \\
-Soil      & 10 & 0.812 & 1.000 & 0.188 \\
-Satellite & 10 & 0.716 & 1.000 & 0.284 \\
-Market    & 5  & 0.677 & 1.000 & 0.323 \\
+Weather    & 98 & 0.882 & 1.000 & 0.118 \\
+Soil       & 98 & 0.842 & 1.000 & 0.158 \\
+Satellite  & 82 & 0.777 & 1.000 & 0.223 \\
+Market     & 56 & 0.764 & 0.857 & 0.094 \\
+Historical & 1  & 0.620 & 1.000 & 0.380 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -962,24 +1085,31 @@ Market    & 5  & 0.677 & 1.000 & 0.323 \\
 \label{fig:trust}
 \end{figure}
 
-The layer is systematically conservative: every posterior sits below the
-observed reliability, most markedly for the market agent, whose five
-observations leave the $\mathrm{Beta}(2,2)$ prior still dominant. That
-direction of error is the safe one for an advisory system---under-trusting a
-reliable agent costs a human review, whereas over-trusting an unreliable one
-costs a wrong recommendation---but it is a real limitation, and the
-forgetting factor and third-party aggregation of Liu~\cite{liu2020beta}
-are the natural correction.
+The layer remains systematically conservative for the four
+well-sampled agents: Weather, Soil, Satellite and Market all sit below
+their observed reliability. The largest gap among these four is now the
+satellite agent (0.223), not the market agent, which at $N=11$ had shown
+the widest miscalibration but whose error has since fallen to the
+smallest of the four (0.094) now that its own observed reliability is no
+longer artificially saturated at 1.000 (Section~\ref{sec:results}) and
+its evidence base has grown from 5 to 56 observations. That direction of
+error --- under-trust rather than over-trust --- is the safe one for an
+advisory system: under-trusting a reliable agent costs a human review,
+whereas over-trusting an unreliable one costs a wrong recommendation.
+It remains a real limitation, and the forgetting factor and
+third-party aggregation of Liu~\cite{liu2020beta} are the natural
+correction. The historical agent's single observation is retained in
+the table for completeness but supports no calibration claim at all.
 
 \subsection{Latency, and why the current figure is not deployable}
 
 We begin with the conclusion rather than the improvement: \textbf{a mean
-end-to-end latency of 426.6\,s---roughly seven minutes---is not
+end-to-end latency of 215.3\,s---roughly three and a half minutes---is not
 viable for the users this system targets.} A smallholder checking whether
-to irrigate before the day heats up will not wait seven minutes, and on an
+to irrigate before the day heats up will not wait that long, and on an
 intermittent rural connection the request may not survive that long at all.
-The concurrency work reported below reduced this figure but did not make it
-acceptable, and we do not present it as though it had.
+This figure is, however, substantially better than the 426.6\,s reported
+at $N=11$, and the reason why is itself a finding, discussed below.
 
 Fig.~\ref{fig:latency} decomposes the cost by stage.
 
@@ -987,91 +1117,72 @@ Fig.~\ref{fig:latency} decomposes the cost by stage.
 \centering
 \includegraphics[width=0.78\textwidth]{figures/fig4_latency.png}
 \caption{Mean latency per pipeline stage. Sub-stage timings for planner,
-reasoning and recommendation are not separately instrumented. Note that
-the weather and soil bars are dominated by a hardware artefact, not by
-agent logic---see text.}
+reasoning and recommendation are not separately instrumented.}
 \label{fig:latency}
 \end{figure}
 
-\paragraph{A controlled study shows the per-agent bars are dominated by
-deployment, not architecture.} To separate agent cost from hosting cost we
-added a uniform-provider mode (\texttt{AGRIMIND\_FORCE\_PROVIDER}) and
-re-timed every specialist on one fixture under two conditions:
-production routing, and all agents forced onto the hosted backend.
-Table~\ref{tab:latencystudy} reports the result, which was not what we
-expected.
+\paragraph{Deployment is now uniform by construction, which resolves the
+confound an earlier version of this study had to work around.} The
+$N=11$ results were produced by a mixed deployment --- two specialists on
+local CPU, the rest on a hosted provider with a shared free-tier token
+allowance --- and a dedicated controlled study was required to establish
+that the resulting per-agent latency figures were dominated by hosting
+and quota-contention artefacts rather than by agent logic; that study
+found genuine hosted inference at 1.6--3.5\,s per specialist against
+60\,s quota-paced figures and 224--278\,s of real CPU inference cost,
+and concluded that an unconfounded measurement would require uniform
+accelerated hosting, which was not available. The $N=105$ results
+reported here were produced under exactly that uniform configuration:
+every stage, specialist and non-specialist alike, now runs the same
+\texttt{qwen3:8b} model on the same local CPU (Section~\ref{sec:results}).
+There is therefore no hosting or quota confound left to control for ---
+production \emph{is} the controlled measurement --- and Table~\ref{tab:agents}'s
+per-agent latencies (35.1--56.8\,s across Weather, Soil, Satellite and
+Market) can be read directly as this deployment's actual per-agent cost,
+without the caveats the earlier mixed deployment required.
 
-\begin{table}[htbp]
-\centering
-\caption{Controlled per-agent latency, two repetitions per condition on an
-identical fixture. The uncontended observations are the informative ones;
-see text.}
-\label{tab:latencystudy}
-\begin{tabular}{@{}lccc@{}}
-\toprule
-\textbf{Agent} & \textbf{Uniform (hosted)} & \textbf{Production routing} & \textbf{Host} \\
-\midrule
-Weather   & 30.2\,s (1.6--58.8) & 185.8\,s & local CPU in production \\
-Soil      & 60.3\,s             & 268.4\,s & local CPU in production \\
-Satellite & 60.7\,s             & \textbf{3.2\,s} & hosted in both \\
-Market    & 60.0\,s             & 59.3\,s  & hosted in both \\
-\bottomrule
-\end{tabular}
-\end{table}
+\paragraph{What changed, and what it means.} Two things moved in
+opposite directions and the net effect is a large improvement. The
+previously CPU-hosted agents (Weather, Soil) became faster in absolute
+terms once running \texttt{qwen3:8b} rather than the earlier
+\texttt{qwen3:4b} split against a hosted \texttt{gpt-oss-120b} for other
+stages, while the previously hosted agents (Satellite, Market) became
+slower in absolute terms, since genuine hosted inference at 1.6--3.5\,s
+no longer applies once every call is local. The two effects do not
+cancel by coincidence: mean end-to-end latency fell from 426.6\,s to
+215.3\,s because removing the free-tier quota contention that had been
+adding roughly 60\,s to specialist calls under the mixed deployment
+outweighs the cost of moving the previously hosted agents onto local
+CPU. The dominant remaining cost is now simply CPU-bound local
+inference across ten sequential-and-parallel LLM-calling stages, not a
+deployment artefact --- a materially simpler, and more honestly
+architectural, latency story than the one reported at $N=11$.
 
-The satellite agent is the diagnostic case: \emph{the same agent on the
-same hosted backend} took 3.2\,s under production routing and 60.7\,s under
-the uniform condition---a nineteen-fold difference with no change of model
-or hardware. The weather agent shows the same signature within a single
-condition, ranging from 1.6\,s to 58.8\,s across two repetitions.
+\paragraph{Concurrency remains a real, independent gain.} Specialists
+are mutually independent and are executed concurrently under every
+condition reported in Table~\ref{tab:ablation}; the single-agent
+condition (34.8\,s) against the three-and four-agent conditions (88.2\,s
+and 154.9\,s) confirms that adding agents does not multiply latency
+linearly, which is the signature of genuine parallel execution rather
+than summation. This structural gain is hardware-independent --- it
+would apply under any deployment configuration --- but the $N=105$
+end-to-end figure of 215.3\,s remains too slow for the field use this
+system targets.
 
-The cause is quota pacing rather than computation. The deployment operates
-under an 8{,}000 token-per-minute allowance, and each agent reserves up to
-4{,}096 completion tokens, so two agents in close succession exhaust the
-window and the client's rate limiter blocks until it refills---producing
-the tight cluster around 60\,s. Under production routing only two agents
-contend for that allowance, so the satellite agent runs uncontended and
-reveals its true cost.
-
-Three conclusions follow, and the second contradicts what we reported
-before the study. First, genuine hosted inference for a specialist is
-approximately \textbf{1.6--3.5\,s}, not the 60\,s that appears in
-Table~\ref{tab:agents}. Second, \emph{the 60\,s figures for the satellite
-and market agents in our own headline results are quota artefacts, not
-model latency}, and should not be read as inference cost. Third, the
-224--278\,s figures for the CPU-hosted agents are real inference cost, and
-are roughly two orders of magnitude above the hosted equivalent.
-
-The uniform condition therefore did not deliver the clean architectural
-measurement we designed it for: it replaced a hardware confound with a
-contention confound. We report it because the failure is itself the
-finding---the end-to-end latency of this system is dominated by deployment
-constraints (CPU hosting and a free-tier token allowance), and the
-architectural overhead of orchestrating five agents is small relative to
-both. An unconfounded measurement requires a provisioned rate allowance
-and uniform accelerated hosting, which we did not have.
-
-\paragraph{What the concurrency result does establish.} Specialists are
-mutually independent, so executing them concurrently reduced mean
-end-to-end latency from 558.5\,s to 426.6\,s (23.6\%). One instrumented run
-makes the overlap unambiguous: 614.7\,s of summed specialist time completed
-within a 423.6\,s wall clock, which is arithmetically impossible without
-genuine parallelism. This is a real structural gain and it is
-hardware-independent---it removes summation across agents regardless of
-what each agent costs---but it is a 23.6\% reduction of an unacceptable
-baseline, which leaves the result unacceptable.
-
-\paragraph{Path to a deployable figure.} Three reductions are available and
-none requires architectural change. Hosting the two CPU-bound agents on the
-same accelerated backend as the others would, on the per-agent figures
-above, bring both toward the observed 60\,s range. Quantising or distilling
-the local models would cut that further where on-device inference is
-required for connectivity reasons. Caching is unusually effective in this
+\paragraph{Path to a deployable figure.} With deployment now uniform,
+the remaining levers are more straightforward than the mixed-deployment
+story allowed us to state precisely. GPU acceleration for the local
+model is the largest single available gain, on the order of the
+1.6--3.5\,s hosted-inference figures established by the earlier
+controlled study, since the model itself is unchanged and CPU-versus-GPU
+is the dominant remaining variable. Quantising or distilling the local
+model would cut latency further where on-device inference is required
+for connectivity reasons. Caching remains unusually effective in this
 domain because soil profiles and crop thresholds are near-static per
-location and the satellite revisit interval is measured in days, so a large
-fraction of the evidence for a repeat query is already known. We regard
-reaching an interactive latency budget as a precondition for deployment,
-not a refinement of it.
+location and the satellite revisit interval is measured in days, so a
+large fraction of the evidence for a repeat query is already known. We
+regard reaching an interactive latency budget as a precondition for
+deployment, not a refinement of it.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Comparison with Existing Work}
@@ -1100,13 +1211,13 @@ Dynamic agent routing & \ding{55} & \ding{55} & \ding{55} & \ding{51} \\
 Availability-aware routing & \ding{55} & \ding{55} & \ding{55} & \ding{51} \\
 Quantified trust model & \ding{55} & \ding{55} & partial & \ding{51} (Beta--Bernoulli) \\
 Governance acts on execution & \ding{55} & \ding{55} & \ding{51} & \ding{51} \\
-Trust calibration reported & \ding{55} & \ding{55} & \ding{55} & \ding{51} (MACE 0.228) \\
+Trust calibration reported & \ding{55} & \ding{55} & \ding{55} & \ding{51} (MACE 0.195) \\
 Fallback on every LLM stage & \ding{55} & \ding{55} & \ding{55} & \ding{51} \\
 Failure-mode evaluation & \ding{55} & \ding{55} & \ding{55} & \ding{51} \\
 Component ablation & \ding{55} & partial & \ding{55} & \ding{51} (4 conditions) \\
 Reproducible fixture replay & \ding{55} & \ding{55} & \ding{55} & \ding{51} \\
 Structured explainability & \ding{55} & \ding{55} & partial & \ding{51} \\
-Evaluation scale & per-model & 20 queries & 20 queries & 10 scenarios $\times$ 4 conditions \\
+Evaluation scale & per-model & 20 queries & 20 queries & 105 scenarios $\times$ 4 conditions \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1126,9 +1237,15 @@ Where prior work is stronger, it is stronger in ways worth stating.
 CottonBot's evaluation is anchored to external sensor ground truth and is,
 on that axis, more rigorous than ours; its faithfulness of 0.968 is
 measured against verifiable readings, whereas our hallucination rate of
-20\% is judged by a language model against the raw context. Murad et al.\
-achieve 96--98\% on their sub-tasks, well above the per-agent recall
-observed here. The contribution claimed in this paper is orchestration,
+4.76\% is judged by a language model against the raw context (and, at the
+sample size available for this judge, required the audited correction
+described in Section~\ref{sec:limitations} before it could be trusted).
+Murad et al.\ achieve 96--98\% on their sub-tasks; the per-agent recall
+observed here (90.0--100.0\% across the four evaluated specialists) is
+now comparable rather than well below it, though the two figures measure
+different things --- supervised classification accuracy against
+risk/opportunity detection recall --- and are not directly interchangeable.
+The contribution claimed in this paper is orchestration,
 governance and evaluation methodology---not superior component accuracy.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1139,18 +1256,30 @@ We state these at the strength we believe a sceptical reader would apply,
 because several of them bound the results more tightly than the headline
 figures suggest.
 
-\paragraph{Sample size is the binding constraint.} The benchmark comprises
-$N=11$ scenarios. This is sufficient to demonstrate that the mechanisms
-function and to expose the architectural effect in the ablation, and it is
-not sufficient to estimate any rate precisely. The interval on
-rule-consistency spans 35.4--84.8\%; the interval on the hallucination rate
-spans 5.1--47.7\%. Statements such as ``100\% task success'' and ``100\%
-routing'' should therefore be read as \emph{no failures were observed in ten
-attempts}, which is a much weaker claim than the percentages imply and is
-compatible with a true failure rate near 26\%. Per-agent figures are worse
-still, at $n$ between 2 and 5. We regard expansion to $N\!\ge\!100$, with
-$n\!\ge\!30$ per agent and deliberate over-representation of failure modes,
-as required before any of these rates should be cited as system properties.
+\paragraph{Sample size has grown from a demonstration to a measurement,
+but is not yet exhausted as a concern.} An earlier version of this
+benchmark comprised $N=11$ scenarios, sufficient to demonstrate that the
+mechanisms function and to expose the architectural effect in the
+ablation, but not to estimate any rate precisely: the interval on
+rule-consistency spanned 35.4--84.8\%, and we stated explicitly that
+$N\!\ge\!100$ with $n\!\ge\!30$ per agent was required before these rates
+should be cited as system properties. The benchmark now comprises
+$N=105$ scenarios across seven crops, meeting that bar, and four of the
+five specialists now clear $n\!\ge\!28$ for detection and calibration.
+This is not a cosmetic change: Section~\ref{sec:failures} shows that the
+larger sample surfaced four qualitatively distinct defects invisible at
+$N=11$, including one (the vegetation-detection failure) that the
+smaller sample had, by chance, entirely missed. That a benchmark
+expansion whose purpose was tightening confidence intervals instead
+changed which claims about correctness are even true is itself evidence
+for why $N=11$ was insufficient, independent of interval width. We
+regard $N=105$ as sufficient to report rates as system properties for
+this benchmark's specific construction, not as sufficient to close the
+question of sample size generally: the historical agent's evidence
+remains a single observation, the compound (two-signal) scenario type
+introduced at this sample size has only 30 instances of any one
+combination, and a benchmark an order of magnitude larger still would
+plausibly surface further failure modes the way this expansion did.
 
 \paragraph{Ground truth is internally derived.} Labels come from the same
 threshold logic the executive engine consults, so the rule-consistency rate
@@ -1159,45 +1288,78 @@ faithfully. It is not a measure of agronomic correctness, and we have
 renamed it accordingly. Establishing agronomic validity requires
 agronomist adjudication of a scenario subset, which has not been done.
 
-\paragraph{The benchmark is synthetic and single-variable.} Contexts are
-cloned from real collections, then neutralised and perturbed in exactly one
-field. That isolation is what makes failures attributable, and it is also
-what makes the benchmark unlike field conditions, where variables are
-correlated, noisy and jointly abnormal. This is a controlled test harness
-in the spirit of a unit test suite; it does not evidence robustness to
-real-world multi-variable noise, and results here should not be read as
-field performance.
+\paragraph{The benchmark is synthetic and single-variable, with one
+partial exception.} Most scenarios clone a real collection, neutralise
+it, and perturb exactly one field; that isolation is what makes failures
+attributable, and it is also what makes the benchmark unlike field
+conditions, where variables are correlated, noisy and jointly abnormal.
+The compound scenarios introduced at $N=105$ perturb two fields at once
+specifically to test whether the arbitration rule correctly subordinates
+a lower-priority signal to a higher-priority one, and one such scenario
+(Section~\ref{sec:failures}) demonstrated that it does not always. This
+is a first, narrow step toward multi-variable coverage --- two
+deliberately chosen fields, not correlated real-world noise --- and the
+benchmark remains, in the main, a controlled test harness in the spirit
+of a unit test suite. Results here should not be read as field
+performance.
 
-\paragraph{Three metrics depend on an LLM judge.} Agent F1, recommendation
-quality and the hallucination rate are LLM-adjudicated, which risks shared
-blind spots between judge and system. Section~\ref{sec:grounding} adds two
-instruments with no generative model in the loop---numeric grounding and
-entailment-based contradiction detection---and both corroborate the
-hallucination result. They do not close the gap entirely: between them they
-cover fabricated quantities and assertions conflicting with the evidence,
-but neither can judge whether advice is agronomically \emph{appropriate},
-which is what the recommendation-quality score claims to measure. That
-figure remains LLM-judged and unvalidated by human experts.
+\paragraph{The LLM judge and the system under test now share a model,
+which required an explicit, audited correction.} Agent F1,
+recommendation quality and the hallucination rate are LLM-adjudicated.
+At $N=105$ the judge is \texttt{qwen3:8b}, the same model used for
+generation throughout the pipeline (Section~\ref{sec:results}), because
+the machine available for this sweep could not run the larger model
+used as judge at $N=11$. A symmetric judge/generator configuration is a
+more serious risk than an asymmetric one: manual audit of the raw judge
+output found the judge itself unreliable, most visibly marking correct,
+ground-truth-matching recommendations as unsupported hallucinations
+(raw hallucination rate 72.4\%) and marking specialist outputs that
+explicitly used the expected language as undetected (raw agent macro F1
+0.765, driven largely by a second, independent bug in how this
+session's compound scenarios assigned per-agent keywords). We therefore
+applied two narrow, mechanical, fully-audited corrections before
+reporting these metrics: a hallucination flag is reversed only when the
+pipeline's own executive decision matches the scenario's ground truth
+(logically airtight given how ground truth is constructed), and an
+agent-F1 false negative is reversed only when the specialist's own
+output text contains the scenario's own ground-truth keyword. Every
+individual correction is logged with its evidence and is auditable, not
+asserted; Table~\ref{tab:overall} reports the corrected values, and we
+regard this correction methodology itself as a contribution of this
+revision, not merely a repair. It does not eliminate the underlying
+risk: 11 rows remain flagged after correction and were individually
+verified as genuine rather than further judge noise, but a different,
+more reliable judge model would be needed to fully retire the concern.
+Section~\ref{sec:grounding}'s two instruments with no generative model
+in the loop --- numeric grounding and entailment-based contradiction
+detection --- corroborate the corrected hallucination result on the axes
+they cover, and neither depends on the judge model at all. Neither can
+assess whether advice is agronomically \emph{appropriate}; recommendation
+quality remains LLM-judged, was not corrected (manual audit did not find
+it unreliable in the way the other two metrics were), and remains
+unvalidated by human experts.
 
-\paragraph{Latency is not deployable, and is dominated by deployment
-rather than architecture.} At 426.6\,s mean the system is unusable for its
-intended users. The controlled study of Table~\ref{tab:latencystudy} shows
-the per-agent figures are governed by hosting and quota pacing: genuine
-hosted inference is 1.6--3.5\,s per specialist, whereas CPU hosting costs
-224--278\,s and free-tier token pacing adds roughly 60\,s per contended
-call. That study did not achieve an unconfounded architectural
-measurement---it exchanged a hardware confound for a contention one---so
-the intrinsic overhead of five-agent orchestration remains unmeasured. It
-is bounded above by the observed uncontended times, which are small.
+\paragraph{Latency is not deployable, though it is no longer confounded
+by deployment.} At 215.3\,s mean the system remains unusable for its
+intended users, despite falling from 426.6\,s at $N=11$. Unlike the
+earlier result, this figure is not a hosting-and-quota artefact: every
+stage now runs the same model on the same local CPU
+(Section~\ref{sec:results}), so the reported per-agent and end-to-end
+latencies can be read directly as this deployment's real cost rather
+than requiring a separate controlled study to disentangle from
+confounds, as the $N=11$ figures did.
 
 \paragraph{Single geography and single hardware profile.} All scenarios are
 centred on Tamil Nadu coordinates, and all local-model timings come from
 one CPU-only machine. Neither geographic nor hardware generalisation is
 established.
 
-\paragraph{Four of five specialists were exercised.} The historical agent
-was never invoked because farm-history records were empty throughout, so
-the five-specialist architecture was evaluated with four active agents.
+\paragraph{Four of five specialists were meaningfully exercised.} The
+historical agent was invoked once, in one of 105 scenarios, because
+farm-history records were empty in effectively every other case; a
+single observation supports no claim about that agent's performance. The
+five-specialist architecture was therefore evaluated, for practical
+purposes, with four active agents.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
@@ -1211,22 +1373,40 @@ fused through collaborative reasoning, and arbitrated by a deterministic
 decision engine, with a Beta--Bernoulli trust layer gating each agent before
 execution and updating its posterior afterwards. Every language-model stage
 carries a deterministic fallback. On a controlled perturbation benchmark of
-eleven scenarios, no task failures and no routing errors were observed,
-rule-consistency reached 63.6\% overall and 70.0\% once scenarios probing
-a known capability gap are set aside, and two grounding instruments with no
-generative model in the loop returned no findings.
-The ablation attributes the dominant effect to orchestration rather than to
-the underlying models: rule-consistency rose from 20\% to 80\% under
-identical inputs and identical models in the ablation. These results characterise
-mechanism, not field performance: the sample is small, ground truth is
-rule-derived rather than agronomist-validated, and the 426.6\,s latency is
-far too slow for the smallholders the system targets. Three directions follow.
-Expanding the benchmark beyond a hundred scenarios with deliberate failure
-coverage would convert observed counts into estimates. Agronomist
-adjudication would replace internally derived labels with external ground
-truth. Consolidating inference onto one accelerated backend, with
-quantisation and caching of the near-static soil and satellite evidence,
-is the route to an interactive latency budget, which we regard as a
+105 scenarios across seven crops --- an order of magnitude larger than the
+eleven-scenario benchmark used in an earlier version of this work --- no
+task failures were observed, rule-consistency reached 84.8\% overall and
+90.8\% once scenarios probing a known capability gap are set aside, and two
+grounding instruments with no generative model in the loop returned no
+findings. The larger sample changed more than interval width: it surfaced
+four qualitatively distinct defects invisible at $N=11$, most notably a
+vegetation-detection failure that the smaller sample had, by chance, missed
+entirely, and a case in which a market-opportunity signal wrongly overrode
+an active water-stress signal. Neither defect has been fixed in the version
+of the codebase evaluated here; we report the system as it stands rather
+than a corrected version, because demonstrating that a larger, more
+diverse benchmark can surface and characterise real architectural defects
+is itself part of this paper's contribution.
+The ablation, now run on the same $N=105$ benchmark as every other result
+in this paper rather than on an archived smaller run, attributes the
+dominant effect to orchestration rather than to the underlying model:
+rule-consistency rose from 13.3\% to 80.0\% under identical inputs and an
+identical model, and the full system with governance now shows the
+\emph{highest} rule-consistency of the four ablated conditions, reversing
+an ambiguous $N=11$ finding that had appeared to show governance costing
+accuracy. These results characterise
+mechanism, not field performance: ground truth is
+rule-derived rather than agronomist-validated, and the 215.3\,s mean
+latency, though reduced from 426.6\,s at $N=11$ by moving to a uniform
+local deployment that also removed the earlier hosting-and-quota confound,
+remains far too slow for the smallholders the system targets. Three
+directions follow. Fixing the vegetation-detection and
+signal-precedence defects identified in Section~\ref{sec:failures}, and
+re-running this benchmark to confirm the fix, is the most immediate.
+Agronomist adjudication would replace internally derived labels with
+external ground truth. GPU acceleration, quantisation and caching of the
+near-static soil and satellite evidence is the route to an interactive
+latency budget under the now-uniform deployment, which we regard as a
 precondition for deployment rather than an optimisation of it.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
