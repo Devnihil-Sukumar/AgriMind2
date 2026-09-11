@@ -29,11 +29,13 @@
 \usepackage{url}
 
 %% Force strictly numeric, bracketed citations -- e.g. [3] or [5,7] --
-%% with NO author name or year ever printed inline, regardless of
-%% elsarticle's own internal (and unconfigured, since no .bst/BibTeX
-%% run happens here) natbib defaults. This is what makes every citation
-%% command used below render as a plain number.
-\usepackage[numbers,sort&compress]{natbib}
+%% with NO author name or year ever printed inline. elsarticle.cls
+%% already \RequirePackage{natbib} internally, so re-issuing
+%% \usepackage[numbers]{natbib} here causes a fatal "Option clash for
+%% package natbib" (confirmed by an actual compile attempt). natbib's
+%% own \setcitestyle command reconfigures the already-loaded package
+%% at runtime instead of reloading it, which is safe.
+\setcitestyle{numbers,sort&compress}
 
 %% Float placement: LaTeX's defaults are conservative enough that a
 %% table-heavy manuscript pushes most floats to the end. These relax the
