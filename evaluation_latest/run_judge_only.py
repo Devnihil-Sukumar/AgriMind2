@@ -33,7 +33,7 @@ sys.path.insert(0, EVAL_LATEST_ROOT)
 
 # Force the judge onto the same model that generated the results, no
 # matter what OLLAMA_MODEL happens to be set to in .env.
-JUDGE_MODEL = os.getenv("AGRIMIND_JUDGE_MODEL", "gpt-oss:20b")
+JUDGE_MODEL = os.getenv("AGRIMIND_JUDGE_MODEL", "qwen3:8b")
 os.environ["OLLAMA_MODEL"] = JUDGE_MODEL
 
 import metrics as M  # noqa: E402
