@@ -122,7 +122,7 @@ def figure_architecture():
     arrow(ax, 8.28, 2.25, 6.95, 2.25, color=RED, lw=1.0, style="<|-|>")
 
     fig.tight_layout()
-    fig.savefig(os.path.join(OUT, "fig_architecture.png"), dpi=300,
+    fig.savefig(os.path.join(OUT, "fig_architecture.png"), dpi=600,
                 bbox_inches="tight")
     plt.close(fig)
 
@@ -169,7 +169,7 @@ def figure_trustai():
             fontsize=8.4, color="#333333")
 
     fig.tight_layout()
-    fig.savefig(os.path.join(OUT, "fig_trustai_loop.png"), dpi=300,
+    fig.savefig(os.path.join(OUT, "fig_trustai_loop.png"), dpi=600,
                 bbox_inches="tight")
     plt.close(fig)
 
@@ -202,7 +202,7 @@ def figure_benchmark():
             ha="center", fontsize=8.2, color="#333333")
 
     fig.tight_layout()
-    fig.savefig(os.path.join(OUT, "fig_benchmark_construction.png"), dpi=300,
+    fig.savefig(os.path.join(OUT, "fig_benchmark_construction.png"), dpi=600,
                 bbox_inches="tight")
     plt.close(fig)
 

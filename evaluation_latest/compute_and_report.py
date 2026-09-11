@@ -42,8 +42,8 @@ REPORTS_DIR = os.path.join(EVAL_LATEST_ROOT, "reports")
 os.makedirs(FIGURES_DIR, exist_ok=True)
 os.makedirs(REPORTS_DIR, exist_ok=True)
 
-plt.rcParams.update({"figure.dpi": 150, "savefig.dpi": 300, "savefig.bbox": "tight",
-                      "axes.grid": True, "grid.alpha": 0.3, "font.size": 10})
+plt.rcParams.update({"figure.dpi": 150, "savefig.dpi": 600, "savefig.bbox": "tight",
+                      "axes.grid": True, "grid.alpha": 0.3, "font.size": 12})
 
 AGENTS = ["WeatherAgent", "SoilAgent", "SatelliteAgent", "MarketAgent", "HistoricalAgent"]
 CONDITION_LABELS = {
@@ -289,7 +289,7 @@ def fig_agent_f1(agent_f1):
     ax.set_title("Figure 1: Specialist Agent F1-score (risk/opportunity detection)")
     ax.tick_params(axis="x", rotation=30)
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURES_DIR, "fig1_agent_f1.png"), dpi=300)
+    fig.savefig(os.path.join(FIGURES_DIR, "fig1_agent_f1.png"), dpi=600)
     plt.close(fig)
 
 
@@ -303,7 +303,7 @@ def fig_overall_bars(tsr, da, routing, agent_f1):
     ax.set_ylim(0, 105)
     ax.set_title("Figure 2: Overall System Metrics")
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURES_DIR, "fig2_overall_metrics.png"), dpi=300)
+    fig.savefig(os.path.join(FIGURES_DIR, "fig2_overall_metrics.png"), dpi=600)
     plt.close(fig)
 
 
@@ -325,7 +325,7 @@ def fig_trust_vs_reliability(trust_cal):
     ax.set_title("Figure 3: TRUSTAI Trust Mean vs Observed Reliability")
     ax.legend()
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURES_DIR, "fig3_trust_calibration.png"), dpi=300)
+    fig.savefig(os.path.join(FIGURES_DIR, "fig3_trust_calibration.png"), dpi=600)
     plt.close(fig)
 
 
@@ -342,7 +342,7 @@ def fig_latency_by_stage(latency):
     ax.set_title("Figure 4: Average Latency per Pipeline Stage")
     ax.tick_params(axis="x", rotation=30)
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURES_DIR, "fig4_latency.png"), dpi=300)
+    fig.savefig(os.path.join(FIGURES_DIR, "fig4_latency.png"), dpi=600)
     plt.close(fig)
 
 

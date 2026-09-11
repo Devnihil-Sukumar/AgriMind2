@@ -1,6 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% AgriMind -- Elsevier manuscript
-%% Build:  pdflatex Manuscript  ->  bibtex Manuscript  ->  pdflatex x2
+%% Build:  pdflatex Manuscript  ->  pdflatex Manuscript
+%% (No BibTeX step: the bibliography below is a manually written
+%% thebibliography environment, not a .bib database, so bibtex has
+%% nothing to process. Two pdflatex passes are still required for
+%% \cite/\ref/\label numbers to resolve -- this is completely normal
+%% and not an error; the FIRST pass will show "??" or [?] for every
+%% citation and cross-reference, and the SECOND pass resolves them all.
+%% On Overleaf, use Menu -> "Recompile from scratch" once if citations
+%% still show as "?" after a normal recompile.)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[preprint,12pt]{elsarticle}
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
@@ -14,15 +22,30 @@
 \usepackage{graphicx}
 \usepackage{pifont}
 \usepackage{stfloats}
+\usepackage{float}
 \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
 \usepackage{balance}
 \usepackage{bm}
 \usepackage{url}
 
+%% Force strictly numeric, bracketed citations -- e.g. [3] or [5,7] --
+%% with NO author name or year ever printed inline, regardless of
+%% elsarticle's own internal (and unconfigured, since no .bst/BibTeX
+%% run happens here) natbib defaults. This is what makes every citation
+%% command used below render as a plain number.
+\usepackage[numbers,sort&compress]{natbib}
+
 %% Float placement: LaTeX's defaults are conservative enough that a
 %% table-heavy manuscript pushes most floats to the end. These relax the
 %% per-page limits so tables and figures settle near the text that
-%% discusses them.
+%% discusses them. Every table/figure below additionally uses [H] (from
+%% the float package above) rather than [htbp], which pins it exactly
+%% where it is written in the source instead of letting LaTeX's float
+%% queue push it to a later page -- the cause of a table appearing to
+%% "go missing" while its caption/number still shows up (the caption is
+%% part of the same float and would have been pushed along with it; if
+%% you still cannot find a table, search the PDF for its caption text
+%% rather than assuming it is near the paragraph that cites it).
 \setcounter{topnumber}{3}
 \setcounter{bottomnumber}{2}
 \setcounter{totalnumber}{5}
@@ -286,11 +309,12 @@ consistently absent: routing that accounts for data availability, an
 operative (not merely descriptive) trust mechanism, and any measurement of
 behaviour when components fail. This paper targets that intersection.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Summary of reviewed literature and its relation to the present work.}
 \label{tab:litreview}
 \footnotesize
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}p{0.55cm}p{2.9cm}p{3.0cm}p{3.35cm}p{3.5cm}@{}}
 \toprule
 \textbf{Ref} & \textbf{Title / focus} & \textbf{Methodology} & \textbf{Reported contribution} & \textbf{Limitation w.r.t.\ this work} \\
@@ -313,6 +337,7 @@ behaviour when components fail. This paper targets that intersection.
 \cite{pai2025review} & Precision agriculture review & Literature survey & Field synthesis & Survey; no original system or metrics \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -325,11 +350,12 @@ The pipeline draws on five heterogeneous streams, four of which are live
 external services. Table~\ref{tab:sources} lists them with the fields each
 contributes.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Operational data sources and the fields each contributes.}
 \label{tab:sources}
 \footnotesize
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}p{1.8cm}p{3.6cm}p{1.6cm}p{7.4cm}@{}}
 \toprule
 \textbf{Stream} & \textbf{Source} & \textbf{Access} & \textbf{Fields consumed} \\
@@ -341,6 +367,7 @@ Market & Agmarknet via data.gov.in & Live REST & state, district, market, commod
 Historical & Local SQLite (\texttt{farm\_history}) & Local & last five records per crop; empty history treated as a valid signal \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
 Soil and market streams each retain a curated local table as a fallback,
@@ -352,12 +379,13 @@ routing layer described in Section~\ref{sec:proposed} to exclude an agent
 that has nothing to analyse. The schemas of the two fallback tables are
 given in Table~\ref{tab:schema}.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Schema of the local fallback tables. Both cover 30 districts of
 Tamil Nadu, India.}
 \label{tab:schema}
 \footnotesize
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}p{2.4cm}p{1.4cm}p{11.0cm}@{}}
 \toprule
 \textbf{Table} & \textbf{Records} & \textbf{Columns} \\
@@ -366,6 +394,7 @@ Tamil Nadu, India.}
 \texttt{market\_prices} & 450 & State, District, Latitude, Longitude, Crop, Market, Min\_Price, Max\_Price, Modal\_Price, Trend, Last\_Updated \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
 The market table spans 90 markets across 30 districts and 15 commodities
@@ -399,7 +428,7 @@ driven 2.3 units below the crop's stated minimum, NDWI below its
 high-stress threshold, NDVI below its poor threshold, and so on. The
 ground-truth decision is whatever that crossed threshold implies.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/fig_benchmark_construction.png}
 \caption{Benchmark construction. Cloning a real context and perturbing a
@@ -459,7 +488,7 @@ Fig.~\ref{fig:architecture}, and is best read as three concerns: acquiring
 and normalising evidence (Stages 1--3), deciding what to reason over and
 doing so (Stages 4--8), and accounting for the result (Stages 9--10).
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/fig_architecture.png}
 \caption{AgriMind architecture. Stages 1--9 form the decision path; Stage
@@ -614,7 +643,7 @@ operative trust layer from a descriptive one: the belief changes the
 execution path, not merely the audit log.
 Fig.~\ref{fig:trustai} shows the loop.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.90\textwidth]{figures/fig_trustai_loop.png}
 \caption{The TRUSTAI governance loop. The pre-execution gate acts on the
@@ -672,10 +701,11 @@ fuller condition 4. Concurrency was therefore made uniform across all
 conditions and the study re-run; Table~\ref{tab:ablation} reports the
 corrected figures.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Ablation across four architectural conditions on identical fixtures, all four now run on the full $N=105$ benchmark used throughout this paper. An earlier version of this study reported the ablation on an archived ten-scenario ($N=10$) run predating the dataset expansion; this table replaces it and is internally consistent with Table~\ref{tab:overall}. Recommendation quality is LLM-judged and was evaluated for condition 4 only this round (see text); it is reported as not available (N/A) rather than estimated for conditions 1--3.}
 \label{tab:ablation}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 \textbf{Condition} & \textbf{Task success} & \textbf{Rule-consist.} & \textbf{Rec.\ quality (1--5)} & \textbf{Mean latency (s)} \\
@@ -686,6 +716,7 @@ corrected figures.
 4. Full system + TRUSTAI & 100.0\% & 84.8\% & 3.86 & 215.7 \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
 The dominant effect is again the first step, and it is sharper at this
@@ -752,11 +783,12 @@ this sample size.
 
 Table~\ref{tab:overall} reports the eight headline metrics.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Overall system evaluation ($N=105$ scenarios across seven crops; Wilson 95\% intervals).}
 \label{tab:overall}
 \footnotesize
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}p{3.7cm}p{7.1cm}p{4.4cm}@{}}
 \toprule
 \textbf{Metric} & \textbf{Definition} & \textbf{Result} \\
@@ -773,6 +805,7 @@ Trust calibration (MACE) & Mean $|\mu_i - $ observed reliability$|$ & 0.195 \\
 Mean response time & End-to-end pipeline latency & 215.3\,s (median 182.7\,s) \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
 No request failed to return a complete recommendation, including runs
@@ -810,7 +843,7 @@ crop and phrasing rather than that they are correct in an absolute sense.
 
 Fig.~\ref{fig:overall} places the four proportion metrics side by side.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.78\textwidth]{figures/fig2_overall_metrics.png}
 \caption{Overall system metrics. Macro F1 is scaled by 100 for comparability.}
@@ -822,7 +855,7 @@ Fig.~\ref{fig:overall} places the four proportion metrics side by side.
 Table~\ref{tab:agents} reports detection performance, routing and latency
 per specialist, and Fig.~\ref{fig:f1} the F1 distribution.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Per-agent evaluation at $N=105$. Detection is judged only on
 scenarios whose perturbed condition lies within that agent's domain, and
@@ -831,6 +864,7 @@ construction (see text). Weather, Soil, Satellite and Market now clear
 $n\!\ge\!28$; only the historical agent remains below any inferential
 threshold.}
 \label{tab:agents}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lcccccl@{}}
 \toprule
 & \multicolumn{3}{c}{\textbf{Detection}} & \multicolumn{1}{c}{\textbf{Routing}} & & \\
@@ -846,9 +880,10 @@ Historical & 1  & --  & --   & N/A (1 FP)   & 16.4    & \textbf{invoked once} \\
 Executive  & \multicolumn{5}{l}{deterministic rule engine, no model call} & 0.24 \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.78\textwidth]{figures/fig1_agent_f1.png}
 \caption{Per-specialist F1 for risk and opportunity detection. F1 score, range 0.0--1.0.}
@@ -1064,12 +1099,13 @@ necessary before that figure should carry weight.
 Table~\ref{tab:trust} compares each agent's posterior mean against its
 observed reliability, and Fig.~\ref{fig:trust} plots the pairs.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{TRUSTAI calibration at $N=105$. MACE $=0.195$. Weather, Soil,
 Satellite and Market all now clear $n\!\ge\!30$; only the historical
 agent's single observation remains below any inferential threshold.}
 \label{tab:trust}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 \textbf{Agent} & $n$ & \textbf{Trust mean} $\mu_i$ & \textbf{Observed} & $|\Delta|$ \\
@@ -1081,9 +1117,10 @@ Market     & 56 & 0.764 & 0.857 & 0.094 \\
 Historical & 1  & 0.620 & 1.000 & 0.380 \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.78\textwidth]{figures/fig3_trust_calibration.png}
 \caption{Posterior trust mean against observed reliability per specialist.}
@@ -1118,7 +1155,7 @@ at $N=11$, and the reason why is itself a finding, discussed below.
 
 Fig.~\ref{fig:latency} decomposes the cost by stage.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.78\textwidth]{figures/fig4_latency.png}
 \caption{Mean latency per pipeline stage. Sub-stage timings for planner,
@@ -1201,12 +1238,13 @@ single labelled targets, whereas the rule-consistency rate reported here
 measures categorical arbitration across the four active, partially
 conflicting evidence streams. The comparison is therefore drawn on capability.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Capability comparison with the closest reported systems.
 \ding{51} present, \ding{55} absent.}
 \label{tab:comparison}
 \footnotesize
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}p{3.5cm}cccc@{}}
 \toprule
 \textbf{Capability} & \textbf{Murad et al.}~\cite{murad2026agentic} & \textbf{CottonBot}~\cite{kandamali2025cottonbot} & \textbf{AgroAskAI}~\cite{cantonjos2026agroaskai} & \textbf{This work} \\
@@ -1225,6 +1263,7 @@ Structured explainability & \ding{55} & \ding{55} & partial & \ding{51} \\
 Evaluation scale & per-model & 20 queries & 20 queries & 105 scenarios $\times$ 4 conditions \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
 Three differences are substantive. First, availability-aware routing does
