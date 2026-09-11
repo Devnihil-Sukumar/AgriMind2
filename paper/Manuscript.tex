@@ -65,8 +65,10 @@ a Beta--Bernoulli trust layer that gates each agent before execution and
 updates its posterior afterwards. Every language-model stage carries a
 deterministic fallback, so provider failure degrades output quality rather
 than terminating the request. A reproducible benchmark of controlled
-single-variable perturbations, replayed against fixed fixtures, measures
-routing, rule-consistency, detection, calibration and latency behaviour.
+perturbations---predominantly single-variable, with a smaller set of
+two-variable compound scenarios testing signal precedence---replayed
+against fixed fixtures, measures routing, rule-consistency, detection,
+calibration and latency behaviour.
 Across 105 scenarios spanning seven crops, no task failures were observed,
 rule-consistency reached 84.8\% overall and 90.8\% excluding scenarios that
 deliberately probe a documented gap in the decision vocabulary, and two
@@ -171,9 +173,10 @@ corroborating the LLM-judged result on the axes they cover.
 
 \item \textbf{A reproducible perturbation benchmark with rule-derived ground
 truth.} Scenarios are built by cloning genuine collected contexts,
-neutralising them, and applying exactly one perturbation that crosses a
-threshold already present in the crop's own agronomic profile---making
-ground truth auditable and every run replayable.
+neutralising them, and applying one or, in a smaller compound subset,
+two simultaneous perturbations that each cross a threshold already
+present in the crop's own agronomic profile---making ground truth
+auditable and every run replayable.
 
 \item \textbf{Concurrency-consistent ablation.} Specialists execute
 concurrently rather than sequentially, and critically, the
@@ -405,9 +408,11 @@ byte-for-byte replayable.}
 \label{fig:benchmark}
 \end{figure}
 
-Two properties follow. First, single-variable isolation: each scenario
-differs from the neutral baseline in exactly one field, so an incorrect
-decision is attributable. Second, replayability: fixtures are injected in
+Two properties follow. First, variable isolation: each scenario differs
+from the neutral baseline in exactly one field, or, for the smaller
+compound subset introduced below, exactly two, so an incorrect decision
+remains attributable to a specific, named cause rather than to
+unconstrained noise. Second, replayability: fixtures are injected in
 place of live collectors, so a run is reproducible independently of what
 the live APIs return on a given day.
 
