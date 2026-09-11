@@ -23,6 +23,7 @@
 \usepackage{pifont}
 \usepackage{stfloats}
 \usepackage{float}
+\usepackage{adjustbox}
 \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
 \usepackage{balance}
 \usepackage{bm}
@@ -331,8 +332,8 @@ behaviour when components fail. This paper targets that intersection.
 \centering
 \caption{Summary of reviewed literature and its relation to the present work.}
 \label{tab:litreview}
-\footnotesize
-\resizebox{\textwidth}{!}{%
+\scriptsize
+\adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}p{0.55cm}p{2.9cm}p{3.0cm}p{3.35cm}p{3.5cm}@{}}
 \toprule
 \textbf{Ref} & \textbf{Title / focus} & \textbf{Methodology} & \textbf{Reported contribution} & \textbf{Limitation w.r.t.\ this work} \\
@@ -375,7 +376,7 @@ contributes.
 \caption{Operational data sources and the fields each contributes.}
 \label{tab:sources}
 \footnotesize
-\resizebox{\textwidth}{!}{%
+\adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}p{1.8cm}p{3.6cm}p{1.6cm}p{7.4cm}@{}}
 \toprule
 \textbf{Stream} & \textbf{Source} & \textbf{Access} & \textbf{Fields consumed} \\
@@ -405,7 +406,7 @@ given in Table~\ref{tab:schema}.
 Tamil Nadu, India.}
 \label{tab:schema}
 \footnotesize
-\resizebox{\textwidth}{!}{%
+\adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}p{2.4cm}p{1.4cm}p{11.0cm}@{}}
 \toprule
 \textbf{Table} & \textbf{Records} & \textbf{Columns} \\
@@ -615,7 +616,7 @@ market trend and finally to Continue Monitoring.
 
 Stage 8 renders $d^{\ast}$ into farmer-facing advice via a language model,
 falling back to a deterministic restatement at reduced confidence (0.35)
-and flagged \texttt{generation\_mode = deterministic\_fallback}. Stage 9
+and flagged \texttt{generation\_\allowbreak{}mode = deterministic\_\allowbreak{}fallback}. Stage 9
 assembles a decision trace, ranked evidence, alternatives considered,
 runtime limitations and a monitoring plan---all computed deterministically,
 so the explanation survives a language-model outage even when the narrative
@@ -725,7 +726,7 @@ corrected figures.
 \centering
 \caption{Ablation across four architectural conditions on identical fixtures, all four now run on the full $N=105$ benchmark used throughout this paper. An earlier version of this study reported the ablation on an archived ten-scenario ($N=10$) run predating the dataset expansion; this table replaces it and is internally consistent with Table~\ref{tab:overall}. Recommendation quality is LLM-judged and was evaluated for condition 4 only this round (see text); it is reported as not available (N/A) rather than estimated for conditions 1--3.}
 \label{tab:ablation}
-\resizebox{\textwidth}{!}{%
+\adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 \textbf{Condition} & \textbf{Task success} & \textbf{Rule-consist.} & \textbf{Rec.\ quality (1--5)} & \textbf{Mean latency (s)} \\
@@ -808,7 +809,7 @@ Table~\ref{tab:overall} reports the eight headline metrics.
 \caption{Overall system evaluation ($N=105$ scenarios across seven crops; Wilson 95\% intervals).}
 \label{tab:overall}
 \footnotesize
-\resizebox{\textwidth}{!}{%
+\adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}p{3.7cm}p{7.1cm}p{4.4cm}@{}}
 \toprule
 \textbf{Metric} & \textbf{Definition} & \textbf{Result} \\
@@ -884,7 +885,7 @@ construction (see text). Weather, Soil, Satellite and Market now clear
 $n\!\ge\!28$; only the historical agent remains below any inferential
 threshold.}
 \label{tab:agents}
-\resizebox{\textwidth}{!}{%
+\adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}lcccccl@{}}
 \toprule
 & \multicolumn{3}{c}{\textbf{Detection}} & \multicolumn{1}{c}{\textbf{Routing}} & & \\
@@ -933,7 +934,7 @@ them remains future work.
 \textbf{The historical agent was invoked once ($n=1$).} The history
 table is empty in effectively every scenario, so Eq.~(\ref{eq:routing})
 excludes it by design in 104 of 105 cases; one scenario
-(\texttt{market\_increasing\_wheat}) returned a non-empty record set and
+(\texttt{market\_\allowbreak{}increasing\_\allowbreak{}wheat}) returned a non-empty record set and
 the agent ran. A single invocation is not enough to judge, and the
 architecture remains, for practical purposes, exercised with
 \emph{four} functioning specialists rather than five. We therefore
@@ -991,7 +992,7 @@ query is phrased --- the reasoning or arbitration stage appears to weigh
 a vegetation risk less heavily when the surrounding question is framed
 as crop suitability than as yield optimisation. The original
 water-stress conflation also replicates exactly:
-\texttt{vegetation\_critical\_suitability\_cotton} again returns
+\texttt{vegetation\_\allowbreak{}critical\_\allowbreak{}suitability\_\allowbreak{}cotton} again returns
 \emph{Immediate Irrigation} for a scenario in which the water indices are
 held at their neutral baseline, the same crop and failure signature
 observed at $N=11$. \textbf{This defect has not been fixed.} It remains
@@ -1009,7 +1010,7 @@ active risk signal.} The compound two-signal scenarios added at this
 sample size (Section~\ref{sec:dataset}) combine one risk-domain
 perturbation with a simultaneous market-opportunity perturbation, so
 that the correct decision requires the higher-priority risk to win.
-\texttt{compound\_water\_market\_apple} perturbs both water stress
+\texttt{compound\_\allowbreak{}water\_\allowbreak{}market\_\allowbreak{}apple} perturbs both water stress
 (expecting \emph{Immediate Irrigation}, the higher-priority signal under
 $\Phi$'s precedence order) and an increasing market trend; the system
 returned \emph{Prepare for Harvest and Selling} instead, meaning the
@@ -1024,11 +1025,11 @@ one category --- and is likewise unfixed as of this version.
 \paragraph{Two smaller, previously unobserved patterns.} Two of the
 seven negative-control (\texttt{baseline\_normal}) scenarios, which are
 constructed so that no action is warranted, nonetheless produced an
-active decision: \texttt{baseline\_normal\_tomato} returned \emph{Apply
+active decision: \texttt{baseline\_\allowbreak{}normal\_\allowbreak{}tomato} returned \emph{Apply
 Nitrogen Fertilizer} despite soil nitrogen being reported \texttt{High},
-and \texttt{baseline\_normal\_mango} returned \emph{Field Inspection}
+and \texttt{baseline\_\allowbreak{}normal\_\allowbreak{}mango} returned \emph{Field Inspection}
 with no corresponding perturbation. The remaining case,
-\texttt{water\_stress\_suitability\_tomato}, returned \emph{Apply
+\texttt{water\_\allowbreak{}stress\_\allowbreak{}suitability\_\allowbreak{}tomato}, returned \emph{Apply
 Nitrogen Fertilizer} where \emph{Immediate Irrigation} was expected,
 despite soil nitrogen being reported \texttt{High} there as well --- the
 same wrong-decision category as the baseline\_normal\_tomato case,
@@ -1125,7 +1126,7 @@ observed reliability, and Fig.~\ref{fig:trust} plots the pairs.
 Satellite and Market all now clear $n\!\ge\!30$; only the historical
 agent's single observation remains below any inferential threshold.}
 \label{tab:trust}
-\resizebox{\textwidth}{!}{%
+\adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 \textbf{Agent} & $n$ & \textbf{Trust mean} $\mu_i$ & \textbf{Observed} & $|\Delta|$ \\
@@ -1264,7 +1265,7 @@ conflicting evidence streams. The comparison is therefore drawn on capability.
 \ding{51} present, \ding{55} absent.}
 \label{tab:comparison}
 \footnotesize
-\resizebox{\textwidth}{!}{%
+\adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}p{3.5cm}cccc@{}}
 \toprule
 \textbf{Capability} & \textbf{Murad et al.}~\cite{murad2026agentic} & \textbf{CottonBot}~\cite{kandamali2025cottonbot} & \textbf{AgroAskAI}~\cite{cantonjos2026agroaskai} & \textbf{This work} \\
