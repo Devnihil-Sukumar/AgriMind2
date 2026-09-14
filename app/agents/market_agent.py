@@ -34,7 +34,10 @@ class MarketAgent(BaseAgent):
 
     name = "MarketAgent"
     component = "market"
-    provider = "groq"
+    # No documented model-specific failure here (unlike SatelliteAgent's
+    # provider override -- see that file's comment), so this respects
+    # MARKET_LLM_PROVIDER in .env instead of hardcoding a provider that
+    # requires an API key this deployment doesn't have.
 
     ####################################################################
     # Build Prompt

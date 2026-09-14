@@ -42,6 +42,14 @@ class SatelliteAgent(BaseAgent):
     # observed run (~160s each, ~320s wasted per pipeline run for zero
     # usable output). Groq (already proven reliable for MarketAgent)
     # doesn't reproduce this failure mode.
+    #
+    # KNOWN LIMITATION on an Ollama-only deployment with no Groq key
+    # (e.g. this machine as of Sept 2026): this agent fails fast with a
+    # missing-API-key error on every request instead of running at all.
+    # Removing this override is NOT a fix -- it reproduces the empty-
+    # echo failure above, which is slower AND still produces nothing
+    # usable. A real fix needs either a restored Groq key, or a
+    # different/larger local model just for this agent.
     provider = "groq"
 
     ####################################################################

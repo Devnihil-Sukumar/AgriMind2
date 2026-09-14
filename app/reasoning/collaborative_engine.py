@@ -20,6 +20,7 @@ from app.prompts.collaborative_prompt import (
 )
 
 from app.utils.llm_client import llm_client
+from app.utils.provider_config import get_max_prompt_tokens
 
 
 class CollaborativeEngine:
@@ -279,7 +280,11 @@ class CollaborativeEngine:
 
                 component="collaborative",
 
-                temperature=0.2
+                temperature=0.2,
+
+                max_prompt_tokens=get_max_prompt_tokens(
+                    "collaborative"
+                )
 
             )
 
