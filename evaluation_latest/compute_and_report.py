@@ -283,11 +283,12 @@ def fig_agent_f1(agent_f1):
     agents = [a for a in AGENTS if agent_f1["per_agent"].get(a, {}).get("n_judged")]
     values = [agent_f1["per_agent"][a]["f1"] for a in agents]
     fig, ax = plt.subplots(figsize=(7, 4.5))
-    ax.bar(agents, values, color="#2f9e5b")
+    bars = ax.bar(agents, values, color="#2f9e5b")
     ax.set_ylabel("F1 Score (0.0 - 1.0)")
-    ax.set_ylim(0, 1.05)
+    ax.set_ylim(0, 1.15)
     ax.set_title("Figure 1: Specialist Agent F1-score (risk/opportunity detection)")
     ax.tick_params(axis="x", rotation=30)
+    ax.bar_label(bars, fmt="%.3f", padding=3)
     fig.tight_layout()
     fig.savefig(os.path.join(FIGURES_DIR, "fig1_agent_f1.png"), dpi=600)
     plt.close(fig)
@@ -298,10 +299,11 @@ def fig_overall_bars(tsr, da, routing, agent_f1):
     values = [tsr["value_pct"], da["value_pct"], routing["exact_match_rate_pct"],
               (agent_f1["macro_f1"] or 0) * 100]
     fig, ax = plt.subplots(figsize=(7, 4.5))
-    ax.bar(labels, values, color="#217a47")
+    bars = ax.bar(labels, values, color="#217a47")
     ax.set_ylabel("%")
-    ax.set_ylim(0, 105)
+    ax.set_ylim(0, 115)
     ax.set_title("Figure 2: Overall System Metrics")
+    ax.bar_label(bars, fmt="%.2f", padding=3)
     fig.tight_layout()
     fig.savefig(os.path.join(FIGURES_DIR, "fig2_overall_metrics.png"), dpi=600)
     plt.close(fig)
@@ -315,15 +317,22 @@ def fig_trust_vs_reliability(trust_cal):
     observed = [r["observed_reliability"] for r in rows]
     x = np.arange(len(agents))
     width = 0.35
-    fig, ax = plt.subplots(figsize=(8, 4.5))
-    ax.bar(x - width / 2, trust, width, label="TRUSTAI Trust Mean", color="#2f9e5b")
-    ax.bar(x + width / 2, observed, width, label="Observed Reliability", color="#2563a8")
+    fig, ax = plt.subplots(figsize=(8, 5.0))
+    bars1 = ax.bar(x - width / 2, trust, width, label="TRUSTAI Trust Mean", color="#2f9e5b")
+    bars2 = ax.bar(x + width / 2, observed, width, label="Observed Reliability", color="#2563a8")
     ax.set_xticks(x)
     ax.set_xticklabels(agents, rotation=30)
-    ax.set_ylim(0, 1.05)
+    ax.set_ylim(0, 1.45)
     ax.set_ylabel("Value")
     ax.set_title("Figure 3: TRUSTAI Trust Mean vs Observed Reliability")
-    ax.legend()
+    ax.bar_label(bars1, fmt="%.3f", padding=3, fontsize=8)
+    ax.bar_label(bars2, fmt="%.3f", padding=3, fontsize=8)
+    # Extra headroom above the tallest bars (ylim raised to 1.45 while
+    # every bar tops out at 1.0) gives the legend empty space to sit in,
+    # inside the axes, so it never overlaps a bar, a value label, or the
+    # title -- placing it outside the axes via bbox_to_anchor previously
+    # collided with the title instead.
+    ax.legend(loc="upper center", ncol=2, frameon=False)
     fig.tight_layout()
     fig.savefig(os.path.join(FIGURES_DIR, "fig3_trust_calibration.png"), dpi=600)
     plt.close(fig)
@@ -336,11 +345,13 @@ def fig_latency_by_stage(latency):
         agents = agents + ["TOTAL\nPIPELINE"]
         values = values + [latency["total_pipeline"]["mean"]]
     colors = ["#2f9e5b"] * (len(agents) - 1) + ["#b3352b"] if agents else []
-    fig, ax = plt.subplots(figsize=(8, 4.5))
-    ax.bar(agents, values, color=colors)
+    fig, ax = plt.subplots(figsize=(8, 4.8))
+    bars = ax.bar(agents, values, color=colors)
     ax.set_ylabel("Mean latency (s)")
     ax.set_title("Figure 4: Average Latency per Pipeline Stage")
     ax.tick_params(axis="x", rotation=30)
+    ax.set_ylim(0, max(values) * 1.15 if values else 1)
+    ax.bar_label(bars, fmt="%.1fs", padding=3, fontsize=8)
     fig.tight_layout()
     fig.savefig(os.path.join(FIGURES_DIR, "fig4_latency.png"), dpi=600)
     plt.close(fig)

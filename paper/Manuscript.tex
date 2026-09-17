@@ -520,6 +520,8 @@ pre-execution gate and a post-execution posterior update.}
 
 \subsection{Stage 1--3: crop knowledge, acquisition and context fusion}
 
+\subsubsection{Stage 1: crop knowledge}
+
 Stage 1 resolves a crop profile $P_c$ containing agronomic thresholds:
 optimal temperature, humidity, rainfall and soil pH ranges; NDVI/NDWI
 health thresholds; preferred texture, nitrogen and organic carbon levels.
@@ -527,8 +529,14 @@ Profiles are synthesised once by a language model against a fixed schema,
 validated against a canonical default, and cached in SQLite and JSON, so
 the cost is paid once per crop rather than once per request.
 
+\subsubsection{Stage 2: data acquisition}
+
 Stage 2 invokes the five collectors of Table~\ref{tab:sources}, each
-independently exception-isolated. Stage 3 merges their outputs into a
+independently exception-isolated.
+
+\subsubsection{Stage 3: context fusion}
+
+Stage 3 merges the five collectors' outputs into a
 single context $x$ deterministically---no language model participates---and
 computes an unweighted mean confidence over the sources that returned data.
 
@@ -724,17 +732,17 @@ corrected figures.
 
 \begin{table}[H]
 \centering
-\caption{Ablation across four architectural conditions on identical fixtures, all four now run on the full $N=105$ benchmark used throughout this paper. An earlier version of this study reported the ablation on an archived ten-scenario ($N=10$) run predating the dataset expansion; this table replaces it and is internally consistent with Table~\ref{tab:overall}. Recommendation quality is LLM-judged and was evaluated for condition 4 only this round (see text); it is reported as not available (N/A) rather than estimated for conditions 1--3.}
+\caption{Ablation across four architectural conditions on identical fixtures, all four now run on the full $N=105$ benchmark used throughout this paper. An earlier version of this study reported the ablation on an archived ten-scenario ($N=10$) run predating the dataset expansion; this table replaces it and is internally consistent with Table~\ref{tab:overall}. Mean specialists run counts specialist agents that actually completed per scenario (out of five), averaged over the benchmark; task success is omitted here as every condition reached 100.0\% (Table~\ref{tab:overall}), which carries no discriminative information across conditions. Recommendation quality is LLM-judged and was evaluated for condition 4 only this round (see text); it is reported as not available (N/A) rather than estimated for conditions 1--3.}
 \label{tab:ablation}
 \adjustbox{max width=\textwidth}{%
 \begin{tabular}{@{}lcccc@{}}
 \toprule
-\textbf{Condition} & \textbf{Task success} & \textbf{Rule-consist.} & \textbf{Rec.\ quality (1--5)} & \textbf{Mean latency (s)} \\
+\textbf{Condition} & \textbf{Mean specialists run} & \textbf{Rule-consist.} & \textbf{Rec.\ quality (1--5)} & \textbf{Mean latency (s)} \\
 \midrule
-1. Single agent, no fusion & 100.0\% & 13.3\% & N/A & 34.8 \\
-2. Multi-agent, deterministic merge & 100.0\% & 80.0\% & N/A & 88.2 \\
-3. Multi-agent + collaborative reasoning & 100.0\% & 81.9\% & N/A & 154.9 \\
-4. Full system + TRUSTAI & 100.0\% & 84.8\% & 3.86 & 215.7 \\
+1. Single agent, no fusion & 1.00 & 13.3\% & N/A & 34.8 \\
+2. Multi-agent, deterministic merge & 3.07 & 80.0\% & N/A & 88.2 \\
+3. Multi-agent + collaborative reasoning & 3.10 & 81.9\% & N/A & 154.9 \\
+4. Full system + TRUSTAI & 3.11 & 84.8\% & 3.86 & 215.7 \\
 \bottomrule
 \end{tabular}
 }
@@ -973,7 +981,35 @@ because \texttt{infer\_decision} has no pH branch and cannot express the
 correct answer. This is a known and documented gap, which is why the
 rate is reported both with and without such probes. The remaining nine
 are genuine defects, and --- as at $N=11$ --- they are not randomly
-distributed.
+distributed. Table~\ref{tab:failures} lists all nine, grouped by the
+three failure patterns discussed below.
+
+\begin{table}[H]
+\centering
+\caption{The nine genuine (non-probe) wrong decisions at $N=105$, grouped by failure pattern. None have been fixed in the codebase evaluated here.}
+\label{tab:failures}
+\adjustbox{max width=\textwidth}{%
+\begin{tabular}{@{}lp{6.0cm}p{3.4cm}p{3.4cm}@{}}
+\toprule
+\textbf{Pattern} & \textbf{Scenario} & \textbf{Ground truth} & \textbf{Actual decision} \\
+\midrule
+\multirow{5}{*}{Vegetation-detection defect}
+ & vegetation\_critical\_suitability\_cotton & Field Inspection & Immediate Irrigation \\
+ & vegetation\_critical\_suitability\_mango & Field Inspection & Continue Monitoring \\
+ & vegetation\_critical\_suitability\_orange & Field Inspection & Continue Monitoring \\
+ & vegetation\_critical\_suitability\_rice & Field Inspection & Continue Monitoring \\
+ & vegetation\_critical\_yield\_cotton & Field Inspection & Continue Monitoring \\
+\midrule
+Signal-precedence defect & compound\_water\_market\_apple & Immediate Irrigation & Prepare for Harvest and Selling \\
+\midrule
+\multirow{3}{*}{Negative-control / tomato-nitrogen anomaly}
+ & baseline\_normal\_tomato & Continue Monitoring & Apply Nitrogen Fertilizer \\
+ & baseline\_normal\_mango & Continue Monitoring & Field Inspection \\
+ & water\_stress\_suitability\_tomato & Immediate Irrigation & Apply Nitrogen Fertilizer \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 
 \paragraph{The vegetation-detection defect persists, and is now better
 characterised.} At $N=11$, one of two vegetation-critical scenarios
